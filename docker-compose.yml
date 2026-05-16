@@ -11,7 +11,7 @@ services:
       sh -c "npm install &&
              npx prisma migrate deploy &&
              npx prisma db seed &&
-             npm run dev -- --hostname 0.0.0.0"
+             npm run dev -- --hostname 0.0.0.0 --webpack"
     environment:
       DATABASE_URL: postgresql://ppl_flashcards:ppl_flashcards@db:5432/ppl_flashcards?schema=public
       PORT: 3000

@@ -48,23 +48,24 @@ Docker image build.
 
 ---
 
-## Immediate next step: Phase 2 — Markdown importer
+## Immediate next step: Phase 2 — JSON importer
 
-**Goal:** Turn the existing Markdown question files in `Questions/` into database rows.
+**Goal:** Define a canonical JSON question format and build the import pipeline.
+The app only ever reads JSON. A one-off migration script converts the existing
+Markdown files to JSON; the output is committed to the repo.
 
 Key tasks:
 
-1. Write a parser for the Markdown card format used in `Questions/`.
-   - Multiple-choice cards.
-   - Open-answer cards.
-   - Extract: question ID, topic, type, difficulty, tags, question text, choices,
-     correct answer, explanation, reference, and asset references.
-2. Add import validation (missing answer, no correct choice, duplicate question text,
-   unsupported media references).
-3. Expose the importer as a CLI command (e.g. `npx tsx scripts/import.ts <file>`).
-4. Store import metadata in the `ImportBatch` model.
+1. Write `scripts/md_to_json.ts` (repo root) — one-off conversion of all Markdown files
+   in `Questions/` to JSON in `data/questions/`. Run once, commit, done.
+2. Build the app JSON parser (`app/src/lib/importer/json-parser.ts`) against the format
+   defined in `docs/question_generation_guide.md`.
+3. Add validation (missing answer, no correct choice, missing reference, duplicate IDs).
+4. CLI import command: `npx tsx scripts/import.ts <file.json> [--dry-run]`.
+5. Store import metadata in the `ImportBatch` model.
 
-Deliverable: all existing Markdown cards are importable into PostgreSQL via the CLI.
+Deliverable: existing questions live in `data/questions/*.json`, importable into
+PostgreSQL. All future questions (hand-written or LLM-generated) use the same JSON format.
 
 ---
 

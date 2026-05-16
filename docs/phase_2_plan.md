@@ -149,22 +149,32 @@ shared `ParsedCard` type. Validates the JSON structure and maps field names.
 
 ```typescript
 type ParsedChoice = {
-  letter: string;    // "A", "B", "C", "D"
   text: string;
-  isCorrect: boolean;
+  isCorrect: boolean;   // explicit on every choice
+};
+
+type ParsedMedia = {
+  kind: "image" | "table" | "graph" | "video" | "pdf_excerpt" | "other";
+  role: "question_context" | "answer_explanation" | "reference";
+  src: string;           // URL or relative path
+  alt: string;
+  caption?: string;
+  attribution?: string;  // credit line for attribution page
+  origin?: string;       // where the asset was obtained
 };
 
 type ParsedCard = {
   sourceId: string;
   topic: string | null;
   cardType: "MULTIPLE_CHOICE" | "OPEN_ANSWER";
-  difficulty: "BASIC" | "INTERMEDIATE" | "ADVANCED" | null;
+  difficulty: "EASY" | "MEDIUM" | "HARD" | null;
   tags: string[];
   questionText: string;
-  choices: ParsedChoice[];   // empty for open-answer cards
+  choices: ParsedChoice[];   // empty array for open-answer cards
   answerText: string;
   explanation: string | null;
   reference: string | null;
+  media: ParsedMedia[];      // empty array if no media
 };
 ```
 
@@ -218,11 +228,13 @@ Done. ImportBatch id: cmp...
 ### 6. Unit tests
 
 `app/src/lib/importer/json-parser.test.ts`:
-- Parses a valid multiple-choice card correctly.
-- Parses a valid open-answer card correctly.
-- Maps `"correct": true` to `isCorrect: true` on the right choice.
-- Handles a card with `null` difficulty gracefully.
-- Returns an empty array for an empty JSON array input.
+- Parses a valid single-correct multiple-choice card correctly.
+- Parses a valid multiple-correct multiple-choice card correctly.
+- Maps `"correct": true/false` to `isCorrect` on every choice.
+- Parses a valid open-answer card (no `choices` field in source).
+- Parses a card with a `media` array correctly.
+- Handles `null` difficulty gracefully.
+- Returns an empty array for an empty JSON array `[]`.
 - Throws a clear error for malformed JSON.
 
 `app/src/lib/importer/validator.test.ts`:
@@ -257,14 +269,19 @@ No new npm dependencies needed. Uses Prisma (already installed), Node built-ins
 
 ## Build order
 
-1. Migration script — convert `Questions/` to `data/questions/*.json`, review output.
-2. JSON parser + tests (pure function, no DB).
-3. Validator + tests (pure function).
-4. Import service (DB integration).
-5. CLI script wiring it together.
-6. Dry-run smoke test: `docker compose exec app npx tsx scripts/import.ts /data/questions/sample_questions.json --dry-run`
-7. Full import of all files in `data/questions/`.
-8. Update page badge and project status.
+1. **Finalise the JSON format spec** (`docs/question_generation_guide.md`) — field names,
+   types, required vs nullable, valid enum values, examples. Everything downstream is
+   built against this contract.
+2. **JSON parser + tests** — pure function, no DB, fast feedback loop.
+3. **Validator + tests** — pure function, builds on the `ParsedCard` type.
+4. **Import service** — DB integration, upserts cards via Prisma.
+5. **CLI script** — thin wrapper wiring parser → validator → import service.
+6. **Smoke test with hand-written JSON** — write 2–3 cards by hand matching the spec,
+   import them, confirm they appear in the database correctly.
+7. **Migration script** (`scripts/md_to_json.ts`) — now that the target format is
+   validated end-to-end, convert all `Questions/*.md` files to `data/questions/*.json`.
+8. **Full import** — run the importer against all migrated JSON files.
+9. **Update page badge and project status.**
 
 ---
 

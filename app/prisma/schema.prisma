@@ -1,6 +1,5 @@
-// Phase 0 intentionally keeps the Prisma schema minimal. Phase 1 will add the
-// core domain models from docs/core_domain_model.md and create the first
-// application migration.
+// Phase 1 adds the full domain model. The database URL is configured in
+// prisma.config.ts, not here — that is a Prisma 7 convention.
 
 generator client {
   provider = "prisma-client"
@@ -9,4 +8,311 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum CardType {
+  MULTIPLE_CHOICE
+  OPEN_ANSWER
+}
+
+enum CardStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+// Authored difficulty label on a Card — distinct from CardProgress.difficulty,
+// which is the SRS algorithm's computed float parameter.
+enum CardDifficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum ReviewRating {
+  WRONG
+  HARD
+  GOOD
+  EASY
+}
+
+enum StudyMode {
+  DUE
+  RANDOM
+  TOPIC
+  TAG
+  WEAK
+  NEW
+  CUSTOM
+}
+
+enum TagType {
+  TOPIC
+  SOURCE
+  SKILL
+  EXAM_AREA
+  CUSTOM
+}
+
+enum ImportStatus {
+  DRAFT
+  VALIDATED
+  IMPORTED
+  FAILED
+}
+
+enum ImportSourceType {
+  MARKDOWN
+  JSON
+  CSV
+  MANUAL
+  AI_GENERATED
+}
+
+enum MediaKind {
+  IMAGE
+  TABLE
+  GRAPH
+  VIDEO
+  PDF_EXCERPT
+  OTHER
+}
+
+// The role a media asset plays on a card.
+enum MediaRole {
+  QUESTION_CONTEXT
+  ANSWER_EXPLANATION
+  REFERENCE
+  THUMBNAIL
+}
+
+enum DeckVisibility {
+  PRIVATE
+  PUBLIC
+}
+
+// ---------------------------------------------------------------------------
+// Models
+// ---------------------------------------------------------------------------
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  displayName  String
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  decks       Deck[]
+  cards       Card[]         @relation("CreatedCards")
+  reviews     Review[]
+  progress    CardProgress[]
+  sessions    StudySession[]
+  imports     ImportBatch[]
+  mediaAssets MediaAsset[]
+}
+
+model Deck {
+  id              String         @id @default(cuid())
+  name            String
+  description     String?
+  visibility      DeckVisibility @default(PRIVATE)
+  createdByUserId String
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  createdBy User   @relation(fields: [createdByUserId], references: [id])
+  cards     Card[]
+}
+
+model Card {
+  id              String         @id @default(cuid())
+  deckId          String
+  createdByUserId String
+  importBatchId   String?
+  // Preserved from the import source (e.g. "MET-042") for traceability.
+  originalId      String?
+  type            CardType
+  question        String
+  // For open-answer cards this is the full answer text. For multiple-choice
+  // cards the correct answer is on the Choice with isCorrect=true; this field
+  // holds a brief canonical answer string for reference and export.
+  answer          String
+  explanation     String?
+  difficulty      CardDifficulty @default(MEDIUM)
+  status          CardStatus     @default(DRAFT)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  deck        Deck              @relation(fields: [deckId], references: [id])
+  createdBy   User              @relation("CreatedCards", fields: [createdByUserId], references: [id])
+  importBatch ImportBatch?      @relation(fields: [importBatchId], references: [id])
+  choices     Choice[]
+  tags        CardTag[]
+  references  SourceReference[]
+  media       CardMedia[]
+  reviews     Review[]
+  progress    CardProgress[]
+
+  // Supports the card browser: filter by deck and status is the most common query.
+  @@index([deckId, status])
+}
+
+model Choice {
+  id        String  @id @default(cuid())
+  cardId    String
+  text      String
+  isCorrect Boolean @default(false)
+  // Stored order is for editing only — choices are randomised at study time.
+  sortOrder Int     @default(0)
+
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+}
+
+model Tag {
+  id   String  @id @default(cuid())
+  name String
+  type TagType
+
+  cards CardTag[]
+
+  // A tag name is unique within a type: two tags can share the name "weather"
+  // if one is TOPIC and the other is EXAM_AREA.
+  @@unique([name, type])
+}
+
+// Junction table between Card and Tag.
+model CardTag {
+  cardId String
+  tagId  String
+
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id])
+
+  @@id([cardId, tagId])
+}
+
+model SourceReference {
+  id           String  @id @default(cuid())
+  cardId       String
+  label        String
+  url          String?
+  documentName String?
+  page         Int?
+  section      String?
+  notes        String?
+
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+}
+
+model MediaAsset {
+  id           String    @id @default(cuid())
+  ownerUserId  String
+  // Key used to locate the file in local storage or object storage.
+  storageKey   String
+  // Public-facing URL; null until the asset has been uploaded/served.
+  publicUrl    String?
+  mimeType     String
+  kind         MediaKind
+  altText      String?
+  sourceLabel  String?
+  sourceUrl    String?
+  licenseNotes String?
+  createdAt    DateTime  @default(now())
+
+  owner User       @relation(fields: [ownerUserId], references: [id])
+  cards CardMedia[]
+}
+
+// Junction table between Card and MediaAsset.
+model CardMedia {
+  cardId       String
+  mediaAssetId String
+  role         MediaRole @default(QUESTION_CONTEXT)
+  sortOrder    Int       @default(0)
+
+  card       Card       @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  mediaAsset MediaAsset @relation(fields: [mediaAssetId], references: [id])
+
+  @@id([cardId, mediaAssetId])
+}
+
+// Immutable review history. Rows are never updated or deleted — preserving
+// raw rating events means the scheduler algorithm can be replaced later
+// without losing the ability to reconstruct progress from history.
+model Review {
+  id                String       @id @default(cuid())
+  userId            String
+  cardId            String
+  sessionId         String?
+  rating            ReviewRating
+  answeredCorrectly Boolean
+  // Time in milliseconds from card display to answer, where tracked.
+  responseMs        Int?
+  reviewedAt        DateTime     @default(now())
+
+  user    User          @relation(fields: [userId], references: [id])
+  card    Card          @relation(fields: [cardId], references: [id])
+  session StudySession? @relation(fields: [sessionId], references: [id])
+
+  // History lookups filter by userId+cardId; scheduler queries do too.
+  @@index([userId, cardId])
+}
+
+// Current spaced repetition state for one (user, card) pair. Updated after
+// every review. The Review table holds the immutable raw history.
+model CardProgress {
+  userId         String
+  cardId         String
+  dueAt          DateTime
+  lastReviewedAt DateTime?
+  intervalDays   Float         @default(1)
+  // SM-2 ease factor; also acts as a placeholder for FSRS retrievability.
+  ease           Float         @default(2.5)
+  // FSRS stability field; kept as a float so the algorithm can be swapped.
+  stability      Float         @default(1)
+  // SRS-computed difficulty parameter — not the same as Card.difficulty enum.
+  difficulty     Float         @default(0.3)
+  lapses         Int           @default(0)
+  reviewCount    Int           @default(0)
+  lastRating     ReviewRating?
+
+  user User @relation(fields: [userId], references: [id])
+  card Card @relation(fields: [cardId], references: [id])
+
+  @@id([userId, cardId])
+  // Primary due-card query: all cards due for this user, soonest first.
+  @@index([userId, dueAt])
+}
+
+model StudySession {
+  id        String    @id @default(cuid())
+  userId    String
+  mode      StudyMode
+  // Flexible JSON bag for filter state (tags, deck, difficulty, etc.).
+  // Shape will evolve alongside study mode features.
+  filters   Json      @default("{}")
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
+
+  user    User     @relation(fields: [userId], references: [id])
+  reviews Review[]
+}
+
+model ImportBatch {
+  id         String           @id @default(cuid())
+  userId     String
+  sourceType ImportSourceType
+  status     ImportStatus     @default(DRAFT)
+  // Raw input is preserved for debugging, re-import, and export round-trips.
+  rawInput   String?
+  summary    String?
+  createdAt  DateTime         @default(now())
+
+  user  User   @relation(fields: [userId], references: [id])
+  cards Card[]
 }

@@ -22,6 +22,10 @@ This project uses semantic versioning.
   `MISSING_REFERENCE` (warning), and `DUPLICATE_SOURCE_ID` (error) (19 unit tests).
 - JSDoc on all exported functions, types, and constants in `app/src/lib/`.
 - JSDoc guideline added to `docs/project_guidelines.md`.
+- `app/src/lib/importer/import-service.ts` — `importCards()` writes a validated
+  `ParsedCard[]` batch to the database. Upserts cards by `(deckId, originalId)`,
+  replaces choices/tags/source-references wholesale, and manages an `ImportBatch`
+  audit row (`DRAFT` → `IMPORTED` / `FAILED`). Media assets are deferred to Phase 7.
 
 ### Changed
 

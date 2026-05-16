@@ -3,7 +3,7 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-16
+Last updated: 2026-05-17
 
 ---
 
@@ -11,8 +11,9 @@ Last updated: 2026-05-16
 
 **Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
 
-The JSON format spec is finalised (`docs/question_generation_guide.md`) and the JSON
-parser is implemented and tested (21 unit tests, all passing).
+The JSON format spec is finalised, the parser (21 tests), validator (19 tests), and
+import service are implemented. The CLI script is the next remaining step before the
+smoke test.
 
 ---
 
@@ -58,7 +59,7 @@ JSON format spec and LLM prompt.
 - [x] Finalise JSON format spec (`docs/question_generation_guide.md`)
 - [x] JSON parser + tests (`app/src/lib/importer/json-parser.ts`, 21 tests passing)
 - [x] Validator + tests (`app/src/lib/importer/validator.ts`, 19 tests passing)
-- [ ] Import service (`app/src/lib/importer/import-service.ts`)
+- [x] Import service (`app/src/lib/importer/import-service.ts`)
 - [ ] CLI script (`app/scripts/import.ts`)
 - [ ] Smoke test with hand-written JSON cards
 - [ ] Migration script (`scripts/md_to_json.ts`) — converts `Questions/*.md` → `data/questions/*.json`

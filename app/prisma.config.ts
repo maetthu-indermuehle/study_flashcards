@@ -7,6 +7,8 @@ export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
     path: "prisma/migrations",
+    // tsx lets the seed script run as TypeScript without a separate build step.
+    seed: "node --import tsx prisma/seed.ts",
   },
   datasource: {
     url: process.env["DATABASE_URL"],

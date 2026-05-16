@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - "phase-*"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Lint, typecheck, and test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - uses: actions/setup-node@v4.4.0
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm run test
+        env:
+          # DATABASE_URL is required by the env schema at module load time.
+          # Unit tests import the schema directly, but a valid-looking URL is
+          # still needed so Node does not throw when importing server.ts
+          # indirectly through other modules.
+          DATABASE_URL: postgresql://localhost/test
+          NODE_ENV: test
+
+  docker-build:
+    name: Build production Docker image
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build production image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./app
+          target: runner
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

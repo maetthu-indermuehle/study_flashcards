@@ -3,10 +3,20 @@ services:
     build:
       context: ./app
       target: development
-    command: npm run dev -- --hostname 0.0.0.0
+    # npm install runs on every startup to keep the node_modules volume in sync
+    # with package.json after dependency changes (adding/removing packages).
+    # prisma migrate deploy is non-interactive and safe for container startup.
+    # The seed script is idempotent, so re-running on restart is harmless.
+    command: >
+      sh -c "npm install &&
+             npx prisma migrate deploy &&
+             npx prisma db seed &&
+             npm run dev -- --hostname 0.0.0.0 --webpack"
     environment:
       DATABASE_URL: postgresql://ppl_flashcards:ppl_flashcards@db:5432/ppl_flashcards?schema=public
       PORT: 3000
+      SEED_USER_EMAIL: admin@local.dev
+      SEED_USER_PASSWORD: localdev
     ports:
       - "3000:3000"
     volumes:

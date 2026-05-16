@@ -12,22 +12,22 @@ export default function Home() {
             </h1>
           </div>
           <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
-            Phase 0
+            Phase 1
           </span>
         </header>
 
         <div className="grid flex-1 place-items-center py-12">
           <div className="w-full max-w-2xl">
             <p className="mb-3 text-sm font-medium text-sky-700">
-              Project setup baseline
+              Database and core models
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-              The study app foundation is ready to grow.
+              Schema, migrations, and seed are ready.
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-8 text-slate-700">
-              This first screen confirms the Next.js app is running. The next
-              phases will add the database schema, Markdown imports, login, and
-              the mobile flashcard study flow.
+              The database schema is live with all domain models. The next
+              phases will add Markdown imports, login, and the mobile flashcard
+              study flow.
             </p>
 
             <dl className="mt-8 grid gap-3 sm:grid-cols-3">

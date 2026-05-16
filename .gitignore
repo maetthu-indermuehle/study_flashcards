@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+
+# Local environment files. App-specific examples may be committed explicitly.
+.env
+.env.*
+!.env.example
+
+# Local editor/project noise.
+.idea/
+.vscode/
+

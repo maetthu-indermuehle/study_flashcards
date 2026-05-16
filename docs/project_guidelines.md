@@ -349,6 +349,18 @@ Guidelines:
 - Treat uploaded/imported content carefully.
 - Keep dependencies updated.
 
+## Local Development
+
+Always use Docker Compose for local development, not the npm dev server directly.
+
+Run the full stack with:
+
+```bash
+docker compose up
+```
+
+This starts both the app and the PostgreSQL database together. Running `npm run dev` directly is useful only in isolated cases where the database is not needed.
+
 ## Deployment
 
 Deployment must work with OpenShift restrictions.

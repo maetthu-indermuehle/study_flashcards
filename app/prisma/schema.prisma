@@ -1,0 +1,12 @@
+// Phase 0 intentionally keeps the Prisma schema minimal. Phase 1 will add the
+// core domain models from docs/core_domain_model.md and create the first
+// application migration.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}

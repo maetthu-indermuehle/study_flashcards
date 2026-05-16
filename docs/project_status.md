@@ -57,7 +57,7 @@ JSON format spec and LLM prompt.
 
 - [x] Finalise JSON format spec (`docs/question_generation_guide.md`)
 - [x] JSON parser + tests (`app/src/lib/importer/json-parser.ts`, 21 tests passing)
-- [ ] Validator + tests (`app/src/lib/importer/validator.ts`)
+- [x] Validator + tests (`app/src/lib/importer/validator.ts`, 19 tests passing)
 - [ ] Import service (`app/src/lib/importer/import-service.ts`)
 - [ ] CLI script (`app/scripts/import.ts`)
 - [ ] Smoke test with hand-written JSON cards

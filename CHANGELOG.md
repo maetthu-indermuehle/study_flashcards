@@ -6,6 +6,32 @@ This project uses semantic versioning.
 
 ## [Unreleased]
 
+### Added
+
+- Canonical JSON question format spec (`docs/question_generation_guide.md`) with a
+  ready-to-paste LLM prompt, field definitions, media support (`attribution`, `origin`),
+  and examples for all card types.
+- Phase 2 implementation plan (`docs/phase_2_plan.md`).
+- `app/src/lib/importer/types.ts` — shared `ParsedCard`, `ParsedChoice`, and
+  `ParsedMedia` types used across the import pipeline.
+- `app/src/lib/importer/json-parser.ts` — `parseJsonCards()` parses a JSON question
+  file into `ParsedCard[]` using Zod for structural validation (21 unit tests).
+- `app/src/lib/importer/validator.ts` — `validate()` performs semantic checks on a
+  `ParsedCard[]` batch and returns `ValidationError[]` without throwing. Checks:
+  `EMPTY_QUESTION`, `MISSING_ANSWER`, `NO_CORRECT_CHOICE` (errors),
+  `MISSING_REFERENCE` (warning), and `DUPLICATE_SOURCE_ID` (error) (19 unit tests).
+- JSDoc on all exported functions, types, and constants in `app/src/lib/`.
+- JSDoc guideline added to `docs/project_guidelines.md`.
+
+### Changed
+
+- `docs/app_architecture_plan.md`: import strategy updated to JSON-only; repo structure,
+  progress checklist, and open decisions refreshed.
+- `docs/core_domain_model.md`: diagram updated to reflect live Prisma schema (`Card.importBatchId`,
+  `Card.originalId`, `MediaAsset` field notes).
+- `README.md`: current status, documentation table, Docker workflow, and import commands
+  updated to reflect Phase 2 progress.
+
 ## [0.2.0] - 2026-05-16
 
 ### Added

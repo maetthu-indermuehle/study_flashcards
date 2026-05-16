@@ -130,7 +130,7 @@ Avoid:
 Comment when:
 
 - the spaced repetition scheduler makes a non-obvious decision,
-- an importer handles a tricky Markdown edge case,
+- an importer handles a tricky edge case,
 - OpenShift deployment needs a specific workaround,
 - security-sensitive logic is involved,
 - media/source attribution behaviour is subtle,
@@ -138,6 +138,60 @@ Comment when:
 - a Next.js pattern is being used that may be unfamiliar, such as Server Components, Client Components, Server Actions, route handlers, loading states, error boundaries, caching, or metadata.
 - a Prisma or database pattern affects data integrity, migrations, relations, or query performance.
 - a Docker, Helm, or OpenShift choice is required for deployment rather than local convenience.
+
+## JSDoc
+
+All exported functions, types, and constants must have JSDoc comments so that
+documentation can be generated from the source code with tools like TypeDoc.
+
+**Functions** — use a summary sentence plus tags:
+
+```ts
+/**
+ * Parses a JSON string into an array of ParsedCard objects.
+ *
+ * @param jsonString - Raw JSON, expected to be an array of card objects per
+ *   docs/question_generation_guide.md.
+ * @returns Array of parsed cards; empty if the input array is empty.
+ * @throws {Error} If the input is not valid JSON.
+ * @throws {Error} If the structure does not match the card schema.
+ */
+export function parseJsonCards(jsonString: string): ParsedCard[] { ... }
+```
+
+**Types and interfaces** — document the type itself and each field:
+
+```ts
+/**
+ * A single answer choice extracted from a question file.
+ */
+export type ParsedChoice = {
+  /** Display text shown to the user. */
+  text: string;
+  /** True if this is a correct answer. Multiple choices may be correct. */
+  isCorrect: boolean;
+};
+```
+
+**Constants** — a single-line or multi-line summary:
+
+```ts
+/**
+ * Validated server-side environment variables. Throws at module load time
+ * if any required variable is missing or malformed.
+ */
+export const serverEnv = ...;
+```
+
+Rules:
+
+- Write the summary in the imperative or descriptive form ("Parses...", "The validated...").
+- `@param` — name and description for every parameter; include units or shape notes where helpful.
+- `@returns` — what comes back, including the empty/null case.
+- `@throws` — one tag per distinct error condition, with the error type and trigger.
+- `@example` — include for non-obvious usage; keep examples short and runnable.
+- Do not duplicate the TypeScript type signature in prose (e.g. do not write "a string parameter").
+- Inline field docs (`/** */`) are preferred over listing all fields in the parent comment.
 
 ## Code Structure
 

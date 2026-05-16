@@ -461,39 +461,38 @@ The most important part for version 1 is collecting review history consistently.
 
 ## Import and Export
 
-### Markdown Import
+### JSON as the canonical import format
 
-The current Markdown files should be treated as seed input.
+The app only reads JSON for imports. The question format is defined in
+`docs/question_generation_guide.md` and serves as the contract for both the importer
+and for LLM-generated content.
 
-Initial importer:
+Key design decisions:
 
-- parse existing `## MET-###` style blocks,
-- extract topic, type, difficulty, tags,
-- extract question,
-- extract choices if present,
-- extract answer,
-- extract explanation,
-- extract reference,
-- attach media paths where present.
+- **No Markdown import in the app.** The existing Markdown files in `Questions/` are
+  converted once by a standalone migration script (`scripts/md_to_json.ts`) and the
+  resulting JSON files are committed to `data/questions/`. After that conversion, the
+  Markdown files are archived and the database is the source of truth.
+- **All future questions are authored in JSON**, whether written by hand, generated with
+  ChatGPT or Claude (using the prompt in the generation guide), or produced by other
+  tooling.
+- **Multiple correct choices are supported.** Choices carry an explicit `isCorrect`
+  boolean to support "select all that apply" question types.
 
-The importer should create an `ImportBatch` and preview parsed cards before saving them permanently.
+The CLI import command (`app/scripts/import.ts`) parses and validates JSON, creates an
+`ImportBatch` record, and upserts cards by `sourceId` so re-runs are safe.
 
-### Future Bulk Import
+### Future Bulk Import UI
 
-Support:
+A browser-based import flow (Phase 8) will let users paste or upload JSON, preview
+parsed cards with validation feedback, and confirm the import.
 
-- Markdown
-- JSON
-- CSV
-- pasted AI-generated content
-
-Import should include validation:
+Import validation checks:
 
 - missing answer,
-- multiple correct choices,
-- duplicate question,
-- unsupported media references,
-- missing source/reference.
+- no correct choice on a multiple-choice card,
+- duplicate source ID within a batch,
+- missing reference.
 
 ### Export
 
@@ -567,12 +566,10 @@ OpenShift-specific requirements:
 
 ## Proposed Repository Structure
 
-Once implementation starts:
-
 ```text
 app/
   src/
-    app/
+    app/                    Next.js App Router pages and layouts
     components/
     features/
       study/
@@ -581,51 +578,60 @@ app/
       auth/
       progress/
     lib/
-      db/
+      db/                   Prisma client singleton
+      env/                  Environment variable validation (Zod)
+      importer/             JSON parser, validator, import service
       scheduler/
       auth/
-      importers/
       media/
   prisma/
     schema.prisma
     migrations/
+  scripts/
+    import.ts               CLI: import a JSON question file into the database
   public/
   Dockerfile
   package.json
 
 charts/
-  ppl-flashcards/
+  ppl-flashcards/           Helm chart (Phase 10)
     Chart.yaml
     values.yaml
     templates/
 
+data/
+  questions/                JSON question files (output of scripts/md_to_json.ts)
+    MET_126_175_*.json
+    questions_airlaw.json
+    ...
+
+scripts/
+  md_to_json.ts             One-off: convert Questions/*.md → data/questions/*.json
+
 docker-compose.yml
 docs/
-  app_architecture_plan.md
-Questions/
+Questions/                  Original Markdown question files (archived after migration)
 references/
 ```
-
-Alternative: keep the Next.js app at the repository root instead of `app/`. The `app/` directory is cleaner if we want to keep the current question/reference materials beside the application during the transition.
 
 ## Open Decisions
 
 - Exact authentication library: Auth.js/NextAuth vs a small custom credentials flow.
 - Whether media storage starts with app-served files, local volume, or MinIO.
-- Whether to use Helm or Kustomize for OpenShift. Current preference: Helm chart because the user requested Helm or similar.
-- Whether to import all existing cards immediately during app bootstrap or through an admin import page.
 - Whether multiple-choice cards also get a manual four-button rating after answer reveal.
-- Exact spaced repetition formula for version 1.
+- Exact spaced repetition formula for version 1 (SM-2 baseline; FSRS later).
 
-## Recommended Next Implementation Steps
+## Implementation Progress
 
-1. Scaffold the Next.js TypeScript app.
-2. Add Docker Compose with PostgreSQL.
-3. Add Prisma schema for users, cards, choices, tags, media, reviews, progress, and imports.
-4. Add initial migration and seed/bootstrap user.
-5. Build a Markdown importer for the existing question format.
-6. Build the mobile study UI for multiple-choice and open-answer cards.
-7. Implement the first spaced repetition scheduler.
-8. Add card editor and single-card creation.
-9. Add initial Helm chart for OpenShift deployment.
-10. Add PWA manifest and mobile polish.
+1. ~~Scaffold the Next.js TypeScript app.~~ ✓ Phase 0
+2. ~~Add Docker Compose with PostgreSQL.~~ ✓ Phase 0
+3. ~~Add Prisma schema and initial migration.~~ ✓ Phase 1
+4. ~~Add seed script and bootstrap user.~~ ✓ Phase 1
+5. Build JSON importer (parser, validator, import service, CLI). ← Phase 2 in progress
+6. Add minimal authentication (credentials login, sessions).
+7. Build the mobile study UI for multiple-choice and open-answer cards.
+8. Implement the first spaced repetition scheduler.
+9. Add card editor and single-card creation.
+10. Add media support (images, charts, diagrams).
+11. Add initial Helm chart for OpenShift deployment.
+12. Add PWA manifest and mobile polish.

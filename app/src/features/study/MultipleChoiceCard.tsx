@@ -12,6 +12,7 @@ type Props = {
   phase: Phase;
   onAnswer: (choiceId: string, isCorrect: boolean) => void;
   onNext: () => void;
+  cardId: string;
 };
 
 /**
@@ -26,6 +27,7 @@ export default function MultipleChoiceCard({
   phase,
   onAnswer,
   onNext,
+  cardId,
 }: Props) {
   return (
     <div>
@@ -83,6 +85,7 @@ export default function MultipleChoiceCard({
 
       {phase.name === "answered" && (
         <CardFeedback
+          cardId={cardId}
           explanation={card.explanation}
           reference={card.reference}
           onNext={onNext}

@@ -46,6 +46,7 @@ export default function StudyShell({ card }: Props) {
     return (
       <MultipleChoiceCard
         card={card}
+        cardId={card.id}
         phase={mcPhase}
         onAnswer={(selectedId, isCorrect) =>
           setMcPhase({ name: "answered", selectedId, isCorrect })
@@ -58,6 +59,7 @@ export default function StudyShell({ card }: Props) {
   return (
     <OpenAnswerCard
       card={card}
+      cardId={card.id}
       phase={oaPhase}
       onReveal={() => setOaPhase({ name: "revealed" })}
       onNext={handleNext}

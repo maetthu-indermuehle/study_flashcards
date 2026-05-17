@@ -9,6 +9,39 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.0] - 2026-05-17
+
+### Added
+
+- `app/src/lib/study/sm2.ts` — `computeNextProgress(current, rating, now?)` pure SM-2
+  scheduler. Maps WRONG→0, HARD→2, GOOD→4, EASY→5 quality scores. WRONG resurfaces the
+  card in 10 minutes (relearning step) rather than the next day so it can come back within
+  the same session. HARD resets to 1 day. GOOD/EASY advance with the standard SM-2 ease
+  factor curve (min ease 1.3). 17 unit tests.
+- `app/src/lib/study/get-next-card.ts` — `getNextCard(userId)` replaces `getRandomCard`.
+  Priority: (1) overdue card soonest-first, (2) unseen card random, (3) next-upcoming
+  card when studying ahead of schedule. Also exports `getDueCount(userId)` used on the
+  home page.
+- `app/src/app/api/study/review/route.ts` — `POST /api/study/review`. Reads session
+  cookie, validates `{ cardId, rating, responseMs? }`, runs SM-2, writes a `Review` row
+  and upserts `CardProgress` in one transaction.
+- Home page now shows a "X due" badge next to "Start studying →" when cards are overdue.
+
+### Changed
+
+- `app/src/features/study/CardFeedback.tsx` — replaced the single "Next card →" button
+  with four rating buttons: Wrong (red), Hard (orange), Good (green), Easy (blue). Clicking
+  a button POSTs to `/api/study/review` then navigates to the next card. Buttons are
+  disabled during the in-flight request.
+- `app/src/features/study/MultipleChoiceCard.tsx` and `OpenAnswerCard.tsx` — accept and
+  forward `cardId` prop to `CardFeedback`.
+- `app/src/features/study/StudyShell.tsx` — passes `card.id` as `cardId` to both card
+  components.
+- `app/src/app/study/page.tsx` — uses `getNextCard` instead of `getRandomCard`.
+- 17 new unit tests for the SM-2 scheduler (93 total).
+
+---
+
 ## [0.5.2] - 2026-05-17
 
 ### Fixed

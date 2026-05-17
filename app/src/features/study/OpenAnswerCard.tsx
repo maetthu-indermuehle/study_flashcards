@@ -10,6 +10,7 @@ type Props = {
   phase: Phase;
   onReveal: () => void;
   onNext: () => void;
+  cardId: string;
 };
 
 /**
@@ -23,6 +24,7 @@ export default function OpenAnswerCard({
   phase,
   onReveal,
   onNext,
+  cardId,
 }: Props) {
   return (
     <div>
@@ -54,6 +56,7 @@ export default function OpenAnswerCard({
           </div>
 
           <CardFeedback
+            cardId={cardId}
             explanation={card.explanation}
             reference={card.reference}
             onNext={onNext}

@@ -618,8 +618,7 @@ references/
 
 - Exact authentication library: Auth.js/NextAuth vs a small custom credentials flow.
 - Whether media storage starts with app-served files, local volume, or MinIO.
-- Whether multiple-choice cards also get a manual four-button rating after answer reveal.
-- Exact spaced repetition formula for version 1 (SM-2 baseline; FSRS later).
+- Whether media storage starts with app-served files, local volume, or MinIO.
 
 ## Implementation Progress
 
@@ -627,11 +626,11 @@ references/
 2. ~~Add Docker Compose with PostgreSQL.~~ ✓ Phase 0
 3. ~~Add Prisma schema and initial migration.~~ ✓ Phase 1
 4. ~~Add seed script and bootstrap user.~~ ✓ Phase 1
-5. Build JSON importer (parser, validator, import service, CLI). ← Phase 2 in progress
-6. Add minimal authentication (credentials login, sessions).
-7. Build the mobile study UI for multiple-choice and open-answer cards.
-8. Implement the first spaced repetition scheduler.
-9. Add card editor and single-card creation.
+5. ~~Build JSON importer (parser, validator, import service, CLI).~~ ✓ Phase 2
+6. ~~Add minimal authentication (credentials login, sessions).~~ ✓ Phase 3
+7. ~~Build the mobile study UI for multiple-choice and open-answer cards.~~ ✓ Phase 4
+8. ~~Implement the first spaced repetition scheduler.~~ ✓ Phase 5
+9. Add card editor and single-card creation. ← Phase 6
 10. Add media support (images, charts, diagrams).
 11. Add initial Helm chart for OpenShift deployment.
 12. Add PWA manifest and mobile polish.

@@ -11,9 +11,9 @@ Last updated: 2026-05-17
 
 **Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
 
-The JSON format spec is finalised, the parser (21 tests), validator (19 tests), and
-import service are implemented. The CLI script is the next remaining step before the
-smoke test.
+The JSON format spec is finalised, the parser (21 tests), validator (19 tests),
+import service, and CLI script are all implemented. The next step is a smoke test
+with a hand-written JSON file to confirm the full pipeline works against the database.
 
 ---
 
@@ -60,7 +60,7 @@ JSON format spec and LLM prompt.
 - [x] JSON parser + tests (`app/src/lib/importer/json-parser.ts`, 21 tests passing)
 - [x] Validator + tests (`app/src/lib/importer/validator.ts`, 19 tests passing)
 - [x] Import service (`app/src/lib/importer/import-service.ts`)
-- [ ] CLI script (`app/scripts/import.ts`)
+- [x] CLI script (`app/scripts/import.ts`)
 - [ ] Smoke test with hand-written JSON cards
 - [ ] Migration script (`scripts/md_to_json.ts`) — converts `Questions/*.md` → `data/questions/*.json`
 - [ ] Full import of all migrated files

@@ -26,6 +26,10 @@ This project uses semantic versioning.
   `ParsedCard[]` batch to the database. Upserts cards by `(deckId, originalId)`,
   replaces choices/tags/source-references wholesale, and manages an `ImportBatch`
   audit row (`DRAFT` → `IMPORTED` / `FAILED`). Media assets are deferred to Phase 7.
+- `app/scripts/import.ts` — CLI entry point wiring parser → validator → import
+  service. Flags: `--dry-run` (validate only), `--force` (ignore errors), `--verbose`
+  (list each card), `--deck <name>`, `--user <email>`.
+- `app/package.json`: added `"import"` script shortcut (`tsx scripts/import.ts`).
 
 ### Changed
 

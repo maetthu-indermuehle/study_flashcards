@@ -7,7 +7,7 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 **Phase 2 in progress** — branch: `phase-2-json-importer`
 
 - Phase 0 (project setup) and Phase 1 (database schema, migration, seed) are complete and merged to `main`.
-- Phase 2 is in progress: format spec ✓, JSON parser ✓, validator ✓, import service ✓ — CLI script remaining.
+- Phase 2 is in progress: format spec ✓, JSON parser ✓, validator ✓, import service ✓, CLI ✓ — smoke test remaining.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.
 
@@ -90,10 +90,18 @@ docker compose exec db psql -U ppl_flashcards ppl_flashcards
 
 The canonical question format is JSON — see [docs/question_generation_guide.md](docs/question_generation_guide.md) for the full spec and an LLM prompt for generating new questions.
 
-Once Phase 2 is complete, import a JSON file with:
+Import a JSON question file (validate only):
 
 ```bash
 docker compose exec app npx tsx scripts/import.ts path/to/questions.json --dry-run
 ```
 
-Remove `--dry-run` to write to the database.
+Remove `--dry-run` to write to the database. Additional flags:
+
+| Flag | Description |
+|------|-------------|
+| `--dry-run` | Parse and validate only; no database writes |
+| `--force` | Import even when validation errors are present |
+| `--verbose` | Print each card's sourceId as it is processed |
+| `--deck <name>` | Target deck name (default: `Canadian PPL`) |
+| `--user <email>` | Deck owner email (default: `SEED_USER_EMAIL` env var) |

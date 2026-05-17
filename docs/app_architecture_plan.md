@@ -616,9 +616,7 @@ references/
 
 ## Open Decisions
 
-- Exact authentication library: Auth.js/NextAuth vs a small custom credentials flow.
-- Whether media storage starts with app-served files, local volume, or MinIO.
-- Whether media storage starts with app-served files, local volume, or MinIO.
+- Whether media storage grows beyond static `public/assets/` to object storage (MinIO / S3) for Phase 7.
 
 ## Implementation Progress
 
@@ -630,7 +628,8 @@ references/
 6. ~~Add minimal authentication (credentials login, sessions).~~ ✓ Phase 3
 7. ~~Build the mobile study UI for multiple-choice and open-answer cards.~~ ✓ Phase 4
 8. ~~Implement the first spaced repetition scheduler.~~ ✓ Phase 5
-9. Add card editor and single-card creation. ← Phase 6
-10. Add media support (images, charts, diagrams).
+9. ~~Serve question images; add card flagging and notes.~~ ✓ Phase 5 patches
+10. Add card editor and single-card creation. ← Phase 6
+11. Add full media management (upload UI, object storage).
 11. Add initial Helm chart for OpenShift deployment.
 12. Add PWA manifest and mobile polish.

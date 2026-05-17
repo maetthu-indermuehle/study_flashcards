@@ -9,6 +9,18 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.4] - 2026-05-17
+
+### Changed
+
+- Updated `README.md`, `docs/project_status.md`, `docs/app_architecture_plan.md`, and
+  `docs/core_domain_model.md` to reflect all Phase 5 work: SM-2 scheduler, review
+  rating, due-card queue, question images, card flagging, and flag notes.
+  `CardTag.note` added to the ER diagram. Resolved duplicate open-decision entry in
+  architecture plan.
+
+---
+
 ## [0.6.3] - 2026-05-17
 
 ### Added

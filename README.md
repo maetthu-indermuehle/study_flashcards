@@ -7,7 +7,7 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 **Phase 5 complete** — branch: `phase-5-spaced-repetition`
 
 - Phases 0–4 are complete and merged to `main`.
-- Phase 5 is complete: SM-2 spaced repetition, review rating (Wrong/Hard/Good/Easy), due-card priority queue.
+- Phase 5 adds SM-2 spaced repetition, review rating (Wrong/Hard/Good/Easy), due-card priority queue, question images, card flagging with notes, and source ID labels.
 - Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.

@@ -9,12 +9,10 @@ Last updated: 2026-05-17
 
 ## Current state
 
-**Phase 5 is complete.** Working on branch `phase-5-spaced-repetition`.
+**Phase 5 is complete** (plus several post-phase additions). Working on branch `phase-5-spaced-repetition`.
 
-The full study loop is live: log in, study due cards (due-first, then new, then
-ahead-of-schedule), rate each card (Wrong/Hard/Good/Easy), and reviews are persisted with
-SM-2 scheduling. Wrong cards resurface in 10 minutes within the same session. The home
-page shows a due-count badge. 93 unit tests pass.
+The full study loop is live with spaced repetition, question images, card flagging, and
+flag notes. 93 unit tests pass.
 
 ---
 
@@ -96,6 +94,19 @@ page shows a due-count badge. 93 unit tests pass.
 - Home page shows "X due" badge next to "Start studying →".
 - 93 unit tests total.
 
+### Phase 5 additions (post-merge patches)
+
+- **Source ID label** — each card shows its `originalId` (e.g. `MET-042`) in small
+  monospace text for easy issue reporting.
+- **Flag button + notes** — flag icon on every card toggles a persistent "flagged" marker
+  stored as a custom tag (no migration for the flag itself). An inline amber panel lets
+  the user attach a free-text note explaining what is wrong. Note stored in `CardTag.note`
+  (migration `20260517071643_add_card_tag_note`). `POST /api/study/flag` handles toggle
+  and note upsert.
+- **Question images** — 30 PNG assets copied to `app/public/assets/`. `QuestionText`
+  component parses the Markdown image syntax embedded in question text
+  (`![alt](assets/FILENAME.png) body`) and renders the image above the question.
+
 ---
 
 ## Phases ahead (summary)
@@ -155,3 +166,11 @@ duplicates. A missing `data/questions/` directory is skipped silently so CI is u
 - **Proxy (not middleware)** — Next.js 16 renames `middleware.ts` to `proxy.ts`; the
   exported function must be named `proxy`. Functionality is identical to middleware in
   earlier versions.
+- **Question images as static assets** — 30 PNG files committed to `app/public/assets/`
+  and served by Next.js. Images are referenced inline in question text using Markdown
+  syntax (`![alt](assets/FILENAME.png)`); `QuestionText` parses and renders them. Full
+  Phase 7 media management (object storage, upload UI) is deferred.
+- **Flags stored as custom tags** — the "flagged" marker uses the existing `Tag`/`CardTag`
+  tables (`{ name: "flagged", type: CUSTOM }`) rather than a dedicated column, avoiding a
+  schema migration for the flag itself. The note field (`CardTag.note`) required one
+  nullable-column migration.

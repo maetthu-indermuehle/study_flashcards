@@ -79,6 +79,7 @@ erDiagram
     CARD_TAG {
         string cardId FK
         string tagId FK
+        string note "nullable"
     }
 
     SOURCE_REFERENCE {
@@ -169,4 +170,5 @@ erDiagram
 - `ImportBatch` records how cards entered the system and supports preview, validation, rollback, and later export/debug workflows.
 - `Card.originalId` preserves the source identifier from the import file (e.g. `"MET-042"`) for traceability and idempotent re-imports.
 - `Card.importBatchId` links a card back to the import run that created it.
+- `CardTag.note` stores a free-text annotation when the tag is the special `flagged` marker — lets the user record what they think is wrong with a card for later review.
 

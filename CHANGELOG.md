@@ -8,6 +8,46 @@ This project uses semantic versioning.
 
 ### Added
 
+- `app/src/lib/session/types.ts` — `SessionPayload` type shared across the session layer.
+- `app/src/lib/session/codec.ts` — `signSession` / `verifySession` using HMAC-SHA256
+  over a base64url-encoded JSON payload. Constant-time signature comparison via
+  `crypto.timingSafeEqual`. No external libraries.
+- `app/src/lib/session/cookies.ts` — `createSessionCookie` / `readSessionCookie` /
+  `clearSessionCookie` via the async `cookies()` API from `next/headers`.
+- `app/src/lib/auth/password.ts` — `verifyPassword` using `crypto.scrypt` in the same
+  `<hash>.<salt>` format produced by the seed script.
+- `app/src/proxy.ts` — optimistic auth guard (Next.js 16 renames middleware to proxy).
+  Unauthenticated requests to protected routes redirect to `/login`; authenticated users
+  on `/login` redirect to `/`. API routes and static assets are excluded from matching.
+- `app/src/app/api/auth/login/route.ts` — `POST /api/auth/login`: looks up user by
+  email, verifies password, sets signed session cookie. Returns 401 for any credential
+  failure (same message to prevent enumeration).
+- `app/src/app/api/auth/logout/route.ts` — `POST /api/auth/logout`: clears session cookie.
+- `app/src/app/login/page.tsx` — Login page (Server Component); redirects to `/` if
+  already authenticated.
+- `app/src/app/login/LoginForm.tsx` — Login form (Client Component); posts to
+  `/api/auth/login`, redirects to `/` on success, displays inline error on failure.
+- `app/src/app/LogoutButton.tsx` — Sign out button (Client Component); posts to
+  `/api/auth/logout` then redirects to `/login`.
+- `SESSION_SECRET` env var (min 32 chars) added to `serverEnvSchema`, `docker-compose.yml`,
+  and `.env.example`. Generate a production value with `openssl rand -base64 32`.
+- `SESSION_MAX_AGE_SECONDS` env var (default 604800 = 7 days) added to schema.
+- 15 new unit tests: 8 for the session codec, 7 for password verification (65 total).
+
+### Changed
+
+- `app/src/app/page.tsx` — home page now requires authentication (redirects to `/login`
+  if unauthenticated); shows logged-in email and Sign out button; badge updated to Phase 3.
+- `app/src/lib/env/server-schema.ts` — added `SESSION_SECRET` and `SESSION_MAX_AGE_SECONDS`
+  to the Zod schema.
+- `app/src/lib/env/server.ts` — passes the two new env vars to `serverEnvSchema.parse`.
+- `app/src/lib/env/server.test.ts` — updated fixtures to include `SESSION_SECRET`; added
+  two new test cases for the new fields (8 tests total, up from 6).
+
+---
+
+### Added (Phase 2)
+
 - Canonical JSON question format spec (`docs/question_generation_guide.md`) with a
   ready-to-paste LLM prompt, field definitions, media support (`attribution`, `origin`),
   and examples for all card types.

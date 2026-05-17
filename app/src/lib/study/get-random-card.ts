@@ -76,6 +76,8 @@ export function mapRawCardToStudyCard(raw: RawCard): StudyCard {
       explanation: raw.explanation,
       choices,
       reference,
+      originalId: null,
+      flagged: false,
     };
   }
 
@@ -86,6 +88,8 @@ export function mapRawCardToStudyCard(raw: RawCard): StudyCard {
     answer: raw.answer,
     explanation: raw.explanation,
     reference,
+    originalId: null,
+    flagged: false,
   };
 }
 

@@ -9,6 +9,20 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.1] - 2026-05-17
+
+### Added
+
+- **Source ID label** — each card now shows its original source ID (e.g. `MET-042`)
+  in small monospace text above the question, making it easy to reference a specific
+  card when reporting a problem.
+- **Flag button** — a flag icon in the top-right of every card toggles a "flagged"
+  marker. Flagged cards are highlighted in amber and persist across sessions. Stored
+  as a `flagged` custom tag via the existing `Tag`/`CardTag` tables — no migration
+  required. `POST /api/study/flag` handles the toggle.
+
+---
+
 ## [0.6.0] - 2026-05-17
 
 ### Added

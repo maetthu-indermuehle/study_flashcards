@@ -12,6 +12,7 @@
  */
 
 import { prisma } from "@/lib/db/client";
+import { TagType } from "../../generated/prisma/enums";
 import type { StudyCard, StudyCardChoice } from "./types";
 
 // ---------------------------------------------------------------------------
@@ -26,8 +27,10 @@ type RawCard = {
   question: string;
   answer: string;
   explanation: string | null;
+  originalId: string | null;
   choices: RawChoice[];
   references: RawReference[];
+  tags: { tag: { name: string } }[];
 };
 
 // ---------------------------------------------------------------------------
@@ -136,8 +139,14 @@ async function fetchFullCard(cardId: string): Promise<StudyCard | null> {
       question: true,
       answer: true,
       explanation: true,
+      originalId: true,
       choices: { select: { id: true, text: true, isCorrect: true } },
       references: { select: { label: true, url: true }, take: 1 },
+      tags: {
+        where: { tag: { name: "flagged", type: TagType.CUSTOM } },
+        select: { tag: { select: { name: true } } },
+        take: 1,
+      },
     },
   });
   if (!raw) return null;
@@ -156,6 +165,7 @@ function mapRawCard(raw: RawCard): StudyCard {
   const reference = raw.references[0]
     ? { label: raw.references[0].label, url: raw.references[0].url }
     : null;
+  const flagged = raw.tags.length > 0;
 
   if (raw.type === "MULTIPLE_CHOICE") {
     const choices: StudyCardChoice[] = shuffleArray(
@@ -169,6 +179,8 @@ function mapRawCard(raw: RawCard): StudyCard {
       explanation: raw.explanation,
       choices,
       reference,
+      originalId: raw.originalId,
+      flagged,
     };
   }
 
@@ -179,5 +191,7 @@ function mapRawCard(raw: RawCard): StudyCard {
     answer: raw.answer,
     explanation: raw.explanation,
     reference,
+    originalId: raw.originalId,
+    flagged,
   };
 }

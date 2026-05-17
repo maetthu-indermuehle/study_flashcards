@@ -30,4 +30,6 @@ export const serverEnv = serverEnvSchema.parse({
   DATABASE_URL: process.env.DATABASE_URL,
   NODE_ENV: process.env.NODE_ENV,
   PORT: process.env.PORT,
+  SESSION_SECRET: process.env.SESSION_SECRET,
+  SESSION_MAX_AGE_SECONDS: process.env.SESSION_MAX_AGE_SECONDS,
 });

@@ -17,6 +17,8 @@ services:
       PORT: 3000
       SEED_USER_EMAIL: admin@local.dev
       SEED_USER_PASSWORD: localdev
+      # Local dev only — not a secret. Generate a production value with: openssl rand -base64 32
+      SESSION_SECRET: local-dev-session-secret-not-for-production-use
     ports:
       - "3000:3000"
     volumes:

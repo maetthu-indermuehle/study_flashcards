@@ -150,6 +150,8 @@ export async function importCards(
             answer: card.answerText,
             explanation: card.explanation,
             difficulty: card.difficulty ?? "MEDIUM",
+            // Imported cards are immediately available for study.
+            status: "PUBLISHED" as const,
             importBatchId: batchId,
           };
 

@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.5.1] - 2026-05-17
+
+### Fixed
+
+- `app/src/lib/importer/import-service.ts` — set `status: "PUBLISHED"` on all
+  created and updated cards so they are immediately available for study. Previously
+  cards defaulted to `DRAFT` (the Prisma schema default), causing the study route
+  to return "No cards available".
+
+---
+
 ## [0.5.0] - 2026-05-17
 
 ### Added

@@ -9,6 +9,20 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.5.2] - 2026-05-17
+
+### Fixed
+
+- `app/src/lib/env/server.ts` — replaced eager `serverEnvSchema.parse()` at
+  module load time with a lazy Proxy. `next build` evaluates route modules to
+  collect page data but `DATABASE_URL` and `SESSION_SECRET` are not present in
+  the Docker builder stage (they are runtime secrets). The eager parse caused a
+  `ZodError` that failed the production Docker image build. The Proxy defers
+  parsing until the first property access (request time), so the image builds
+  cleanly while still failing fast on a misconfigured runtime environment.
+
+---
+
 ## [0.5.1] - 2026-05-17
 
 ### Fixed

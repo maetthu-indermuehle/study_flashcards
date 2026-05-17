@@ -1,6 +1,7 @@
 "use client";
 
 import CardFeedback from "./CardFeedback";
+import QuestionText from "./QuestionText";
 import type { OpenAnswerCard as OpenAnswerCardType } from "@/lib/study/types";
 
 type Phase = { name: "idle" } | { name: "revealed" };
@@ -33,9 +34,7 @@ export default function OpenAnswerCard({
         <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-sky-700">
           Open answer
         </p>
-        <p className="text-lg font-medium leading-snug text-slate-950">
-          {card.question}
-        </p>
+        <QuestionText text={card.question} />
       </div>
 
       {phase.name === "idle" ? (

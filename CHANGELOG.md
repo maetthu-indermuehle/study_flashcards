@@ -9,6 +9,19 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.3] - 2026-05-17
+
+### Added
+
+- `app/public/assets/` — 30 question images (PNG) committed as static assets
+  served by Next.js at `/assets/<filename>`.
+- `app/src/features/study/QuestionText.tsx` — parses the Markdown image syntax
+  embedded in question text (`![alt](assets/FILENAME.png) question body`) and
+  renders the image above the question text. Questions without an image render
+  as before. Used by both `MultipleChoiceCard` and `OpenAnswerCard`.
+
+---
+
 ## [0.6.2] - 2026-05-17
 
 ### Added

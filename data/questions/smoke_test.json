@@ -1,0 +1,50 @@
+[
+  {
+    "id": "SMOKE-001",
+    "topic": "Meteorology",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["metar", "weather-products"],
+    "question": "What does METAR stand for?",
+    "choices": [
+      { "text": "Meteorological Aerodrome Report", "correct": true },
+      { "text": "Meteorological Altitude Reading", "correct": false },
+      { "text": "Minimum Equipment Terminal Area Report", "correct": false },
+      { "text": "Mean Estimated Temperature and Rain", "correct": false }
+    ],
+    "answer": "Meteorological Aerodrome Report",
+    "explanation": "METAR is the international standard format for reporting surface weather observations at aerodromes.",
+    "reference": "Transport Canada AIM MET 1.1",
+    "media": []
+  },
+  {
+    "id": "SMOKE-002",
+    "topic": "Air Law",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": ["right-of-way", "collision-avoidance"],
+    "question": "When two aircraft are converging at approximately the same altitude, which aircraft has the right-of-way?",
+    "answer": "The aircraft on the other's right has the right-of-way. The aircraft on the left must give way.",
+    "explanation": "Canadian Aviation Regulations state that when two aircraft are converging, the aircraft to the other's right has the right-of-way. This mirrors the nautical rule.",
+    "reference": "CARs 602.19",
+    "media": []
+  },
+  {
+    "id": "SMOKE-003",
+    "topic": "Meteorology",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["icing", "airframe-icing"],
+    "question": "Which of the following conditions are required for structural icing to occur? Select all that apply.",
+    "choices": [
+      { "text": "Visible moisture (cloud, freezing rain, or freezing drizzle)", "correct": true },
+      { "text": "Outside air temperature at or below 0°C", "correct": true },
+      { "text": "Turbulence", "correct": false },
+      { "text": "Airspeed above Vno", "correct": false }
+    ],
+    "answer": "Visible moisture and outside air temperature at or below 0°C",
+    "explanation": "Structural icing requires two simultaneous conditions: visible moisture and a surface temperature at or below freezing. Turbulence and airspeed are not required.",
+    "reference": "Transport Canada AIM MET 9.1",
+    "media": []
+  }
+]

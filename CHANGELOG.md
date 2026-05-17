@@ -30,6 +30,10 @@ This project uses semantic versioning.
   service. Flags: `--dry-run` (validate only), `--force` (ignore errors), `--verbose`
   (list each card), `--deck <name>`, `--user <email>`.
 - `app/package.json`: added `"import"` script shortcut (`tsx scripts/import.ts`).
+- `data/questions/smoke_test.json` — three hand-written cards (single-correct MC,
+  open-answer, multi-correct MC) used to verify the full pipeline end-to-end.
+- `docker-compose.yml`: added `./data:/data` volume mount so JSON files at the
+  repo root are accessible inside the container for import.
 
 ### Changed
 

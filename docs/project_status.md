@@ -12,8 +12,8 @@ Last updated: 2026-05-17
 **Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
 
 The JSON format spec is finalised, the parser (21 tests), validator (19 tests),
-import service, and CLI script are all implemented. The next step is a smoke test
-with a hand-written JSON file to confirm the full pipeline works against the database.
+import service, CLI script, and smoke test are all done. The next step is the
+one-off Markdown migration script (`scripts/md_to_json.ts`).
 
 ---
 
@@ -61,7 +61,7 @@ JSON format spec and LLM prompt.
 - [x] Validator + tests (`app/src/lib/importer/validator.ts`, 19 tests passing)
 - [x] Import service (`app/src/lib/importer/import-service.ts`)
 - [x] CLI script (`app/scripts/import.ts`)
-- [ ] Smoke test with hand-written JSON cards
+- [x] Smoke test with hand-written JSON cards (`data/questions/smoke_test.json`)
 - [ ] Migration script (`scripts/md_to_json.ts`) — converts `Questions/*.md` → `data/questions/*.json`
 - [ ] Full import of all migrated files
 - [ ] Update page badge to Phase 2

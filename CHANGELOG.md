@@ -41,7 +41,9 @@ This project uses semantic versioning.
   Converts 923 cards from 17 source files with 0 warnings. Run from the repo
   root: `npx tsx scripts/md_to_json.ts [--verbose]`.
 - `data/questions/*.json` — 923 migrated question cards committed as the
-  portable source of truth for all deployments.
+  portable source of truth for all deployments. Full import: 926 cards in the
+  database (660 MC, 266 open answer, 2640 choices, 902 source references,
+  642 tags).
 
 ### Changed
 

@@ -11,10 +11,8 @@ Last updated: 2026-05-17
 
 **Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
 
-The JSON format spec is finalised, the parser (21 tests), validator (19 tests),
-import service, CLI script, smoke test, and Markdown migration script are all done.
-923 cards migrated from 17 source Markdown files into `data/questions/` with
-0 warnings. The next step is the full import of all migrated files.
+All Phase 2 tasks are complete. 926 cards (660 MC, 266 open answer) are live in the
+database. The page badge still shows Phase 1 — that is the last remaining item.
 
 ---
 
@@ -64,7 +62,7 @@ JSON format spec and LLM prompt.
 - [x] CLI script (`app/scripts/import.ts`)
 - [x] Smoke test with hand-written JSON cards (`data/questions/smoke_test.json`)
 - [x] Migration script (`scripts/md_to_json.ts`) — 923 cards from 17 source files, 0 warnings
-- [ ] Full import of all migrated files
+- [x] Full import of all migrated files — 926 cards in database (660 MC, 266 open answer)
 - [ ] Update page badge to Phase 2
 
 ---

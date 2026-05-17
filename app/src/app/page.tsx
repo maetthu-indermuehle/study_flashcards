@@ -26,7 +26,7 @@ export default async function Home() {
             </span>
             <LogoutButton />
             <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
-              Phase 3
+              Phase 4
             </span>
           </div>
         </header>
@@ -34,44 +34,44 @@ export default async function Home() {
         <div className="grid flex-1 place-items-center py-12">
           <div className="w-full max-w-2xl">
             <p className="mb-3 text-sm font-medium text-sky-700">
-              Authentication
+              Study flow
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-              926 cards imported and ready.
+              926 cards ready to study.
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-8 text-slate-700">
-              You&apos;re logged in. The next phase will add the mobile flashcard
-              study flow.
+              Multiple-choice and open-answer cards from the full Canadian PPL
+              groundschool syllabus.
             </p>
 
             <dl className="mt-8 grid gap-3 sm:grid-cols-3">
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <dt className="text-sm font-medium text-slate-500">Stack</dt>
+                <dt className="text-sm font-medium text-slate-500">Cards</dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  Next.js + TypeScript
+                  926 published
                 </dd>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <dt className="text-sm font-medium text-slate-500">Database</dt>
+                <dt className="text-sm font-medium text-slate-500">Types</dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  PostgreSQL + Prisma
+                  MC + open answer
                 </dd>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
                 <dt className="text-sm font-medium text-slate-500">
-                  Deployment
+                  Selection
                 </dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  Docker/OpenShift ready
+                  Random
                 </dd>
               </div>
             </dl>
 
             <a
+              href="/study"
               className="mt-8 inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
-              href="/api/health"
             >
-              Check health endpoint
+              Start studying →
             </a>
           </div>
         </div>

@@ -9,6 +9,41 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.5.0] - 2026-05-17
+
+### Added
+
+- `app/src/lib/study/types.ts` — `StudyCard` discriminated union (`MultipleChoiceCard |
+  OpenAnswerCard`), `StudyCardChoice`, `StudyCardReference` types.
+- `app/src/lib/study/get-random-card.ts` — `getRandomCard(userId)` fetches one random
+  published card from the user's deck via a two-query strategy (all IDs → random pick →
+  full fetch with choices and source reference). Choices are Fisher-Yates shuffled before
+  returning. Pure helpers `shuffleArray` and `mapRawCardToStudyCard` are exported for
+  unit testing.
+- `app/src/app/study/page.tsx` — Server Component; reads session, calls `getRandomCard`,
+  passes card to `<StudyShell key={card.id}>`. The `key` prop ensures state resets on
+  every new card.
+- `app/src/app/study/loading.tsx` — animated skeleton shown while the RSC payload for
+  the next card loads.
+- `app/src/app/study/error.tsx` — error boundary with retry button.
+- `app/src/features/study/StudyShell.tsx` — Client Component owning the state machine
+  (`idle → answered | revealed`). Calls `router.push('/study', { scroll: false })` for
+  "Next", triggering a fresh RSC render.
+- `app/src/features/study/MultipleChoiceCard.tsx` — choice buttons with correct (green)
+  / incorrect (red) inline feedback after selection.
+- `app/src/features/study/OpenAnswerCard.tsx` — Reveal button transitions to answer +
+  feedback view.
+- `app/src/features/study/CardFeedback.tsx` — shared explanation + reference citation +
+  Next card button.
+- 11 new unit tests for `shuffleArray` and `mapRawCardToStudyCard` (76 total).
+
+### Changed
+
+- `app/src/app/page.tsx` — replaced health endpoint link with "Start studying →" button
+  pointing to `/study`; badge updated to Phase 4; copy updated.
+
+---
+
 ## [0.4.0] - 2026-05-17
 
 ### Added

@@ -9,6 +9,21 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.2] - 2026-05-17
+
+### Added
+
+- `app/prisma/schema.prisma` — added `note String?` to `CardTag`. Migration
+  `20260517071643_add_card_tag_note` applies a safe nullable column addition.
+- Flag notes — clicking the flag button opens an inline amber panel with a
+  textarea. Notes are saved alongside the flag (`POST /api/study/flag` now
+  accepts `note` and `unflag` fields). Flagged cards show an "Edit flag note"
+  panel pre-filled with the existing note; a "Remove flag" button unflagged the
+  card entirely. The note is fetched alongside the card and pre-populated on
+  every render.
+
+---
+
 ## [0.6.1] - 2026-05-17
 
 ### Added

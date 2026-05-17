@@ -35,6 +35,8 @@ export type MultipleChoiceCard = {
   originalId: string | null;
   /** True if the card has been flagged for later review. */
   flagged: boolean;
+  /** Note left when the card was flagged, if any. */
+  flagNote: string | null;
 };
 
 /** An open-answer card where the user self-assesses after revealing. */
@@ -49,6 +51,8 @@ export type OpenAnswerCard = {
   originalId: string | null;
   /** True if the card has been flagged for later review. */
   flagged: boolean;
+  /** Note left when the card was flagged, if any. */
+  flagNote: string | null;
 };
 
 /**

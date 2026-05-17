@@ -30,7 +30,7 @@ type RawCard = {
   originalId: string | null;
   choices: RawChoice[];
   references: RawReference[];
-  tags: { tag: { name: string } }[];
+  tags: { note: string | null; tag: { name: string } }[];
 };
 
 // ---------------------------------------------------------------------------
@@ -144,7 +144,7 @@ async function fetchFullCard(cardId: string): Promise<StudyCard | null> {
       references: { select: { label: true, url: true }, take: 1 },
       tags: {
         where: { tag: { name: "flagged", type: TagType.CUSTOM } },
-        select: { tag: { select: { name: true } } },
+        select: { note: true, tag: { select: { name: true } } },
         take: 1,
       },
     },
@@ -166,6 +166,7 @@ function mapRawCard(raw: RawCard): StudyCard {
     ? { label: raw.references[0].label, url: raw.references[0].url }
     : null;
   const flagged = raw.tags.length > 0;
+  const flagNote = raw.tags[0]?.note ?? null;
 
   if (raw.type === "MULTIPLE_CHOICE") {
     const choices: StudyCardChoice[] = shuffleArray(
@@ -181,6 +182,7 @@ function mapRawCard(raw: RawCard): StudyCard {
       reference,
       originalId: raw.originalId,
       flagged,
+      flagNote,
     };
   }
 
@@ -193,5 +195,6 @@ function mapRawCard(raw: RawCard): StudyCard {
     reference,
     originalId: raw.originalId,
     flagged,
+    flagNote,
   };
 }

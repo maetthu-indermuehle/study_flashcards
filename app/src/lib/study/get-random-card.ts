@@ -78,6 +78,7 @@ export function mapRawCardToStudyCard(raw: RawCard): StudyCard {
       reference,
       originalId: null,
       flagged: false,
+      flagNote: null,
     };
   }
 
@@ -90,6 +91,7 @@ export function mapRawCardToStudyCard(raw: RawCard): StudyCard {
     reference,
     originalId: null,
     flagged: false,
+    flagNote: null,
   };
 }
 

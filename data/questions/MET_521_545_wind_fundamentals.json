@@ -1,0 +1,762 @@
+[
+  {
+    "id": "MET-521",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "wind",
+      "direction",
+      "aviation-reports"
+    ],
+    "question": "In aviation weather, wind direction is normally reported as:",
+    "choices": [
+      {
+        "text": "The direction from which the wind is blowing",
+        "correct": true
+      },
+      {
+        "text": "The direction toward which the wind is blowing",
+        "correct": false
+      },
+      {
+        "text": "Always magnetic north in upper-air charts",
+        "correct": false
+      },
+      {
+        "text": "Always true north in ATIS broadcasts",
+        "correct": false
+      }
+    ],
+    "answer": "The direction from which the wind is blowing.",
+    "explanation": "A reported wind of 270 means the wind is coming from the west and blowing toward the east. This matters for runway selection, drift correction, and crosswind calculation. Surface aviation wind reports for airport operations are normally used in relation to runway direction, while some weather charts may use true direction, so pilots must know the context.",
+    "reference": "Transport Canada Flight Training Manual, Navigation and Wind; NAV CANADA Aviation Weather Services Guide, METAR/SPECI Wind",
+    "media": []
+  },
+  {
+    "id": "MET-522",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "veering",
+      "backing",
+      "wind-shift"
+    ],
+    "question": "What does it mean when wind veers?",
+    "choices": [
+      {
+        "text": "Wind direction changes clockwise with time or height",
+        "correct": true
+      },
+      {
+        "text": "Wind direction changes counterclockwise with time or height",
+        "correct": false
+      },
+      {
+        "text": "Wind speed becomes zero",
+        "correct": false
+      },
+      {
+        "text": "Wind changes from gusty to calm only",
+        "correct": false
+      }
+    ],
+    "answer": "Wind direction changes clockwise with time or height.",
+    "explanation": "Veering means a clockwise change in wind direction, such as from south to southwest to west. It can be discussed over time at the surface or with height in the atmosphere. Wind shifts matter because they can signal frontal passage, changing runway suitability, changing drift, and changing turbulence or wind shear risk.",
+    "reference": "FAA Aviation Weather Handbook, Wind and Fronts; Transport Canada Flight Training Manual, Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-523",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "backing",
+      "wind-shift",
+      "fronts"
+    ],
+    "question": "What does it mean when wind backs?",
+    "choices": [
+      {
+        "text": "Wind direction changes counterclockwise with time or height",
+        "correct": true
+      },
+      {
+        "text": "Wind speed increases only",
+        "correct": false
+      },
+      {
+        "text": "Wind direction changes clockwise only",
+        "correct": false
+      },
+      {
+        "text": "Wind becomes a tailwind",
+        "correct": false
+      }
+    ],
+    "answer": "Wind direction changes counterclockwise with time or height.",
+    "explanation": "Backing is a counterclockwise wind direction change, such as from west to southwest to south. It can indicate changing air masses or frontal influence. For a pilot, backing wind can change crosswind component, drift correction, groundspeed, and the preferred runway.",
+    "reference": "FAA Aviation Weather Handbook, Wind and Fronts; Transport Canada Flight Training Manual, Meteorology",
+    "media": []
+  },
+  {
+    "id": "MET-524",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "veering",
+      "cold-front",
+      "weather-trends"
+    ],
+    "question": "In many mid-latitude frontal situations, a surface wind shift from southerly to westerly or northwesterly often suggests:",
+    "choices": [
+      {
+        "text": "A cold front or colder air moving through",
+        "correct": true
+      },
+      {
+        "text": "Guaranteed clear calm weather for the next hour",
+        "correct": false
+      },
+      {
+        "text": "No change in air mass",
+        "correct": false
+      },
+      {
+        "text": "The altimeter is unusable",
+        "correct": false
+      }
+    ],
+    "answer": "A cold front or colder air moving through.",
+    "explanation": "A cold frontal passage often brings a wind shift, pressure change, temperature change, and sometimes showers or turbulence. The exact pattern depends on the system, but a shift from warm-sector southerly flow to westerly or northwesterly flow is a common clue. Pilots should connect the wind shift with other observations rather than use it alone.",
+    "reference": "FAA Aviation Weather Handbook, Cold Fronts; Transport Canada Flight Training Manual, Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-525",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "gusts",
+      "metar",
+      "wind"
+    ],
+    "question": "In a METAR wind group `24015G25KT`, what does `G25` mean?",
+    "choices": [
+      {
+        "text": "Gusts to 25 kt",
+        "correct": true
+      },
+      {
+        "text": "Wind from 25 degrees",
+        "correct": false
+      },
+      {
+        "text": "Wind calm for 25 minutes",
+        "correct": false
+      },
+      {
+        "text": "A 25 kt tailwind only",
+        "correct": false
+      }
+    ],
+    "answer": "Gusts to 25 kt.",
+    "explanation": "The steady wind is from 240 degrees at 15 kt, with gusts reaching 25 kt. Gusts matter because aircraft control and performance are affected by the peak wind as well as the average wind. A landing may be within limits using the steady wind but uncomfortable or unsafe when gusts are considered.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Wind; Transport Canada Flight Training Manual, Circuit and Landing Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-526",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "squall",
+      "wind",
+      "weather-hazard"
+    ],
+    "question": "What is a squall?",
+    "choices": [
+      {
+        "text": "A sudden, strong increase in wind speed lasting longer than a brief gust",
+        "correct": true
+      },
+      {
+        "text": "A permanent calm wind",
+        "correct": false
+      },
+      {
+        "text": "A type of high cloud",
+        "correct": false
+      },
+      {
+        "text": "A pressure setting",
+        "correct": false
+      }
+    ],
+    "answer": "A sudden, strong increase in wind speed lasting longer than a brief gust.",
+    "explanation": "A squall is more than a momentary bump in wind. It is a significant sudden increase that can be associated with showers, thunderstorms, fronts, or convective outflow. For pilots, squalls can create abrupt crosswind changes, wind shear, turbulence, and runway control problems.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Terminology; FAA Aviation Weather Handbook, Wind Shear and Convective Winds",
+    "media": []
+  },
+  {
+    "id": "MET-527",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "headwind",
+      "groundspeed",
+      "flight-planning"
+    ],
+    "question": "How does a headwind affect groundspeed and flight time?",
+    "choices": [
+      {
+        "text": "It reduces groundspeed and increases flight time",
+        "correct": true
+      },
+      {
+        "text": "It increases groundspeed and decreases flight time",
+        "correct": false
+      },
+      {
+        "text": "It has no effect on flight planning",
+        "correct": false
+      },
+      {
+        "text": "It changes indicated airspeed into altitude",
+        "correct": false
+      }
+    ],
+    "answer": "It reduces groundspeed and increases flight time.",
+    "explanation": "The aircraft moves through the air at its airspeed, but the air mass itself moves relative to the ground. A headwind means the air mass is moving against the aircraft's track, reducing groundspeed. That increases time enroute and fuel required, which may affect reserves, alternates, and daylight margins.",
+    "reference": "Transport Canada Flight Training Manual, Navigation - Wind Correction; FAA Pilot's Handbook of Aeronautical Knowledge, Navigation",
+    "media": []
+  },
+  {
+    "id": "MET-528",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "tailwind",
+      "groundspeed",
+      "flight-planning"
+    ],
+    "question": "How does a tailwind affect groundspeed?",
+    "choices": [
+      {
+        "text": "It increases groundspeed",
+        "correct": true
+      },
+      {
+        "text": "It decreases groundspeed",
+        "correct": false
+      },
+      {
+        "text": "It has no effect on fuel planning",
+        "correct": false
+      },
+      {
+        "text": "It always makes landing safer",
+        "correct": false
+      }
+    ],
+    "answer": "It increases groundspeed.",
+    "explanation": "A tailwind pushes the aircraft along its track and increases groundspeed for a given airspeed. This can reduce time enroute in cruise, but tailwind on takeoff or landing is usually undesirable because it increases ground roll and landing distance. The same wind can be helpful enroute and harmful near the runway.",
+    "reference": "Transport Canada Flight Training Manual, Navigation and Performance; FAA Pilot's Handbook of Aeronautical Knowledge, Performance",
+    "media": []
+  },
+  {
+    "id": "MET-529",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "crosswind",
+      "drift",
+      "flight-planning"
+    ],
+    "question": "What does a crosswind require during navigation?",
+    "choices": [
+      {
+        "text": "A wind correction angle to maintain the desired track",
+        "correct": true
+      },
+      {
+        "text": "A lower altimeter setting",
+        "correct": false
+      },
+      {
+        "text": "No heading correction",
+        "correct": false
+      },
+      {
+        "text": "Turning off the compass",
+        "correct": false
+      }
+    ],
+    "answer": "A wind correction angle to maintain the desired track.",
+    "explanation": "A crosswind pushes the aircraft sideways relative to the ground track. To stay on course, the pilot points the nose slightly into wind. If this correction is not made, the aircraft will drift off track, which can lead to airspace errors, terrain issues, or missed checkpoints.",
+    "reference": "Transport Canada Flight Training Manual, Navigation - Wind Correction; FAA Pilot's Handbook of Aeronautical Knowledge, Dead Reckoning",
+    "media": []
+  },
+  {
+    "id": "MET-530",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "crosswind",
+      "landing",
+      "runway"
+    ],
+    "question": "Why is crosswind component important for takeoff and landing?",
+    "choices": [
+      {
+        "text": "It determines how much sideways wind the pilot and aircraft must handle",
+        "correct": true
+      },
+      {
+        "text": "It determines altimeter error only",
+        "correct": false
+      },
+      {
+        "text": "It is useful only above 10,000 ft",
+        "correct": false
+      },
+      {
+        "text": "It eliminates gusts",
+        "correct": false
+      }
+    ],
+    "answer": "It determines how much sideways wind the pilot and aircraft must handle.",
+    "explanation": "A runway aligned into wind has little crosswind component, while a wind blowing across the runway creates sideways drift and control demands. Crosswind capability depends on aircraft limitations, runway condition, pilot skill, gusts, and turbulence. A reported wind can be legal but still beyond a student's or low-time pilot's personal minimums.",
+    "reference": "Transport Canada Flight Training Manual, Takeoff and Landing in Crosswinds; Aircraft POH",
+    "media": []
+  },
+  {
+    "id": "MET-531",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "crosswind",
+      "runway-selection",
+      "scenario"
+    ],
+    "question": "Runway 27 is in use. The wind is reported 220 degrees at 18 kt gusting 28 kt. What should you consider before landing?",
+    "answer": "Consider the crosswind and gust components, runway condition, aircraft demonstrated crosswind value, and your personal limits; divert or wait if the conditions exceed your capability.",
+    "explanation": "A wind from 220 degrees is about 50 degrees off runway 27, producing a meaningful crosswind. Gusts to 28 kt increase workload and can cause airspeed and drift changes on final. The safe decision is not based only on whether other aircraft are landing. It must include the pilot's recent practice, aircraft handling, runway width, surface condition, and available alternatives.",
+    "reference": "Transport Canada Flight Training Manual, Crosswind Landing; Aircraft POH; NAV CANADA Aviation Weather Services Guide, METAR Wind",
+    "media": []
+  },
+  {
+    "id": "MET-532",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gust-factor",
+      "approach-speed",
+      "landing"
+    ],
+    "question": "Why might a pilot add part of the gust factor to approach speed?",
+    "choices": [
+      {
+        "text": "To reduce the risk of airspeed dropping too low during gusty conditions",
+        "correct": true
+      },
+      {
+        "text": "To make the aircraft stall sooner",
+        "correct": false
+      },
+      {
+        "text": "To reduce landing distance in every case",
+        "correct": false
+      },
+      {
+        "text": "To ignore POH limitations",
+        "correct": false
+      }
+    ],
+    "answer": "To reduce the risk of airspeed dropping too low during gusty conditions.",
+    "explanation": "Gusty wind can cause rapid changes in airspeed. Adding an appropriate gust correction, if recommended for the aircraft and conditions, provides a buffer against sudden losses. However, extra speed also increases landing distance and float, so it must be controlled and consistent with the pilot operating handbook and runway length.",
+    "reference": "Transport Canada Flight Training Manual, Approach and Landing; Aircraft POH",
+    "media": []
+  },
+  {
+    "id": "MET-533",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "tailwind",
+      "landing-distance",
+      "performance"
+    ],
+    "question": "Why is landing with a tailwind usually avoided?",
+    "choices": [
+      {
+        "text": "It increases groundspeed and landing distance",
+        "correct": true
+      },
+      {
+        "text": "It decreases groundspeed and landing distance",
+        "correct": false
+      },
+      {
+        "text": "It improves braking on all surfaces",
+        "correct": false
+      },
+      {
+        "text": "It removes the need for flare",
+        "correct": false
+      }
+    ],
+    "answer": "It increases groundspeed and landing distance.",
+    "explanation": "The aircraft flies the approach at an airspeed, but touchdown and rollout happen over the ground. A tailwind increases groundspeed at touchdown, increasing kinetic energy and landing distance. On short, wet, icy, or contaminated runways, even a small tailwind can be significant.",
+    "reference": "Transport Canada Flight Training Manual, Landing Performance; FAA Pilot's Handbook of Aeronautical Knowledge, Performance",
+    "media": []
+  },
+  {
+    "id": "MET-534",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "headwind",
+      "takeoff-performance",
+      "runway"
+    ],
+    "question": "How does a headwind generally affect takeoff performance?",
+    "choices": [
+      {
+        "text": "It reduces takeoff distance for a given airspeed",
+        "correct": true
+      },
+      {
+        "text": "It increases takeoff distance",
+        "correct": false
+      },
+      {
+        "text": "It has no effect on the takeoff roll",
+        "correct": false
+      },
+      {
+        "text": "It prevents gusts",
+        "correct": false
+      }
+    ],
+    "answer": "It reduces takeoff distance for a given airspeed.",
+    "explanation": "A headwind allows the aircraft to reach flying airspeed at a lower groundspeed. That usually reduces ground roll and improves obstacle clearance. This advantage should not be used carelessly; gusts, runway contamination, density altitude, and pilot technique still matter.",
+    "reference": "Transport Canada Flight Training Manual, Takeoff Performance; Aircraft POH",
+    "media": []
+  },
+  {
+    "id": "MET-535",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "wind-shear",
+      "gusts",
+      "low-level"
+    ],
+    "question": "Why are gusty winds near the surface important during final approach?",
+    "choices": [
+      {
+        "text": "They can cause rapid airspeed, drift, and sink-rate changes close to the ground",
+        "correct": true
+      },
+      {
+        "text": "They make all approaches smoother",
+        "correct": false
+      },
+      {
+        "text": "They remove the need for runway alignment",
+        "correct": false
+      },
+      {
+        "text": "They guarantee a shorter landing",
+        "correct": false
+      }
+    ],
+    "answer": "They can cause rapid airspeed, drift, and sink-rate changes close to the ground.",
+    "explanation": "Close to the ground, the pilot has little altitude to correct for sudden wind changes. Gusts can increase or decrease indicated airspeed, push the aircraft off centreline, or change the descent path. This is why stabilized approach criteria and go-around discipline are important in gusty conditions.",
+    "reference": "Transport Canada Flight Training Manual, Approach and Landing; FAA Aviation Weather Handbook, Low-Level Wind Shear",
+    "media": []
+  },
+  {
+    "id": "MET-536",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "variable-wind",
+      "metar",
+      "planning"
+    ],
+    "question": "What does a variable wind report suggest?",
+    "choices": [
+      {
+        "text": "Wind direction is changing enough that runway and drift planning need extra attention",
+        "correct": true
+      },
+      {
+        "text": "Wind speed is always zero",
+        "correct": false
+      },
+      {
+        "text": "Wind direction is fixed exactly on runway heading",
+        "correct": false
+      },
+      {
+        "text": "The pressure is falling",
+        "correct": false
+      }
+    ],
+    "answer": "Wind direction is changing enough that runway and drift planning need extra attention.",
+    "explanation": "Variable winds can occur with light winds, convective activity, passing showers, or changing pressure patterns. For flight planning, variable direction makes runway selection and drift correction less stable. In the circuit, it can mean crosswind and tailwind components change from one approach to the next.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Wind; Transport Canada Flight Training Manual, Circuit Planning",
+    "media": []
+  },
+  {
+    "id": "MET-537",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "flight-planning",
+      "fuel"
+    ],
+    "question": "Why should winds aloft be checked before cross-country flight?",
+    "choices": [
+      {
+        "text": "They affect heading, groundspeed, time, fuel burn, and alternate planning",
+        "correct": true
+      },
+      {
+        "text": "They affect only airport restaurant selection",
+        "correct": false
+      },
+      {
+        "text": "They are always identical to surface winds",
+        "correct": false
+      },
+      {
+        "text": "They are useful only to IFR pilots",
+        "correct": false
+      }
+    ],
+    "answer": "They affect heading, groundspeed, time, fuel burn, and alternate planning.",
+    "explanation": "Surface wind may be very different from wind at cruising altitude. Winds aloft determine drift correction and groundspeed over each leg. A stronger-than-expected headwind can consume fuel reserve, push arrival into darkness, or make a planned alternate unrealistic. This is why enroute wind updates matter too.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Wind Forecasts; Transport Canada Flight Training Manual, Navigation",
+    "media": []
+  },
+  {
+    "id": "MET-538",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "headwind",
+      "fuel",
+      "diversion"
+    ],
+    "question": "Halfway through a cross-country, your groundspeed is 20 kt slower than planned because of stronger headwind. What should you do?",
+    "answer": "Recalculate ETA and fuel remaining, compare with reserves and daylight, and divert or land for fuel if margins are no longer acceptable.",
+    "explanation": "A headwind error is not just an inconvenience; it changes the whole flight plan. Continuing without recalculation can quietly erase fuel reserve and increase pressure near destination. A good pilot catches the trend early, updates the plan, and makes a calm diversion decision while there are still good options.",
+    "reference": "Transport Canada Flight Training Manual, Navigation - In-flight Revision; FAA Pilot's Handbook of Aeronautical Knowledge, Flight Planning",
+    "media": []
+  },
+  {
+    "id": "MET-539",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "sea-breeze",
+      "wind-shift",
+      "local-effects"
+    ],
+    "question": "Why can local wind effects such as sea breezes matter to a VFR pilot?",
+    "choices": [
+      {
+        "text": "They can change runway winds, cloud, turbulence, and visibility near the coast",
+        "correct": true
+      },
+      {
+        "text": "They occur only above the tropopause",
+        "correct": false
+      },
+      {
+        "text": "They make forecasts unnecessary",
+        "correct": false
+      },
+      {
+        "text": "They prevent fog",
+        "correct": false
+      }
+    ],
+    "answer": "They can change runway winds, cloud, turbulence, and visibility near the coast.",
+    "explanation": "Local heating differences can create local wind circulations that differ from the larger forecast wind. A sea breeze may shift surface wind, create a convergence line, bring cooler moist air inland, or change low cloud and visibility. Pilots should compare the forecast with actual observations near the route and destination.",
+    "reference": "FAA Aviation Weather Handbook, Local Winds; Transport Canada Flight Training Manual, Local Weather Effects",
+    "media": []
+  },
+  {
+    "id": "MET-540",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "valley-wind",
+      "terrain",
+      "local-effects"
+    ],
+    "question": "In mountain valleys, why may surface winds differ from the general forecast wind?",
+    "choices": [
+      {
+        "text": "Terrain channels and accelerates airflow along valleys and passes",
+        "correct": true
+      },
+      {
+        "text": "Terrain removes all wind",
+        "correct": false
+      },
+      {
+        "text": "Forecast winds never apply above valleys",
+        "correct": false
+      },
+      {
+        "text": "Valley winds affect only helicopters",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain channels and accelerates airflow along valleys and passes.",
+    "explanation": "Airflow in mountains is shaped by terrain. Valleys can channel wind, passes can accelerate it, and slopes can create upslope or downslope flow. A forecast for a broad region may miss the exact wind on a runway or in a pass. Mountain flying requires local observations, PIREPs, and conservative margins.",
+    "reference": "FAA Aviation Weather Handbook, Mountain Weather and Local Winds; Transport Canada Flight Training Manual, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-541",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "wind-correction",
+      "navigation",
+      "drift"
+    ],
+    "question": "If a wind from the right is pushing you left of track, what heading correction is generally needed?",
+    "choices": [
+      {
+        "text": "Turn right, into the wind",
+        "correct": true
+      },
+      {
+        "text": "Turn left, away from the wind",
+        "correct": false
+      },
+      {
+        "text": "Reduce altimeter setting",
+        "correct": false
+      },
+      {
+        "text": "Lower flaps immediately",
+        "correct": false
+      }
+    ],
+    "answer": "Turn right, into the wind.",
+    "explanation": "To maintain a desired ground track in crosswind, the aircraft must crab into the wind. If wind from the right is pushing the aircraft left, the nose must be pointed somewhat right of the desired track. The amount depends on wind speed, true airspeed, and the angle between wind and track.",
+    "reference": "Transport Canada Flight Training Manual, Navigation - Wind Correction; FAA Pilot's Handbook of Aeronautical Knowledge, Navigation",
+    "media": []
+  },
+  {
+    "id": "MET-542",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "frontal-passage",
+      "wind",
+      "pressure"
+    ],
+    "question": "Which combination often signals frontal passage?",
+    "choices": [
+      {
+        "text": "Wind shift, pressure change, temperature change, and changing cloud or precipitation",
+        "correct": true
+      },
+      {
+        "text": "No change in weather at all",
+        "correct": false
+      },
+      {
+        "text": "Constant calm winds only",
+        "correct": false
+      },
+      {
+        "text": "A fixed altimeter error only",
+        "correct": false
+      }
+    ],
+    "answer": "Wind shift, pressure change, temperature change, and changing cloud or precipitation.",
+    "explanation": "Fronts separate air masses. When one passes, pilots often observe wind direction changes, pressure tendency changes, temperature changes, and a change in cloud or precipitation character. Recognizing the pattern helps with go/no-go decisions, route timing, turbulence expectations, and runway planning.",
+    "reference": "FAA Aviation Weather Handbook, Fronts; Transport Canada Flight Training Manual, Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-543",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "squall",
+      "thunderstorm-outflow",
+      "landing"
+    ],
+    "question": "On short final, the wind suddenly shifts from a headwind to a gusty crosswind as a dark shower approaches the airport. What is the safest response?",
+    "answer": "Go around if the approach is no longer stabilized, and avoid landing in the gust front or squall conditions.",
+    "explanation": "A sudden wind shift near a shower may be outflow or a squall. The aircraft can experience rapid drift, airspeed changes, and sink close to the ground. If the approach is unstable, forcing the landing is poor risk management. A go-around or diversion gives time to reassess the weather and runway conditions.",
+    "reference": "Transport Canada Flight Training Manual, Go-around and Wind Shear; FAA Aviation Weather Handbook, Convective Outflow and Wind Shear",
+    "media": []
+  },
+  {
+    "id": "MET-544",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "flight-planning",
+      "wind",
+      "learning"
+    ],
+    "question": "Explain how wind affects a VFR cross-country plan from takeoff to landing.",
+    "answer": "Wind affects runway selection, takeoff roll, climb path, heading, drift correction, groundspeed, ETA, fuel burn, alternate selection, turbulence, and landing performance. A headwind may help takeoff but slow cruise. A tailwind may shorten cruise time but increase landing distance if used on final. A crosswind requires correction enroute and skill during takeoff and landing. Gusts and squalls add control and wind shear concerns.",
+    "explanation": "Wind is not one number to copy into a nav log. It changes with altitude, terrain, time, fronts, showers, and local effects. A safe plan uses forecast winds, actual observations, in-flight groundspeed checks, and personal limits. When the wind differs from forecast, the pilot should revise the plan early.",
+    "reference": "Transport Canada Flight Training Manual, Navigation and Weather; NAV CANADA Aviation Weather Services Guide, Wind Products",
+    "media": []
+  },
+  {
+    "id": "MET-545",
+    "topic": "Meteorology - Wind Fundamentals",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "gusts",
+      "crosswind"
+    ],
+    "question": "Your destination has one runway, wet pavement, and wind 40 degrees off the runway at 18 kt gusting 32 kt. Your recent crosswind practice is limited. What should you do?",
+    "answer": "Treat the conditions as high risk; consider delaying, diverting, or choosing an airport with a more favourable runway before attempting the landing.",
+    "explanation": "The steady crosswind may be manageable for some pilots, but gusts to 32 kt on a wet runway add a large safety burden. Limited recent practice reduces real capability. Personal minima should account for gusts, runway condition, aircraft limits, and pilot currency. The best decision may be made before arriving overhead with fuel and workload pressure.",
+    "reference": "Transport Canada Flight Training Manual, Crosswind Landing and Pilot Decision-Making; Aircraft POH",
+    "media": []
+  }
+]

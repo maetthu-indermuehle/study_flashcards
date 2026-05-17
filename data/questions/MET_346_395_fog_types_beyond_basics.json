@@ -1,0 +1,1453 @@
+[
+  {
+    "id": "MET-346",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "definition",
+      "visibility"
+    ],
+    "question": "What is fog?",
+    "choices": [
+      {
+        "text": "A cloud based at the Earth's surface that reduces horizontal visibility",
+        "correct": true
+      },
+      {
+        "text": "Ice crystals only above 20,000 ft",
+        "correct": false
+      },
+      {
+        "text": "Any precipitation falling from cloud",
+        "correct": false
+      },
+      {
+        "text": "Smoke produced by forest fires",
+        "correct": false
+      }
+    ],
+    "answer": "A cloud based at the Earth's surface that reduces horizontal visibility.",
+    "explanation": "Fog is essentially cloud at ground level. It consists of tiny water droplets, ice crystals, or both suspended near the surface. For pilots, the key issue is not only the textbook definition but the operational effect: fog reduces horizontal visibility, may obscure the horizon, may hide terrain and obstacles, and can create very low ceilings or vertical visibility. Fog differs from a normal cloud mainly because its base is at the surface.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Fog; NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather",
+    "media": []
+  },
+  {
+    "id": "MET-347",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "formation",
+      "dewpoint"
+    ],
+    "question": "Fog usually forms when:",
+    "choices": [
+      {
+        "text": "Air temperature and dew point become equal or nearly equal",
+        "correct": true
+      },
+      {
+        "text": "Pressure altitude equals density altitude",
+        "correct": false
+      },
+      {
+        "text": "Wind speed exceeds 50 kt",
+        "correct": false
+      },
+      {
+        "text": "Air becomes completely dry",
+        "correct": false
+      }
+    ],
+    "answer": "Air temperature and dew point become equal or nearly equal.",
+    "explanation": "Fog forms when air near the surface becomes saturated. This can happen by cooling the air to its dew point, as in radiation, advection, or upslope fog, or by adding moisture to the air, as in precipitation-induced fog or steam fog. A small temperature-dew point spread is therefore an important warning sign, but it does not tell the whole story. Wind, terrain, cloud cover, surface moisture, and air mass movement all matter.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Fog; FAA Aviation Weather Handbook, Ch. 6, Water Vapor",
+    "media": []
+  },
+  {
+    "id": "MET-348",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "mist",
+      "br",
+      "fg"
+    ],
+    "question": "In aviation weather reports, what is the practical difference between `FG` and `BR`?",
+    "choices": [
+      {
+        "text": "`FG` is fog and `BR` is mist",
+        "correct": true
+      },
+      {
+        "text": "`FG` is freezing rain and `BR` is blowing rain",
+        "correct": false
+      },
+      {
+        "text": "`FG` is forecast gusts and `BR` is broken runway",
+        "correct": false
+      },
+      {
+        "text": "There is no difference",
+        "correct": false
+      }
+    ],
+    "answer": "`FG` is fog and `BR` is mist.",
+    "explanation": "Fog and mist are both visibility restrictions caused by suspended water droplets, but fog is the denser restriction. In METAR/TAF coding, `FG` is used for fog when visibility is reduced below the fog threshold, while `BR` is mist and represents less severe water-droplet visibility restriction. For a pilot, this distinction matters because `BR` may still be legal VFR in some situations, while `FG` often signals very poor visibility and possible low or obscured ceilings.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather; FAA Aviation Weather Handbook, Ch. 18, Fog and Mist",
+    "media": []
+  },
+  {
+    "id": "MET-349",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "radiation-fog",
+      "advection-fog",
+      "upslope-fog"
+    ],
+    "question": "Which fog types form primarily by cooling air to its dew point?",
+    "choices": [
+      {
+        "text": "Radiation fog, advection fog, and upslope fog",
+        "correct": true
+      },
+      {
+        "text": "Steam fog and frontal fog only",
+        "correct": false
+      },
+      {
+        "text": "Ice fog only",
+        "correct": false
+      },
+      {
+        "text": "Smoke and haze",
+        "correct": false
+      }
+    ],
+    "answer": "Radiation fog, advection fog, and upslope fog.",
+    "explanation": "These fog types are grouped by their formation mechanism. Radiation fog forms when the ground cools at night and chills the air near the surface. Advection fog forms when moist air moves over a colder surface and is cooled from below. Upslope fog forms when moist stable air is forced uphill and cools adiabatically. In all three cases, cooling brings the air to saturation.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Fog Types",
+    "media": []
+  },
+  {
+    "id": "MET-350",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "steam-fog",
+      "precipitation-fog",
+      "moisture"
+    ],
+    "question": "Which fog types form primarily by adding moisture to the air?",
+    "choices": [
+      {
+        "text": "Steam fog and precipitation-induced fog",
+        "correct": true
+      },
+      {
+        "text": "Radiation fog only",
+        "correct": false
+      },
+      {
+        "text": "Advection fog only",
+        "correct": false
+      },
+      {
+        "text": "Upslope fog only",
+        "correct": false
+      }
+    ],
+    "answer": "Steam fog and precipitation-induced fog.",
+    "explanation": "Steam fog forms when cold air moves over warmer water and moisture evaporates into the cold air, quickly saturating it. Precipitation-induced fog, also called frontal fog, forms when precipitation falls into cooler air below and evaporates or sublimates, adding moisture until the air becomes saturated. These are different from fog types caused mainly by cooling the air mass.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog and Frontal Fog",
+    "media": []
+  },
+  {
+    "id": "MET-351",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "stable-air",
+      "terrain"
+    ],
+    "question": "Upslope fog forms when:",
+    "choices": [
+      {
+        "text": "Moist stable air is forced uphill and cools to its dew point",
+        "correct": true
+      },
+      {
+        "text": "Dry air descends a mountain and warms",
+        "correct": false
+      },
+      {
+        "text": "Cold air passes over warm water",
+        "correct": false
+      },
+      {
+        "text": "Fog burns off after sunrise",
+        "correct": false
+      }
+    ],
+    "answer": "Moist stable air is forced uphill and cools to its dew point.",
+    "explanation": "As air is forced to rise along sloping terrain, pressure decreases and the air expands and cools. If the air is moist and stable, this cooling can bring it to saturation and produce fog or low stratus along the slope. Upslope fog can occur even with cloud cover, so it is not just a clear-night phenomenon like radiation fog. It can be dense, extensive, and persistent because the terrain and wind continue feeding the lifting process.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Upslope Fog; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-352",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "terrain",
+      "aviation-hazard"
+    ],
+    "question": "Why is upslope fog particularly important for pilots operating near rising terrain?",
+    "choices": [
+      {
+        "text": "It can obscure slopes, ridges, passes, and destination airports while nearby lower terrain remains clearer",
+        "correct": true
+      },
+      {
+        "text": "It only forms over oceans",
+        "correct": false
+      },
+      {
+        "text": "It improves mountain visibility",
+        "correct": false
+      },
+      {
+        "text": "It always indicates calm air",
+        "correct": false
+      }
+    ],
+    "answer": "It can obscure slopes, ridges, passes, and destination airports while nearby lower terrain remains clearer.",
+    "explanation": "Upslope fog is terrain-linked. A pilot may depart from a clearer area and encounter fog where wind pushes moist air uphill into higher terrain. This can block mountain passes, hide ridgelines, and remove visual escape routes. Because the fog can extend upward along the terrain, climbing may not solve the problem for a VFR pilot, especially if cloud clearance and terrain clearance are both being squeezed.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Upslope Fog; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-353",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "scenario",
+      "mountain-weather"
+    ],
+    "question": "Moist easterly wind is blowing against rising terrain. The temperature-dew point spread is small and cloud is lowering along the hills. What fog type should you suspect?",
+    "answer": "Upslope fog.",
+    "explanation": "The key clues are moist air, wind blowing up a slope, and cooling as air rises over terrain. This is a classic setup for upslope fog or low stratus on windward slopes. Operationally, a VFR pilot should expect visibility and ceiling to be worse near the rising terrain than in nearby lower areas. This is a good time to consider delaying, choosing a route away from terrain, or getting an updated briefing.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Upslope Fog; NAV CANADA Aviation Weather Services Guide, GFA and Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-354",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "wind",
+      "low-stratus"
+    ],
+    "question": "What can happen to upslope fog if the upslope wind becomes stronger?",
+    "choices": [
+      {
+        "text": "It may lift into low stratus while still producing low ceiling hazards",
+        "correct": true
+      },
+      {
+        "text": "It always disappears immediately",
+        "correct": false
+      },
+      {
+        "text": "It becomes volcanic ash",
+        "correct": false
+      },
+      {
+        "text": "It turns into clear ice on the ground only",
+        "correct": false
+      }
+    ],
+    "answer": "It may lift into low stratus while still producing low ceiling hazards.",
+    "explanation": "Stronger wind can mix and lift fog into a low stratus layer. From a pilot's perspective, this may not be much better: the surface visibility might improve, but the ceiling can remain too low for safe VFR flight, especially near terrain. Fog and stratus often transition into each other, and both can indicate a saturated low-level air mass.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Upslope Fog and Low Ceiling",
+    "media": []
+  },
+  {
+    "id": "MET-355",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "decision-making",
+      "vfr"
+    ],
+    "question": "What weather products would help a Canadian VFR pilot identify upslope fog risk before a cross-country?",
+    "answer": "Useful products include the GFA Clouds and Weather chart, METARs and SPECIs near windward slopes and valleys, TAFs for destination and alternates, PIREPs, satellite imagery for low cloud extent, surface analysis charts for pressure pattern and wind flow, and a FIC weather briefing.",
+    "explanation": "Upslope fog is a route and terrain problem, not just an airport problem. A single destination METAR may miss fog forming along a pass or slope. The GFA can show forecast low cloud, obscured ceilings, and visibility restrictions over an area. METAR trends show whether spreads are narrowing. Satellite imagery helps reveal low cloud extent in daylight. A briefer can help connect the terrain, wind direction, and moisture pattern.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA, METAR/TAF, PIREP, Satellite Imagery, and Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-356",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "evaporation-fog",
+      "cold-air"
+    ],
+    "question": "Steam fog forms when:",
+    "choices": [
+      {
+        "text": "Cold air moves over warmer water and moisture evaporates into the air",
+        "correct": true
+      },
+      {
+        "text": "Warm dry air moves over hot desert terrain",
+        "correct": false
+      },
+      {
+        "text": "Air descends a mountain slope and warms",
+        "correct": false
+      },
+      {
+        "text": "Cloud tops reach the tropopause",
+        "correct": false
+      }
+    ],
+    "answer": "Cold air moves over warmer water and moisture evaporates into the air.",
+    "explanation": "Steam fog is sometimes called evaporation fog because moisture is added from the warm water surface into colder air above it. The cold air quickly becomes saturated, and wisps or streamers of condensed moisture rise from the surface, looking like steam. It is common over lakes, rivers, and coastal water when cold air moves across relatively warmer water.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog",
+    "media": []
+  },
+  {
+    "id": "MET-357",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "turbulence",
+      "unstable-air"
+    ],
+    "question": "Why can steam fog be associated with turbulence?",
+    "choices": [
+      {
+        "text": "The air is heated and moistened from below, creating a shallow unstable layer",
+        "correct": true
+      },
+      {
+        "text": "It forms only in perfectly stable air",
+        "correct": false
+      },
+      {
+        "text": "It occurs only above the tropopause",
+        "correct": false
+      },
+      {
+        "text": "It has no vertical motion",
+        "correct": false
+      }
+    ],
+    "answer": "The air is heated and moistened from below, creating a shallow unstable layer.",
+    "explanation": "Steam fog forms when cold air contacts a warmer water surface. The air near the surface is warmed and moistened, making it buoyant relative to the colder air above. This can create small convective currents, visible as rising streamers of fog. For light aircraft, this may mean localized turbulence or uneven visibility near the water surface, especially during low-level operations near lakes or rivers.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog",
+    "media": []
+  },
+  {
+    "id": "MET-358",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "scenario",
+      "water"
+    ],
+    "question": "It is a very cold morning after a cold front. Wisps of fog are rising from a warmer lake surface. What fog type is most likely?",
+    "answer": "Steam fog.",
+    "explanation": "The important clue is cold air over warmer water. Moisture evaporates from the water into the cold air, producing saturation and visible fog streamers. This fog may be shallow, but it can still obscure shoreline features, docks, terrain, or other traffic. It may also be patchy, which can make visibility look acceptable from one angle and poor from another.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog",
+    "media": []
+  },
+  {
+    "id": "MET-359",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "sea-smoke",
+      "arctic"
+    ],
+    "question": "Steam fog over cold northern waters is often also called:",
+    "choices": [
+      {
+        "text": "Sea smoke",
+        "correct": true
+      },
+      {
+        "text": "Dust devil",
+        "correct": false
+      },
+      {
+        "text": "Chinook arch",
+        "correct": false
+      },
+      {
+        "text": "Lenticular fog",
+        "correct": false
+      }
+    ],
+    "answer": "Sea smoke.",
+    "explanation": "In very cold air moving over warmer water, steam fog can appear as vapour rising from the water surface and is often called sea smoke, especially in marine or northern environments. It is common when cold continental or arctic air flows over relatively warmer open water. For pilots, this can create localized but intense visibility restrictions near coasts, lakes, and rivers.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog; FAA Aviation Weather Handbook, Ch. 21, Arctic Weather",
+    "media": []
+  },
+  {
+    "id": "MET-360",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "operational-hazard",
+      "vfr"
+    ],
+    "question": "Why should a floatplane or low-level VFR pilot care about steam fog if it is shallow?",
+    "choices": [
+      {
+        "text": "It can obscure shorelines, water surface references, obstacles, and other traffic",
+        "correct": true
+      },
+      {
+        "text": "It guarantees smooth air and unlimited visibility",
+        "correct": false
+      },
+      {
+        "text": "It only occurs above 10,000 ft",
+        "correct": false
+      },
+      {
+        "text": "It prevents carburettor icing",
+        "correct": false
+      }
+    ],
+    "answer": "It can obscure shorelines, water surface references, obstacles, and other traffic.",
+    "explanation": "Shallow fog can still be a serious low-level hazard. Floatplanes and low-level VFR aircraft rely heavily on surface texture, shoreline definition, and obstacle visibility. Steam fog can be patchy and misleading: the pilot may see through one gap while the landing path, shoreline, or departure path is obscured. Because it forms in cold air over warmer water, it may also occur when other winter hazards are present.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog; Transport Canada Flight Training Manual, Floatplanes and Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-361",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ice-fog",
+      "arctic-weather",
+      "cold-temperature"
+    ],
+    "question": "Ice fog is composed primarily of:",
+    "choices": [
+      {
+        "text": "Suspended ice crystals",
+        "correct": true
+      },
+      {
+        "text": "Blowing sand",
+        "correct": false
+      },
+      {
+        "text": "Smoke particles only",
+        "correct": false
+      },
+      {
+        "text": "Liquid rain drops falling from cumulonimbus",
+        "correct": false
+      }
+    ],
+    "answer": "Suspended ice crystals.",
+    "explanation": "Ice fog is fog made of tiny ice crystals suspended in the air. It is most associated with very cold temperatures, especially in arctic or subarctic regions. Unlike freezing fog, which is made of supercooled liquid droplets that freeze on contact with surfaces, ice fog is already in the ice-crystal phase. Both can restrict visibility severely, but their physical makeup and surface effects differ.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Fog; FAA Aviation Weather Handbook, Ch. 21, Arctic Weather",
+    "media": []
+  },
+  {
+    "id": "MET-362",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ice-fog",
+      "temperature",
+      "arctic"
+    ],
+    "question": "Ice fog becomes much more likely at very cold temperatures, especially:",
+    "choices": [
+      {
+        "text": "Below about -30 C, with frequency increasing as temperature decreases",
+        "correct": true
+      },
+      {
+        "text": "Above +30 C only",
+        "correct": false
+      },
+      {
+        "text": "Exactly at +15 C",
+        "correct": false
+      },
+      {
+        "text": "Only when the altimeter is set incorrectly",
+        "correct": false
+      }
+    ],
+    "answer": "Below about -30 C, with frequency increasing as temperature decreases.",
+    "explanation": "Ice fog is rare at temperatures warmer than about -30 C and becomes more common as temperatures fall. At extremely low temperatures, even small amounts of water vapour from combustion, open water, or human activity can create ice fog. This is why ice fog can be a major operational issue in northern communities and cold airport environments.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 21, Arctic Weather - Fog and Ice Fog",
+    "media": []
+  },
+  {
+    "id": "MET-363",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ice-fog",
+      "freezing-fog",
+      "comparison"
+    ],
+    "question": "What is the key difference between ice fog and freezing fog?",
+    "choices": [
+      {
+        "text": "Ice fog is made of ice crystals; freezing fog is made of supercooled liquid droplets",
+        "correct": true
+      },
+      {
+        "text": "Freezing fog only occurs in summer",
+        "correct": false
+      },
+      {
+        "text": "Ice fog never reduces visibility",
+        "correct": false
+      },
+      {
+        "text": "There is no physical difference",
+        "correct": false
+      }
+    ],
+    "answer": "Ice fog is made of ice crystals; freezing fog is made of supercooled liquid droplets.",
+    "explanation": "This distinction matters operationally. Freezing fog can deposit rime ice on aircraft, runways, windscreens, antennas, and other exposed surfaces because supercooled droplets freeze on contact. Ice fog is already frozen into tiny crystals and is most common in very cold air. Both can reduce visibility, but freezing fog adds a significant surface contamination and aircraft icing concern.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Freezing Fog; FAA Aviation Weather Handbook, Ch. 21, Ice Fog",
+    "media": []
+  },
+  {
+    "id": "MET-364",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "freezing-fog",
+      "fzfg",
+      "metar"
+    ],
+    "question": "In a METAR, what does `FZFG` mean?",
+    "choices": [
+      {
+        "text": "Freezing fog",
+        "correct": true
+      },
+      {
+        "text": "Fog in the vicinity",
+        "correct": false
+      },
+      {
+        "text": "Forecast freezing gusts",
+        "correct": false
+      },
+      {
+        "text": "Freezing rain",
+        "correct": false
+      }
+    ],
+    "answer": "Freezing fog.",
+    "explanation": "`FZFG` means freezing fog: fog composed mainly of supercooled liquid droplets at temperatures at or below freezing. This is important for pilots because it can reduce visibility and deposit ice on aircraft surfaces. Even if the aircraft is parked, freezing fog can contaminate wings, tail surfaces, propeller, windshield, and sensors before takeoff.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather Codes; FAA Aviation Weather Handbook, Ch. 18, Freezing Fog",
+    "media": []
+  },
+  {
+    "id": "MET-365",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "ice-fog",
+      "scenario",
+      "northern-operations"
+    ],
+    "question": "At a northern airport, the temperature is -38 C and visibility is 1/4 SM in suspended ice crystals near town and the runway. What fog type is likely?",
+    "answer": "Ice fog.",
+    "explanation": "The very low temperature and visibility restriction from suspended ice crystals point to ice fog. At such low temperatures, water vapour from buildings, vehicles, aircraft exhaust, open water, or other sources can create ice crystals that remain suspended near the surface. For pilots, the hazard is severe visibility reduction, possible illusions around lights, and operational difficulty in taxi, takeoff, and landing.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 21, Arctic Weather - Fog and Ice Fog",
+    "media": []
+  },
+  {
+    "id": "MET-366",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ice-fog",
+      "exhaust",
+      "northern-operations"
+    ],
+    "question": "Why can ice fog be worse near towns, airports, and industrial areas in very cold weather?",
+    "choices": [
+      {
+        "text": "Human activity and engines add water vapour that can form ice crystals",
+        "correct": true
+      },
+      {
+        "text": "Buildings remove all moisture from the air",
+        "correct": false
+      },
+      {
+        "text": "Runways create sea breezes",
+        "correct": false
+      },
+      {
+        "text": "Exhaust always warms the entire air mass above freezing",
+        "correct": false
+      }
+    ],
+    "answer": "Human activity and engines add water vapour that can form ice crystals.",
+    "explanation": "At very cold temperatures, the atmosphere can hold very little water vapour. Additional moisture from combustion, heating systems, aircraft exhaust, or vehicles can quickly become ice crystals. This is why ice fog may be localized around populated or active areas even when surrounding terrain is clearer. Pilots should not assume nearby visibility will match the airport environment.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 21, Arctic Weather - Fog and Ice Fog",
+    "media": []
+  },
+  {
+    "id": "MET-367",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-fog",
+      "aircraft-contamination",
+      "winter"
+    ],
+    "question": "Why is freezing fog a serious preflight concern?",
+    "choices": [
+      {
+        "text": "It can deposit ice on aircraft surfaces before takeoff",
+        "correct": true
+      },
+      {
+        "text": "It only affects aircraft above the freezing level",
+        "correct": false
+      },
+      {
+        "text": "It improves lift",
+        "correct": false
+      },
+      {
+        "text": "It guarantees dry runways",
+        "correct": false
+      }
+    ],
+    "answer": "It can deposit ice on aircraft surfaces before takeoff.",
+    "explanation": "Freezing fog consists of supercooled droplets that freeze on contact with exposed surfaces. A parked aircraft can accumulate a thin but dangerous rough ice layer. Even small contamination can disrupt airflow over the wing and tail, increase stall speed, reduce lift, and degrade control. A pilot must ensure all critical surfaces are clean before flight and follow approved de-icing procedures.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Freezing Fog; Transport Canada Flight Training Manual, Emergency Procedures - Icing",
+    "media": []
+  },
+  {
+    "id": "MET-368",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "frontal-fog",
+      "formation"
+    ],
+    "question": "Precipitation-induced fog is also commonly called:",
+    "choices": [
+      {
+        "text": "Frontal fog",
+        "correct": true
+      },
+      {
+        "text": "Sea smoke",
+        "correct": false
+      },
+      {
+        "text": "Radiation haze",
+        "correct": false
+      },
+      {
+        "text": "Rotor fog",
+        "correct": false
+      }
+    ],
+    "answer": "Frontal fog.",
+    "explanation": "Precipitation-induced fog often forms near fronts, especially when precipitation falls into cooler air below. Some of the rain or snow evaporates or sublimates, adding moisture to the low-level air. If the air becomes saturated, fog forms. Because fronts can cover large areas and move slowly, this fog can be widespread and persistent.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Frontal Fog",
+    "media": []
+  },
+  {
+    "id": "MET-369",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "formation",
+      "saturation"
+    ],
+    "question": "How does precipitation-induced fog form?",
+    "choices": [
+      {
+        "text": "Precipitation falls into cooler air and evaporates or sublimates, adding moisture until the air saturates",
+        "correct": true
+      },
+      {
+        "text": "Strong sunshine heats dry sand",
+        "correct": false
+      },
+      {
+        "text": "Cold air descends a slope and warms",
+        "correct": false
+      },
+      {
+        "text": "Jet stream turbulence compresses clouds to the surface",
+        "correct": false
+      }
+    ],
+    "answer": "Precipitation falls into cooler air and evaporates or sublimates, adding moisture until the air saturates.",
+    "explanation": "When rain or snow falls through unsaturated air, some of it evaporates or sublimates. This adds water vapour to the lower layer and can also cool the air. If the temperature and dew point come together, fog forms. This is common ahead of warm fronts, where precipitation falls from warmer air aloft into a cooler air mass near the surface.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Frontal Fog; FAA Aviation Weather Handbook, Ch. 11, Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-370",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "scenario",
+      "warm-front"
+    ],
+    "question": "A warm front is approaching. Light rain is falling into a cool air mass near the surface, and visibility is steadily dropping. What fog type may form?",
+    "answer": "Precipitation-induced fog, or frontal fog.",
+    "explanation": "This setup is typical of frontal fog. Rain from the warmer overrunning air falls into cooler air near the surface. Evaporation adds moisture and can cool the layer further, bringing it to saturation. Operationally, this can produce widespread low visibility and low ceilings over a large area, making it difficult to find a nearby VFR escape route.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Frontal Fog; FAA Aviation Weather Handbook, Ch. 11, Warm Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-371",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "persistence",
+      "operational-hazard"
+    ],
+    "question": "Why can precipitation-induced fog be persistent?",
+    "choices": [
+      {
+        "text": "The precipitation continues adding moisture to the low-level air",
+        "correct": true
+      },
+      {
+        "text": "It only forms after sunrise and vanishes instantly",
+        "correct": false
+      },
+      {
+        "text": "It requires dry air",
+        "correct": false
+      },
+      {
+        "text": "It is caused by runway lights",
+        "correct": false
+      }
+    ],
+    "answer": "The precipitation continues adding moisture to the low-level air.",
+    "explanation": "As long as precipitation continues to fall into a cool low-level air mass, moisture is being supplied. This can keep the air saturated and maintain fog even when wind or daylight might otherwise help improve conditions. Because it is often tied to frontal systems, precipitation-induced fog may affect a broad route, not just one airport.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Frontal Fog",
+    "media": []
+  },
+  {
+    "id": "MET-372",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "vfr",
+      "warm-front"
+    ],
+    "question": "Which flight condition is commonly associated with precipitation-induced fog near a warm front?",
+    "choices": [
+      {
+        "text": "Widespread low visibility, layered cloud, and low ceilings",
+        "correct": true
+      },
+      {
+        "text": "Clear skies and unlimited visibility",
+        "correct": false
+      },
+      {
+        "text": "Only isolated dust devils",
+        "correct": false
+      },
+      {
+        "text": "Strong dry thermals with no cloud",
+        "correct": false
+      }
+    ],
+    "answer": "Widespread low visibility, layered cloud, and low ceilings.",
+    "explanation": "Warm fronts often produce widespread stratiform cloud and steady precipitation. If precipitation falls into cool air near the surface, fog can form and reduce visibility. This combination is hazardous for VFR flight because it can create broad areas of marginal or IFR conditions rather than isolated patches that are easy to avoid.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 11, Fronts; FAA Aviation Weather Handbook, Ch. 18, Frontal Fog",
+    "media": []
+  },
+  {
+    "id": "MET-373",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "metar",
+      "visibility"
+    ],
+    "question": "What does `1/4SM FG VV002` in a METAR suggest?",
+    "choices": [
+      {
+        "text": "Visibility one-quarter statute mile in fog with vertical visibility 200 ft",
+        "correct": true
+      },
+      {
+        "text": "Wind one-quarter mile from the fog",
+        "correct": false
+      },
+      {
+        "text": "Visibility four miles with scattered cloud at 200 ft",
+        "correct": false
+      },
+      {
+        "text": "No significant weather",
+        "correct": false
+      }
+    ],
+    "answer": "Visibility one-quarter statute mile in fog with vertical visibility 200 ft.",
+    "explanation": "`1/4SM` is the reported visibility. `FG` indicates fog. `VV002` means vertical visibility into an obscuring layer is 200 ft. This is not VFR weather. It indicates a very restricted visual environment, with both horizontal visibility and vertical reference severely limited.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Decode; FAA Aviation Weather Handbook, METAR/SPECI Format",
+    "media": []
+  },
+  {
+    "id": "MET-374",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "vertical-visibility",
+      "obscuration"
+    ],
+    "question": "What does vertical visibility mean in a fog report?",
+    "choices": [
+      {
+        "text": "The vertical distance a pilot or observer can see into an obscuring phenomenon",
+        "correct": true
+      },
+      {
+        "text": "The height of the tropopause",
+        "correct": false
+      },
+      {
+        "text": "The distance to the nearest thunderstorm",
+        "correct": false
+      },
+      {
+        "text": "The aircraft's climb rate",
+        "correct": false
+      }
+    ],
+    "answer": "The vertical distance a pilot or observer can see into an obscuring phenomenon.",
+    "explanation": "When the sky is hidden by fog, snow, or another surface-based obscuration, a normal cloud ceiling may not be visible. Instead, the report may give vertical visibility, such as `VV002`. For pilots, vertical visibility is a strong warning that visual reference above the surface is extremely limited. It is especially hazardous for departure and arrival because the pilot may lose outside references almost immediately after takeoff.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Sky Condition; FAA Aviation Weather Handbook, METAR/SPECI Format",
+    "media": []
+  },
+  {
+    "id": "MET-375",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "shallow-fog",
+      "mifg"
+    ],
+    "question": "In METAR/TAF coding, what does `MIFG` mean?",
+    "choices": [
+      {
+        "text": "Shallow fog",
+        "correct": true
+      },
+      {
+        "text": "Mountain icing forecast group",
+        "correct": false
+      },
+      {
+        "text": "Moderate icing in fog",
+        "correct": false
+      },
+      {
+        "text": "Missing fog",
+        "correct": false
+      }
+    ],
+    "answer": "Shallow fog.",
+    "explanation": "`MI` is the descriptor for shallow, and `FG` is fog. Shallow fog is near the ground and may not obstruct visibility at the observer height in the same way as deeper fog. It can still be operationally important because it may obscure runway markings, low obstacles, and surface references during taxi, takeoff, or landing. A pilot should not dismiss it simply because it is shallow.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Present Weather Codes; FAA Aviation Weather Handbook, Fog Forecast Terms",
+    "media": []
+  },
+  {
+    "id": "MET-376",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "patchy-fog",
+      "bcfg"
+    ],
+    "question": "In METAR/TAF coding, what does `BCFG` mean?",
+    "choices": [
+      {
+        "text": "Patches of fog",
+        "correct": true
+      },
+      {
+        "text": "Blowing cloud fog",
+        "correct": false
+      },
+      {
+        "text": "Broken cloud at fog level",
+        "correct": false
+      },
+      {
+        "text": "Fog with blowing snow",
+        "correct": false
+      }
+    ],
+    "answer": "Patches of fog.",
+    "explanation": "`BC` is the descriptor for patches, and `FG` is fog. Patchy fog means the airport or area is not uniformly covered. This can be tricky operationally: one part of the runway or approach path may look clear while another is obscured. Patchy fog can also change quickly with light wind, drainage flow, or small temperature changes.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Present Weather Codes; FAA Aviation Weather Handbook, Fog Forecast Terms",
+    "media": []
+  },
+  {
+    "id": "MET-377",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "partial-fog",
+      "prfg"
+    ],
+    "question": "In METAR/TAF coding, what does `PRFG` mean?",
+    "choices": [
+      {
+        "text": "Partial fog",
+        "correct": true
+      },
+      {
+        "text": "Precipitation fog only",
+        "correct": false
+      },
+      {
+        "text": "Previous fog",
+        "correct": false
+      },
+      {
+        "text": "Pressure falling gusts",
+        "correct": false
+      }
+    ],
+    "answer": "Partial fog.",
+    "explanation": "`PRFG` means a substantial part of the aerodrome is expected to be covered by fog while the remainder is clear of fog. It can describe situations such as a fog bank affecting only part of the field. For pilots, partial fog matters because runway visibility, approach path visibility, and taxi visibility may differ across the same airport.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Present Weather Codes; FAA Aviation Weather Handbook, TAF Fog Terms",
+    "media": []
+  },
+  {
+    "id": "MET-378",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fog",
+      "vicinity",
+      "vcfg"
+    ],
+    "question": "In METAR/TAF coding, what does `VCFG` mean?",
+    "choices": [
+      {
+        "text": "Fog in the vicinity",
+        "correct": true
+      },
+      {
+        "text": "Very clear fog",
+        "correct": false
+      },
+      {
+        "text": "Variable ceiling forecast group",
+        "correct": false
+      },
+      {
+        "text": "Volcanic cloud fog",
+        "correct": false
+      }
+    ],
+    "answer": "Fog in the vicinity.",
+    "explanation": "`VC` means vicinity, and `FG` means fog. It tells the pilot fog is near the aerodrome but not necessarily at the observation point. This is useful because fog can move over the airport or affect nearby low terrain, valleys, or water routes. For a VFR pilot, `VCFG` should trigger extra attention to trends and local geography.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Present Weather Codes; FAA Aviation Weather Handbook, METAR/SPECI Weather Codes",
+    "media": []
+  },
+  {
+    "id": "MET-379",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "taf",
+      "interpretation"
+    ],
+    "question": "A TAF says `TEMPO 1209/1213 1/2SM FG VV003`. What should a VFR pilot expect during that period?",
+    "answer": "Temporary periods of one-half statute mile visibility in fog with vertical visibility 300 ft.",
+    "explanation": "This is a serious restriction for VFR flight. `TEMPO` means temporary fluctuations are expected during the period, not that the hazard can be ignored. `1/2SM FG` indicates dense fog, and `VV003` means the sky is obscured with only 300 ft vertical visibility. A VFR pilot should plan to delay, divert, or avoid arriving during this time unless operating under appropriate rules, equipment, training, and clear safety margins.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Decode; FAA Aviation Weather Handbook, TAF Fog Forecast Terms",
+    "media": []
+  },
+  {
+    "id": "MET-380",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "taf",
+      "br"
+    ],
+    "question": "If fog-related visibility is forecast between 5/8 SM and 6 SM, which code may be used instead of `FG`?",
+    "choices": [
+      {
+        "text": "`BR`",
+        "correct": true
+      },
+      {
+        "text": "`+TSRA`",
+        "correct": false
+      },
+      {
+        "text": "`GR`",
+        "correct": false
+      },
+      {
+        "text": "`SKC`",
+        "correct": false
+      }
+    ],
+    "answer": "`BR`.",
+    "explanation": "In TAF coding, fog-related visibility restrictions that are not low enough for `FG` may be coded as mist, `BR`. This matters because a pilot may see `BR` and underestimate the hazard. Mist can still reduce slant visibility, make terrain harder to see, and combine with low cloud or precipitation to create poor VFR conditions.",
+    "reference": "FAA Aviation Weather Handbook, TAF Fog Forecast; NAV CANADA Aviation Weather Services Guide, TAF Present Weather Codes",
+    "media": []
+  },
+  {
+    "id": "MET-381",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "radiation-fog",
+      "comparison"
+    ],
+    "question": "How is upslope fog different from radiation fog?",
+    "choices": [
+      {
+        "text": "Upslope fog forms from moist stable air rising over terrain; radiation fog forms from nighttime surface cooling over land",
+        "correct": true
+      },
+      {
+        "text": "Upslope fog only forms at sea",
+        "correct": false
+      },
+      {
+        "text": "Radiation fog requires strong daytime heating",
+        "correct": false
+      },
+      {
+        "text": "There is no difference",
+        "correct": false
+      }
+    ],
+    "answer": "Upslope fog forms from moist stable air rising over terrain; radiation fog forms from nighttime surface cooling over land.",
+    "explanation": "Radiation fog is mainly a night and early morning cooling problem, favoured by clear skies, light wind, moist low-level air, and land surfaces. Upslope fog is a terrain-lift problem and can form under cloudy skies if moist stable air is forced upward. For pilots, this means upslope fog may persist in places where radiation fog would not form or would have burned off.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Radiation Fog and Upslope Fog",
+    "media": []
+  },
+  {
+    "id": "MET-382",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "advection-fog",
+      "steam-fog"
+    ],
+    "question": "How is steam fog different from advection fog?",
+    "choices": [
+      {
+        "text": "Steam fog forms when cold air moves over warmer water; advection fog forms when moist air moves over a colder surface",
+        "correct": true
+      },
+      {
+        "text": "Steam fog forms only over deserts",
+        "correct": false
+      },
+      {
+        "text": "Advection fog is made of smoke",
+        "correct": false
+      },
+      {
+        "text": "Steam fog never affects pilots",
+        "correct": false
+      }
+    ],
+    "answer": "Steam fog forms when cold air moves over warmer water; advection fog forms when moist air moves over a colder surface.",
+    "explanation": "Both involve air moving over a surface of different temperature, but the direction of heat and moisture exchange is different. Advection fog cools moist air from below as it moves over a colder surface. Steam fog adds moisture and heat from warmer water into colder air. Advection fog is often more extensive and persistent; steam fog is often shallower and streamer-like but can still be hazardous near water.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Advection Fog and Steam Fog",
+    "media": []
+  },
+  {
+    "id": "MET-383",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "precipitation-fog",
+      "radiation-fog"
+    ],
+    "question": "How is precipitation-induced fog different from radiation fog?",
+    "choices": [
+      {
+        "text": "Precipitation-induced fog forms when falling precipitation moistens cooler air; radiation fog forms from surface cooling at night",
+        "correct": true
+      },
+      {
+        "text": "Precipitation-induced fog requires clear skies",
+        "correct": false
+      },
+      {
+        "text": "Radiation fog forms only during heavy rain",
+        "correct": false
+      },
+      {
+        "text": "Both form only from engine exhaust",
+        "correct": false
+      }
+    ],
+    "answer": "Precipitation-induced fog forms when falling precipitation moistens cooler air; radiation fog forms from surface cooling at night.",
+    "explanation": "Radiation fog is usually tied to local nighttime cooling and often improves after sunrise. Precipitation-induced fog is tied to a weather system that is actively supplying moisture through rain or snow. Because the moisture source can continue for hours, precipitation fog may persist through the day and affect large route segments.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Radiation Fog and Frontal Fog",
+    "media": []
+  },
+  {
+    "id": "MET-384",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "decision-making",
+      "vfr"
+    ],
+    "question": "Your destination reports `3SM BR`, but nearby low-lying airports are reporting `1/4SM FG`. What should you consider?",
+    "answer": "Fog may be patchy or terrain-dependent, and destination conditions could deteriorate or be worse along the approach or route.",
+    "explanation": "Fog often varies over short distances, especially near valleys, water, low terrain, and temperature inversions. A single airport report may not represent conditions along the route or at nearby alternates. `BR` at the destination shows the air is already moist and visibility is restricted; nearby dense fog suggests only a small change may bring the destination below VFR minima. A conservative pilot should check trends, satellite, local reports, alternates, and briefing information.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI and Weather Briefing Tips; FAA Aviation Weather Handbook, Ch. 18, Fog",
+    "media": []
+  },
+  {
+    "id": "MET-385",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "go-no-go",
+      "forecast-trend"
+    ],
+    "question": "Radiation fog is forecast to lift by 1500Z, but at 1450Z the METAR still reports `1/8SM FG VV001`. What should you do as a VFR pilot?",
+    "answer": "Wait for actual improvement and a reliable trend before departing or arriving.",
+    "explanation": "Forecast improvement is not the same as observed improvement. Fog can persist longer than expected, especially if solar heating is weak, cloud moves over the fog, wind remains light, or the surface stays moist. `1/8SM FG VV001` indicates extremely poor visibility and almost no vertical visibility. A VFR pilot should not launch based on the hoped-for clearing time alone.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, METAR and TAF",
+    "media": []
+  },
+  {
+    "id": "MET-386",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "burnoff",
+      "radiation-fog"
+    ],
+    "question": "Why does radiation fog often dissipate after sunrise?",
+    "choices": [
+      {
+        "text": "Solar heating warms the surface and lower air, increasing the temperature-dew point spread",
+        "correct": true
+      },
+      {
+        "text": "The Moon pulls fog upward",
+        "correct": false
+      },
+      {
+        "text": "Pressure always drops after sunrise",
+        "correct": false
+      },
+      {
+        "text": "Fog changes into volcanic ash",
+        "correct": false
+      }
+    ],
+    "answer": "Solar heating warms the surface and lower air, increasing the temperature-dew point spread.",
+    "explanation": "Radiation fog forms because the surface and air near it cool to saturation overnight. After sunrise, solar heating warms the ground, which warms the air in contact with it. As temperature rises above dew point, relative humidity decreases and fog droplets evaporate. However, burnoff can be delayed by thick fog, cloud above the fog, weak sun angle, snow cover, light wind, or continued moisture input.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Radiation Fog",
+    "media": []
+  },
+  {
+    "id": "MET-387",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "persistence",
+      "advection-fog"
+    ],
+    "question": "Which fog type is often more extensive and persistent than radiation fog?",
+    "choices": [
+      {
+        "text": "Advection fog",
+        "correct": true
+      },
+      {
+        "text": "Dust fog",
+        "correct": false
+      },
+      {
+        "text": "Wake fog",
+        "correct": false
+      },
+      {
+        "text": "Lenticular fog",
+        "correct": false
+      }
+    ],
+    "answer": "Advection fog.",
+    "explanation": "Advection fog forms when moist air continues to move over a colder surface. As long as that flow persists, the fog may keep forming or moving into the area. Unlike radiation fog, it is not limited to clear nights and may not burn off quickly after sunrise. Coastal areas are especially vulnerable because marine air can continuously move over colder water or land.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Advection Fog",
+    "media": []
+  },
+  {
+    "id": "MET-388",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "wind",
+      "formation"
+    ],
+    "question": "How does wind affect radiation fog formation?",
+    "choices": [
+      {
+        "text": "Calm or light wind favours shallow fog; slight wind can deepen it; stronger wind tends to mix or disperse it",
+        "correct": true
+      },
+      {
+        "text": "Strong wind always creates radiation fog",
+        "correct": false
+      },
+      {
+        "text": "Wind has no effect on fog",
+        "correct": false
+      },
+      {
+        "text": "Fog forms only in hurricane-force winds",
+        "correct": false
+      }
+    ],
+    "answer": "Calm or light wind favours shallow fog; slight wind can deepen it; stronger wind tends to mix or disperse it.",
+    "explanation": "Radiation fog needs cooling near the surface. In calm air, the fog may be very shallow because cooling stays close to the ground. A slight wind can mix the cooling through a deeper layer and make the fog deeper. Stronger wind mixes the air too much, often preventing saturation at the surface or lifting the moisture into low stratus. This is why fog forecasts are sensitive to small wind changes.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Radiation Fog",
+    "media": []
+  },
+  {
+    "id": "MET-389",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "visibility",
+      "slant-range"
+    ],
+    "question": "Why can fog be especially hazardous on approach even when reported visibility seems marginally acceptable?",
+    "choices": [
+      {
+        "text": "Slant visibility from the cockpit can be worse than horizontal visibility reported at the surface",
+        "correct": true
+      },
+      {
+        "text": "Fog improves depth perception",
+        "correct": false
+      },
+      {
+        "text": "Fog makes runway lights brighter in all directions",
+        "correct": false
+      },
+      {
+        "text": "Reported visibility always equals cockpit visibility",
+        "correct": false
+      }
+    ],
+    "answer": "Slant visibility from the cockpit can be worse than horizontal visibility reported at the surface.",
+    "explanation": "Surface visibility is measured horizontally near the ground. A pilot on approach looks through the fog at a slant angle, often through a deeper path of droplets. This can make runway environment, terrain, and obstacles appear later than expected. Fog can also scatter light and reduce contrast, making depth perception and flare judgment more difficult.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Weather and Obstructions to Visibility; FAA Aviation Weather Handbook, Obscuration Effects on Slant Range Visibility",
+    "media": []
+  },
+  {
+    "id": "MET-390",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "freezing-fog",
+      "preflight",
+      "aircraft-contamination"
+    ],
+    "question": "Your aircraft has been parked outside overnight in `FZFG`. The visibility has improved, but a rough white deposit remains on the wings. What should you do?",
+    "answer": "Do not take off until all critical surfaces are completely clean and the aircraft is airworthy.",
+    "explanation": "Freezing fog can leave ice or frost contamination even after visibility improves. The key hazard is not just the current weather report but what has accumulated on the aircraft. Rough contamination disrupts airflow, reduces lift, increases drag, increases stall speed, and can reduce control effectiveness. The aircraft must be properly de-iced or placed in conditions that remove the contamination before flight.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 18, Freezing Fog",
+    "media": []
+  },
+  {
+    "id": "MET-391",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-fog",
+      "vfr",
+      "warm-front"
+    ],
+    "question": "You are enroute VFR ahead of a warm front. Light rain begins, the ceiling lowers, and visibility drops from 8 SM to 3 SM in mist and fog. What should you do?",
+    "answer": "Treat this as deteriorating frontal weather and divert or turn back before conditions fall below safe VFR limits.",
+    "explanation": "The scenario suggests precipitation-induced fog and low stratus developing in a warm-frontal environment. This kind of weather can worsen gradually but steadily across a broad area. Continuing may leave fewer visual references, fewer alternates, and less terrain clearance. A prudent VFR pilot acts while the flight is still under control and options remain.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Frontal Fog; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-392",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "vfr",
+      "terrain"
+    ],
+    "question": "You are flying toward a pass. METARs in the valley are VFR, but the GFA shows local obscured ceilings along windward slopes. What should you do?",
+    "answer": "Avoid assuming the pass is open; get updated information and choose a safer route, delay, or turn back if needed.",
+    "explanation": "Valley reports can be misleading when the hazard is terrain-linked. Upslope fog and low stratus may obscure the pass while lower airports remain VFR. The GFA phrase about obscured ceilings is a strong warning that terrain may be hidden by cloud or fog. For VFR mountain flying, seeing the terrain and maintaining escape options are essential.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA; FAA Aviation Weather Handbook, Ch. 18, Upslope Fog; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-393",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "steam-fog",
+      "water-operations",
+      "vfr"
+    ],
+    "question": "You are planning a low-level route along a river in very cold air. Steam fog is forming in patches over open water. What should you consider?",
+    "answer": "Visibility and surface references may be unreliable along the route; delay, climb if legal and useful, or choose a route away from the river fog.",
+    "explanation": "Steam fog may be shallow, but it forms exactly where low-level pilots may need visual surface references. It can hide bends in a river, shoreline obstacles, wires, towers, and other traffic. It can also be patchy, causing rapid transitions between clear and poor visibility. A safe plan should avoid relying on a narrow low-level route through intermittent fog.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Steam Fog; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-394",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "comparison",
+      "learning"
+    ],
+    "question": "Compare upslope fog, steam fog, ice fog, and precipitation-induced fog in one or two sentences each.",
+    "answer": "Upslope fog forms when moist stable air is forced uphill and cools to saturation. Steam fog forms when cold air moves over warmer water and gains moisture. Ice fog consists of tiny ice crystals and is most common in very cold arctic or subarctic conditions. Precipitation-induced fog forms when rain or snow evaporates or sublimates into cooler air below, adding moisture until it saturates.",
+    "explanation": "These fog types are best learned by their formation mechanism. Upslope fog is a terrain-lift problem. Steam fog is a cold-air-over-warm-water problem. Ice fog is a very-cold-air ice-crystal problem. Precipitation fog is a falling-precipitation-moistening-cool-air problem. Knowing the mechanism helps a pilot predict where the fog may form, how long it may last, and what other hazards may accompany it.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Fog Types; FAA Aviation Weather Handbook, Ch. 21, Arctic Weather",
+    "media": []
+  },
+  {
+    "id": "MET-395",
+    "topic": "Meteorology - Fog Types Beyond Basics",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "fog",
+      "integrated-decision",
+      "go-no-go"
+    ],
+    "question": "You are planning a VFR cross-country. Departure is VFR, but the route crosses rising terrain with moist upslope flow, the destination TAF includes `TEMPO 1/2SM FG VV003`, and an alternate near a lake is reporting steam fog in very cold air. What is the safest decision?",
+    "answer": "Delay, cancel, or re-plan with a route and alternates that remain clearly VFR. Do not depart based only on the good departure weather.",
+    "explanation": "This scenario combines several fog hazards: upslope fog along rising terrain, dense temporary fog and vertical visibility at destination, and steam fog affecting an alternate. Each hazard reduces visual references in a different way. Together, they create poor escape options for a VFR pilot. A safe weather decision looks at the whole route, destination, alternates, timing, and terrain, not just whether the departure airport is currently VFR.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA, METAR/TAF, and Weather Briefing Tips; FAA Aviation Weather Handbook, Ch. 18, Fog Types; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  }
+]

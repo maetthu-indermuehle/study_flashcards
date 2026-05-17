@@ -1,6 +1,6 @@
 # Core Domain Model
 
-This diagram shows the planned core entities for the PPL flashcard app. It is a conceptual model, not the final Prisma schema, but it should map closely to the database design.
+This diagram reflects the current Prisma schema (`app/prisma/schema.prisma`). It should be updated whenever the schema changes.
 
 ```mermaid
 erDiagram
@@ -50,7 +50,8 @@ erDiagram
         string id PK
         string deckId FK
         string createdByUserId FK
-        string sourceImportId FK
+        string importBatchId FK
+        string originalId
         string type
         string question
         string answer
@@ -163,7 +164,9 @@ erDiagram
 - `Review` is append-only history. The scheduler can be changed later because the raw review events are preserved.
 - `Choice` exists only for multiple-choice cards. Open-answer cards do not need choices.
 - `Tag` is flexible. Topic, source, skill area, and custom filters all use the same tagging system.
-- `MediaAsset` stores file metadata; the actual file should live in object storage or another external file store.
+- `MediaAsset` stores file metadata; the actual file lives in object storage or a local volume. `sourceLabel` holds the attribution credit line (author and license), `sourceUrl` holds the origin URL where the asset was obtained, and `licenseNotes` holds additional license detail when needed.
 - `SourceReference` is separate from tags so a card can have precise references as well as broad filterable labels.
 - `ImportBatch` records how cards entered the system and supports preview, validation, rollback, and later export/debug workflows.
+- `Card.originalId` preserves the source identifier from the import file (e.g. `"MET-042"`) for traceability and idempotent re-imports.
+- `Card.importBatchId` links a card back to the import run that created it.
 

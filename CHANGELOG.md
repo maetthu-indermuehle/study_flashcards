@@ -6,6 +6,63 @@ This project uses semantic versioning.
 
 ## [Unreleased]
 
+### Added
+
+- Canonical JSON question format spec (`docs/question_generation_guide.md`) with a
+  ready-to-paste LLM prompt, field definitions, media support (`attribution`, `origin`),
+  and examples for all card types.
+- Phase 2 implementation plan (`docs/phase_2_plan.md`).
+- `app/src/lib/importer/types.ts` — shared `ParsedCard`, `ParsedChoice`, and
+  `ParsedMedia` types used across the import pipeline.
+- `app/src/lib/importer/json-parser.ts` — `parseJsonCards()` parses a JSON question
+  file into `ParsedCard[]` using Zod for structural validation (21 unit tests).
+- `app/src/lib/importer/validator.ts` — `validate()` performs semantic checks on a
+  `ParsedCard[]` batch and returns `ValidationError[]` without throwing. Checks:
+  `EMPTY_QUESTION`, `MISSING_ANSWER`, `NO_CORRECT_CHOICE` (errors),
+  `MISSING_REFERENCE` (warning), and `DUPLICATE_SOURCE_ID` (error) (19 unit tests).
+- JSDoc on all exported functions, types, and constants in `app/src/lib/`.
+- JSDoc guideline added to `docs/project_guidelines.md`.
+- `app/src/lib/importer/import-service.ts` — `importCards()` writes a validated
+  `ParsedCard[]` batch to the database. Upserts cards by `(deckId, originalId)`,
+  replaces choices/tags/source-references wholesale, and manages an `ImportBatch`
+  audit row (`DRAFT` → `IMPORTED` / `FAILED`). Media assets are deferred to Phase 7.
+- `app/scripts/import.ts` — CLI entry point wiring parser → validator → import
+  service. Flags: `--dry-run` (validate only), `--force` (ignore errors), `--verbose`
+  (list each card), `--deck <name>`, `--user <email>`.
+- `app/package.json`: added `"import"` script shortcut (`tsx scripts/import.ts`).
+- `data/questions/smoke_test.json` — three hand-written cards (single-correct MC,
+  open-answer, multi-correct MC) used to verify the full pipeline end-to-end.
+- `docker-compose.yml`: added `./data:/data` volume mount so JSON files at the
+  repo root are accessible inside the container for import.
+
+- `scripts/md_to_json.ts` — one-off Markdown → JSON migration script (repo root).
+  Handles three source formats: MET-style (with Topic/Type/Difficulty/Tags),
+  Q-style (Topic/Type only), and Sample-style (type in heading, bold question).
+  Converts 923 cards from 17 source files with 0 warnings. Run from the repo
+  root: `npx tsx scripts/md_to_json.ts [--verbose]`.
+- `data/questions/*.json` — 923 migrated question cards committed as the
+  portable source of truth for all deployments. Full import: 926 cards in the
+  database (660 MC, 266 open answer, 2640 choices, 902 source references,
+  642 tags).
+
+### Changed
+
+- `app/prisma/seed.ts`: after seeding the user and deck, automatically imports
+  all `*.json` files from `$QUESTIONS_DIR` (default `/data/questions`) using the
+  full parse → validate → import pipeline. Files with parse or validation errors
+  are skipped with a warning; a missing directory is silently ignored (safe for CI).
+  Switched from a local `PrismaClient` to the `lib/db/client` singleton so the
+  seed and import service share one connection pool.
+
+### Changed
+
+- `docs/app_architecture_plan.md`: import strategy updated to JSON-only; repo structure,
+  progress checklist, and open decisions refreshed.
+- `docs/core_domain_model.md`: diagram updated to reflect live Prisma schema (`Card.importBatchId`,
+  `Card.originalId`, `MediaAsset` field notes).
+- `README.md`: current status, documentation table, Docker workflow, and import commands
+  updated to reflect Phase 2 progress.
+
 ## [0.2.0] - 2026-05-16
 
 ### Added

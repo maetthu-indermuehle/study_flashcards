@@ -1,0 +1,2822 @@
+[
+  {
+    "id": "Q001",
+    "topic": "Air Law — Collision Avoidance",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When two aircraft are converging at approximately the same altitude, which aircraft must give way?",
+    "choices": [
+      {
+        "text": "The aircraft on the left",
+        "correct": false
+      },
+      {
+        "text": "The aircraft that has the other on its right",
+        "correct": true
+      },
+      {
+        "text": "The faster aircraft",
+        "correct": false
+      },
+      {
+        "text": "The higher aircraft",
+        "correct": false
+      }
+    ],
+    "answer": "The aircraft that has the other on its right",
+    "explanation": "Under CAR 602.19, when two aircraft are converging at approximately the same altitude, the aircraft that has the other on its right must give way. Put simply: the aircraft on the right has right of way. Options A, C, and D are not correct — speed and altitude are not factors in this rule.",
+    "reference": "CAR 602.19; TP 11919 PSTAR S.1",
+    "media": []
+  },
+  {
+    "id": "Q002",
+    "topic": "Air Law — Collision Avoidance",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When two aircraft are approaching head-on (or approximately so) and there is a danger of collision, each pilot shall:",
+    "choices": [
+      {
+        "text": "Climb to avoid the other",
+        "correct": false
+      },
+      {
+        "text": "Alter heading to the left",
+        "correct": false
+      },
+      {
+        "text": "Alter heading to the right",
+        "correct": true
+      },
+      {
+        "text": "Slow down and let the other pass",
+        "correct": false
+      }
+    ],
+    "answer": "Alter heading to the right",
+    "explanation": "The head-on rule requires both pilots to alter heading to the right so each aircraft passes to the right of the other. This mirrors road traffic rules. Options A and B are incorrect — the rule specifically says right, not left or climb.",
+    "reference": "CAR 602.19; TP 11919 PSTAR S.1",
+    "media": []
+  },
+  {
+    "id": "Q003",
+    "topic": "Air Law — Collision Avoidance",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When overtaking another aircraft, the overtaking pilot shall:",
+    "choices": [
+      {
+        "text": "Pass above the other aircraft",
+        "correct": false
+      },
+      {
+        "text": "Alter heading to the left",
+        "correct": false
+      },
+      {
+        "text": "Alter heading to the right",
+        "correct": true
+      },
+      {
+        "text": "Sound three short horn blasts",
+        "correct": false
+      }
+    ],
+    "answer": "Alter heading to the right",
+    "explanation": "An overtaking aircraft alters heading to the right so it passes to the right of the slower aircraft. The overtaken aircraft has right of way and need not alter course. Passing above or to the left is not the prescribed rule.",
+    "reference": "CAR 602.19; TP 11919 PSTAR S.1",
+    "media": []
+  },
+  {
+    "id": "Q004",
+    "topic": "Air Law — Right of Way",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following has the highest right of way priority?",
+    "choices": [
+      {
+        "text": "A glider",
+        "correct": false
+      },
+      {
+        "text": "An aircraft towing a glider",
+        "correct": false
+      },
+      {
+        "text": "An airship",
+        "correct": false
+      },
+      {
+        "text": "An aircraft in distress",
+        "correct": true
+      }
+    ],
+    "answer": "An aircraft in distress",
+    "explanation": "The right-of-way priority order from highest to lowest is: (1) aircraft in distress, (2) balloons, (3) gliders, (4) aircraft towing gliders or objects, (5) airships, (6) aeroplanes and helicopters, (7) lighter-than-air except balloons. An aircraft in distress always has absolute priority.",
+    "reference": "CAR 602.19; TP 11919 PSTAR S.1",
+    "media": []
+  },
+  {
+    "id": "Q005",
+    "topic": "Air Law — Right of Way",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following has the LOWEST right-of-way priority among powered aircraft in flight?",
+    "choices": [
+      {
+        "text": "A balloon",
+        "correct": false
+      },
+      {
+        "text": "A glider",
+        "correct": false
+      },
+      {
+        "text": "An aircraft towing a banner",
+        "correct": false
+      },
+      {
+        "text": "A powered aeroplane not towing anything",
+        "correct": true
+      }
+    ],
+    "answer": "A powered aeroplane not towing anything",
+    "explanation": "The priority order places balloons second (after distress), gliders third, and aircraft towing objects fourth — all above a standard powered aeroplane, which is sixth in the hierarchy. A powered aeroplane must give way to balloons, gliders, and towing aircraft.",
+    "reference": "CAR 602.19; TP 11919 PSTAR S.1",
+    "media": []
+  },
+  {
+    "id": "Q006",
+    "topic": "Air Law — Right of Way",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Two aircraft are approaching to land at the same uncontrolled aerodrome. Aircraft A is on final at 800 ft AAE and Aircraft B is on final at 600 ft AAE. Which has right of way?",
+    "choices": [
+      {
+        "text": "Aircraft A, because it is higher and more established",
+        "correct": false
+      },
+      {
+        "text": "Aircraft B, because it is at the lower altitude",
+        "correct": true
+      },
+      {
+        "text": "The faster aircraft",
+        "correct": false
+      },
+      {
+        "text": "They must both go around",
+        "correct": false
+      }
+    ],
+    "answer": "Aircraft B, because it is at the lower altitude",
+    "explanation": "When two aircraft are on final approach to land, the aircraft at the lower altitude has right of way. However, the lower aircraft may not cut in front of or overtake the higher aircraft on final. Aircraft B at 600 ft AAE has right of way over Aircraft A at 800 ft AAE.",
+    "reference": "CAR 602.19",
+    "media": []
+  },
+  {
+    "id": "Q007",
+    "topic": "Air Law — Right of Way",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "You are flying cross-country and another aircraft is towing a banner on a converging course. You are to the left of the towing aircraft. Who gives way?",
+    "choices": [
+      {
+        "text": "You give way, because aircraft towing objects have priority over standard powered aeroplanes",
+        "correct": true
+      },
+      {
+        "text": "The towing aircraft gives way, because it is slower",
+        "correct": false
+      },
+      {
+        "text": "You give way, because you are on the left",
+        "correct": false
+      },
+      {
+        "text": "Both aircraft give way by turning right",
+        "correct": false
+      }
+    ],
+    "answer": "You give way, because aircraft towing objects have priority over standard powered aeroplanes",
+    "explanation": "An aircraft towing objects (such as banners or gliders) has right of way over all other power-driven heavier-than-air aircraft. Regardless of converging positions, you must give way to the towing aircraft.",
+    "reference": "CAR 602.19",
+    "media": []
+  },
+  {
+    "id": "Q008",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A steady GREEN light signal from the control tower to an aircraft in flight means:",
+    "choices": [
+      {
+        "text": "Cleared to approach",
+        "correct": false
+      },
+      {
+        "text": "Cleared to land",
+        "correct": true
+      },
+      {
+        "text": "Give way and continue circling",
+        "correct": false
+      },
+      {
+        "text": "Return to starting point",
+        "correct": false
+      }
+    ],
+    "answer": "Cleared to land",
+    "explanation": "Light gun signals from the tower to aircraft in flight: steady green = cleared to land; flashing green = cleared to approach; steady red = give way, continue circling; flashing red = aerodrome unsafe, do not land. A steady green is the final clearance to land.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q009",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A FLASHING GREEN light signal from the control tower to an aircraft in flight means:",
+    "choices": [
+      {
+        "text": "Cleared to land",
+        "correct": false
+      },
+      {
+        "text": "Exercise extreme caution",
+        "correct": false
+      },
+      {
+        "text": "Cleared to approach (return and land)",
+        "correct": true
+      },
+      {
+        "text": "Aerodrome unsafe — do not land",
+        "correct": false
+      }
+    ],
+    "answer": "Cleared to approach (return and land)",
+    "explanation": "Flashing green to an aircraft in flight means cleared to approach. This is different from steady green (cleared to land). The pilot should return to the circuit and land.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q010",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A steady RED light signal from the control tower to an aircraft in flight means:",
+    "choices": [
+      {
+        "text": "Stop immediately",
+        "correct": false
+      },
+      {
+        "text": "Aerodrome unsafe — do not land",
+        "correct": false
+      },
+      {
+        "text": "Give way to other aircraft and continue circling",
+        "correct": true
+      },
+      {
+        "text": "Return to starting point on the aerodrome",
+        "correct": false
+      }
+    ],
+    "answer": "Give way to other aircraft and continue circling",
+    "explanation": "Steady red to an aircraft in flight means give way to other aircraft and continue circling. The pilot should not land until cleared. A flashing red (not steady red) means aerodrome unsafe. Steady red on the ground means stop.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q011",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A steady GREEN light signal from the control tower to an aircraft ON THE GROUND means:",
+    "choices": [
+      {
+        "text": "Cleared to take off",
+        "correct": true
+      },
+      {
+        "text": "Cleared to taxi",
+        "correct": false
+      },
+      {
+        "text": "Stop",
+        "correct": false
+      },
+      {
+        "text": "Cleared to cross the active runway",
+        "correct": false
+      }
+    ],
+    "answer": "Cleared to take off",
+    "explanation": "Light gun signals to aircraft on the ground differ from those to aircraft in flight. Steady green on the ground = cleared for take-off. Flashing green on the ground = cleared to taxi. Steady red on the ground = stop.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q012",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A FLASHING RED light from the tower to an aircraft on the ground means:",
+    "choices": [
+      {
+        "text": "Stop immediately",
+        "correct": false
+      },
+      {
+        "text": "Taxi clear of the landing area (runway) in use",
+        "correct": true
+      },
+      {
+        "text": "Return to starting point",
+        "correct": false
+      },
+      {
+        "text": "Exercise extreme caution",
+        "correct": false
+      }
+    ],
+    "answer": "Taxi clear of the landing area (runway) in use",
+    "explanation": "Flashing red to an aircraft on the ground means taxi clear of the landing area in use — a runway is about to be used and the aircraft must vacate it immediately. This is different from steady red (stop).",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q013",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What does a white cross displayed on a signal square at an aerodrome indicate?",
+    "choices": [
+      {
+        "text": "The aerodrome is open for VFR traffic only",
+        "correct": false
+      },
+      {
+        "text": "The area is not available for movement of aircraft",
+        "correct": true
+      },
+      {
+        "text": "Aircraft are confined to hard surface areas",
+        "correct": false
+      },
+      {
+        "text": "Position reports are required at this aerodrome",
+        "correct": false
+      }
+    ],
+    "answer": "The area is not available for movement of aircraft",
+    "explanation": "A white cross on the signal square (or manoeuvring area) indicates that the area is not available for movement of aircraft. It is a closure marker. A white dumbbell means aircraft are confined to hard surfaces. An orange and white checkered panel means position reports are required.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q014",
+    "topic": "Air Law — Visual Signals",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "An orange and white checkered panel displayed on the signal square at an aerodrome indicates:",
+    "choices": [
+      {
+        "text": "The aerodrome is closed to all aircraft",
+        "correct": false
+      },
+      {
+        "text": "Position reports are required at this aerodrome",
+        "correct": true
+      },
+      {
+        "text": "Aircraft must use hard surface areas only",
+        "correct": false
+      },
+      {
+        "text": "The aerodrome is unfit for fixed-wing aircraft",
+        "correct": false
+      }
+    ],
+    "answer": "Position reports are required at this aerodrome",
+    "explanation": "The orange and white checkered panel is a signal square marker indicating that position reports are mandatory at that aerodrome. Pilots must report their position in the circuit.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q015",
+    "topic": "Air Law — Visual Signals",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "List the light gun signals from the control tower and their meanings for aircraft both in flight and on the ground.",
+    "answer": "To aircraft IN FLIGHT: steady green = cleared to land; flashing green = cleared to approach; steady red = give way and continue circling; flashing red = aerodrome unsafe, do not land; flashing white = return to starting point; alternating red and green = exercise extreme caution.\n\nTo aircraft ON THE GROUND: steady green = cleared for take-off; flashing green = cleared to taxi; steady red = stop; flashing red = taxi clear of runway in use; flashing white = return to starting point; alternating red and green = exercise extreme caution.",
+    "explanation": "Light gun signals are used when radio communication is lost or unavailable. The same light type (e.g., steady green) means different things depending on whether the aircraft is airborne or on the ground — pilots must know both sets.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.2",
+    "media": []
+  },
+  {
+    "id": "Q016",
+    "topic": "Air Law — Transponder Codes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Unless instructed otherwise by ATC, a VFR aircraft flying at or below 12,500 ft ASL should squawk:",
+    "choices": [
+      {
+        "text": "7000",
+        "correct": false
+      },
+      {
+        "text": "1200",
+        "correct": true
+      },
+      {
+        "text": "1400",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": false
+      }
+    ],
+    "answer": "1200",
+    "explanation": "The standard VFR transponder code in Canada is 1200 for flights at or below 12,500 ft ASL. Code 1400 is used for VFR above 12,500 ft ASL. Code 7000 is not a standard Canadian VFR code. Always use the ATC-assigned code if given one.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q017",
+    "topic": "Air Law — Transponder Codes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A VFR aircraft flying above 12,500 ft ASL should squawk which transponder code (unless ATC assigns a different one)?",
+    "choices": [
+      {
+        "text": "1200",
+        "correct": false
+      },
+      {
+        "text": "1400",
+        "correct": true
+      },
+      {
+        "text": "7500",
+        "correct": false
+      },
+      {
+        "text": "2000",
+        "correct": false
+      }
+    ],
+    "answer": "1400",
+    "explanation": "In Canada, VFR aircraft flying above 12,500 ft ASL use transponder code 1400 by default. Code 1200 is for VFR at or below 12,500 ft ASL. This distinction helps ATC differentiate high-altitude VFR traffic.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q018",
+    "topic": "Air Law — Transponder Codes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which transponder code should a pilot select if experiencing a complete radio communications failure?",
+    "choices": [
+      {
+        "text": "7500",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": false
+      },
+      {
+        "text": "7600",
+        "correct": true
+      },
+      {
+        "text": "1200",
+        "correct": false
+      }
+    ],
+    "answer": "7600",
+    "explanation": "Code 7600 signifies loss of radio communications (radio failure). Code 7700 = emergency (distress). Code 7500 = hijacking. Code 1200 = normal VFR. Squawking 7600 alerts ATC to the communications failure so they can provide visual signals or other assistance.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q019",
+    "topic": "Air Law — Transponder Codes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which transponder code indicates an aircraft is being hijacked?",
+    "choices": [
+      {
+        "text": "7700",
+        "correct": false
+      },
+      {
+        "text": "7600",
+        "correct": false
+      },
+      {
+        "text": "7500",
+        "correct": true
+      },
+      {
+        "text": "1400",
+        "correct": false
+      }
+    ],
+    "answer": "7500",
+    "explanation": "The three emergency transponder codes are: 7700 = distress/emergency; 7600 = radio failure; 7500 = hijacking. These are internationally standardized codes. 7500 alerts ATC and military authorities to a hijacking situation without the crew having to make a radio call.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q020",
+    "topic": "Air Law — Transponder Codes",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "List all four standard transponder codes used in Canada for VFR and emergency situations, and explain what each means.",
+    "answer": "1200 — Standard VFR code for flights at or below 12,500 ft ASL in Canada.\n1400 — VFR code for flights above 12,500 ft ASL.\n7700 — Emergency/distress: the aircraft is in grave and imminent danger requiring immediate assistance.\n7600 — Radio failure: the aircraft has lost communications capability.\n7500 — Hijacking: the aircraft is being unlawfully seized.",
+    "explanation": "These codes are squawked on the transponder's Mode A setting. ATC radar displays will flag any 7-series emergency code immediately. Pilots should switch to the appropriate emergency code as soon as the situation arises.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q021",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which class of Canadian airspace exists above Flight Level 180 (18,000 ft ASL) and is restricted to IFR operations only?",
+    "choices": [
+      {
+        "text": "Class B",
+        "correct": false
+      },
+      {
+        "text": "Class C",
+        "correct": false
+      },
+      {
+        "text": "Class A",
+        "correct": true
+      },
+      {
+        "text": "Class E",
+        "correct": false
+      }
+    ],
+    "answer": "Class A",
+    "explanation": "Class A airspace extends from FL180 (18,000 ft ASL) and above. It is IFR only — VFR flight is not permitted. All aircraft require an ATC clearance. VFR pilots cannot fly in Class A airspace.",
+    "reference": "CAR 601; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q022",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "You are flying VFR and wish to enter Class C airspace. What is required?",
+    "choices": [
+      {
+        "text": "Only a two-way radio",
+        "correct": false
+      },
+      {
+        "text": "An ATC clearance and a transponder with Mode C",
+        "correct": true
+      },
+      {
+        "text": "A transponder only — no radio required",
+        "correct": false
+      },
+      {
+        "text": "Nothing — Class C is uncontrolled",
+        "correct": false
+      }
+    ],
+    "answer": "An ATC clearance and a transponder with Mode C",
+    "explanation": "Class C airspace requires VFR pilots to obtain an ATC clearance before entry, maintain two-way radio communication, and have a transponder with Mode C (altitude encoding). ATC provides separation between IFR/IFR and IFR/VFR, and traffic information for VFR/VFR.",
+    "reference": "CAR 601.09; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q023",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "You are flying VFR and wish to enter Class D airspace (a control zone). What is the minimum requirement?",
+    "choices": [
+      {
+        "text": "An ATC clearance and transponder Mode C",
+        "correct": false
+      },
+      {
+        "text": "Establish two-way radio communication with ATC",
+        "correct": true
+      },
+      {
+        "text": "File an IFR flight plan",
+        "correct": false
+      },
+      {
+        "text": "No requirement — Class D is open to all VFR traffic",
+        "correct": false
+      }
+    ],
+    "answer": "Establish two-way radio communication with ATC",
+    "explanation": "For VFR entry into Class D airspace, the pilot must establish two-way radio communication with ATC. An ATC clearance is not required for VFR (unlike Class C). ATC provides IFR/IFR separation and traffic information for VFR aircraft. A transponder is not mandatory in Class D (though recommended).",
+    "reference": "CAR 601.09; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q024",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "In Class G (uncontrolled) airspace, what is required of a VFR pilot?",
+    "choices": [
+      {
+        "text": "An ATC clearance",
+        "correct": false
+      },
+      {
+        "text": "A transponder with Mode C",
+        "correct": false
+      },
+      {
+        "text": "Establishment of radio contact with the nearest FSS",
+        "correct": false
+      },
+      {
+        "text": "No ATC clearance, transponder, or radio contact is required",
+        "correct": true
+      }
+    ],
+    "answer": "No ATC clearance, transponder, or radio contact is required",
+    "explanation": "Class G is uncontrolled airspace. VFR pilots have no requirement to obtain ATC clearance, carry a transponder, or establish radio contact. However, they must still comply with VFR weather minimums and all other aviation regulations.",
+    "reference": "CAR 601; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q025",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What separation service does ATC provide in Class C airspace?",
+    "choices": [
+      {
+        "text": "No separation — Class C is advisory only",
+        "correct": false
+      },
+      {
+        "text": "IFR/IFR separation only",
+        "correct": false
+      },
+      {
+        "text": "IFR/IFR separation, IFR/VFR separation, and VFR/VFR traffic information",
+        "correct": true
+      },
+      {
+        "text": "Separation for all aircraft including VFR/VFR",
+        "correct": false
+      }
+    ],
+    "answer": "IFR/IFR separation, IFR/VFR separation, and VFR/VFR traffic information",
+    "explanation": "In Class C airspace ATC provides: full separation between IFR aircraft (IFR/IFR), separation between IFR and VFR aircraft (IFR/VFR), and traffic information for VFR/VFR conflicts. ATC does not actively separate VFR aircraft from each other but does advise of traffic.",
+    "reference": "CAR 601.09; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q026",
+    "topic": "Air Law — Airspace",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Describe the seven classes of Canadian airspace, including altitude bands, type of operations permitted, and requirements for VFR entry.",
+    "answer": "Class A: FL180 and above. IFR only — no VFR permitted. ATC clearance required for all aircraft.\nClass B: 12,500 ft ASL to FL180. IFR and VFR permitted. Transponder with Mode C required. VFR requires ATC clearance.\nClass C: Controlled terminal area. IFR and VFR permitted. VFR requires ATC clearance, two-way radio, and transponder Mode C. ATC provides IFR/IFR and IFR/VFR separation; VFR/VFR traffic info.\nClass D: Control zones (surface to base of CZ). IFR and VFR permitted. VFR requires two-way radio communication established — no clearance needed. ATC provides IFR/IFR separation and traffic info for VFR.\nClass E: Controlled airspace not classified A–D. IFR requires clearance; VFR no clearance or transponder required.\nClass F: Special use airspace. Restricted (prohibited without permission) or Advisory (traffic information provided).\nClass G: Uncontrolled airspace. No ATC clearance, transponder, or radio required for VFR.",
+    "explanation": "Understanding airspace classes is fundamental to flight planning. The primary differentiator is what ATC does for you in each class and what you must have to enter. Class D is often confused with Class C — the key difference is that Class D requires radio contact (not a clearance) and does not mandate a transponder.",
+    "reference": "CAR 601; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q027",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "In controlled airspace (Classes B, C, D, E above 700 ft AGL), what is the minimum flight visibility required for VFR flight?",
+    "choices": [
+      {
+        "text": "1 statute mile",
+        "correct": false
+      },
+      {
+        "text": "3 statute miles",
+        "correct": true
+      },
+      {
+        "text": "5 statute miles",
+        "correct": false
+      },
+      {
+        "text": "500 feet",
+        "correct": false
+      }
+    ],
+    "answer": "3 statute miles",
+    "explanation": "The standard VFR visibility minimum in controlled airspace is 3 statute miles. In uncontrolled airspace (Class G) above 1,000 ft AGL, it is 1 statute mile. The 3 SM rule applies in Classes B, C, D, and E at altitude.",
+    "reference": "CAR 602.114; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q028",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "For VFR flight in controlled airspace, what is the minimum distance from cloud required horizontally?",
+    "choices": [
+      {
+        "text": "500 feet",
+        "correct": false
+      },
+      {
+        "text": "1,000 feet",
+        "correct": false
+      },
+      {
+        "text": "2,000 feet",
+        "correct": true
+      },
+      {
+        "text": "1 statute mile",
+        "correct": false
+      }
+    ],
+    "answer": "2,000 feet",
+    "explanation": "VFR cloud clearance in controlled airspace above 700 ft AGL: 500 ft below cloud, 1,000 ft above cloud, 2,000 ft horizontally from cloud. The \"500-1,000-2,000\" rule is the standard controlled airspace VFR cloud clearance.",
+    "reference": "CAR 602.114; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q029",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the minimum visibility for Special VFR (SVFR) flight in a control zone?",
+    "choices": [
+      {
+        "text": "3 statute miles",
+        "correct": false
+      },
+      {
+        "text": "2 statute miles",
+        "correct": false
+      },
+      {
+        "text": "1 statute mile",
+        "correct": true
+      },
+      {
+        "text": "500 feet",
+        "correct": false
+      }
+    ],
+    "answer": "1 statute mile",
+    "explanation": "Special VFR authorizes VFR flight in a control zone when weather is below normal VFR minimums. The SVFR minimum is 1 statute mile flight visibility and the flight must remain clear of cloud. SVFR at night is only authorized for landing.",
+    "reference": "CAR 602.117; TP 11919 PSTAR S.10",
+    "media": []
+  },
+  {
+    "id": "Q030",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Who can authorize a Special VFR clearance?",
+    "choices": [
+      {
+        "text": "The pilot, by declaring the flight as SVFR",
+        "correct": false
+      },
+      {
+        "text": "The Flight Service Station (FSS)",
+        "correct": false
+      },
+      {
+        "text": "ATC, but only if requested by the pilot",
+        "correct": true
+      },
+      {
+        "text": "Any licensed pilot by filing a flight plan marked SVFR",
+        "correct": false
+      }
+    ],
+    "answer": "ATC, but only if requested by the pilot",
+    "explanation": "ATC cannot suggest or initiate an SVFR clearance — the pilot must request it. Once requested, the appropriate ATC unit may authorize it subject to IFR traffic. The FSS cannot issue SVFR clearances (only ATC can). The initiative must always come from the pilot.",
+    "reference": "CAR 602.117; FTM Ch.6",
+    "media": []
+  },
+  {
+    "id": "Q031",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "In uncontrolled (Class G) airspace at or below 700 ft AGL, what is the cloud clearance requirement for VFR flight?",
+    "choices": [
+      {
+        "text": "500 ft below, 1,000 ft above, 2,000 ft horizontal",
+        "correct": false
+      },
+      {
+        "text": "1,000 ft above, 500 ft horizontal",
+        "correct": false
+      },
+      {
+        "text": "Clear of cloud",
+        "correct": true
+      },
+      {
+        "text": "No cloud clearance requirement if visibility exceeds 3 SM",
+        "correct": false
+      }
+    ],
+    "answer": "Clear of cloud",
+    "explanation": "At or below 700 ft AGL in Class G uncontrolled airspace, the requirement is simply to remain clear of cloud with 1 SM visibility. There is no specific cloud clearance distance specified — the aircraft must just not be in cloud.",
+    "reference": "CAR 602.115; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q032",
+    "topic": "Air Law — VFR Minimums",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the minimum visibility for day VFR flight in Class G uncontrolled airspace above 1,000 ft AGL?",
+    "choices": [
+      {
+        "text": "3 statute miles",
+        "correct": false
+      },
+      {
+        "text": "1 statute mile",
+        "correct": true
+      },
+      {
+        "text": "5 statute miles",
+        "correct": false
+      },
+      {
+        "text": "½ statute mile",
+        "correct": false
+      }
+    ],
+    "answer": "1 statute mile",
+    "explanation": "In uncontrolled (Class G) airspace above 1,000 ft AGL during the day, the minimum flight visibility is 1 statute mile. Cloud clearance is 500 ft below, 1,000 ft above, and 2,000 ft horizontal. This is more permissive than the 3 SM rule in controlled airspace.",
+    "reference": "CAR 602.115; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q033",
+    "topic": "Air Law — VFR Minimums",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Compare and contrast VFR weather minimums in controlled airspace versus uncontrolled airspace (Class G) in Canada.",
+    "answer": "In controlled airspace (Classes B, C, D, E above 700 ft AGL): 3 SM flight visibility; 500 ft below cloud, 1,000 ft above cloud, 2,000 ft horizontal from cloud.\nIn Class D control zones at surface: 3 SM visibility and 1,000 ft ceiling required; SVFR at 1 SM clear of cloud.\nIn Class G above 1,000 ft AGL: 1 SM visibility; 500 ft below, 1,000 ft above, 2,000 ft horizontal from cloud.\nIn Class G at or below 700 ft AGL: 1 SM visibility; clear of cloud (no specific distances).",
+    "explanation": "The minimums are more restrictive in controlled airspace because ATC services are being provided and IFR traffic may be operating nearby. The tighter minimums ensure VFR pilots can see and avoid other traffic. The less restrictive Class G minimums reflect the lower traffic density in uncontrolled airspace.",
+    "reference": "CAR 602.114–602.117; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q034",
+    "topic": "Air Law — Cruising Altitudes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "You are flying VFR on a magnetic track of 090° at 4,500 ft. Is this a correct cruising altitude?",
+    "choices": [
+      {
+        "text": "Yes — eastbound tracks use odd thousands plus 500 ft",
+        "correct": false
+      },
+      {
+        "text": "No — eastbound tracks use even thousands plus 500 ft",
+        "correct": true
+      },
+      {
+        "text": "Yes — the rule only applies above 10,000 ft",
+        "correct": false
+      },
+      {
+        "text": "No — you must fly at even thousands eastbound",
+        "correct": false
+      }
+    ],
+    "answer": "No — eastbound (000°–179°) tracks use ODD thousands + 500 ft, so 4,500 is incorrect; correct altitudes would be 3,500 or 5,500 ft.",
+    "explanation": "Wait — actually let me correct this. Magnetic tracks 000°–179° (northbound/eastbound quadrant) use ODD thousands + 500 ft (3,500; 5,500; 7,500). Magnetic tracks 180°–359° use EVEN thousands + 500 ft. A track of 090° is in the 000°–179° range, so the correct altitudes are 3,500; 5,500; 7,500 etc. Flying at 4,500 ft on a 090° track is INCORRECT.",
+    "reference": "CAR 602.34; TP 11919 PSTAR S.11",
+    "media": []
+  },
+  {
+    "id": "Q035",
+    "topic": "Air Law — Cruising Altitudes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "You are flying VFR on a magnetic track of 250°. Which of the following is a correct cruising altitude (above 3,000 ft AGL)?",
+    "choices": [
+      {
+        "text": "5,500 ft",
+        "correct": false
+      },
+      {
+        "text": "4,500 ft",
+        "correct": true
+      },
+      {
+        "text": "3,500 ft",
+        "correct": false
+      },
+      {
+        "text": "6,500 ft",
+        "correct": false
+      }
+    ],
+    "answer": "4,500 ft",
+    "explanation": "Magnetic track 250° falls in the 180°–359° range, which uses EVEN thousands + 500 ft: 4,500; 6,500; 8,500; 10,500 ft. Both 5,500 and 3,500 are odd thousands (used for 000°–179°). 6,500 is also correct but 4,500 is the lowest valid option. For this question, 4,500 is the correct answer from the choices.",
+    "reference": "CAR 602.34; TP 11919 PSTAR S.11",
+    "media": []
+  },
+  {
+    "id": "Q036",
+    "topic": "Air Law — Cruising Altitudes",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "The VFR cruising altitude rule (odd/even + 500 ft) applies at what minimum height?",
+    "choices": [
+      {
+        "text": "Above 1,000 ft AGL",
+        "correct": false
+      },
+      {
+        "text": "Above 3,000 ft AGL",
+        "correct": true
+      },
+      {
+        "text": "Above 3,000 ft ASL",
+        "correct": false
+      },
+      {
+        "text": "At all altitudes",
+        "correct": false
+      }
+    ],
+    "answer": "Above 3,000 ft AGL",
+    "explanation": "The VFR cruising altitude rule (CAR 602.34) applies to flight above 3,000 ft AGL. Below 3,000 ft AGL, pilots may fly at any altitude consistent with safety and regulations. The rule does not apply inside control zones or other specific airspace where ATC assigns altitudes.",
+    "reference": "CAR 602.34; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q037",
+    "topic": "Air Law — Low Flying",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the minimum altitude a VFR pilot must maintain when flying over a built-up area (city, town, or settlement)?",
+    "choices": [
+      {
+        "text": "500 ft AGL",
+        "correct": false
+      },
+      {
+        "text": "1,000 ft AGL",
+        "correct": true
+      },
+      {
+        "text": "2,000 ft AGL",
+        "correct": false
+      },
+      {
+        "text": "500 ft from any structure",
+        "correct": false
+      }
+    ],
+    "answer": "1,000 ft AGL",
+    "explanation": "Over built-up areas, the minimum altitude is 1,000 ft AGL. Over open (non-built-up) areas, the minimum is 500 ft from any person, vessel, vehicle, or structure. These minimums do not apply during take-off and landing.",
+    "reference": "CAR 602.14; TP 11919 PSTAR S.11",
+    "media": []
+  },
+  {
+    "id": "Q038",
+    "topic": "Air Law — Low Flying",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Over open, non-built-up countryside, what is the minimum distance a VFR aircraft must maintain from any person, vessel, vehicle, or structure?",
+    "choices": [
+      {
+        "text": "1,000 ft",
+        "correct": false
+      },
+      {
+        "text": "300 ft",
+        "correct": false
+      },
+      {
+        "text": "500 ft",
+        "correct": true
+      },
+      {
+        "text": "200 ft",
+        "correct": false
+      }
+    ],
+    "answer": "500 ft",
+    "explanation": "Over open (non-built-up) areas, CAR 602.14 requires VFR aircraft to remain not closer than 500 ft from any person, vessel, vehicle, or structure. The 1,000 ft rule applies only over built-up areas.",
+    "reference": "CAR 602.14",
+    "media": []
+  },
+  {
+    "id": "Q039",
+    "topic": "Air Law — Fuel Requirements",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "For a day VFR flight in a propeller-driven aeroplane, how much reserve fuel is required beyond what is needed to reach the destination?",
+    "choices": [
+      {
+        "text": "20 minutes at normal cruising speed",
+        "correct": false
+      },
+      {
+        "text": "30 minutes at normal cruising speed",
+        "correct": false
+      },
+      {
+        "text": "45 minutes at normal cruising speed",
+        "correct": true
+      },
+      {
+        "text": "1 hour at normal cruising speed",
+        "correct": false
+      }
+    ],
+    "answer": "45 minutes at normal cruising speed",
+    "explanation": "CAR 602.88 requires propeller-driven aeroplanes on day VFR to carry enough fuel to reach the destination plus 45 minutes at normal cruising speed. This applies to aeroplanes. Night VFR also requires 45 minutes of reserve.",
+    "reference": "CAR 602.88; TP 11919 PSTAR S.6",
+    "media": []
+  },
+  {
+    "id": "Q040",
+    "topic": "Air Law — Fuel Requirements",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "For a night VFR flight in a propeller-driven aeroplane, how much reserve fuel is required beyond the fuel needed to reach the destination?",
+    "choices": [
+      {
+        "text": "30 minutes",
+        "correct": false
+      },
+      {
+        "text": "45 minutes",
+        "correct": true
+      },
+      {
+        "text": "60 minutes",
+        "correct": false
+      },
+      {
+        "text": "90 minutes",
+        "correct": false
+      }
+    ],
+    "answer": "45 minutes",
+    "explanation": "Both day and night VFR propeller-driven aeroplanes require a 45-minute fuel reserve beyond the fuel needed to reach the destination aerodrome. Note that jet aeroplanes have different requirements. Always check the specific regulation for your aircraft type.",
+    "reference": "CAR 602.88; TP 11919 PSTAR S.6",
+    "media": []
+  },
+  {
+    "id": "Q041",
+    "topic": "Air Law — Flight Plans",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When must a VFR pilot file a flight plan or flight itinerary?",
+    "choices": [
+      {
+        "text": "For any flight",
+        "correct": false
+      },
+      {
+        "text": "For any flight in controlled airspace",
+        "correct": false
+      },
+      {
+        "text": "When flying more than 25 NM from the departure aerodrome",
+        "correct": true
+      },
+      {
+        "text": "Only for night flights",
+        "correct": false
+      }
+    ],
+    "answer": "When flying more than 25 NM from the departure aerodrome",
+    "explanation": "Under CAR 602.73, a VFR pilot must file a flight plan or flight itinerary when planning to fly more than 25 NM from the point of departure. This requirement exists to ensure search and rescue can be initiated if the aircraft goes overdue.",
+    "reference": "CAR 602.73; TP 11919 PSTAR S.9",
+    "media": []
+  },
+  {
+    "id": "Q042",
+    "topic": "Air Law — Flight Plans",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the difference between a flight plan and a flight itinerary?",
+    "choices": [
+      {
+        "text": "A flight plan is for IFR flights; a flight itinerary is for VFR flights",
+        "correct": false
+      },
+      {
+        "text": "A flight plan is filed with a Flight Service Station (FSS); a flight itinerary is left with a responsible person",
+        "correct": true
+      },
+      {
+        "text": "A flight plan must be filed 24 hours in advance; a flight itinerary is filed just before departure",
+        "correct": false
+      },
+      {
+        "text": "There is no difference — both terms mean the same thing",
+        "correct": false
+      }
+    ],
+    "answer": "A flight plan is filed with a Flight Service Station (FSS); a flight itinerary is left with a responsible person",
+    "explanation": "A flight plan is filed with an FSS (which will initiate SAR if the aircraft is overdue). A flight itinerary is left with a responsible person (family, friend, or FBO) who will initiate SAR if the pilot fails to close the itinerary by the expected time. Both serve the same SAR safety function.",
+    "reference": "CAR 602.73; TP 11919 PSTAR S.9",
+    "media": []
+  },
+  {
+    "id": "Q043",
+    "topic": "Air Law — Flight Plans",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "If a pilot files a flight plan but fails to close it, after how long past the ETA will search and rescue be initiated?",
+    "choices": [
+      {
+        "text": "30 minutes",
+        "correct": false
+      },
+      {
+        "text": "1 hour",
+        "correct": true
+      },
+      {
+        "text": "2 hours",
+        "correct": false
+      },
+      {
+        "text": "When the next morning's flight service opens",
+        "correct": false
+      }
+    ],
+    "answer": "1 hour",
+    "explanation": "If a flight plan is not closed within 1 hour of the estimated time of arrival (ETA), the FSS will initiate search and rescue action. This underscores the importance of always closing a flight plan upon arrival at the destination.",
+    "reference": "CAR 602.73; TP 11919 PSTAR S.9",
+    "media": []
+  },
+  {
+    "id": "Q044",
+    "topic": "Air Law — Flight Plans",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following is NOT required information when filing a VFR flight plan?",
+    "choices": [
+      {
+        "text": "Number of persons on board",
+        "correct": false
+      },
+      {
+        "text": "Fuel endurance",
+        "correct": false
+      },
+      {
+        "text": "Pilot's home address",
+        "correct": true
+      },
+      {
+        "text": "Alternate aerodrome",
+        "correct": false
+      }
+    ],
+    "answer": "Pilot's home address",
+    "explanation": "A flight plan requires: aircraft identification, type, departure aerodrome, departure time, cruising altitude and speed, route, destination, ETE, fuel endurance, alternate aerodrome, persons on board, and pilot name and contact number. A home address is not a required field, though a contact number is.",
+    "reference": "CAR 602.75; TP 11919 PSTAR S.9",
+    "media": []
+  },
+  {
+    "id": "Q045",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What medical certificate category is required for a Student Pilot Permit (SPP)?",
+    "choices": [
+      {
+        "text": "Category 1",
+        "correct": false
+      },
+      {
+        "text": "Category 2",
+        "correct": false
+      },
+      {
+        "text": "Category 3",
+        "correct": true
+      },
+      {
+        "text": "Category 4",
+        "correct": false
+      }
+    ],
+    "answer": "Category 3",
+    "explanation": "Both the Student Pilot Permit and the Private Pilot Licence require a Transport Canada Category 3 medical certificate. Category 1 is required for airline transport (ATPL) and commercial operations. Category 4 is for certain recreational licences.",
+    "reference": "CAR 404; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q046",
+    "topic": "Air Law — Student Pilot Permit",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following is a Student Pilot Permit (SPP) holder NOT permitted to do?",
+    "choices": [
+      {
+        "text": "Fly solo under supervision",
+        "correct": false
+      },
+      {
+        "text": "Carry passengers",
+        "correct": true
+      },
+      {
+        "text": "Perform dual instruction flights",
+        "correct": false
+      },
+      {
+        "text": "Act as pilot-in-command of an aircraft not carrying passengers",
+        "correct": false
+      }
+    ],
+    "answer": "Carry passengers",
+    "explanation": "An SPP holder may act as pilot-in-command of an aircraft NOT carrying passengers for the purpose of flight training. They cannot carry passengers, fly for hire or reward, fly in IFR conditions as PIC, or fly an aircraft type not specified on their permit.",
+    "reference": "CAR 401.03; TP 12880; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q047",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the minimum total flight time required for a Private Pilot Licence — Aeroplane?",
+    "choices": [
+      {
+        "text": "40 hours",
+        "correct": false
+      },
+      {
+        "text": "45 hours",
+        "correct": true
+      },
+      {
+        "text": "50 hours",
+        "correct": false
+      },
+      {
+        "text": "60 hours",
+        "correct": false
+      }
+    ],
+    "answer": "45 hours",
+    "explanation": "The PPL — Aeroplane requires a minimum of 45 hours total flight time, including at least 17 hours dual instruction and 12 hours solo (of which 5 must be solo cross-country). The solo cross-country must include at least one flight of 100 NM or more with a landing at a point other than the departure aerodrome.",
+    "reference": "CAR 401.05; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q048",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What may a Private Pilot Licence (PPL) holder NOT do?",
+    "choices": [
+      {
+        "text": "Fly at night (with appropriate training)",
+        "correct": false
+      },
+      {
+        "text": "Carry passengers",
+        "correct": false
+      },
+      {
+        "text": "Act as PIC or co-pilot for hire or reward",
+        "correct": true
+      },
+      {
+        "text": "Fly cross-country",
+        "correct": false
+      }
+    ],
+    "answer": "Act as PIC or co-pilot for hire or reward",
+    "explanation": "A PPL holder may not act as PIC or co-pilot of an aircraft for hire or reward (i.e., no commercial operations). They may carry passengers (not for hire), fly at night (with night rating), and fly cross-country. A commercial pilot licence (CPL) is required for hire and reward operations.",
+    "reference": "CAR 401.28; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q049",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "To act as pilot-in-command, a pilot must have completed a flight review within the preceding:",
+    "choices": [
+      {
+        "text": "12 months",
+        "correct": false
+      },
+      {
+        "text": "24 months",
+        "correct": true
+      },
+      {
+        "text": "36 months",
+        "correct": false
+      },
+      {
+        "text": "5 years",
+        "correct": false
+      }
+    ],
+    "answer": "24 months",
+    "explanation": "A pilot must have completed a flight review within the preceding 24 months to act as PIC. Alternatively, passing a pilot proficiency check (PPC) satisfies this requirement. This currency requirement ensures pilots maintain a minimum standard of competency.",
+    "reference": "CAR 401.05; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q050",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When is a pilot NOT permitted to act as a flight crew member based on alcohol?",
+    "choices": [
+      {
+        "text": "Only when blood alcohol exceeds 0.08",
+        "correct": false
+      },
+      {
+        "text": "Within 8 hours of consuming any alcohol, when impaired by alcohol, or when blood alcohol exceeds 0.04",
+        "correct": true
+      },
+      {
+        "text": "Within 4 hours of consuming alcohol",
+        "correct": false
+      },
+      {
+        "text": "Only when visibly impaired",
+        "correct": false
+      }
+    ],
+    "answer": "Within 8 hours of consuming any alcohol, when impaired by alcohol, or when blood alcohol exceeds 0.04",
+    "explanation": "CAR 602.03 states a person shall not act as a crew member within 8 hours of consuming alcohol, while impaired by alcohol or any drug, or while having a blood alcohol level exceeding 0.04 (40 mg/100 mL). This is more restrictive than the legal driving limit in most provinces.",
+    "reference": "CAR 602.03; TP 11919 PSTAR S.6",
+    "media": []
+  },
+  {
+    "id": "Q051",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following documents is NOT required to be carried on a Canadian registered aircraft during a domestic flight within Canada?",
+    "choices": [
+      {
+        "text": "Certificate of Airworthiness",
+        "correct": false
+      },
+      {
+        "text": "Certificate of Registration",
+        "correct": false
+      },
+      {
+        "text": "Aircraft Radio Station Licence",
+        "correct": true
+      },
+      {
+        "text": "Journey Log",
+        "correct": false
+      }
+    ],
+    "answer": "Aircraft Radio Station Licence",
+    "explanation": "An Aircraft Radio Station Licence is required for international flights but NOT for domestic flights within Canada. All other documents listed — Certificate of Airworthiness, Certificate of Registration, and Journey Log — are required on board for any flight.",
+    "reference": "CAR 605.03; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q052",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the significance of a maintenance release in the aircraft journey log?",
+    "choices": [
+      {
+        "text": "It confirms the aircraft has passed its annual inspection",
+        "correct": false
+      },
+      {
+        "text": "It is required before the Certificate of Airworthiness is valid following any maintenance",
+        "correct": true
+      },
+      {
+        "text": "It is only required for commercial operations",
+        "correct": false
+      },
+      {
+        "text": "It authorizes the pilot to perform minor repairs",
+        "correct": false
+      }
+    ],
+    "answer": "It is required before the Certificate of Airworthiness is valid following any maintenance",
+    "explanation": "After any maintenance, the aircraft's Certificate of Airworthiness is not in force until a maintenance release has been entered in the journey log by an authorized Aircraft Maintenance Engineer (AME). The maintenance release confirms the work was performed in accordance with airworthiness standards.",
+    "reference": "CAR 605.85; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q053",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Who is responsible for ensuring that all required documentation is on board and valid before a flight?",
+    "choices": [
+      {
+        "text": "The aircraft owner",
+        "correct": false
+      },
+      {
+        "text": "The licensed AME who last serviced the aircraft",
+        "correct": false
+      },
+      {
+        "text": "The pilot-in-command",
+        "correct": true
+      },
+      {
+        "text": "Transport Canada",
+        "correct": false
+      }
+    ],
+    "answer": "The pilot-in-command",
+    "explanation": "It is the responsibility of the pilot-in-command (PIC) to ensure that all required documentation is on board and valid for the flight. This responsibility cannot be delegated. The PIC must check documents during pre-flight preparation.",
+    "reference": "CAR 602.07; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q054",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A Certificate of Airworthiness (C of A) becomes invalid if:",
+    "choices": [
+      {
+        "text": "The aircraft changes ownership",
+        "correct": false
+      },
+      {
+        "text": "The aircraft undergoes maintenance and no maintenance release is entered",
+        "correct": true
+      },
+      {
+        "text": "The pilot changes",
+        "correct": false
+      },
+      {
+        "text": "The aircraft is flown in rain",
+        "correct": false
+      }
+    ],
+    "answer": "The aircraft undergoes maintenance and no maintenance release is entered",
+    "explanation": "Following any maintenance, the C of A is not in force until an authorized AME signs a maintenance release in the journey log. Additionally, the C of A may be invalidated if Airworthiness Directives (ADs) are not complied with, or if the aircraft's weight and CG is outside limits.",
+    "reference": "CAR 605.85; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q055",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "List all documents required to be carried on a Canadian aircraft during a domestic flight, and explain the purpose of each.",
+    "answer": "1. Student Pilot Permit / Pilot Permit / Pilot Licence + Medical Certificate — authorizes the pilot to act as PIC and certifies medical fitness.\n2. Radiotelephone Operator's Restricted Certificate (Aeronautical) — required for anyone operating radio transmitting equipment on the aircraft.\n3. Certificate of Airworthiness or Flight Permit — confirms the aircraft meets airworthiness standards.\n4. Certificate of Registration — proves legal ownership and registration in Canada.\n5. Aircraft Journey Log — records flights, maintenance, fuel, oil, and maintenance releases.\n6. Copy of Liability Insurance (privately registered aircraft) — proof of mandatory insurance coverage.\n7. Aircraft Flight Manual (in most cases) — contains operating limitations, emergency procedures, and performance data.\nNote: Aircraft Radio Station Licence is NOT required for domestic flights (only required internationally).",
+    "explanation": "The PIC must verify all these documents are on board and valid before every flight. Failure to carry required documents can result in enforcement action even if the flight itself was conducted safely.",
+    "reference": "CAR 605.03; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q056",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When is wingtip vortex (wake turbulence) the strongest?",
+    "choices": [
+      {
+        "text": "When the generating aircraft is light, fast, and has full flaps",
+        "correct": false
+      },
+      {
+        "text": "When the generating aircraft is heavy, clean (flaps up), and flying slowly",
+        "correct": true
+      },
+      {
+        "text": "When the generating aircraft is at cruise altitude and speed",
+        "correct": false
+      },
+      {
+        "text": "Only during takeoff and landing rolls",
+        "correct": false
+      }
+    ],
+    "answer": "When the generating aircraft is heavy, clean (flaps up), and flying slowly",
+    "explanation": "Wake turbulence vortex strength is greatest when the generating aircraft is at maximum weight, minimum speed, and in a clean (flaps up) configuration. This typically occurs just after takeoff rotation and just before touchdown — the most critical phases for following aircraft.",
+    "reference": "TP 11919 PSTAR S.7; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q057",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "How do wingtip vortices move in still air after being generated?",
+    "choices": [
+      {
+        "text": "They rise above the generating aircraft's flight path",
+        "correct": false
+      },
+      {
+        "text": "They remain stationary at the point of generation",
+        "correct": false
+      },
+      {
+        "text": "They descend below and behind the generating aircraft, moving outward",
+        "correct": true
+      },
+      {
+        "text": "They dissipate immediately within 30 seconds",
+        "correct": false
+      }
+    ],
+    "answer": "They descend below and behind the generating aircraft, moving outward",
+    "explanation": "Vortices descend at approximately 400–500 ft/min and level off about 900 ft below the generating aircraft's flight path. They move outward approximately 3–5 kt from the aircraft centerline in still air. They can persist for 2 minutes or more in calm conditions.",
+    "reference": "TP 11919 PSTAR S.7",
+    "media": []
+  },
+  {
+    "id": "Q058",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What effect can a light quartering crosswind (approximately 5 kt) have on wake turbulence?",
+    "choices": [
+      {
+        "text": "It quickly dissipates both vortices",
+        "correct": false
+      },
+      {
+        "text": "It causes both vortices to rise above the runway",
+        "correct": false
+      },
+      {
+        "text": "It can hold one vortex over the runway while moving the other away",
+        "correct": true
+      },
+      {
+        "text": "It has no meaningful effect on vortex behavior",
+        "correct": false
+      }
+    ],
+    "answer": "It can hold one vortex over the runway while moving the other away",
+    "explanation": "A light quartering crosswind of about 5 kt can cause the upwind vortex to drift back over the runway and remain there for an extended period, while the downwind vortex drifts away. This is a particularly hazardous condition because the vortex lingers where the next aircraft will be landing or departing.",
+    "reference": "TP 11919 PSTAR S.7",
+    "media": []
+  },
+  {
+    "id": "Q059",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When landing behind a larger aircraft, how should you position yourself to avoid wake turbulence?",
+    "choices": [
+      {
+        "text": "Land well before the larger aircraft's touchdown point",
+        "correct": false
+      },
+      {
+        "text": "Stay at or above the larger aircraft's approach path and land beyond its touchdown point",
+        "correct": true
+      },
+      {
+        "text": "Land on the opposite runway to avoid the vortices",
+        "correct": false
+      },
+      {
+        "text": "Increase your approach speed by 20 knots",
+        "correct": false
+      }
+    ],
+    "answer": "Stay at or above the larger aircraft's approach path and land beyond its touchdown point",
+    "explanation": "Since vortices descend and sink below the generating aircraft's path, staying at or above that path keeps you clear. Landing beyond the larger aircraft's touchdown point ensures you are beyond where the vortices have settled onto the runway surface.",
+    "reference": "TP 11919 PSTAR S.7",
+    "media": []
+  },
+  {
+    "id": "Q060",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the most dangerous effect of encountering wake turbulence from a larger aircraft?",
+    "choices": [
+      {
+        "text": "Engine flame-out caused by disturbed airflow",
+        "correct": false
+      },
+      {
+        "text": "An induced roll that may exceed the smaller aircraft's roll control authority",
+        "correct": true
+      },
+      {
+        "text": "Airspeed loss of more than 30 knots",
+        "correct": false
+      },
+      {
+        "text": "Damage to the windshield from debris",
+        "correct": false
+      }
+    ],
+    "answer": "An induced roll that may exceed the smaller aircraft's roll control authority",
+    "explanation": "The rotating vortex cores can induce a violent roll in a following aircraft. If the roll rate exceeds what the ailerons can counter, the pilot loses roll control. This has caused fatal accidents, particularly with small aircraft following large jets on approach.",
+    "reference": "TP 11919 PSTAR S.7",
+    "media": []
+  },
+  {
+    "id": "Q061",
+    "topic": "Air Law — Wake Turbulence",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Describe the procedures a pilot should follow when taking off from an airport immediately after a heavy jet has just taken off on the same runway.",
+    "answer": "Note the point where the jet rotated. Plan to rotate before that point so the vortices (which begin at rotation) are behind you. After rotation, climb above and upwind of the jet's flight path to stay out of its descending vortices. If unable to out-climb the jet's path, consider waiting at least 2 minutes before departure to allow vortices to dissipate. If a crosswind is present, determine which side the vortices will drift toward and plan your departure path accordingly. Always be prepared for a go-around if adequate separation cannot be ensured.",
+    "explanation": "Vortices begin at the point of rotation and move downwind and sink. By rotating early and climbing steeply above the larger aircraft's path, the following pilot avoids the vortex cores. The 2-minute rule in calm conditions provides a margin of safety.",
+    "reference": "TP 11919 PSTAR S.7",
+    "media": []
+  },
+  {
+    "id": "Q062",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What colour is an aerodrome beacon at a civil airport in Canada?",
+    "choices": [
+      {
+        "text": "Alternating white and red",
+        "correct": false
+      },
+      {
+        "text": "Alternating white and green",
+        "correct": true
+      },
+      {
+        "text": "Steady white",
+        "correct": false
+      },
+      {
+        "text": "Alternating white-white-green",
+        "correct": false
+      }
+    ],
+    "answer": "Alternating white and green",
+    "explanation": "A civil aerodrome beacon rotates and flashes alternating white and green. Military aerodromes use white-white-green (two white flashes followed by one green). The beacon helps pilots locate aerodromes at night and is visible approximately 10 NM on a clear night.",
+    "reference": "TP 11919 PSTAR S.4; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q063",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What colour are taxiway edge lights at a Canadian aerodrome?",
+    "choices": [
+      {
+        "text": "White",
+        "correct": false
+      },
+      {
+        "text": "Green",
+        "correct": false
+      },
+      {
+        "text": "Blue",
+        "correct": true
+      },
+      {
+        "text": "Yellow",
+        "correct": false
+      }
+    ],
+    "answer": "Blue",
+    "explanation": "Taxiway edge lights are blue (or blue retro-reflective markers). Runway edge lights are white. The last 600 m of runway edge lights are yellow. Threshold lights are green on the approach side and red on the departure end.",
+    "reference": "TP 11919 PSTAR S.4; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q064",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What colour are runway edge lights, and what do yellow runway edge lights indicate?",
+    "choices": [
+      {
+        "text": "White throughout; yellow means ILS is active",
+        "correct": false
+      },
+      {
+        "text": "White; yellow in the last 600 m indicates the caution/end zone of the runway",
+        "correct": true
+      },
+      {
+        "text": "Blue throughout; yellow means the runway is closed",
+        "correct": false
+      },
+      {
+        "text": "Green; yellow means the runway is wet",
+        "correct": false
+      }
+    ],
+    "answer": "White; yellow in the last 600 m indicates the caution/end zone of the runway",
+    "explanation": "Runway edge lights are white. The last 600 m (approximately 2,000 ft) of the runway edge lights change to yellow, signaling the caution/end zone. This warns the pilot approaching from the departure end that 600 m of runway remain — important during landing roll-out and during takeoff if the aircraft has not yet reached rotation speed.",
+    "reference": "TP 11919 PSTAR S.4; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q065",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "At an aerodrome without an operating control tower, what is the standard circuit altitude?",
+    "choices": [
+      {
+        "text": "500 ft AAE",
+        "correct": false
+      },
+      {
+        "text": "800 ft AAE",
+        "correct": false
+      },
+      {
+        "text": "1,000 ft AAE",
+        "correct": true
+      },
+      {
+        "text": "1,500 ft AAE",
+        "correct": false
+      }
+    ],
+    "answer": "1,000 ft AAE",
+    "explanation": "The standard circuit altitude at an uncontrolled aerodrome is 1,000 ft AAE (Above Aerodrome Elevation). Some aerodromes may specify different altitudes in the Canada Flight Supplement, but 1,000 ft AAE is the standard. Circuit direction is left-hand unless otherwise specified.",
+    "reference": "TP 11919 PSTAR S.4; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q066",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the standard circuit direction at an uncontrolled aerodrome unless otherwise specified?",
+    "choices": [
+      {
+        "text": "Right-hand",
+        "correct": false
+      },
+      {
+        "text": "Left-hand",
+        "correct": true
+      },
+      {
+        "text": "Whichever the pilot prefers",
+        "correct": false
+      },
+      {
+        "text": "Varies by runway — odd-numbered runways are left, even are right",
+        "correct": false
+      }
+    ],
+    "answer": "Left-hand",
+    "explanation": "The standard traffic circuit is left-hand, meaning all turns are made to the left (counterclockwise when viewed from above). Right-hand circuits may be established for noise abatement, terrain clearance, or obstacle avoidance, and will be published in the Canada Flight Supplement.",
+    "reference": "CAR 602.96; TP 11919 PSTAR S.4",
+    "media": []
+  },
+  {
+    "id": "Q067",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "How is a runway numbered in Canada?",
+    "choices": [
+      {
+        "text": "By the runway length in hundreds of metres",
+        "correct": false
+      },
+      {
+        "text": "By the magnetic heading of the runway divided by 10, rounded to the nearest 10°",
+        "correct": true
+      },
+      {
+        "text": "By sequential numbers assigned by Transport Canada",
+        "correct": false
+      },
+      {
+        "text": "By the true heading divided by 10",
+        "correct": false
+      }
+    ],
+    "answer": "By the magnetic heading of the runway divided by 10, rounded to the nearest 10°",
+    "explanation": "Runway numbers correspond to the magnetic heading of the runway, with the last digit dropped. A runway with a magnetic heading of 270° is Runway 27; heading of 090° is Runway 09. Parallel runways are designated L (left), R (right), and C (centre).",
+    "reference": "FTM Ch.5; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q068",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What does a temporarily displaced runway threshold indicate?",
+    "choices": [
+      {
+        "text": "The runway is permanently shortened",
+        "correct": false
+      },
+      {
+        "text": "The area before the threshold is unusable and the take-off roll must begin beyond it",
+        "correct": false
+      },
+      {
+        "text": "The runway beyond the threshold is temporarily unavailable, but the area before it may be used for take-off roll",
+        "correct": true
+      },
+      {
+        "text": "The runway is closed to all operations",
+        "correct": false
+      }
+    ],
+    "answer": "The runway beyond the threshold is temporarily unavailable, but the area before it may be used for take-off roll",
+    "explanation": "A temporarily displaced threshold means the area before the new threshold cannot be used for landing but may be used for take-off or rollout after landing. A permanently displaced threshold area cannot be used for any purpose (landing, takeoff roll, or rollout). Pilots should avoid landing before the threshold.",
+    "reference": "FTM Ch.5",
+    "media": []
+  },
+  {
+    "id": "Q069",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "At a controlled aerodrome, an aircraft crossing an active runway must:",
+    "choices": [
+      {
+        "text": "Proceed as soon as the runway appears clear",
+        "correct": false
+      },
+      {
+        "text": "Wait only if another aircraft is within 2 NM on final approach",
+        "correct": false
+      },
+      {
+        "text": "Have explicit clearance from the tower AND verify there is no hazard before proceeding",
+        "correct": true
+      },
+      {
+        "text": "Clear the runway as quickly as possible without waiting for tower clearance",
+        "correct": false
+      }
+    ],
+    "answer": "Have explicit clearance from the tower AND verify there is no hazard before proceeding",
+    "explanation": "Even with an ATC clearance, the pilot-in-command retains the ultimate responsibility for safety. A tower clearance to cross a runway does not relieve the PIC of the duty to verify the runway is clear before proceeding. The PIC must always look both ways before crossing.",
+    "reference": "CAR 602.96; FTM Ch.5",
+    "media": []
+  },
+  {
+    "id": "Q070",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Explain the procedures for joining the circuit at an uncontrolled aerodrome with an ATF (Aerodrome Traffic Frequency).",
+    "answer": "When approaching an uncontrolled aerodrome with an ATF, the pilot should: (1) Monitor and broadcast on the ATF from at least 5 NM out, announcing position and intentions. (2) Determine the active runway from wind sock, circuit traffic, or ATIS if available. (3) Overfly the aerodrome at 500 ft above circuit altitude to observe traffic, wind direction, and any signal square information. (4) Descend to circuit altitude on the upwind side and join the downwind leg. (5) Make blind position broadcasts at each circuit leg: downwind, base, and final. All transmissions are \"in the blind\" (not directed to a specific station) — use \"[Aerodrome name] traffic, [call sign], [position].\"",
+    "explanation": "ATF aerodromes have no ATC service — all responsibility for traffic separation lies with the pilots. Consistent use of blind broadcasts and the standard joining procedure ensures all pilots in the area are mutually aware of each other's intentions.",
+    "reference": "CAR 602.96; NAV CANADA VFR Phraseology Guide; TP 11919 PSTAR S.4",
+    "media": []
+  },
+  {
+    "id": "Q071",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the minimum distance from the runway edge that an aircraft should hold short at a controlled aerodrome when no painted holding position markings exist?",
+    "choices": [
+      {
+        "text": "100 ft (30 m)",
+        "correct": false
+      },
+      {
+        "text": "200 ft (61 m)",
+        "correct": true
+      },
+      {
+        "text": "500 ft (152 m)",
+        "correct": false
+      },
+      {
+        "text": "1,000 ft (305 m)",
+        "correct": false
+      }
+    ],
+    "answer": "200 ft (61 m)",
+    "explanation": "At airports where taxi holding position markings have not been established, aircraft must hold at least 200 ft (61 m) from the edge of the runway in use. Where markings exist, aircraft hold at the painted line regardless of distance.",
+    "reference": "FTM Ch.5",
+    "media": []
+  },
+  {
+    "id": "Q072",
+    "topic": "Air Law — Emergency Procedures",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which transponder code should a pilot squawk immediately upon declaring an emergency?",
+    "choices": [
+      {
+        "text": "7600",
+        "correct": false
+      },
+      {
+        "text": "7500",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": true
+      },
+      {
+        "text": "1200",
+        "correct": false
+      }
+    ],
+    "answer": "7700",
+    "explanation": "Code 7700 is the internationally recognized distress (emergency) transponder code. Squawking 7700 immediately alerts ATC radar and triggers an emergency alert. If already squawking an ATC-assigned code, the pilot may keep that code if ATC instructs, but 7700 is the default emergency action.",
+    "reference": "CAR 605.39; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q073",
+    "topic": "Air Law — Emergency Procedures",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the international aeronautical emergency radio frequency?",
+    "choices": [
+      {
+        "text": "122.8 MHz",
+        "correct": false
+      },
+      {
+        "text": "121.5 MHz",
+        "correct": true
+      },
+      {
+        "text": "123.45 MHz",
+        "correct": false
+      },
+      {
+        "text": "126.7 MHz",
+        "correct": false
+      }
+    ],
+    "answer": "121.5 MHz",
+    "explanation": "121.5 MHz is the international aeronautical distress and emergency frequency. It is monitored by ATC, Search and Rescue (SAR), and many airliners. Pilots experiencing an emergency should transmit a MAYDAY call on 121.5 MHz if unable to reach the controlling ATC unit on the assigned frequency.",
+    "reference": "TP 11919 PSTAR S.3; NAV CANADA VFR Phraseology Guide",
+    "media": []
+  },
+  {
+    "id": "Q074",
+    "topic": "Air Law — Emergency Procedures",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "What are the correct procedures and format for declaring a MAYDAY distress call?",
+    "answer": "Transmit on the distress frequency (121.5 MHz) or any available frequency. Speak clearly and slowly. The format is:\n1. \"MAYDAY, MAYDAY, MAYDAY\" (spoken three times)\n2. The name of the ATS unit being called\n3. \"THIS IS [aircraft type and call sign, spoken three times]\"\n4. \"MAYDAY [call sign]\" then: nature of distress, position, altitude, heading, airspeed, intentions, number of persons on board, fuel endurance, and any other pertinent information.\nAlso: squawk 7700 on the transponder.\nExample: \"MAYDAY, MAYDAY, MAYDAY. Vancouver Centre, this is Cessna Golf Foxtrot Lima Mike, Golf Foxtrot Lima Mike, Golf Foxtrot Lima Mike. MAYDAY, Golf Foxtrot Lima Mike, engine failure, 30 miles northeast of Vancouver, 5,000 feet, heading 090, 90 knots, two persons on board, 1 hour fuel. Request immediate assistance.\"",
+    "explanation": "MAYDAY has absolute priority on any frequency — all other stations must cease transmissions. The repetition of \"MAYDAY\" three times and the call sign three times ensures the nature of the call is unmistakable even in poor radio conditions.",
+    "reference": "NAV CANADA VFR Phraseology Guide; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q075",
+    "topic": "Air Law — Emergency Procedures",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is the difference between a MAYDAY call and a PAN PAN call?",
+    "choices": [
+      {
+        "text": "MAYDAY is for aircraft in distress; PAN PAN is for an urgent situation not immediately life-threatening",
+        "correct": true
+      },
+      {
+        "text": "MAYDAY is for Canadian domestic emergencies; PAN PAN is for international emergencies",
+        "correct": false
+      },
+      {
+        "text": "MAYDAY is broadcast three times; PAN PAN is broadcast once",
+        "correct": false
+      },
+      {
+        "text": "There is no difference — both indicate the same level of emergency",
+        "correct": false
+      }
+    ],
+    "answer": "MAYDAY is for aircraft in distress; PAN PAN is for an urgent situation not immediately life-threatening",
+    "explanation": "MAYDAY indicates grave and imminent danger requiring immediate assistance (e.g., engine failure, fire). PAN PAN indicates urgency — a serious situation that could deteriorate but is not immediately life-threatening (e.g., medical emergency, low fuel before critical, lost and disoriented). Both are spoken three times.",
+    "reference": "NAV CANADA VFR Phraseology Guide; TP 11919 PSTAR S.3",
+    "media": []
+  },
+  {
+    "id": "Q076",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is hypoxia?",
+    "choices": [
+      {
+        "text": "Excess carbon dioxide in the blood",
+        "correct": false
+      },
+      {
+        "text": "Insufficient oxygen at the cellular level",
+        "correct": true
+      },
+      {
+        "text": "Over-breathing causing too little CO2",
+        "correct": false
+      },
+      {
+        "text": "Loss of blood pressure due to high altitude",
+        "correct": false
+      }
+    ],
+    "answer": "Insufficient oxygen at the cellular level",
+    "explanation": "Hypoxia means the body's cells are not receiving sufficient oxygen. It becomes significant above 10,000 ft without supplemental oxygen for most people. Symptoms include euphoria, impaired judgment, tingling, headache, and cyanosis (bluish fingertips/lips). Treatment: descend or use supplemental oxygen.",
+    "reference": "TP 11919 PSTAR S.8; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q077",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is hyperventilation, and how does it differ from hypoxia?",
+    "choices": [
+      {
+        "text": "Hyperventilation = too much oxygen; hypoxia = too little oxygen",
+        "correct": false
+      },
+      {
+        "text": "Hyperventilation = over-breathing causing low CO2; hypoxia = insufficient oxygen at the cells",
+        "correct": true
+      },
+      {
+        "text": "They are the same condition caused by altitude",
+        "correct": false
+      },
+      {
+        "text": "Hyperventilation only occurs below 5,000 ft; hypoxia only above 10,000 ft",
+        "correct": false
+      }
+    ],
+    "answer": "Hyperventilation = over-breathing causing low CO2; hypoxia = insufficient oxygen at the cells",
+    "explanation": "Hyperventilation is excessive breathing that causes the CO2 level in the blood to drop, leading to symptoms such as tingling, dizziness, and muscle spasms — similar to hypoxia. Treatment for hyperventilation: slow the breathing rate, breathe into a bag, or talk aloud. If treating for one condition doesn't help, treat for the other.",
+    "reference": "TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q078",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "How long before a flight must a pilot wait after completing a non-decompression stop scuba dive?",
+    "choices": [
+      {
+        "text": "4 hours",
+        "correct": false
+      },
+      {
+        "text": "8 hours",
+        "correct": false
+      },
+      {
+        "text": "12 hours",
+        "correct": true
+      },
+      {
+        "text": "24 hours",
+        "correct": false
+      }
+    ],
+    "answer": "12 hours",
+    "explanation": "After a non-decompression stop scuba dive, a pilot must wait at least 12 hours before flying. After a decompression stop dive, the wait is at least 24 hours. Reduced cabin pressure after diving can cause nitrogen bubbles to form in the tissues (decompression sickness), which is life-threatening.",
+    "reference": "TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q079",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What are the symptoms that might indicate carbon monoxide (CO) poisoning in the cockpit?",
+    "choices": [
+      {
+        "text": "Bright red skin, tingling, and loss of consciousness",
+        "correct": false
+      },
+      {
+        "text": "Headache, dizziness, nausea, and confusion — without obvious cause",
+        "correct": true
+      },
+      {
+        "text": "Extreme thirst and muscle cramps",
+        "correct": false
+      },
+      {
+        "text": "Rapid heartbeat and difficulty breathing",
+        "correct": false
+      }
+    ],
+    "answer": "Headache, dizziness, nausea, and confusion — without obvious cause",
+    "explanation": "Carbon monoxide is colorless and odorless, making it difficult to detect without a CO detector. Symptoms mirror hypoxia: headache, dizziness, nausea, and confusion. If suspected, immediately turn off the cabin heat, open fresh air vents, and land as soon as possible.",
+    "reference": "TP 11919 PSTAR S.8; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q080",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which of the following best describes the IMSAFE personal minimums checklist?",
+    "choices": [
+      {
+        "text": "Instruments, Mechanical, Speed, Altitude, Fuel, Equipment",
+        "correct": false
+      },
+      {
+        "text": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion",
+        "correct": true
+      },
+      {
+        "text": "IFR, METAR, SIGMET, AIRMET, Fog, Icing",
+        "correct": false
+      },
+      {
+        "text": "Inbound, Missed approach, Sector, Altitude, Fix, Elevation",
+        "correct": false
+      }
+    ],
+    "answer": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion",
+    "explanation": "The IMSAFE checklist is a personal preflight health check. Before each flight, the pilot should assess: am I Ill? Am I taking Medication that impairs judgment? Am I under Stress? Have I consumed Alcohol recently? Am I Fatigued? Is my emotional state (Emotion) affecting my judgment? If yes to any, reconsider flying.",
+    "reference": "TP 12880; Transport Canada Human Factors materials",
+    "media": []
+  },
+  {
+    "id": "Q081",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "How long does it take for the human eye to fully adapt to darkness for night flying?",
+    "choices": [
+      {
+        "text": "5 minutes",
+        "correct": false
+      },
+      {
+        "text": "10 minutes",
+        "correct": false
+      },
+      {
+        "text": "30 minutes",
+        "correct": true
+      },
+      {
+        "text": "60 minutes",
+        "correct": false
+      }
+    ],
+    "answer": "30 minutes",
+    "explanation": "Full dark adaptation takes approximately 30 minutes. During this time, pilots should avoid exposure to bright light. Even brief exposure to a bright light (e.g., a flashlight) will cause partial loss of dark adaptation, requiring another ~30 minutes to recover. Red cockpit lighting helps preserve night vision.",
+    "reference": "TP 12880; TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q082",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Why should a pilot use off-center viewing at night?",
+    "choices": [
+      {
+        "text": "To reduce glare from instrument lights",
+        "correct": false
+      },
+      {
+        "text": "Because the center of the retina (fovea) has few rods, so looking slightly off-center uses the more light-sensitive rods",
+        "correct": true
+      },
+      {
+        "text": "To increase peripheral vision of terrain",
+        "correct": false
+      },
+      {
+        "text": "To avoid flicker vertigo from instrument panels",
+        "correct": false
+      }
+    ],
+    "answer": "Because the center of the retina (fovea) has few rods, so looking slightly off-center uses the more light-sensitive rods",
+    "explanation": "Rods (the cells used for low-light vision) are concentrated in the peripheral retina, not at the center (fovea). Looking directly at a dim object at night causes it to disappear because the fovea has very few rods. Shifting the gaze 10–15° off-center places the image on the rod-rich peripheral retina, making it visible.",
+    "reference": "TP 12880; TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q083",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is spatial disorientation, and what is the correct response?",
+    "choices": [
+      {
+        "text": "Confusion about compass heading; correct by checking the heading indicator",
+        "correct": false
+      },
+      {
+        "text": "False sensations of attitude or motion due to vestibular illusions; trust flight instruments and ignore bodily sensations",
+        "correct": true
+      },
+      {
+        "text": "Inability to read instruments due to vibration; slow down and trim the aircraft",
+        "correct": false
+      },
+      {
+        "text": "Disorientation caused by bright sunlight through the windshield; use sun visors",
+        "correct": false
+      }
+    ],
+    "answer": "False sensations of attitude or motion due to vestibular illusions; trust flight instruments and ignore bodily sensations",
+    "explanation": "The vestibular system (inner ear) can generate false sensations such as the \"leans\" or graveyard spiral during flight, especially in clouds or at night. The body's sensations are unreliable; the correct response is to trust the flight instruments. Attempting to fly by feel when disoriented is fatal.",
+    "reference": "TP 12880; TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q084",
+    "topic": "Air Law — Aeromedical",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is flicker vertigo, and when can it occur?",
+    "choices": [
+      {
+        "text": "Dizziness caused by rapidly switching between navigation frequencies",
+        "correct": false
+      },
+      {
+        "text": "Nausea or unconsciousness induced by flickering light (such as sunlight through a rotating propeller)",
+        "correct": true
+      },
+      {
+        "text": "Vertigo caused by rapidly changing altitudes",
+        "correct": false
+      },
+      {
+        "text": "A type of spatial disorientation specific to helicopter operations",
+        "correct": false
+      }
+    ],
+    "answer": "Nausea or unconsciousness induced by flickering light (such as sunlight through a rotating propeller)",
+    "explanation": "Flicker vertigo occurs when light flickers at a rate of 4–20 cycles per second, such as sunlight passing through a rotating propeller. Symptoms include nausea, disorientation, and in rare cases, seizures or unconsciousness. Wearing sunglasses or changing engine RPM slightly can help.",
+    "reference": "TP 12880; TP 11919 PSTAR S.8",
+    "media": []
+  },
+  {
+    "id": "Q085",
+    "topic": "Air Law — Aeromedical",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Describe five hazardous attitudes identified in pilot decision-making and their antidotes.",
+    "answer": "1. Anti-authority (\"Don't tell me\"): Resenting rules and regulations. Antidote: Follow the rules — they are usually right.\n2. Impulsivity (\"Do something quickly!\"): Acting without thinking. Antidote: Not so fast — think first.\n3. Invulnerability (\"It won't happen to me\"): Belief that accidents happen to others. Antidote: It could happen to me.\n4. Macho (\"I can do it\"): Taking unnecessary risks to prove oneself. Antidote: Taking chances is foolish.\n5. Resignation (\"What's the use?\"): Giving up when things go wrong. Antidote: I'm not helpless — I can make a difference.",
+    "explanation": "These five hazardous attitudes have been identified through accident analysis as major contributors to poor aeronautical decision-making. Recognizing them in oneself is the first step to countering them. Pilots should use the IMSAFE checklist and the DECIDE model for structured decision-making.",
+    "reference": "TP 12880; Transport Canada Human Factors publications",
+    "media": []
+  },
+  {
+    "id": "Q086",
+    "topic": "Air Law — Aviation Occurrences",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "To which organization must a Canadian pilot report an aviation accident?",
+    "choices": [
+      {
+        "text": "Transport Canada (TC)",
+        "correct": false
+      },
+      {
+        "text": "The Transportation Safety Board of Canada (TSB)",
+        "correct": true
+      },
+      {
+        "text": "NAV CANADA",
+        "correct": false
+      },
+      {
+        "text": "The Royal Canadian Mounted Police (RCMP)",
+        "correct": false
+      }
+    ],
+    "answer": "The Transportation Safety Board of Canada (TSB)",
+    "explanation": "Aviation accidents and serious incidents must be reported to the Transportation Safety Board (TSB) of Canada. The TSB is an independent organization that investigates occurrences to advance aviation safety — it does not assign blame or fault. TC enforces regulations but the TSB investigates occurrences.",
+    "reference": "Aeronautics Act; TP 11919 PSTAR S.14",
+    "media": []
+  },
+  {
+    "id": "Q087",
+    "topic": "Air Law — Aviation Occurrences",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What defines an aviation accident?",
+    "choices": [
+      {
+        "text": "Any unplanned deviation from the flight plan",
+        "correct": false
+      },
+      {
+        "text": "An occurrence where a person is fatally or seriously injured, or the aircraft sustains significant structural damage",
+        "correct": true
+      },
+      {
+        "text": "Any occurrence requiring a go-around",
+        "correct": false
+      },
+      {
+        "text": "Any hard landing that requires an AME inspection",
+        "correct": false
+      }
+    ],
+    "answer": "An occurrence where a person is fatally or seriously injured, or the aircraft sustains significant structural damage",
+    "explanation": "An aviation accident is defined as an occurrence associated with aircraft operation in which a person is fatally or seriously injured, or the aircraft sustains significant structural damage or is destroyed. Events below this threshold may qualify as a serious incident.",
+    "reference": "TP 11919 PSTAR S.14; Aeronautics Act",
+    "media": []
+  },
+  {
+    "id": "Q088",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A pilot permit holder must carry which of the following while acting as PIC on a solo flight?",
+    "choices": [
+      {
+        "text": "The journey log",
+        "correct": false
+      },
+      {
+        "text": "The Student Pilot Permit and Medical Certificate",
+        "correct": true
+      },
+      {
+        "text": "The aircraft registration only",
+        "correct": false
+      },
+      {
+        "text": "A copy of the Canadian Aviation Regulations",
+        "correct": false
+      }
+    ],
+    "answer": "The Student Pilot Permit and Medical Certificate",
+    "explanation": "A pilot must carry their permit or licence and a valid medical certificate while exercising the privileges of that document. The SPP must be carried while flying solo. Regulations require crew members to produce their permit/licence and medical on demand by authorized officials.",
+    "reference": "CAR 401.03; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q089",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is Class F airspace, and what are its two subtypes?",
+    "choices": [
+      {
+        "text": "Uncontrolled en-route airspace; IFR and VFR",
+        "correct": false
+      },
+      {
+        "text": "Special use airspace that is either Restricted (prohibited without permission) or Advisory (information provided)",
+        "correct": true
+      },
+      {
+        "text": "High-altitude airways only; IFR required",
+        "correct": false
+      },
+      {
+        "text": "Oceanic airspace; requires HF radio",
+        "correct": false
+      }
+    ],
+    "answer": "Special use airspace that is either Restricted (prohibited without permission) or Advisory (information provided)",
+    "explanation": "Class F airspace is special use airspace. Restricted Class F (designated CYR or CYD) requires specific permission to enter — violation may result in enforcement action or interception. Advisory Class F (CYA) provides information or recommends procedures but entry is not prohibited. Examples include military exercise areas, forest fire areas, and parachute drop zones.",
+    "reference": "CAR 601.15; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q090",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What does a Mandatory Frequency (MF) designation at an aerodrome mean for a VFR pilot?",
+    "choices": [
+      {
+        "text": "Pilots are required by law to monitor and communicate on this frequency when within the MF area",
+        "correct": true
+      },
+      {
+        "text": "The frequency is mandatory for IFR aircraft only",
+        "correct": false
+      },
+      {
+        "text": "It is a suggested frequency for voluntary position reporting",
+        "correct": false
+      },
+      {
+        "text": "The frequency is only active during daylight hours",
+        "correct": false
+      }
+    ],
+    "answer": "Pilots are required by law to monitor and communicate on this frequency when within the MF area",
+    "explanation": "An MF (Mandatory Frequency) is a designated radio frequency that all aircraft must monitor and use for position reports and intentions within the defined MF area. Unlike an ATF, there is usually a Flight Service Station (FSS) providing aerodrome advisory service on an MF. Communication with the FSS is directed (\"Smithers Radio\") rather than blind broadcasts.",
+    "reference": "CAR 602.97; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q091",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "At an aerodrome with a Mandatory Frequency (MF) served by a Flight Service Station (FSS), what service does the FSS provide?",
+    "choices": [
+      {
+        "text": "ATC clearances and separation services",
+        "correct": false
+      },
+      {
+        "text": "Advisory information only — active runway, winds, altimeter, and traffic information",
+        "correct": true
+      },
+      {
+        "text": "Weather forecasts only",
+        "correct": false
+      },
+      {
+        "text": "IFR clearances",
+        "correct": false
+      }
+    ],
+    "answer": "Advisory information only — active runway, winds, altimeter, and traffic information",
+    "explanation": "An FSS on an MF frequency provides aerodrome advisory service — not ATC. The FSS will tell pilots the active runway, surface wind, altimeter setting, and any known traffic. The FSS does not issue clearances or provide separation. The PIC remains responsible for collision avoidance.",
+    "reference": "CAR 602.97; NAV CANADA VFR Phraseology Guide",
+    "media": []
+  },
+  {
+    "id": "Q092",
+    "topic": "Air Law — Right of Way",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "An aircraft is on final approach to land. A second aircraft is taxiing on the runway about to take off. Who has right of way?",
+    "choices": [
+      {
+        "text": "The taxiing aircraft because it is on the ground",
+        "correct": false
+      },
+      {
+        "text": "The aircraft on final approach because it has right of way over aircraft on the ground",
+        "correct": true
+      },
+      {
+        "text": "The aircraft first in position gets to proceed",
+        "correct": false
+      },
+      {
+        "text": "ATC must resolve the conflict",
+        "correct": false
+      }
+    ],
+    "answer": "The aircraft on final approach because it has right of way over aircraft on the ground",
+    "explanation": "An aircraft on final approach to land has right of way over aircraft on the ground including those about to take off. The taxiing aircraft must hold position and yield. At uncontrolled aerodromes, the pilot on the ground must visually confirm the final is clear before entering the runway.",
+    "reference": "CAR 602.19",
+    "media": []
+  },
+  {
+    "id": "Q093",
+    "topic": "Air Law — Aircraft Documents",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What is an Airworthiness Directive (AD)?",
+    "choices": [
+      {
+        "text": "A pilot's authorization to fly a specific aircraft type",
+        "correct": false
+      },
+      {
+        "text": "A notice issued by Transport Canada requiring mandatory safety corrections to be made within a specified time or flight hours",
+        "correct": true
+      },
+      {
+        "text": "A voluntary service bulletin from the manufacturer",
+        "correct": false
+      },
+      {
+        "text": "A log entry confirming daily pre-flight inspection",
+        "correct": false
+      }
+    ],
+    "answer": "A notice issued by Transport Canada requiring mandatory safety corrections to be made within a specified time or flight hours",
+    "explanation": "Airworthiness Directives (ADs) are mandatory safety notices issued by Transport Canada (and foreign authorities for foreign-type aircraft) that address known safety defects. They must be complied with within the specified time period or flight limit. Failure to comply with an AD makes the aircraft unairworthy.",
+    "reference": "CAR 605; FTM Ch.4",
+    "media": []
+  },
+  {
+    "id": "Q094",
+    "topic": "Air Law — Pilot Licencing",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A pilot has not flown in over 2 years and has not completed a flight review. Can they legally act as PIC?",
+    "choices": [
+      {
+        "text": "Yes, if they feel competent to do so",
+        "correct": false
+      },
+      {
+        "text": "Yes, provided they complete a solo checkout flight first",
+        "correct": false
+      },
+      {
+        "text": "No — they must complete a flight review to regain PIC currency",
+        "correct": true
+      },
+      {
+        "text": "Yes, if they carry a safety pilot",
+        "correct": false
+      }
+    ],
+    "answer": "No — they must complete a flight review to regain PIC currency",
+    "explanation": "A pilot must have completed a flight review within the previous 24 months to act as PIC. Without current recency, they cannot legally act as PIC regardless of subjective competence. A flight review must be completed with a qualified flight instructor and entered in the pilot's logbook.",
+    "reference": "CAR 401.05; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q095",
+    "topic": "Air Law — Aerodrome Operations",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "What does \"PPR\" (Prior Permission Required) beside an aerodrome listing in the Canada Flight Supplement indicate?",
+    "choices": [
+      {
+        "text": "The aerodrome has a paid parking requirement",
+        "correct": false
+      },
+      {
+        "text": "The aerodrome requires prior permission from the owner or operator before use",
+        "correct": true
+      },
+      {
+        "text": "The aerodrome is permanently closed",
+        "correct": false
+      },
+      {
+        "text": "Police presence is required for international arrivals",
+        "correct": false
+      }
+    ],
+    "answer": "The aerodrome requires prior permission from the owner or operator before use",
+    "explanation": "PPR in the Canada Flight Supplement means pilots must contact and obtain permission from the aerodrome owner or operator before landing there. Landing without PPR may be considered trespassing and can result in enforcement action. In a genuine emergency, any airport or aerodrome may be used.",
+    "reference": "FTM Ch.5; CFS",
+    "media": []
+  },
+  {
+    "id": "Q096",
+    "topic": "Air Law — Emergency Procedures",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "If a pilot encounters weather below VFR minimums and is unable to maintain VFR, what is the FIRST recommended action?",
+    "choices": [
+      {
+        "text": "Continue VFR at reduced speed",
+        "correct": false
+      },
+      {
+        "text": "Immediately declare an emergency on 121.5 MHz",
+        "correct": false
+      },
+      {
+        "text": "Make an early 180° turn to fly back to better weather conditions",
+        "correct": true
+      },
+      {
+        "text": "Climb above the cloud layer and continue",
+        "correct": false
+      }
+    ],
+    "answer": "Make an early 180° turn to fly back to better weather conditions",
+    "explanation": "The FTM and Transport Canada guidance emphasize that a VFR-only pilot's best response to deteriorating weather is an early 180° turn back to better conditions. If conditions have deteriorated too much, contact ATC for assistance. Only if the situation has become truly urgent (no way out) should an emergency be declared. The key is early action.",
+    "reference": "FTM Ch.6; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q097",
+    "topic": "Air Law — Airspace",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which airspace class requires a transponder with Mode C (altitude encoding) for VFR flight?",
+    "choices": [
+      {
+        "text": "Class D only",
+        "correct": false
+      },
+      {
+        "text": "Class C and above (B and A)",
+        "correct": true
+      },
+      {
+        "text": "All controlled airspace",
+        "correct": false
+      },
+      {
+        "text": "All airspace above 10,000 ft ASL",
+        "correct": false
+      }
+    ],
+    "answer": "Class C and above (B and A)",
+    "explanation": "A transponder with Mode C is mandatory for VFR in Class B and Class C airspace. Class D requires two-way radio but not necessarily a transponder. Class A is IFR only. Class E and G have no transponder requirement for VFR (though it is recommended).",
+    "reference": "CAR 605.38; TP 12880",
+    "media": []
+  },
+  {
+    "id": "Q098",
+    "topic": "Air Law — Flight Plans",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "A flight plan has been filed but the pilot arrives at the destination earlier than the ETA. What must the pilot do?",
+    "choices": [
+      {
+        "text": "Nothing — arriving early causes no concern",
+        "correct": false
+      },
+      {
+        "text": "Close the flight plan as soon as practicable after landing",
+        "correct": true
+      },
+      {
+        "text": "Wait until the ETA before closing to avoid confusion",
+        "correct": false
+      },
+      {
+        "text": "File a new flight plan with the corrected ETA",
+        "correct": false
+      }
+    ],
+    "answer": "Close the flight plan as soon as practicable after landing",
+    "explanation": "A flight plan must always be closed upon arrival, regardless of whether the pilot arrived early or late. If the flight plan is not closed within 1 hour of the filed ETA, SAR action may be initiated. Closing the plan confirms the aircraft and occupants are safely on the ground.",
+    "reference": "CAR 602.73; TP 11919 PSTAR S.9",
+    "media": []
+  },
+  {
+    "id": "Q099",
+    "topic": "Air Law — Collision Avoidance",
+    "type": "multiple_choice",
+    "difficulty": null,
+    "tags": [],
+    "question": "When may a pilot deviate from an ATC clearance?",
+    "choices": [
+      {
+        "text": "Never — ATC clearances must always be followed",
+        "correct": false
+      },
+      {
+        "text": "Only when the deviation is less than 100 ft or 0.5 NM",
+        "correct": false
+      },
+      {
+        "text": "When the safety of the aircraft is jeopardized by complying with the clearance",
+        "correct": true
+      },
+      {
+        "text": "When the pilot disagrees with the instruction",
+        "correct": false
+      }
+    ],
+    "answer": "When the safety of the aircraft is jeopardized by complying with the clearance",
+    "explanation": "A pilot shall comply with an ATC clearance, UNLESS the safety of the aircraft would be jeopardized by doing so. In that case, the pilot must advise ATC immediately and request an amended clearance. Personal disagreement with an instruction is not grounds for deviation — only genuine safety concerns are.",
+    "reference": "CAR 602.31; TP 11919 PSTAR S.10",
+    "media": []
+  },
+  {
+    "id": "Q100",
+    "topic": "Air Law — Airspace",
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Explain the ADIZ (Air Defence Identification Zone) and what a VFR pilot must do when operating within it.",
+    "answer": "The Air Defence Identification Zone (ADIZ) is a defined airspace extending around Canada in which aircraft must comply with special identification procedures for national security. Within the ADIZ, pilots must: (1) File a flight plan (IFR or VFR) before entering; (2) Transmit a position report to the appropriate ATC unit within 5 minutes of crossing the ADIZ boundary or as instructed; (3) Have an operable transponder; (4) Maintain two-way radio communication capability. Failure to comply may result in military interception. The ADIZ boundaries are shown on aeronautical charts.",
+    "explanation": "The ADIZ requirements exist to prevent unauthorized intrusions into Canadian airspace. During pre-flight planning for any flight that might cross the ADIZ, pilots must review procedures in the TC AIM. Interception procedures should be understood by all pilots operating near ADIZ boundaries.",
+    "reference": "CAR 602.144; TC AIM RAC 2.8",
+    "media": []
+  }
+]

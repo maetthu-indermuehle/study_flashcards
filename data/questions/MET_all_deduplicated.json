@@ -1,0 +1,2790 @@
+[
+  {
+    "id": "MET-001",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "atmosphere",
+      "isa",
+      "pressure"
+    ],
+    "question": "What is the standard sea level pressure in the International Standard Atmosphere (ISA)?",
+    "choices": [
+      {
+        "text": "1000 hPa",
+        "correct": false
+      },
+      {
+        "text": "1013.25 hPa",
+        "correct": true
+      },
+      {
+        "text": "29.00 inHg",
+        "correct": false
+      },
+      {
+        "text": "1030 hPa",
+        "correct": false
+      }
+    ],
+    "answer": "1013.25 hPa",
+    "explanation": "Standard sea level pressure in the ISA is 1013.25 hPa (29.92 inHg). This standard reference is used for aircraft performance calculations and altimeter calibration.",
+    "reference": "Flight Training Manual (Meteorology); FAA Aviation Weather Handbook Ch. 1",
+    "media": []
+  },
+  {
+    "id": "MET-002",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "atmosphere",
+      "composition"
+    ],
+    "question": "Which gas makes up the largest portion of Earth’s atmosphere?",
+    "choices": [
+      {
+        "text": "Oxygen",
+        "correct": false
+      },
+      {
+        "text": "Carbon Dioxide",
+        "correct": false
+      },
+      {
+        "text": "Nitrogen",
+        "correct": true
+      },
+      {
+        "text": "Hydrogen",
+        "correct": false
+      }
+    ],
+    "answer": "Nitrogen",
+    "explanation": "Nitrogen makes up approximately 78% of the atmosphere, while oxygen makes up about 21%. The remaining gases exist only in small quantities.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 1",
+    "media": []
+  },
+  {
+    "id": "MET-003",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "lapse-rate",
+      "isa",
+      "temperature"
+    ],
+    "question": "What is the standard temperature lapse rate in the ISA?",
+    "choices": [
+      {
+        "text": "1°C per 1,000 ft",
+        "correct": false
+      },
+      {
+        "text": "2°C per 1,000 ft",
+        "correct": true
+      },
+      {
+        "text": "3°C per 1,000 ft",
+        "correct": false
+      },
+      {
+        "text": "5°C per 1,000 ft",
+        "correct": false
+      }
+    ],
+    "answer": "2°C per 1,000 ft",
+    "explanation": "Under ISA conditions, temperature decreases at approximately 2°C per 1,000 feet of altitude gain in the troposphere.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 1",
+    "media": []
+  },
+  {
+    "id": "MET-004",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "density-altitude",
+      "performance"
+    ],
+    "question": "What effect does high density altitude have on aircraft performance?",
+    "choices": [
+      {
+        "text": "Improves climb performance",
+        "correct": false
+      },
+      {
+        "text": "Reduces takeoff distance",
+        "correct": false
+      },
+      {
+        "text": "Decreases engine and aerodynamic performance",
+        "correct": true
+      },
+      {
+        "text": "Increases propeller efficiency",
+        "correct": false
+      }
+    ],
+    "answer": "Decreases engine and aerodynamic performance",
+    "explanation": "High density altitude reduces air density, which decreases engine power, propeller efficiency, and wing lift. Takeoff distance increases and climb performance decreases.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 3",
+    "media": []
+  },
+  {
+    "id": "MET-005",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "altimeter",
+      "pressure"
+    ],
+    "question": "What happens to an altimeter indication when flying from an area of high pressure to low pressure without resetting the altimeter?",
+    "choices": [
+      {
+        "text": "The altimeter reads too high",
+        "correct": true
+      },
+      {
+        "text": "The altimeter reads too low",
+        "correct": false
+      },
+      {
+        "text": "The altimeter remains accurate",
+        "correct": false
+      },
+      {
+        "text": "The altimeter freezes",
+        "correct": false
+      }
+    ],
+    "answer": "The altimeter reads too high",
+    "explanation": "“From high to low, look out below.” When moving into lower pressure without adjusting the altimeter, the aircraft will be lower than indicated.",
+    "reference": "Flight Training Manual; TC AIM MET Section",
+    "media": []
+  },
+  {
+    "id": "MET-006",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "pressure-altitude",
+      "altimetry"
+    ],
+    "question": "Pressure altitude is:",
+    "choices": [
+      {
+        "text": "The altitude above ground level",
+        "correct": false
+      },
+      {
+        "text": "Altitude corrected for non-standard temperature",
+        "correct": false
+      },
+      {
+        "text": "The altitude indicated when the altimeter is set to 29.92 inHg",
+        "correct": true
+      },
+      {
+        "text": "The true altitude above sea level",
+        "correct": false
+      }
+    ],
+    "answer": "The altitude indicated when the altimeter is set to 29.92 inHg",
+    "explanation": "Pressure altitude is the altitude measured relative to the standard pressure datum plane when the altimeter is set to standard pressure.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 1",
+    "media": []
+  },
+  {
+    "id": "MET-007",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "stability",
+      "convection"
+    ],
+    "question": "Unstable air generally promotes the formation of:",
+    "choices": [
+      {
+        "text": "Stratiform clouds",
+        "correct": false
+      },
+      {
+        "text": "Smooth air",
+        "correct": false
+      },
+      {
+        "text": "Cumuliform clouds",
+        "correct": true
+      },
+      {
+        "text": "Fog layers",
+        "correct": false
+      }
+    ],
+    "answer": "Cumuliform clouds",
+    "explanation": "Unstable air encourages vertical air movement, which promotes towering cumulus and cumulonimbus cloud development.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-008",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "inversion",
+      "stability"
+    ],
+    "question": "A temperature inversion occurs when:",
+    "choices": [
+      {
+        "text": "Temperature decreases rapidly with altitude",
+        "correct": false
+      },
+      {
+        "text": "Temperature remains constant with altitude",
+        "correct": false
+      },
+      {
+        "text": "Temperature increases with altitude",
+        "correct": true
+      },
+      {
+        "text": "Pressure increases with altitude",
+        "correct": false
+      }
+    ],
+    "answer": "Temperature increases with altitude",
+    "explanation": "Inversions create very stable atmospheric conditions and can trap smoke, haze, and pollutants near the surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-009",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "adiabatic",
+      "lapse-rate"
+    ],
+    "question": "What is the approximate dry adiabatic lapse rate?",
+    "choices": [
+      {
+        "text": "1°C per 1,000 ft",
+        "correct": false
+      },
+      {
+        "text": "2°C per 1,000 ft",
+        "correct": false
+      },
+      {
+        "text": "3°C per 1,000 ft",
+        "correct": true
+      },
+      {
+        "text": "5°C per 1,000 ft",
+        "correct": false
+      }
+    ],
+    "answer": "3°C per 1,000 ft",
+    "explanation": "Unsaturated air cools at approximately 3°C per 1,000 feet as it rises.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-010",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "saturated",
+      "lapse-rate"
+    ],
+    "question": "The saturated adiabatic lapse rate is:",
+    "choices": [
+      {
+        "text": "Greater than the dry adiabatic lapse rate",
+        "correct": false
+      },
+      {
+        "text": "Equal to the dry adiabatic lapse rate",
+        "correct": false
+      },
+      {
+        "text": "Lower than the dry adiabatic lapse rate",
+        "correct": true
+      },
+      {
+        "text": "Always zero",
+        "correct": false
+      }
+    ],
+    "answer": "Lower than the dry adiabatic lapse rate",
+    "explanation": "Saturated air cools more slowly because latent heat is released during condensation.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-011",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "heating",
+      "convection"
+    ],
+    "question": "Which surface heats up most rapidly during daytime sunshine?",
+    "choices": [
+      {
+        "text": "Water",
+        "correct": false
+      },
+      {
+        "text": "Forest",
+        "correct": false
+      },
+      {
+        "text": "Dry land",
+        "correct": true
+      },
+      {
+        "text": "Snow-covered terrain",
+        "correct": false
+      }
+    ],
+    "answer": "Dry land",
+    "explanation": "Dry land heats and cools more rapidly than water because water has a much higher heat capacity and mixes vertically.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 2",
+    "media": []
+  },
+  {
+    "id": "MET-012",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "stable-air",
+      "turbulence"
+    ],
+    "question": "Stable air is generally associated with:",
+    "choices": [
+      {
+        "text": "Strong vertical currents",
+        "correct": false
+      },
+      {
+        "text": "Smooth flying conditions",
+        "correct": true
+      },
+      {
+        "text": "Thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Towering cumulus clouds",
+        "correct": false
+      }
+    ],
+    "answer": "Smooth flying conditions",
+    "explanation": "Stable air resists vertical motion and usually produces smooth air, stratiform clouds, and poor visibility.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-013",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "altimeter",
+      "temperature"
+    ],
+    "question": "Cold temperatures cause a pressure level to:",
+    "choices": [
+      {
+        "text": "Rise",
+        "correct": false
+      },
+      {
+        "text": "Lower",
+        "correct": true
+      },
+      {
+        "text": "Remain unchanged",
+        "correct": false
+      },
+      {
+        "text": "Become unstable",
+        "correct": false
+      }
+    ],
+    "answer": "Lower",
+    "explanation": "In cold air, pressure levels are compressed downward. Aircraft flying in colder-than-standard conditions are lower than indicated.",
+    "reference": "TC AIM MET; Flight Training Manual",
+    "media": []
+  },
+  {
+    "id": "MET-014",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "atmosphere",
+      "troposphere"
+    ],
+    "question": "Most aviation weather occurs in which atmospheric layer?",
+    "choices": [
+      {
+        "text": "Thermosphere",
+        "correct": false
+      },
+      {
+        "text": "Mesosphere",
+        "correct": false
+      },
+      {
+        "text": "Stratosphere",
+        "correct": false
+      },
+      {
+        "text": "Troposphere",
+        "correct": true
+      }
+    ],
+    "answer": "Troposphere",
+    "explanation": "The troposphere contains most of the atmosphere’s moisture and weather systems.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 1",
+    "media": []
+  },
+  {
+    "id": "MET-015",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "convection",
+      "thermals"
+    ],
+    "question": "Thermals are caused primarily by:",
+    "choices": [
+      {
+        "text": "Frontal lifting",
+        "correct": false
+      },
+      {
+        "text": "Uneven surface heating",
+        "correct": true
+      },
+      {
+        "text": "Coriolis force",
+        "correct": false
+      },
+      {
+        "text": "Jet stream activity",
+        "correct": false
+      }
+    ],
+    "answer": "Uneven surface heating",
+    "explanation": "Uneven heating causes localized rising columns of warm air known as thermals.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-016",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "density-altitude",
+      "performance"
+    ],
+    "question": "Explain how high temperature affects density altitude and aircraft performance.",
+    "answer": "High temperatures cause air to become less dense. As the air expands, there are fewer air molecules in a given volume, which increases density altitude. Density altitude is essentially the altitude at which the aircraft “feels” like it is operating from a performance perspective.\n\nAs density altitude increases, aircraft performance decreases significantly. The engine produces less power because less oxygen is available for combustion. The propeller becomes less efficient because it has less dense air to “bite” into. The wings also generate less lift because fewer air molecules flow over the airfoil.\n\nOperationally, this means:\n- Longer takeoff rolls\n- Reduced climb rates\n- Lower overall aircraft performance\n- Reduced obstacle clearance capability\n\nThis effect becomes especially dangerous at high-elevation airports during hot summer days. A small aircraft operating near maximum weight may no longer be capable of climbing safely after takeoff.\n\nPilots must carefully calculate takeoff and climb performance whenever operating in high density altitude conditions.",
+    "explanation": "Density altitude combines the effects of pressure altitude and temperature. Even airports near sea level can experience dangerously high density altitude during very hot weather.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 3",
+    "media": []
+  },
+  {
+    "id": "MET-017",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "stable-air",
+      "unstable-air"
+    ],
+    "question": "Compare stable air and unstable air.",
+    "answer": "Stable air resists vertical movement. If a parcel of air is displaced upward, it tends to sink back toward its original position. Stable air is commonly associated with:\n- Smooth flying conditions\n- Stratiform clouds\n- Poor visibility and haze\n- Continuous precipitation\n- Temperature inversions\n\nBecause vertical air movement is suppressed, stable air generally produces layered clouds and calmer weather conditions.\n\nUnstable air encourages vertical movement. If air begins to rise, it continues rising because it remains warmer than the surrounding air. Unstable air is associated with:\n- Turbulence\n- Strong thermals\n- Good visibility\n- Cumuliform clouds\n- Showers and thunderstorms\n\nStrong instability can lead to towering cumulus and cumulonimbus clouds with severe turbulence, hail, lightning, and heavy precipitation.\n\nFor pilots, atmospheric stability is important because it strongly affects ride quality, cloud development, turbulence, and thunderstorm potential.",
+    "explanation": "Atmospheric stability determines whether rising air continues to rise or sinks back down. This influences almost all weather development.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-018",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "pressure",
+      "altimeter"
+    ],
+    "question": "Why must pilots frequently update altimeter settings during cross-country flights?",
+    "answer": "Atmospheric pressure changes continuously across geographic areas and weather systems. Since an altimeter measures pressure rather than true height directly, incorrect pressure settings cause altitude errors.\n\nIf a pilot flies into an area of lower pressure without updating the altimeter, the aircraft will actually be lower than indicated. Conversely, flying into higher pressure without updating causes the aircraft to be higher than indicated.\n\nThis is especially important:\n- Near terrain\n- During approaches\n- In mountainous areas\n- In controlled airspace where altitude separation is critical\n\nThe common memory aid is:\n> “From high to low, look out below.”\n\nPilots update altimeter settings regularly using ATIS, AWOS, ASOS, FSS, or ATC information to maintain accurate altitude indications and ensure proper terrain and traffic separation.",
+    "explanation": "Altimeters operate by sensing atmospheric pressure. Since pressure changes naturally with weather systems, the altimeter must be recalibrated frequently during flight.",
+    "reference": "TC AIM MET; Flight Training Manual",
+    "media": []
+  },
+  {
+    "id": "MET-019",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "inversion",
+      "visibility"
+    ],
+    "question": "How can a temperature inversion affect visibility?",
+    "answer": "A temperature inversion occurs when temperature increases with altitude instead of decreasing normally. Inversions create very stable atmospheric conditions that suppress vertical air movement.\n\nBecause air cannot mix vertically, smoke, dust, haze, moisture, and pollutants become trapped near the surface. This often leads to:\n- Reduced visibility\n- Haze\n- Smog\n- Mist\n- Persistent fog\n\nTemperature inversions commonly occur:\n- During clear, calm nights\n- Under high-pressure systems\n- In valleys\n- During winter conditions\n\nFor pilots, inversions are important because visibility may be much worse near the ground than forecast conditions at higher altitudes suggest. Inversions can also hide terrain and reduce visual references during takeoff and landing.\n\nStrong inversions may additionally produce wind shear when stronger winds exist above the inversion layer.",
+    "explanation": "Stable air inside an inversion prevents vertical mixing, trapping particles and moisture near the surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-020",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "density-altitude",
+      "mountain-flying"
+    ],
+    "question": "Why is density altitude particularly important at high-elevation airports during summer?",
+    "answer": "High-elevation airports already have lower air pressure and lower air density because atmospheric pressure decreases with altitude. During hot summer weather, temperatures further reduce air density, causing density altitude to increase dramatically.\n\nAs density altitude rises:\n- Engines produce less power\n- Propellers lose efficiency\n- Wings generate less lift\n- Climb performance decreases\n- Takeoff distance increases significantly\n\nAn airport physically located at 5,000 ft elevation may behave like an 8,000 ft or higher airport on a hot day.\n\nThis creates serious operational hazards, especially:\n- Short runways\n- Mountainous terrain\n- Heavy aircraft loading\n- High outside temperatures\n\nPilots may discover that:\n- The aircraft accelerates slowly\n- Rotation occurs later\n- Climb rate is poor\n- Obstacle clearance becomes marginal\n\nMany accidents occur because pilots underestimate density altitude effects or rely on sea-level performance expectations.\n\nProper preflight planning must include:\n- Density altitude calculations\n- Takeoff performance charts\n- Weight reduction if necessary\n- Time-of-day considerations\n\nFlying early in the morning when temperatures are cooler often improves performance significantly.",
+    "explanation": "Density altitude is one of the most important performance considerations in mountain flying and summer operations.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 3",
+    "media": []
+  },
+  {
+    "id": "MET-021",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "thermals",
+      "turbulence"
+    ],
+    "question": "You are flying low over farmland on a hot summer afternoon and experience frequent bumps and updrafts. What is the most likely cause?",
+    "answer": "Thermal turbulence caused by uneven surface heating.",
+    "explanation": "Sun-heated ground creates rising columns of warm air that produce turbulence and updrafts.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-022",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "altimeter",
+      "pressure"
+    ],
+    "question": "A pilot departs an airport with a correct altimeter setting and flies into an area of significantly lower pressure without updating the setting. What hazard exists?",
+    "answer": "The aircraft will be lower than indicated by the altimeter.",
+    "explanation": "Moving from high pressure to low pressure without resetting the altimeter causes the indicated altitude to be higher than the aircraft’s true altitude.",
+    "reference": "TC AIM MET; Flight Training Manual",
+    "media": []
+  },
+  {
+    "id": "MET-023",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "stability",
+      "cloud-formation"
+    ],
+    "question": "A weather briefing indicates very unstable air with strong surface heating and high humidity. What weather should a pilot expect?",
+    "answer": "Strong thermals, turbulence, towering cumulus clouds, and possible thunderstorms.",
+    "explanation": "Warm, moist unstable air strongly favors convective activity.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-024",
+    "topic": "Meteorology — Atmosphere & Pressure",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "cold-temperature",
+      "altimeter"
+    ],
+    "question": "A pilot flies an approach in extremely cold weather while relying only on indicated altitude. What is the risk?",
+    "answer": "The aircraft may be lower than indicated and closer to terrain or obstacles.",
+    "explanation": "Cold temperatures compress pressure levels downward, causing true altitude to be lower than indicated altitude.",
+    "reference": "TC AIM MET",
+    "media": []
+  },
+  {
+    "id": "MET-025",
+    "topic": "Meteorology — Temperature & Stability",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "inversion",
+      "smoke"
+    ],
+    "question": "During early morning hours, smoke from chimneys remains trapped close to the ground with little vertical movement. What atmospheric condition is most likely present?",
+    "answer": "A temperature inversion.",
+    "explanation": "Inversions suppress vertical air movement and trap smoke and pollutants near the surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 5",
+    "media": []
+  },
+  {
+    "id": "MET-026",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "humidity",
+      "dewpoint"
+    ],
+    "question": "What does the dew point temperature represent?",
+    "choices": [
+      {
+        "text": "The temperature at which water freezes",
+        "correct": false
+      },
+      {
+        "text": "The temperature at which air becomes saturated",
+        "correct": true
+      },
+      {
+        "text": "The temperature at the top of a cloud",
+        "correct": false
+      },
+      {
+        "text": "The temperature at which fog dissipates",
+        "correct": false
+      }
+    ],
+    "answer": "The temperature at which air becomes saturated",
+    "explanation": "The dew point is the temperature to which air must be cooled for saturation to occur. At this point, condensation begins and clouds, fog, or dew may form.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 6",
+    "media": []
+  },
+  {
+    "id": "MET-027",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Stratus clouds are generally associated with:",
+    "answer": "Smooth stable conditions",
+    "explanation": "Stratus clouds form in stable air with limited vertical movement.",
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-028",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "cloud-formation",
+      "condensation"
+    ],
+    "question": "Clouds form when:",
+    "choices": [
+      {
+        "text": "Air pressure increases rapidly",
+        "correct": false
+      },
+      {
+        "text": "Warm air becomes drier",
+        "correct": false
+      },
+      {
+        "text": "Water vapor condenses into visible droplets or ice crystals",
+        "correct": true
+      },
+      {
+        "text": "Wind speed exceeds 20 knots",
+        "correct": false
+      }
+    ],
+    "answer": "Water vapor condenses into visible droplets or ice crystals",
+    "explanation": "Clouds form when moist air cools to its dew point and condensation occurs around microscopic particles called condensation nuclei.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 6",
+    "media": []
+  },
+  {
+    "id": "MET-029",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Cirrus clouds are primarily composed of:",
+    "answer": "Ice crystals",
+    "explanation": "Cirrus clouds form at high altitudes where temperatures are very cold.",
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-030",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "cumulonimbus",
+      "thunderstorms"
+    ],
+    "question": "Which cloud type is most commonly associated with thunderstorms?",
+    "choices": [
+      {
+        "text": "Stratus",
+        "correct": false
+      },
+      {
+        "text": "Cirrus",
+        "correct": false
+      },
+      {
+        "text": "Nimbostratus",
+        "correct": false
+      },
+      {
+        "text": "Cumulonimbus",
+        "correct": true
+      }
+    ],
+    "answer": "Cumulonimbus",
+    "explanation": "Cumulonimbus clouds are towering convective clouds capable of producing thunderstorms, hail, turbulence, icing, lightning, and heavy precipitation.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-031",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "A small temperature-dew point spread indicates:",
+    "answer": "Possible fog or low cloud formation",
+    "explanation": "Small spreads indicate the air is close to saturation.",
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-032",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "radiation-fog"
+    ],
+    "question": "Radiation fog most commonly forms:",
+    "choices": [
+      {
+        "text": "During windy afternoons",
+        "correct": false
+      },
+      {
+        "text": "On clear, calm nights",
+        "correct": true
+      },
+      {
+        "text": "Ahead of cold fronts",
+        "correct": false
+      },
+      {
+        "text": "Over warm oceans",
+        "correct": false
+      }
+    ],
+    "answer": "On clear, calm nights",
+    "explanation": "Radiation fog forms when the ground cools rapidly overnight through radiation cooling, chilling the air near the surface to its dew point.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 10",
+    "media": []
+  },
+  {
+    "id": "MET-033",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Nimbostratus clouds are commonly associated with:",
+    "answer": "Light continuous precipitation",
+    "explanation": "Nimbostratus clouds are layered rain clouds.",
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-034",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "advection-fog",
+      "coastal-weather"
+    ],
+    "question": "Advection fog forms when:",
+    "choices": [
+      {
+        "text": "Cold air moves over warm ground",
+        "correct": false
+      },
+      {
+        "text": "Warm moist air moves over a colder surface",
+        "correct": true
+      },
+      {
+        "text": "Strong thermals develop",
+        "correct": false
+      },
+      {
+        "text": "Rain evaporates into dry air",
+        "correct": false
+      }
+    ],
+    "answer": "Warm moist air moves over a colder surface",
+    "explanation": "Advection fog commonly forms along coastlines when warm moist air flows over colder water or land surfaces.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 10",
+    "media": []
+  },
+  {
+    "id": "MET-035",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Explain the relationship between temperature, dew point, and relative humidity.",
+    "answer": "Warm air can hold more moisture than cold air. As temperature decreases toward the dew point, relative humidity increases. When temperature and dew point become equal, condensation occurs and clouds or fog may form.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-036",
+    "topic": "Meteorology — Humidity, Clouds & Fog",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "relative-humidity"
+    ],
+    "question": "Relative humidity is:",
+    "choices": [
+      {
+        "text": "The amount of oxygen in the air",
+        "correct": false
+      },
+      {
+        "text": "The rate at which clouds form",
+        "correct": false
+      },
+      {
+        "text": "The percentage of moisture in the air relative to the maximum possible amount",
+        "correct": true
+      },
+      {
+        "text": "The amount of rainfall expected",
+        "correct": false
+      }
+    ],
+    "answer": "The percentage of moisture in the air relative to the maximum possible amount",
+    "explanation": "Relative humidity compares the current amount of water vapor in the air to the maximum amount the air can hold at that temperature.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 6",
+    "media": []
+  },
+  {
+    "id": "MET-037",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Describe how radiation fog forms.",
+    "answer": "Radiation fog forms when the Earth’s surface cools overnight and cools nearby air to the dew point under clear calm conditions.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-038",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Why are cumulonimbus clouds dangerous to aviation?",
+    "answer": "They produce severe turbulence, hail, lightning, icing, microbursts, and strong updrafts and downdrafts.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-039",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Compare radiation fog and advection fog.",
+    "answer": "Radiation fog forms through overnight cooling, while advection fog forms when warm moist air moves over a colder surface.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-040",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Explain the difference between stratiform and cumuliform clouds.",
+    "answer": "Stratiform clouds form in stable air and appear layered. Cumuliform clouds form in unstable air with strong vertical development.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-041",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "An evening METAR reports temperature 12°C and dew point 11°C with calm winds and clear skies. What weather development is likely overnight?",
+    "answer": "Radiation fog formation is likely.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-042",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "You observe rapidly growing towering cumulus clouds on a hot humid afternoon. What should you expect?",
+    "answer": "Possible thunderstorm development and turbulence.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-043",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "A pilot approaching the coast encounters thick fog moving inland from the ocean. What type of fog is likely present?",
+    "answer": "Advection fog.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-044",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "You observe widespread layered clouds with smooth air and steady rain. What atmospheric condition is most likely present?",
+    "answer": "Stable air.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-045",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "An aircraft rapidly accumulates ice while flying through a cloud layer at slightly below freezing temperatures. Why?",
+    "answer": "Supercooled water droplets are freezing on contact with the aircraft.",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-046",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which condition is least favorable for radiation fog formation?",
+    "answer": "Strong winds",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-047",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which cloud type often indicates stable air?",
+    "answer": "Stratus",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-048",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Fog is defined as:",
+    "answer": "Visibility less than 1 SM due to suspended water droplets",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-049",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which cloud type is most likely to produce severe icing?",
+    "answer": "Cumulonimbus",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-050",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "What happens to relative humidity as temperature decreases while moisture content remains constant?",
+    "answer": "It increases",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-051",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which cloud type commonly produces light drizzle?",
+    "answer": "Stratus",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-052",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Towering cumulus clouds indicate:",
+    "answer": "Strong vertical development and instability",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-053",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Cloud bases generally lower as:",
+    "answer": "Temperature-dew point spread decreases",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-054",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which fog type is common near coastlines?",
+    "answer": "Advection fog",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-055",
+    "topic": null,
+    "type": "open_answer",
+    "difficulty": null,
+    "tags": [],
+    "question": "Which condition most favors cloud formation?",
+    "answer": "Rising warm moist air",
+    "explanation": null,
+    "reference": null,
+    "media": []
+  },
+  {
+    "id": "MET-056",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [],
+    "question": "A cold front occurs when:",
+    "choices": [
+      {
+        "text": "Warm air replaces cold air",
+        "correct": false
+      },
+      {
+        "text": "Cold air advances and lifts warm air",
+        "correct": true
+      },
+      {
+        "text": "Two warm air masses meet",
+        "correct": false
+      },
+      {
+        "text": "Pressure remains constant",
+        "correct": false
+      }
+    ],
+    "answer": "Cold air advances and lifts warm air",
+    "explanation": "Cold dense air wedges underneath warm air, forcing it to rise rapidly.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-057",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Weather associated with a cold front is typically:",
+    "choices": [
+      {
+        "text": "Smooth and stable",
+        "correct": false
+      },
+      {
+        "text": "Widespread low stratus only",
+        "correct": false
+      },
+      {
+        "text": "Showery with turbulence and thunderstorms",
+        "correct": true
+      },
+      {
+        "text": "Calm with unlimited visibility",
+        "correct": false
+      }
+    ],
+    "answer": "Showery with turbulence and thunderstorms",
+    "explanation": "Rapid lifting along cold fronts often produces unstable conditions and convective weather.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-058",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A warm front is usually associated with:",
+    "choices": [
+      {
+        "text": "Rapid weather changes and thunderstorms only",
+        "correct": false
+      },
+      {
+        "text": "Layered clouds and steady precipitation",
+        "correct": true
+      },
+      {
+        "text": "Clear skies and strong thermals",
+        "correct": false
+      },
+      {
+        "text": "Severe mountain wave activity",
+        "correct": false
+      }
+    ],
+    "answer": "Layered clouds and steady precipitation",
+    "explanation": "Warm air gradually overruns colder air, producing widespread stratiform cloud layers.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-059",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [],
+    "question": "Wind is caused primarily by:",
+    "choices": [
+      {
+        "text": "Earthquakes",
+        "correct": false
+      },
+      {
+        "text": "Differences in atmospheric pressure",
+        "correct": true
+      },
+      {
+        "text": "Ocean currents only",
+        "correct": false
+      },
+      {
+        "text": "Aircraft movement",
+        "correct": false
+      }
+    ],
+    "answer": "Differences in atmospheric pressure",
+    "explanation": "Air flows from areas of high pressure toward areas of low pressure.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-060",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "The Coriolis force causes winds in the Northern Hemisphere to:",
+    "choices": [
+      {
+        "text": "Turn left",
+        "correct": false
+      },
+      {
+        "text": "Stop completely",
+        "correct": false
+      },
+      {
+        "text": "Turn right",
+        "correct": true
+      },
+      {
+        "text": "Flow directly uphill",
+        "correct": false
+      }
+    ],
+    "answer": "Turn right",
+    "explanation": "Earth’s rotation deflects moving air to the right in the Northern Hemisphere.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-061",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Surface friction generally causes surface winds to:",
+    "choices": [
+      {
+        "text": "Increase and back",
+        "correct": false
+      },
+      {
+        "text": "Slow down and cross isobars toward low pressure",
+        "correct": true
+      },
+      {
+        "text": "Reverse completely",
+        "correct": false
+      },
+      {
+        "text": "Become perfectly geostrophic",
+        "correct": false
+      }
+    ],
+    "answer": "Slow down and cross isobars toward low pressure",
+    "explanation": "Friction reduces wind speed and weakens Coriolis force influence near the surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-062",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [],
+    "question": "A sea breeze occurs when:",
+    "choices": [
+      {
+        "text": "Land cools faster than water during the night",
+        "correct": false
+      },
+      {
+        "text": "Water heats faster than land",
+        "correct": false
+      },
+      {
+        "text": "Cooler air from the water moves inland during the day",
+        "correct": true
+      },
+      {
+        "text": "Mountain winds descend valleys",
+        "correct": false
+      }
+    ],
+    "answer": "Cooler air from the water moves inland during the day",
+    "explanation": "Land heats faster than water during the day, causing rising air over land and onshore flow.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-063",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "An occluded front forms when:",
+    "choices": [
+      {
+        "text": "A warm front overtakes a cold front",
+        "correct": false
+      },
+      {
+        "text": "A cold front overtakes a warm front",
+        "correct": true
+      },
+      {
+        "text": "Two cold fronts merge equally",
+        "correct": false
+      },
+      {
+        "text": "No temperature differences exist",
+        "correct": false
+      }
+    ],
+    "answer": "A cold front overtakes a warm front",
+    "explanation": "The faster-moving cold front lifts the warm air completely off the ground.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-064",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "The jet stream is typically found:",
+    "choices": [
+      {
+        "text": "At low altitudes near the surface",
+        "correct": false
+      },
+      {
+        "text": "In the upper troposphere",
+        "correct": true
+      },
+      {
+        "text": "Inside thunderstorms only",
+        "correct": false
+      },
+      {
+        "text": "Under temperature inversions",
+        "correct": false
+      }
+    ],
+    "answer": "In the upper troposphere",
+    "explanation": "Jet streams are narrow bands of strong winds located near the tropopause.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-065",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A stationary front occurs when:",
+    "choices": [
+      {
+        "text": "A front stops moving significantly",
+        "correct": true
+      },
+      {
+        "text": "Cold air completely replaces warm air",
+        "correct": false
+      },
+      {
+        "text": "Wind stops entirely",
+        "correct": false
+      },
+      {
+        "text": "Pressure equalizes globally",
+        "correct": false
+      }
+    ],
+    "answer": "A front stops moving significantly",
+    "explanation": "Neither air mass is strong enough to displace the other significantly.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-066",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Compare the weather typically associated with warm fronts and cold fronts.",
+    "answer": "Warm fronts generally produce gradual weather changes. As warm air slowly rises over colder air, layered clouds form in sequence, often beginning with cirrus and progressing to altostratus and nimbostratus. Weather associated with warm fronts commonly includes:\n- Widespread cloud cover\n- Reduced visibility\n- Steady precipitation\n- Stable air\n- Lower ceilings\n\nCold fronts typically produce more rapid and violent weather changes. The advancing cold air forces warm air upward quickly, creating unstable conditions.\n\nWeather associated with cold fronts often includes:\n- Showers\n- Thunderstorms\n- Turbulence\n- Gusty winds\n- Rapid wind shifts\n- Improved visibility after passage\n\nPilots should expect more convective hazards near cold fronts and more widespread IFR conditions near warm fronts.",
+    "explanation": "Warm fronts involve gradual lifting while cold fronts involve rapid lifting.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-067",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Explain how pressure differences create wind.",
+    "answer": "Wind is caused by differences in atmospheric pressure. Air naturally flows from areas of high pressure toward areas of low pressure in an attempt to equalize pressure differences.\n\nThe pressure gradient force is the primary force that starts air moving. The stronger the pressure difference over a given distance, the stronger the wind becomes.\n\nHowever, Earth’s rotation introduces the Coriolis force, which deflects moving air:\n- To the right in the Northern Hemisphere\n- To the left in the Southern Hemisphere\n\nNear the surface, friction with terrain slows the wind and causes it to cross isobars slightly toward lower pressure.\n\nPilots use pressure systems and wind forecasts to anticipate:\n- Turbulence\n- Crosswinds\n- Wind shear\n- Frontal weather\n- Fuel consumption impacts",
+    "explanation": "Wind results from the interaction of pressure gradient force, Coriolis force, and friction.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-068",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Describe how sea breezes and land breezes develop.",
+    "answer": "Sea breezes and land breezes are caused by differences in heating and cooling rates between land and water.\n\nDuring the day:\n- Land heats faster than water\n- Air over land becomes warmer and rises\n- Cooler air from over the water flows inland\n\nThis creates a sea breeze.\n\nAt night:\n- Land cools faster than water\n- Air over water remains relatively warmer and rises\n- Cooler air from land flows toward the water\n\nThis creates a land breeze.\n\nThese local winds are common near coastlines and can significantly affect runway wind conditions.\n\nPilots operating near coastal airports should expect changing wind directions between daytime and nighttime operations.",
+    "explanation": "Water changes temperature more slowly than land because of its higher heat capacity.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-069",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Why are fronts important to pilots?",
+    "answer": "Fronts mark the boundaries between different air masses and are often associated with significant weather changes.\n\nNear fronts, pilots may encounter:\n- Turbulence\n- Wind shear\n- Reduced visibility\n- Low ceilings\n- Icing\n- Thunderstorms\n- Heavy precipitation\n\nCold fronts are particularly hazardous because they often produce strong convective weather and gusty winds.\n\nWarm fronts frequently create widespread IFR conditions with low ceilings and persistent precipitation.\n\nFronts also cause:\n- Wind direction changes\n- Temperature changes\n- Pressure changes\n\nUnderstanding frontal movement helps pilots anticipate deteriorating weather and make safe go/no-go decisions.",
+    "explanation": "Most significant weather systems develop along or near frontal boundaries.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-070",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Explain why wind shear is dangerous during takeoff and landing.",
+    "answer": "Wind shear is a sudden change in wind speed and/or direction over a short distance.\n\nDuring takeoff and landing, aircraft operate close to the ground at relatively low airspeeds and high angles of attack. Sudden wind changes can rapidly alter lift and aircraft performance.\n\nFor example:\n- A sudden loss of headwind decreases airspeed and lift\n- A downdraft may reduce climb performance\n- Rapid directional changes can destabilize the aircraft\n\nSevere low-level wind shear or microbursts can exceed aircraft climb capability.\n\nPilots should be especially cautious near:\n- Thunderstorms\n- Frontal boundaries\n- Temperature inversions\n- Mountain terrain\n\nSigns of wind shear include:\n- Rapid airspeed fluctuations\n- Sudden sink rates\n- Unexpected drift changes",
+    "explanation": "Wind shear can cause rapid performance loss during critical phases of flight.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-071",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A pilot observes towering cumulus clouds developing rapidly along a cold front. What weather hazards should be expected?",
+    "answer": "Thunderstorms, turbulence, gusty winds, hail, lightning, and heavy precipitation.",
+    "explanation": "Cold fronts commonly trigger strong convective activity due to rapid lifting of unstable air.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-072",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "An airport near the ocean experiences calm morning winds that gradually shift onshore during the afternoon. What local wind effect is occurring?",
+    "answer": "A sea breeze.",
+    "explanation": "Land heats faster than water during the day, causing cooler marine air to flow inland.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-073",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "A pilot encounters severe turbulence near the tropopause in otherwise clear skies. What phenomenon is most likely responsible?",
+    "answer": "Clear air turbulence associated with the jet stream.",
+    "explanation": "Strong wind shear near jet streams commonly produces CAT without visible clouds.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-074",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A weather briefing describes widespread layered clouds with steady precipitation ahead of an approaching front. Which front is most likely approaching?",
+    "answer": "A warm front.",
+    "explanation": "Warm fronts usually produce gradual cloud thickening and widespread stable precipitation.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-075",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "A pilot on final approach suddenly experiences a strong loss of headwind and rapid sink rate near a thunderstorm. What dangerous phenomenon may be occurring?",
+    "answer": "A microburst or severe low-level wind shear.",
+    "explanation": "Thunderstorm downdrafts can create dangerous rapid wind changes near the surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-076",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Closely spaced isobars on a weather chart generally indicate:",
+    "choices": [
+      {
+        "text": "Light winds",
+        "correct": false
+      },
+      {
+        "text": "Calm conditions",
+        "correct": false
+      },
+      {
+        "text": "Strong winds",
+        "correct": true
+      },
+      {
+        "text": "High humidity only",
+        "correct": false
+      }
+    ],
+    "answer": "Strong winds",
+    "explanation": "Closely spaced isobars indicate a strong pressure gradient force, which produces stronger winds.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-077",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Mechanical turbulence is most likely:",
+    "choices": [
+      {
+        "text": "Over smooth water",
+        "correct": false
+      },
+      {
+        "text": "Downwind of rough terrain or obstacles",
+        "correct": true
+      },
+      {
+        "text": "Inside stable fog only",
+        "correct": false
+      },
+      {
+        "text": "Above the stratosphere",
+        "correct": false
+      }
+    ],
+    "answer": "Downwind of rough terrain or obstacles",
+    "explanation": "Buildings, trees, and terrain disrupt airflow and create turbulent eddies.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-078",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A maritime tropical air mass is generally:",
+    "choices": [
+      {
+        "text": "Cold and dry",
+        "correct": false
+      },
+      {
+        "text": "Warm and moist",
+        "correct": true
+      },
+      {
+        "text": "Cold and moist",
+        "correct": false
+      },
+      {
+        "text": "Hot and dry",
+        "correct": false
+      }
+    ],
+    "answer": "Warm and moist",
+    "explanation": "Maritime tropical air masses form over warm oceans and contain large amounts of moisture.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-079",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A continental polar air mass is usually:",
+    "choices": [
+      {
+        "text": "Warm and humid",
+        "correct": false
+      },
+      {
+        "text": "Hot and unstable",
+        "correct": false
+      },
+      {
+        "text": "Cold and dry",
+        "correct": true
+      },
+      {
+        "text": "Tropical and moist",
+        "correct": false
+      }
+    ],
+    "answer": "Cold and dry",
+    "explanation": "Continental polar air masses form over cold land areas and contain little moisture.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-080",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Mountain waves are most likely when:",
+    "choices": [
+      {
+        "text": "Light winds blow across flat terrain",
+        "correct": false
+      },
+      {
+        "text": "Strong stable winds blow perpendicular to mountain ranges",
+        "correct": true
+      },
+      {
+        "text": "Calm conditions exist",
+        "correct": false
+      },
+      {
+        "text": "Thunderstorms dissipate",
+        "correct": false
+      }
+    ],
+    "answer": "Strong stable winds blow perpendicular to mountain ranges",
+    "explanation": "Stable air flowing across mountains can create standing wave patterns and severe turbulence.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-081",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Lenticular clouds are commonly associated with:",
+    "choices": [
+      {
+        "text": "Radiation fog",
+        "correct": false
+      },
+      {
+        "text": "Warm fronts",
+        "correct": false
+      },
+      {
+        "text": "Mountain waves",
+        "correct": true
+      },
+      {
+        "text": "Tropical cyclones",
+        "correct": false
+      }
+    ],
+    "answer": "Mountain waves",
+    "explanation": "Lenticular clouds form in standing wave patterns downwind of mountains.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-082",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Immediately after a cold front passes, weather conditions often become:",
+    "choices": [
+      {
+        "text": "Warmer and more humid",
+        "correct": false
+      },
+      {
+        "text": "Cooler with improving visibility",
+        "correct": true
+      },
+      {
+        "text": "Completely calm",
+        "correct": false
+      },
+      {
+        "text": "More stable with fog",
+        "correct": false
+      }
+    ],
+    "answer": "Cooler with improving visibility",
+    "explanation": "Cold fronts often bring cooler, drier air with better visibility after passage.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-083",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A valley breeze typically occurs:",
+    "choices": [
+      {
+        "text": "During nighttime cooling",
+        "correct": false
+      },
+      {
+        "text": "During daytime heating as air flows upslope",
+        "correct": true
+      },
+      {
+        "text": "Only during thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Only in winter",
+        "correct": false
+      }
+    ],
+    "answer": "During daytime heating as air flows upslope",
+    "explanation": "Solar heating causes air along mountain slopes to warm and rise during the day.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-084",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A mountain breeze generally occurs:",
+    "choices": [
+      {
+        "text": "During daytime heating",
+        "correct": false
+      },
+      {
+        "text": "During nighttime cooling as air flows downslope",
+        "correct": true
+      },
+      {
+        "text": "Only near oceans",
+        "correct": false
+      },
+      {
+        "text": "Inside thunderstorms",
+        "correct": false
+      }
+    ],
+    "answer": "During nighttime cooling as air flows downslope",
+    "explanation": "Cooling air becomes denser and flows downhill during the night.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-085",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Rotor turbulence is most likely found:",
+    "choices": [
+      {
+        "text": "Upwind of mountains only",
+        "correct": false
+      },
+      {
+        "text": "Beneath mountain wave crests on the lee side",
+        "correct": true
+      },
+      {
+        "text": "Over flat prairie terrain",
+        "correct": false
+      },
+      {
+        "text": "Inside radiation fog",
+        "correct": false
+      }
+    ],
+    "answer": "Beneath mountain wave crests on the lee side",
+    "explanation": "Rotor zones contain severe turbulent rolling air below standing mountain waves.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-086",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Explain how a cold front produces thunderstorms.",
+    "answer": "A cold front forms when a colder, denser air mass advances into a warmer air mass. Because cold air is heavier, it wedges underneath the warm air and forces it upward rapidly.\n\nThis rapid lifting cools the warm moist air quickly. If the atmosphere is unstable, strong convection develops and towering cumuliform clouds form.\n\nAs the air continues rising:\n- Condensation increases\n- Latent heat is released\n- Updrafts strengthen\n- Thunderstorms may develop\n\nCold fronts commonly produce:\n- Towering cumulus clouds\n- Cumulonimbus clouds\n- Turbulence\n- Heavy precipitation\n- Lightning\n- Hail\n- Gust fronts\n\nThe rapid lifting associated with cold fronts is much more likely to produce convective weather than the gentler lifting found along warm fronts.\n\nPilots should expect rapidly changing weather conditions and avoid active thunderstorms near frontal systems.",
+    "explanation": "Strong lifting and atmospheric instability are the key ingredients for frontal thunderstorm development.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8 & 11",
+    "media": []
+  },
+  {
+    "id": "MET-087",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Describe how mountain waves form and why they are hazardous.",
+    "answer": "Mountain waves form when strong stable winds flow perpendicular to a mountain range.\n\nAs the stable air is forced upward over the mountains, it oscillates vertically after crossing the ridge, creating standing wave patterns downwind of the mountains.\n\nThese waves can extend:\n- Thousands of feet vertically\n- Hundreds of miles downwind\n\nMountain waves create several hazards:\n- Severe turbulence\n- Rotor turbulence\n- Strong updrafts and downdrafts\n- Rapid altitude changes\n- Airspeed fluctuations\n\nRotor zones beneath the wave crests are especially dangerous because they contain violent rolling turbulence.\n\nVisual indicators include:\n- Lenticular clouds\n- Rotor clouds\n- Strong surface winds\n\nMountain wave turbulence may exist even in clear air, making it difficult to detect visually.\n\nPilots flying near mountains should review winds aloft forecasts carefully and avoid mountain crossings during strong stable wind conditions.",
+    "explanation": "Stable airflow over terrain can create large standing atmospheric waves similar to water flowing over rocks in a river.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-088",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Why are strong pressure gradients associated with stronger winds?",
+    "answer": "The pressure gradient describes how quickly atmospheric pressure changes over a given distance.\n\nWhen pressure changes rapidly over a short distance, the pressure gradient force becomes stronger. This stronger force accelerates air more rapidly from high pressure toward low pressure.\n\nAs a result:\n- Closely spaced isobars indicate stronger winds\n- Widely spaced isobars indicate lighter winds\n\nHowever, actual surface wind speeds are also influenced by:\n- Friction\n- Terrain\n- Atmospheric stability\n- Coriolis force\n\nPilots use pressure gradients on weather charts to anticipate:\n- Strong surface winds\n- Turbulence\n- Crosswind conditions\n- Mechanical turbulence near terrain\n\nSteep pressure gradients are commonly associated with storms and frontal systems.",
+    "explanation": "The pressure gradient force is the primary driver of wind speed.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-089",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Explain the operational hazards associated with frontal passages.",
+    "answer": "Frontal passages often bring rapidly changing weather conditions that can significantly affect flight safety.\n\nHazards associated with fronts include:\n- Turbulence\n- Wind shear\n- Thunderstorms\n- Low ceilings\n- Reduced visibility\n- Icing\n- Heavy precipitation\n\nCold fronts commonly produce:\n- Gusty winds\n- Rapid weather changes\n- Convective turbulence\n- Thunderstorms\n\nWarm fronts commonly produce:\n- Widespread IFR conditions\n- Persistent low clouds\n- Freezing precipitation\n- Embedded icing layers\n\nWind direction and pressure changes during frontal passage may also affect runway selection and crosswind conditions.\n\nPilots should carefully review:\n- Weather charts\n- METARs\n- TAFs\n- Radar imagery\n- GFA information\n\nCrossing active frontal systems in small aircraft may require delaying or rerouting the flight.",
+    "explanation": "Fronts represent zones where significant atmospheric energy and weather development occur.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-090",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Explain the difference between geostrophic wind and surface wind.",
+    "answer": "Geostrophic wind occurs high above the surface where friction is negligible.\n\nAt these altitudes:\n- Pressure gradient force pushes air toward low pressure\n- Coriolis force deflects moving air\n- The two forces balance\n\nAs a result, geostrophic wind flows nearly parallel to isobars.\n\nNear the Earth’s surface, friction slows the wind. This weakens the Coriolis effect and causes surface wind to cross isobars slightly toward lower pressure.\n\nSurface winds are therefore:\n- Slower\n- More turbulent\n- More terrain-influenced\n- Angled toward low pressure\n\nPilots notice these differences when comparing:\n- Surface winds\n- Winds aloft forecasts\n- Upper-level jet stream flow",
+    "explanation": "Friction is the primary difference between geostrophic winds aloft and surface winds.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-091",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A pilot flying downwind of a mountain range encounters severe turbulence despite clear skies. What is the most likely cause?",
+    "answer": "Mountain wave and rotor turbulence.",
+    "explanation": "Strong stable winds crossing mountains can create dangerous turbulence far downwind of the terrain.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-092",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A METAR reports rapidly falling pressure, increasing winds, and towering cumulus clouds ahead of a front. Which front is most likely approaching?",
+    "answer": "A cold front.",
+    "explanation": "Falling pressure and convective cloud development are common indicators of an approaching cold front.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-093",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "A pilot departing a valley airport early in the morning observes cool air flowing downhill into the valley. What local wind effect is occurring?",
+    "answer": "A mountain breeze.",
+    "explanation": "Cooling overnight air becomes denser and flows downslope.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-094",
+    "topic": "Meteorology — Winds",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "While cruising near the tropopause, a pilot notices very strong winds and moderate turbulence near sharply changing wind directions. What atmospheric feature is likely nearby?",
+    "answer": "The jet stream.",
+    "explanation": "Jet streams create strong wind shear and turbulence near their boundaries.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4 & 14",
+    "media": []
+  },
+  {
+    "id": "MET-095",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "A pilot encounters widespread low ceilings, freezing rain, and poor visibility ahead of a slowly advancing front. What type of front is most likely involved?",
+    "answer": "A warm front.",
+    "explanation": "Warm fronts commonly produce widespread stable precipitation and freezing rain conditions.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-096",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Which wind condition is most likely to create mechanical turbulence near an airport?",
+    "choices": [
+      {
+        "text": "Light winds over flat terrain",
+        "correct": false
+      },
+      {
+        "text": "Strong winds over buildings and trees",
+        "correct": true
+      },
+      {
+        "text": "Calm nighttime conditions",
+        "correct": false
+      },
+      {
+        "text": "Weak offshore breezes",
+        "correct": false
+      }
+    ],
+    "answer": "Strong winds over buildings and trees",
+    "explanation": "Obstacles disturb airflow and create turbulent eddies downwind.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-097",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Clear air turbulence is most commonly associated with:",
+    "choices": [
+      {
+        "text": "Radiation fog",
+        "correct": false
+      },
+      {
+        "text": "Strong wind shear near the jet stream",
+        "correct": true
+      },
+      {
+        "text": "Warm stable air only",
+        "correct": false
+      },
+      {
+        "text": "Surface heating",
+        "correct": false
+      }
+    ],
+    "answer": "Strong wind shear near the jet stream",
+    "explanation": "CAT frequently occurs near jet streams where strong velocity gradients exist.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-098",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Which front generally moves fastest?",
+    "choices": [
+      {
+        "text": "Warm front",
+        "correct": false
+      },
+      {
+        "text": "Stationary front",
+        "correct": false
+      },
+      {
+        "text": "Cold front",
+        "correct": true
+      },
+      {
+        "text": "Occluded front",
+        "correct": false
+      }
+    ],
+    "answer": "Cold front",
+    "explanation": "Cold fronts typically advance more rapidly than warm fronts because dense cold air moves aggressively beneath warm air.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-099",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "The strongest winds in a low-pressure system are usually found where:",
+    "choices": [
+      {
+        "text": "Isobars are far apart",
+        "correct": false
+      },
+      {
+        "text": "Pressure gradients are weakest",
+        "correct": false
+      },
+      {
+        "text": "Isobars are closest together",
+        "correct": true
+      },
+      {
+        "text": "Humidity is lowest",
+        "correct": false
+      }
+    ],
+    "answer": "Isobars are closest together",
+    "explanation": "Tighter pressure gradients create stronger winds.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 4",
+    "media": []
+  },
+  {
+    "id": "MET-100",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "A Chinook wind is:",
+    "choices": [
+      {
+        "text": "A cold moist sea breeze",
+        "correct": false
+      },
+      {
+        "text": "A warm dry downslope wind on the lee side of mountains",
+        "correct": true
+      },
+      {
+        "text": "A tropical cyclone",
+        "correct": false
+      },
+      {
+        "text": "A thunderstorm gust front",
+        "correct": false
+      }
+    ],
+    "answer": "A warm dry downslope wind on the lee side of mountains",
+    "explanation": "Descending air warms adiabatically and becomes dry on the lee side of mountain ranges.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-101",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Ahead of a warm front, winds in the Northern Hemisphere commonly:",
+    "choices": [
+      {
+        "text": "Veer clockwise",
+        "correct": true
+      },
+      {
+        "text": "Become calm immediately",
+        "correct": false
+      },
+      {
+        "text": "Shift rapidly westward only",
+        "correct": false
+      },
+      {
+        "text": "Reverse completely",
+        "correct": false
+      }
+    ],
+    "answer": "Veer clockwise",
+    "explanation": "Wind direction changes gradually as warm fronts approach.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 8",
+    "media": []
+  },
+  {
+    "id": "MET-102",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Which condition is most favorable for mountain wave formation?",
+    "choices": [
+      {
+        "text": "Unstable air with light winds",
+        "correct": false
+      },
+      {
+        "text": "Stable air with strong cross-mountain winds",
+        "correct": true
+      },
+      {
+        "text": "Calm conditions and fog",
+        "correct": false
+      },
+      {
+        "text": "Surface heating only",
+        "correct": false
+      }
+    ],
+    "answer": "Stable air with strong cross-mountain winds",
+    "explanation": "Stable airflow across terrain creates standing atmospheric waves.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 15",
+    "media": []
+  },
+  {
+    "id": "MET-103",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Wind shear is defined as:",
+    "choices": [
+      {
+        "text": "A sudden change in wind speed and/or direction over a short distance",
+        "correct": true
+      },
+      {
+        "text": "Any wind stronger than 20 knots",
+        "correct": false
+      },
+      {
+        "text": "Turbulence inside clouds only",
+        "correct": false
+      },
+      {
+        "text": "Wind flowing around mountains",
+        "correct": false
+      }
+    ],
+    "answer": "A sudden change in wind speed and/or direction over a short distance",
+    "explanation": "Wind shear can create dangerous rapid performance changes during flight.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-104",
+    "topic": "Meteorology — Fronts & Air Masses",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [],
+    "question": "Which weather condition is most commonly associated with a warm moist unstable air mass?",
+    "choices": [
+      {
+        "text": "Clear cold skies",
+        "correct": false
+      },
+      {
+        "text": "Thunderstorms and showers",
+        "correct": true
+      },
+      {
+        "text": "Blowing snow",
+        "correct": false
+      },
+      {
+        "text": "Smooth stable air only",
+        "correct": false
+      }
+    ],
+    "answer": "Thunderstorms and showers",
+    "explanation": "Warm moist unstable air strongly favors convective activity.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-105",
+    "topic": "Meteorology — Winds",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [],
+    "question": "Why is low-level wind shear particularly dangerous during approach?",
+    "choices": [
+      {
+        "text": "It always increases aircraft performance",
+        "correct": false
+      },
+      {
+        "text": "Aircraft are close to stall speed and terrain",
+        "correct": true
+      },
+      {
+        "text": "It eliminates crosswinds",
+        "correct": false
+      },
+      {
+        "text": "It prevents turbulence",
+        "correct": false
+      }
+    ],
+    "answer": "Aircraft are close to stall speed and terrain",
+    "explanation": "Sudden wind changes near the ground can rapidly reduce lift and create dangerous sink rates during critical flight phases.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-106",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "thunderstorms",
+      "convection"
+    ],
+    "question": "What are the three basic ingredients required for thunderstorm development?",
+    "choices": [
+      {
+        "text": "Cold air, fog, and wind shear",
+        "correct": false
+      },
+      {
+        "text": "Moisture, instability, and lifting action",
+        "correct": true
+      },
+      {
+        "text": "High pressure, dry air, and calm winds",
+        "correct": false
+      },
+      {
+        "text": "Turbulence, icing, and haze",
+        "correct": false
+      }
+    ],
+    "answer": "Moisture, instability, and lifting action",
+    "explanation": "Thunderstorms require sufficient atmospheric moisture, unstable air that allows rising motion to continue, and a lifting mechanism such as surface heating, fronts, or terrain. Without all three ingredients, thunderstorms are unlikely to develop.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-107",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "cumulonimbus",
+      "hazards"
+    ],
+    "question": "Which thunderstorm hazard is considered most dangerous to aircraft during takeoff and landing?",
+    "choices": [
+      {
+        "text": "Lightning",
+        "correct": false
+      },
+      {
+        "text": "Heavy rain",
+        "correct": false
+      },
+      {
+        "text": "Microbursts",
+        "correct": true
+      },
+      {
+        "text": "Hail",
+        "correct": false
+      }
+    ],
+    "answer": "Microbursts",
+    "explanation": "Microbursts create extremely strong downdrafts and rapid wind shear close to the ground. Aircraft may experience a sudden loss of airspeed and lift during critical flight phases.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-108",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "thunderstorms",
+      "stages"
+    ],
+    "question": "Which stage of a thunderstorm is characterized primarily by strong updrafts?",
+    "choices": [
+      {
+        "text": "Dissipating stage",
+        "correct": false
+      },
+      {
+        "text": "Mature stage",
+        "correct": false
+      },
+      {
+        "text": "Cumulus stage",
+        "correct": true
+      },
+      {
+        "text": "Frontal stage",
+        "correct": false
+      }
+    ],
+    "answer": "Cumulus stage",
+    "explanation": "During the cumulus stage, warm moist air rises rapidly and builds towering cumulus clouds. Downdrafts and precipitation have not yet fully developed.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-109",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "thunderstorms",
+      "mature-stage"
+    ],
+    "question": "The mature stage of a thunderstorm is characterized by:",
+    "choices": [
+      {
+        "text": "Updrafts only",
+        "correct": false
+      },
+      {
+        "text": "Downdrafts only",
+        "correct": false
+      },
+      {
+        "text": "Both updrafts and downdrafts",
+        "correct": true
+      },
+      {
+        "text": "Clear skies",
+        "correct": false
+      }
+    ],
+    "answer": "Both updrafts and downdrafts",
+    "explanation": "The mature stage is the most dangerous phase of a thunderstorm because strong updrafts, downdrafts, precipitation, turbulence, lightning, and hail are all present simultaneously.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-110",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "lightning",
+      "hazards"
+    ],
+    "question": "Lightning associated with thunderstorms indicates:",
+    "choices": [
+      {
+        "text": "Stable atmospheric conditions",
+        "correct": false
+      },
+      {
+        "text": "Significant convective activity",
+        "correct": true
+      },
+      {
+        "text": "Reduced icing potential",
+        "correct": false
+      },
+      {
+        "text": "Weak turbulence only",
+        "correct": false
+      }
+    ],
+    "answer": "Significant convective activity",
+    "explanation": "Lightning is produced by strong electrical charge separation inside convective clouds and indicates active thunderstorm development.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-111",
+    "topic": "Meteorology — Turbulence",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "turbulence",
+      "convection"
+    ],
+    "question": "Convective turbulence is most commonly associated with:",
+    "choices": [
+      {
+        "text": "Temperature inversions only",
+        "correct": false
+      },
+      {
+        "text": "Strong surface heating",
+        "correct": true
+      },
+      {
+        "text": "Calm winter nights",
+        "correct": false
+      },
+      {
+        "text": "Stable stratiform clouds",
+        "correct": false
+      }
+    ],
+    "answer": "Strong surface heating",
+    "explanation": "Surface heating creates thermals and rising air currents that produce turbulence, especially during hot afternoons.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-112",
+    "topic": "Meteorology — Icing",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "structural-icing",
+      "supercooled-water"
+    ],
+    "question": "Structural icing occurs when:",
+    "choices": [
+      {
+        "text": "Dry snow accumulates on the aircraft",
+        "correct": false
+      },
+      {
+        "text": "Supercooled water droplets freeze on contact",
+        "correct": true
+      },
+      {
+        "text": "Frost forms only on the ground",
+        "correct": false
+      },
+      {
+        "text": "Fuel temperature decreases",
+        "correct": false
+      }
+    ],
+    "answer": "Supercooled water droplets freeze on contact",
+    "explanation": "Structural icing occurs when liquid water droplets remain unfrozen below 0°C and freeze when they strike the aircraft surface.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-113",
+    "topic": "Meteorology — Icing",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "clear-ice",
+      "icing-types"
+    ],
+    "question": "Clear ice is most commonly associated with:",
+    "choices": [
+      {
+        "text": "Small supercooled droplets",
+        "correct": false
+      },
+      {
+        "text": "Freezing fog only",
+        "correct": false
+      },
+      {
+        "text": "Large supercooled water droplets",
+        "correct": true
+      },
+      {
+        "text": "Dry snow crystals",
+        "correct": false
+      }
+    ],
+    "answer": "Large supercooled water droplets",
+    "explanation": "Large droplets spread before freezing, creating dense transparent ice that can significantly alter the wing shape.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-114",
+    "topic": "Meteorology — Icing",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "rime-ice",
+      "icing-types"
+    ],
+    "question": "Rime ice is generally:",
+    "choices": [
+      {
+        "text": "Smooth and transparent",
+        "correct": false
+      },
+      {
+        "text": "Rough and opaque",
+        "correct": true
+      },
+      {
+        "text": "Liquid water only",
+        "correct": false
+      },
+      {
+        "text": "Found only on the ground",
+        "correct": false
+      }
+    ],
+    "answer": "Rough and opaque",
+    "explanation": "Rime ice forms when small supercooled droplets freeze rapidly on impact, trapping air and creating a rough milky appearance.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-115",
+    "topic": "Meteorology — Icing",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "icing",
+      "freezing-rain"
+    ],
+    "question": "Which weather condition presents one of the most severe icing hazards?",
+    "choices": [
+      {
+        "text": "Light snow showers",
+        "correct": false
+      },
+      {
+        "text": "Freezing rain",
+        "correct": true
+      },
+      {
+        "text": "Thin cirrus clouds",
+        "correct": false
+      },
+      {
+        "text": "Dry cold air",
+        "correct": false
+      }
+    ],
+    "answer": "Freezing rain",
+    "explanation": "Freezing rain contains large supercooled droplets that can create rapid and dangerous ice accumulation.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-116",
+    "topic": "Meteorology — Weather Hazards",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "visibility",
+      "haze"
+    ],
+    "question": "Haze differs from fog because:",
+    "choices": [
+      {
+        "text": "Haze always contains precipitation",
+        "correct": false
+      },
+      {
+        "text": "Fog reduces visibility below 1 SM",
+        "correct": true
+      },
+      {
+        "text": "Haze forms only at night",
+        "correct": false
+      },
+      {
+        "text": "Fog occurs only in winter",
+        "correct": false
+      }
+    ],
+    "answer": "Fog reduces visibility below 1 SM",
+    "explanation": "Fog is defined as visibility below 1 statute mile due to suspended water droplets, while haze usually allows greater visibility.",
+    "reference": "TC AIM MET; FAA Aviation Weather Handbook Ch. 10",
+    "media": []
+  },
+  {
+    "id": "MET-117",
+    "topic": "Meteorology — Weather Hazards",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "whiteout",
+      "winter-weather"
+    ],
+    "question": "Whiteout conditions are most dangerous because they:",
+    "choices": [
+      {
+        "text": "Increase aircraft performance",
+        "correct": false
+      },
+      {
+        "text": "Eliminate visual references",
+        "correct": true
+      },
+      {
+        "text": "Reduce turbulence",
+        "correct": false
+      },
+      {
+        "text": "Prevent icing",
+        "correct": false
+      }
+    ],
+    "answer": "Eliminate visual references",
+    "explanation": "Whiteout conditions can make the horizon and terrain impossible to distinguish, causing severe spatial disorientation.",
+    "reference": "Flight Training Manual; TC AIM MET",
+    "media": []
+  },
+  {
+    "id": "MET-118",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "thunderstorms",
+      "stages"
+    ],
+    "question": "Describe the three stages of a thunderstorm.",
+    "answer": "Thunderstorms typically develop through three stages:\n\n1. **Cumulus Stage**\n- Characterized mainly by strong updrafts\n- Warm moist air rises rapidly\n- Towering cumulus clouds form\n- Little or no precipitation reaches the ground yet\n\n2. **Mature Stage**\n- Most dangerous stage\n- Both updrafts and downdrafts exist\n- Heavy precipitation begins\n- Lightning, hail, turbulence, and gust fronts may occur\n- Cumulonimbus cloud is fully developed\n\n3. **Dissipating Stage**\n- Downdrafts dominate\n- Updrafts weaken and stop\n- Storm gradually loses energy\n- Precipitation decreases over time\n\nPilots should avoid thunderstorms in all stages, especially the mature stage.",
+    "explanation": "Thunderstorm stages reflect the balance between rising and descending air currents.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-119",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "microburst",
+      "wind-shear"
+    ],
+    "question": "Explain why microbursts are extremely hazardous to aircraft.",
+    "answer": "A microburst is a powerful localized downdraft produced by a thunderstorm.\n\nAs the downdraft strikes the ground, air spreads outward rapidly in all directions. Aircraft flying through a microburst may first experience an increasing headwind, followed immediately by a severe downdraft and rapidly decreasing headwind.\n\nThis sequence can cause:\n- Sudden airspeed loss\n- Rapid sink rates\n- Loss of lift\n- Inability to climb\n\nMicrobursts are especially dangerous during takeoff and landing because aircraft are already operating close to the ground with limited energy margins.\n\nPilots should avoid thunderstorms entirely and pay close attention to:\n- LLWAS alerts\n- ATC wind shear warnings\n- Virga and heavy precipitation\n- Rapidly changing surface winds",
+    "explanation": "Microbursts create extreme low-level wind shear that may exceed aircraft performance capability.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-120",
+    "topic": "Meteorology — Icing",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "icing-effects",
+      "performance"
+    ],
+    "question": "How does structural icing affect aircraft performance?",
+    "answer": "Structural icing changes the shape and smoothness of the aircraft surfaces.\n\nEven small amounts of ice can:\n- Reduce lift\n- Increase drag\n- Increase stall speed\n- Reduce climb performance\n- Increase weight\n- Reduce controllability\n\nIce may also:\n- Block pitot tubes and air intakes\n- Affect propeller efficiency\n- Increase takeoff distance\n- Prevent safe landing\n\nClear ice is especially dangerous because it can build rapidly and spread beyond protected surfaces.\n\nPilots should avoid known icing conditions unless operating aircraft specifically certified and equipped for icing flight.",
+    "explanation": "Ice disrupts smooth airflow over the wing and reduces aerodynamic efficiency.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-121",
+    "topic": "Meteorology — Weather Hazards",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "visibility",
+      "smoke-haze"
+    ],
+    "question": "Explain how smoke and haze can affect flight operations.",
+    "answer": "Smoke and haze reduce visibility by scattering and absorbing light.\n\nPilots may experience:\n- Reduced horizon visibility\n- Difficulty identifying terrain and landmarks\n- Reduced contrast\n- Difficulty spotting traffic\n- Degraded approach and landing references\n\nSmoke layers can also create:\n- Illusions of greater distance\n- False horizon perception\n- Difficulty estimating altitude above terrain\n\nWildfire smoke can spread hundreds of miles from the actual fire source and may affect large regions unexpectedly.\n\nPilots should review visibility reports carefully and recognize that slant visibility may be much worse than ground visibility reports suggest.",
+    "explanation": "Smoke and haze degrade visual references even when legal VFR visibility still exists.",
+    "reference": "TC AIM MET; FAA Aviation Weather Handbook Ch. 10",
+    "media": []
+  },
+  {
+    "id": "MET-122",
+    "topic": "Meteorology — Turbulence",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "turbulence-types",
+      "aviation-hazards"
+    ],
+    "question": "Compare convective turbulence, mechanical turbulence, and clear air turbulence.",
+    "answer": "Convective turbulence is caused by rising warm air and thermals. It is most common during hot afternoons and near thunderstorms.\n\nMechanical turbulence occurs when airflow is disrupted by terrain, buildings, trees, or obstacles. It is strongest near the surface and downwind of rough terrain.\n\nClear air turbulence (CAT) occurs without visible clouds, usually near jet streams where strong wind shear exists.\n\nKey differences:\n- Convective turbulence: caused by vertical heating\n- Mechanical turbulence: caused by surface obstacles\n- CAT: caused by upper-level wind shear\n\nAll three types can create hazardous flight conditions, especially for light aircraft.",
+    "explanation": "Different turbulence types originate from different atmospheric mechanisms.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 14",
+    "media": []
+  },
+  {
+    "id": "MET-123",
+    "topic": "Meteorology — Thunderstorms",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "thunderstorms",
+      "cumulonimbus"
+    ],
+    "question": "You observe an anvil-shaped cloud top extending downwind from a cumulonimbus cloud. What does this indicate?",
+    "answer": "A mature thunderstorm with strong upper-level winds.",
+    "explanation": "Anvil tops form when thunderstorm updrafts reach the stable tropopause and spread horizontally.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 11",
+    "media": []
+  },
+  {
+    "id": "MET-124",
+    "topic": "Meteorology — Icing",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "icing",
+      "freezing-level"
+    ],
+    "question": "A pilot enters visible moisture at -5°C and begins accumulating ice. What condition is present?",
+    "answer": "Structural icing caused by supercooled liquid water.",
+    "explanation": "Visible moisture and temperatures below freezing commonly create icing conditions.",
+    "reference": "Flight Training Manual; FAA Aviation Weather Handbook Ch. 12",
+    "media": []
+  },
+  {
+    "id": "MET-125",
+    "topic": "Meteorology — Weather Hazards",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "whiteout",
+      "snow"
+    ],
+    "question": "While flying over snow-covered terrain under overcast skies, a pilot loses all horizon definition. What dangerous condition may exist?",
+    "answer": "Whiteout conditions.",
+    "explanation": "Uniform snow cover and diffuse lighting can eliminate visual references.",
+    "reference": "TC AIM MET; Flight Training Manual",
+    "media": []
+  }
+]

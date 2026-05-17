@@ -1,0 +1,1468 @@
+[
+  {
+    "id": "MET-446",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-icing",
+      "engine",
+      "recognition"
+    ],
+    "question": "What is carburettor icing?",
+    "choices": [
+      {
+        "text": "Ice forming inside the carburettor because fuel vaporization and pressure drop cool the air",
+        "correct": true
+      },
+      {
+        "text": "Ice forming only on the outside of the windshield",
+        "correct": false
+      },
+      {
+        "text": "Ice forming only when outside air temperature is below -20 C",
+        "correct": false
+      },
+      {
+        "text": "Ice forming only in fuel tanks after refuelling",
+        "correct": false
+      }
+    ],
+    "answer": "Ice forming inside the carburettor because fuel vaporization and pressure drop cool the air.",
+    "explanation": "In a carburettor, air speeds up through the venturi and fuel vaporizes into that airflow. Both processes can lower the temperature in the carburettor throat enough for moisture to freeze, even when the outside air temperature is above freezing. This can restrict airflow to the engine and reduce power. It is an engine hazard, not just an airframe icing hazard, and it can occur when there is no visible cloud.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-447",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-icing",
+      "temperature",
+      "humidity"
+    ],
+    "question": "When can carburettor icing occur?",
+    "choices": [
+      {
+        "text": "In moist air, often at temperatures well above 0 C",
+        "correct": true
+      },
+      {
+        "text": "Only in visible cloud below 0 C",
+        "correct": false
+      },
+      {
+        "text": "Only during heavy snow",
+        "correct": false
+      },
+      {
+        "text": "Only when the aircraft is parked overnight",
+        "correct": false
+      }
+    ],
+    "answer": "In moist air, often at temperatures well above 0 C.",
+    "explanation": "Carburettor icing is different from structural icing. The carburettor can become much colder than the outside air because of venturi cooling and fuel vaporization. If enough moisture is present, ice can form even on a warm-looking day. For PPL flying, this is why temperature and humidity matter, and why pilots are taught to be alert for carb ice during reduced power operation, descent, or damp conditions.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Aviation Weather Handbook, Ch. 19, Induction Icing",
+    "media": []
+  },
+  {
+    "id": "MET-448",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-icing",
+      "symptoms",
+      "fixed-pitch-propeller"
+    ],
+    "question": "In an aircraft with a fixed-pitch propeller, what is a common symptom of carburettor icing?",
+    "choices": [
+      {
+        "text": "A gradual drop in RPM",
+        "correct": true
+      },
+      {
+        "text": "A sudden increase in RPM",
+        "correct": false
+      },
+      {
+        "text": "A higher oil temperature with no other change",
+        "correct": false
+      },
+      {
+        "text": "An immediate transponder failure",
+        "correct": false
+      }
+    ],
+    "answer": "A gradual drop in RPM.",
+    "explanation": "Carburettor ice restricts airflow into the engine. In a fixed-pitch propeller aircraft, reduced engine power normally shows as a gradual RPM loss. The change may be subtle at first, which is why regular instrument scanning matters. If the pilot waits until the engine is running very roughly, the ice may already be significant.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-449",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-icing",
+      "symptoms",
+      "constant-speed-propeller"
+    ],
+    "question": "In an aircraft with a constant-speed propeller, carburettor icing may first show as:",
+    "choices": [
+      {
+        "text": "A drop in manifold pressure or engine power",
+        "correct": true
+      },
+      {
+        "text": "A large increase in indicated airspeed",
+        "correct": false
+      },
+      {
+        "text": "An automatic increase in fuel capacity",
+        "correct": false
+      },
+      {
+        "text": "A lower stall speed",
+        "correct": false
+      }
+    ],
+    "answer": "A drop in manifold pressure or engine power.",
+    "explanation": "With a constant-speed propeller, the governor may initially maintain RPM even as engine power decreases. That means carb ice may be noticed as a reduction in manifold pressure, roughness, or degraded performance rather than an immediate RPM drop. The exact indication depends on the aircraft, so pilots should know the symptoms described in the pilot operating handbook.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-450",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-heat",
+      "engine",
+      "procedure"
+    ],
+    "question": "What is the normal immediate action if carburettor icing is suspected in a carburetted engine?",
+    "choices": [
+      {
+        "text": "Apply full carburettor heat and leave it on until the ice is cleared",
+        "correct": true
+      },
+      {
+        "text": "Lean the mixture fully and wait",
+        "correct": false
+      },
+      {
+        "text": "Turn off the fuel selector",
+        "correct": false
+      },
+      {
+        "text": "Close the throttle and glide without using carb heat",
+        "correct": false
+      }
+    ],
+    "answer": "Apply full carburettor heat and leave it on until the ice is cleared.",
+    "explanation": "Full carburettor heat directs warmed air into the carburettor to melt the ice. Partial heat may not provide enough warmth and can sometimes leave the carburettor in an icing temperature range. When heat is first applied, engine roughness may increase briefly as melted ice and water pass through the engine. Removing heat too early can leave ice behind.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-451",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-heat",
+      "engine-roughness",
+      "troubleshooting"
+    ],
+    "question": "After applying carburettor heat for suspected carb ice, the engine runs rougher for a short time. What does this often indicate?",
+    "choices": [
+      {
+        "text": "Ice is melting and passing through the engine",
+        "correct": true
+      },
+      {
+        "text": "The carburettor heat system must be switched off immediately in all cases",
+        "correct": false
+      },
+      {
+        "text": "The aircraft has entered structural icing",
+        "correct": false
+      },
+      {
+        "text": "The altimeter setting is wrong",
+        "correct": false
+      }
+    ],
+    "answer": "Ice is melting and passing through the engine.",
+    "explanation": "A temporary increase in roughness after applying heat can be a sign that ice is being removed. The engine may run rough as water and loosened ice are ingested. The pilot should follow the aircraft procedure and keep the heat on long enough for the engine to clear. Turning heat off at the first roughness can trap the pilot in a cycle where ice never fully clears.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-452",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-icing",
+      "descent",
+      "prevention"
+    ],
+    "question": "Why is carburettor heat commonly used before and during prolonged low-power descents in many carburetted aircraft?",
+    "choices": [
+      {
+        "text": "Low power can reduce engine heat while carb ice continues to form",
+        "correct": true
+      },
+      {
+        "text": "It increases lift on the wings",
+        "correct": false
+      },
+      {
+        "text": "It removes frost from the tailplane",
+        "correct": false
+      },
+      {
+        "text": "It improves radio reception",
+        "correct": false
+      }
+    ],
+    "answer": "Low power can reduce engine heat while carb ice continues to form.",
+    "explanation": "During descent, the throttle is often partly closed and the engine produces less heat. At the same time, the carburettor can still cool the incoming air enough for ice to form. If the pilot descends for several minutes and then needs power near the ground, the engine may not respond normally. Preventive carb heat is a way of keeping the induction system clear when conditions and the aircraft procedure call for it.",
+    "reference": "Transport Canada Flight Training Manual, Forced Landings and Engine Handling; FAA Airplane Flying Handbook, Descent and Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-453",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-heat",
+      "performance",
+      "mixture"
+    ],
+    "question": "What is one normal side effect of applying carburettor heat?",
+    "choices": [
+      {
+        "text": "A decrease in engine power because the engine receives warmer, less dense air",
+        "correct": true
+      },
+      {
+        "text": "A permanent increase in maximum horsepower",
+        "correct": false
+      },
+      {
+        "text": "Elimination of all structural icing",
+        "correct": false
+      },
+      {
+        "text": "Immediate improvement in aircraft climb performance",
+        "correct": false
+      }
+    ],
+    "answer": "A decrease in engine power because the engine receives warmer, less dense air.",
+    "explanation": "Carburettor heat uses warm induction air. Warm air is less dense, so the engine may produce less power while heat is applied. In some aircraft, the mixture may also become richer. That normal power loss should not be confused with a fault. If carb ice is present, power may decrease at first and then recover as the ice melts and airflow improves.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-454",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-icing",
+      "conditions",
+      "risk"
+    ],
+    "question": "Which day can still present a serious carburettor icing risk?",
+    "choices": [
+      {
+        "text": "A humid day with outside air temperature well above freezing",
+        "correct": true
+      },
+      {
+        "text": "A dry day with no moisture and very high temperature",
+        "correct": false
+      },
+      {
+        "text": "Any day only if snow is falling",
+        "correct": false
+      },
+      {
+        "text": "Only a day with freezing rain",
+        "correct": false
+      }
+    ],
+    "answer": "A humid day with outside air temperature well above freezing.",
+    "explanation": "Carburettor icing depends on moisture and cooling inside the carburettor, not simply outside air below freezing. A mild, damp day can be more dangerous than a very cold, dry day because the air contains more moisture and the carburettor temperature can drop into the freezing range. This is why carb ice is sometimes surprising to new pilots.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Aviation Weather Handbook, Ch. 19, Induction Icing",
+    "media": []
+  },
+  {
+    "id": "MET-455",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-icing",
+      "scenario",
+      "engine"
+    ],
+    "question": "You are descending on a cool, damp day in a carburetted training aircraft. RPM slowly decreases and the engine begins to run rough. What should you suspect and do?",
+    "answer": "Suspect carburettor icing; apply full carburettor heat, monitor the engine, and be prepared to adjust power and follow the aircraft checklist.",
+    "explanation": "The combination of damp air, reduced power, gradual RPM loss, and rough running fits carburettor icing. Full carburettor heat should be applied according to the aircraft procedure. The engine may run rougher briefly as ice melts, then recover. Because this is happening in descent, the pilot should also consider terrain, landing options, and whether to level off or divert if normal power is not restored.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling and Emergency Procedures; FAA Airplane Flying Handbook, Engine Operation",
+    "media": []
+  },
+  {
+    "id": "MET-456",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "frost-contamination",
+      "aerodynamics",
+      "preflight"
+    ],
+    "question": "Why is frost on the wings dangerous?",
+    "choices": [
+      {
+        "text": "It roughens the surface, disrupts airflow, reduces lift, and increases drag",
+        "correct": true
+      },
+      {
+        "text": "It improves boundary layer control",
+        "correct": false
+      },
+      {
+        "text": "It only matters on jet aircraft",
+        "correct": false
+      },
+      {
+        "text": "It lowers the aircraft stall speed",
+        "correct": false
+      }
+    ],
+    "answer": "It roughens the surface, disrupts airflow, reduces lift, and increases drag.",
+    "explanation": "Frost may look thin, but it changes the smooth shape the wing needs to produce lift efficiently. Even a small roughness can cause earlier airflow separation, poorer climb performance, longer takeoff roll, and a higher stall speed. The danger is greatest on takeoff because the aircraft is heavy, slow, close to the ground, and dependent on full performance.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing and Pre-flight Inspection; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-457",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "frost-contamination",
+      "clean-aircraft-concept",
+      "safety"
+    ],
+    "question": "What is the safest rule for a PPL regarding frost, snow, or ice on critical surfaces before takeoff?",
+    "choices": [
+      {
+        "text": "Do not take off until the critical surfaces are clean",
+        "correct": true
+      },
+      {
+        "text": "Take off if only the upper wing surface has frost",
+        "correct": false
+      },
+      {
+        "text": "Take off if the runway is long enough",
+        "correct": false
+      },
+      {
+        "text": "Take off and let airflow remove the frost",
+        "correct": false
+      }
+    ],
+    "answer": "Do not take off until the critical surfaces are clean.",
+    "explanation": "The clean aircraft concept is simple: critical surfaces must be free of frost, ice, and snow before flight. Airflow during takeoff is not a reliable de-icing method. Some contamination may remain attached until rotation, exactly when the wing must produce enough lift. A long runway does not fix reduced climb performance or degraded controllability after liftoff.",
+    "reference": "Transport Canada Flight Training Manual, Pre-flight Inspection and Aircraft Icing; Transport Canada guidance on clean aircraft operations",
+    "media": []
+  },
+  {
+    "id": "MET-458",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "frost-contamination",
+      "tailplane",
+      "controls"
+    ],
+    "question": "Besides the wings, which surfaces must be considered critical for frost and ice contamination?",
+    "choices": [
+      {
+        "text": "Tailplane, control surfaces, propeller, windshield, pitot/static ports, antennas, and engine inlets",
+        "correct": true
+      },
+      {
+        "text": "Only the baggage door",
+        "correct": false
+      },
+      {
+        "text": "Only the tires",
+        "correct": false
+      },
+      {
+        "text": "Only the paint on the fuselage side",
+        "correct": false
+      }
+    ],
+    "answer": "Tailplane, control surfaces, propeller, windshield, pitot/static ports, antennas, and engine inlets.",
+    "explanation": "Ice contamination is not only a wing problem. A contaminated tailplane can lose effectiveness, control hinges can be restricted, propeller efficiency can be reduced, and blocked pitot/static ports can make airspeed or altitude indications unreliable. A good winter preflight looks at every surface or opening that affects lift, control, visibility, engine operation, or instruments.",
+    "reference": "Transport Canada Flight Training Manual, Pre-flight Inspection and Aircraft Icing; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing Effects",
+    "media": []
+  },
+  {
+    "id": "MET-459",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "frost",
+      "radiation-cooling",
+      "overnight"
+    ],
+    "question": "How can frost form on an aircraft when the reported air temperature is above 0 C?",
+    "choices": [
+      {
+        "text": "The aircraft skin can cool below freezing by radiation, especially overnight under clear skies",
+        "correct": true
+      },
+      {
+        "text": "Frost can only form if the METAR temperature is below -20 C",
+        "correct": false
+      },
+      {
+        "text": "Frost is caused by high pressure alone",
+        "correct": false
+      },
+      {
+        "text": "Frost forms only after an aircraft is airborne",
+        "correct": false
+      }
+    ],
+    "answer": "The aircraft skin can cool below freezing by radiation, especially overnight under clear skies.",
+    "explanation": "At night, an aircraft surface can lose heat by radiation to a clear sky and become colder than the surrounding air. If the surface is below freezing and moisture is present, frost can form even when the official air temperature is slightly above freezing. This is why preflight inspection matters more than assumptions based on a nearby weather report.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Frost; Transport Canada Flight Training Manual, Pre-flight Inspection",
+    "media": []
+  },
+  {
+    "id": "MET-460",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "frost-contamination",
+      "scenario",
+      "takeoff-decision"
+    ],
+    "question": "You find a thin, rough layer of frost on the upper wing surface before a morning departure. The runway is long and the weather is VFR. What should you do?",
+    "answer": "Remove the frost completely using an approved method before flight, or delay until the aircraft is clean.",
+    "explanation": "VFR weather and runway length do not make frost acceptable. Frost changes the wing surface and can seriously reduce performance at the moment of takeoff. The correct decision is to ensure the aircraft is clean before departure. If proper de-icing equipment or a warm hangar is not available, delaying is the safe operational choice.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing and Pre-flight Inspection; FAA Aviation Weather Handbook, Ch. 19, Frost",
+    "media": []
+  },
+  {
+    "id": "MET-461",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "frost-contamination",
+      "performance",
+      "stall"
+    ],
+    "question": "How can frost affect stall characteristics?",
+    "choices": [
+      {
+        "text": "It can increase stall speed and make stall behaviour less predictable",
+        "correct": true
+      },
+      {
+        "text": "It always lowers stall speed",
+        "correct": false
+      },
+      {
+        "text": "It prevents airflow separation",
+        "correct": false
+      },
+      {
+        "text": "It affects only cruise fuel burn",
+        "correct": false
+      }
+    ],
+    "answer": "It can increase stall speed and make stall behaviour less predictable.",
+    "explanation": "Frost roughens the wing and can cause airflow to separate earlier than normal. That means the aircraft may stall at a higher indicated airspeed than expected, and control response may feel different. During takeoff and initial climb, there may be too little altitude to recover from degraded performance or an unexpected stall.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing Effects; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-462",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "freezing-drizzle",
+      "fzdz",
+      "metar"
+    ],
+    "question": "In a METAR, what does `FZDZ` mean?",
+    "choices": [
+      {
+        "text": "Freezing drizzle",
+        "correct": true
+      },
+      {
+        "text": "Fog drifting over a dry zone",
+        "correct": false
+      },
+      {
+        "text": "Frozen dust",
+        "correct": false
+      },
+      {
+        "text": "Forecast drizzle",
+        "correct": false
+      }
+    ],
+    "answer": "Freezing drizzle.",
+    "explanation": "`DZ` means drizzle, and the prefix `FZ` means freezing. Freezing drizzle consists of supercooled liquid droplets that freeze on contact with aircraft or surfaces. For a light aircraft, it is a serious red flag because it can create rapid and difficult-to-detect ice accumulation.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Weather Codes; FAA Aviation Weather Handbook, Ch. 19, Freezing Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-463",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-drizzle",
+      "supercooled-droplets",
+      "icing"
+    ],
+    "question": "Why is freezing drizzle especially hazardous to aircraft?",
+    "choices": [
+      {
+        "text": "It can contain supercooled droplets that freeze on contact and build ice rapidly",
+        "correct": true
+      },
+      {
+        "text": "It is always harmless because droplets are small",
+        "correct": false
+      },
+      {
+        "text": "It only affects aircraft parked inside hangars",
+        "correct": false
+      },
+      {
+        "text": "It prevents structural icing by washing the wing",
+        "correct": false
+      }
+    ],
+    "answer": "It can contain supercooled droplets that freeze on contact and build ice rapidly.",
+    "explanation": "Freezing drizzle is liquid precipitation below freezing. The droplets may freeze when they hit the aircraft, forming ice on exposed surfaces. It can also produce ice in places a pilot does not easily see from the cockpit. Because it may occur with low cloud, poor visibility, and temperatures near freezing, it is not a condition for a non-icing-equipped PPL aircraft to test.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Freezing Drizzle and Freezing Rain; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-464",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-rain",
+      "freezing-drizzle",
+      "droplet-size"
+    ],
+    "question": "What is a key operational similarity between freezing rain and freezing drizzle?",
+    "choices": [
+      {
+        "text": "Both are liquid precipitation that can freeze on contact and cause severe icing hazards",
+        "correct": true
+      },
+      {
+        "text": "Both are always safe for VFR flight",
+        "correct": false
+      },
+      {
+        "text": "Both occur only in thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Both are made only of dry ice crystals",
+        "correct": false
+      }
+    ],
+    "answer": "Both are liquid precipitation that can freeze on contact and cause severe icing hazards.",
+    "explanation": "Freezing rain and freezing drizzle differ in droplet size and formation details, but the operational message is the same for a light aircraft: they are dangerous. Both can deposit ice quickly and may be associated with warm-over-cold temperature structures or supercooled liquid water. A PPL should treat either code in a weather report or forecast as a strong reason to delay, cancel, or reroute.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Freezing Precipitation; NAV CANADA Aviation Weather Services Guide, METAR Weather Codes",
+    "media": []
+  },
+  {
+    "id": "MET-465",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "freezing-drizzle",
+      "large-droplet-icing",
+      "escape"
+    ],
+    "question": "Why can freezing drizzle be more difficult to manage than ordinary cloud icing?",
+    "choices": [
+      {
+        "text": "Droplets can impinge beyond normal leading-edge areas and build ice quickly",
+        "correct": true
+      },
+      {
+        "text": "It improves airflow over the wing",
+        "correct": false
+      },
+      {
+        "text": "It occurs only above the service ceiling of light aircraft",
+        "correct": false
+      },
+      {
+        "text": "It is visible only on radar as clear air",
+        "correct": false
+      }
+    ],
+    "answer": "Droplets can impinge beyond normal leading-edge areas and build ice quickly.",
+    "explanation": "Freezing drizzle can involve supercooled droplets large enough to strike and freeze farther aft than smaller cloud droplets. That can create ice shapes and drag increases that are hard to anticipate, and it may affect unprotected areas. For aircraft not approved for icing, the correct plan is avoidance. Escape should be immediate if encountered.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Supercooled Large Droplets and Freezing Drizzle; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-466",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "fzdz",
+      "scenario",
+      "go-no-go"
+    ],
+    "question": "Your destination METAR reports `-FZDZ` with temperature `M01`. The TAF suggests improvement in two hours. You fly a non-icing-equipped training aircraft. What is the best decision?",
+    "answer": "Do not depart for that destination now; wait for actual improvement or choose a route and destination without freezing precipitation.",
+    "explanation": "Light freezing drizzle is still freezing drizzle. The `M01` temperature confirms the surface is below freezing, and liquid precipitation can freeze on the aircraft during approach, holding, or missed approach. A forecast improvement is useful for planning, but the current report describes a real icing hazard. A non-icing-equipped training aircraft should avoid it entirely.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI; FAA Aviation Weather Handbook, Ch. 19, Freezing Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-467",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "structural-icing",
+      "requirements",
+      "visible-moisture"
+    ],
+    "question": "What two broad ingredients are usually needed for structural icing?",
+    "choices": [
+      {
+        "text": "Visible moisture and an aircraft surface at or below freezing",
+        "correct": true
+      },
+      {
+        "text": "Clear sky and dry air",
+        "correct": false
+      },
+      {
+        "text": "High density altitude and low humidity",
+        "correct": false
+      },
+      {
+        "text": "Tailwind and low pressure only",
+        "correct": false
+      }
+    ],
+    "answer": "Visible moisture and an aircraft surface at or below freezing.",
+    "explanation": "Structural icing generally requires liquid water in the atmosphere and a surface cold enough for that water to freeze. Visible moisture includes cloud, fog, rain, drizzle, and wet snow. The outside air temperature alone is not enough; the pilot must consider moisture, freezing level, aircraft skin temperature, altitude, and weather type.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-468",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing-escape",
+      "vfr",
+      "immediate-action"
+    ],
+    "question": "For a VFR pilot in a non-icing-equipped aircraft, what is the primary strategy for icing?",
+    "choices": [
+      {
+        "text": "Avoid known or forecast icing and exit immediately if ice is encountered",
+        "correct": true
+      },
+      {
+        "text": "Continue to the destination unless ice becomes severe",
+        "correct": false
+      },
+      {
+        "text": "Climb deeper into cloud to test conditions",
+        "correct": false
+      },
+      {
+        "text": "Ignore light ice because it always sheds by itself",
+        "correct": false
+      }
+    ],
+    "answer": "Avoid known or forecast icing and exit immediately if ice is encountered.",
+    "explanation": "Light training aircraft can lose performance quickly with even small ice accumulations. A VFR pilot also has the added problem that icing usually occurs in visible moisture, often near cloud or precipitation that may reduce visibility. Avoidance is the main defence. If ice appears, the decision should shift from completing the flight to escaping the icing conditions while maintaining control and terrain clearance.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing and Emergency Procedures; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-469",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing-escape",
+      "altitude",
+      "temperature"
+    ],
+    "question": "If inadvertent icing is encountered, which escape option is often considered first when safe and legal?",
+    "choices": [
+      {
+        "text": "Leave visible moisture and move to an altitude or area with temperatures above freezing",
+        "correct": true
+      },
+      {
+        "text": "Slow to minimum controllable airspeed and continue",
+        "correct": false
+      },
+      {
+        "text": "Fly deeper into the cloud layer",
+        "correct": false
+      },
+      {
+        "text": "Turn off pitot heat if installed",
+        "correct": false
+      }
+    ],
+    "answer": "Leave visible moisture and move to an altitude or area with temperatures above freezing.",
+    "explanation": "Ice cannot continue to accumulate if the aircraft leaves the icing environment. That may mean descending into warmer air, climbing above the cloud if performance and clearance allow, or turning around to known better conditions. The correct direction depends on terrain, freezing level, cloud tops and bases, ATC, and aircraft performance. The key is to act early, before ice accumulation removes the options.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19, Icing Avoidance and Escape",
+    "media": []
+  },
+  {
+    "id": "MET-470",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "icing-escape",
+      "scenario",
+      "turnback"
+    ],
+    "question": "You are VFR above a broken layer and notice ice forming on the strut. The cloud tops ahead are rising and the route behind is still clear. What should you do?",
+    "answer": "Turn back toward known clear conditions and exit the icing environment immediately.",
+    "explanation": "Ice is already forming, and the weather ahead is getting less forgiving. Continuing toward rising cloud tops risks being trapped above or within a layer while performance deteriorates. The route behind is valuable because it is known and still clear. In icing, the early turnback is usually much safer than waiting to see whether conditions improve.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-471",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "pitot-heat",
+      "instruments",
+      "icing"
+    ],
+    "question": "What is the purpose of pitot heat, if installed?",
+    "choices": [
+      {
+        "text": "To help prevent or remove ice from the pitot tube",
+        "correct": true
+      },
+      {
+        "text": "To de-ice the entire wing",
+        "correct": false
+      },
+      {
+        "text": "To warm the cabin",
+        "correct": false
+      },
+      {
+        "text": "To increase static pressure",
+        "correct": false
+      }
+    ],
+    "answer": "To help prevent or remove ice from the pitot tube.",
+    "explanation": "A blocked pitot tube can make airspeed indications unreliable. Pitot heat warms the pitot tube to reduce the chance of ice blockage, but it does not protect the wings, tail, propeller, windshield, static ports, or engine induction system. Having pitot heat is not approval to fly into icing conditions.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Instruments and Icing; FAA Aviation Weather Handbook, Ch. 19, Icing Effects",
+    "media": []
+  },
+  {
+    "id": "MET-472",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing-effects",
+      "airspeed",
+      "stall"
+    ],
+    "question": "Why should a pilot be cautious about using normal stall speeds after ice has accumulated?",
+    "choices": [
+      {
+        "text": "Ice can increase stall speed and change stall behaviour",
+        "correct": true
+      },
+      {
+        "text": "Ice always lowers stall speed",
+        "correct": false
+      },
+      {
+        "text": "Ice makes the airspeed indicator more accurate",
+        "correct": false
+      },
+      {
+        "text": "Ice removes the need for extra landing distance",
+        "correct": false
+      }
+    ],
+    "answer": "Ice can increase stall speed and change stall behaviour.",
+    "explanation": "Ice changes the airfoil shape and surface roughness, reducing lift and increasing drag. The aircraft may stall at a higher indicated speed than usual, and buffet or control feel may not match familiar training cues. If landing with residual ice, the pilot should avoid slow flight, use the procedure in the pilot operating handbook, and be ready for degraded performance.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Aircraft Icing Effects; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-473",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "icing-escape",
+      "terrain",
+      "decision-making"
+    ],
+    "question": "Why is delaying an icing escape especially dangerous near terrain?",
+    "choices": [
+      {
+        "text": "Ice reduces climb performance while terrain limits descent, turning, and route options",
+        "correct": true
+      },
+      {
+        "text": "Terrain automatically melts ice",
+        "correct": false
+      },
+      {
+        "text": "Ice has no effect below mountain tops",
+        "correct": false
+      },
+      {
+        "text": "Terrain makes airspeed more reliable",
+        "correct": false
+      }
+    ],
+    "answer": "Ice reduces climb performance while terrain limits descent, turning, and route options.",
+    "explanation": "Icing escape often requires a change of altitude or direction. Near terrain, those options may be limited by ridges, cloud bases, valley shape, and minimum safe altitude. Waiting until climb performance is poor can make it impossible to outclimb terrain or return through a pass. This is why icing and mountain weather are a particularly serious combination for PPL operations.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Icing; FAA Aviation Weather Handbook, Ch. 16 Mountain Weather and Ch. 19 Icing",
+    "media": []
+  },
+  {
+    "id": "MET-474",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "icing-escape",
+      "checklist",
+      "vfr"
+    ],
+    "question": "List practical actions a VFR pilot should consider after detecting ice on a non-icing-equipped aircraft.",
+    "answer": "Practical actions include:\n\n- Leave visible moisture immediately\n- Turn back toward known better weather if available\n- Descend to warmer air if terrain, cloud clearance, and regulations allow\n- Climb above the layer only if performance, oxygen, cloud clearance, and forecast tops make that clearly safe\n- Use pitot heat and other anti-ice/de-ice equipment if installed and approved\n- Avoid abrupt manoeuvres and avoid slow flight\n- Inform ATC or FSS, request assistance if needed, and provide a PIREP\n- Divert or land at the nearest suitable airport before the situation worsens",
+    "explanation": "Icing is a time-critical problem. The aircraft is becoming less efficient while the pilot may be losing visibility, performance, and instrument reliability. A good response is not one magic action; it is a disciplined escape plan. The pilot should use every available resource while keeping the aircraft under control and moving out of the icing environment.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19, Icing Avoidance and Escape",
+    "media": []
+  },
+  {
+    "id": "MET-475",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing",
+      "pirep",
+      "reporting"
+    ],
+    "question": "Why should a pilot report icing conditions with a PIREP?",
+    "choices": [
+      {
+        "text": "It gives other pilots and forecasters real information about actual icing location, altitude, type, and intensity",
+        "correct": true
+      },
+      {
+        "text": "It replaces the need to exit icing",
+        "correct": false
+      },
+      {
+        "text": "It is useful only after landing and never in flight",
+        "correct": false
+      },
+      {
+        "text": "It automatically cancels all AIRMETs",
+        "correct": false
+      }
+    ],
+    "answer": "It gives other pilots and forecasters real information about actual icing location, altitude, type, and intensity.",
+    "explanation": "Icing can vary sharply with altitude, temperature, cloud type, and location. A PIREP may be the only current evidence that icing is actually occurring where aircraft are flying. A good icing PIREP includes location, altitude, aircraft type, icing intensity, icing type if known, temperature if available, and whether the aircraft is climbing, descending, or in cloud.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP; FAA Aviation Weather Handbook, Ch. 19, Icing Reports",
+    "media": []
+  },
+  {
+    "id": "MET-476",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "gfa",
+      "icing",
+      "canadian-products"
+    ],
+    "question": "On a Canadian GFA icing/turbulence/freezing level chart, what should a VFR pilot look for?",
+    "choices": [
+      {
+        "text": "Forecast icing areas, intensity, bases/tops, turbulence, and freezing levels along the route",
+        "correct": true
+      },
+      {
+        "text": "Only runway lighting information",
+        "correct": false
+      },
+      {
+        "text": "Only airport restaurant hours",
+        "correct": false
+      },
+      {
+        "text": "Only magnetic variation",
+        "correct": false
+      }
+    ],
+    "answer": "Forecast icing areas, intensity, bases/tops, turbulence, and freezing levels along the route.",
+    "explanation": "The GFA is one of the main Canadian planning tools for area weather. For icing, the pilot should compare the forecast icing layers with planned altitude, cloud bases/tops, terrain, and freezing level. A route may be legal VFR but still poor if it forces the aircraft through visible moisture in a forecast icing layer.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast; Transport Canada Flight Training Manual, Weather Briefing",
+    "media": []
+  },
+  {
+    "id": "MET-477",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "gfa",
+      "icing",
+      "go-no-go"
+    ],
+    "question": "The GFA shows moderate icing from 2,000 to 6,000 ft along your route. Cloud bases are 1,800 ft, terrain rises to 2,500 ft, and your aircraft is not approved for icing. What should you do?",
+    "answer": "Do not depart on that route; delay, cancel, or choose a route and altitude that avoids icing conditions completely.",
+    "explanation": "The terrain and cloud bases leave little room to remain clear of the icing layer. Moderate icing is not a minor inconvenience in a light aircraft; it can quickly reduce climb performance and controllability. Because the aircraft is not approved for icing, the correct decision is made before takeoff. Hoping to stay just below or just between layers is too fragile.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA Icing and Freezing Level; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-478",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-level",
+      "icing",
+      "planning"
+    ],
+    "question": "Why is the freezing level not, by itself, enough to decide icing risk?",
+    "choices": [
+      {
+        "text": "Icing also depends on visible moisture, cloud type, droplet size, precipitation, and aircraft temperature",
+        "correct": true
+      },
+      {
+        "text": "Icing occurs only exactly at the freezing level",
+        "correct": false
+      },
+      {
+        "text": "Freezing level reports are never useful",
+        "correct": false
+      },
+      {
+        "text": "Freezing level applies only to helicopters",
+        "correct": false
+      }
+    ],
+    "answer": "Icing also depends on visible moisture, cloud type, droplet size, precipitation, and aircraft temperature.",
+    "explanation": "The freezing level tells you where the air temperature is near 0 C, but icing needs moisture and suitable droplets. Air below the freezing level may still contain freezing precipitation if warm air overlies cold surface air. Air above the freezing level may be dry and ice-free. A good icing decision combines freezing level with cloud, precipitation, GFA, AIRMET/SIGMET, PIREPs, and route altitude.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Icing Environment; NAV CANADA Aviation Weather Services Guide, GFA Freezing Level",
+    "media": []
+  },
+  {
+    "id": "MET-479",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "warm-front",
+      "freezing-precipitation",
+      "icing"
+    ],
+    "question": "Why can warm fronts be associated with freezing rain or freezing drizzle?",
+    "choices": [
+      {
+        "text": "Warm air aloft can melt snow into liquid drops that then fall into subfreezing air near the surface",
+        "correct": true
+      },
+      {
+        "text": "Warm fronts remove all moisture from the air",
+        "correct": false
+      },
+      {
+        "text": "Warm fronts occur only in summer",
+        "correct": false
+      },
+      {
+        "text": "Warm fronts always produce dry turbulence only",
+        "correct": false
+      }
+    ],
+    "answer": "Warm air aloft can melt snow into liquid drops that then fall into subfreezing air near the surface.",
+    "explanation": "A warm frontal temperature structure can place above-freezing air over a shallow below-freezing layer near the ground. Snow falling from colder air may melt into rain or drizzle aloft, then become supercooled in the cold layer below. When those liquid drops hit an aircraft or surface, they freeze. This is one reason freezing precipitation near fronts is a major aviation hazard.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Freezing Precipitation; Transport Canada Flight Training Manual, Fronts and Icing",
+    "media": []
+  },
+  {
+    "id": "MET-480",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-icing",
+      "structural-icing",
+      "comparison"
+    ],
+    "question": "What is a key difference between carburettor icing and structural icing?",
+    "choices": [
+      {
+        "text": "Carburettor icing can occur without visible moisture; structural icing usually requires visible moisture",
+        "correct": true
+      },
+      {
+        "text": "Structural icing affects only the radio",
+        "correct": false
+      },
+      {
+        "text": "Carburettor icing affects only the wings",
+        "correct": false
+      },
+      {
+        "text": "Carburettor icing can occur only in thunderstorms",
+        "correct": false
+      }
+    ],
+    "answer": "Carburettor icing can occur without visible moisture; structural icing usually requires visible moisture.",
+    "explanation": "Carburettor icing is caused by cooling inside the induction system and moisture in the air. It can happen in clear, humid air. Structural icing is ice on the airframe and normally requires cloud, fog, precipitation, or another form of visible moisture. Pilots must think about both hazards separately because a day can be clear enough for VFR and still favourable for carb ice.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling and Aircraft Icing; FAA Aviation Weather Handbook, Ch. 19",
+    "media": []
+  },
+  {
+    "id": "MET-481",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "carburettor-icing",
+      "clear-air",
+      "scenario"
+    ],
+    "question": "The sky is clear, the temperature is 12 C, and the dew point is 10 C. During cruise in a carburetted aircraft, RPM slowly drops. What weather-related engine hazard should be considered?",
+    "answer": "Carburettor icing should be considered, even though there is no cloud.",
+    "explanation": "The small temperature-dew point spread shows moist air. In a carburettor, cooling can lower the air temperature enough for ice formation even when the outside air is 12 C. A slow RPM loss is a classic clue in a fixed-pitch aircraft. The pilot should apply carburettor heat according to the aircraft procedure and monitor for recovery.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Carburettor Heat; FAA Aviation Weather Handbook, Ch. 19, Induction Icing",
+    "media": []
+  },
+  {
+    "id": "MET-482",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing-intensity",
+      "pilot-reports",
+      "aircraft-type"
+    ],
+    "question": "Why does aircraft type matter when interpreting an icing PIREP?",
+    "choices": [
+      {
+        "text": "The same icing environment may affect different aircraft differently",
+        "correct": true
+      },
+      {
+        "text": "Aircraft type has no relevance",
+        "correct": false
+      },
+      {
+        "text": "Only jet aircraft can report icing",
+        "correct": false
+      },
+      {
+        "text": "A light aircraft cannot accumulate ice",
+        "correct": false
+      }
+    ],
+    "answer": "The same icing environment may affect different aircraft differently.",
+    "explanation": "Icing intensity is partly an aircraft-specific report. A large, fast aircraft with de-icing equipment may experience and describe conditions differently than a small training aircraft. If a transport aircraft reports light icing, that does not guarantee the same conditions are safe for a light piston aircraft. PIREPs are valuable, but they must be interpreted in context.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP Icing Information; FAA Aviation Weather Handbook, Ch. 19, Icing Reports",
+    "media": []
+  },
+  {
+    "id": "MET-483",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "icing-escape",
+      "climb",
+      "performance"
+    ],
+    "question": "Why can climbing out of icing be risky in a light aircraft?",
+    "choices": [
+      {
+        "text": "Ice reduces climb performance, and the cloud tops may be higher than expected",
+        "correct": true
+      },
+      {
+        "text": "Climbing always melts ice",
+        "correct": false
+      },
+      {
+        "text": "Ice improves propeller efficiency",
+        "correct": false
+      },
+      {
+        "text": "Climbing removes the need for oxygen and weather information",
+        "correct": false
+      }
+    ],
+    "answer": "Ice reduces climb performance, and the cloud tops may be higher than expected.",
+    "explanation": "Climbing may be a good escape only if the tops are known, nearby, and within aircraft performance capability. Ice increases drag and weight while reducing lift and propeller efficiency, so climb capability may deteriorate quickly. If the aircraft cannot reach clear air, the pilot may be left higher, slower, and still accumulating ice. Descending, turning around, or diverting may be safer depending on the situation.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19, Icing Avoidance and Escape",
+    "media": []
+  },
+  {
+    "id": "MET-484",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing-escape",
+      "descent",
+      "terrain"
+    ],
+    "question": "Why can descending out of icing be risky if not planned carefully?",
+    "choices": [
+      {
+        "text": "Terrain, minimum altitudes, cloud bases, and freezing precipitation near the surface may block a safe descent",
+        "correct": true
+      },
+      {
+        "text": "Descending always increases structural icing protection",
+        "correct": false
+      },
+      {
+        "text": "Descent guarantees VMC",
+        "correct": false
+      },
+      {
+        "text": "Descent makes ice disappear instantly",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain, minimum altitudes, cloud bases, and freezing precipitation near the surface may block a safe descent.",
+    "explanation": "Warmer air is often lower, but not always safely reachable. Mountains, towers, low ceilings, poor visibility, or freezing rain near the surface can make descent dangerous. The pilot must know what is below before descending. In preflight planning, this is why freezing levels, cloud bases, terrain, and escape routes are considered together.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing and Weather Planning; FAA Aviation Weather Handbook, Ch. 19",
+    "media": []
+  },
+  {
+    "id": "MET-485",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "frost-contamination",
+      "preflight",
+      "learning"
+    ],
+    "question": "Explain why a \"thin\" layer of frost can be more dangerous than it looks.",
+    "answer": "A thin frost layer can be dangerous because the wing does not only need the right general shape; it also needs a reasonably smooth surface. Frost creates small roughness elements that disturb airflow and can make the boundary layer separate earlier.\n\nThis can cause:\n- Reduced lift\n- Increased drag\n- Higher stall speed\n- Longer takeoff roll\n- Worse climb performance\n- Less predictable control response",
+    "explanation": "The visual thickness of frost is misleading. A pilot may see only a light white coating and assume the aircraft will fly normally, but the aerodynamic penalty can be significant. The safest habit is to treat any frost on critical surfaces as unacceptable until removed by an approved method.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing and Pre-flight Inspection; FAA Aviation Weather Handbook, Ch. 19, Frost",
+    "media": []
+  },
+  {
+    "id": "MET-486",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "freezing-fog",
+      "contamination",
+      "preflight"
+    ],
+    "question": "After freezing fog lifts, what aircraft hazard may remain?",
+    "choices": [
+      {
+        "text": "Ice or frost contamination on aircraft surfaces",
+        "correct": true
+      },
+      {
+        "text": "Guaranteed dry wings",
+        "correct": false
+      },
+      {
+        "text": "No need for preflight inspection",
+        "correct": false
+      },
+      {
+        "text": "Automatic engine preheat",
+        "correct": false
+      }
+    ],
+    "answer": "Ice or frost contamination on aircraft surfaces.",
+    "explanation": "Freezing fog consists of supercooled droplets that can freeze on exposed surfaces. Even if visibility improves and the current weather looks acceptable, the aircraft may still be contaminated. A pilot must inspect and clean the aircraft before flight. The weather improving does not automatically remove ice from the wing, tail, propeller, windshield, or sensors.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Freezing Fog and Aircraft Icing; Transport Canada Flight Training Manual, Pre-flight Inspection",
+    "media": []
+  },
+  {
+    "id": "MET-487",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "icing-escape",
+      "atc",
+      "emergency"
+    ],
+    "question": "You are in cloud on a VFR-over-the-top flight, ice is accumulating, and your climb rate has dropped. What should you tell ATC or FSS?",
+    "answer": "Advise that you are accumulating ice, request immediate assistance to exit icing conditions, and declare an emergency if safety requires priority handling.",
+    "explanation": "Icing can become an emergency before the pilot feels ready to use the word. ATC or FSS can help with vectors, altitude coordination, nearby airport information, weather reports, and emergency services. If aircraft performance is deteriorating, declaring an emergency is appropriate. It creates priority and reduces workload at the exact time the pilot needs help.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; NAV CANADA Aviation Weather Services Guide, PIREP and Pilot Weather Reporting",
+    "media": []
+  },
+  {
+    "id": "MET-488",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing",
+      "autopilot",
+      "aircraft-control"
+    ],
+    "question": "Why can autopilot use be a concern in icing conditions?",
+    "choices": [
+      {
+        "text": "It may mask control-force changes until the aircraft is significantly degraded",
+        "correct": true
+      },
+      {
+        "text": "It always removes ice",
+        "correct": false
+      },
+      {
+        "text": "It makes stall speed lower",
+        "correct": false
+      },
+      {
+        "text": "It replaces the need to monitor airspeed",
+        "correct": false
+      }
+    ],
+    "answer": "It may mask control-force changes until the aircraft is significantly degraded.",
+    "explanation": "An autopilot may compensate for trim or control changes as ice accumulates. The pilot may not feel the developing handling problem until the autopilot disconnects or reaches its limits. In icing, pilots should follow the aircraft guidance, monitor performance closely, and avoid being surprised by a sudden workload increase.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Icing Effects and Flight Handling; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-489",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "deicing-equipment",
+      "limitations",
+      "certification"
+    ],
+    "question": "What does installed de-icing or anti-icing equipment mean for a PPL aircraft?",
+    "choices": [
+      {
+        "text": "The pilot must still know whether the aircraft is approved for flight in icing and follow limitations",
+        "correct": true
+      },
+      {
+        "text": "The aircraft can safely fly through any icing condition",
+        "correct": false
+      },
+      {
+        "text": "Icing forecasts can be ignored",
+        "correct": false
+      },
+      {
+        "text": "Carburettor heat is no longer needed",
+        "correct": false
+      }
+    ],
+    "answer": "The pilot must still know whether the aircraft is approved for flight in icing and follow limitations.",
+    "explanation": "Equipment alone does not automatically make an aircraft approved for flight in known icing, and even approved systems have limits. Many light aircraft have pitot heat or windshield defrost but no structural ice protection. The pilot operating handbook, placards, and aircraft certification determine what is allowed. For PPL decision-making, avoidance remains the core strategy.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing; FAA Aviation Weather Handbook, Ch. 19, Ice Protection and Limitations",
+    "media": []
+  },
+  {
+    "id": "MET-490",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-rain",
+      "taf",
+      "go-no-go"
+    ],
+    "question": "The TAF for your route includes `FZRA` during your planned arrival window. Current departure weather is VFR. What should you do?",
+    "answer": "Plan to avoid that arrival window or cancel/reroute; do not plan a VFR arrival into forecast freezing rain.",
+    "explanation": "Freezing rain is one of the most serious icing hazards. The fact that departure weather is good does not remove the arrival risk. A VFR pilot in a light aircraft should avoid being airborne with freezing rain forecast at the destination or along the route. Waiting for the hazard to pass and confirming actual improvement is the safer decision.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Weather Codes; FAA Aviation Weather Handbook, Ch. 19, Freezing Rain",
+    "media": []
+  },
+  {
+    "id": "MET-491",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing",
+      "approach",
+      "landing"
+    ],
+    "question": "If a pilot must land with residual ice after escaping icing conditions, what general handling concern applies?",
+    "choices": [
+      {
+        "text": "Expect degraded performance and avoid slow, abrupt, or marginal manoeuvres",
+        "correct": true
+      },
+      {
+        "text": "Fly slower than normal because ice lowers stall speed",
+        "correct": false
+      },
+      {
+        "text": "Ignore landing distance because ice reduces drag",
+        "correct": false
+      },
+      {
+        "text": "Retract all flaps in every aircraft regardless of the POH",
+        "correct": false
+      }
+    ],
+    "answer": "Expect degraded performance and avoid slow, abrupt, or marginal manoeuvres.",
+    "explanation": "Ice can increase stall speed, reduce lift, increase drag, and alter control feel. Landing should be flown using the pilot operating handbook guidance for the aircraft and the conditions. The pilot should plan for higher workload, possible abnormal indications, and a need for extra runway. Blanket rules about flap use are unsafe because aircraft designs differ.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19, Icing Effects",
+    "media": []
+  },
+  {
+    "id": "MET-492",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "carburettor-heat",
+      "run-up",
+      "pre-takeoff"
+    ],
+    "question": "Why is carburettor heat checked during run-up in many carburetted aircraft?",
+    "choices": [
+      {
+        "text": "To confirm the system works before flight",
+        "correct": true
+      },
+      {
+        "text": "To remove all frost from the wings",
+        "correct": false
+      },
+      {
+        "text": "To test the transponder",
+        "correct": false
+      },
+      {
+        "text": "To increase brake effectiveness",
+        "correct": false
+      }
+    ],
+    "answer": "To confirm the system works before flight.",
+    "explanation": "A carburettor heat check verifies that the control, air valve, and heat source are functioning. The normal indication is often an RPM drop when heat is applied, followed by recovery when cold air is restored, depending on the aircraft. If the system does not work on the ground, the pilot should not launch into conditions where carb ice could require it.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling - Run-up Checks; FAA Airplane Flying Handbook, Before Takeoff Check",
+    "media": []
+  },
+  {
+    "id": "MET-493",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "mixed-hazards",
+      "carburettor-icing",
+      "structural-icing"
+    ],
+    "question": "You are flying below a low cloud deck in cold rain. The engine begins to lose RPM and ice is visible on the wing strut. What hazards are present?",
+    "answer": "Both carburettor icing or induction problems and structural icing are possible; apply the appropriate engine procedure and exit the icing environment immediately.",
+    "explanation": "The RPM loss suggests carburettor icing in a carburetted aircraft, while visible ice on the strut confirms airframe icing. The pilot should not fixate on only one problem. Carburettor heat may be needed for the engine, while the aircraft must also leave visible moisture and freezing conditions. This is a high-risk situation because engine power and aircraft performance may both be degrading.",
+    "reference": "Transport Canada Flight Training Manual, Engine Handling and Emergency Procedures - Icing; FAA Aviation Weather Handbook, Ch. 19",
+    "media": []
+  },
+  {
+    "id": "MET-494",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-drizzle",
+      "interpretation",
+      "weather-products"
+    ],
+    "question": "What weather products or clues should make a PPL especially alert for freezing drizzle or freezing rain?",
+    "answer": "Warning clues include:\n\n- METAR or TAF codes such as `FZDZ` or `FZRA`\n- AIRMET or SIGMET mentioning icing or freezing precipitation\n- GFA areas showing icing, freezing levels, low cloud, or precipitation\n- Surface temperatures near or below 0 C with drizzle or rain\n- Warm frontal weather or warm air aloft over colder surface air\n- PIREPs of icing, especially clear ice or rapid accumulation\n- Freezing fog, low stratus, and poor visibility near freezing temperatures",
+    "explanation": "Freezing precipitation is a planning hazard, not a curiosity to investigate in flight. A pilot should combine coded reports, area forecasts, frontal analysis, temperatures, and PIREPs. When several clues point in the same direction, the safest decision is to avoid the area or wait until conditions have clearly improved.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/TAF/GFA/AIRMET/SIGMET/PIREP; FAA Aviation Weather Handbook, Ch. 19, Freezing Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-495",
+    "topic": "Meteorology - Icing Gaps",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "icing-escape",
+      "ppl"
+    ],
+    "question": "You planned a local VFR flight in a non-icing-equipped aircraft. The temperature is 1 C, the dew point is 0 C, low stratus is moving in, and a nearby PIREP reports light rime icing at 2,500 ft. Your route requires 2,300 ft for terrain clearance. What is the best decision?",
+    "answer": "Do not depart until conditions improve, or choose a plan that avoids visible moisture and the reported icing layer with safe terrain clearance.",
+    "explanation": "This is exactly the kind of marginal setup that can trap a VFR pilot. The temperature-dew point spread is small, low cloud is moving in, and a nearby aircraft has already found icing close to the altitude you need. There is little vertical room between terrain clearance and the icing report. A non-icing-equipped aircraft should not be launched into a plan that depends on threading such a narrow weather gap.",
+    "reference": "Transport Canada Flight Training Manual, Aircraft Icing and Weather Decision-Making; NAV CANADA Aviation Weather Services Guide, PIREP and GFA; FAA Aviation Weather Handbook, Ch. 19",
+    "media": []
+  }
+]

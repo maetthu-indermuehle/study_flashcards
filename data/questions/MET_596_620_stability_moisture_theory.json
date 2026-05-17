@@ -1,0 +1,780 @@
+[
+  {
+    "id": "MET-596",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "stability",
+      "definition",
+      "lapse-rate"
+    ],
+    "question": "What does atmospheric stability describe?",
+    "choices": [
+      {
+        "text": "Whether lifted air tends to keep rising or return toward its original level",
+        "correct": true
+      },
+      {
+        "text": "The strength of the aircraft structure",
+        "correct": false
+      },
+      {
+        "text": "The accuracy of the compass",
+        "correct": false
+      },
+      {
+        "text": "The runway surface condition",
+        "correct": false
+      }
+    ],
+    "answer": "Whether lifted air tends to keep rising or return toward its original level.",
+    "explanation": "Stability describes the atmosphere's resistance to vertical motion. In stable air, a lifted parcel tends to sink back. In unstable air, a lifted parcel tends to keep rising. This idea explains many aviation weather differences: layered cloud versus cumulus, smooth air versus turbulence, and steady precipitation versus showers.",
+    "reference": "FAA Aviation Weather Handbook, Atmospheric Stability; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-597",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "stable-air",
+      "stratiform",
+      "smooth-air"
+    ],
+    "question": "Stable air is commonly associated with:",
+    "choices": [
+      {
+        "text": "Layered clouds, smooth air, haze, fog, or steady precipitation",
+        "correct": true
+      },
+      {
+        "text": "Towering cumulus and severe convection only",
+        "correct": false
+      },
+      {
+        "text": "No clouds ever",
+        "correct": false
+      },
+      {
+        "text": "Better visibility in haze",
+        "correct": false
+      }
+    ],
+    "answer": "Layered clouds, smooth air, haze, fog, or steady precipitation.",
+    "explanation": "Stable air resists vertical mixing. Moist stable air often forms stratus-type clouds, fog, drizzle, or widespread precipitation. Because mixing is weak, haze and pollutants can remain trapped near the surface. Smooth air may sound pleasant, but stable conditions can still be poor for VFR if ceilings or visibility are low.",
+    "reference": "FAA Aviation Weather Handbook, Stable Air Characteristics; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-598",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "unstable-air",
+      "cumuliform",
+      "turbulence"
+    ],
+    "question": "Unstable air is commonly associated with:",
+    "choices": [
+      {
+        "text": "Cumuliform clouds, turbulence, showers, and good visibility outside precipitation",
+        "correct": true
+      },
+      {
+        "text": "Only fog and no vertical motion",
+        "correct": false
+      },
+      {
+        "text": "Smooth layered cloud only",
+        "correct": false
+      },
+      {
+        "text": "No wind at any altitude",
+        "correct": false
+      }
+    ],
+    "answer": "Cumuliform clouds, turbulence, showers, and good visibility outside precipitation.",
+    "explanation": "Unstable air encourages vertical motion. Rising currents form cumulus clouds and can produce showers or thunderstorms if enough moisture and lift exist. The mixing can improve visibility between showers, but it also creates turbulence and rapidly changing local weather.",
+    "reference": "FAA Aviation Weather Handbook, Unstable Air Characteristics; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-599",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "lapse-rate",
+      "stability",
+      "temperature"
+    ],
+    "question": "Why does the environmental lapse rate matter?",
+    "choices": [
+      {
+        "text": "It helps determine whether lifted air will be warmer or colder than its surroundings",
+        "correct": true
+      },
+      {
+        "text": "It gives runway heading",
+        "correct": false
+      },
+      {
+        "text": "It measures radio range",
+        "correct": false
+      },
+      {
+        "text": "It replaces weather reports",
+        "correct": false
+      }
+    ],
+    "answer": "It helps determine whether lifted air will be warmer or colder than its surroundings.",
+    "explanation": "The environmental lapse rate is how temperature changes with height in the surrounding atmosphere. If a lifted air parcel remains warmer than the surrounding air, it is buoyant and tends to rise. If it becomes colder than the surrounding air, it tends to sink. This comparison is the core of stability.",
+    "reference": "FAA Aviation Weather Handbook, Lapse Rates and Stability; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-600",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "moisture",
+      "saturation",
+      "relative-humidity"
+    ],
+    "question": "What does saturation mean?",
+    "choices": [
+      {
+        "text": "Air contains as much water vapour as it can hold at that temperature",
+        "correct": true
+      },
+      {
+        "text": "Air contains no water vapour",
+        "correct": false
+      },
+      {
+        "text": "Air pressure is zero",
+        "correct": false
+      },
+      {
+        "text": "Wind speed is calm",
+        "correct": false
+      }
+    ],
+    "answer": "Air contains as much water vapour as it can hold at that temperature.",
+    "explanation": "Saturation occurs when air is holding the maximum water vapour possible for its temperature. If saturated air cools further, water vapour may condense into cloud, fog, dew, or precipitation particles. Warmer air can hold more water vapour than colder air, so cooling is a common path to saturation.",
+    "reference": "FAA Aviation Weather Handbook, Moisture and Saturation; Transport Canada Flight Training Manual, Humidity",
+    "media": []
+  },
+  {
+    "id": "MET-601",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "dew-point",
+      "fog",
+      "cloud-base"
+    ],
+    "question": "What does a small temperature-dew point spread indicate?",
+    "choices": [
+      {
+        "text": "Air is close to saturation, so cloud or fog may form with slight cooling",
+        "correct": true
+      },
+      {
+        "text": "Air is extremely dry",
+        "correct": false
+      },
+      {
+        "text": "Thunderstorms are impossible",
+        "correct": false
+      },
+      {
+        "text": "Wind must be calm",
+        "correct": false
+      }
+    ],
+    "answer": "Air is close to saturation, so cloud or fog may form with slight cooling.",
+    "explanation": "The dew point is the temperature to which air must cool to become saturated, assuming pressure and moisture content stay roughly constant. If temperature and dew point are close, only a small amount of cooling is needed for condensation. This is useful for anticipating fog, low cloud, and visibility changes.",
+    "reference": "FAA Aviation Weather Handbook, Dew Point and Relative Humidity; Transport Canada Flight Training Manual, Fog and Cloud Formation",
+    "media": []
+  },
+  {
+    "id": "MET-602",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "latent-heat",
+      "condensation",
+      "cloud-formation"
+    ],
+    "question": "What is latent heat?",
+    "choices": [
+      {
+        "text": "Heat absorbed or released during a phase change without a temperature change",
+        "correct": true
+      },
+      {
+        "text": "Heat from runway lights",
+        "correct": false
+      },
+      {
+        "text": "Heat measured only by altimeters",
+        "correct": false
+      },
+      {
+        "text": "Heat produced only by aircraft engines",
+        "correct": false
+      }
+    ],
+    "answer": "Heat absorbed or released during a phase change without a temperature change.",
+    "explanation": "Water can change phase between vapour, liquid, and ice. During these changes, energy is absorbed or released even though the temperature of the substance may not change at that instant. Latent heat is important in weather because condensation releases heat into rising air, which can help clouds grow vertically.",
+    "reference": "FAA Aviation Weather Handbook, Water Phase Changes and Latent Heat; Transport Canada Flight Training Manual, Weather Theory",
+    "media": []
+  },
+  {
+    "id": "MET-603",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "condensation",
+      "latent-heat",
+      "instability"
+    ],
+    "question": "When water vapour condenses into liquid cloud droplets, latent heat is:",
+    "choices": [
+      {
+        "text": "Released to the surrounding air",
+        "correct": true
+      },
+      {
+        "text": "Destroyed",
+        "correct": false
+      },
+      {
+        "text": "Absorbed from the air only",
+        "correct": false
+      },
+      {
+        "text": "Converted into magnetic variation",
+        "correct": false
+      }
+    ],
+    "answer": "Released to the surrounding air.",
+    "explanation": "Condensation releases latent heat. In a rising cloud, that released heat slows the rate at which the rising saturated air cools. This can make the parcel warmer than it otherwise would be, supporting further rising motion and cloud growth. This is one reason moist convection can become powerful.",
+    "reference": "FAA Aviation Weather Handbook, Latent Heat and Condensation; Transport Canada Flight Training Manual, Stability and Clouds",
+    "media": []
+  },
+  {
+    "id": "MET-604",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "evaporation",
+      "cooling",
+      "virga"
+    ],
+    "question": "When liquid water evaporates into water vapour, latent heat is:",
+    "choices": [
+      {
+        "text": "Absorbed from the surrounding air, cooling it",
+        "correct": true
+      },
+      {
+        "text": "Released and warming the air",
+        "correct": false
+      },
+      {
+        "text": "Removed from all weather processes",
+        "correct": false
+      },
+      {
+        "text": "Converted into pressure altitude",
+        "correct": false
+      }
+    ],
+    "answer": "Absorbed from the surrounding air, cooling it.",
+    "explanation": "Evaporation requires energy. That energy is taken from the surrounding air, so evaporation cools the air. This is important in virga and precipitation shafts because evaporative cooling can make air denser and drive downdrafts, gusty outflow, turbulence, or wind shear.",
+    "reference": "FAA Aviation Weather Handbook, Evaporation, Virga, and Downdrafts; Transport Canada Flight Training Manual, Wind Shear",
+    "media": []
+  },
+  {
+    "id": "MET-605",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing",
+      "phase-change",
+      "latent-heat"
+    ],
+    "question": "When liquid water freezes into ice, latent heat is:",
+    "choices": [
+      {
+        "text": "Released",
+        "correct": true
+      },
+      {
+        "text": "Absorbed only",
+        "correct": false
+      },
+      {
+        "text": "Eliminated from the atmosphere",
+        "correct": false
+      },
+      {
+        "text": "Used to set cloud base",
+        "correct": false
+      }
+    ],
+    "answer": "Released.",
+    "explanation": "Freezing releases latent heat, while melting absorbs latent heat. These energy exchanges influence cloud microphysics and storm development. In thunderstorms, repeated freezing, melting, and condensation processes help redistribute heat and support strong vertical circulations.",
+    "reference": "FAA Aviation Weather Handbook, Phase Changes of Water; Transport Canada Flight Training Manual, Weather Theory",
+    "media": []
+  },
+  {
+    "id": "MET-606",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "conditional-instability",
+      "saturated",
+      "unsaturated"
+    ],
+    "question": "What is conditional instability?",
+    "choices": [
+      {
+        "text": "Air is stable while unsaturated but unstable after it becomes saturated",
+        "correct": true
+      },
+      {
+        "text": "Air is always stable at all heights",
+        "correct": false
+      },
+      {
+        "text": "Air is always unstable regardless of moisture",
+        "correct": false
+      },
+      {
+        "text": "Air cannot form cloud",
+        "correct": false
+      }
+    ],
+    "answer": "Air is stable while unsaturated but unstable after it becomes saturated.",
+    "explanation": "Conditional instability depends on whether rising air becomes saturated. Before saturation, the parcel cools relatively quickly. After condensation begins, latent heat release slows the cooling rate. That can make the saturated parcel warmer than its surroundings, allowing it to keep rising and build cumuliform cloud.",
+    "reference": "FAA Aviation Weather Handbook, Conditional Instability; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-607",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "lifting",
+      "cloud-formation",
+      "triggers"
+    ],
+    "question": "Which process can lift air and help start cloud formation?",
+    "choices": [
+      {
+        "text": "Frontal lifting, orographic lifting, convergence, or surface heating",
+        "correct": true
+      },
+      {
+        "text": "Turning on runway lights",
+        "correct": false
+      },
+      {
+        "text": "Lowering the altimeter setting",
+        "correct": false
+      },
+      {
+        "text": "Reducing fuel quantity",
+        "correct": false
+      }
+    ],
+    "answer": "Frontal lifting, orographic lifting, convergence, or surface heating.",
+    "explanation": "Air must often be lifted and cooled to reach saturation. Fronts lift air along boundaries, mountains force air upward, surface heating creates thermals, and converging winds push air upward. If moisture and instability are sufficient, these lifting mechanisms can produce cloud, precipitation, turbulence, or thunderstorms.",
+    "reference": "FAA Aviation Weather Handbook, Lifting Processes; Transport Canada Flight Training Manual, Cloud Formation",
+    "media": []
+  },
+  {
+    "id": "MET-608",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "orographic-lift",
+      "clouds",
+      "terrain"
+    ],
+    "question": "What is orographic lifting?",
+    "choices": [
+      {
+        "text": "Air being forced upward by terrain",
+        "correct": true
+      },
+      {
+        "text": "Air being cooled by runway paint",
+        "correct": false
+      },
+      {
+        "text": "Wind being stopped by an altimeter",
+        "correct": false
+      },
+      {
+        "text": "Cloud sinking underground",
+        "correct": false
+      }
+    ],
+    "answer": "Air being forced upward by terrain.",
+    "explanation": "When wind blows against hills or mountains, the terrain can force air upward. Rising air expands and cools, which can lead to cloud, precipitation, mountain obscuration, icing, or turbulence. Orographic effects are why weather can be much worse near ridges than at a nearby valley reporting station.",
+    "reference": "FAA Aviation Weather Handbook, Orographic Lift; Transport Canada Flight Training Manual, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-609",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-formation",
+      "collision-coalescence",
+      "warm-cloud"
+    ],
+    "question": "What is collision-coalescence?",
+    "choices": [
+      {
+        "text": "Cloud droplets collide and merge into larger drops that may fall as rain",
+        "correct": true
+      },
+      {
+        "text": "Ice pellets melting into fog",
+        "correct": false
+      },
+      {
+        "text": "Wind changing direction clockwise",
+        "correct": false
+      },
+      {
+        "text": "Wake vortices joining a runway",
+        "correct": false
+      }
+    ],
+    "answer": "Cloud droplets collide and merge into larger drops that may fall as rain.",
+    "explanation": "In warm clouds, tiny droplets can collide and join into larger drops. Once drops are large and heavy enough, they fall as precipitation. This process is important in clouds where temperatures are above freezing and ice crystal processes are not dominant.",
+    "reference": "FAA Aviation Weather Handbook, Precipitation Formation; Transport Canada Flight Training Manual, Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-610",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation-formation",
+      "ice-crystal-process",
+      "cold-cloud"
+    ],
+    "question": "In cold clouds, precipitation often grows through:",
+    "choices": [
+      {
+        "text": "Ice crystal growth and aggregation",
+        "correct": true
+      },
+      {
+        "text": "Magnetic variation",
+        "correct": false
+      },
+      {
+        "text": "Runway braking action",
+        "correct": false
+      },
+      {
+        "text": "Fuel vaporization only",
+        "correct": false
+      }
+    ],
+    "answer": "Ice crystal growth and aggregation.",
+    "explanation": "In cold clouds, ice crystals can grow at the expense of supercooled droplets and then join with other crystals or collect droplets. Depending on the temperature profile below the cloud, the precipitation may reach the ground as snow, rain, ice pellets, or freezing rain. This link between cloud processes and temperature layers is crucial for icing awareness.",
+    "reference": "FAA Aviation Weather Handbook, Cold Cloud Precipitation Processes; Transport Canada Flight Training Manual, Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-611",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "supercooled-water",
+      "icing",
+      "cloud-physics"
+    ],
+    "question": "What is supercooled liquid water?",
+    "choices": [
+      {
+        "text": "Liquid water that remains unfrozen below 0 C",
+        "correct": true
+      },
+      {
+        "text": "Ice that cannot melt",
+        "correct": false
+      },
+      {
+        "text": "Water vapour above boiling point",
+        "correct": false
+      },
+      {
+        "text": "Dry snow on a runway",
+        "correct": false
+      }
+    ],
+    "answer": "Liquid water that remains unfrozen below 0 C.",
+    "explanation": "Supercooled droplets are liquid even though their temperature is below freezing. When they strike an aircraft surface, they can freeze and form structural ice. This is one reason cloud at below-freezing temperatures is a serious concern for non-icing-equipped aircraft.",
+    "reference": "FAA Aviation Weather Handbook, Supercooled Liquid Water; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-612",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "condensation-nuclei",
+      "cloud-droplets",
+      "moisture"
+    ],
+    "question": "Why are condensation nuclei important?",
+    "choices": [
+      {
+        "text": "They provide tiny particles on which water vapour can condense",
+        "correct": true
+      },
+      {
+        "text": "They steer aircraft compasses",
+        "correct": false
+      },
+      {
+        "text": "They remove all cloud",
+        "correct": false
+      },
+      {
+        "text": "They are runway markings",
+        "correct": false
+      }
+    ],
+    "answer": "They provide tiny particles on which water vapour can condense.",
+    "explanation": "Water vapour needs surfaces or particles to condense onto in the atmosphere. Dust, salt, smoke, and other aerosols can act as condensation nuclei. Without them, cloud droplet formation would be much more difficult. This helps explain why moisture, cooling, and particles all matter in cloud and fog formation.",
+    "reference": "FAA Aviation Weather Handbook, Condensation Nuclei and Cloud Formation; Transport Canada Flight Training Manual, Clouds",
+    "media": []
+  },
+  {
+    "id": "MET-613",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "inversion",
+      "stability",
+      "low-cloud"
+    ],
+    "question": "What is a temperature inversion?",
+    "choices": [
+      {
+        "text": "A layer where temperature increases with height",
+        "correct": true
+      },
+      {
+        "text": "A layer where pressure is zero",
+        "correct": false
+      },
+      {
+        "text": "A cloud made only of hail",
+        "correct": false
+      },
+      {
+        "text": "A wind reported as calm",
+        "correct": false
+      }
+    ],
+    "answer": "A layer where temperature increases with height.",
+    "explanation": "Normally temperature often decreases with height in the lower atmosphere. In an inversion, warmer air sits above colder air, creating a stable layer that resists vertical mixing. Inversions can trap fog, haze, smoke, low cloud, and pollutants near the surface, creating poor visibility even when winds are light.",
+    "reference": "FAA Aviation Weather Handbook, Temperature Inversions; Transport Canada Flight Training Manual, Stability and Fog",
+    "media": []
+  },
+  {
+    "id": "MET-614",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "inversion",
+      "visibility",
+      "scenario"
+    ],
+    "question": "A cold clear night is followed by calm morning winds, smoke trapped near the ground, and poor visibility. What stability feature is likely present?",
+    "answer": "A surface-based temperature inversion.",
+    "explanation": "Clear nights allow the ground to radiate heat away, cooling the air near the surface. If air above is warmer, an inversion forms and limits vertical mixing. Smoke, haze, moisture, and pollutants can remain trapped near the ground. For VFR pilots, this can mean poor visibility despite otherwise quiet weather.",
+    "reference": "FAA Aviation Weather Handbook, Radiation Inversions; Transport Canada Flight Training Manual, Fog and Visibility",
+    "media": []
+  },
+  {
+    "id": "MET-615",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "moisture",
+      "cloud-base",
+      "dew-point-spread"
+    ],
+    "question": "As surface temperature and dew point move closer together, what generally happens to the likely cloud base if air is lifted?",
+    "choices": [
+      {
+        "text": "It lowers",
+        "correct": true
+      },
+      {
+        "text": "It rises infinitely",
+        "correct": false
+      },
+      {
+        "text": "It disappears automatically",
+        "correct": false
+      },
+      {
+        "text": "It becomes unrelated to moisture",
+        "correct": false
+      }
+    ],
+    "answer": "It lowers.",
+    "explanation": "A smaller temperature-dew point spread means the air needs less cooling to reach saturation. Since rising air cools, it reaches saturation sooner and at a lower height. This is why small spreads are a warning for low cloud or fog, especially overnight or near moist ground.",
+    "reference": "FAA Aviation Weather Handbook, Dew Point and Cloud Base; Transport Canada Flight Training Manual, Cloud Formation",
+    "media": []
+  },
+  {
+    "id": "MET-616",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": [
+      "convective-instability",
+      "latent-heat",
+      "thunderstorms"
+    ],
+    "question": "Why does latent heat release matter in thunderstorm development?",
+    "choices": [
+      {
+        "text": "It adds heat to rising saturated air, helping maintain buoyancy and stronger updrafts",
+        "correct": true
+      },
+      {
+        "text": "It removes all vertical motion",
+        "correct": false
+      },
+      {
+        "text": "It prevents condensation",
+        "correct": false
+      },
+      {
+        "text": "It makes air pressure zero",
+        "correct": false
+      }
+    ],
+    "answer": "It adds heat to rising saturated air, helping maintain buoyancy and stronger updrafts.",
+    "explanation": "As moist air rises and condenses, latent heat is released into the cloud. This slows the cooling of the rising air and can keep it warmer than the surrounding environment. Warmer air is buoyant, so the updraft can strengthen. This process is one reason thunderstorms can grow explosively when moisture, instability, and lift are all present.",
+    "reference": "FAA Aviation Weather Handbook, Thunderstorm Ingredients and Latent Heat; Transport Canada Flight Training Manual, Thunderstorms",
+    "media": []
+  },
+  {
+    "id": "MET-617",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation",
+      "virga",
+      "dry-layer"
+    ],
+    "question": "What does virga suggest about the air below cloud base?",
+    "choices": [
+      {
+        "text": "It is dry enough for precipitation to evaporate before reaching the ground",
+        "correct": true
+      },
+      {
+        "text": "It is fully saturated to the surface",
+        "correct": false
+      },
+      {
+        "text": "It contains no vertical motion risk",
+        "correct": false
+      },
+      {
+        "text": "It is always above freezing",
+        "correct": false
+      }
+    ],
+    "answer": "It is dry enough for precipitation to evaporate before reaching the ground.",
+    "explanation": "Virga forms when precipitation falls into drier air and evaporates. That evaporation cools the air and can create downdrafts. For pilots, virga is a sign that the cloud may be producing precipitation aloft even though the ground is dry, and that localized sink or gusty outflow may exist below.",
+    "reference": "FAA Aviation Weather Handbook, Virga and Evaporative Cooling; Transport Canada Flight Training Manual, Weather Hazards",
+    "media": []
+  },
+  {
+    "id": "MET-618",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "phase-changes",
+      "latent-heat",
+      "learning"
+    ],
+    "question": "List the main water phase changes and whether they absorb or release latent heat.",
+    "answer": "Condensation releases latent heat. Evaporation absorbs latent heat. Freezing releases latent heat. Melting absorbs latent heat. Deposition, where vapour becomes ice, releases latent heat. Sublimation, where ice becomes vapour, absorbs latent heat.",
+    "explanation": "These energy exchanges help drive weather. Released heat can support rising motion in clouds, while absorbed heat can cool air and contribute to downdrafts. Understanding phase changes makes icing, precipitation, fog, virga, and thunderstorm development much easier to connect.",
+    "reference": "FAA Aviation Weather Handbook, Phase Changes of Water; Transport Canada Flight Training Manual, Weather Theory",
+    "media": []
+  },
+  {
+    "id": "MET-619",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "stability",
+      "cloud-types",
+      "learning"
+    ],
+    "question": "Explain why stable air tends to produce layered cloud while unstable air tends to produce cumuliform cloud.",
+    "answer": "Stable air resists vertical displacement, so rising motion tends to spread out horizontally and form layers. This produces stratus-type clouds, widespread cloud decks, drizzle, or steady precipitation. Unstable air encourages rising parcels to keep rising, so cloud grows vertically into cumulus, towering cumulus, or cumulonimbus if moisture and lift are sufficient.",
+    "explanation": "Cloud shape is a visible clue to the atmosphere's stability. Layered cloud often points to smoother but lower-ceiling weather, while vertically developed cloud points to turbulence, showers, and possible thunderstorms. A pilot can use this clue together with reports and forecasts to anticipate flight conditions.",
+    "reference": "FAA Aviation Weather Handbook, Stability and Cloud Types; Transport Canada Flight Training Manual, Clouds and Stability",
+    "media": []
+  },
+  {
+    "id": "MET-620",
+    "topic": "Meteorology - Stability and Moisture Theory",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-theory",
+      "instability",
+      "go-no-go"
+    ],
+    "question": "The morning starts with humid air and a small temperature-dew point spread. By afternoon, strong surface heating is forecast with towering cumulus possible. What weather trend should a VFR pilot anticipate?",
+    "answer": "Expect increasing instability, rising cumulus development, possible showers or thunderstorms, turbulence, and changing visibility or wind near precipitation.",
+    "explanation": "Moist air provides fuel for cloud formation, and surface heating can make the lower atmosphere unstable. If lifting is present, rising air may reach saturation and continue growing vertically, helped by latent heat release. The day may begin quietly but become much more active by afternoon. A good VFR plan would consider earlier timing, escape routes, updated radar/satellite, and thunderstorm avoidance.",
+    "reference": "FAA Aviation Weather Handbook, Stability, Moisture, and Thunderstorm Development; Transport Canada Flight Training Manual, Weather Decision-Making",
+    "media": []
+  }
+]

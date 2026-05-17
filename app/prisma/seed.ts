@@ -1,21 +1,28 @@
-// Seed script: creates the default user and the Canadian PPL deck.
+// Seed script: creates the default user, the Canadian PPL deck, and imports
+// all question cards from $QUESTIONS_DIR (default: /data/questions).
+//
 // Run via: npx prisma db seed
 //
 // Credentials come from environment variables so nothing sensitive lives in
 // source code. In local development these are set in docker-compose.yml.
 // The script is idempotent — safe to re-run against an existing database.
+// Cards are upserted by sourceId so re-seeding refreshes content without
+// creating duplicates.
 
+// dotenv/config must be first so DATABASE_URL is set before the Prisma
+// client singleton (imported transitively via importCards) creates its pool.
 import "dotenv/config";
+
 import { randomBytes, scrypt } from "crypto";
 import { promisify } from "util";
-import { Pool } from "pg";
-import { PrismaPg } from "@prisma/adapter-pg";
-import { PrismaClient } from "../src/generated/prisma/client";
+import { readdirSync, readFileSync } from "fs";
+import { join } from "path";
+import { prisma } from "../src/lib/db/client";
+import { parseJsonCards } from "../src/lib/importer/json-parser";
+import { validate } from "../src/lib/importer/validator";
+import { importCards } from "../src/lib/importer/import-service";
 
 const scryptAsync = promisify(scrypt);
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-const adapter = new PrismaPg(pool);
-const prisma = new PrismaClient({ adapter });
 
 // Hashes a password using Node's built-in scrypt. The format is
 // "<hash>.<salt>" so the verifier can reconstruct both parts.
@@ -27,12 +34,16 @@ async function hashPassword(password: string): Promise<string> {
 }
 
 async function main() {
+  // -------------------------------------------------------------------------
+  // User
+  // -------------------------------------------------------------------------
+
   const email = process.env.SEED_USER_EMAIL;
   const password = process.env.SEED_USER_PASSWORD;
 
   if (!email || !password) {
     throw new Error(
-      "SEED_USER_EMAIL and SEED_USER_PASSWORD must be set before running the seed."
+      "SEED_USER_EMAIL and SEED_USER_PASSWORD must be set before running the seed.",
     );
   }
 
@@ -51,6 +62,10 @@ async function main() {
   });
 
   console.log(`Seeded user: ${user.email} (id: ${user.id})`);
+
+  // -------------------------------------------------------------------------
+  // Deck
+  // -------------------------------------------------------------------------
 
   // Upsert the Canadian PPL deck. There is no unique constraint on Deck.name,
   // so we look up by owner + name using findFirst and create if absent.
@@ -71,6 +86,72 @@ async function main() {
       });
 
   console.log(`Seeded deck: "${deck.name}" (id: ${deck.id})`);
+
+  // -------------------------------------------------------------------------
+  // Cards — auto-import all JSON files from $QUESTIONS_DIR
+  //
+  // This is what makes the question data portable: any deployment runs the
+  // seed on startup and gets all committed JSON files imported automatically.
+  // The import is idempotent so re-seeding only updates changed cards.
+  //
+  // The directory is skipped silently when it does not exist (e.g. in CI
+  // where the /data volume is not mounted) so the seed never hard-fails on
+  // a missing questions directory.
+  // -------------------------------------------------------------------------
+
+  const questionsDir = process.env.QUESTIONS_DIR ?? "/data/questions";
+
+  let jsonFiles: string[] = [];
+  try {
+    jsonFiles = readdirSync(questionsDir)
+      .filter((f) => f.endsWith(".json"))
+      .sort();
+  } catch {
+    console.log(
+      `No questions directory at ${questionsDir} — skipping card import.`,
+    );
+  }
+
+  if (jsonFiles.length > 0) {
+    console.log(`\nImporting cards from ${questionsDir}...`);
+
+    for (const file of jsonFiles) {
+      const filePath = join(questionsDir, file);
+
+      let cards;
+      try {
+        const jsonString = readFileSync(filePath, "utf-8");
+        cards = parseJsonCards(jsonString);
+      } catch (err) {
+        console.error(
+          `  SKIP  ${file}: parse error — ${err instanceof Error ? err.message : String(err)}`,
+        );
+        continue;
+      }
+
+      const errors = validate(cards).filter((e) => e.severity === "error");
+      if (errors.length > 0) {
+        console.warn(
+          `  SKIP  ${file}: ${errors.length} validation error(s) — run the CLI with --verbose for details`,
+        );
+        continue;
+      }
+
+      try {
+        const result = await importCards(cards, {
+          deckName: deck.name,
+          userId: user.id,
+        });
+        console.log(
+          `  OK    ${file}: ${result.created} created, ${result.updated} updated`,
+        );
+      } catch (err) {
+        console.error(
+          `  ERROR ${file}: ${err instanceof Error ? err.message : String(err)}`,
+        );
+      }
+    }
+  }
 }
 
 main()

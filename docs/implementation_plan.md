@@ -72,39 +72,34 @@ Deliverable:
 
 - Database schema exists, migrations run, and a seed user/deck are available.
 
-## Phase 2: Markdown Importer
+## Phase 2: JSON Importer
 
-Turn the current Markdown question files into application data.
+Define a canonical JSON question format and build the import pipeline.
+A one-off migration script converts the existing Markdown files to JSON;
+the app itself only ever reads JSON.
 
 Tasks:
 
-- Build a parser for the current Markdown card structure.
-- Support multiple-choice cards.
-- Support open-answer cards.
-- Extract:
-  - original question ID,
-  - topic,
-  - type,
-  - difficulty,
-  - tags,
-  - question text,
-  - choices,
-  - correct answer,
-  - explanation,
-  - reference,
-  - asset references where present.
+- Define the canonical JSON question format (see `docs/question_generation_guide.md`).
+  This is the single source of truth for all future questions, including those
+  generated with ChatGPT or Claude.
+- Write a one-off migration script (`scripts/md_to_json.ts`, repo root) that converts
+  all existing Markdown files in `Questions/` to JSON and writes them to `data/questions/`.
+  This script handles the three Markdown format variants found in the existing files.
+  Run it once, commit the output, and it is no longer needed.
+- Build a JSON parser in the app (`app/src/lib/importer/json-parser.ts`).
 - Add import validation:
   - missing answer,
   - missing reference,
   - no correct choice for multiple-choice cards,
-  - duplicate question text,
-  - unsupported media references.
-- Create a CLI import command first.
+  - duplicate source IDs within a batch.
+- Create a CLI import command (`app/scripts/import.ts`, JSON only).
 - Store import metadata in `ImportBatch`.
 
 Deliverable:
 
-- Existing Markdown cards can be imported into PostgreSQL.
+- Existing questions are available as JSON in `data/questions/` and can be imported
+  into PostgreSQL. All future questions follow the same JSON format.
 
 ## Phase 3: Minimal Authentication
 

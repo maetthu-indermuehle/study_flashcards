@@ -1,6 +1,7 @@
 "use client";
 
 import CardFeedback from "./CardFeedback";
+import QuestionText from "./QuestionText";
 import type { MultipleChoiceCard as MultipleChoiceCardType } from "@/lib/study/types";
 
 type Phase =
@@ -12,6 +13,7 @@ type Props = {
   phase: Phase;
   onAnswer: (choiceId: string, isCorrect: boolean) => void;
   onNext: () => void;
+  cardId: string;
 };
 
 /**
@@ -26,6 +28,7 @@ export default function MultipleChoiceCard({
   phase,
   onAnswer,
   onNext,
+  cardId,
 }: Props) {
   return (
     <div>
@@ -34,9 +37,7 @@ export default function MultipleChoiceCard({
         <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-sky-700">
           Multiple choice
         </p>
-        <p className="text-lg font-medium leading-snug text-slate-950">
-          {card.question}
-        </p>
+        <QuestionText text={card.question} />
       </div>
 
       {/* Choices */}
@@ -83,6 +84,7 @@ export default function MultipleChoiceCard({
 
       {phase.name === "answered" && (
         <CardFeedback
+          cardId={cardId}
           explanation={card.explanation}
           reference={card.reference}
           onNext={onNext}

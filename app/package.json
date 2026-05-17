@@ -1,6 +1,6 @@
 {
   "name": "ppl-flashcards-app",
-  "version": "0.5.2",
+  "version": "0.6.4",
   "private": true,
   "scripts": {
     "dev": "next dev",

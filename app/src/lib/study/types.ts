@@ -31,6 +31,12 @@ export type MultipleChoiceCard = {
   /** Shuffled at query time — never in stored order. */
   choices: StudyCardChoice[];
   reference: StudyCardReference | null;
+  /** Original source ID from the import file (e.g. "MET-042"). */
+  originalId: string | null;
+  /** True if the card has been flagged for later review. */
+  flagged: boolean;
+  /** Note left when the card was flagged, if any. */
+  flagNote: string | null;
 };
 
 /** An open-answer card where the user self-assesses after revealing. */
@@ -41,6 +47,12 @@ export type OpenAnswerCard = {
   answer: string;
   explanation: string | null;
   reference: StudyCardReference | null;
+  /** Original source ID from the import file (e.g. "MET-042"). */
+  originalId: string | null;
+  /** True if the card has been flagged for later review. */
+  flagged: boolean;
+  /** Note left when the card was flagged, if any. */
+  flagNote: string | null;
 };
 
 /**

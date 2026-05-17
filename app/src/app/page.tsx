@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { readSessionCookie } from "@/lib/session/cookies";
+import { getDueCount } from "@/lib/study/get-next-card";
 import LogoutButton from "./LogoutButton";
 
 export default async function Home() {
@@ -7,6 +8,8 @@ export default async function Home() {
   if (!session) {
     redirect("/login");
   }
+
+  const dueCount = await getDueCount(session.userId);
 
   return (
     <main className="min-h-dvh bg-stone-50 text-slate-950">
@@ -67,12 +70,19 @@ export default async function Home() {
               </div>
             </dl>
 
-            <a
-              href="/study"
-              className="mt-8 inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
-            >
-              Start studying →
-            </a>
+            <div className="mt-8 flex items-center gap-4">
+              <a
+                href="/study"
+                className="inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
+              >
+                Start studying →
+              </a>
+              {dueCount > 0 && (
+                <span className="rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-700">
+                  {dueCount} due
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </section>

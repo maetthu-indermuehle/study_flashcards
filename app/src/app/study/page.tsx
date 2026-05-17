@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
-import { getRandomCard } from "@/lib/study/get-random-card";
+import { getNextCard } from "@/lib/study/get-next-card";
 import StudyShell from "@/features/study/StudyShell";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default async function StudyPage() {
   const session = await readSessionCookie();
   if (!session) redirect("/login");
 
-  const card = await getRandomCard(session.userId);
+  const card = await getNextCard(session.userId);
 
   return (
     <main className="min-h-dvh bg-stone-50">

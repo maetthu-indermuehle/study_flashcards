@@ -4,10 +4,10 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 
 ## Current Status
 
-**Phase 3 complete** — branch: `phase-3-auth`
+**Phase 5 complete** — branch: `phase-5-spaced-repetition`
 
-- Phases 0–2 are complete and merged to `main`.
-- Phase 3 is complete: local credentials login, signed cookie sessions, auth guards.
+- Phases 0–4 are complete and merged to `main`.
+- Phase 5 adds SM-2 spaced repetition, review rating (Wrong/Hard/Good/Easy), due-card priority queue, question images, card flagging with notes, and source ID labels.
 - Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.

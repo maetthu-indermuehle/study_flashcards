@@ -9,6 +9,93 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.6.4] - 2026-05-17
+
+### Changed
+
+- Updated `README.md`, `docs/project_status.md`, `docs/app_architecture_plan.md`, and
+  `docs/core_domain_model.md` to reflect all Phase 5 work: SM-2 scheduler, review
+  rating, due-card queue, question images, card flagging, and flag notes.
+  `CardTag.note` added to the ER diagram. Resolved duplicate open-decision entry in
+  architecture plan.
+
+---
+
+## [0.6.3] - 2026-05-17
+
+### Added
+
+- `app/public/assets/` — 30 question images (PNG) committed as static assets
+  served by Next.js at `/assets/<filename>`.
+- `app/src/features/study/QuestionText.tsx` — parses the Markdown image syntax
+  embedded in question text (`![alt](assets/FILENAME.png) question body`) and
+  renders the image above the question text. Questions without an image render
+  as before. Used by both `MultipleChoiceCard` and `OpenAnswerCard`.
+
+---
+
+## [0.6.2] - 2026-05-17
+
+### Added
+
+- `app/prisma/schema.prisma` — added `note String?` to `CardTag`. Migration
+  `20260517071643_add_card_tag_note` applies a safe nullable column addition.
+- Flag notes — clicking the flag button opens an inline amber panel with a
+  textarea. Notes are saved alongside the flag (`POST /api/study/flag` now
+  accepts `note` and `unflag` fields). Flagged cards show an "Edit flag note"
+  panel pre-filled with the existing note; a "Remove flag" button unflagged the
+  card entirely. The note is fetched alongside the card and pre-populated on
+  every render.
+
+---
+
+## [0.6.1] - 2026-05-17
+
+### Added
+
+- **Source ID label** — each card now shows its original source ID (e.g. `MET-042`)
+  in small monospace text above the question, making it easy to reference a specific
+  card when reporting a problem.
+- **Flag button** — a flag icon in the top-right of every card toggles a "flagged"
+  marker. Flagged cards are highlighted in amber and persist across sessions. Stored
+  as a `flagged` custom tag via the existing `Tag`/`CardTag` tables — no migration
+  required. `POST /api/study/flag` handles the toggle.
+
+---
+
+## [0.6.0] - 2026-05-17
+
+### Added
+
+- `app/src/lib/study/sm2.ts` — `computeNextProgress(current, rating, now?)` pure SM-2
+  scheduler. Maps WRONG→0, HARD→2, GOOD→4, EASY→5 quality scores. WRONG resurfaces the
+  card in 10 minutes (relearning step) rather than the next day so it can come back within
+  the same session. HARD resets to 1 day. GOOD/EASY advance with the standard SM-2 ease
+  factor curve (min ease 1.3). 17 unit tests.
+- `app/src/lib/study/get-next-card.ts` — `getNextCard(userId)` replaces `getRandomCard`.
+  Priority: (1) overdue card soonest-first, (2) unseen card random, (3) next-upcoming
+  card when studying ahead of schedule. Also exports `getDueCount(userId)` used on the
+  home page.
+- `app/src/app/api/study/review/route.ts` — `POST /api/study/review`. Reads session
+  cookie, validates `{ cardId, rating, responseMs? }`, runs SM-2, writes a `Review` row
+  and upserts `CardProgress` in one transaction.
+- Home page now shows a "X due" badge next to "Start studying →" when cards are overdue.
+
+### Changed
+
+- `app/src/features/study/CardFeedback.tsx` — replaced the single "Next card →" button
+  with four rating buttons: Wrong (red), Hard (orange), Good (green), Easy (blue). Clicking
+  a button POSTs to `/api/study/review` then navigates to the next card. Buttons are
+  disabled during the in-flight request.
+- `app/src/features/study/MultipleChoiceCard.tsx` and `OpenAnswerCard.tsx` — accept and
+  forward `cardId` prop to `CardFeedback`.
+- `app/src/features/study/StudyShell.tsx` — passes `card.id` as `cardId` to both card
+  components.
+- `app/src/app/study/page.tsx` — uses `getNextCard` instead of `getRandomCard`.
+- 17 new unit tests for the SM-2 scheduler (93 total).
+
+---
+
 ## [0.5.2] - 2026-05-17
 
 ### Fixed

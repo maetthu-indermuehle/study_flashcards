@@ -189,6 +189,8 @@ model Tag {
 model CardTag {
   cardId String
   tagId  String
+  // Free-text note attached when the card is flagged for review.
+  note   String?
 
   card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
   tag  Tag  @relation(fields: [tagId], references: [id])

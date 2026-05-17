@@ -94,6 +94,18 @@ This milestone is reached after Phase 4. Phases 0–1 are done; Phases 2–4 rem
 
 ---
 
+## Deployment / data portability
+
+Questions are the portable artefact. The JSON files in `data/questions/` are committed
+to the repository. The seed script (`app/prisma/seed.ts`) runs the full import pipeline
+against every file in that directory on every container startup. Any new deployment
+(local, CI, OpenShift) runs `docker compose up` and gets all cards automatically.
+
+The seed is idempotent: re-running updates existing cards in place and does not create
+duplicates. A missing `data/questions/` directory is skipped silently so CI is unaffected.
+
+---
+
 ## Active technical decisions
 
 - **JSON-only app import** — the app importer only reads JSON (the format defined in

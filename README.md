@@ -44,7 +44,8 @@ On first start, the container automatically:
 1. Installs/updates npm dependencies
 2. Runs pending Prisma migrations
 3. Seeds the default user (`admin@local.dev` / `localdev`) and "Canadian PPL" deck
-4. Starts the Next.js dev server on http://localhost:3000
+4. Imports all `*.json` files from `data/questions/` into the deck
+5. Starts the Next.js dev server on http://localhost:3000
 
 Stop cleanly with `Ctrl-C` or:
 

@@ -37,6 +37,15 @@ This project uses semantic versioning.
 
 ### Changed
 
+- `app/prisma/seed.ts`: after seeding the user and deck, automatically imports
+  all `*.json` files from `$QUESTIONS_DIR` (default `/data/questions`) using the
+  full parse → validate → import pipeline. Files with parse or validation errors
+  are skipped with a warning; a missing directory is silently ignored (safe for CI).
+  Switched from a local `PrismaClient` to the `lib/db/client` singleton so the
+  seed and import service share one connection pool.
+
+### Changed
+
 - `docs/app_architecture_plan.md`: import strategy updated to JSON-only; repo structure,
   progress checklist, and open decisions refreshed.
 - `docs/core_domain_model.md`: diagram updated to reflect live Prisma schema (`Card.importBatchId`,

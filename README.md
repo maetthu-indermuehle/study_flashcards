@@ -4,10 +4,11 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 
 ## Current Status
 
-**Phase 2 complete** — branch: `phase-2-json-importer`
+**Phase 3 complete** — branch: `phase-3-auth`
 
-- Phase 0 (project setup) and Phase 1 (database schema, migration, seed) are complete and merged to `main`.
-- Phase 2 is complete: JSON importer pipeline, 926 cards in PostgreSQL, seed auto-imports on every container start.
+- Phases 0–2 are complete and merged to `main`.
+- Phase 3 is complete: local credentials login, signed cookie sessions, auth guards.
+- Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.
 

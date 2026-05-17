@@ -9,9 +9,11 @@ Last updated: 2026-05-17
 
 ## Current state
 
-**Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
+**Phase 3 is complete.** Working on branch `phase-3-auth`.
 
-**Phase 2 is complete.** All tasks done. 926 cards live in the database.
+Login, session handling, and auth guards are live. Visiting the app redirects to
+`/login`; the seed user (`admin@local.dev` / `localdev`) can sign in and access the
+home page. The next phase adds the mobile flashcard study flow.
 
 ---
 
@@ -40,29 +42,35 @@ Last updated: 2026-05-17
   Node 24, plus production image build with GHA layer cache.
 - Fixed Turbopack panic in Docker named-volume setup by switching to `--webpack`.
 
----
+### Phase 2 — JSON importer
 
-## Phase 2 — JSON importer (in progress)
+- Canonical JSON question format spec (`docs/question_generation_guide.md`) with LLM prompt.
+- Full import pipeline: Zod parser → semantic validator → import service (upsert by
+  `(deckId, originalId)`, idempotent).
+- CLI script (`app/scripts/import.ts`) with `--dry-run`, `--force`, `--verbose` flags.
+- One-off Markdown → JSON migration script (`scripts/md_to_json.ts`), 923 cards from
+  17 source files, 0 warnings.
+- All migrated cards committed as `data/questions/*.json` — the portable source of truth.
+- Seed script auto-imports all `*.json` files from `$QUESTIONS_DIR` on every container start.
+- 926 cards in PostgreSQL (660 MC, 266 open answer, 2640 choices, 902 source references,
+  642 tags).
 
-**Goal:** Define a canonical JSON question format and build the import pipeline. The app
-only ever reads JSON. A one-off migration script converts the existing Markdown files to
-JSON; the output is committed to the repo.
+### Phase 3 — Minimal authentication
 
-See [docs/phase_2_plan.md](phase_2_plan.md) for the full implementation plan and build
-order. See [docs/question_generation_guide.md](question_generation_guide.md) for the
-JSON format spec and LLM prompt.
-
-### Task progress
-
-- [x] Finalise JSON format spec (`docs/question_generation_guide.md`)
-- [x] JSON parser + tests (`app/src/lib/importer/json-parser.ts`, 21 tests passing)
-- [x] Validator + tests (`app/src/lib/importer/validator.ts`, 19 tests passing)
-- [x] Import service (`app/src/lib/importer/import-service.ts`)
-- [x] CLI script (`app/scripts/import.ts`)
-- [x] Smoke test with hand-written JSON cards (`data/questions/smoke_test.json`)
-- [x] Migration script (`scripts/md_to_json.ts`) — 923 cards from 17 source files, 0 warnings
-- [x] Full import of all migrated files — 926 cards in database (660 MC, 266 open answer)
-- [x] Update page badge to Phase 2
+- Stateless signed session cookie: HMAC-SHA256 over base64url JSON payload, 7-day lifetime,
+  verified with constant-time comparison. No external auth libraries — Node.js `crypto` only.
+- `src/lib/session/codec.ts` — `signSession` / `verifySession`.
+- `src/lib/session/cookies.ts` — `createSessionCookie` / `readSessionCookie` /
+  `clearSessionCookie` via `next/headers`.
+- `src/lib/auth/password.ts` — `verifyPassword` matching the seed's `crypto.scrypt` format.
+- `src/proxy.ts` — optimistic auth guard (Next.js 16 proxy); unauthenticated requests
+  redirect to `/login`; authenticated users on `/login` redirect to `/`.
+- `POST /api/auth/login` — verifies credentials, sets session cookie.
+- `POST /api/auth/logout` — clears session cookie.
+- `/login` page with email + password form (Server Component + Client form).
+- Home page requires authentication; shows logged-in email and a Sign out button.
+- `SESSION_SECRET` env var added (min 32 chars); set in `docker-compose.yml` for local dev.
+- 65 tests passing across all modules.
 
 ---
 
@@ -70,7 +78,6 @@ JSON format spec and LLM prompt.
 
 | Phase | Name                       | What it unlocks                                                    |
 |-------|----------------------------|--------------------------------------------------------------------|
-| 3     | Minimal authentication     | Local credentials login, session handling, auth guards, user-scoped progress |
 | 4     | First study experience     | Mobile flashcard loop: multiple-choice and open-answer, reveal, explanation, reference |
 | 5     | Spaced repetition v1       | SM-2-inspired scheduler, due-card selection, review statistics     |
 | 6     | Card management UI         | Browse, search, filter, create, edit, archive cards in the app     |
@@ -88,7 +95,7 @@ JSON format spec and LLM prompt.
 > Run locally with Docker, import existing questions into PostgreSQL, log in as the seed
 > user, and study random/due cards on a phone-friendly UI.
 
-This milestone is reached after Phase 4. Phases 0–1 are done; Phases 2–4 remain.
+This milestone is reached after Phase 4. Phases 0–3 are done; Phase 4 remains.
 
 ---
 
@@ -109,6 +116,9 @@ duplicates. A missing `data/questions/` directory is skipped silently so CI is u
 - **JSON-only app import** — the app importer only reads JSON (the format defined in
   `docs/question_generation_guide.md`). The one-off script `scripts/md_to_json.ts`
   converts the existing Markdown files; after that, all new questions are authored in JSON.
+- **Stateless session cookie** — HMAC-SHA256 signed cookie, no DB session table. The
+  `SESSION_SECRET` env var must be at least 32 characters. In production, generate with
+  `openssl rand -base64 32`.
 - **Webpack over Turbopack in dev** — Turbopack panics with "Next.js package not found"
   in the named Docker volume setup. Using `next dev --webpack` until this is resolved
   upstream.
@@ -120,3 +130,6 @@ duplicates. A missing `data/questions/` directory is skipped silently so CI is u
 - **Test runner** — Node built-in `node:test` + `tsx` loader. No Jest or Vitest.
 - **Multiple correct choices** — the JSON format and `Choice` model both support multiple
   `isCorrect: true` choices per card, enabling "select all that apply" questions.
+- **Proxy (not middleware)** — Next.js 16 renames `middleware.ts` to `proxy.ts`; the
+  exported function must be named `proxy`. Functionality is identical to middleware in
+  earlier versions.

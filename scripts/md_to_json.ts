@@ -9,10 +9,159 @@
  * Run from the repo root:
  *   npx tsx scripts/md_to_json.ts [--verbose]
  *
- * Three source formats are handled:
- *   MET-style   ## MET-NNN  with Topic/Type/Difficulty/Tags metadata
- *   Q-style     ## QNNN     with Topic/Type, no Difficulty/Tags
- *   Sample-style ## Question N — Type  with bold question text
+ * ---------------------------------------------------------------------------
+ * SUPPORTED MARKDOWN FORMATS
+ * ---------------------------------------------------------------------------
+ *
+ * All formats share the same structural rules:
+ *
+ *   • Cards are separated by horizontal rules (---).
+ *   • Fields use the bold-colon pattern: **FieldName:** value
+ *     The colon sits INSIDE the bold markers: **Answer:** not **Answer**:.
+ *   • Unknown **Bold:** lines are silently ignored (they are not structural).
+ *   • A blank line ends the metadata block and begins the question text.
+ *   • Multi-line field values are supported: indent continuation lines normally.
+ *
+ *
+ * ── FORMAT 1: MET-style ────────────────────────────────────────────────────
+ *
+ * Header:  ## MET-NNN   (any integer, zero-padded or not)
+ * Fields:  Topic, Type, Difficulty, Tags (all optional but recommended)
+ * The question text follows the metadata block after a blank line.
+ * Choices use the `- X) text` list format (A–D only).
+ * Answer letter for MC: `**Answer:** B - text` (dash or em-dash separator).
+ *
+ *   ## MET-126
+ *   **Topic:** Meteorology - Canadian Weather Products
+ *   **Type:** Multiple Choice
+ *   **Difficulty:** Basic
+ *   **Tags:** nav-canada, weather-services
+ *
+ *   Who is responsible for providing civil aviation weather services in Canada?
+ *
+ *   - A) Federal Aviation Administration
+ *   - B) NAV CANADA
+ *   - C) Transport Canada only
+ *   - D) Local flying clubs
+ *
+ *   **Answer:** B - NAV CANADA
+ *
+ *   **Explanation:** NAV CANADA provides civil air navigation services in
+ *   Canada, including the aviation weather program.
+ *
+ *   **Reference:** NAV CANADA Aviation Weather Services Guide, Introduction
+ *
+ *   ---
+ *
+ *   ## MET-128
+ *   **Topic:** Meteorology - Canadian Weather Products
+ *   **Type:** Open Answer
+ *   **Difficulty:** Basic
+ *   **Tags:** self-briefing, fic
+ *
+ *   What is the difference between self-briefing and calling a FIC briefer?
+ *
+ *   **Answer:** Self-briefing lets a pilot review METARs, TAFs, and other
+ *   products directly. Calling a FIC briefer adds professional interpretation
+ *   tailored to the planned route and conditions.
+ *
+ *   **Explanation:** Both methods are useful; contact a briefer when conditions
+ *   are complex, marginal, or changing.
+ *
+ *   **Reference:** NAV CANADA Aviation Weather Services Guide
+ *
+ *
+ * ── FORMAT 2: Q-style ──────────────────────────────────────────────────────
+ *
+ * Header:  ## QNNN   (any integer, e.g. Q001, Q042)
+ * Fields:  Topic, Type (Difficulty and Tags are not used in this format)
+ * No --- separator before the first card (the file header shares the block).
+ * The question text follows directly after the metadata fields and a blank line.
+ *
+ *   # PPL Flashcards — Air Law (Q001–Q100)
+ *
+ *   ## Q001
+ *   **Topic:** Air Law — Collision Avoidance
+ *   **Type:** Multiple Choice
+ *
+ *   When two aircraft are converging at approximately the same altitude,
+ *   which aircraft must give way?
+ *
+ *   - A) The aircraft on the left
+ *   - B) The aircraft that has the other on its right
+ *   - C) The faster aircraft
+ *   - D) The higher aircraft
+ *
+ *   **Answer:** B — The aircraft that has the other on its right
+ *
+ *   **Explanation:** Under CAR 602.19, the aircraft that has the other on its
+ *   right must give way.
+ *
+ *   **Reference:** CAR 602.19; TP 11919 PSTAR S.1
+ *
+ *   ---
+ *
+ *   ## Q002
+ *   ...
+ *
+ *
+ * ── FORMAT 3: Sample-style ─────────────────────────────────────────────────
+ *
+ * Header:  ## Question N — Type   (N is an integer; Type sets the card type)
+ * The question text is a bold line: **Question text?**  (no colon inside)
+ * The answer field may be named "Correct Answer" instead of "Answer".
+ * No Topic or Tags metadata; Type is parsed from the header.
+ *
+ *   ## Question 1 — Multiple Choice
+ *
+ *   **What are the four forces acting on an aircraft in flight?**
+ *
+ *   - A) Thrust, drag, gravity, and velocity
+ *   - B) Lift, weight, thrust, and drag
+ *   - C) Lift, momentum, thrust, and friction
+ *   - D) Bernoulli force, weight, thrust, and resistance
+ *
+ *   **Correct Answer:** B — Lift, weight, thrust, and drag
+ *
+ *   **Explanation:** An aircraft in flight is under four main forces: lift,
+ *   weight, thrust, and drag.
+ *
+ *   **Reference:** Transport Canada Flight Training Manual, Chapter 1, p. 3–4
+ *
+ *   ---
+ *
+ *   ## Question 3 — Open Answer
+ *
+ *   **Explain the difference between angle of incidence and angle of attack.**
+ *
+ *   **Answer:** The angle of incidence is a fixed structural angle built into
+ *   the aircraft. The angle of attack is a variable aerodynamic angle between
+ *   the wing chord and the relative airflow.
+ *
+ *   **Reference:** Transport Canada Flight Training Manual, Chapter 1, p. 5
+ *
+ *
+ * ── FIELD REFERENCE ────────────────────────────────────────────────────────
+ *
+ *   Field            Formats        Notes
+ *   ─────────────────────────────────────────────────────────────────────────
+ *   **Topic:**       MET, Q         Free text; becomes a TOPIC tag in the DB
+ *   **Type:**        MET, Q         "Multiple Choice" → MC; anything else → open
+ *   **Difficulty:**  MET only       basic/easy → easy, intermediate/medium → medium,
+ *                                   advanced/hard → hard; unknown values → null
+ *   **Tags:**        MET only       Comma-separated; lowercased in output
+ *   **Answer:**      all formats    MC: "B - text" or "B — text"; open: prose
+ *   **Correct Answer:** Sample      Alias for Answer; same parsing rules
+ *   **Explanation:** all formats    Optional; kept as-is
+ *   **Reference:**   all formats    Optional; kept as-is
+ *
+ *   Choice lines (MC only):
+ *     - A) option text
+ *     - B) option text
+ *     - C) option text
+ *     - D) option text
+ *   Only letters A–D are recognised. The correct choice is inferred from the
+ *   answer letter, not from markup on the choice line itself.
  */
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "fs";

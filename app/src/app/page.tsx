@@ -1,4 +1,13 @@
-export default function Home() {
+import { redirect } from "next/navigation";
+import { readSessionCookie } from "@/lib/session/cookies";
+import LogoutButton from "./LogoutButton";
+
+export default async function Home() {
+  const session = await readSessionCookie();
+  if (!session) {
+    redirect("/login");
+  }
+
   return (
     <main className="min-h-dvh bg-stone-50 text-slate-950">
       <section className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 py-6 sm:px-8 lg:px-10">
@@ -11,52 +20,58 @@ export default function Home() {
               PPL Flashcards
             </h1>
           </div>
-          <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
-            Phase 2
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="hidden text-sm text-slate-500 sm:block">
+              {session.email}
+            </span>
+            <LogoutButton />
+            <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
+              Phase 4
+            </span>
+          </div>
         </header>
 
         <div className="grid flex-1 place-items-center py-12">
           <div className="w-full max-w-2xl">
             <p className="mb-3 text-sm font-medium text-sky-700">
-              JSON importer
+              Study flow
             </p>
             <h2 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-              926 cards imported and ready.
+              926 cards ready to study.
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-8 text-slate-700">
-              The full question library is live in PostgreSQL. The next phases
-              will add login and the mobile flashcard study flow.
+              Multiple-choice and open-answer cards from the full Canadian PPL
+              groundschool syllabus.
             </p>
 
             <dl className="mt-8 grid gap-3 sm:grid-cols-3">
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <dt className="text-sm font-medium text-slate-500">Stack</dt>
+                <dt className="text-sm font-medium text-slate-500">Cards</dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  Next.js + TypeScript
+                  926 published
                 </dd>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                <dt className="text-sm font-medium text-slate-500">Database</dt>
+                <dt className="text-sm font-medium text-slate-500">Types</dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  PostgreSQL + Prisma
+                  MC + open answer
                 </dd>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
                 <dt className="text-sm font-medium text-slate-500">
-                  Deployment
+                  Selection
                 </dt>
                 <dd className="mt-1 font-semibold text-slate-950">
-                  Docker/OpenShift ready
+                  Random
                 </dd>
               </div>
             </dl>
 
             <a
+              href="/study"
               className="mt-8 inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
-              href="/api/health"
             >
-              Check health endpoint
+              Start studying →
             </a>
           </div>
         </div>

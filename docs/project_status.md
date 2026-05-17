@@ -11,8 +11,7 @@ Last updated: 2026-05-17
 
 **Phase 2 is in progress.** Working on branch `phase-2-json-importer`.
 
-All Phase 2 tasks are complete. 926 cards (660 MC, 266 open answer) are live in the
-database. The page badge still shows Phase 1 — that is the last remaining item.
+**Phase 2 is complete.** All tasks done. 926 cards live in the database.
 
 ---
 
@@ -63,7 +62,7 @@ JSON format spec and LLM prompt.
 - [x] Smoke test with hand-written JSON cards (`data/questions/smoke_test.json`)
 - [x] Migration script (`scripts/md_to_json.ts`) — 923 cards from 17 source files, 0 warnings
 - [x] Full import of all migrated files — 926 cards in database (660 MC, 266 open answer)
-- [ ] Update page badge to Phase 2
+- [x] Update page badge to Phase 2
 
 ---
 

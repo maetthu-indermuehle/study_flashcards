@@ -4,10 +4,10 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 
 ## Current Status
 
-**Phase 2 in progress** — branch: `phase-2-json-importer`
+**Phase 2 complete** — branch: `phase-2-json-importer`
 
 - Phase 0 (project setup) and Phase 1 (database schema, migration, seed) are complete and merged to `main`.
-- Phase 2 is in progress: all pipeline work done — 926 cards in database. Page badge update remaining.
+- Phase 2 is complete: JSON importer pipeline, 926 cards in PostgreSQL, seed auto-imports on every container start.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.
 

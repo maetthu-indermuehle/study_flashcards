@@ -1,0 +1,2091 @@
+[
+  {
+    "id": "MET-226",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "personal-minima",
+      "decision-making",
+      "vfr"
+    ],
+    "question": "What are personal weather minima?",
+    "choices": [
+      {
+        "text": "Legal minima published only for IFR pilots",
+        "correct": false
+      },
+      {
+        "text": "Self-imposed limits that are usually more conservative than the legal minimums",
+        "correct": true
+      },
+      {
+        "text": "Forecast values issued by ATC",
+        "correct": false
+      },
+      {
+        "text": "Cloud heights printed on a VNC",
+        "correct": false
+      }
+    ],
+    "answer": "Self-imposed limits that are usually more conservative than the legal minimums",
+    "explanation": "Personal minima are pilot-chosen limits for visibility, ceiling, wind, turbulence, terrain clearance, daylight, and other risk factors. They should reflect experience, currency, aircraft capability, route familiarity, and available alternates.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-227",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "go-no-go",
+      "legal-minima",
+      "safety-margin"
+    ],
+    "question": "Why should a VFR pilot avoid treating legal weather minima as a normal planning target?",
+    "choices": [
+      {
+        "text": "Legal minima are always wrong",
+        "correct": false
+      },
+      {
+        "text": "Legal minima leave little safety margin for workload, terrain, navigation, and changing weather",
+        "correct": true
+      },
+      {
+        "text": "Legal minima apply only to helicopters",
+        "correct": false
+      },
+      {
+        "text": "Legal minima automatically include fuel reserve",
+        "correct": false
+      }
+    ],
+    "answer": "Legal minima leave little safety margin for workload, terrain, navigation, and changing weather",
+    "explanation": "Legal minima are minimum conditions, not comfort or training targets. A new or rusty PPL should plan with larger margins so there is time and space to notice deterioration and act early.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations and Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-228",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "personal-minima",
+      "risk-management"
+    ],
+    "question": "List five factors a PPL should consider when setting personal weather minima.",
+    "answer": "Examples include pilot experience, recent currency, aircraft performance, equipment, terrain, daylight, route familiarity, availability of alternates, passenger pressure, forecast confidence, ceiling, visibility, wind, turbulence, icing risk, and precipitation.",
+    "explanation": "Personal minima should become more conservative when several risk factors combine, such as low ceiling plus unfamiliar terrain plus evening daylight loss.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-229",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "go-no-go",
+      "weather-briefing",
+      "trend"
+    ],
+    "question": "What is the main reason to compare current METARs with previous METARs and the forecast?",
+    "choices": [
+      {
+        "text": "To check the aircraft registration",
+        "correct": false
+      },
+      {
+        "text": "To identify the weather trend",
+        "correct": true
+      },
+      {
+        "text": "To calculate magnetic variation",
+        "correct": false
+      },
+      {
+        "text": "To determine runway length",
+        "correct": false
+      }
+    ],
+    "answer": "To identify the weather trend",
+    "explanation": "A single report shows only a moment in time. Comparing previous observations with the forecast helps determine whether weather is improving, deteriorating, or not matching the forecast.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-230",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-briefing",
+      "fic",
+      "preflight"
+    ],
+    "question": "When weather is marginal or complicated, what is one of the best Canadian preflight resources for a VFR pilot?",
+    "choices": [
+      {
+        "text": "A Flight Information Centre weather briefing",
+        "correct": true
+      },
+      {
+        "text": "A passenger's opinion",
+        "correct": false
+      },
+      {
+        "text": "Yesterday's METAR only",
+        "correct": false
+      },
+      {
+        "text": "Fuel receipt comments",
+        "correct": false
+      }
+    ],
+    "answer": "A Flight Information Centre weather briefing",
+    "explanation": "A FIC briefer can help interpret multiple products for the route, altitude, timing, and aircraft. The pilot still makes the final go/no-go decision.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Flight Information Centres and Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-231",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "go-no-go",
+      "route-weather",
+      "metar"
+    ],
+    "question": "Why is it unsafe to base a VFR cross-country decision only on the departure airport METAR?",
+    "choices": [
+      {
+        "text": "METARs are forecasts",
+        "correct": false
+      },
+      {
+        "text": "The departure METAR does not describe the whole route, destination, alternates, or future trend",
+        "correct": true
+      },
+      {
+        "text": "METARs never include wind",
+        "correct": false
+      },
+      {
+        "text": "Departure weather is always worse than enroute weather",
+        "correct": false
+      }
+    ],
+    "answer": "The departure METAR does not describe the whole route, destination, alternates, or future trend",
+    "explanation": "Cross-country weather decisions require route weather, destination forecasts, alternate options, radar, satellite, GFA, PIREPs, AIRMETs/SIGMETs, and trend analysis.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-232",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "controlled-airspace",
+      "vfr-minima",
+      "canada"
+    ],
+    "question": "Under CAR 602.114, VFR flight in controlled airspace generally requires flight visibility of at least:",
+    "choices": [
+      {
+        "text": "1 mile",
+        "correct": false
+      },
+      {
+        "text": "2 miles",
+        "correct": false
+      },
+      {
+        "text": "3 miles",
+        "correct": true
+      },
+      {
+        "text": "5 miles",
+        "correct": false
+      }
+    ],
+    "answer": "3 miles",
+    "explanation": "Canadian controlled-airspace VFR minima include visual reference to the surface, flight visibility of at least 3 miles, and specified cloud clearance.",
+    "reference": "Canadian Aviation Regulations, CAR 602.114, Minimum Visual Meteorological Conditions for VFR Flight in Controlled Airspace",
+    "media": []
+  },
+  {
+    "id": "MET-233",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "controlled-airspace",
+      "cloud-clearance",
+      "canada"
+    ],
+    "question": "Under CAR 602.114, what cloud clearance is required for VFR flight in controlled airspace?",
+    "choices": [
+      {
+        "text": "Clear of cloud only",
+        "correct": false
+      },
+      {
+        "text": "500 ft vertically and 1 mile horizontally",
+        "correct": true
+      },
+      {
+        "text": "1,000 ft vertically and 3 miles horizontally",
+        "correct": false
+      },
+      {
+        "text": "No cloud clearance if GPS is installed",
+        "correct": false
+      }
+    ],
+    "answer": "500 ft vertically and 1 mile horizontally",
+    "explanation": "Controlled-airspace VFR in Canada requires the aircraft to be at least 500 ft from cloud vertically and 1 mile from cloud horizontally.",
+    "reference": "Canadian Aviation Regulations, CAR 602.114",
+    "media": []
+  },
+  {
+    "id": "MET-234",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "control-zone",
+      "vfr-minima",
+      "canada"
+    ],
+    "question": "Within a Canadian control zone, what reported ground visibility is normally required for VFR flight when ground visibility is reported?",
+    "choices": [
+      {
+        "text": "At least 1 mile",
+        "correct": false
+      },
+      {
+        "text": "At least 2 miles",
+        "correct": false
+      },
+      {
+        "text": "At least 3 miles",
+        "correct": true
+      },
+      {
+        "text": "Any visibility if the pilot can see the runway",
+        "correct": false
+      }
+    ],
+    "answer": "At least 3 miles",
+    "explanation": "CAR 602.114 requires at least 3 miles ground visibility in a control zone when reported, unless operating under an applicable Special VFR authorization.",
+    "reference": "Canadian Aviation Regulations, CAR 602.114 and CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-235",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "canada",
+      "control-zone"
+    ],
+    "question": "Special VFR in Canada applies within:",
+    "choices": [
+      {
+        "text": "Any uncontrolled airspace",
+        "correct": false
+      },
+      {
+        "text": "A control zone",
+        "correct": true
+      },
+      {
+        "text": "Class A airspace only",
+        "correct": false
+      },
+      {
+        "text": "All airspace above 12,500 ft",
+        "correct": false
+      }
+    ],
+    "answer": "A control zone",
+    "explanation": "CAR 602.117 describes Special VFR flight within a control zone, subject to weather, visibility, cloud, surface reference, radio, and ATC authorization requirements.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117, Special VFR Flight",
+    "media": []
+  },
+  {
+    "id": "MET-236",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "canada",
+      "visibility"
+    ],
+    "question": "For a non-helicopter aircraft in Canadian Special VFR, flight visibility must be at least:",
+    "choices": [
+      {
+        "text": "1/2 mile",
+        "correct": false
+      },
+      {
+        "text": "1 mile",
+        "correct": true
+      },
+      {
+        "text": "2 miles",
+        "correct": false
+      },
+      {
+        "text": "3 miles",
+        "correct": false
+      }
+    ],
+    "answer": "1 mile",
+    "explanation": "CAR 602.117 requires flight visibility of at least 1 mile for aircraft other than helicopters operating Special VFR.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-237",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "cloud-clearance",
+      "surface-reference"
+    ],
+    "question": "Under Canadian Special VFR, the aircraft must be operated:",
+    "choices": [
+      {
+        "text": "Clear of cloud and with visual reference to the surface at all times",
+        "correct": true
+      },
+      {
+        "text": "500 ft below all cloud but no surface reference required",
+        "correct": false
+      },
+      {
+        "text": "Only on instruments",
+        "correct": false
+      },
+      {
+        "text": "Above cloud whenever possible",
+        "correct": false
+      }
+    ],
+    "answer": "Clear of cloud and with visual reference to the surface at all times",
+    "explanation": "Special VFR is not an IFR clearance. The pilot must remain clear of cloud and maintain visual reference to the surface.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-238",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "pilot-request",
+      "atc"
+    ],
+    "question": "Who must request Special VFR authorization in Canada?",
+    "choices": [
+      {
+        "text": "The pilot-in-command",
+        "correct": true
+      },
+      {
+        "text": "ATC, without pilot involvement",
+        "correct": false
+      },
+      {
+        "text": "The passenger",
+        "correct": false
+      },
+      {
+        "text": "The aircraft manufacturer",
+        "correct": false
+      }
+    ],
+    "answer": "The pilot-in-command",
+    "explanation": "The pilot must request and obtain Special VFR authorization from the appropriate ATC unit. The Flight Training Manual cautions that ATC cannot suggest Special VFR to a pilot.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117; Transport Canada Flight Training Manual, Weather Considerations - Special VFR",
+    "media": []
+  },
+  {
+    "id": "MET-239",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "caution",
+      "risk"
+    ],
+    "question": "Why should a new PPL treat Special VFR as a caution flag rather than a convenience?",
+    "choices": [
+      {
+        "text": "It means weather is below normal VFR minima in a control zone",
+        "correct": true
+      },
+      {
+        "text": "It guarantees clear weather outside the control zone",
+        "correct": false
+      },
+      {
+        "text": "It automatically provides terrain separation",
+        "correct": false
+      },
+      {
+        "text": "It removes the need to see the surface",
+        "correct": false
+      }
+    ],
+    "answer": "It means weather is below normal VFR minima in a control zone",
+    "explanation": "Special VFR may be legal, but it can leave very little margin. Weather can worsen quickly, and conditions outside the control zone may be unsuitable.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Special VFR; Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-240",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "vfr-into-imc",
+      "prevention",
+      "weather"
+    ],
+    "question": "What is the best defence against VFR flight into IMC?",
+    "choices": [
+      {
+        "text": "Avoiding the situation through conservative planning and early decisions",
+        "correct": true
+      },
+      {
+        "text": "Flying lower whenever cloud appears",
+        "correct": false
+      },
+      {
+        "text": "Continuing because forecasts are usually conservative",
+        "correct": false
+      },
+      {
+        "text": "Waiting until the horizon disappears before turning around",
+        "correct": false
+      }
+    ],
+    "answer": "Avoiding the situation through conservative planning and early decisions",
+    "explanation": "VFR into IMC is best prevented by using weather briefings, personal minima, route alternates, trend checks, and early turn-around or diversion decisions.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations; Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-241",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "180-turn",
+      "deteriorating-weather",
+      "vfr"
+    ],
+    "question": "When VFR weather begins to deteriorate ahead, what is normally the best early action?",
+    "choices": [
+      {
+        "text": "Continue until a landing is impossible",
+        "correct": false
+      },
+      {
+        "text": "Make an early 180-degree turn back toward better weather if safe to do so",
+        "correct": true
+      },
+      {
+        "text": "Descend below all obstacles without checking terrain",
+        "correct": false
+      },
+      {
+        "text": "Turn off the radio",
+        "correct": false
+      }
+    ],
+    "answer": "Make an early 180-degree turn back toward better weather if safe to do so",
+    "explanation": "The Flight Training Manual emphasizes an early 180-degree turn as a normal plan when weather deteriorates. Early action preserves options.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-242",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "diversion",
+      "weather",
+      "alternates"
+    ],
+    "question": "What is the purpose of identifying alternates before a VFR cross-country?",
+    "choices": [
+      {
+        "text": "To give the pilot safe places to divert if weather, fuel, daylight, or aircraft issues develop",
+        "correct": true
+      },
+      {
+        "text": "To avoid checking weather at the destination",
+        "correct": false
+      },
+      {
+        "text": "To replace fuel planning",
+        "correct": false
+      },
+      {
+        "text": "To reduce the need for maps",
+        "correct": false
+      }
+    ],
+    "answer": "To give the pilot safe places to divert if weather, fuel, daylight, or aircraft issues develop",
+    "explanation": "Alternates should be realistic for the aircraft, pilot, fuel, terrain, and forecast conditions. A diversion plan is far easier to make on the ground than under pressure in flight.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Flight Planning",
+    "media": []
+  },
+  {
+    "id": "MET-243",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "diversion",
+      "decision-making",
+      "triggers"
+    ],
+    "question": "List four weather-related triggers that should make a VFR pilot consider diverting.",
+    "answer": "Examples include lowering ceilings, reducing visibility, unexpected precipitation, thunderstorms, increasing wind or turbulence, fuel margin shrinking due to headwind, icing risk, mountain obscuration, loss of daylight, or weather worse than forecast.",
+    "explanation": "Diversion is a normal safety decision, not a failure. The key is to act while good options remain.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-244",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "continuation-bias",
+      "human-factors",
+      "weather"
+    ],
+    "question": "What is continuation bias?",
+    "choices": [
+      {
+        "text": "The tendency to continue with the original plan despite new information suggesting it is unsafe",
+        "correct": true
+      },
+      {
+        "text": "The requirement to continue after filing a flight plan",
+        "correct": false
+      },
+      {
+        "text": "A type of wind shear",
+        "correct": false
+      },
+      {
+        "text": "A chart projection error",
+        "correct": false
+      }
+    ],
+    "answer": "The tendency to continue with the original plan despite new information suggesting it is unsafe",
+    "explanation": "Weather decisions are vulnerable to plan-continuation pressure, especially when near the destination, carrying passengers, or trying to arrive before dark.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada Pilot Decision-Making guidance concepts",
+    "media": []
+  },
+  {
+    "id": "MET-245",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "passenger-pressure",
+      "human-factors",
+      "go-no-go"
+    ],
+    "question": "Which statement best describes passenger pressure?",
+    "choices": [
+      {
+        "text": "It is a real risk factor that can push a pilot toward poor weather decisions",
+        "correct": true
+      },
+      {
+        "text": "It improves weather judgment",
+        "correct": false
+      },
+      {
+        "text": "It changes legal VFR minima",
+        "correct": false
+      },
+      {
+        "text": "It is only relevant to airline pilots",
+        "correct": false
+      }
+    ],
+    "answer": "It is a real risk factor that can push a pilot toward poor weather decisions",
+    "explanation": "Wanting to avoid disappointing passengers can lead to launching or continuing into marginal conditions. A conservative pilot briefs passengers early that delay or diversion is always possible.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada human factors guidance",
+    "media": []
+  },
+  {
+    "id": "MET-246",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "weather-products",
+      "decision-making",
+      "stale-information"
+    ],
+    "question": "Why must pilots check the issue time and valid time of weather products?",
+    "choices": [
+      {
+        "text": "Weather products can become stale or may not apply to the planned flight time",
+        "correct": true
+      },
+      {
+        "text": "Time stamps are only for forecasters",
+        "correct": false
+      },
+      {
+        "text": "Valid time affects aircraft registration",
+        "correct": false
+      },
+      {
+        "text": "Weather products do not change",
+        "correct": false
+      }
+    ],
+    "answer": "Weather products can become stale or may not apply to the planned flight time",
+    "explanation": "Radar, METARs, TAFs, GFAs, AIRMETs, and SIGMETs are time-sensitive. A product that looked acceptable an hour ago may no longer describe the current or forecast situation.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-247",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "airmet",
+      "sigmet",
+      "go-no-go"
+    ],
+    "question": "What should a VFR pilot do when an AIRMET or SIGMET affects the planned route?",
+    "choices": [
+      {
+        "text": "Read it carefully, understand the hazard, compare it with other products, and consider delaying, rerouting, or cancelling",
+        "correct": true
+      },
+      {
+        "text": "Ignore it if the departure airport is VFR",
+        "correct": false
+      },
+      {
+        "text": "Assume it applies only to IFR traffic",
+        "correct": false
+      },
+      {
+        "text": "Continue as planned unless ATC forbids departure",
+        "correct": false
+      }
+    ],
+    "answer": "Read it carefully, understand the hazard, compare it with other products, and consider delaying, rerouting, or cancelling",
+    "explanation": "AIRMETs and SIGMETs describe weather hazards that may affect safety. They are decision-making products, not decoration.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET and SIGMET",
+    "media": []
+  },
+  {
+    "id": "MET-248",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "fuel-planning",
+      "headwind",
+      "diversion"
+    ],
+    "question": "How can a stronger-than-forecast headwind become a weather decision-making problem?",
+    "choices": [
+      {
+        "text": "It can reduce groundspeed, increase fuel burn, and reduce diversion options",
+        "correct": true
+      },
+      {
+        "text": "It always improves range",
+        "correct": false
+      },
+      {
+        "text": "It only matters during landing",
+        "correct": false
+      },
+      {
+        "text": "It cancels cloud clearance requirements",
+        "correct": false
+      }
+    ],
+    "answer": "It can reduce groundspeed, increase fuel burn, and reduce diversion options",
+    "explanation": "Weather decisions include performance and fuel margin. Strong headwinds can turn an otherwise acceptable flight into one with poor reserves or limited alternates.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Choosing an Altitude",
+    "media": []
+  },
+  {
+    "id": "MET-249",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "terrain",
+      "weather",
+      "minima"
+    ],
+    "question": "Why should personal minima be higher in mountainous or unfamiliar terrain?",
+    "choices": [
+      {
+        "text": "Terrain reduces options and makes low cloud, visibility, downdrafts, and turbulence more hazardous",
+        "correct": true
+      },
+      {
+        "text": "Mountains improve radio reception everywhere",
+        "correct": false
+      },
+      {
+        "text": "Legal minima do not apply near mountains",
+        "correct": false
+      },
+      {
+        "text": "Cloud bases are always higher in mountains",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain reduces options and makes low cloud, visibility, downdrafts, and turbulence more hazardous",
+    "explanation": "Terrain can limit turn-around space, force lower routes, reduce emergency landing options, and create local winds and turbulence. Conservative minima are essential.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; FAA Aviation Weather Handbook, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-250",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "daylight",
+      "weather",
+      "risk-management"
+    ],
+    "question": "Why does approaching darkness increase weather decision risk for a VFR pilot?",
+    "choices": [
+      {
+        "text": "Visual references become harder to maintain and marginal weather becomes harder to judge",
+        "correct": true
+      },
+      {
+        "text": "Darkness improves visibility",
+        "correct": false
+      },
+      {
+        "text": "Forecasts stop applying",
+        "correct": false
+      },
+      {
+        "text": "Cloud clearance no longer matters",
+        "correct": false
+      }
+    ],
+    "answer": "Visual references become harder to maintain and marginal weather becomes harder to judge",
+    "explanation": "Low cloud, precipitation, terrain, and horizon loss are harder to detect at night. A daylight-only pilot should keep extra margin when weather or daylight is decreasing.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Night Flying",
+    "media": []
+  },
+  {
+    "id": "MET-251",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-briefing",
+      "pilot-responsibility",
+      "atc"
+    ],
+    "question": "Who is responsible for the final go/no-go decision for a VFR flight?",
+    "choices": [
+      {
+        "text": "The pilot-in-command",
+        "correct": true
+      },
+      {
+        "text": "The FIC briefer",
+        "correct": false
+      },
+      {
+        "text": "The passenger",
+        "correct": false
+      },
+      {
+        "text": "The weather website",
+        "correct": false
+      }
+    ],
+    "answer": "The pilot-in-command",
+    "explanation": "Briefers and weather products support the decision, but the pilot-in-command is responsible for deciding whether the flight can be conducted safely and legally.",
+    "reference": "Canadian Aviation Regulations, PIC responsibilities; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-252",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "weather-briefing",
+      "route-planning",
+      "vfr"
+    ],
+    "question": "What information should you give a FIC briefer to get a useful weather briefing?",
+    "answer": "Aircraft identification or type, VFR flight, departure point, destination, route, planned altitude, departure time, estimated time enroute, alternates, and any specific concerns.",
+    "explanation": "A briefer can give a better route-specific interpretation when the pilot describes the actual plan rather than asking only for general weather.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-253",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "vfr-into-imc",
+      "emergency",
+      "atc"
+    ],
+    "question": "If a VFR pilot is unsure of the safety of the flight as weather deteriorates, what should the pilot be willing to do?",
+    "choices": [
+      {
+        "text": "Contact ATC/FIC and declare an emergency if necessary",
+        "correct": true
+      },
+      {
+        "text": "Stay silent to avoid embarrassment",
+        "correct": false
+      },
+      {
+        "text": "Turn off the transponder",
+        "correct": false
+      },
+      {
+        "text": "Continue because emergencies are only for engine failures",
+        "correct": false
+      }
+    ],
+    "answer": "Contact ATC/FIC and declare an emergency if necessary",
+    "explanation": "The Flight Training Manual states that if there is doubt about the safety of the flight, do not let a doubtful situation become a bad one. Declare an emergency when needed.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-254",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "marginal-vfr",
+      "decision-making",
+      "personal-minima"
+    ],
+    "question": "What does \"marginal VFR\" usually mean for a PPL weather decision?",
+    "choices": [
+      {
+        "text": "The flight may be legal but risk margins are reduced",
+        "correct": true
+      },
+      {
+        "text": "The flight is automatically illegal",
+        "correct": false
+      },
+      {
+        "text": "The weather is better than ideal VFR",
+        "correct": false
+      },
+      {
+        "text": "The aircraft must fly IFR",
+        "correct": false
+      }
+    ],
+    "answer": "The flight may be legal but risk margins are reduced",
+    "explanation": "Marginal VFR conditions often involve lower ceilings and visibility. They increase workload and reduce options, especially near terrain, water, or unfamiliar airports.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Categories and Briefing Products; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-255",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "scud-running",
+      "vfr-into-imc",
+      "terrain"
+    ],
+    "question": "Why is scud running dangerous?",
+    "choices": [
+      {
+        "text": "It encourages low-level flight in poor visibility and low cloud, reducing terrain, obstacle, and turn-around margins",
+        "correct": true
+      },
+      {
+        "text": "It improves weather awareness",
+        "correct": false
+      },
+      {
+        "text": "It is required for Special VFR",
+        "correct": false
+      },
+      {
+        "text": "It guarantees better visibility below cloud",
+        "correct": false
+      }
+    ],
+    "answer": "It encourages low-level flight in poor visibility and low cloud, reducing terrain, obstacle, and turn-around margins",
+    "explanation": "Descending to remain clear of cloud can trap a VFR pilot between lowering cloud and rising terrain or obstacles. Early diversion is safer.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations; Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-256",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-deterioration",
+      "early-action",
+      "options"
+    ],
+    "question": "Why is an early weather decision usually safer than a late one?",
+    "choices": [
+      {
+        "text": "It preserves altitude, fuel, daylight, visibility, and route options",
+        "correct": true
+      },
+      {
+        "text": "It guarantees a tailwind",
+        "correct": false
+      },
+      {
+        "text": "It removes the need for communication",
+        "correct": false
+      },
+      {
+        "text": "It makes legal minima lower",
+        "correct": false
+      }
+    ],
+    "answer": "It preserves altitude, fuel, daylight, visibility, and route options",
+    "explanation": "Delayed decisions often lead to fewer choices. Weather decision-making works best when the pilot acts before being forced.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations and Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-257",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "preflight",
+      "no-go",
+      "weather"
+    ],
+    "question": "Give three examples of weather information that should normally make a VFR PPL delay or cancel.",
+    "answer": "Examples include forecast thunderstorms on the route, freezing precipitation, icing risk in visible moisture, widespread IFR ceilings, visibility below personal minima, strong winds beyond capability, severe turbulence, active SIGMET, mountain obscuration, or no safe alternate.",
+    "explanation": "A no-go decision is often the best risk control. The goal is not to complete every planned flight; it is to complete only the flights that can be conducted safely.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET/SIGMET, GFA, METAR/TAF; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-258",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "icing",
+      "vfr",
+      "go-no-go"
+    ],
+    "question": "For a typical VFR PPL flight in a non-icing-equipped aircraft, what should forecast icing along the route usually mean?",
+    "choices": [
+      {
+        "text": "Delay, cancel, or choose a route/altitude that avoids icing conditions completely",
+        "correct": true
+      },
+      {
+        "text": "Continue if the flight is short",
+        "correct": false
+      },
+      {
+        "text": "Fly faster to shed ice",
+        "correct": false
+      },
+      {
+        "text": "Descend into cloud",
+        "correct": false
+      }
+    ],
+    "answer": "Delay, cancel, or choose a route/altitude that avoids icing conditions completely",
+    "explanation": "The Flight Training Manual states that VFR pilots should not be flying in icing conditions. Icing can become an emergency quickly in light aircraft.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing",
+    "media": []
+  },
+  {
+    "id": "MET-259",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "thunderstorms",
+      "go-no-go",
+      "weather"
+    ],
+    "question": "What is the best VFR decision when thunderstorms are forecast along the route with no reliable way around them?",
+    "choices": [
+      {
+        "text": "Delay, cancel, or choose a route that avoids them with large margins",
+        "correct": true
+      },
+      {
+        "text": "Fly under the storm bases",
+        "correct": false
+      },
+      {
+        "text": "Fly between cells if the GPS route is direct",
+        "correct": false
+      },
+      {
+        "text": "Continue until lightning is visible",
+        "correct": false
+      }
+    ],
+    "answer": "Delay, cancel, or choose a route that avoids them with large margins",
+    "explanation": "Thunderstorms can produce severe turbulence, hail, lightning, wind shear, microbursts, heavy rain, and low visibility. They are not suitable for close VFR encounters.",
+    "reference": "FAA Aviation Weather Handbook, Thunderstorms; NAV CANADA Aviation Weather Services Guide, SIGMET and Radar; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-260",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "alternate-plan",
+      "weather",
+      "preflight"
+    ],
+    "question": "What should a pilot have before departing into weather that could change?",
+    "choices": [
+      {
+        "text": "A realistic alternate plan",
+        "correct": true
+      },
+      {
+        "text": "Only hope that the forecast is right",
+        "correct": false
+      },
+      {
+        "text": "A plan to ignore updated weather",
+        "correct": false
+      },
+      {
+        "text": "A passenger vote",
+        "correct": false
+      }
+    ],
+    "answer": "A realistic alternate plan",
+    "explanation": "The Flight Training Manual recommends having an alternate plan should weather deteriorate. Alternate plans include turnback points, diversion airports, fuel margins, and decision triggers.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-261",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "turnback-point",
+      "decision-trigger",
+      "diversion"
+    ],
+    "question": "What is a turnback point?",
+    "choices": [
+      {
+        "text": "A planned point by which the flight must continue to be safe, or the pilot turns back/diverts",
+        "correct": true
+      },
+      {
+        "text": "A point where legal minima no longer apply",
+        "correct": false
+      },
+      {
+        "text": "A GPS waypoint used only for IFR",
+        "correct": false
+      },
+      {
+        "text": "The last point before landing flare",
+        "correct": false
+      }
+    ],
+    "answer": "A planned point by which the flight must continue to be safe, or the pilot turns back/diverts",
+    "explanation": "Turnback points help prevent pushing gradually deeper into poor weather. They turn vague worry into a clear decision rule.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-262",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "vfr-over-cloud",
+      "weather",
+      "escape-route"
+    ],
+    "question": "Why is flying VFR over a growing cloud layer risky without a guaranteed VFR descent route?",
+    "choices": [
+      {
+        "text": "The pilot may become trapped above cloud with no legal or safe way down",
+        "correct": true
+      },
+      {
+        "text": "Clouds always disappear near destination",
+        "correct": false
+      },
+      {
+        "text": "GPS guarantees descent through cloud",
+        "correct": false
+      },
+      {
+        "text": "ATC automatically provides IFR clearance to all VFR aircraft",
+        "correct": false
+      }
+    ],
+    "answer": "The pilot may become trapped above cloud with no legal or safe way down",
+    "explanation": "VFR pilots must maintain required visual conditions. Before flying above cloud, the pilot must ensure legal, safe VFR conditions exist for descent and alternates.",
+    "reference": "Canadian Aviation Regulations, VFR requirements; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-263",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "uncertainty",
+      "weather",
+      "risk-management"
+    ],
+    "question": "When weather information is conflicting or uncertain, what is the safest PPL decision-making response?",
+    "choices": [
+      {
+        "text": "Increase margins, seek a briefing, delay, reroute, or cancel",
+        "correct": true
+      },
+      {
+        "text": "Pick the most optimistic product",
+        "correct": false
+      },
+      {
+        "text": "Ignore the uncertainty",
+        "correct": false
+      },
+      {
+        "text": "Depart quickly before checking more weather",
+        "correct": false
+      }
+    ],
+    "answer": "Increase margins, seek a briefing, delay, reroute, or cancel",
+    "explanation": "Uncertainty is itself a risk factor. Conservative pilots do not rely on the most favourable interpretation when weather products disagree.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-264",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "updated-weather",
+      "enroute",
+      "decision-making"
+    ],
+    "question": "Why should pilots continue monitoring weather enroute when possible?",
+    "choices": [
+      {
+        "text": "Conditions may change from the preflight briefing and require diversion or turnback",
+        "correct": true
+      },
+      {
+        "text": "Preflight weather is always valid all day",
+        "correct": false
+      },
+      {
+        "text": "It is only useful for IFR aircraft",
+        "correct": false
+      },
+      {
+        "text": "It replaces visual lookout",
+        "correct": false
+      }
+    ],
+    "answer": "Conditions may change from the preflight briefing and require diversion or turnback",
+    "explanation": "Enroute updates from FIC, ATC, FSS, broadcasts, ADS-B/weather sources, and pilot observations can reveal changing conditions.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, In-Flight Weather Services; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-265",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "emergency",
+      "communication",
+      "weather"
+    ],
+    "question": "What should a VFR pilot tell ATC or FIC when deteriorating weather is creating a safety problem?",
+    "choices": [
+      {
+        "text": "Plainly state the problem, position, altitude, intentions, and assistance needed",
+        "correct": true
+      },
+      {
+        "text": "Avoid mentioning weather to prevent paperwork",
+        "correct": false
+      },
+      {
+        "text": "Say nothing until fuel is exhausted",
+        "correct": false
+      },
+      {
+        "text": "Ask passengers to handle the radio",
+        "correct": false
+      }
+    ],
+    "answer": "Plainly state the problem, position, altitude, intentions, and assistance needed",
+    "explanation": "Clear communication helps controllers and specialists provide useful information, traffic assistance, radar help where available, and emergency support.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-266",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "night",
+      "canada"
+    ],
+    "question": "For a non-helicopter aircraft operating Special VFR at night in Canada, authorization is limited to:",
+    "choices": [
+      {
+        "text": "Allowing the aircraft to land at the destination aerodrome",
+        "correct": true
+      },
+      {
+        "text": "Any sightseeing flight in a control zone",
+        "correct": false
+      },
+      {
+        "text": "Departing for a cross-country route in any direction",
+        "correct": false
+      },
+      {
+        "text": "Flying above cloud",
+        "correct": false
+      }
+    ],
+    "answer": "Allowing the aircraft to land at the destination aerodrome",
+    "explanation": "CAR 602.117 includes a specific condition for non-helicopter night Special VFR authorization: it is for the purpose of allowing the aircraft to land at the destination aerodrome.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-267",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "special-vfr",
+      "radio",
+      "canada"
+    ],
+    "question": "For ATC to authorize Special VFR in Canada, what equipment condition applies?",
+    "choices": [
+      {
+        "text": "The aircraft must have radiocommunication equipment capable of maintaining communication with the appropriate ATC unit",
+        "correct": true
+      },
+      {
+        "text": "The aircraft must have weather radar",
+        "correct": false
+      },
+      {
+        "text": "The aircraft must have autopilot",
+        "correct": false
+      },
+      {
+        "text": "The aircraft must have de-icing boots",
+        "correct": false
+      }
+    ],
+    "answer": "The aircraft must have radiocommunication equipment capable of maintaining communication with the appropriate ATC unit",
+    "explanation": "CAR 602.117 requires radiocommunication capability for ATC to authorize Special VFR where aerodrome traffic permits.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-268",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "ceiling",
+      "terrain",
+      "vfr"
+    ],
+    "question": "Why can a lowering ceiling be more dangerous than a steady low ceiling?",
+    "choices": [
+      {
+        "text": "It can gradually force the pilot lower and reduce turn-around and terrain clearance options",
+        "correct": true
+      },
+      {
+        "text": "It always means better visibility",
+        "correct": false
+      },
+      {
+        "text": "It only affects IFR pilots",
+        "correct": false
+      },
+      {
+        "text": "It eliminates turbulence",
+        "correct": false
+      }
+    ],
+    "answer": "It can gradually force the pilot lower and reduce turn-around and terrain clearance options",
+    "explanation": "Deteriorating ceilings can trap VFR pilots if they continue too long. The safe response is to act early.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations; Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-269",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "visibility",
+      "precipitation",
+      "vfr"
+    ],
+    "question": "Why is precipitation a decision-making concern even if cloud bases are acceptable?",
+    "choices": [
+      {
+        "text": "It can reduce forward visibility and obscure terrain, traffic, and landmarks",
+        "correct": true
+      },
+      {
+        "text": "It always improves visibility",
+        "correct": false
+      },
+      {
+        "text": "It cancels fuel requirements",
+        "correct": false
+      },
+      {
+        "text": "It prevents wind shear",
+        "correct": false
+      }
+    ],
+    "answer": "It can reduce forward visibility and obscure terrain, traffic, and landmarks",
+    "explanation": "VFR flight depends on seeing outside. Rain, snow, drizzle, and haze can make navigation and obstacle avoidance much harder.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations; FAA Aviation Weather Handbook, Obstructions to Visibility",
+    "media": []
+  },
+  {
+    "id": "MET-270",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-obscuration",
+      "go-no-go",
+      "terrain"
+    ],
+    "question": "For a VFR mountain route, what should forecast mountain obscuration usually trigger?",
+    "choices": [
+      {
+        "text": "Delay, cancel, or choose a safer route",
+        "correct": true
+      },
+      {
+        "text": "Fly lower in valleys without concern",
+        "correct": false
+      },
+      {
+        "text": "Continue because obscuration affects only IFR aircraft",
+        "correct": false
+      },
+      {
+        "text": "Ignore if destination METAR is VFR",
+        "correct": false
+      }
+    ],
+    "answer": "Delay, cancel, or choose a safer route",
+    "explanation": "Mountain obscuration removes visual terrain references and may block escape routes. It is a major VFR hazard.",
+    "reference": "FAA Aviation Weather Handbook, Mountain Weather and Weather Obstructions; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-271",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "personal-minima",
+      "wind",
+      "crosswind"
+    ],
+    "question": "Why should personal wind minima include both steady wind and gust spread?",
+    "choices": [
+      {
+        "text": "Gusts can make takeoff, landing, and airspeed control more difficult even if average wind is acceptable",
+        "correct": true
+      },
+      {
+        "text": "Gusts reduce turbulence",
+        "correct": false
+      },
+      {
+        "text": "Gusts only matter to jets",
+        "correct": false
+      },
+      {
+        "text": "Gust spread changes legal fuel reserve",
+        "correct": false
+      }
+    ],
+    "answer": "Gusts can make takeoff, landing, and airspeed control more difficult even if average wind is acceptable",
+    "explanation": "A wind of 12 kt gusting 25 kt may be more challenging than a steady 16 kt wind. Personal minima should reflect both speed and gustiness.",
+    "reference": "Transport Canada Flight Training Manual, Take-off, Approach and Landing, and Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-272",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "no-go",
+      "conservative-decision",
+      "ppl"
+    ],
+    "question": "Which statement best reflects good PPL weather judgment?",
+    "choices": [
+      {
+        "text": "A cancelled flight is a successful safety decision when conditions exceed the pilot's limits",
+        "correct": true
+      },
+      {
+        "text": "Cancelling means the pilot failed",
+        "correct": false
+      },
+      {
+        "text": "Personal minima should be ignored when passengers are waiting",
+        "correct": false
+      },
+      {
+        "text": "Legal means wise",
+        "correct": false
+      }
+    ],
+    "answer": "A cancelled flight is a successful safety decision when conditions exceed the pilot's limits",
+    "explanation": "Good pilots avoid being forced into bad situations. A no-go decision protects the pilot, passengers, aircraft, and people on the ground.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada pilot decision-making concepts",
+    "media": []
+  },
+  {
+    "id": "MET-273",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "weather-categories",
+      "mvfr",
+      "vfr"
+    ],
+    "question": "What is the operational concern when a route is forecast to alternate between VFR and MVFR?",
+    "choices": [
+      {
+        "text": "Small changes may push the flight below personal or legal minima",
+        "correct": true
+      },
+      {
+        "text": "MVFR always means unlimited visibility",
+        "correct": false
+      },
+      {
+        "text": "MVFR is only a runway condition",
+        "correct": false
+      },
+      {
+        "text": "Weather categories do not affect VFR pilots",
+        "correct": false
+      }
+    ],
+    "answer": "Small changes may push the flight below personal or legal minima",
+    "explanation": "Marginal conditions can deteriorate quickly or vary locally. A conservative pilot plans exits before entering marginal areas.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Products; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-274",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "local-weather",
+      "destination",
+      "alternate"
+    ],
+    "question": "Why is it important to check weather at alternates, not just the destination?",
+    "choices": [
+      {
+        "text": "A diversion is only useful if the alternate is actually reachable and suitable",
+        "correct": true
+      },
+      {
+        "text": "Alternates always have better weather",
+        "correct": false
+      },
+      {
+        "text": "Destination weather controls all airports nearby",
+        "correct": false
+      },
+      {
+        "text": "Alternate weather is not time-sensitive",
+        "correct": false
+      }
+    ],
+    "answer": "A diversion is only useful if the alternate is actually reachable and suitable",
+    "explanation": "A planned alternate with poor weather, no fuel margin, strong crosswinds, or unsuitable runway is not a real option.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Flight Planning",
+    "media": []
+  },
+  {
+    "id": "MET-275",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "decision-triggers",
+      "personal-minima",
+      "route-planning"
+    ],
+    "question": "What is a weather decision trigger? Give two examples.",
+    "answer": "A decision trigger is a pre-planned condition that requires action. Examples: if ceiling drops below 2,500 ft AGL before the halfway point, turn back; if destination visibility falls below 5 SM, divert; if headwind reduces fuel reserve below planned minimum, land at the alternate.",
+    "explanation": "Decision triggers reduce improvisation under stress and help prevent continuation bias.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada pilot decision-making concepts",
+    "media": []
+  },
+  {
+    "id": "MET-276",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "go-no-go",
+      "personal-minima"
+    ],
+    "question": "You planned a local solo flight with a personal minimum of 5 SM visibility. The METAR reports 4 SM in haze, with no improvement forecast for two hours. What should you do?",
+    "answer": "Delay or cancel the flight.",
+    "explanation": "The flight may or may not meet legal requirements depending on airspace, but it is below your personal minimum. Personal minima only work if you respect them before takeoff.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, METAR and TAF",
+    "media": []
+  },
+  {
+    "id": "MET-277",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "ceiling",
+      "go-no-go"
+    ],
+    "question": "Your destination TAF shows `TEMPO 2SM -SN BKN008` during your ETA. You are a low-time VFR PPL. How should you react?",
+    "answer": "Treat the flight as unsuitable unless you can delay, reroute, or choose a clearly better destination and alternates.",
+    "explanation": "Temporary low visibility and an 800 ft broken ceiling can create IFR or near-IFR conditions. A VFR pilot should not rely on hoping the temporary condition will miss the arrival time.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-278",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "trend",
+      "weather-deterioration"
+    ],
+    "question": "The last three METARs along your route show visibility decreasing from 10 SM to 6 SM to 3 SM in snow. The forecast did not predict this. What should you do?",
+    "answer": "Delay or choose a safer route; if airborne, turn back or divert before conditions worsen further.",
+    "explanation": "The observed trend is worse than forecast. Current deterioration should override optimism in the original forecast.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-279",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "180-turn",
+      "deteriorating-weather"
+    ],
+    "question": "While enroute VFR, the ceiling ahead is visibly lowering and the horizon is becoming harder to distinguish. Conditions behind you remain good. What should you do?",
+    "answer": "Make an early 180-degree turn back toward better weather if safe to do so.",
+    "explanation": "Early turnback preserves visual references and options. Waiting until the aircraft is boxed in by weather is the trap.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-280",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "diversion",
+      "fuel"
+    ],
+    "question": "Halfway to destination, a stronger-than-forecast headwind shows you will land with less fuel reserve than planned. Weather is still VFR and an alternate is nearby. What should you do?",
+    "answer": "Divert or land for fuel while the decision is still easy.",
+    "explanation": "Good weather does not remove fuel risk. Strong headwind is a weather factor that can reduce safety margins.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Range/Endurance",
+    "media": []
+  },
+  {
+    "id": "MET-281",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "special-vfr",
+      "control-zone"
+    ],
+    "question": "You are outside a control zone. The tower reports the zone is below normal VFR minima, but visibility is 1 1/2 SM and you can remain clear of cloud with visual reference to the surface. You want to enter and land. What must you do before entering?",
+    "answer": "Request and obtain Special VFR authorization from the appropriate ATC unit, and only proceed if you can maintain the required conditions and it is within your personal limits.",
+    "explanation": "Special VFR is not automatic. It requires pilot request, ATC authorization, minimum visibility, clear of cloud, and visual reference to the surface.",
+    "reference": "Canadian Aviation Regulations, CAR 602.117; Transport Canada Flight Training Manual, Special VFR",
+    "media": []
+  },
+  {
+    "id": "MET-282",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "special-vfr",
+      "caution"
+    ],
+    "question": "ATC says the control zone is below VFR minima. You are a new PPL, unfamiliar with the airport, and rain showers are moving through. Special VFR may be legal. What is the safest reaction?",
+    "answer": "Do not treat legality as suitability; delay, divert, or obtain a detailed briefing unless conditions are comfortably within your ability and personal minima.",
+    "explanation": "Special VFR can place a pilot in low visibility, low ceiling, and high workload near traffic and terrain. For a new PPL, it is often a warning sign to choose a safer option.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Special VFR; Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-283",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "passenger-pressure",
+      "no-go"
+    ],
+    "question": "Your passengers are eager to get home, but the forecast includes low ceilings and rain near sunset. You feel pressured to go. What should you do?",
+    "answer": "Make the decision based on weather, daylight, pilot capability, and alternates, not passenger pressure. Delay or cancel if the flight exceeds your limits.",
+    "explanation": "Passenger pressure is a classic human factors risk. Brief passengers that aviation plans change for safety.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada pilot decision-making concepts",
+    "media": []
+  },
+  {
+    "id": "MET-284",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "vfr-into-imc",
+      "prevention"
+    ],
+    "question": "You are VFR above scattered cloud. Ahead, the cloud layer becomes broken and then overcast with no visible holes. What should you do?",
+    "answer": "Turn back, divert, or descend while a legal and safe VFR route remains available.",
+    "explanation": "Continuing above a closing cloud layer risks becoming trapped above cloud without a VFR descent path.",
+    "reference": "Canadian Aviation Regulations, VFR requirements; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-285",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "scenario",
+      "inadvertent-imc",
+      "emergency"
+    ],
+    "question": "Despite your planning, you inadvertently enter cloud as a VFR pilot. What is the priority response?",
+    "answer": "Maintain aircraft control, transition to instruments as trained, avoid abrupt manoeuvres, communicate with ATC/FIC as soon as possible, and request assistance or declare an emergency if needed.",
+    "explanation": "The immediate priority is aircraft control. Prevention is best, but once in IMC the pilot must reduce workload, communicate clearly, and get help.",
+    "reference": "Transport Canada Flight Training Manual, Instrument Flying and Weather Considerations; CAR emergency authority principles",
+    "media": []
+  },
+  {
+    "id": "MET-286",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "thunderstorm",
+      "no-go"
+    ],
+    "question": "Radar shows a line of thunderstorms crossing your direct route. There is no clear way around it within fuel and daylight limits. What should you do?",
+    "answer": "Delay, cancel, or choose a different route/day. Do not try to pick through the line VFR.",
+    "explanation": "Thunderstorm lines can contain severe turbulence, hail, lightning, heavy rain, low visibility, and wind shear. A direct route is not worth the risk.",
+    "reference": "FAA Aviation Weather Handbook, Thunderstorms; NAV CANADA Aviation Weather Services Guide, Radar and SIGMET",
+    "media": []
+  },
+  {
+    "id": "MET-287",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "scenario",
+      "icing",
+      "vfr"
+    ],
+    "question": "The GFA shows moderate icing from 3,000 to 7,000 ft along your route. Your aircraft is not approved for flight in icing. The surface temperature is near freezing with cloud on the route. What should you do?",
+    "answer": "Do not depart into those conditions; delay, cancel, or choose a route and altitude that avoids visible moisture and icing risk.",
+    "explanation": "VFR pilots should not fly in icing conditions, and non-equipped light aircraft can accumulate ice quickly.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; NAV CANADA Aviation Weather Services Guide, GFA and AIRMET",
+    "media": []
+  },
+  {
+    "id": "MET-288",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "mountain-weather",
+      "diversion"
+    ],
+    "question": "You plan a VFR valley route. Reports ahead indicate mountain obscuration and lowering cloud bases. What should you do?",
+    "answer": "Delay, cancel, turn back, or divert to a route with safe terrain and weather clearance.",
+    "explanation": "Mountain obscuration can remove visual terrain references and block escape routes. Continuing into narrowing valley weather is dangerous.",
+    "reference": "FAA Aviation Weather Handbook, Mountain Weather; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-289",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "stale-weather",
+      "preflight"
+    ],
+    "question": "You are about to depart using a radar image saved on your phone from 90 minutes ago. What should you do?",
+    "answer": "Get current weather information before making the decision.",
+    "explanation": "Stale weather can be misleading, especially with showers or thunderstorms. Always check issue and valid times.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips and Radar Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-290",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "conflicting-products",
+      "fic"
+    ],
+    "question": "The TAF is VFR, but recent METARs and pilot reports show lower ceilings than forecast along your route. What should you do?",
+    "answer": "Treat the mismatch as increased risk, get an updated briefing, and delay, reroute, or set conservative decision points.",
+    "explanation": "When observations are worse than forecast, the current trend deserves serious weight.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, PIREP, METAR, TAF",
+    "media": []
+  },
+  {
+    "id": "MET-291",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "low-visibility",
+      "scud-running"
+    ],
+    "question": "You descend from 3,500 ft to 1,500 ft to stay below cloud. The terrain ahead rises and visibility is decreasing in rain. What should you do?",
+    "answer": "Stop the descent trap: turn back or divert while you still have safe terrain and visibility margins.",
+    "explanation": "Continuing lower to remain VFR is scud running. It reduces obstacle clearance and can lead to VFR into IMC or controlled flight into terrain.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations; Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-292",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "crosswind",
+      "personal-minima"
+    ],
+    "question": "Your personal crosswind limit is 10 kt. Destination wind is reported 40 degrees off the runway at 18G26 kt. What should you do?",
+    "answer": "Choose another runway or airport, delay, or cancel if the crosswind/gust conditions exceed your ability and limits.",
+    "explanation": "Personal wind limits are part of weather decision-making. Gusts and crosswinds can make landing unsafe for a low-time pilot.",
+    "reference": "Transport Canada Flight Training Manual, Crosswind Take-off and Landing; Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-293",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "special-vfr",
+      "atc"
+    ],
+    "question": "You are in a control zone and ATC reports the airport is now below VFR minima. ATC does not offer Special VFR. What should you understand?",
+    "answer": "In Canada, Special VFR must be requested by the pilot and authorized by ATC; ATC not offering it does not mean it is unavailable or suitable.",
+    "explanation": "Even if Special VFR is available, the pilot must decide whether it is safe and within personal minima.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Special VFR; Canadian Aviation Regulations, CAR 602.117",
+    "media": []
+  },
+  {
+    "id": "MET-294",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "enroute-weather",
+      "communication"
+    ],
+    "question": "Enroute, you are uncertain whether the weather ahead is passable VFR. You are in radio contact with Flight Service. What should you do?",
+    "answer": "Ask for updated weather, PIREPs, radar/GFA information, and nearby airport conditions, then decide early whether to continue, divert, or turn back.",
+    "explanation": "Using available information early can prevent a marginal situation from becoming urgent.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, FIC and In-Flight Weather Services; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-295",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "scenario",
+      "emergency",
+      "deteriorating-weather"
+    ],
+    "question": "Weather has deteriorated below your ability. You are low on options, unsure of terrain clearance, and need assistance. What should you do?",
+    "answer": "Aviate, communicate the situation clearly, request assistance, and declare an emergency if safety is in doubt.",
+    "explanation": "Declaring an emergency is appropriate when the safety of the flight is threatened. It gives ATC and rescue services the clearest signal to prioritize assistance.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-296",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "diversion",
+      "destination-weather"
+    ],
+    "question": "Your destination is still 40 minutes away. The latest METAR reports 2 SM visibility and BKN006, while an alternate behind you is VFR. What should you do?",
+    "answer": "Divert to the VFR alternate rather than continuing toward poor destination weather.",
+    "explanation": "The best diversion is often the one made early, before fuel, daylight, and weather margins shrink.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, METAR",
+    "media": []
+  },
+  {
+    "id": "MET-297",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "whiteout",
+      "winter-weather"
+    ],
+    "question": "You are flying over snow-covered terrain under overcast skies and begin losing horizon definition. What should you do?",
+    "answer": "Avoid continuing into whiteout conditions; turn back, divert, climb or manoeuvre only as safe and legal, and seek assistance if needed.",
+    "explanation": "Whiteout can remove depth perception and horizon cues, causing disorientation. Early avoidance is safest.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - White-out",
+    "media": []
+  },
+  {
+    "id": "MET-298",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "scenario",
+      "alternate-plan",
+      "preflight"
+    ],
+    "question": "Before departure, you cannot identify any suitable alternate airports along the route because weather is marginal everywhere. What should you do?",
+    "answer": "Delay, cancel, or choose a different route with real alternates.",
+    "explanation": "A flight without realistic alternates has poor resilience. Marginal weather plus no escape options is not a good PPL plan.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Flight Planning",
+    "media": []
+  },
+  {
+    "id": "MET-299",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "weather-window",
+      "timing"
+    ],
+    "question": "The forecast shows a short VFR window between two weather systems. Your planned arrival is near the end of the window. What should you do?",
+    "answer": "Be conservative: depart only with strong margins, earlier timing, alternates, and a clear plan to delay or cancel if the window narrows.",
+    "explanation": "Short weather windows can close early. A PPL should not rely on perfect timing to remain safe.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-300",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "scenario",
+      "get-there-itis",
+      "human-factors"
+    ],
+    "question": "You are 15 minutes from destination after a long flight. Weather ahead is below your personal minima, but the airport behind you is still VFR. What should you do?",
+    "answer": "Turn back or divert to the VFR airport.",
+    "explanation": "Being close to destination increases continuation bias. The correct decision is based on weather and options, not distance already flown.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; Transport Canada pilot decision-making concepts",
+    "media": []
+  },
+  {
+    "id": "MET-301",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "turbulence",
+      "passenger-comfort"
+    ],
+    "question": "The GFA and PIREPs show moderate turbulence below 5,000 ft along your route. Your passengers are nervous and you are not current in rough air. What should you do?",
+    "answer": "Delay, choose a smoother route or altitude if safely available, or cancel.",
+    "explanation": "Turbulence affects aircraft control, passenger safety, workload, and fatigue. Personal minima should include turbulence and passenger factors.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA and PIREP; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-302",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "fog",
+      "go-no-go"
+    ],
+    "question": "Morning radiation fog is forecast to lift by 1500Z. At 1450Z, METARs still show 1/4 SM FG and no improvement trend. What should you do?",
+    "answer": "Wait for actual improvement and a reliable trend before departing.",
+    "explanation": "Forecast improvement is not the same as observed improvement. Fog can persist longer than expected.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR and TAF; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-303",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "smoke",
+      "visibility"
+    ],
+    "question": "Wildfire smoke reduces reported visibility to 5 SM, but slant visibility toward the sun looks much worse. What should you do?",
+    "answer": "Treat the situation conservatively; delay, reroute, or maintain larger margins because reported visibility may not reflect in-flight visual quality.",
+    "explanation": "Smoke and haze can make horizon, terrain, and traffic detection difficult even when reported visibility appears legal.",
+    "reference": "FAA Aviation Weather Handbook, Weather and Obstructions to Visibility; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-304",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "scenario",
+      "vfr-over-the-top",
+      "escape-route"
+    ],
+    "question": "You are considering climbing above a broken layer because the air is smoother on top. The destination is forecast to become overcast. What should you do?",
+    "answer": "Do not climb above unless you have a legal, reliable VFR descent route and alternates that will remain available.",
+    "explanation": "Smooth air above cloud is not useful if you cannot legally and safely descend later.",
+    "reference": "Canadian Aviation Regulations, VFR requirements; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-305",
+    "topic": "Meteorology - PPL Weather Decision-Making",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "scenario",
+      "integrated-decision",
+      "go-no-go"
+    ],
+    "question": "You planned a VFR cross-country. The departure METAR is good, but the route GFA shows lowering ceilings, the destination TAF has `TEMPO 2SM -RA BR BKN007`, winds aloft create a strong headwind, and there are few alternates. How should you react?",
+    "answer": "Delay, cancel, or re-plan with a safer route, timing, and alternates. Do not launch based only on the good departure METAR.",
+    "explanation": "This combines several risk factors: forecast marginal weather, reduced visibility, low ceiling, fuel/time pressure from headwind, and limited alternates. The combined risk exceeds what a prudent VFR PPL should accept.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips, GFA, TAF, and FB Forecast; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  }
+]

@@ -1,0 +1,744 @@
+[
+  {
+    "id": "MET-496",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "drizzle",
+      "metar"
+    ],
+    "question": "In aviation weather reports, what does drizzle generally mean?",
+    "choices": [
+      {
+        "text": "Very small liquid water drops falling from low cloud or fog",
+        "correct": true
+      },
+      {
+        "text": "Large ice stones falling from cumulonimbus",
+        "correct": false
+      },
+      {
+        "text": "Dry snow grains only",
+        "correct": false
+      },
+      {
+        "text": "Rain that evaporates before reaching the ground",
+        "correct": false
+      }
+    ],
+    "answer": "Very small liquid water drops falling from low cloud or fog.",
+    "explanation": "Drizzle is made of very small liquid droplets and is often associated with low stratus, fog, and stable air. It can reduce visibility more than a pilot expects because the droplets are numerous and spread through a shallow layer. In temperatures near or below freezing, drizzle becomes much more serious because freezing drizzle can produce rapid airframe icing.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather; FAA Aviation Weather Handbook, Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-497",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "drizzle",
+      "visibility"
+    ],
+    "question": "Why can drizzle be operationally important for VFR flight even when it is light?",
+    "choices": [
+      {
+        "text": "It can reduce visibility and is often associated with low ceilings",
+        "correct": true
+      },
+      {
+        "text": "It always improves visibility",
+        "correct": false
+      },
+      {
+        "text": "It occurs only above 18,000 ft",
+        "correct": false
+      },
+      {
+        "text": "It prevents cloud from forming",
+        "correct": false
+      }
+    ],
+    "answer": "It can reduce visibility and is often associated with low ceilings.",
+    "explanation": "Light drizzle may not look dramatic on radar or from the ground, but it often comes from low stratus and can occur with mist or fog. That combination can leave a VFR pilot with poor forward visibility and little vertical space below cloud. It is especially important near terrain or in circuits where good visual reference is essential.",
+    "reference": "Transport Canada Flight Training Manual, Weather and Visibility; NAV CANADA Aviation Weather Services Guide, METAR/SPECI",
+    "media": []
+  },
+  {
+    "id": "MET-498",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "snow-grains",
+      "metar"
+    ],
+    "question": "What are snow grains?",
+    "choices": [
+      {
+        "text": "Very small, white, opaque ice particles, often falling from stratus or fog",
+        "correct": true
+      },
+      {
+        "text": "Large hailstones from thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Liquid drops that freeze on impact",
+        "correct": false
+      },
+      {
+        "text": "Rain that evaporates before reaching the ground",
+        "correct": false
+      }
+    ],
+    "answer": "Very small, white, opaque ice particles, often falling from stratus or fog.",
+    "explanation": "Snow grains are a winter precipitation type associated with stable, low-level cloud rather than strong convective cloud. They are smaller and less showery than snow showers. For pilots, their presence can point to low cloud, cold air, reduced visibility, and possible winter surface contamination.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Weather Codes; FAA Aviation Weather Handbook, Winter Precipitation",
+    "media": []
+  },
+  {
+    "id": "MET-499",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation",
+      "ice-pellets",
+      "frontal-weather"
+    ],
+    "question": "Ice pellets usually suggest what kind of temperature structure?",
+    "choices": [
+      {
+        "text": "Snow melted in a warm layer aloft, then refroze before reaching the surface",
+        "correct": true
+      },
+      {
+        "text": "The entire atmosphere is above freezing",
+        "correct": false
+      },
+      {
+        "text": "The air is dry from cloud base to the surface",
+        "correct": false
+      },
+      {
+        "text": "A thunderstorm is always overhead",
+        "correct": false
+      }
+    ],
+    "answer": "Snow melted in a warm layer aloft, then refroze before reaching the surface.",
+    "explanation": "Ice pellets often form when snow falls through a layer of above-freezing air and melts, then falls into a deep enough subfreezing layer to refreeze before reaching the ground. This matters because the same general temperature setup can be near freezing rain conditions. Ice pellets can warn a pilot that warm air aloft and cold air below are interacting, which is an icing-significant pattern.",
+    "reference": "FAA Aviation Weather Handbook, Winter Precipitation and Freezing Precipitation; NAV CANADA Aviation Weather Services Guide",
+    "media": []
+  },
+  {
+    "id": "MET-500",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "freezing-rain",
+      "icing"
+    ],
+    "question": "What makes freezing rain hazardous to aircraft?",
+    "choices": [
+      {
+        "text": "It is liquid precipitation that freezes on contact with aircraft surfaces",
+        "correct": true
+      },
+      {
+        "text": "It is dry snow that bounces off wings",
+        "correct": false
+      },
+      {
+        "text": "It occurs only when airframe icing is impossible",
+        "correct": false
+      },
+      {
+        "text": "It is harmless if reported as light",
+        "correct": false
+      }
+    ],
+    "answer": "It is liquid precipitation that freezes on contact with aircraft surfaces.",
+    "explanation": "Freezing rain can create rapid, heavy, and smooth ice accumulation. The drops are liquid when they strike the aircraft, then freeze on contact. For a non-icing-equipped light aircraft, freezing rain should be treated as a no-go condition because the ice can accumulate faster than the aircraft can safely tolerate.",
+    "reference": "FAA Aviation Weather Handbook, Freezing Rain; Transport Canada Flight Training Manual, Aircraft Icing",
+    "media": []
+  },
+  {
+    "id": "MET-501",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "freezing-drizzle",
+      "metar"
+    ],
+    "question": "What does `FZDZ` mean in a METAR?",
+    "choices": [
+      {
+        "text": "Freezing drizzle",
+        "correct": true
+      },
+      {
+        "text": "Freezing dust",
+        "correct": false
+      },
+      {
+        "text": "Fog decreasing",
+        "correct": false
+      },
+      {
+        "text": "Forecast drizzle",
+        "correct": false
+      }
+    ],
+    "answer": "Freezing drizzle.",
+    "explanation": "`FZ` indicates freezing precipitation and `DZ` indicates drizzle. Freezing drizzle can contain supercooled droplets that freeze on impact. It may occur in shallow cloud or low stratus and can be easy to underestimate because it does not look as dramatic as heavy rain or thunderstorms.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather; FAA Aviation Weather Handbook, Freezing Drizzle",
+    "media": []
+  },
+  {
+    "id": "MET-502",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-drizzle",
+      "go-no-go",
+      "scenario"
+    ],
+    "question": "Your destination reports `-FZDZ BR OVC006` with temperature `M01`. You are planning a VFR flight in a non-icing-equipped aircraft. What should you do?",
+    "answer": "Do not depart for that destination under those conditions; wait for actual improvement or choose a destination without freezing precipitation and low ceiling.",
+    "explanation": "The report contains several hazards at once: light freezing drizzle, mist, an overcast ceiling at 600 ft, and below-freezing temperature. Even if the precipitation is light, freezing drizzle can produce dangerous ice. The low ceiling also reduces VFR options. This is not a situation where a PPL should try to arrive and see how it looks.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI; Transport Canada Flight Training Manual, Aircraft Icing and Weather Decisions",
+    "media": []
+  },
+  {
+    "id": "MET-503",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "hail",
+      "thunderstorms",
+      "cumulonimbus"
+    ],
+    "question": "Hail is most commonly associated with which cloud type?",
+    "choices": [
+      {
+        "text": "Cumulonimbus",
+        "correct": true
+      },
+      {
+        "text": "Thin cirrus",
+        "correct": false
+      },
+      {
+        "text": "Fair-weather cumulus only",
+        "correct": false
+      },
+      {
+        "text": "Stratus with no vertical development",
+        "correct": false
+      }
+    ],
+    "answer": "Cumulonimbus.",
+    "explanation": "Hail requires strong updrafts to hold growing ice particles in a cloud long enough for them to become large. That is a thunderstorm process, so hail points to cumulonimbus and severe convective weather. For pilots, hail is a warning sign for severe turbulence, strong vertical currents, lightning, and possible structural damage.",
+    "reference": "FAA Aviation Weather Handbook, Thunderstorms and Hail; Transport Canada Flight Training Manual, Thunderstorms",
+    "media": []
+  },
+  {
+    "id": "MET-504",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "hail",
+      "radar",
+      "avoidance"
+    ],
+    "question": "Why should a pilot avoid areas where hail is reported, even if the aircraft is not directly under the darkest cloud?",
+    "choices": [
+      {
+        "text": "Hail can be thrown or fall outside the heaviest visible precipitation core",
+        "correct": true
+      },
+      {
+        "text": "Hail only falls in clear air far from storms",
+        "correct": false
+      },
+      {
+        "text": "Hail proves the storm is weakening and safe",
+        "correct": false
+      },
+      {
+        "text": "Hail reduces turbulence",
+        "correct": false
+      }
+    ],
+    "answer": "Hail can be thrown or fall outside the heaviest visible precipitation core.",
+    "explanation": "Thunderstorm updrafts and winds can carry hail away from the most obvious precipitation shaft. Radar and visual appearance do not guarantee a safe edge. If hail is present, the storm is strong enough to be dangerous, and a PPL should give it wide clearance rather than trying to pass close to the cell.",
+    "reference": "FAA Aviation Weather Handbook, Thunderstorm Hazards; Transport Canada Flight Training Manual, Thunderstorm Avoidance",
+    "media": []
+  },
+  {
+    "id": "MET-505",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "virga",
+      "evaporation",
+      "downdrafts"
+    ],
+    "question": "What is virga?",
+    "choices": [
+      {
+        "text": "Precipitation that falls from cloud but evaporates before reaching the ground",
+        "correct": true
+      },
+      {
+        "text": "Hail embedded in a thunderstorm",
+        "correct": false
+      },
+      {
+        "text": "Fog forming over snow",
+        "correct": false
+      },
+      {
+        "text": "Ice on a parked aircraft",
+        "correct": false
+      }
+    ],
+    "answer": "Precipitation that falls from cloud but evaporates before reaching the ground.",
+    "explanation": "Virga appears as streaks or shafts below cloud that fade before reaching the surface. Evaporation cools the air, making it denser and encouraging downdrafts. For pilots, virga can signal localized sinking air, turbulence, wind shear, and reduced visibility beneath cloud bases.",
+    "reference": "FAA Aviation Weather Handbook, Virga and Downdrafts; Transport Canada Flight Training Manual, Weather Hazards",
+    "media": []
+  },
+  {
+    "id": "MET-506",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "virga",
+      "downdraft",
+      "scenario"
+    ],
+    "question": "You see streaks of precipitation falling from a cloud base but disappearing before the ground. The air below looks hazy and winds are gusty. What hazard should you expect?",
+    "answer": "Expect possible downdrafts, turbulence, and wind shear associated with virga.",
+    "explanation": "The disappearing precipitation is virga. As precipitation evaporates, it cools the air and can accelerate a downdraft. Near the ground, that downdraft can spread out as gusty, shifting wind. A light aircraft may experience sudden sink or airspeed changes, so extra caution is needed, especially during takeoff, landing, or low-level flight.",
+    "reference": "FAA Aviation Weather Handbook, Virga, Downdrafts, and Microbursts; Transport Canada Flight Training Manual, Wind Shear",
+    "media": []
+  },
+  {
+    "id": "MET-507",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "rain",
+      "drizzle",
+      "droplet-size"
+    ],
+    "question": "What is one practical difference between rain and drizzle?",
+    "choices": [
+      {
+        "text": "Drizzle has much smaller drops and is often associated with low stratus",
+        "correct": true
+      },
+      {
+        "text": "Drizzle always comes from thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Rain cannot reduce visibility",
+        "correct": false
+      },
+      {
+        "text": "Drizzle is made of ice pellets",
+        "correct": false
+      }
+    ],
+    "answer": "Drizzle has much smaller drops and is often associated with low stratus.",
+    "explanation": "Rain drops are larger than drizzle drops and can come from many cloud types. Drizzle is usually a stable-layer, low-cloud precipitation type. This distinction helps pilots infer the surrounding weather: drizzle often means low ceilings and widespread reduced visibility rather than isolated convective showers.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Present Weather; FAA Aviation Weather Handbook, Precipitation Types",
+    "media": []
+  },
+  {
+    "id": "MET-508",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "showers",
+      "precipitation",
+      "stability"
+    ],
+    "question": "What does showery precipitation usually suggest?",
+    "choices": [
+      {
+        "text": "Convective or unstable air with changing intensity",
+        "correct": true
+      },
+      {
+        "text": "Perfectly stable air with no vertical motion",
+        "correct": false
+      },
+      {
+        "text": "No turbulence risk",
+        "correct": false
+      },
+      {
+        "text": "Clear skies above",
+        "correct": false
+      }
+    ],
+    "answer": "Convective or unstable air with changing intensity.",
+    "explanation": "Showers are usually produced by convective clouds, where rising currents create localized precipitation. They often start and stop abruptly and can vary strongly over short distances. For pilots, showery precipitation can mean bumps, reduced visibility in shafts, lower cloud bases nearby, and possible stronger convective development.",
+    "reference": "FAA Aviation Weather Handbook, Stability and Showery Precipitation; Transport Canada Flight Training Manual, Air Masses and Stability",
+    "media": []
+  },
+  {
+    "id": "MET-509",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "continuous-precipitation",
+      "stratiform",
+      "warm-front"
+    ],
+    "question": "Continuous precipitation over a wide area is most often associated with:",
+    "choices": [
+      {
+        "text": "Layered cloud and stable lifting, such as near a warm front",
+        "correct": true
+      },
+      {
+        "text": "Isolated fair-weather cumulus only",
+        "correct": false
+      },
+      {
+        "text": "Completely dry air",
+        "correct": false
+      },
+      {
+        "text": "Mountain waves only",
+        "correct": false
+      }
+    ],
+    "answer": "Layered cloud and stable lifting, such as near a warm front.",
+    "explanation": "Widespread continuous rain or snow often forms when air is lifted gradually over a broad area. Warm fronts commonly produce this kind of layered cloud and precipitation. Operationally, it may bring long periods of low ceilings, reduced visibility, icing in cold layers, and fewer easy VFR gaps than a brief isolated shower.",
+    "reference": "FAA Aviation Weather Handbook, Fronts and Precipitation; Transport Canada Flight Training Manual, Fronts",
+    "media": []
+  },
+  {
+    "id": "MET-510",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "snow",
+      "visibility",
+      "vfr"
+    ],
+    "question": "Why can snow be especially challenging for VFR pilots?",
+    "choices": [
+      {
+        "text": "It can reduce forward visibility and obscure horizon or terrain contrast",
+        "correct": true
+      },
+      {
+        "text": "It always improves surface contrast",
+        "correct": false
+      },
+      {
+        "text": "It only occurs above cloud",
+        "correct": false
+      },
+      {
+        "text": "It removes icing risk",
+        "correct": false
+      }
+    ],
+    "answer": "It can reduce forward visibility and obscure horizon or terrain contrast.",
+    "explanation": "Snow can lower visibility quickly, especially when combined with low cloud, blowing snow, or flat light. Terrain and horizon cues may become weak or disappear, increasing disorientation risk. Even if the aircraft is outside cloud, a snow shower can make visual navigation and terrain avoidance difficult.",
+    "reference": "Transport Canada Flight Training Manual, Whiteout and Winter Weather; FAA Aviation Weather Handbook, Winter Weather Hazards",
+    "media": []
+  },
+  {
+    "id": "MET-511",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "blowing-snow",
+      "visibility",
+      "metar"
+    ],
+    "question": "How does blowing snow differ from falling snow?",
+    "choices": [
+      {
+        "text": "Blowing snow is snow lifted from the surface by wind, reducing visibility",
+        "correct": true
+      },
+      {
+        "text": "Blowing snow is rain that has frozen in cloud",
+        "correct": false
+      },
+      {
+        "text": "Blowing snow occurs only above 10,000 ft",
+        "correct": false
+      },
+      {
+        "text": "Blowing snow always means no surface wind",
+        "correct": false
+      }
+    ],
+    "answer": "Blowing snow is snow lifted from the surface by wind, reducing visibility.",
+    "explanation": "Blowing snow may occur even after precipitation has ended if there is loose snow and enough wind. It can reduce visibility near the surface and create drifting snow on runways and taxiways. A destination may have no current falling snow but still be unsuitable because blowing snow restricts visibility or contaminates the runway.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Obscurations; Transport Canada Flight Training Manual, Winter Operations",
+    "media": []
+  },
+  {
+    "id": "MET-512",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "ice-pellets",
+      "freezing-rain",
+      "scenario"
+    ],
+    "question": "The METAR changes from ice pellets to freezing rain as the temperature remains below 0 C. What does this trend suggest?",
+    "answer": "It suggests an increasing freezing precipitation hazard, likely with liquid drops reaching the surface and freezing on contact.",
+    "explanation": "Ice pellets mean the drops had enough cold air below to refreeze before reaching the surface. A change to freezing rain can mean the cold surface layer is shallower or the warm layer aloft is more influential, allowing liquid drops to reach the ground while still supercooled. For aircraft, this is a serious icing signal and should trigger avoidance.",
+    "reference": "FAA Aviation Weather Handbook, Freezing Precipitation; NAV CANADA Aviation Weather Services Guide, METAR/SPECI",
+    "media": []
+  },
+  {
+    "id": "MET-513",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "present-weather",
+      "intensity"
+    ],
+    "question": "In METAR present weather, what does the prefix `-` usually indicate?",
+    "choices": [
+      {
+        "text": "Light intensity",
+        "correct": true
+      },
+      {
+        "text": "Severe turbulence",
+        "correct": false
+      },
+      {
+        "text": "Freezing precipitation",
+        "correct": false
+      },
+      {
+        "text": "A forecast change",
+        "correct": false
+      }
+    ],
+    "answer": "Light intensity.",
+    "explanation": "In METAR weather groups, a minus sign indicates light intensity, while a plus sign indicates heavy intensity. No sign generally indicates moderate intensity. Light does not always mean safe; light freezing drizzle, light snow in marginal visibility, or light rain near freezing can still be operationally significant.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather",
+    "media": []
+  },
+  {
+    "id": "MET-514",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "metar",
+      "fzra",
+      "interpretation"
+    ],
+    "question": "What does `+FZRA` indicate?",
+    "choices": [
+      {
+        "text": "Heavy freezing rain",
+        "correct": true
+      },
+      {
+        "text": "Light rain showers",
+        "correct": false
+      },
+      {
+        "text": "Fog and rain nearby",
+        "correct": false
+      },
+      {
+        "text": "Freezing radiation",
+        "correct": false
+      }
+    ],
+    "answer": "Heavy freezing rain.",
+    "explanation": "`+` means heavy intensity, `FZ` means freezing, and `RA` means rain. Heavy freezing rain is an extreme aviation hazard because it can accumulate ice very rapidly. For a PPL in a light aircraft, the operational answer is avoidance, not penetration or close inspection.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR/SPECI Present Weather; FAA Aviation Weather Handbook, Freezing Rain",
+    "media": []
+  },
+  {
+    "id": "MET-515",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "hail",
+      "small-hail",
+      "graupel"
+    ],
+    "question": "What can small hail or snow pellets suggest about the atmosphere?",
+    "choices": [
+      {
+        "text": "Convective lifting and instability may be present",
+        "correct": true
+      },
+      {
+        "text": "The air is perfectly stable with no vertical currents",
+        "correct": false
+      },
+      {
+        "text": "There is no cloud nearby",
+        "correct": false
+      },
+      {
+        "text": "Freezing rain is impossible",
+        "correct": false
+      }
+    ],
+    "answer": "Convective lifting and instability may be present.",
+    "explanation": "Small hail, snow pellets, or graupel often form in convective clouds where droplets and ice particles are moved by vertical currents. They are clues that the atmosphere may be unstable and turbulent. Even if the precipitation is brief, the cloud producing it may contain stronger updrafts, downdrafts, and localized visibility reductions.",
+    "reference": "FAA Aviation Weather Handbook, Convective Clouds and Precipitation; Transport Canada Flight Training Manual, Stability",
+    "media": []
+  },
+  {
+    "id": "MET-516",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "precipitation",
+      "interpretation",
+      "learning"
+    ],
+    "question": "Explain how precipitation type can help a pilot infer the weather structure aloft.",
+    "answer": "Precipitation type gives clues about temperature, moisture, and vertical motion. Rain suggests liquid drops reaching the surface. Snow suggests the column is cold enough for ice crystals to survive. Ice pellets suggest melting aloft followed by refreezing below. Freezing rain or freezing drizzle suggests liquid drops are reaching a below-freezing surface layer. Hail suggests strong convective updrafts. Virga suggests dry air below cloud and possible downdrafts from evaporative cooling.",
+    "explanation": "A pilot should not treat precipitation codes as simple labels. They are evidence about the atmosphere between cloud and ground. That evidence helps identify icing risk, visibility reduction, turbulence, frontal structure, and whether the weather is stable and widespread or convective and localized.",
+    "reference": "FAA Aviation Weather Handbook, Precipitation Processes; Transport Canada Flight Training Manual, Weather Theory",
+    "media": []
+  },
+  {
+    "id": "MET-517",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "hail",
+      "thunderstorm",
+      "decision"
+    ],
+    "question": "ATC reports hail on the field 20 minutes before your planned arrival. The storm cell appears to be moving away, but lightning is still visible nearby. What should you do?",
+    "answer": "Delay or divert until the thunderstorm hazard has clearly moved away and conditions are safe.",
+    "explanation": "Hail means the storm has been strong. Even if it appears to be moving away, nearby lightning and recent hail suggest severe convective hazards may still be present: turbulence, gust fronts, wind shear, heavy precipitation, and hail outside the main core. A PPL should not rush an arrival just because the runway is technically visible.",
+    "reference": "Transport Canada Flight Training Manual, Thunderstorm Avoidance; FAA Aviation Weather Handbook, Thunderstorm Hazards",
+    "media": []
+  },
+  {
+    "id": "MET-518",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "precipitation",
+      "vfr",
+      "visibility"
+    ],
+    "question": "Which precipitation type can reduce visibility without necessarily producing large radar returns?",
+    "choices": [
+      {
+        "text": "Drizzle",
+        "correct": true
+      },
+      {
+        "text": "Clear blue sky",
+        "correct": false
+      },
+      {
+        "text": "Dry air",
+        "correct": false
+      },
+      {
+        "text": "High cirrus only",
+        "correct": false
+      }
+    ],
+    "answer": "Drizzle.",
+    "explanation": "Drizzle droplets are very small and often occur in shallow low cloud or fog. Depending on radar coverage, beam height, and droplet size, drizzle may not look impressive on radar. A pilot should compare radar with METARs, TAFs, GFAs, webcams where available, and actual visibility reports rather than relying on radar alone.",
+    "reference": "FAA Aviation Weather Handbook, Weather Radar Limitations and Precipitation; NAV CANADA Aviation Weather Services Guide",
+    "media": []
+  },
+  {
+    "id": "MET-519",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "virga",
+      "microburst",
+      "hot-dry"
+    ],
+    "question": "Why is virga often a warning sign in hot, dry conditions?",
+    "choices": [
+      {
+        "text": "Evaporating precipitation can create strong downdrafts and gusty outflow",
+        "correct": true
+      },
+      {
+        "text": "It proves no vertical motion exists",
+        "correct": false
+      },
+      {
+        "text": "It always means calm winds at the surface",
+        "correct": false
+      },
+      {
+        "text": "It removes turbulence risk",
+        "correct": false
+      }
+    ],
+    "answer": "Evaporating precipitation can create strong downdrafts and gusty outflow.",
+    "explanation": "In dry air, falling precipitation can evaporate rapidly. Evaporation cools the air and makes it denser, which can accelerate downward. The resulting downdraft may produce gusty winds, blowing dust, turbulence, and wind shear even where little or no rain reaches the ground.",
+    "reference": "FAA Aviation Weather Handbook, Virga and Microbursts; Transport Canada Flight Training Manual, Wind Shear",
+    "media": []
+  },
+  {
+    "id": "MET-520",
+    "topic": "Meteorology - Precipitation Types",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "freezing-precipitation",
+      "vfr"
+    ],
+    "question": "Your route forecast includes rain changing to ice pellets, then freezing rain, with surface temperatures falling below 0 C near your ETA. What is the best VFR decision?",
+    "answer": "Do not plan to fly that route during the changeover; delay, cancel, or choose a route that avoids the freezing precipitation area.",
+    "explanation": "The sequence shows a developing winter precipitation hazard with warm air aloft and cold air near the surface. Ice pellets and freezing rain are strong clues that serious icing is possible. A non-icing-equipped light aircraft should not be in the air while the atmosphere is transitioning into freezing precipitation. The safest choice is to avoid the time and place of the hazard.",
+    "reference": "FAA Aviation Weather Handbook, Winter Precipitation and Icing; Transport Canada Flight Training Manual, Aircraft Icing and Weather Decisions",
+    "media": []
+  }
+]

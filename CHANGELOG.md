@@ -35,6 +35,14 @@ This project uses semantic versioning.
 - `docker-compose.yml`: added `./data:/data` volume mount so JSON files at the
   repo root are accessible inside the container for import.
 
+- `scripts/md_to_json.ts` — one-off Markdown → JSON migration script (repo root).
+  Handles three source formats: MET-style (with Topic/Type/Difficulty/Tags),
+  Q-style (Topic/Type only), and Sample-style (type in heading, bold question).
+  Converts 923 cards from 17 source files with 0 warnings. Run from the repo
+  root: `npx tsx scripts/md_to_json.ts [--verbose]`.
+- `data/questions/*.json` — 923 migrated question cards committed as the
+  portable source of truth for all deployments.
+
 ### Changed
 
 - `app/prisma/seed.ts`: after seeding the user and deck, automatically imports

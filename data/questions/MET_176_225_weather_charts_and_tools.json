@@ -1,0 +1,948 @@
+[
+  {
+    "id": "MET-176",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "surface-analysis",
+      "symbols",
+      "fronts"
+    ],
+    "question": "![Surface analysis symbols](assets/MET-176_surface_analysis_symbols.png) Using the chart symbols shown in the asset, what do the blue triangles on a frontal boundary represent?",
+    "answer": "A cold front.",
+    "explanation": "On surface analysis charts, a cold front is shown by a line with blue triangles pointing in the direction the front is moving. Cold fronts are often associated with wind shifts, pressure changes, turbulence, showers, and possible thunderstorms.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Symbols; NAV CANADA Aviation Weather Services Guide, Weather Charts\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-6, NWS Surface Analysis Chart Symbols, extracted to `Questions/assets/MET-176_surface_analysis_symbols.png`",
+    "media": []
+  },
+  {
+    "id": "MET-177",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "surface-analysis",
+      "fronts",
+      "warm-front"
+    ],
+    "question": "![Surface analysis front symbols](assets/MET-177_surface_analysis_front_symbols.png) Using the chart symbols shown in the asset, what does a line with red semicircles represent?",
+    "answer": "A warm front.",
+    "explanation": "Warm fronts are commonly drawn with red semicircles pointing in the direction of movement. For pilots, warm fronts often mean widespread layered cloud, lowering ceilings, reduced visibility, steady precipitation, and possible icing in cold air.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Symbols\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-6, NWS Surface Analysis Chart Symbols, extracted to `Questions/assets/MET-177_surface_analysis_front_symbols.png`",
+    "media": []
+  },
+  {
+    "id": "MET-178",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "surface-analysis",
+      "pressure-systems",
+      "isobars"
+    ],
+    "question": "![Surface analysis overview](assets/MET-178_surface_analysis_overview.png) On a surface analysis chart, what do closely spaced isobars indicate?",
+    "answer": "A strong pressure gradient and therefore stronger winds.",
+    "explanation": "Isobars connect areas of equal pressure. When they are close together, pressure changes rapidly over a short distance, producing stronger wind. For VFR pilots, tight isobars suggest crosswind, mechanical turbulence, and enroute groundspeed concerns.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart; NAV CANADA Aviation Weather Services Guide, Weather Charts\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-7 discussion area, extracted to `Questions/assets/MET-178_surface_analysis_overview.png`",
+    "media": []
+  },
+  {
+    "id": "MET-179",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "station-plot",
+      "surface-analysis",
+      "decoding"
+    ],
+    "question": "![Station plot model](assets/MET-179_station_plot_model.png) In a station plot model, what weather information is normally shown by the wind barb attached to the station circle?",
+    "answer": "Wind direction and wind speed.",
+    "explanation": "The shaft of the wind barb points from the direction the wind is coming from, and the feathers or pennants show wind speed. This lets pilots quickly see surface wind patterns across a weather chart.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Station Plot Models\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-10, NWS Surface Analysis Chart Station Plot Model, extracted to `Questions/assets/MET-179_station_plot_model.png`",
+    "media": []
+  },
+  {
+    "id": "MET-180",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "station-plot",
+      "pressure",
+      "decoding"
+    ],
+    "question": "![Station plot decode practice](assets/MET-180_station_plot_decode_practice.png) On a station plot, why is the sea level pressure often coded with only the last three digits?",
+    "answer": "To save space on the chart; the pilot must reconstruct the full pressure value by adding either 9 or 10 in front and placing the decimal before the last digit.",
+    "explanation": "A plotted pressure of `132` usually means 1013.2 hPa, while `982` usually means 998.2 hPa. Choose the value that gives a realistic sea level pressure.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Station Plot Models; NAV CANADA Aviation Weather Services Guide, METAR Sea Level Pressure Remarks\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-10, NWS Surface Analysis Chart Station Plot Model, extracted to `Questions/assets/MET-180_station_plot_decode_practice.png`",
+    "media": []
+  },
+  {
+    "id": "MET-181",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "station-plot",
+      "aviation-chart",
+      "plotted-data"
+    ],
+    "question": "![Aviation station plot](assets/MET-181_surface_analysis_station_plot_aviation.png) What is the main advantage of station plots on a surface analysis chart?",
+    "answer": "They allow a pilot to see many observed weather elements at many stations at once.",
+    "explanation": "Station plots compress wind, sky cover, visibility, pressure, weather, temperature, dew point, and pressure tendency into a compact symbol. This helps pilots recognize regional weather patterns rather than focusing on one airport only.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Aviation Interests Station Plot Model\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-12, Surface Analysis Chart for Aviation Interests Station Plot Model, extracted to `Questions/assets/MET-181_surface_analysis_station_plot_aviation.png`",
+    "media": []
+  },
+  {
+    "id": "MET-182",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "wind-barbs",
+      "chart-symbols",
+      "winds"
+    ],
+    "question": "![Wind barb symbols](assets/MET-182_wind_barb_symbols.png) Using the asset, what does one long wind barb represent?",
+    "answer": "10 knots.",
+    "explanation": "Wind barb feathers are additive: a short barb is 5 kt, a long barb is 10 kt, and a pennant is 50 kt.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Sample Wind Symbols\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-14, NWS Surface Analysis Chart Sample Wind Symbols, extracted to `Questions/assets/MET-182_wind_barb_symbols.png`",
+    "media": []
+  },
+  {
+    "id": "MET-183",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "wind-barbs",
+      "speed",
+      "decoding"
+    ],
+    "question": "![Wind barb speed practice](assets/MET-183_wind_barb_speed_practice.png) How would you decode a wind barb with one pennant, one long barb, and one short barb?",
+    "answer": "65 knots.",
+    "explanation": "A pennant is 50 kt, a long barb is 10 kt, and a short barb is 5 kt. Added together, they indicate 65 kt.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Sample Wind Symbols\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-14, NWS Surface Analysis Chart Sample Wind Symbols, extracted to `Questions/assets/MET-183_wind_barb_speed_practice.png`",
+    "media": []
+  },
+  {
+    "id": "MET-184",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "wind-barbs",
+      "direction",
+      "true-north"
+    ],
+    "question": "![Wind barb direction practice](assets/MET-184_wind_barb_direction_practice.png) On weather charts, wind barbs point toward the station circle from the direction the wind is coming. If the shaft extends from the station circle toward the northwest, what is the wind direction?",
+    "answer": "Northwest wind.",
+    "explanation": "Wind direction in weather products is the direction from which the wind blows. A barb extending toward the northwest indicates wind coming from the northwest.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Station Plot Models; NAV CANADA Aviation Weather Services Guide, Weather Charts\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-14, NWS Surface Analysis Chart Sample Wind Symbols, extracted to `Questions/assets/MET-184_wind_barb_direction_practice.png`",
+    "media": []
+  },
+  {
+    "id": "MET-185",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "wind-barbs",
+      "calm-wind",
+      "station-plot"
+    ],
+    "question": "![Calm and variable wind symbols](assets/MET-185_wind_barb_calm_variable.png) On a station plot, how is calm wind commonly shown?",
+    "answer": "By a circle around the station with no wind shaft.",
+    "explanation": "Calm wind symbols differ from normal wind barbs because there is no meaningful direction to plot. Pilots should still check nearby stations and forecasts because calm surface wind does not rule out wind aloft or fog risk.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Sample Wind Symbols\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-14, NWS Surface Analysis Chart Sample Wind Symbols, extracted to `Questions/assets/MET-185_wind_barb_calm_variable.png`",
+    "media": []
+  },
+  {
+    "id": "MET-186",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "pressure-tendency",
+      "station-plot",
+      "trends"
+    ],
+    "question": "![Pressure trend symbols](assets/MET-186_pressure_trend_symbols.png) Why is pressure tendency useful to pilots when reading surface analysis or station plot information?",
+    "answer": "It helps identify whether pressure is rising, falling, or changing rapidly, which can indicate approaching or departing weather systems.",
+    "explanation": "Rapid pressure falls can suggest an approaching low or frontal system. Pressure trends should be considered with wind, cloud, visibility, radar, and forecast products.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Pressure Trends\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-15, Surface Analysis Chart Pressure Trends, extracted to `Questions/assets/MET-186_pressure_trend_symbols.png`",
+    "media": []
+  },
+  {
+    "id": "MET-187",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "sky-cover",
+      "station-plot",
+      "symbols"
+    ],
+    "question": "![Sky cover symbols](assets/MET-187_sky_cover_symbols.png) On a station plot, what does a completely filled station circle indicate?",
+    "answer": "Overcast sky cover.",
+    "explanation": "The amount of fill in the station circle indicates sky cover. A completely filled circle represents overcast conditions.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 25, Surface Analysis Chart Sky Cover Symbols\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 25-16, Surface Analysis Chart Sky Cover Symbols, extracted to `Questions/assets/MET-187_sky_cover_symbols.png`",
+    "media": []
+  },
+  {
+    "id": "MET-188",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "surface-analysis",
+      "valid-time",
+      "briefing"
+    ],
+    "question": "What should a pilot check before using any surface analysis chart for flight planning?",
+    "choices": [
+      {
+        "text": "The chart valid time",
+        "correct": true
+      },
+      {
+        "text": "The aircraft registration marks",
+        "correct": false
+      },
+      {
+        "text": "The fuel octane",
+        "correct": false
+      },
+      {
+        "text": "The seat position",
+        "correct": false
+      }
+    ],
+    "answer": "The chart valid time",
+    "explanation": "Weather charts are time-sensitive. A surface analysis chart shows analyzed conditions at a specific valid time; it is not a route forecast by itself.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Charts; FAA Aviation Weather Handbook, Ch. 25",
+    "media": []
+  },
+  {
+    "id": "MET-189",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "surface-analysis",
+      "preflight",
+      "interpretation"
+    ],
+    "question": "How can a surface analysis chart help a VFR pilot make a weather decision?",
+    "answer": "It helps the pilot see the broad weather pattern: highs, lows, fronts, troughs, ridges, isobars, wind patterns, and areas of significant weather. This gives context for METARs, TAFs, GFAs, radar, and satellite imagery.",
+    "explanation": "A single METAR only describes one point. A surface analysis chart helps explain why weather is changing and where deteriorating conditions may move next.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Charts; FAA Aviation Weather Handbook, Ch. 25",
+    "media": []
+  },
+  {
+    "id": "MET-190",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "radar",
+      "composite-reflectivity",
+      "precipitation"
+    ],
+    "question": "![Composite reflectivity radar](assets/MET-190_radar_composite_reflectivity.png) What does composite reflectivity radar show?",
+    "answer": "The strongest radar return detected in a vertical column of the atmosphere.",
+    "explanation": "Composite reflectivity can reveal stronger precipitation aloft that may not appear as strongly on the lowest radar slice. It is useful for identifying convective intensity, but it can make precipitation appear more widespread or intense than what is occurring at low altitude.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-12, Regional Radar Mosaic Example Using Composite Reflectivity, extracted to `Questions/assets/MET-190_radar_composite_reflectivity.png`",
+    "media": []
+  },
+  {
+    "id": "MET-191",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "radar",
+      "base-reflectivity",
+      "precipitation"
+    ],
+    "question": "![Base reflectivity radar](assets/MET-191_radar_base_reflectivity.png) What does base reflectivity radar show?",
+    "answer": "Radar reflectivity from the lowest available radar elevation scan.",
+    "explanation": "Base reflectivity is useful for seeing precipitation closer to lower altitudes, but it may miss stronger precipitation aloft or weather hidden by terrain, range, or beam geometry.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-13, Regional Radar Mosaic Example Using Base Reflectivity, extracted to `Questions/assets/MET-191_radar_base_reflectivity.png`",
+    "media": []
+  },
+  {
+    "id": "MET-192",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "radar",
+      "echo-tops",
+      "thunderstorm"
+    ],
+    "question": "![Radar echo tops](assets/MET-192_radar_echo_tops.png) What does an echo tops radar product indicate?",
+    "answer": "The altitude of the top of radar-detectable precipitation echoes, often using a threshold such as 18 dBZ.",
+    "explanation": "Echo tops are not the same as cloud tops. Cloud tops can be higher than the top of the precipitation echo, especially in thunderstorms.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-14, Regional Radar Mosaic Example Using Echo Tops, extracted to `Questions/assets/MET-192_radar_echo_tops.png`",
+    "media": []
+  },
+  {
+    "id": "MET-193",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "radar",
+      "composite-vs-base",
+      "interpretation"
+    ],
+    "question": "![Composite versus base reflectivity](assets/MET-193_composite_vs_base_reflectivity.png) Why should a pilot understand the difference between composite reflectivity and base reflectivity?",
+    "answer": "Because composite reflectivity shows the strongest return anywhere in the vertical column, while base reflectivity shows the lowest scan; each can emphasize different hazards.",
+    "explanation": "Composite reflectivity may highlight elevated convective cores, while base reflectivity may better represent precipitation closer to the surface. Pilots should avoid using a single radar product as the whole weather picture.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-12, Regional Radar Mosaic Example Using Composite Reflectivity, extracted to `Questions/assets/MET-193_composite_vs_base_reflectivity.png`",
+    "media": []
+  },
+  {
+    "id": "MET-194",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "radar",
+      "base-reflectivity",
+      "limitations"
+    ],
+    "question": "![Base reflectivity lowest slice](assets/MET-194_base_reflectivity_lowest_slice.png) Why might base reflectivity fail to show the full strength of a thunderstorm?",
+    "answer": "It uses the lowest available radar elevation scan, so stronger precipitation or hail cores aloft may not be fully represented.",
+    "explanation": "Thunderstorms are three-dimensional. Pilots should use radar together with echo tops, satellite imagery, lightning information, forecasts, PIREPs, and visual avoidance.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-13, Regional Radar Mosaic Example Using Base Reflectivity, extracted to `Questions/assets/MET-194_base_reflectivity_lowest_slice.png`",
+    "media": []
+  },
+  {
+    "id": "MET-195",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "radar",
+      "convective-precipitation",
+      "thunderstorm"
+    ],
+    "question": "![Convective radar example](assets/MET-195_convective_radar_example.png) What radar pattern is commonly associated with convective precipitation?",
+    "answer": "Cellular or sharply defined areas of stronger reflectivity, often with rapid changes in intensity.",
+    "explanation": "Convective precipitation is associated with vertical development, strong updrafts and downdrafts, turbulence, hail, lightning, and heavy showers. VFR pilots should give convective cells wide clearance.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 15, Weather Radar, Convective Precipitation\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 15-20, WSR-88D Convective Precipitation Example, extracted to `Questions/assets/MET-195_convective_radar_example.png`",
+    "media": []
+  },
+  {
+    "id": "MET-196",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "radar",
+      "stratiform-precipitation",
+      "widespread-weather"
+    ],
+    "question": "![Stratiform radar example](assets/MET-196_stratiform_radar_example.png) What radar pattern is commonly associated with stratiform precipitation?",
+    "answer": "Broad, more uniform areas of precipitation.",
+    "explanation": "Stratiform precipitation is often associated with layered cloud, widespread lower ceilings, reduced visibility, and steady rain or snow. It may look less intense than thunderstorms but can still make a route unsuitable for VFR.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 15, Weather Radar, Stratiform Precipitation\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 15-21, WSR-88D Stratiform Precipitation Example, extracted to `Questions/assets/MET-196_stratiform_radar_example.png`",
+    "media": []
+  },
+  {
+    "id": "MET-197",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "radar",
+      "anomalous-propagation",
+      "false-returns"
+    ],
+    "question": "![Anomalous propagation radar](assets/MET-197_anomalous_propagation_radar.png) What is anomalous propagation on weather radar?",
+    "answer": "False or misleading radar echoes caused by unusual bending of the radar beam, often due to atmospheric refraction.",
+    "explanation": "Anomalous propagation can make ground targets appear as precipitation. Pilots should compare radar with satellite, METARs, PIREPs, and the larger weather situation before assuming every return is real precipitation.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 15, Weather Radar, Anomalous Propagation\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 15-17, WSR-88D Weather Radar AP Example, extracted to `Questions/assets/MET-197_anomalous_propagation_radar.png`",
+    "media": []
+  },
+  {
+    "id": "MET-198",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "radar",
+      "attenuation",
+      "thunderstorm"
+    ],
+    "question": "![Radar attenuation](assets/MET-198_radar_attenuation.png) Why is radar attenuation dangerous when interpreting intense precipitation?",
+    "answer": "Heavy precipitation can weaken or block the radar beam, hiding more severe weather behind the first strong return.",
+    "explanation": "An area behind a very strong cell may appear weaker or clear because the radar energy has been absorbed or scattered. This is one reason pilots should not attempt to pick through thunderstorms using radar alone.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 15, Weather Radar, Precipitation Attenuation\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 15-4, Precipitation Attenuation, extracted to `Questions/assets/MET-198_radar_attenuation.png`",
+    "media": []
+  },
+  {
+    "id": "MET-199",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "radar",
+      "beam-blockage",
+      "terrain"
+    ],
+    "question": "![Radar beam blockage](assets/MET-199_radar_beam_blockage.png) What is radar beam blockage?",
+    "answer": "Terrain or obstacles block part of the radar beam, reducing or eliminating radar coverage behind the blockage.",
+    "explanation": "Radar coverage can be poor in mountainous areas or at low altitudes. A lack of radar returns does not always mean there is no weather.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 15, Weather Radar, Beam Blockage\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 15-13, WSR-88D Weather Radar Beam Blockage Example, extracted to `Questions/assets/MET-199_radar_beam_blockage.png`",
+    "media": []
+  },
+  {
+    "id": "MET-200",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "satellite",
+      "geocolor",
+      "cloud-patterns"
+    ],
+    "question": "![GeoColor satellite image](assets/MET-200_geocolor_satellite.png) What is a GeoColor satellite image useful for?",
+    "answer": "It gives an easy visual overview of cloud patterns and larger-scale weather features.",
+    "explanation": "GeoColor imagery combines multiple satellite channels into a visually intuitive product. It is useful for situational awareness, but pilots should still compare it with METARs, TAFs, GFAs, radar, and PIREPs.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Satellite Observations\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-21, GeoColor Satellite Image Example, extracted to `Questions/assets/MET-200_geocolor_satellite.png`",
+    "media": []
+  },
+  {
+    "id": "MET-201",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "satellite",
+      "visible",
+      "daylight"
+    ],
+    "question": "![Visible satellite image](assets/MET-201_visible_satellite.png) What does visible satellite imagery show?",
+    "answer": "Reflected sunlight from clouds and the Earth's surface.",
+    "explanation": "Visible imagery can show cloud texture and low cloud detail well during daylight, but it is not useful in darkness because it depends on sunlight.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Visible Satellite Imagery\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-22, Visible Satellite Image Example, extracted to `Questions/assets/MET-201_visible_satellite.png`",
+    "media": []
+  },
+  {
+    "id": "MET-202",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "satellite",
+      "infrared",
+      "cloud-tops"
+    ],
+    "question": "![Infrared satellite image](assets/MET-202_infrared_satellite.png) What does infrared satellite imagery primarily display?",
+    "answer": "Temperature patterns of the Earth, cloud tops, and atmosphere.",
+    "explanation": "Colder cloud tops usually indicate higher clouds. Infrared imagery can be useful at night, unlike visible imagery.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Infrared Satellite Imagery\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-24, Infrared Satellite Image Example, extracted to `Questions/assets/MET-202_infrared_satellite.png`",
+    "media": []
+  },
+  {
+    "id": "MET-203",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "satellite",
+      "visible",
+      "limitation"
+    ],
+    "question": "![Visible satellite daylight limitation](assets/MET-203_visible_satellite_daylight_limit.png) What is the major limitation of visible satellite imagery for a night VFR flight?",
+    "answer": "It depends on reflected sunlight, so it is not useful after dark.",
+    "explanation": "At night, pilots should rely more on infrared satellite imagery, METARs, TAFs, GFAs, radar, PIREPs, and briefings.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Visible Satellite Imagery\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-22, Visible Satellite Image Example, extracted to `Questions/assets/MET-203_visible_satellite_daylight_limit.png`",
+    "media": []
+  },
+  {
+    "id": "MET-204",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "satellite",
+      "infrared",
+      "thunderstorms"
+    ],
+    "question": "![Infrared cloud tops](assets/MET-204_infrared_cloud_tops.png) On infrared satellite imagery, what does a very cold cloud-top signature often suggest?",
+    "answer": "High cloud tops, which may indicate deep convection or high-level cloud.",
+    "explanation": "Infrared imagery senses temperature. Since temperature generally decreases with altitude in the troposphere, very cold cloud tops are often high. Pilots should compare this with radar and forecasts to identify thunderstorm risk.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Infrared Satellite Imagery\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 24-24, Infrared Satellite Image Example, extracted to `Questions/assets/MET-204_infrared_cloud_tops.png`",
+    "media": []
+  },
+  {
+    "id": "MET-205",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "satellite",
+      "water-vapor",
+      "upper-air"
+    ],
+    "question": "What is water vapour satellite imagery mainly used to assess?",
+    "choices": [
+      {
+        "text": "Moisture patterns in the middle and upper atmosphere",
+        "correct": true
+      },
+      {
+        "text": "Runway braking action",
+        "correct": false
+      },
+      {
+        "text": "Exact surface visibility at an airport",
+        "correct": false
+      },
+      {
+        "text": "Fuel temperature",
+        "correct": false
+      }
+    ],
+    "answer": "Moisture patterns in the middle and upper atmosphere",
+    "explanation": "Water vapour imagery helps identify larger-scale moisture, dry slots, and upper-level features. It does not directly show low cloud or surface visibility.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Water Vapor Satellite Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-206",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "satellite",
+      "radar",
+      "comparison"
+    ],
+    "question": "Why should pilots compare satellite imagery with radar rather than using either product alone?",
+    "answer": "Satellite imagery shows cloud patterns and cloud-top information, while radar shows precipitation echoes. A cloud layer may not appear on radar if it has little or no precipitation, and radar may not show cloud tops.",
+    "explanation": "Combining products gives a more complete picture. Satellite can reveal cloud shields and convective growth, while radar helps locate precipitation intensity and movement.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar and Satellite Observations; NAV CANADA Aviation Weather Services Guide, Radar and Satellite Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-207",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "satellite",
+      "low-cloud",
+      "vfr"
+    ],
+    "question": "A visible satellite image shows a widespread smooth grey cloud layer over your route, but radar shows little precipitation. What hazard may still exist for a VFR pilot?",
+    "answer": "Widespread cloud cover, low ceilings, or poor VFR conditions may still exist even without radar precipitation.",
+    "explanation": "Radar is primarily a precipitation tool. Non-precipitating low stratus can create a serious VFR ceiling problem while producing little or no radar return.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24, Radar and Satellite Observations; NAV CANADA Aviation Weather Services Guide, Satellite Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-208",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "winds-aloft",
+      "fb",
+      "forecast"
+    ],
+    "question": "What is an upper wind and temperature forecast used for?",
+    "choices": [
+      {
+        "text": "Estimating winds and temperatures aloft for navigation, groundspeed, fuel planning, and performance",
+        "correct": true
+      },
+      {
+        "text": "Measuring runway friction",
+        "correct": false
+      },
+      {
+        "text": "Reporting actual cloud base at one airport",
+        "correct": false
+      },
+      {
+        "text": "Replacing the altimeter setting",
+        "correct": false
+      }
+    ],
+    "answer": "Estimating winds and temperatures aloft for navigation, groundspeed, fuel planning, and performance",
+    "explanation": "Winds aloft affect heading, groundspeed, fuel burn, endurance, diversion planning, and turbulence expectations.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB); FAA Aviation Weather Handbook, Ch. 27",
+    "media": []
+  },
+  {
+    "id": "MET-209",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "winds-aloft",
+      "fb",
+      "decoding"
+    ],
+    "question": "In an upper wind forecast, decode `2708+05`.",
+    "answer": "Wind from 270 degrees true at 8 knots, temperature +5 degrees C.",
+    "explanation": "In the common FB wind-temperature format, the first two digits represent direction in tens of degrees, the next two represent speed in knots, and the final signed value is temperature.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB); FAA Aviation Weather Handbook, Ch. 27",
+    "media": []
+  },
+  {
+    "id": "MET-210",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "fb",
+      "decoding-table"
+    ],
+    "question": "![FB winds aloft decoding table](assets/MET-210_fb_winds_aloft_decoding_table.png) Using the coding examples shown in the asset, what does `9900` mean in a winds aloft forecast?",
+    "answer": "Light and variable wind, less than 5 knots.",
+    "explanation": "`9900` is a special code used when wind is light and variable.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 27, Table 27-1; NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB)\n\n**Asset Source:** `references/FAA Weather.pdf`, Table 27-1, Wind and Temperature Aloft Forecast Decoding Examples, extracted to `Questions/assets/MET-210_fb_winds_aloft_decoding_table.png`",
+    "media": []
+  },
+  {
+    "id": "MET-211",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "winds-aloft",
+      "fb",
+      "strong-wind"
+    ],
+    "question": "In an upper wind forecast, decode `731960`.",
+    "answer": "Wind from 230 degrees true at 119 knots, temperature -60 degrees C.",
+    "explanation": "For wind speeds of 100 kt or more, subtract 50 from the coded direction and add 100 to the coded speed. `73` becomes `23`, or 230 degrees, and `19` becomes 119 kt. At high levels, temperatures are assumed negative unless otherwise indicated.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 27, Table 27-1; NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB)",
+    "media": []
+  },
+  {
+    "id": "MET-212",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "true-direction",
+      "navigation"
+    ],
+    "question": "In aviation weather products, winds aloft directions are normally referenced to:",
+    "choices": [
+      {
+        "text": "True north",
+        "correct": true
+      },
+      {
+        "text": "Magnetic north only",
+        "correct": false
+      },
+      {
+        "text": "Runway heading only",
+        "correct": false
+      },
+      {
+        "text": "Compass north after deviation correction",
+        "correct": false
+      }
+    ],
+    "answer": "True north",
+    "explanation": "Weather wind directions are normally true. Pilots must account for magnetic variation when converting forecast winds into cockpit heading calculations.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB); FAA Aviation Weather Handbook, Ch. 27",
+    "media": []
+  },
+  {
+    "id": "MET-213",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "graphical-display",
+      "route-planning"
+    ],
+    "question": "![Graphical winds aloft display](assets/MET-213_fb_winds_aloft_graphical_display.png) What is the advantage of a graphical winds aloft display compared with a text table?",
+    "answer": "It helps the pilot quickly visualize wind patterns over a broad area and compare possible routes or altitudes.",
+    "explanation": "A text FB can be precise for selected stations, while a graphical display gives spatial context. Both should be checked for valid time and altitude.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 27, Graphical FB Wind and Temperature Aloft Forecast\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 27-1, FB Wind and Temperature Aloft Interactive Display Example, extracted to `Questions/assets/MET-213_fb_winds_aloft_graphical_display.png`",
+    "media": []
+  },
+  {
+    "id": "MET-214",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "altitude-selection",
+      "fuel-planning"
+    ],
+    "question": "![Graphical winds aloft display](assets/MET-214_graphical_winds_aloft_display.png) How can winds aloft information affect altitude selection on a VFR cross-country?",
+    "answer": "A pilot may choose an altitude with a weaker headwind, stronger tailwind, less turbulence, better temperature, or better terrain/cloud clearance.",
+    "explanation": "Winds aloft can change significantly with altitude. A small altitude change can improve groundspeed, fuel planning, and comfort.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 27, Graphical FB Wind and Temperature Aloft Forecast; Transport Canada Flight Training Manual, Pilot Navigation - Weather\n\n**Asset Source:** `references/FAA Weather.pdf`, Figure 27-1, FB Wind and Temperature Aloft Interactive Display Example, extracted to `Questions/assets/MET-214_graphical_winds_aloft_display.png`",
+    "media": []
+  },
+  {
+    "id": "MET-215",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "flight-planning",
+      "groundspeed"
+    ],
+    "question": "Why can a strong headwind aloft change a go/no-go decision even if ceiling and visibility are good?",
+    "answer": "A strong headwind can reduce groundspeed, increase time enroute, increase fuel burn, reduce reserve margin, and make alternates harder to reach.",
+    "explanation": "Weather decision-making includes performance and fuel margins, not only cloud and visibility. Winds aloft are therefore a safety factor for VFR pilots.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Choosing an Altitude; NAV CANADA Aviation Weather Services Guide, FB Forecast",
+    "media": []
+  },
+  {
+    "id": "MET-216",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "winds-aloft",
+      "turbulence",
+      "shear"
+    ],
+    "question": "Surface wind is light, but the winds aloft forecast shows 45 kt at 3,000 ft. What should a pilot consider?",
+    "answer": "Possible wind shear, mechanical turbulence near terrain, large groundspeed changes, and drift correction.",
+    "explanation": "Light surface wind does not guarantee smooth or weak wind aloft. A strong change in wind speed over a short height can be operationally significant.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast; FAA Aviation Weather Handbook, Wind and Turbulence",
+    "media": []
+  },
+  {
+    "id": "MET-217",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-tools",
+      "radar",
+      "satellite"
+    ],
+    "question": "Which product is best for identifying precipitation intensity and movement?",
+    "choices": [
+      {
+        "text": "Weather radar",
+        "correct": true
+      },
+      {
+        "text": "Visible satellite only",
+        "correct": false
+      },
+      {
+        "text": "Winds aloft table only",
+        "correct": false
+      },
+      {
+        "text": "Surface pressure chart only",
+        "correct": false
+      }
+    ],
+    "answer": "Weather radar",
+    "explanation": "Radar detects precipitation-sized targets and displays echo intensity. It is not a complete cloud or icing product.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Radar Imagery; FAA Aviation Weather Handbook, Ch. 24",
+    "media": []
+  },
+  {
+    "id": "MET-218",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "weather-tools",
+      "satellite",
+      "cloud-cover"
+    ],
+    "question": "Which product is usually better for seeing broad cloud shields that may not be producing precipitation?",
+    "choices": [
+      {
+        "text": "Satellite imagery",
+        "correct": true
+      },
+      {
+        "text": "Runway visual range",
+        "correct": false
+      },
+      {
+        "text": "Altimeter setting only",
+        "correct": false
+      },
+      {
+        "text": "Magnetic compass",
+        "correct": false
+      }
+    ],
+    "answer": "Satellite imagery",
+    "explanation": "Satellite imagery shows cloud patterns, while radar primarily shows precipitation. Broad non-precipitating stratus may be visible on satellite but not radar.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Satellite Imagery; FAA Aviation Weather Handbook, Ch. 24",
+    "media": []
+  },
+  {
+    "id": "MET-219",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-interpretation",
+      "radar",
+      "satellite",
+      "surface-analysis"
+    ],
+    "question": "Radar shows a narrow line of strong echoes approaching your route, satellite shows rapidly growing cloud tops, and the surface analysis shows a cold front nearby. What should a VFR pilot suspect?",
+    "answer": "Convective frontal weather, possibly thunderstorms or a squall line.",
+    "explanation": "Strong linear radar returns, growing cold cloud tops, and a cold front are consistent with hazardous convective development. A VFR pilot should delay, reroute, or obtain a detailed briefing rather than attempting to cross the line.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 24 and Ch. 25; NAV CANADA Aviation Weather Services Guide, Radar, Satellite, and Weather Charts",
+    "media": []
+  },
+  {
+    "id": "MET-220",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "weather-tools",
+      "limitations",
+      "preflight"
+    ],
+    "question": "Which statement about weather tools is safest?",
+    "choices": [
+      {
+        "text": "No single chart or image is enough by itself",
+        "correct": true
+      },
+      {
+        "text": "Radar proves all clouds are safe if no echoes appear",
+        "correct": false
+      },
+      {
+        "text": "Satellite replaces METARs and TAFs",
+        "correct": false
+      },
+      {
+        "text": "Winds aloft are only useful for IFR flights",
+        "correct": false
+      }
+    ],
+    "answer": "No single chart or image is enough by itself",
+    "explanation": "Good weather decisions compare current observations, forecasts, charts, radar, satellite, PIREPs, and briefings. Each product has limitations.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-221",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "product-validity",
+      "radar",
+      "satellite",
+      "briefing"
+    ],
+    "question": "You find a radar image that looks acceptable, but it is 90 minutes old. How should you treat it?",
+    "answer": "As stale information that should not be used alone for a current go/no-go decision.",
+    "explanation": "Radar and satellite products are time-sensitive. Convective weather can develop and move quickly. Always check the product time stamp and obtain current information.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips and Radar Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-222",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-charts",
+      "fronts",
+      "pressure"
+    ],
+    "question": "Which chart is best for identifying the position of highs, lows, fronts, troughs, ridges, and isobars?",
+    "choices": [
+      {
+        "text": "Surface analysis chart",
+        "correct": true
+      },
+      {
+        "text": "Carburettor icing chart only",
+        "correct": false
+      },
+      {
+        "text": "Aircraft weight and balance graph",
+        "correct": false
+      },
+      {
+        "text": "Airport diagram",
+        "correct": false
+      }
+    ],
+    "answer": "Surface analysis chart",
+    "explanation": "Surface analysis charts show the broad pressure pattern and frontal structure. They help explain current and expected weather trends.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Charts; FAA Aviation Weather Handbook, Ch. 25",
+    "media": []
+  },
+  {
+    "id": "MET-223",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-interpretation",
+      "vfr",
+      "weather-decision"
+    ],
+    "question": "Your route has no radar echoes, but satellite imagery shows a widespread low cloud deck, METARs along the route report BKN006, and the surface analysis shows moist onshore flow. What is the main VFR hazard?",
+    "answer": "Low ceilings along the route despite little or no precipitation.",
+    "explanation": "Radar can look quiet when low stratus is the main hazard. Satellite, METARs, and surface flow give the better clues for ceiling problems.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Satellite Imagery, METAR, and Weather Charts; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-224",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "weather-briefing",
+      "tools",
+      "cross-country"
+    ],
+    "question": "For a VFR cross-country, list five weather chart or tool items you should check before departure.",
+    "answer": "Examples include surface analysis chart, GFA or area forecast, METARs/SPECIs, TAFs, radar imagery, satellite imagery, winds aloft, PIREPs, AIRMETs/SIGMETs, and NOTAM/weather briefing information.",
+    "explanation": "Cross-country weather decisions require both current conditions and forecast trends across the whole route, not just the departure airport.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-225",
+    "topic": "Meteorology - Weather Charts and Tools",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-interpretation",
+      "go-no-go",
+      "route-planning"
+    ],
+    "question": "You plan a VFR flight. The surface analysis shows a deep low with tight isobars crossing your route, radar shows widespread precipitation, satellite shows an extensive cloud shield, and winds aloft forecast a strong headwind. What is the safest conclusion?",
+    "answer": "The weather picture is unfavorable for a simple VFR flight; delay, reroute, or obtain a detailed FIC briefing before considering departure.",
+    "explanation": "Tight isobars suggest strong winds and turbulence, radar shows precipitation, satellite shows widespread cloud, and winds aloft reduce performance and fuel margins. The combined picture matters more than any single product.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips, Radar, Satellite, Weather Charts, and FB Forecast; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  }
+]

@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "MET-126",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "nav-canada",
+      "weather-services",
+      "canadian-products"
+    ],
+    "question": "Who is responsible for providing civil aviation weather services in Canadian domestic airspace?",
+    "choices": [
+      {
+        "text": "Federal Aviation Administration",
+        "correct": false
+      },
+      {
+        "text": "NAV CANADA",
+        "correct": true
+      },
+      {
+        "text": "Transport Canada only",
+        "correct": false
+      },
+      {
+        "text": "Local flying clubs",
+        "correct": false
+      }
+    ],
+    "answer": "NAV CANADA",
+    "explanation": "NAV CANADA provides civil air navigation services in Canada, including the aviation weather program. Much of the meteorological information originates from Environment and Climate Change Canada through service arrangements.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Introduction and Aviation Weather Services; Environment and Climate Change Canada, \"How to use aviation weather services\"",
+    "media": []
+  },
+  {
+    "id": "MET-127",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "fic",
+      "pilot-briefing",
+      "weather-briefing"
+    ],
+    "question": "Which Canadian service provides a fully interpretive aviation weather briefing for pilots?",
+    "choices": [
+      {
+        "text": "Flight Information Centre (FIC) Pilot Briefing Service",
+        "correct": true
+      },
+      {
+        "text": "ATIS only",
+        "correct": false
+      },
+      {
+        "text": "ELT monitoring service",
+        "correct": false
+      },
+      {
+        "text": "Runway condition report only",
+        "correct": false
+      }
+    ],
+    "answer": "Flight Information Centre (FIC) Pilot Briefing Service",
+    "explanation": "FICs provide interpretive weather briefings, flight planning support, NOTAM information, and other pre-flight and in-flight information services. This is especially useful when weather is complex or changing quickly.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Flight Information Centres and Pilot Briefing Service",
+    "media": []
+  },
+  {
+    "id": "MET-128",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "self-briefing",
+      "awws",
+      "cfps",
+      "fic"
+    ],
+    "question": "What is the difference between self-briefing with online Canadian aviation weather products and calling a FIC briefer?",
+    "answer": "Self-briefing lets a pilot review products such as METARs, TAFs, GFAs, PIREPs, radar, satellite imagery, weather charts, and NOTAMs directly. Calling a FIC briefer adds professional interpretation of the weather situation, tailored to the planned route, timing, altitude, aircraft, and pilot questions.",
+    "explanation": "Both methods can be useful. A good practice is to review the big weather picture first, then contact a briefer when the situation is complicated, marginal, or changing.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Aviation Weather Web Site and Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-129",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "current-weather",
+      "forecast-weather"
+    ],
+    "question": "Which pair contains one current weather product and one forecast weather product?",
+    "choices": [
+      {
+        "text": "METAR and TAF",
+        "correct": true
+      },
+      {
+        "text": "TAF and GFA only",
+        "correct": false
+      },
+      {
+        "text": "SIGMET and AIRMET only",
+        "correct": false
+      },
+      {
+        "text": "Satellite and radar only",
+        "correct": false
+      }
+    ],
+    "answer": "METAR and TAF",
+    "explanation": "A METAR reports actual observed weather. A TAF forecasts expected weather at an aerodrome for a future period.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Aviation Weather Information and Weather Product Summary",
+    "media": []
+  },
+  {
+    "id": "MET-130",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "speci",
+      "observation"
+    ],
+    "question": "What is the main difference between a METAR and a SPECI?",
+    "choices": [
+      {
+        "text": "METARs are forecasts; SPECIs are charts",
+        "correct": false
+      },
+      {
+        "text": "METARs are routine observations; SPECIs are special observations issued for significant weather changes",
+        "correct": true
+      },
+      {
+        "text": "SPECIs are only used in the United States",
+        "correct": false
+      },
+      {
+        "text": "METARs are only issued by automated stations",
+        "correct": false
+      }
+    ],
+    "answer": "METARs are routine observations; SPECIs are special observations issued for significant weather changes",
+    "explanation": "In Canada, routine surface weather observations are disseminated as METARs on the hour. SPECI reports are issued at other times when specified significant changes occur.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Surface Weather Observations (METAR / SPECI / LWIS)",
+    "media": []
+  },
+  {
+    "id": "MET-131",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "awos",
+      "lwis",
+      "auto",
+      "observations"
+    ],
+    "question": "What does `AUTO` in a Canadian METAR or SPECI indicate?",
+    "choices": [
+      {
+        "text": "The forecast is automatically valid for 24 hours",
+        "correct": false
+      },
+      {
+        "text": "The observation was taken by an automated weather observation system",
+        "correct": true
+      },
+      {
+        "text": "The report is not usable for flight planning",
+        "correct": false
+      },
+      {
+        "text": "The wind direction is magnetic",
+        "correct": false
+      }
+    ],
+    "answer": "The observation was taken by an automated weather observation system",
+    "explanation": "`AUTO` indicates that the observation was produced by automated sensors. Pilots should understand local automated station limitations, especially for elements such as thunderstorms where sensor coverage may matter.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description; AWOS and LWIS",
+    "media": []
+  },
+  {
+    "id": "MET-132",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "lwis",
+      "awos",
+      "observations"
+    ],
+    "question": "Which statement best describes a Canadian LWIS report?",
+    "choices": [
+      {
+        "text": "It is a full manual METAR with cloud and visibility observations",
+        "correct": false
+      },
+      {
+        "text": "It is a limited automated report containing wind, altimeter setting, temperature, and dew point",
+        "correct": true
+      },
+      {
+        "text": "It is a thunderstorm forecast",
+        "correct": false
+      },
+      {
+        "text": "It is a pilot report",
+        "correct": false
+      }
+    ],
+    "answer": "It is a limited automated report containing wind, altimeter setting, temperature, and dew point",
+    "explanation": "LWIS stands for Limited Weather Information System. It is useful, but it does not provide the full suite of weather elements available from a METAR or many AWOS installations.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Surface Weather Observations (METAR / SPECI / LWIS)",
+    "media": []
+  },
+  {
+    "id": "MET-133",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "interpretation",
+      "wind"
+    ],
+    "question": "Decode the wind group in this METAR excerpt: `CYXE 292000Z 30015G25KT`.",
+    "answer": "The wind is from 300 degrees true at 15 knots, gusting to 25 knots.",
+    "explanation": "In the METAR wind group, the first three digits give direction in degrees true, followed by wind speed in knots. `G25KT` means gusts to 25 knots.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-134",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "metar",
+      "rvr",
+      "interpretation"
+    ],
+    "question": "Decode the RVR group in this METAR excerpt: `R33/4000FT/D`.",
+    "answer": "The runway visual range for Runway 33 is 4,000 ft and the tendency is downward.",
+    "explanation": "`R33` identifies the runway, `4000FT` gives the RVR value, and `/D` indicates a downward trend. `/U` would mean upward and `/N` no change.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-135",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "visibility",
+      "weather-codes"
+    ],
+    "question": "In a Canadian METAR, what does `-RA BR` mean?",
+    "choices": [
+      {
+        "text": "Heavy rain and blowing snow",
+        "correct": false
+      },
+      {
+        "text": "Light rain and mist",
+        "correct": true
+      },
+      {
+        "text": "Freezing rain and haze",
+        "correct": false
+      },
+      {
+        "text": "Recent rain and fog",
+        "correct": false
+      }
+    ],
+    "answer": "Light rain and mist",
+    "explanation": "The minus sign means light intensity, `RA` means rain, and `BR` means mist.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Significant Present Weather Codes",
+    "media": []
+  },
+  {
+    "id": "MET-136",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "sky-condition",
+      "interpretation"
+    ],
+    "question": "Decode the sky condition `BKN008 OVC040`.",
+    "answer": "Broken cloud at 800 ft AGL and overcast cloud at 4,000 ft AGL.",
+    "explanation": "Cloud heights in METARs are given in hundreds of feet above ground level. `BKN` means 5/8 to 7/8 sky coverage; `OVC` means 8/8 coverage.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-137",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ceiling",
+      "metar",
+      "cloud-cover"
+    ],
+    "question": "Which METAR sky condition normally represents a ceiling?",
+    "choices": [
+      {
+        "text": "FEW020",
+        "correct": false
+      },
+      {
+        "text": "SCT030",
+        "correct": false
+      },
+      {
+        "text": "BKN018",
+        "correct": true
+      },
+      {
+        "text": "SKC",
+        "correct": false
+      }
+    ],
+    "answer": "BKN018",
+    "explanation": "A ceiling is the height of the lowest broken or overcast layer, or vertical visibility into an obscuration. `BKN018` indicates a broken layer at 1,800 ft AGL.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-138",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "metar",
+      "temperature",
+      "altimeter"
+    ],
+    "question": "Decode this METAR excerpt: `M02/M05 A3012`.",
+    "answer": "Temperature is -2 degrees C, dew point is -5 degrees C, and the altimeter setting is 30.12 inches of mercury.",
+    "explanation": "In Canadian METARs, `M` before a temperature means minus. The altimeter group begins with `A` and gives inches of mercury.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-139",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "metar",
+      "slp",
+      "pressure"
+    ],
+    "question": "In a METAR remarks section, what sea level pressure is represented by `SLP134`?",
+    "answer": "1013.4 hPa.",
+    "explanation": "For Canadian METAR SLP remarks, if the coded value begins with 0, 1, 2, or 3, add `10` to the front and place the decimal before the last digit. Therefore `134` becomes 1013.4 hPa.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-140",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "metar",
+      "remarks",
+      "cloud-types"
+    ],
+    "question": "In a Canadian METAR remark, what does `RMK SF5NS3` mean?",
+    "answer": "The lowest reported cloud layer is stratus fractus covering 5 oktas, and the next layer is nimbostratus covering 3 oktas.",
+    "explanation": "Canadian METAR remarks may include cloud type and amount for observed layers. `SF` means stratus fractus and `NS` means nimbostratus.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, METAR Decode and Description; Cloud Type Abbreviations",
+    "media": []
+  },
+  {
+    "id": "MET-141",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "pirep",
+      "pilot-report"
+    ],
+    "question": "What is the purpose of a PIREP?",
+    "choices": [
+      {
+        "text": "To report flight conditions observed by a pilot",
+        "correct": true
+      },
+      {
+        "text": "To replace all TAFs",
+        "correct": false
+      },
+      {
+        "text": "To issue runway closures",
+        "correct": false
+      },
+      {
+        "text": "To calculate magnetic variation",
+        "correct": false
+      }
+    ],
+    "answer": "To report flight conditions observed by a pilot",
+    "explanation": "PIREPs are pilot reports of actual weather conditions in flight. They are valuable to forecasters, briefers, and other pilots, especially for icing, turbulence, cloud tops, and visibility.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Pilot Weather Report (PIREP)",
+    "media": []
+  },
+  {
+    "id": "MET-142",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "pirep",
+      "interpretation",
+      "icing"
+    ],
+    "question": "Decode this PIREP icing group: `/IC LGT RIME 020-040`.",
+    "answer": "Light rime icing was reported between 2,000 ft and 4,000 ft ASL.",
+    "explanation": "`/IC` introduces icing information. `LGT RIME` gives intensity and type, and `020-040` gives the altitude layer in hundreds of feet.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-143",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "pirep",
+      "turbulence",
+      "interpretation"
+    ],
+    "question": "Decode this PIREP turbulence group: `/TB MDT BLO 040`.",
+    "answer": "Moderate turbulence was reported below 4,000 ft ASL.",
+    "explanation": "`/TB` introduces turbulence information. `MDT` means moderate and `BLO 040` means below 4,000 ft.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP Decode and Description; Turbulence Reporting Table",
+    "media": []
+  },
+  {
+    "id": "MET-144",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "pirep",
+      "urgent-pirep"
+    ],
+    "question": "In Canadian PIREP coding, which designator indicates an urgent PIREP?",
+    "choices": [
+      {
+        "text": "UA",
+        "correct": false
+      },
+      {
+        "text": "UUA",
+        "correct": true
+      },
+      {
+        "text": "AMD",
+        "correct": false
+      },
+      {
+        "text": "COR",
+        "correct": false
+      }
+    ],
+    "answer": "UUA",
+    "explanation": "`UA` is the regular PIREP designator. `UUA` indicates an urgent PIREP, used for significant hazardous weather information.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-145",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "airmet",
+      "gfa",
+      "advisory"
+    ],
+    "question": "What is the purpose of a Canadian AIRMET?",
+    "choices": [
+      {
+        "text": "To advise of specified weather phenomena not already included in the GFA that may affect aircraft safety",
+        "correct": true
+      },
+      {
+        "text": "To report only runway braking action",
+        "correct": false
+      },
+      {
+        "text": "To replace METARs at automated stations",
+        "correct": false
+      },
+      {
+        "text": "To forecast only upper winds above FL240",
+        "correct": false
+      }
+    ],
+    "answer": "To advise of specified weather phenomena not already included in the GFA that may affect aircraft safety",
+    "explanation": "AIRMETs are issued by a meteorological watch office for specified weather phenomena affecting safety, when those phenomena were not already included in the GFA.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET",
+    "media": []
+  },
+  {
+    "id": "MET-146",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "airmet",
+      "criteria",
+      "moderate-icing"
+    ],
+    "question": "Which condition may trigger a Canadian AIRMET?",
+    "choices": [
+      {
+        "text": "Moderate icing",
+        "correct": true
+      },
+      {
+        "text": "Severe icing only",
+        "correct": false
+      },
+      {
+        "text": "Any scattered fair-weather cumulus cloud",
+        "correct": false
+      },
+      {
+        "text": "Calm winds",
+        "correct": false
+      }
+    ],
+    "answer": "Moderate icing",
+    "explanation": "Canadian AIRMETs may be issued for moderate icing, moderate turbulence, moderate mountain waves, widespread low ceilings or visibility, strong widespread surface winds, and specified TS/TCU coverage.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET",
+    "media": []
+  },
+  {
+    "id": "MET-147",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "airmet",
+      "interpretation",
+      "movement"
+    ],
+    "question": "An AIRMET states: `ISOLD TS OBS ... TOP FL340 MOV E 15KT NC`. What does this mean?",
+    "answer": "Isolated thunderstorms are observed, with tops to FL340, moving east at 15 knots, with no change in intensity expected.",
+    "explanation": "`ISOLD TS OBS` describes the phenomenon, `TOP FL340` gives vertical extent, `MOV E 15KT` gives movement, and `NC` means no change.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-148",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "sigmet",
+      "severe-weather",
+      "advisory"
+    ],
+    "question": "What is the purpose of a Canadian SIGMET?",
+    "choices": [
+      {
+        "text": "To advise pilots of specified weather phenomena that may affect aircraft safety and their development in time and space",
+        "correct": true
+      },
+      {
+        "text": "To list fuel prices at airports",
+        "correct": false
+      },
+      {
+        "text": "To report only local ground temperature",
+        "correct": false
+      },
+      {
+        "text": "To replace pilot decision-making in poor weather",
+        "correct": false
+      }
+    ],
+    "answer": "To advise pilots of specified weather phenomena that may affect aircraft safety and their development in time and space",
+    "explanation": "A SIGMET is issued by a meteorological watch office for significant hazardous weather affecting aircraft operations.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, SIGMET; NAV CANADA Aviation Meteorology Reference, SIGMET",
+    "media": []
+  },
+  {
+    "id": "MET-149",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "sigmet",
+      "ws",
+      "wc",
+      "wv"
+    ],
+    "question": "Which SIGMET type is used for volcanic ash in Canada?",
+    "choices": [
+      {
+        "text": "WS",
+        "correct": false
+      },
+      {
+        "text": "WC",
+        "correct": false
+      },
+      {
+        "text": "WV",
+        "correct": true
+      },
+      {
+        "text": "LWIS",
+        "correct": false
+      }
+    ],
+    "answer": "WV",
+    "explanation": "Canadian SIGMETs include `WS` for weather phenomena, `WC` for tropical cyclones, and `WV` for volcanic ash.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, SIGMET",
+    "media": []
+  },
+  {
+    "id": "MET-150",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "sigmet",
+      "severe-weather",
+      "criteria"
+    ],
+    "question": "Which condition is more likely to be covered by a SIGMET than an AIRMET?",
+    "choices": [
+      {
+        "text": "Severe icing",
+        "correct": true
+      },
+      {
+        "text": "Moderate icing",
+        "correct": false
+      },
+      {
+        "text": "Light rain",
+        "correct": false
+      },
+      {
+        "text": "Scattered high cirrus",
+        "correct": false
+      }
+    ],
+    "answer": "Severe icing",
+    "explanation": "AIRMETs cover less severe specified phenomena such as moderate icing or turbulence. SIGMETs cover more severe hazards such as severe icing, severe turbulence, severe mountain waves, squall lines, volcanic ash, and similar major hazards.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, AIRMET and SIGMET",
+    "media": []
+  },
+  {
+    "id": "MET-151",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "sigmet",
+      "interpretation",
+      "squall-line"
+    ],
+    "question": "Decode this SIGMET phrase: `SQLN TS OBS ... TOP FL340 MOV E 15KT NC`.",
+    "answer": "A squall line of thunderstorms is observed, with tops to FL340, moving east at 15 knots, with no change in intensity expected.",
+    "explanation": "`SQLN TS` means squall line thunderstorms. `OBS` means observed, `TOP FL340` gives thunderstorm tops, `MOV E 15KT` gives movement, and `NC` means no change.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, SIGMET Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-152",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "taf",
+      "forecast",
+      "aerodrome"
+    ],
+    "question": "What does a TAF provide?",
+    "choices": [
+      {
+        "text": "An aerodrome forecast for expected weather at a specific airport",
+        "correct": true
+      },
+      {
+        "text": "A pilot report from an aircraft in flight",
+        "correct": false
+      },
+      {
+        "text": "A radar image of precipitation",
+        "correct": false
+      },
+      {
+        "text": "A surface observation taken on the hour",
+        "correct": false
+      }
+    ],
+    "answer": "An aerodrome forecast for expected weather at a specific airport",
+    "explanation": "A TAF forecasts expected meteorological conditions at an aerodrome. Canadian TAFs use many of the same weather codes found in METARs.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Aerodrome Forecast (TAF)",
+    "media": []
+  },
+  {
+    "id": "MET-153",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "easy",
+    "tags": [
+      "taf",
+      "validity",
+      "interpretation"
+    ],
+    "question": "Decode the TAF validity period `2912/3012`.",
+    "answer": "The TAF is valid from the 29th day of the month at 1200 UTC until the 30th day of the month at 1200 UTC.",
+    "explanation": "The first two digits give the start day, followed by the start hour UTC. The second pair gives the end day and end hour UTC.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-154",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "taf",
+      "fm",
+      "change-groups"
+    ],
+    "question": "In a TAF, what does an `FM` group mean?",
+    "choices": [
+      {
+        "text": "A rapid permanent change from the specified time",
+        "correct": true
+      },
+      {
+        "text": "A temporary fluctuation only",
+        "correct": false
+      },
+      {
+        "text": "A 30 percent probability",
+        "correct": false
+      },
+      {
+        "text": "A weather observation correction",
+        "correct": false
+      }
+    ],
+    "answer": "A rapid permanent change from the specified time",
+    "explanation": "`FM` means \"from\" and indicates that forecast conditions change rapidly and permanently from the stated time. Conditions before the `FM` group are superseded.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Aerodrome Forecast (TAF)",
+    "media": []
+  },
+  {
+    "id": "MET-155",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "taf",
+      "tempo",
+      "interpretation"
+    ],
+    "question": "In a TAF, what does a `TEMPO` group indicate?",
+    "choices": [
+      {
+        "text": "A temporary fluctuation during the specified period",
+        "correct": true
+      },
+      {
+        "text": "A permanent change from a single time",
+        "correct": false
+      },
+      {
+        "text": "A surface observation",
+        "correct": false
+      },
+      {
+        "text": "A cancelled forecast",
+        "correct": false
+      }
+    ],
+    "answer": "A temporary fluctuation during the specified period",
+    "explanation": "`TEMPO` is used when some or all weather elements are expected to fluctuate temporarily during the stated period. In Canadian guidance, it is used for conditions expected to last less than one hour at a time and less than half the indicated period.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Aerodrome Forecast (TAF)",
+    "media": []
+  },
+  {
+    "id": "MET-156",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "taf",
+      "prob",
+      "probability"
+    ],
+    "question": "In a TAF, what does `PROB30 2920/2922 1/2SM SN VV005` mean?",
+    "choices": [
+      {
+        "text": "Snow is forecast for 30 percent of every hour all day",
+        "correct": false
+      },
+      {
+        "text": "There is a 30 percent probability of 1/2 SM visibility in snow and vertical visibility 500 ft between 2000Z and 2200Z on the 29th",
+        "correct": true
+      },
+      {
+        "text": "The forecast is 30 hours long",
+        "correct": false
+      },
+      {
+        "text": "Visibility is permanently improving after 2200Z",
+        "correct": false
+      }
+    ],
+    "answer": "There is a 30 percent probability of 1/2 SM visibility in snow and vertical visibility 500 ft between 2000Z and 2200Z on the 29th",
+    "explanation": "`PROB30` means a 30 percent probability of the following conditions during the specified period. It does not mean the condition occurs for 30 percent of the time.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-157",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "taf",
+      "wind-shear",
+      "interpretation"
+    ],
+    "question": "Decode the TAF group `WS011/27050KT`.",
+    "answer": "Low-level wind shear is forecast from the surface to 1,100 ft AGL, with wind at that height from 270 degrees true at 50 knots.",
+    "explanation": "In the TAF wind shear group, `WS011` gives the top of the shear layer in hundreds of feet AGL, and `27050KT` gives the wind at that height.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-158",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "taf",
+      "advisory",
+      "auto-obs"
+    ],
+    "question": "What does the Canadian TAF remark `RMK FCST BASED ON AUTO OBS` tell a pilot?",
+    "choices": [
+      {
+        "text": "The forecast is based on automated on-site observation data",
+        "correct": true
+      },
+      {
+        "text": "The TAF is invalid",
+        "correct": false
+      },
+      {
+        "text": "The wind is magnetic",
+        "correct": false
+      },
+      {
+        "text": "The airport has no weather reporting",
+        "correct": false
+      }
+    ],
+    "answer": "The forecast is based on automated on-site observation data",
+    "explanation": "This Canadian remark highlights that the on-site observational data supporting the TAF is AWOS-based.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, TAF Decode and Description",
+    "media": []
+  },
+  {
+    "id": "MET-159",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "gfa",
+      "area-forecast",
+      "canadian-products"
+    ],
+    "question": "What is the primary purpose of the Canadian Graphic Area Forecast (GFA)?",
+    "choices": [
+      {
+        "text": "To provide graphical forecast information for route planning over an area",
+        "correct": true
+      },
+      {
+        "text": "To report actual hourly weather at one airport",
+        "correct": false
+      },
+      {
+        "text": "To replace aircraft performance charts",
+        "correct": false
+      },
+      {
+        "text": "To provide only runway visual range",
+        "correct": false
+      }
+    ],
+    "answer": "To provide graphical forecast information for route planning over an area",
+    "explanation": "The GFA is designed primarily for general aviation and regional carrier pre-flight route planning in Canada and satisfies the regulatory requirement for an area forecast.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast (GFA)",
+    "media": []
+  },
+  {
+    "id": "MET-160",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "gfa",
+      "chart-types",
+      "clouds-weather"
+    ],
+    "question": "For each GFA valid time, which two chart types are issued?",
+    "choices": [
+      {
+        "text": "Clouds and Weather; Icing, Turbulence, and Freezing Level",
+        "correct": true
+      },
+      {
+        "text": "METAR; SPECI",
+        "correct": false
+      },
+      {
+        "text": "Surface winds only; runway reports only",
+        "correct": false
+      },
+      {
+        "text": "Satellite visible; satellite infrared only",
+        "correct": false
+      }
+    ],
+    "answer": "Clouds and Weather; Icing, Turbulence, and Freezing Level",
+    "explanation": "For each valid time, the GFA includes one Clouds and Weather chart and one Icing, Turbulence, and Freezing Level chart.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast (GFA)",
+    "media": []
+  },
+  {
+    "id": "MET-161",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "altitude",
+      "asl"
+    ],
+    "question": "Unless otherwise stated, heights on a Canadian GFA are:",
+    "choices": [
+      {
+        "text": "Above sea level",
+        "correct": true
+      },
+      {
+        "text": "Above ground level",
+        "correct": false
+      },
+      {
+        "text": "Flight levels only",
+        "correct": false
+      },
+      {
+        "text": "Pressure altitude only",
+        "correct": false
+      }
+    ],
+    "answer": "Above sea level",
+    "explanation": "GFA heights are ASL unless otherwise stated. This is important when comparing forecast cloud bases and tops to terrain and planned cruising altitudes.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast (GFA)",
+    "media": []
+  },
+  {
+    "id": "MET-162",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "visibility",
+      "p6sm"
+    ],
+    "question": "On a GFA, what does `P6SM` mean?",
+    "choices": [
+      {
+        "text": "Visibility greater than 6 statute miles",
+        "correct": true
+      },
+      {
+        "text": "Cloud tops above 6,000 ft",
+        "correct": false
+      },
+      {
+        "text": "Wind from 006 degrees magnetic",
+        "correct": false
+      },
+      {
+        "text": "Six minutes of precipitation",
+        "correct": false
+      }
+    ],
+    "answer": "Visibility greater than 6 statute miles",
+    "explanation": "GFA visibility is shown using METAR/TAF-style coding. `P6SM` means visibility is forecast to be greater than 6 statute miles.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast (GFA)",
+    "media": []
+  },
+  {
+    "id": "MET-163",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "spatial-coverage",
+      "convective"
+    ],
+    "question": "On a GFA, what does the convective coverage qualifier `ISOLD` mean?",
+    "choices": [
+      {
+        "text": "25 percent or less coverage",
+        "correct": true
+      },
+      {
+        "text": "Greater than 25 percent and up to 50 percent coverage",
+        "correct": false
+      },
+      {
+        "text": "Greater than 50 percent coverage",
+        "correct": false
+      },
+      {
+        "text": "No convective weather",
+        "correct": false
+      }
+    ],
+    "answer": "25 percent or less coverage",
+    "explanation": "For convective clouds and showers on the GFA, `ISOLD` means isolated, with spatial coverage of 25 percent or less.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA Spatial Coverage Qualifiers",
+    "media": []
+  },
+  {
+    "id": "MET-164",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "spatial-coverage",
+      "convective"
+    ],
+    "question": "On a GFA, what does `FRQ` indicate for convective weather?",
+    "choices": [
+      {
+        "text": "Frequent, greater than 50 percent spatial coverage",
+        "correct": true
+      },
+      {
+        "text": "Freezing rain only",
+        "correct": false
+      },
+      {
+        "text": "Fair weather with no cloud",
+        "correct": false
+      },
+      {
+        "text": "Forecast revoked quickly",
+        "correct": false
+      }
+    ],
+    "answer": "Frequent, greater than 50 percent spatial coverage",
+    "explanation": "`FRQ` means frequent convective coverage, greater than 50 percent of the affected area.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA Spatial Coverage Qualifiers",
+    "media": []
+  },
+  {
+    "id": "MET-165",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "non-convective",
+      "spatial-coverage"
+    ],
+    "question": "On a GFA, what does `XTNSV` mean for non-convective restrictions to visibility, precipitation, or low stratus?",
+    "choices": [
+      {
+        "text": "Extensive, greater than 50 percent spatial coverage",
+        "correct": true
+      },
+      {
+        "text": "Isolated, 25 percent or less",
+        "correct": false
+      },
+      {
+        "text": "A severe thunderstorm line",
+        "correct": false
+      },
+      {
+        "text": "No significant weather",
+        "correct": false
+      }
+    ],
+    "answer": "Extensive, greater than 50 percent spatial coverage",
+    "explanation": "For non-convective weather on the GFA, `LCL`, `PTCHY`, and `XTNSV` describe increasing spatial coverage. `XTNSV` means extensive.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA Spatial Coverage Qualifiers",
+    "media": []
+  },
+  {
+    "id": "MET-166",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "obscured-ceiling",
+      "interpretation"
+    ],
+    "question": "Interpret this GFA notation: `LCL OBSCD CIG 3-5 AGL`.",
+    "answer": "Local obscured ceilings between 300 and 500 ft AGL.",
+    "explanation": "`LCL` means local coverage. `OBSCD CIG` means obscured ceiling, and `3-5 AGL` gives the ceiling range in hundreds of feet above ground level.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Clouds and Weather Chart",
+    "media": []
+  },
+  {
+    "id": "MET-167",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "interpretation",
+      "clouds"
+    ],
+    "question": "A GFA shows `BKN CU 20/80`. What does this most likely mean?",
+    "answer": "Broken cumulus cloud with bases near 2,000 ft ASL and tops near 8,000 ft ASL.",
+    "explanation": "On a GFA, cloud bases and tops are shown. Unless otherwise stated, heights are ASL. `CU` means cumulus.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Clouds and Weather Chart",
+    "media": []
+  },
+  {
+    "id": "MET-168",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "clouds-weather",
+      "surface-wind"
+    ],
+    "question": "When is surface wind included on a GFA?",
+    "choices": [
+      {
+        "text": "Only if 20 knots or more, or gusts to 30 knots or more",
+        "correct": true
+      },
+      {
+        "text": "Always, even if calm",
+        "correct": false
+      },
+      {
+        "text": "Never",
+        "correct": false
+      },
+      {
+        "text": "Only for IFR airports",
+        "correct": false
+      }
+    ],
+    "answer": "Only if 20 knots or more, or gusts to 30 knots or more",
+    "explanation": "The GFA includes surface wind when it is operationally significant: 20 kt or more, or gusts to 30 kt or more.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast (GFA)",
+    "media": []
+  },
+  {
+    "id": "MET-169",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "ifr-outlook",
+      "vfr-mvfr-ifr"
+    ],
+    "question": "In the GFA IFR Outlook categories, which condition is IFR?",
+    "choices": [
+      {
+        "text": "Ceiling less than 1,000 ft AGL or visibility less than 3 SM",
+        "correct": true
+      },
+      {
+        "text": "Ceiling greater than 3,000 ft AGL and visibility greater than 5 SM",
+        "correct": false
+      },
+      {
+        "text": "Ceiling 5,000 ft AGL and visibility P6SM",
+        "correct": false
+      },
+      {
+        "text": "Any broken cloud above 10,000 ft",
+        "correct": false
+      }
+    ],
+    "answer": "Ceiling less than 1,000 ft AGL or visibility less than 3 SM",
+    "explanation": "In the GFA IFR Outlook, IFR means ceiling below 1,000 ft AGL or visibility below 3 SM. MVFR and VFR use higher ceiling and visibility thresholds.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, IFR Outlook",
+    "media": []
+  },
+  {
+    "id": "MET-170",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "icing",
+      "turbulence",
+      "freezing-level"
+    ],
+    "question": "What information is shown on the GFA Icing, Turbulence, and Freezing Level chart?",
+    "choices": [
+      {
+        "text": "Forecast icing and turbulence areas, their bases and tops, and freezing levels",
+        "correct": true
+      },
+      {
+        "text": "Only surface wind direction",
+        "correct": false
+      },
+      {
+        "text": "Only hourly observed weather",
+        "correct": false
+      },
+      {
+        "text": "Only airport runway condition reports",
+        "correct": false
+      }
+    ],
+    "answer": "Forecast icing and turbulence areas, their bases and tops, and freezing levels",
+    "explanation": "This GFA chart depicts forecast moderate or severe icing and turbulence areas and expected freezing levels. It should be used with the matching Clouds and Weather chart.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Icing, Turbulence, and Freezing Level Chart",
+    "media": []
+  },
+  {
+    "id": "MET-171",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "turbulence",
+      "abbreviations"
+    ],
+    "question": "On a GFA turbulence area, what does `LLWS` identify?",
+    "choices": [
+      {
+        "text": "Low-level wind shear",
+        "correct": true
+      },
+      {
+        "text": "Low-level snow showers",
+        "correct": false
+      },
+      {
+        "text": "Light-level wind speed",
+        "correct": false
+      },
+      {
+        "text": "Last local weather sequence",
+        "correct": false
+      }
+    ],
+    "answer": "Low-level wind shear",
+    "explanation": "GFA turbulence areas may include an abbreviation for the cause, such as `MECH`, `LLWS`, `LEE`, `WV`, `LLJ`, or `CAT`.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Icing, Turbulence, and Freezing Level Chart",
+    "media": []
+  },
+  {
+    "id": "MET-172",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "radar",
+      "precipitation",
+      "limitations"
+    ],
+    "question": "What important limitation should a pilot remember about weather radar imagery?",
+    "choices": [
+      {
+        "text": "Radar does not show cloud cover",
+        "correct": true
+      },
+      {
+        "text": "Radar shows exact freezing levels everywhere",
+        "correct": false
+      },
+      {
+        "text": "Radar replaces all forecasts",
+        "correct": false
+      },
+      {
+        "text": "Radar shows all turbulence in clear air",
+        "correct": false
+      }
+    ],
+    "answer": "Radar does not show cloud cover",
+    "explanation": "Weather radar is useful for identifying precipitation areas and echo tops, but it does not show all clouds. Cloud layers without precipitation may not appear on radar.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Radar",
+    "media": []
+  },
+  {
+    "id": "MET-173",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "satellite",
+      "visible",
+      "infrared"
+    ],
+    "question": "Which two common types of satellite imagery are available for Canadian aviation weather use?",
+    "choices": [
+      {
+        "text": "Visible and infrared",
+        "correct": true
+      },
+      {
+        "text": "Magnetic and pressure",
+        "correct": false
+      },
+      {
+        "text": "Rime and clear",
+        "correct": false
+      },
+      {
+        "text": "VFR and IFR",
+        "correct": false
+      }
+    ],
+    "answer": "Visible and infrared",
+    "explanation": "Visible imagery depends on reflected sunlight and is useful during daylight. Infrared imagery senses temperature and can be useful day or night for cloud-top patterns.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Satellite Imagery",
+    "media": []
+  },
+  {
+    "id": "MET-174",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "fb",
+      "winds-aloft",
+      "interpretation"
+    ],
+    "question": "In a Canadian upper wind and temperature forecast (FB), what does the wind group `9900` mean?",
+    "answer": "Light and variable wind, less than 5 knots.",
+    "explanation": "In FB upper wind forecasts, `9900` is used when forecast wind speed is less than 5 kt.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Upper Level Wind and Temperature Forecast (FB)",
+    "media": []
+  },
+  {
+    "id": "MET-175",
+    "topic": "Meteorology - Canadian Weather Products",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "preflight",
+      "interpretation",
+      "weather-products"
+    ],
+    "question": "You are planning a VFR cross-country in Canada. The departure METAR is VFR, but the GFA along the route shows `XTNSV 2-4SM -SN BKN008`, the TAF at destination has `TEMPO 1 1/2SM -SN BLSN BKN008`, and an AIRMET has been issued for widespread low ceilings and visibility. What should you conclude?",
+    "answer": "Although the departure airport is currently VFR, the route and destination forecast products indicate widespread marginal or IFR weather risk. For a VFR PPL flight, this should trigger a strong no-go, delay, reroute, or detailed FIC briefing decision rather than launching based only on the departure METAR.",
+    "explanation": "A safe weather decision uses multiple products. METARs show current point observations, while the GFA, TAF, and AIRMET show route and forecast hazards. Widespread low ceilings, reduced visibility, snow, and blowing snow are serious VFR risks.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips, GFA, TAF, and AIRMET; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  }
+]

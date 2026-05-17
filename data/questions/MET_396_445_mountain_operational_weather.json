@@ -1,0 +1,1396 @@
+[
+  {
+    "id": "MET-396",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "mountain-weather",
+      "operational-risk",
+      "vfr"
+    ],
+    "question": "Why does mountain flying require extra weather margin compared with flat terrain?",
+    "choices": [
+      {
+        "text": "Terrain reduces escape options and magnifies wind, cloud, visibility, and performance hazards",
+        "correct": true
+      },
+      {
+        "text": "Weather is always calmer in mountains",
+        "correct": false
+      },
+      {
+        "text": "Legal weather minima do not apply in mountains",
+        "correct": false
+      },
+      {
+        "text": "Clouds cannot form near mountains",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain reduces escape options and magnifies wind, cloud, visibility, and performance hazards.",
+    "explanation": "Mountains add several risks at once: rising terrain, fewer emergency landing areas, narrow valleys, changing winds, mechanical turbulence, downdrafts, rapid cloud formation, and route bottlenecks such as passes. A ceiling or visibility that might be comfortable over flat farmland can be unsafe in a valley or near a ridge because the pilot has less room to turn, climb, descend, or divert. Mountain weather decisions should therefore use more conservative personal minima.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Choosing an Altitude; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-397",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "mountain-obscuration",
+      "definition",
+      "vfr"
+    ],
+    "question": "What is mountain obscuration?",
+    "choices": [
+      {
+        "text": "Mountains or ridges hidden by cloud, precipitation, smoke, fog, or other visibility restrictions",
+        "correct": true
+      },
+      {
+        "text": "A type of altimeter error only",
+        "correct": false
+      },
+      {
+        "text": "A chart symbol for high pressure",
+        "correct": false
+      },
+      {
+        "text": "Snow on a runway",
+        "correct": false
+      }
+    ],
+    "answer": "Mountains or ridges hidden by cloud, precipitation, smoke, fog, or other visibility restrictions.",
+    "explanation": "Mountain obscuration means the terrain itself is not reliably visible. For a VFR pilot, this is a serious hazard because mountain flying depends on seeing terrain, passes, ridgelines, valley exits, and escape routes. The aircraft may technically be outside cloud while the terrain ahead is still hidden. That can lead to controlled flight into terrain if the pilot continues into an obscured valley or pass.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain Obscuration; NAV CANADA Aviation Weather Services Guide, GFA and AIRMET/SIGMET Weather Products",
+    "media": []
+  },
+  {
+    "id": "MET-398",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-obscuration",
+      "causes",
+      "visibility"
+    ],
+    "question": "Which conditions can cause mountain obscuration?",
+    "choices": [
+      {
+        "text": "Clouds, precipitation, fog, smoke, haze, blowing snow, or other obscurations",
+        "correct": true
+      },
+      {
+        "text": "Only thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "Only clear air turbulence",
+        "correct": false
+      },
+      {
+        "text": "Only incorrect altimeter settings",
+        "correct": false
+      }
+    ],
+    "answer": "Clouds, precipitation, fog, smoke, haze, blowing snow, or other obscurations.",
+    "explanation": "Mountain obscuration is not limited to cloud. Smoke from wildfire, blowing snow, fog, rain, snow showers, and low stratus can all hide terrain. This matters because a pilot might see acceptable airport weather nearby but still have a mountain route blocked by obscuration. Terrain can disappear gradually as contrast decreases, especially in snow, smoke, or flat light.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Low Ceiling and Mountain Obscuration; Transport Canada Flight Training Manual, Weather Considerations - White-out",
+    "media": []
+  },
+  {
+    "id": "MET-399",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-obscuration",
+      "scenario",
+      "turnback"
+    ],
+    "question": "You are approaching a pass VFR. The valley behind you is clear, but the ridge line ahead is disappearing into cloud and snow showers. What should you do?",
+    "answer": "Turn back or divert early while the valley behind remains clear and there is room to manoeuvre.",
+    "explanation": "This is a classic mountain obscuration trap. The fact that the aircraft is still in VMC at the moment does not make the route safe if the pass and ridge are disappearing. Continuing may lead to a narrowing valley, rising terrain, and no safe turning room. The best mountain weather decision is usually made before the aircraft is forced to make one.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions; FAA Aviation Weather Handbook, Ch. 18, Mountain Obscuration",
+    "media": []
+  },
+  {
+    "id": "MET-400",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "gfa",
+      "mountain-obscuration",
+      "canadian-products"
+    ],
+    "question": "Which Canadian product is especially useful for identifying forecast low cloud, obscured ceilings, visibility restrictions, icing, and turbulence along a mountain route?",
+    "choices": [
+      {
+        "text": "Graphic Area Forecast (GFA)",
+        "correct": true
+      },
+      {
+        "text": "Aircraft journey log",
+        "correct": false
+      },
+      {
+        "text": "Weight and balance report",
+        "correct": false
+      },
+      {
+        "text": "Compass correction card",
+        "correct": false
+      }
+    ],
+    "answer": "Graphic Area Forecast (GFA).",
+    "explanation": "The GFA is an area forecast product, so it is well suited to route planning through terrain. It can show cloud bases and tops, visibility restrictions, precipitation, obscured ceilings, freezing levels, icing, and turbulence. For mountain flying, this matters more than a single airport METAR because the route hazard may be in a pass, valley, or windward slope rather than at the reporting station.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Graphic Area Forecast; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-401",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "valley-fog",
+      "mountain-weather",
+      "radiation-fog"
+    ],
+    "question": "Why does fog commonly form in mountain valleys overnight?",
+    "choices": [
+      {
+        "text": "Cold dense air drains into valleys, cools the valley air to saturation, and traps moisture",
+        "correct": true
+      },
+      {
+        "text": "Valleys always have stronger sunlight at night",
+        "correct": false
+      },
+      {
+        "text": "Mountains prevent all condensation",
+        "correct": false
+      },
+      {
+        "text": "Jet streams descend into valleys",
+        "correct": false
+      }
+    ],
+    "answer": "Cold dense air drains into valleys, cools the valley air to saturation, and traps moisture.",
+    "explanation": "At night, slopes cool and dense air drains downhill into valleys. This cold air can pool in low areas, lowering temperature toward dew point. If moisture is present and wind is light, valley fog can form. It may be very localized: hilltops or ridges can be clear while the valley floor and airport are fogged in. This is important for both departure planning and diversion planning.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain/Valley Fog; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-402",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "valley-fog",
+      "scenario",
+      "vfr"
+    ],
+    "question": "Early in the morning, webcams show valley bottoms filled with fog while ridges are clear. Your route follows the valley floor. What should you consider?",
+    "answer": "Delay until the fog lifts or choose a route that remains legal and safe with clear terrain and escape options.",
+    "explanation": "Valley fog may look harmless from above, but a VFR route along the valley floor can be blocked. The fog can hide rivers, roads, wires, towers, and rising terrain. If a pilot flies above the fog, they must still have a guaranteed legal and safe VFR descent route. Clear ridges do not mean the valley route is open.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain/Valley Fog; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-403",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "valley-fog",
+      "burnoff",
+      "forecast"
+    ],
+    "question": "Why can valley fog be slow to dissipate?",
+    "choices": [
+      {
+        "text": "Cold air and moisture can remain trapped in the valley, especially with weak sun or an inversion",
+        "correct": true
+      },
+      {
+        "text": "Fog always dissipates instantly after sunrise",
+        "correct": false
+      },
+      {
+        "text": "Valleys cannot have inversions",
+        "correct": false
+      },
+      {
+        "text": "Fog is unaffected by terrain",
+        "correct": false
+      }
+    ],
+    "answer": "Cold air and moisture can remain trapped in the valley, especially with weak sun or an inversion.",
+    "explanation": "Valley fog can be stubborn because the valley acts like a bowl. Cold air pools low, sunlight may reach the valley floor later, and surrounding terrain can block wind that would otherwise mix the fog out. If snow cover, cloud above, or continuing moisture is present, fog may persist much longer than a simple forecast time suggests. A pilot should wait for actual improvement, not just predicted burnoff.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain/Valley Fog; NAV CANADA Aviation Weather Services Guide, METAR/TAF Trends",
+    "media": []
+  },
+  {
+    "id": "MET-404",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "upslope-fog",
+      "mountain-obscuration",
+      "terrain"
+    ],
+    "question": "How does upslope flow contribute to mountain obscuration?",
+    "choices": [
+      {
+        "text": "Moist air forced up terrain cools and can form fog, stratus, or cloud on windward slopes",
+        "correct": true
+      },
+      {
+        "text": "Air descending a slope always forms fog",
+        "correct": false
+      },
+      {
+        "text": "Upslope wind removes all cloud",
+        "correct": false
+      },
+      {
+        "text": "It only affects aircraft above the tropopause",
+        "correct": false
+      }
+    ],
+    "answer": "Moist air forced up terrain cools and can form fog, stratus, or cloud on windward slopes.",
+    "explanation": "When moist air flows up a slope, it expands and cools. If it reaches saturation, cloud or fog can form directly on the terrain. This can obscure ridges and passes even if nearby lower airports are reporting VFR. In mountain flying, a windward slope can become a cloud-making machine as long as the moist upslope flow continues.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Upslope Fog and Mountain Obscuration; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-405",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-icing",
+      "orographic-lift",
+      "icing"
+    ],
+    "question": "Why can icing be enhanced over mountains?",
+    "choices": [
+      {
+        "text": "Orographic lift can increase cloud liquid water and keep aircraft in visible moisture at freezing temperatures",
+        "correct": true
+      },
+      {
+        "text": "Mountains remove all moisture from clouds",
+        "correct": false
+      },
+      {
+        "text": "Icing occurs only over oceans",
+        "correct": false
+      },
+      {
+        "text": "Terrain heat prevents freezing",
+        "correct": false
+      }
+    ],
+    "answer": "Orographic lift can increase cloud liquid water and keep aircraft in visible moisture at freezing temperatures.",
+    "explanation": "As moist air is forced upward over terrain, it cools and condenses. This can produce cloud with supercooled liquid water at temperatures below freezing. Mountains can also force a pilot to fly at altitudes where the aircraft remains in cloud longer, especially near ridges and passes. The combination of visible moisture, freezing temperatures, and limited escape options makes mountain icing especially hazardous for light aircraft.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 20, Icing with Mountains; Transport Canada Flight Training Manual, Emergency Procedures - Icing",
+    "media": []
+  },
+  {
+    "id": "MET-406",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-icing",
+      "windward-slope",
+      "hazards"
+    ],
+    "question": "Where is mountain icing often most likely?",
+    "choices": [
+      {
+        "text": "In cloud on the windward side and near terrain where moist air is being lifted",
+        "correct": true
+      },
+      {
+        "text": "Only in perfectly clear dry air",
+        "correct": false
+      },
+      {
+        "text": "Only below sea level",
+        "correct": false
+      },
+      {
+        "text": "Only inside dust storms",
+        "correct": false
+      }
+    ],
+    "answer": "In cloud on the windward side and near terrain where moist air is being lifted.",
+    "explanation": "Windward slopes force moist air upward. If temperatures are below freezing, the resulting cloud can contain supercooled droplets. A VFR pilot may also be tempted to climb toward a pass or ridge, entering colder cloud where icing exists. Because terrain limits descent and turnback options, avoiding the icing area entirely is usually the correct PPL strategy.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 20, Icing with Mountains; NAV CANADA Aviation Weather Services Guide, GFA Icing, Turbulence, and Freezing Level Chart",
+    "media": []
+  },
+  {
+    "id": "MET-407",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "mountain-icing",
+      "scenario",
+      "go-no-go"
+    ],
+    "question": "The GFA shows moderate icing from 5,000 to 9,000 ft over a mountain route. The pass elevation is 5,800 ft and cloud bases are near 5,000 ft. You fly a non-icing-equipped training aircraft. What should you do?",
+    "answer": "Do not depart on that route; delay, cancel, or choose a route and altitude that avoids visible moisture and icing conditions completely.",
+    "explanation": "The pass forces the aircraft into the same altitude band where icing is forecast. Cloud bases near the pass mean a VFR pilot may have little room to remain clear of cloud, and an icing encounter could occur close to terrain. In a non-icing-equipped light aircraft, this is not a situation to sample. The safe decision is made on the ground.",
+    "reference": "Transport Canada Flight Training Manual, Emergency Procedures - Icing; NAV CANADA Aviation Weather Services Guide, GFA Icing/Turbulence/Freezing Level Chart",
+    "media": []
+  },
+  {
+    "id": "MET-408",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "mountain-waves",
+      "wind",
+      "turbulence"
+    ],
+    "question": "Mountain waves are most likely when:",
+    "choices": [
+      {
+        "text": "Strong stable wind blows across a mountain range",
+        "correct": true
+      },
+      {
+        "text": "Calm air sits over flat terrain",
+        "correct": false
+      },
+      {
+        "text": "Warm dry air remains motionless",
+        "correct": false
+      },
+      {
+        "text": "Fog forms over a lake",
+        "correct": false
+      }
+    ],
+    "answer": "Strong stable wind blows across a mountain range.",
+    "explanation": "Mountain waves form when stable air is forced over terrain and then oscillates downstream. They can extend far above and downwind of the mountains. For pilots, mountain waves are important because they can produce strong updrafts, downdrafts, severe turbulence, rotor zones, and rapid altitude or airspeed changes. They can occur even when the sky is clear.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Waves and Adverse Winds",
+    "media": []
+  },
+  {
+    "id": "MET-409",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "lenticular-clouds",
+      "mountain-waves",
+      "visual-cues"
+    ],
+    "question": "What do lenticular clouds often indicate?",
+    "choices": [
+      {
+        "text": "Mountain wave activity",
+        "correct": true
+      },
+      {
+        "text": "Radiation fog only",
+        "correct": false
+      },
+      {
+        "text": "Calm air at all altitudes",
+        "correct": false
+      },
+      {
+        "text": "Sea breeze",
+        "correct": false
+      }
+    ],
+    "answer": "Mountain wave activity.",
+    "explanation": "Lenticular clouds are smooth, lens-shaped clouds that can form in standing waves downwind of terrain. They are visual evidence that strong wave motion exists in the atmosphere. The cloud itself may look smooth, but the surrounding air can include strong vertical currents and turbulence, especially near rotor zones below the wave crests.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Visual Indicators of Orographic Wind Fields",
+    "media": []
+  },
+  {
+    "id": "MET-410",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "rotor-clouds",
+      "mountain-waves",
+      "turbulence"
+    ],
+    "question": "Why are rotor zones hazardous?",
+    "choices": [
+      {
+        "text": "They can contain severe rolling turbulence and strong vertical currents below mountain waves",
+        "correct": true
+      },
+      {
+        "text": "They always mark smooth air",
+        "correct": false
+      },
+      {
+        "text": "They occur only over oceans",
+        "correct": false
+      },
+      {
+        "text": "They are a type of runway marking",
+        "correct": false
+      }
+    ],
+    "answer": "They can contain severe rolling turbulence and strong vertical currents below mountain waves.",
+    "explanation": "A rotor is a turbulent horizontal circulation that may form below a mountain wave crest on the lee side of a ridge. Rotor clouds can look like ragged cumulus, but the air around them may be violent. Light aircraft can experience sudden altitude changes, rolling moments, and loss of control risk. Rotor zones should be avoided, not inspected closely.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Persistent Horizontal Roll Vortices (Rotors)",
+    "media": []
+  },
+  {
+    "id": "MET-411",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-waves",
+      "scenario",
+      "turbulence"
+    ],
+    "question": "You see smooth lens-shaped clouds downwind of a mountain range, with strong winds aloft perpendicular to the ridge. What should you expect?",
+    "answer": "Mountain wave activity, possible strong updrafts and downdrafts, and possible turbulence or rotor zones.",
+    "explanation": "The clouds and wind direction point to standing wave motion downwind of the terrain. A smooth lenticular cloud does not mean smooth air everywhere. The wave may include areas of relatively smooth lift and sink, but dangerous turbulence can exist below in rotor zones or near shear layers. A PPL should plan conservative routing and avoid lee-side turbulence areas.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-412",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "downdrafts",
+      "climb-performance",
+      "mountain-crossing"
+    ],
+    "question": "Why are downdrafts especially dangerous near ridges and passes?",
+    "choices": [
+      {
+        "text": "They may exceed the aircraft's climb capability while terrain is rising",
+        "correct": true
+      },
+      {
+        "text": "They always improve climb performance",
+        "correct": false
+      },
+      {
+        "text": "They only occur above 30,000 ft",
+        "correct": false
+      },
+      {
+        "text": "They make altimeters read zero",
+        "correct": false
+      }
+    ],
+    "answer": "They may exceed the aircraft's climb capability while terrain is rising.",
+    "explanation": "A light aircraft has limited climb performance, especially at high density altitude. If the aircraft is near terrain and enters descending air, the pilot may be unable to outclimb the downdraft. This is why ridge crossing requires generous altitude margin, good escape planning, and avoidance of strong wind or mountain wave conditions.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Waves and Adverse Winds; Transport Canada Flight Training Manual, Pilot Navigation - Choosing an Altitude",
+    "media": []
+  },
+  {
+    "id": "MET-413",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "density-altitude",
+      "mountain-flying",
+      "performance"
+    ],
+    "question": "Why is density altitude a major mountain flying concern?",
+    "choices": [
+      {
+        "text": "High elevation, warm temperature, and low pressure reduce aircraft performance",
+        "correct": true
+      },
+      {
+        "text": "Mountains make air denser and improve climb",
+        "correct": false
+      },
+      {
+        "text": "Density altitude only matters to turbine aircraft",
+        "correct": false
+      },
+      {
+        "text": "It affects radio volume only",
+        "correct": false
+      }
+    ],
+    "answer": "High elevation, warm temperature, and low pressure reduce aircraft performance.",
+    "explanation": "Mountain airports and passes are already high above sea level. Warm temperatures and low pressure reduce air density further. The aircraft may need more runway, climb more slowly, and have reduced propeller and engine performance. This matters most when terrain requires climb performance that the aircraft may not be able to deliver.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 8, Density Altitude; Transport Canada Flight Training Manual, Basic Principles of Flight and Pilot Navigation",
+    "media": []
+  },
+  {
+    "id": "MET-414",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "density-altitude",
+      "scenario",
+      "mountain-crossing"
+    ],
+    "question": "It is a hot afternoon at a high-elevation mountain airport. The aircraft is near maximum weight and the route requires climbing over terrain. What should you consider?",
+    "answer": "Takeoff distance, climb performance, density altitude, weight reduction, departure timing, alternate routes, and whether the flight should be delayed or cancelled.",
+    "explanation": "High density altitude can turn a normally capable aircraft into one with marginal climb performance. Maximum weight increases the problem. In mountain terrain, poor climb performance is not just an efficiency issue; it can remove terrain clearance options. Departing earlier in cooler air, reducing weight, or choosing a lower route may be necessary.",
+    "reference": "Transport Canada Flight Training Manual, Basic Principles of Flight, Weight and Balance, and Pilot Navigation; FAA Aviation Weather Handbook, Density Altitude",
+    "media": []
+  },
+  {
+    "id": "MET-415",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-crossing",
+      "wind",
+      "route-planning"
+    ],
+    "question": "Before crossing a ridge, why should a pilot check wind direction and speed aloft?",
+    "choices": [
+      {
+        "text": "Wind determines likely turbulence, downdrafts, wave activity, and which side may be lee side",
+        "correct": true
+      },
+      {
+        "text": "Wind aloft only affects IFR aircraft",
+        "correct": false
+      },
+      {
+        "text": "Wind direction is always the same in every valley",
+        "correct": false
+      },
+      {
+        "text": "Wind has no effect near terrain",
+        "correct": false
+      }
+    ],
+    "answer": "Wind determines likely turbulence, downdrafts, wave activity, and which side may be lee side.",
+    "explanation": "Airflow over a ridge can produce lift on one side and sink or turbulence on the other. Strong winds perpendicular to a ridge increase the risk of mountain waves and rotor turbulence. Winds aloft may be much stronger than surface winds in a valley, so relying only on airport surface wind can be misleading.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Weather; NAV CANADA Aviation Weather Services Guide, FB Winds Aloft and GFA",
+    "media": []
+  },
+  {
+    "id": "MET-416",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "ridge-crossing",
+      "escape-route",
+      "operational-technique"
+    ],
+    "question": "Why is it safer to approach a ridge at an angle rather than straight on?",
+    "choices": [
+      {
+        "text": "It leaves a shorter turn away from terrain if lift, visibility, or turbulence becomes unacceptable",
+        "correct": true
+      },
+      {
+        "text": "It makes the mountain lower",
+        "correct": false
+      },
+      {
+        "text": "It eliminates all downdrafts",
+        "correct": false
+      },
+      {
+        "text": "It guarantees radio reception",
+        "correct": false
+      }
+    ],
+    "answer": "It leaves a shorter turn away from terrain if lift, visibility, or turbulence becomes unacceptable.",
+    "explanation": "Approaching terrain at an angle preserves an escape option. If the aircraft is not climbing, turbulence is severe, cloud obscures the pass, or downdrafts appear, the pilot can turn away from the ridge more easily. A straight-on approach can commit the aircraft toward rising terrain with a larger turn required to escape.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Terrain Considerations; FAA Aviation Weather Handbook, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-417",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "valley-flying",
+      "turn-radius",
+      "wind"
+    ],
+    "question": "Why should a VFR pilot avoid entering a narrowing valley unless certain of the exit and turn-around space?",
+    "choices": [
+      {
+        "text": "Rising terrain, wind, and limited width may make a safe turn-around impossible",
+        "correct": true
+      },
+      {
+        "text": "Valleys always improve aircraft performance",
+        "correct": false
+      },
+      {
+        "text": "GPS guarantees terrain clearance",
+        "correct": false
+      },
+      {
+        "text": "Narrow valleys eliminate turbulence",
+        "correct": false
+      }
+    ],
+    "answer": "Rising terrain, wind, and limited width may make a safe turn-around impossible.",
+    "explanation": "A valley can narrow, climb, or become obscured faster than expected. Tailwind can increase groundspeed and turn radius. Downdrafts can reduce climb performance. Low cloud can force the aircraft lower. The safe decision is to avoid entering any valley without a known exit, adequate altitude, visibility, and room to turn around.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Terrain; FAA Aviation Weather Handbook, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-418",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "valley-flying",
+      "scenario",
+      "diversion"
+    ],
+    "question": "You are flying up a valley with rising terrain. Cloud ahead is lowering, and your groundspeed is high due to tailwind. What should you do?",
+    "answer": "Turn back early while there is still room, or divert to a safer route.",
+    "explanation": "This combines several classic mountain traps: rising terrain, lowering cloud, tailwind, and a valley that may narrow. Tailwind increases groundspeed and turn radius, making a later turn-around harder. The right response is not to continue hoping the pass opens; it is to leave while the escape route is still available.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Early 180 Degree Turn; FAA Aviation Weather Handbook, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-419",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "mountain-weather",
+      "personal-minima",
+      "vfr"
+    ],
+    "question": "For mountain VFR flight, personal minima should usually be:",
+    "choices": [
+      {
+        "text": "More conservative than for flat terrain",
+        "correct": true
+      },
+      {
+        "text": "Lower than legal minima",
+        "correct": false
+      },
+      {
+        "text": "Ignored if the pilot has GPS",
+        "correct": false
+      },
+      {
+        "text": "Based only on destination weather",
+        "correct": false
+      }
+    ],
+    "answer": "More conservative than for flat terrain.",
+    "explanation": "Mountains reduce margins. A pilot needs more ceiling, more visibility, more fuel, more daylight, more aircraft performance, and more alternate options. Weather can vary sharply over short distances, and forecast uncertainty is amplified by terrain. Personal minima should reflect the difficulty of turning around, finding alternates, and maintaining terrain clearance.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-420",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-weather",
+      "products",
+      "briefing"
+    ],
+    "question": "Which preflight weather information is especially important for a mountain route?",
+    "choices": [
+      {
+        "text": "GFA, METAR/TAF trends, PIREPs, winds aloft, freezing level, icing/turbulence forecasts, radar/satellite, and a FIC briefing",
+        "correct": true
+      },
+      {
+        "text": "Only the departure METAR",
+        "correct": false
+      },
+      {
+        "text": "Only yesterday's forecast",
+        "correct": false
+      },
+      {
+        "text": "Only runway length at destination",
+        "correct": false
+      }
+    ],
+    "answer": "GFA, METAR/TAF trends, PIREPs, winds aloft, freezing level, icing/turbulence forecasts, radar/satellite, and a FIC briefing.",
+    "explanation": "Mountain weather decisions require a three-dimensional picture. You need to understand cloud bases and tops, visibility, wind at pass altitude, freezing level, icing, turbulence, and terrain effects. A FIC briefing can help connect the products to the actual route, especially when terrain channels weather differently from nearby airports.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips, GFA, PIREP, FB Winds Aloft; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-421",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "pirep",
+      "mountain-weather",
+      "turbulence"
+    ],
+    "question": "Why are PIREPs valuable for mountain flying?",
+    "choices": [
+      {
+        "text": "They provide actual pilot-observed turbulence, icing, cloud tops, visibility, and mountain conditions",
+        "correct": true
+      },
+      {
+        "text": "They replace the need for all forecasts",
+        "correct": false
+      },
+      {
+        "text": "They guarantee the route is safe",
+        "correct": false
+      },
+      {
+        "text": "They report only runway lights",
+        "correct": false
+      }
+    ],
+    "answer": "They provide actual pilot-observed turbulence, icing, cloud tops, visibility, and mountain conditions.",
+    "explanation": "Mountain weather can vary over short distances and change quickly with altitude. PIREPs can reveal conditions that are not obvious from airport reports, such as turbulence in a pass, icing near a ridge, cloud tops, or visibility over a valley. They should be combined with forecasts, not used alone.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-422",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-level",
+      "mountain-icing",
+      "route-planning"
+    ],
+    "question": "Why is freezing level especially important on a mountain route?",
+    "choices": [
+      {
+        "text": "Terrain may force the aircraft to fly near or above the freezing level while in cloud or precipitation",
+        "correct": true
+      },
+      {
+        "text": "It determines runway length",
+        "correct": false
+      },
+      {
+        "text": "It only matters above FL300",
+        "correct": false
+      },
+      {
+        "text": "It removes the need to check cloud",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain may force the aircraft to fly near or above the freezing level while in cloud or precipitation.",
+    "explanation": "In flat terrain, a pilot may be able to choose a lower altitude to avoid freezing conditions. In mountains, terrain may force the route upward into colder air. If cloud, precipitation, or orographic lift is present near the freezing level, icing risk becomes a major go/no-go factor. Freezing level must be compared to terrain height, cloud bases, cloud tops, and route altitude.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA Icing/Turbulence/Freezing Level Chart; FAA Aviation Weather Handbook, Ch. 20, Icing with Mountains",
+    "media": []
+  },
+  {
+    "id": "MET-423",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "freezing-level",
+      "scenario",
+      "mountain-icing"
+    ],
+    "question": "The freezing level is forecast at 4,500 ft. Your mountain pass is 5,200 ft, with cloud on the windward slope. What should you consider?",
+    "answer": "Icing risk is possible or likely if the route requires flight in visible moisture near the pass; delay, reroute, or avoid cloud and freezing conditions.",
+    "explanation": "The pass is above the freezing level, and cloud on the windward slope suggests orographic lift and visible moisture. This is the basic recipe for structural icing. A VFR pilot in a non-icing-equipped aircraft should not rely on being able to quickly escape, because terrain may limit descent and turnback options.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 20, Icing with Mountains; Transport Canada Flight Training Manual, Emergency Procedures - Icing",
+    "media": []
+  },
+  {
+    "id": "MET-424",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "lee-side",
+      "turbulence",
+      "downdrafts"
+    ],
+    "question": "What is the lee side of a mountain range?",
+    "choices": [
+      {
+        "text": "The downwind side",
+        "correct": true
+      },
+      {
+        "text": "The side facing the incoming wind",
+        "correct": false
+      },
+      {
+        "text": "The side with no terrain",
+        "correct": false
+      },
+      {
+        "text": "The side below sea level",
+        "correct": false
+      }
+    ],
+    "answer": "The downwind side.",
+    "explanation": "The lee side is the side sheltered from the direct incoming wind, but it is not necessarily calm. In strong flow, the lee side can contain descending air, turbulence, rotors, and mountain waves. Many pilots associate shelter with smooth air, but in mountain meteorology the lee side can be the most hazardous side.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Waves and Adverse Winds",
+    "media": []
+  },
+  {
+    "id": "MET-425",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "windward-side",
+      "orographic-lift",
+      "cloud"
+    ],
+    "question": "What is the windward side of a mountain range?",
+    "choices": [
+      {
+        "text": "The side facing the incoming wind",
+        "correct": true
+      },
+      {
+        "text": "The downwind side",
+        "correct": false
+      },
+      {
+        "text": "The side with no cloud ever",
+        "correct": false
+      },
+      {
+        "text": "The side where pressure is always zero",
+        "correct": false
+      }
+    ],
+    "answer": "The side facing the incoming wind.",
+    "explanation": "On the windward side, air is forced to rise. This can create lift, cloud, precipitation, icing, and obscuration if the air is moist. The windward side may provide rising air, but it can also contain cloud and poor visibility. Mountain route planning requires knowing which side is windward and what moisture is present.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Weather; FAA Aviation Weather Handbook, Ch. 18, Upslope Fog",
+    "media": []
+  },
+  {
+    "id": "MET-426",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "cap-cloud",
+      "mountain-obscuration",
+      "visual-cues"
+    ],
+    "question": "What does a cap cloud over a ridge suggest?",
+    "choices": [
+      {
+        "text": "Moist air is being lifted over the ridge, and the ridge may be obscured",
+        "correct": true
+      },
+      {
+        "text": "The ridge is guaranteed clear",
+        "correct": false
+      },
+      {
+        "text": "The wind is calm at all levels",
+        "correct": false
+      },
+      {
+        "text": "The cloud is unrelated to terrain",
+        "correct": false
+      }
+    ],
+    "answer": "Moist air is being lifted over the ridge, and the ridge may be obscured.",
+    "explanation": "A cap cloud forms when moist air is forced over a mountain or ridge and condenses near the top. It is a visible clue of orographic lift and possible obscuration. A VFR pilot should treat it as a warning that the ridge line may not be visually clear and that icing or turbulence may be present if temperatures and winds support those hazards.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Visual Indicators of Orographic Wind Fields; Ch. 18, Mountain Obscuration",
+    "media": []
+  },
+  {
+    "id": "MET-427",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "cap-cloud",
+      "scenario",
+      "crossing-decision"
+    ],
+    "question": "A ridge you planned to cross has a cap cloud covering the crest. Visibility below is good. What should you do?",
+    "answer": "Do not cross through or near the obscured crest; choose a lower safe route, wait, turn back, or divert.",
+    "explanation": "Good visibility below the cloud does not mean the ridge crossing is safe. The crest is hidden, and the cloud may contain turbulence or icing depending on temperature. A VFR pilot must maintain terrain clearance and visual reference. Crossing into a cap cloud or skimming close to an obscured ridge removes those margins.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain Obscuration; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-428",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "smoke",
+      "mountain-obscuration",
+      "visibility"
+    ],
+    "question": "Why can wildfire smoke be especially hazardous in mountain valleys?",
+    "choices": [
+      {
+        "text": "It can reduce contrast and visibility, hiding terrain even when cloud bases are high",
+        "correct": true
+      },
+      {
+        "text": "It always improves visibility",
+        "correct": false
+      },
+      {
+        "text": "It removes wind shear",
+        "correct": false
+      },
+      {
+        "text": "It only affects aircraft engines, not pilots",
+        "correct": false
+      }
+    ],
+    "answer": "It can reduce contrast and visibility, hiding terrain even when cloud bases are high.",
+    "explanation": "Smoke can fill valleys and reduce slant visibility, horizon definition, and terrain contrast. A METAR may report legal visibility at one location while a valley or pass is much worse. In mountains, seeing the terrain clearly is essential, so smoke can create a mountain obscuration hazard even without cloud or precipitation.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Weather and Obstructions to Visibility; Transport Canada Flight Training Manual, Weather Considerations",
+    "media": []
+  },
+  {
+    "id": "MET-429",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "smoke",
+      "scenario",
+      "mountain-obscuration"
+    ],
+    "question": "The route is cloud-free, but wildfire smoke makes distant ridges fade into the background. What is the safest interpretation?",
+    "answer": "Visibility and terrain contrast may be inadequate for safe VFR mountain flight; delay, reroute, or stay in areas with clear visual references.",
+    "explanation": "Mountain VFR is not only about cloud clearance. The pilot must see terrain early enough to navigate, avoid obstacles, and maintain escape options. Smoke can make ridges and valley walls difficult to judge, especially when flying toward the sun or over similarly coloured terrain. Legal reported visibility may not provide enough practical margin.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Smoke and Mountain Obscuration; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-430",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "mountain-weather",
+      "early-turnback",
+      "decision-making"
+    ],
+    "question": "What is the safest response when mountain weather ahead begins to deteriorate but conditions behind are still good?",
+    "choices": [
+      {
+        "text": "Turn back or divert early",
+        "correct": true
+      },
+      {
+        "text": "Continue until the pass is blocked",
+        "correct": false
+      },
+      {
+        "text": "Descend lower into the valley without checking terrain",
+        "correct": false
+      },
+      {
+        "text": "Turn off the radio",
+        "correct": false
+      }
+    ],
+    "answer": "Turn back or divert early.",
+    "explanation": "Mountain weather can remove options quickly. If conditions behind are still good, that is the escape route. Waiting until the pass is obscured, turbulence is severe, or the valley has narrowed may leave no safe turn-around space. The early 180-degree turn is a practical survival tool, not a sign of failure.",
+    "reference": "Transport Canada Flight Training Manual, Weather Considerations - Encountering Weather Below VFR Conditions",
+    "media": []
+  },
+  {
+    "id": "MET-431",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "route-planning",
+      "alternates",
+      "mountain-weather"
+    ],
+    "question": "Why must alternates be chosen carefully for mountain flights?",
+    "choices": [
+      {
+        "text": "Nearby airports may be separated by terrain and affected by different weather, winds, and visibility",
+        "correct": true
+      },
+      {
+        "text": "All mountain airports have identical weather",
+        "correct": false
+      },
+      {
+        "text": "Alternates are not needed in mountains",
+        "correct": false
+      },
+      {
+        "text": "Terrain makes fuel planning unnecessary",
+        "correct": false
+      }
+    ],
+    "answer": "Nearby airports may be separated by terrain and affected by different weather, winds, and visibility.",
+    "explanation": "In mountain areas, an alternate that looks close on a chart may be unreachable due to ridges, passes, cloud, icing, turbulence, or valley winds. Weather can differ dramatically between valleys. A realistic alternate must be reachable with fuel, terrain clearance, weather margins, and pilot skill.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather and Flight Planning; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-432",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "alternates",
+      "scenario",
+      "mountain-weather"
+    ],
+    "question": "Your planned alternate is only 20 NM away, but it is on the other side of a ridge forecast to be obscured in cloud. Is it a good alternate?",
+    "answer": "No, not unless you have a safe, legal, and reliable route to reach it in the expected conditions.",
+    "explanation": "Distance alone does not make an alternate usable. Terrain and weather define whether the alternate is truly available. If a cloud-obscured ridge blocks the path, the alternate may be practically unreachable for VFR. You need an alternate on your side of the weather or a route that remains clearly open.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; FAA Aviation Weather Handbook, Mountain Obscuration",
+    "media": []
+  },
+  {
+    "id": "MET-433",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "valley-winds",
+      "local-winds",
+      "mountain-weather"
+    ],
+    "question": "What is a valley breeze?",
+    "choices": [
+      {
+        "text": "Daytime upslope or up-valley flow caused by heating",
+        "correct": true
+      },
+      {
+        "text": "Nighttime downslope flow only",
+        "correct": false
+      },
+      {
+        "text": "A sea breeze over the ocean",
+        "correct": false
+      },
+      {
+        "text": "A type of thunderstorm",
+        "correct": false
+      }
+    ],
+    "answer": "Daytime upslope or up-valley flow caused by heating.",
+    "explanation": "During the day, sun heats mountain slopes and valley air. Warmer air tends to rise, producing upslope and up-valley flow. This can affect runway selection, turbulence, drift, and route planning. Valley winds may be weak in the morning and stronger later in the day, so timing matters.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain/Valley Breezes and Circulation",
+    "media": []
+  },
+  {
+    "id": "MET-434",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mountain-breeze",
+      "local-winds",
+      "valley-fog"
+    ],
+    "question": "What is a mountain breeze?",
+    "choices": [
+      {
+        "text": "Nighttime downslope or down-valley flow caused by cooling",
+        "correct": true
+      },
+      {
+        "text": "A permanent jet stream",
+        "correct": false
+      },
+      {
+        "text": "Wind caused only by thunderstorms",
+        "correct": false
+      },
+      {
+        "text": "A warm front",
+        "correct": false
+      }
+    ],
+    "answer": "Nighttime downslope or down-valley flow caused by cooling.",
+    "explanation": "At night, mountain slopes cool and dense air drains downhill into valleys. This can contribute to valley fog, temperature inversions, and unexpected surface wind patterns at valley airports. A pilot departing early in the morning may find valley fog or calm surface wind even though stronger wind exists above the inversion.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain/Valley Breezes; FAA Aviation Weather Handbook, Ch. 18, Mountain/Valley Fog",
+    "media": []
+  },
+  {
+    "id": "MET-435",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "valley-winds",
+      "scenario",
+      "timing"
+    ],
+    "question": "A mountain valley airport is calm at sunrise, but the forecast shows strengthening afternoon up-valley winds and gusts. What should you consider?",
+    "answer": "Departing earlier, checking crosswind and turbulence limits, and ensuring the return time remains within personal wind minima.",
+    "explanation": "Mountain valley winds often follow a daily cycle. Calm morning conditions can become gusty by afternoon as heating drives upslope and up-valley flow. This can affect takeoff, landing, mechanical turbulence, and passenger comfort. Timing the flight can be a major risk control.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain/Valley Breezes; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-436",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "mechanical-turbulence",
+      "terrain",
+      "wind"
+    ],
+    "question": "Mechanical turbulence in mountains is caused primarily by:",
+    "choices": [
+      {
+        "text": "Airflow being disrupted by terrain",
+        "correct": true
+      },
+      {
+        "text": "Air becoming perfectly still",
+        "correct": false
+      },
+      {
+        "text": "The altimeter setting changing",
+        "correct": false
+      },
+      {
+        "text": "Fuel vaporizing in the carburettor",
+        "correct": false
+      }
+    ],
+    "answer": "Airflow being disrupted by terrain.",
+    "explanation": "Ridges, cliffs, valleys, trees, and uneven terrain disturb airflow and create eddies. The stronger the wind and the rougher the terrain, the stronger the mechanical turbulence can be. In mountain valleys, turbulence may be localized and change abruptly as the aircraft crosses ridges, saddles, or lee-side areas.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 19, Mechanical Turbulence; FAA Aviation Weather Handbook, Ch. 16, Mountain Weather",
+    "media": []
+  },
+  {
+    "id": "MET-437",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "turbulence",
+      "scenario",
+      "passenger-safety"
+    ],
+    "question": "PIREPs report moderate to severe turbulence in the pass you planned to use. Your aircraft is light and passengers are inexperienced. What should you do?",
+    "answer": "Delay, cancel, or choose a different route with acceptable turbulence risk.",
+    "explanation": "Turbulence is not just a comfort issue. In mountains, turbulence can be tied to downdrafts, rotor zones, and wind shear near terrain. A light aircraft may be difficult to control precisely, passengers may become frightened or injured, and workload rises quickly. PIREPs are actual reports from pilots and deserve serious weight.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, PIREP; FAA Aviation Weather Handbook, Ch. 16 and Ch. 19",
+    "media": []
+  },
+  {
+    "id": "MET-438",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "cloud-base",
+      "terrain-clearance",
+      "vfr"
+    ],
+    "question": "Why is cloud base alone not enough to judge a mountain route?",
+    "choices": [
+      {
+        "text": "Terrain elevation changes along the route, so the same cloud base may provide very different clearance",
+        "correct": true
+      },
+      {
+        "text": "Cloud base is always measured below sea level",
+        "correct": false
+      },
+      {
+        "text": "Terrain has no effect on clearance",
+        "correct": false
+      },
+      {
+        "text": "Cloud base reports are never useful",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain elevation changes along the route, so the same cloud base may provide very different clearance.",
+    "explanation": "A 4,000 ft ceiling may be generous over a valley at 500 ft ASL but unusable near a pass at 3,800 ft ASL. Pilots must compare cloud bases to terrain elevation, required VFR cloud clearance, route altitude, and escape options. Area forecasts and topographic charts must be read together.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Choosing an Altitude; NAV CANADA Aviation Weather Services Guide, GFA",
+    "media": []
+  },
+  {
+    "id": "MET-439",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "medium",
+    "tags": [
+      "cloud-base",
+      "scenario",
+      "pass"
+    ],
+    "question": "The GFA shows broken cloud bases at 6,000 ft ASL. Your planned pass is 5,700 ft ASL. What is the concern?",
+    "answer": "There may be very little terrain and cloud clearance through the pass, and local cloud could obscure the terrain.",
+    "explanation": "A cloud base only 300 ft above pass elevation leaves little or no legal and practical VFR margin. Cloud bases can vary locally, and windward terrain may be obscured. A safe VFR mountain route needs generous vertical and horizontal clearance, not just a theoretical gap.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-440",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": [
+      "radio-navigation",
+      "terrain",
+      "communication"
+    ],
+    "question": "Why can radio communication and navigation reception be less reliable in mountains?",
+    "choices": [
+      {
+        "text": "Terrain can block line-of-sight signals",
+        "correct": true
+      },
+      {
+        "text": "Mountains turn all radios off",
+        "correct": false
+      },
+      {
+        "text": "VHF signals only work over oceans",
+        "correct": false
+      },
+      {
+        "text": "GPS requires flat terrain",
+        "correct": false
+      }
+    ],
+    "answer": "Terrain can block line-of-sight signals.",
+    "explanation": "VHF communication and many navigation signals depend on line of sight. Ridges can block reception, especially at low altitude in valleys. This matters during weather decision-making because a pilot may not be able to get updated weather or assistance exactly when a route becomes marginal. Preflight planning should include communication gaps and alternates.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Radio Navigation and Mountainous Regions",
+    "media": []
+  },
+  {
+    "id": "MET-441",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": [
+      "weather-briefing",
+      "mountain-route",
+      "vfr"
+    ],
+    "question": "When asking for a weather briefing for a mountain flight, what should the pilot provide?",
+    "choices": [
+      {
+        "text": "Route, altitude, timing, aircraft type, VFR status, alternates, and specific terrain/weather concerns",
+        "correct": true
+      },
+      {
+        "text": "Only the destination name",
+        "correct": false
+      },
+      {
+        "text": "Only the passenger count",
+        "correct": false
+      },
+      {
+        "text": "Only the aircraft colour",
+        "correct": false
+      }
+    ],
+    "answer": "Route, altitude, timing, aircraft type, VFR status, alternates, and specific terrain/weather concerns.",
+    "explanation": "Mountain weather is route-specific. A briefer can give much better guidance if they know which passes, valleys, altitudes, and times are involved. The same general region may have one valley open, another obscured, and a pass affected by wind or icing. Precise briefing requests lead to better operational decisions.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; NAV CANADA Aviation Weather Services Guide, Weather Briefing Tips",
+    "media": []
+  },
+  {
+    "id": "MET-442",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "mountain-weather",
+      "go-no-go"
+    ],
+    "question": "You plan a VFR mountain crossing. The GFA shows local mountain obscuration, moderate turbulence below 9,000 ft, freezing level at 5,000 ft, and cloud tops at 8,000 ft. Your pass is 5,500 ft. What is the safest decision?",
+    "answer": "Delay, cancel, or choose a route that avoids the obscuration, turbulence, and icing risk.",
+    "explanation": "This is a stacked-risk scenario. The pass is above the freezing level, cloud and terrain are close together, mountain obscuration may hide the route, and turbulence is forecast in the operating band. A VFR light aircraft has limited options if it encounters cloud, ice, downdrafts, or severe turbulence near terrain. The safe decision is to avoid the combination, not to try it and see.",
+    "reference": "NAV CANADA Aviation Weather Services Guide, GFA; FAA Aviation Weather Handbook, Ch. 16 Mountain Weather and Ch. 20 Icing with Mountains",
+    "media": []
+  },
+  {
+    "id": "MET-443",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "mountain-waves",
+      "rotor"
+    ],
+    "question": "Strong winds aloft are forecast perpendicular to the ridge, lenticular clouds are visible, and PIREPs mention severe turbulence on the lee side. What should a PPL do?",
+    "answer": "Avoid the lee-side route and delay, cancel, or choose a safer route well away from the wave/rotor area.",
+    "explanation": "The clues point strongly to mountain wave and rotor turbulence. Severe turbulence near terrain can exceed pilot and aircraft capability, especially in a light training aircraft. Lenticular clouds show the wave exists, but the worst turbulence may be below or near rotor zones. A PPL should not treat this as a sightseeing opportunity.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 16, Mountain Waves, Rotors, and Visual Indicators; NAV CANADA Aviation Weather Services Guide, PIREP",
+    "media": []
+  },
+  {
+    "id": "MET-444",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "valley-fog",
+      "alternates"
+    ],
+    "question": "Your departure airport is VFR on a ridge, but your destination valley and two alternates report fog. The forecast says fog may lift later, but recent reports show no improvement. What should you do?",
+    "answer": "Wait for actual improvement or choose a destination and alternates that are already suitable.",
+    "explanation": "Valley fog can persist longer than forecast, and alternates affected by the same valley fog are not useful. Departing from a clear ridge airport does not solve the arrival problem. A safe VFR flight requires a suitable destination and real alternates, not just good weather at departure.",
+    "reference": "FAA Aviation Weather Handbook, Ch. 18, Mountain/Valley Fog; Transport Canada Flight Training Manual, Pilot Navigation - Weather",
+    "media": []
+  },
+  {
+    "id": "MET-445",
+    "topic": "Meteorology - Mountain Operational Weather",
+    "type": "open_answer",
+    "difficulty": "hard",
+    "tags": [
+      "integrated-decision",
+      "mountain-crossing",
+      "personal-minima"
+    ],
+    "question": "You planned a mountain crossing with a personal minimum of 3,000 ft terrain clearance and 10 SM visibility. Current reports suggest 6 SM visibility in smoke, broken cloud near ridge height, and gusty winds through the pass. What should you do?",
+    "answer": "Do not continue with the planned crossing; delay, reroute, or cancel.",
+    "explanation": "The conditions are below the personal visibility margin, cloud is near the terrain, and gusty pass winds increase turbulence and control risk. This is exactly why personal minima exist: they prevent a pilot from rationalizing a marginal mountain route in real time. Mountain decisions should be made with extra margin because turnback space, terrain clearance, and alternates are limited.",
+    "reference": "Transport Canada Flight Training Manual, Pilot Navigation - Weather; FAA Aviation Weather Handbook, Ch. 16 Mountain Weather and Ch. 18 Mountain Obscuration",
+    "media": []
+  }
+]

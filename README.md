@@ -7,7 +7,7 @@ Mobile-first flashcard app for studying Canadian PPL groundschool material.
 **Phase 2 in progress** — branch: `phase-2-json-importer`
 
 - Phase 0 (project setup) and Phase 1 (database schema, migration, seed) are complete and merged to `main`.
-- Phase 2 is in progress: format spec ✓, JSON parser ✓, validator ✓, import service ✓, CLI ✓, smoke test ✓ — Markdown migration script remaining.
+- Phase 2 is in progress: format spec ✓, JSON parser ✓, validator ✓, import service ✓, CLI ✓, smoke test ✓, migration script ✓ — full import remaining.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.
 

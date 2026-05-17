@@ -2,9 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-This project uses semantic versioning.
+This project uses semantic versioning. Every push increments the patch version;
+completing a phase increments the minor version and resets the patch to 0.
 
 ## [Unreleased]
+
+---
+
+## [0.4.0] - 2026-05-17
 
 ### Added
 
@@ -46,7 +51,19 @@ This project uses semantic versioning.
 
 ---
 
-### Added (Phase 2)
+## [0.3.1] - 2026-05-17
+
+### Changed
+
+- `scripts/md_to_json.ts` — added comprehensive Markdown format reference to the file
+  header: structural rules, full examples for all three source formats (MET-style,
+  Q-style, Sample-style), and a field reference table.
+
+---
+
+## [0.3.0] - 2026-05-17
+
+### Added
 
 - Canonical JSON question format spec (`docs/question_generation_guide.md`) with a
   ready-to-paste LLM prompt, field definitions, media support (`attribution`, `origin`),
@@ -74,12 +91,10 @@ This project uses semantic versioning.
   open-answer, multi-correct MC) used to verify the full pipeline end-to-end.
 - `docker-compose.yml`: added `./data:/data` volume mount so JSON files at the
   repo root are accessible inside the container for import.
-
 - `scripts/md_to_json.ts` — one-off Markdown → JSON migration script (repo root).
   Handles three source formats: MET-style (with Topic/Type/Difficulty/Tags),
   Q-style (Topic/Type only), and Sample-style (type in heading, bold question).
-  Converts 923 cards from 17 source files with 0 warnings. Run from the repo
-  root: `npx tsx scripts/md_to_json.ts [--verbose]`.
+  Converts 923 cards from 17 source files with 0 warnings.
 - `data/questions/*.json` — 923 migrated question cards committed as the
   portable source of truth for all deployments. Full import: 926 cards in the
   database (660 MC, 266 open answer, 2640 choices, 902 source references,
@@ -93,15 +108,14 @@ This project uses semantic versioning.
   are skipped with a warning; a missing directory is silently ignored (safe for CI).
   Switched from a local `PrismaClient` to the `lib/db/client` singleton so the
   seed and import service share one connection pool.
-
-### Changed
-
 - `docs/app_architecture_plan.md`: import strategy updated to JSON-only; repo structure,
   progress checklist, and open decisions refreshed.
 - `docs/core_domain_model.md`: diagram updated to reflect live Prisma schema (`Card.importBatchId`,
   `Card.originalId`, `MediaAsset` field notes).
 - `README.md`: current status, documentation table, Docker workflow, and import commands
   updated to reflect Phase 2 progress.
+
+---
 
 ## [0.2.0] - 2026-05-16
 
@@ -131,6 +145,8 @@ This project uses semantic versioning.
 - Bumped `actions/checkout` and `actions/setup-node` to fix Node.js 20 deprecation
   warnings in CI.
 
+---
+
 ## [0.1.0] - 2026-05-16
 
 ### Added
@@ -141,4 +157,3 @@ This project uses semantic versioning.
 - OpenShift-conscious production Dockerfile using Next.js standalone output.
 - Health endpoint at `/api/health`.
 - Initial README with local development commands and documentation links.
-

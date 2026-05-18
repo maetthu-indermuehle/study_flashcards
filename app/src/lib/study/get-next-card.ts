@@ -40,15 +40,28 @@ type RawCard = {
 /**
  * Returns the next card to study for `userId`, applying due-card-first logic.
  *
+ * When `tagIds` is provided and non-empty, only cards that carry at least one
+ * of those tags are considered. An empty or omitted `tagIds` means all cards.
+ *
  * @param userId - The authenticated user's database ID.
+ * @param tagIds - Optional list of Tag IDs to restrict the selection to.
  * @returns A shuffled {@link StudyCard}, or `null` if the deck is empty.
  */
-export async function getNextCard(userId: string): Promise<StudyCard | null> {
+export async function getNextCard(
+  userId: string,
+  tagIds?: string[],
+): Promise<StudyCard | null> {
   const deck = await prisma.deck.findFirst({
     where: { createdByUserId: userId },
     select: { id: true },
   });
   if (!deck) return null;
+
+  // Tag filter clause — applied to every card lookup below.
+  const tagFilter =
+    tagIds && tagIds.length > 0
+      ? { tags: { some: { tagId: { in: tagIds } } } }
+      : {};
 
   const now = new Date();
 
@@ -59,7 +72,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
     where: {
       userId,
       dueAt: { lte: now },
-      card: { deckId: deck.id, status: "PUBLISHED" },
+      card: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -79,7 +92,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
   const seenSet = new Set(seenIds.map((p) => p.cardId));
 
   const allIds = await prisma.card.findMany({
-    where: { deckId: deck.id, status: "PUBLISHED" },
+    where: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
     select: { id: true },
   });
 
@@ -96,7 +109,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
   const nextProgress = await prisma.cardProgress.findFirst({
     where: {
       userId,
-      card: { deckId: deck.id, status: "PUBLISHED" },
+      card: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -111,17 +124,19 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
 
 /**
  * Returns the number of cards currently due for `userId`.
- * Used on the home page to show a "X due" badge.
- *
- * @param userId - The authenticated user's database ID.
- * @returns Count of due cards.
+ * When `tagIds` is provided, only counts due cards matching those tags.
  */
-export async function getDueCount(userId: string): Promise<number> {
+export async function getDueCount(userId: string, tagIds?: string[]): Promise<number> {
+  const tagFilter =
+    tagIds && tagIds.length > 0
+      ? { tags: { some: { tagId: { in: tagIds } } } }
+      : {};
+
   return prisma.cardProgress.count({
     where: {
       userId,
       dueAt: { lte: new Date() },
-      card: { status: "PUBLISHED" },
+      card: { status: "PUBLISHED", ...tagFilter },
     },
   });
 }

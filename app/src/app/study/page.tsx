@@ -9,21 +9,30 @@ export const metadata: Metadata = {
   title: "Study — PPL Flashcards",
 };
 
-export default async function StudyPage() {
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
+export default async function StudyPage({ searchParams }: { searchParams: SearchParams }) {
   const session = await readSessionCookie();
   if (!session) redirect("/login");
 
-  const card = await getNextCard(session.userId);
+  const params = await searchParams;
+  const tagIds = Array.isArray(params.tagIds)
+    ? params.tagIds
+    : params.tagIds
+      ? params.tagIds.split(",").filter(Boolean)
+      : [];
+
+  const card = await getNextCard(session.userId, tagIds.length > 0 ? tagIds : undefined);
 
   return (
     <main className="min-h-dvh bg-stone-50">
       <div className="mx-auto flex min-h-dvh max-w-lg flex-col px-4 pt-6 pb-6 safe-bottom">
         <header className="mb-6 flex items-center justify-between">
           <Link
-            href="/"
+            href={tagIds.length > 0 ? "/study/setup" : "/"}
             className="text-sm font-medium text-slate-500 hover:text-slate-700"
           >
-            ← Home
+            ← {tagIds.length > 0 ? "Setup" : "Home"}
           </Link>
           <p className="text-sm font-medium uppercase tracking-wide text-sky-700">
             Canadian PPL

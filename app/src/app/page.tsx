@@ -83,12 +83,12 @@ export default async function Home() {
             </dl>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a
-                href="/study"
+              <Link
+                href="/study/setup"
                 className="inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
               >
                 Start studying →
-              </a>
+              </Link>
               {dueCount > 0 && (
                 <span className="rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-700">
                   {dueCount} due

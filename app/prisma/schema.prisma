@@ -14,6 +14,16 @@ datasource db {
 // Enums
 // ---------------------------------------------------------------------------
 
+// Controls what a user can do in the application:
+//   USER   — study, flag cards, change own password.
+//   EDITOR — everything USER can, plus create/edit/import cards.
+//   ADMIN  — everything EDITOR can, plus manage users.
+enum Role {
+  USER
+  EDITOR
+  ADMIN
+}
+
 enum CardType {
   MULTIPLE_CHOICE
   OPEN_ANSWER
@@ -100,21 +110,28 @@ enum DeckVisibility {
 // ---------------------------------------------------------------------------
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
-  displayName  String
-  passwordHash String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id              String   @id @default(cuid())
+  email           String   @unique
+  displayName     String
+  passwordHash    String
+  role            Role     @default(USER)
+  // Incremented whenever the password or role changes. Stored in the session
+  // cookie so the server can detect and reject stale sessions without keeping
+  // a server-side session table.
+  passwordVersion Int      @default(1)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 
-  decks       Deck[]
-  cards       Card[]         @relation("CreatedCards")
-  reviews     Review[]
-  progress    CardProgress[]
-  sessions    StudySession[]
-  imports     ImportBatch[]
-  mediaAssets MediaAsset[]
-  revisions   CardRevision[]
+  decks               Deck[]
+  cards               Card[]         @relation("CreatedCards")
+  reviews             Review[]
+  progress            CardProgress[]
+  sessions            StudySession[]
+  imports             ImportBatch[]
+  mediaAssets         MediaAsset[]
+  revisions           CardRevision[]
+  adminEventsAsActor  AdminEvent[]   @relation("AdminEventActor")
+  adminEventsAsTarget AdminEvent[]   @relation("AdminEventTarget")
 }
 
 model Deck {
@@ -344,4 +361,37 @@ model ImportBatch {
 
   user  User   @relation(fields: [userId], references: [id])
   cards Card[]
+}
+
+// Tracks every login attempt (successful or not) for brute-force protection.
+// Email is stored as-is from the request so attempts against unknown accounts
+// are counted, preventing user enumeration via differential timing.
+// Rows older than 24 h are pruned on each write.
+model LoginAttempt {
+  id          String   @id @default(cuid())
+  email       String
+  ipAddress   String?
+  succeeded   Boolean
+  attemptedAt DateTime @default(now())
+
+  @@index([email, attemptedAt])
+}
+
+// Append-only audit log for administrative actions. Never updated or deleted.
+model AdminEvent {
+  id           String   @id @default(cuid())
+  actorId      String
+  targetUserId String?
+  // Short descriptor, e.g. "CREATE_USER", "CHANGE_ROLE", "RESET_PASSWORD",
+  // "DELETE_USER".
+  action       String
+  // Additional context: old/new role, reason, etc.
+  detail       Json     @default("{}")
+  createdAt    DateTime @default(now())
+
+  actor  User  @relation("AdminEventActor", fields: [actorId], references: [id])
+  target User? @relation("AdminEventTarget", fields: [targetUserId], references: [id])
+
+  @@index([actorId])
+  @@index([targetUserId])
 }

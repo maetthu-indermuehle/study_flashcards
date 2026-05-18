@@ -9,7 +9,7 @@
  * the pending state used to dim the list during navigation.
  */
 
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useRef, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import type {
@@ -26,32 +26,23 @@ type Props = {
   cards: CardListItem[];
   total: number;
   filters: CardFilters;
-  tags: TagOption[];
+  tags: TagOption[]; // reserved for future tag-filter UI; unused for now
 };
 
-export default function CardBrowser({ cards, total, filters, tags }: Props) {
+export default function CardBrowser({ cards, total, filters }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
-  const [search, setSearch] = useState(filters.search);
+  // Ref for the search input so we can read its value without controlled state.
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Sync local search state if filters change from outside (e.g. browser back).
-  useEffect(() => {
-    setSearch(filters.search);
-  }, [filters.search]);
-
-  // Debounce search input — push new URL 400ms after the user stops typing.
-  useEffect(() => {
-    if (search === filters.search) return;
+  function handleSearchChange() {
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      pushFilters({ search, page: 1 });
+      const value = searchInputRef.current?.value ?? "";
+      if (value !== filters.search) pushFilters({ search: value, page: 1 });
     }, 400);
-    return () => {
-      if (debounceRef.current) clearTimeout(debounceRef.current);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [search]);
+  }
 
   function pushFilters(overrides: Partial<CardFilters>) {
     const next = { ...filters, ...overrides };
@@ -76,12 +67,15 @@ export default function CardBrowser({ cards, total, filters, tags }: Props) {
     <div>
       {/* Filter bar */}
       <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end">
-        {/* Search */}
+        {/* Search — uncontrolled; key resets it when the URL search param changes
+            (e.g. browser back). Value is read via ref in the debounce handler. */}
         <div className="flex-1 min-w-48">
           <input
+            key={filters.search}
+            ref={searchInputRef}
             type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            defaultValue={filters.search}
+            onChange={handleSearchChange}
             placeholder="Search question or answer…"
             className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm placeholder-slate-400 focus:border-sky-400 focus:outline-none"
           />

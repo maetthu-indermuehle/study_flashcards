@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { getDueCount } from "@/lib/study/get-next-card";
 import LogoutButton from "./LogoutButton";
@@ -82,12 +83,12 @@ export default async function Home() {
                   {dueCount} due
                 </span>
               )}
-              <a
+              <Link
                 href="/cards"
                 className="inline-flex h-11 items-center rounded-md border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
               >
                 Browse cards
-              </a>
+              </Link>
             </div>
           </div>
         </div>

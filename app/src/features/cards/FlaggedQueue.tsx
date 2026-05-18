@@ -24,7 +24,6 @@ type Props = {
 };
 
 export default function FlaggedQueue({ cards, tags }: Props) {
-  const [index, setIndex] = useState(0);
   const [handled, setHandled] = useState<Set<string>>(new Set());
 
   const remaining = cards.filter((c) => !handled.has(c.id));
@@ -51,9 +50,7 @@ export default function FlaggedQueue({ cards, tags }: Props) {
     );
   }
 
-  // clamp index to remaining length
-  const safeIndex = Math.min(index, remaining.length - 1);
-  const card = remaining[safeIndex];
+  const card = remaining[0];
 
   function advance() {
     setHandled((prev) => new Set([...prev, card.id]));
@@ -78,7 +75,7 @@ export default function FlaggedQueue({ cards, tags }: Props) {
       <div className="mb-6">
         <div className="mb-1 flex items-center justify-between text-sm">
           <span className="text-slate-500">
-            {safeIndex + 1} of {remaining.length} flagged
+            1 of {remaining.length} flagged
           </span>
           <button
             onClick={advance}
@@ -149,7 +146,6 @@ function FlaggedCardForm({
   // CardForm calls our onSave callback instead of the default Server Action.
   // The action buttons below trigger that callback with different semantics.
 
-  const [pendingData, setPendingData] = useState<CardFormData | null>(null);
   const [mode, setMode] = useState<"saveAndClear" | "keepFlagged" | null>(null);
 
   // CardForm's onSave is called when the user clicks its internal save button.

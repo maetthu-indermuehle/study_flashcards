@@ -9,10 +9,11 @@ Last updated: 2026-05-17
 
 ## Current state
 
-**Phase 5 is complete** (plus several post-phase additions). Working on branch `phase-5-spaced-repetition`.
+**Phase 9 is complete.** Working on branch `phase-6-card-management`.
 
-The full study loop is live with spaced repetition, question images, card flagging, and
-flag notes. 93 unit tests pass.
+The app is now a full PWA: installable on iOS and Android home screens, theme-coloured
+browser chrome, safe-area padding for notched iPhones, and a service worker for static
+asset caching. 129 unit tests pass.
 
 ---
 
@@ -107,14 +108,43 @@ flag notes. 93 unit tests pass.
   component parses the Markdown image syntax embedded in question text
   (`![alt](assets/FILENAME.png) body`) and renders the image above the question.
 
+### Phase 9 — PWA and mobile polish
+
+- Web App Manifest (`manifest.ts`): `standalone` display, portrait, theme colour
+  `#0f172a`, 192×192 and 512×512 PNG icons.
+- Generated icons via Next.js `ImageResponse`: `icon.tsx` (32×32 favicon),
+  `apple-icon.tsx` (180×180 iOS touch icon).
+- Service worker (`public/sw.js`): cache-first for JS/CSS/images, network-first for
+  navigation. Enables install prompt on HTTPS/localhost.
+- `ServiceWorkerRegistration` client component in root layout.
+- `globals.css`: tap-highlight removal, `touch-action: manipulation`, safe-area
+  utilities, `overscroll-behavior-y: contain`.
+- Study page and home page padded for iPhone home-indicator safe area.
+- Rating buttons bumped to ≥44 px touch target (Apple HIG minimum).
+
+### Phase 6 — Card management UI
+
+- Card browser at `/cards`: paginated list with search (full-text), filters (type,
+  difficulty, status, tag, flaggedOnly), and sort. URL search params drive all filters
+  so results are bookmarkable.
+- Card detail/edit page at `/cards/[id]`: full edit form with question, answer,
+  explanation, choices (MC), tags, difficulty, status, and source reference.
+- New card form at `/cards/new`.
+- Flagged review queue at `/cards/flagged`: step-through mode with "Save & clear flag",
+  "Save & keep flagged", and "Skip" actions.
+- `CardRevision` model: append-only edit history, one JSON snapshot written before every
+  save. History browsing/restore UI deferred to a later phase.
+- `CardBrowser`, `CardForm`, `ChoiceEditor`, `TagSelector`, `FlaggedQueue` components.
+- "Browse cards" button on the home page; "Edit" link in the study card toolbar.
+- 36 new unit tests (129 total).
+
 ---
 
 ## Phases ahead (summary)
 
 | Phase | Name                       | What it unlocks                                                    |
 |-------|----------------------------|--------------------------------------------------------------------|
-| 6     | Card management UI         | Browse, search, filter, create, edit, archive cards in the app     |
-| 7     | Media support v1           | Images, charts, and diagrams on question/answer sides              |
+| 7     | Media support v1           | Media upload UI and object storage for new cards                   |
 | 8     | Bulk import UI             | JSON upload inside the app, with preview and validation            |
 | 9     | PWA and mobile polish      | Installable app, offline-ready, polished touch UX                  |
 | 10    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |

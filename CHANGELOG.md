@@ -9,6 +9,89 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.8.0] - 2026-05-17
+
+### Added
+
+- **Phase 9 — PWA and mobile polish** (branch `phase-6-card-management`).
+- `app/src/app/manifest.ts` — Web App Manifest: `standalone` display mode, portrait
+  orientation, `#0f172a` theme colour, references 192×192 and 512×512 PNG icons.
+- `app/public/icons/icon-192.png` and `icon-512.png` — generated with sharp from an
+  SVG source (dark-slate background, white "PPL" text).
+- `app/src/app/icon.tsx` — dynamically generated browser-tab favicon (32×32) via
+  Next.js `ImageResponse`.
+- `app/src/app/apple-icon.tsx` — dynamically generated iOS home-screen icon (180×180)
+  via Next.js `ImageResponse`.
+- `app/public/sw.js` — service worker: cache-first for static assets, network-first
+  for navigation. Enables the PWA install prompt on HTTPS/localhost.
+- `app/src/components/ServiceWorkerRegistration.tsx` — client component that registers
+  the service worker on mount; silent no-op if SW is unsupported or on HTTP.
+- `app/src/app/layout.tsx` updated: `Viewport` export for `theme-color`, `viewportFit:
+  cover`, `appleWebApp` capable/status-bar meta tags, `ServiceWorkerRegistration`
+  component added to the root layout.
+
+### Changed
+
+- `app/src/app/globals.css` — added `-webkit-tap-highlight-color: transparent` (removes
+  iOS blue/grey tap flash), `touch-action: manipulation` on buttons/links (eliminates
+  300 ms click delay), `overscroll-behavior-y: contain` (prevents pull-to-refresh
+  interfering with card interactions), and `.safe-bottom` / `.safe-top` utilities for
+  `env(safe-area-inset-*)` padding on notched iPhones.
+- Study page and home page outer containers use `.safe-bottom` so content clears the
+  iPhone home-indicator bar.
+- Rating buttons in `CardFeedback` bumped from `py-3` to `py-3.5` (≥44 px touch
+  target per Apple HIG).
+- Home page phase badge updated to "Phase 9".
+
+---
+
+## [0.7.0] - 2026-05-17
+
+### Added
+
+- **Phase 6 — Card management UI** (branch `phase-6-card-management`).
+- `app/src/lib/cards/types.ts` — plain TypeScript types for the card management
+  feature: `CardListItem`, `CardDetail`, `CardFilters`, `CardFormData`, `TagOption`, etc.
+- `app/src/lib/cards/queries.ts` — `listCards` (paginated, filtered browser query),
+  `getCard` (full detail for edit page), `listTags` (tag options excluding the internal
+  flagged marker).
+- `app/src/lib/cards/actions.ts` — Server Actions: `createCard`, `updateCard`,
+  `archiveCard`, `deleteCard`, `saveFlaggedCard`. Every `updateCard` call writes a
+  `CardRevision` snapshot before applying changes so full edit history is preserved.
+- `app/src/app/cards/page.tsx` — card browser at `/cards`: searchParams-driven filters
+  (search, type, difficulty, status, flaggedOnly, sort), pagination, "New card" and
+  "Review flagged" shortcuts.
+- `app/src/app/cards/[id]/page.tsx` — card detail/edit page; shows flag note banner
+  when flagged.
+- `app/src/app/cards/new/page.tsx` — blank card creation form.
+- `app/src/app/cards/flagged/page.tsx` — flagged review queue at `/cards/flagged`.
+- `app/src/features/cards/CardBrowser.tsx` — client component for filter state and card
+  list; uses `useTransition` + `router.push` to update URL search params without losing
+  Server Component data fetching.
+- `app/src/features/cards/CardForm.tsx` — shared create/edit form: type selector,
+  question/answer/explanation textareas, difficulty/status selects, ChoiceEditor (MC),
+  TagSelector, and a collapsible source reference section. Accepts optional `onSave`
+  callback for embedding in the flagged queue.
+- `app/src/features/cards/ChoiceEditor.tsx` — multiple-choice option editor with
+  correct/incorrect toggle, add, remove.
+- `app/src/features/cards/TagSelector.tsx` — multi-select from existing tags (grouped
+  by type) with inline new-tag creation form.
+- `app/src/features/cards/FlaggedQueue.tsx` — step-through review of all flagged cards;
+  shows flag note, full edit form, and three actions: "Save & clear flag", "Save & keep
+  flagged", "Skip".
+- `app/src/lib/cards/queries.test.ts` / `actions.test.ts` — 36 new unit tests covering
+  filter defaults, flag detection, due-date formatting, form validation, and tag
+  deduplication. Total test count: 129.
+- `CardRevision` model added to Prisma schema (`app/prisma/schema.prisma`) with
+  migration `20260517203443_add_card_revision`. Stores a JSON snapshot of the card
+  state before every edit (question, answer, explanation, difficulty, status, choices,
+  tags, flagNote).
+- "Browse cards" button added to the home page.
+- "Edit" link added to the study toolbar (next to the flag button) linking to
+  `/cards/[id]`.
+
+---
+
 ## [0.6.4] - 2026-05-17
 
 ### Changed

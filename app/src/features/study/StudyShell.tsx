@@ -16,6 +16,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
 import type { StudyCard } from "@/lib/study/types";
@@ -108,18 +109,27 @@ export default function StudyShell({ card }: Props) {
         ) : (
           <span />
         )}
-        <button
-          onClick={handleFlagButtonClick}
-          title={flagged ? "Edit flag note" : "Flag for review"}
-          className={`flex items-center gap-1.5 rounded-md px-2 py-1 text-xs font-medium transition ${
-            flagged
-              ? "bg-amber-100 text-amber-700 hover:bg-amber-200"
-              : "text-slate-400 hover:bg-slate-100 hover:text-slate-600"
-          }`}
-        >
-          <FlagIcon filled={flagged} />
-          {flagged ? "Flagged" : "Flag"}
-        </button>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={handleFlagButtonClick}
+            title={flagged ? "Edit flag note" : "Flag for review"}
+            className={`flex items-center gap-1.5 rounded-md px-2 py-1 text-xs font-medium transition ${
+              flagged
+                ? "bg-amber-100 text-amber-700 hover:bg-amber-200"
+                : "text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+            }`}
+          >
+            <FlagIcon filled={flagged} />
+            {flagged ? "Flagged" : "Flag"}
+          </button>
+          <Link
+            href={`/cards/${card.id}`}
+            title="Edit this card"
+            className="rounded-md px-2 py-1 text-xs font-medium text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition"
+          >
+            Edit
+          </Link>
+        </div>
       </div>
 
       {/* Inline note panel */}

@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { getDueCount } from "@/lib/study/get-next-card";
 import LogoutButton from "./LogoutButton";
@@ -13,7 +14,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-dvh bg-stone-50 text-slate-950">
-      <section className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 py-6 sm:px-8 lg:px-10">
+      <section className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-6 pb-6 sm:px-8 lg:px-10 safe-bottom">
         <header className="flex items-center justify-between border-b border-slate-200 pb-4">
           <div>
             <p className="text-sm font-medium uppercase tracking-wide text-sky-700">
@@ -29,7 +30,7 @@ export default async function Home() {
             </span>
             <LogoutButton />
             <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
-              Phase 4
+              Phase 9
             </span>
           </div>
         </header>
@@ -70,7 +71,7 @@ export default async function Home() {
               </div>
             </dl>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="/study"
                 className="inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
@@ -82,6 +83,12 @@ export default async function Home() {
                   {dueCount} due
                 </span>
               )}
+              <Link
+                href="/cards"
+                className="inline-flex h-11 items-center rounded-md border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+              >
+                Browse cards
+              </Link>
             </div>
           </div>
         </div>

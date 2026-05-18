@@ -114,6 +114,7 @@ model User {
   sessions    StudySession[]
   imports     ImportBatch[]
   mediaAssets MediaAsset[]
+  revisions   CardRevision[]
 }
 
 model Deck {
@@ -157,6 +158,7 @@ model Card {
   media       CardMedia[]
   reviews     Review[]
   progress    CardProgress[]
+  revisions   CardRevision[]
 
   // Supports the card browser: filter by deck and status is the most common query.
   @@index([deckId, status])
@@ -303,6 +305,31 @@ model StudySession {
 
   user    User     @relation(fields: [userId], references: [id])
   reviews Review[]
+}
+
+// Append-only edit history for a card. One row is written before every save
+// so the full state at each point in time can be reconstructed. The snapshot
+// is a JSON blob rather than normalised columns so the shape can evolve
+// without additional migrations. The UI for browsing/restoring history comes
+// in a later phase; this model exists now so no edit data is lost.
+model CardRevision {
+  id            String   @id @default(cuid())
+  cardId        String
+  editedByUserId String
+  editedAt      DateTime @default(now())
+  // Free-text label describing why this revision was made (e.g. "flagged edit",
+  // "manual correction"). Null for routine saves.
+  reason        String?
+  // Full card state at the time of the edit: question, answer, explanation,
+  // difficulty, status, choices [{text, isCorrect, sortOrder}],
+  // tags [{name, type}], and flagNote if the card was flagged.
+  snapshot      Json
+
+  card     Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  editedBy User @relation(fields: [editedByUserId], references: [id])
+
+  // History lookups always filter by cardId.
+  @@index([cardId, editedAt])
 }
 
 model ImportBatch {

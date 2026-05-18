@@ -17,7 +17,7 @@ export default async function StudyPage() {
 
   return (
     <main className="min-h-dvh bg-stone-50">
-      <div className="mx-auto flex min-h-dvh max-w-lg flex-col px-4 py-6">
+      <div className="mx-auto flex min-h-dvh max-w-lg flex-col px-4 pt-6 pb-6 safe-bottom">
         <header className="mb-6 flex items-center justify-between">
           <Link
             href="/"

@@ -70,7 +70,7 @@ export default async function Home() {
               </div>
             </dl>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="/study"
                 className="inline-flex h-11 items-center rounded-md bg-slate-950 px-5 text-sm font-medium text-white transition hover:bg-slate-800"
@@ -82,6 +82,12 @@ export default async function Home() {
                   {dueCount} due
                 </span>
               )}
+              <a
+                href="/cards"
+                className="inline-flex h-11 items-center rounded-md border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+              >
+                Browse cards
+              </a>
             </div>
           </div>
         </div>

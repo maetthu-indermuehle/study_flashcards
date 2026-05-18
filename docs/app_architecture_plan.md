@@ -379,6 +379,21 @@ Important fields:
 - `summary`
 - `createdAt`
 
+### CardRevision
+
+Append-only edit history for a card. One row is written before every save so the full card state at each point in time can be reconstructed.
+
+Important fields:
+
+- `id`
+- `cardId`
+- `editedByUserId`
+- `editedAt`
+- `reason` — optional label, e.g. `"flagged edit"`, `"manual correction"`
+- `snapshot` — JSON blob: question, answer, explanation, difficulty, status, choices, tags, flagNote
+
+The `snapshot` field is a JSON blob rather than normalised columns so the shape can evolve without additional migrations. The Phase 6 edit actions write revisions silently; the UI for browsing and restoring history is deferred to a later phase.
+
 ## Study Modes
 
 The app should support:
@@ -629,7 +644,8 @@ references/
 7. ~~Build the mobile study UI for multiple-choice and open-answer cards.~~ ✓ Phase 4
 8. ~~Implement the first spaced repetition scheduler.~~ ✓ Phase 5
 9. ~~Serve question images; add card flagging and notes.~~ ✓ Phase 5 patches
-10. Add card editor and single-card creation. ← Phase 6
-11. Add full media management (upload UI, object storage).
-11. Add initial Helm chart for OpenShift deployment.
-12. Add PWA manifest and mobile polish.
+10. Add card browser, editor, create form, flagged review queue, and CardRevision history. ← Phase 6
+11. Add full media management (upload UI, object storage). ← Phase 7
+12. Add bulk import UI (JSON upload, preview, validation). ← Phase 8
+13. Add initial Helm chart for OpenShift deployment. ← Phase 10
+14. Add PWA manifest and mobile polish. ← Phase 9

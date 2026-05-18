@@ -9,6 +9,53 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.7.0] - 2026-05-17
+
+### Added
+
+- **Phase 6 — Card management UI** (branch `phase-6-card-management`).
+- `app/src/lib/cards/types.ts` — plain TypeScript types for the card management
+  feature: `CardListItem`, `CardDetail`, `CardFilters`, `CardFormData`, `TagOption`, etc.
+- `app/src/lib/cards/queries.ts` — `listCards` (paginated, filtered browser query),
+  `getCard` (full detail for edit page), `listTags` (tag options excluding the internal
+  flagged marker).
+- `app/src/lib/cards/actions.ts` — Server Actions: `createCard`, `updateCard`,
+  `archiveCard`, `deleteCard`, `saveFlaggedCard`. Every `updateCard` call writes a
+  `CardRevision` snapshot before applying changes so full edit history is preserved.
+- `app/src/app/cards/page.tsx` — card browser at `/cards`: searchParams-driven filters
+  (search, type, difficulty, status, flaggedOnly, sort), pagination, "New card" and
+  "Review flagged" shortcuts.
+- `app/src/app/cards/[id]/page.tsx` — card detail/edit page; shows flag note banner
+  when flagged.
+- `app/src/app/cards/new/page.tsx` — blank card creation form.
+- `app/src/app/cards/flagged/page.tsx` — flagged review queue at `/cards/flagged`.
+- `app/src/features/cards/CardBrowser.tsx` — client component for filter state and card
+  list; uses `useTransition` + `router.push` to update URL search params without losing
+  Server Component data fetching.
+- `app/src/features/cards/CardForm.tsx` — shared create/edit form: type selector,
+  question/answer/explanation textareas, difficulty/status selects, ChoiceEditor (MC),
+  TagSelector, and a collapsible source reference section. Accepts optional `onSave`
+  callback for embedding in the flagged queue.
+- `app/src/features/cards/ChoiceEditor.tsx` — multiple-choice option editor with
+  correct/incorrect toggle, add, remove.
+- `app/src/features/cards/TagSelector.tsx` — multi-select from existing tags (grouped
+  by type) with inline new-tag creation form.
+- `app/src/features/cards/FlaggedQueue.tsx` — step-through review of all flagged cards;
+  shows flag note, full edit form, and three actions: "Save & clear flag", "Save & keep
+  flagged", "Skip".
+- `app/src/lib/cards/queries.test.ts` / `actions.test.ts` — 36 new unit tests covering
+  filter defaults, flag detection, due-date formatting, form validation, and tag
+  deduplication. Total test count: 129.
+- `CardRevision` model added to Prisma schema (`app/prisma/schema.prisma`) with
+  migration `20260517203443_add_card_revision`. Stores a JSON snapshot of the card
+  state before every edit (question, answer, explanation, difficulty, status, choices,
+  tags, flagNote).
+- "Browse cards" button added to the home page.
+- "Edit" link added to the study toolbar (next to the flag button) linking to
+  `/cards/[id]`.
+
+---
+
 ## [0.6.4] - 2026-05-17
 
 ### Changed

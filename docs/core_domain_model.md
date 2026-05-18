@@ -29,6 +29,9 @@ erDiagram
 
     IMPORT_BATCH ||--o{ CARD : creates
 
+    USER ||--o{ CARD_REVISION : edits
+    CARD ||--o{ CARD_REVISION : versioned_by
+
     USER {
         string id PK
         string email
@@ -157,6 +160,15 @@ erDiagram
         string summary
         datetime createdAt
     }
+
+    CARD_REVISION {
+        string id PK
+        string cardId FK
+        string editedByUserId FK
+        datetime editedAt
+        string reason "nullable"
+        json snapshot
+    }
 ```
 
 ## Relationship Notes
@@ -171,4 +183,5 @@ erDiagram
 - `Card.originalId` preserves the source identifier from the import file (e.g. `"MET-042"`) for traceability and idempotent re-imports.
 - `Card.importBatchId` links a card back to the import run that created it.
 - `CardTag.note` stores a free-text annotation when the tag is the special `flagged` marker — lets the user record what they think is wrong with a card for later review.
+- `CardRevision` is append-only edit history. One row is written before every card save, capturing the full card state as a JSON snapshot (question, answer, explanation, difficulty, status, choices, tags, flagNote). The UI for browsing and restoring revisions is deferred to a later phase; the table exists now so no edit history is lost.
 

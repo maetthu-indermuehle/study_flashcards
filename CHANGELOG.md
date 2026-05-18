@@ -9,6 +9,34 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.10.0] - 2026-05-17
+
+### Added
+
+- **Phase 8 — Bulk import UI** (branch `phase-8-bulk-import`).
+- Three-step import wizard at `/import` (EDITOR+ only):
+  - **Step 1 — Upload**: file picker (`.json`, max 5 MB) or paste raw JSON.
+    Client-side card count detected before upload.
+  - **Step 2 — Preview**: dry-run server action parses and validates the JSON,
+    queries which source IDs already exist, and returns total/new/update counts,
+    hard errors (block import), warnings (allow import), and a sample of the first 10
+    cards. Import is blocked until all hard errors are resolved.
+  - **Step 3 — Done**: confirmation with created/updated counts and a link to browse
+    cards or import another file.
+- `src/lib/import/actions.ts` — two Server Actions:
+  - `dryRunImport(json)` — parse + validate + DB check, no writes.
+  - `runImport(json)` — parse + validate + write; stores raw JSON in `ImportBatch`
+    for audit. Returns `batchId`, created, updated counts.
+  - `getImportHistory()` — last 10 `ImportBatch` rows for the current user.
+- `src/lib/import/dry-run-helpers.ts` — pure helpers (`partitionCounts`,
+  `buildSample`) extracted from the dry-run action for testability.
+- 11 new unit tests for `partitionCounts` and `buildSample` (161 total).
+- Proxy updated: `/import` route now requires EDITOR role.
+- Home page: **Import cards** button shown for EDITOR and ADMIN users.
+- Recent import history shown below the wizard on the `/import` page.
+
+---
+
 ## [0.9.0] - 2026-05-18
 
 ### Added

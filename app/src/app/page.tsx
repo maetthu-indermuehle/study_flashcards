@@ -100,6 +100,14 @@ export default async function Home() {
               >
                 Browse cards
               </Link>
+              {(session.role === "EDITOR" || session.role === "ADMIN") && (
+                <Link
+                  href="/import"
+                  className="inline-flex h-11 items-center rounded-md border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+                >
+                  Import cards
+                </Link>
+              )}
             </div>
           </div>
         </div>

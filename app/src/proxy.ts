@@ -37,6 +37,7 @@ function requiredRole(pathname: string): UserRole | null {
   if (PUBLIC_PATHS.has(pathname)) return null;
   if (pathname === "/admin" || pathname.startsWith("/admin/")) return "ADMIN";
   if (pathname === "/cards" || pathname.startsWith("/cards/")) return "EDITOR";
+  if (pathname === "/import") return "EDITOR";
   return "USER"; // all other authenticated routes
 }
 

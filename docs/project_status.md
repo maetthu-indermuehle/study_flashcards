@@ -3,18 +3,19 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-18
+Last updated: 2026-05-17
 
 ---
 
 ## Current state
 
-**Phase 7 is complete.** Working on branch `phase-7-user-management`.
+**Phase 8 is complete.** Working on branch `phase-8-bulk-import`.
 
-The app now has full multi-user support with three roles (USER / EDITOR / ADMIN),
-brute-force login protection, session invalidation via `passwordVersion`, an admin UI
-for user management, a profile page for password changes, and an append-only audit log.
-150 unit tests pass.
+EDITOR and ADMIN users can now upload a JSON file (or paste raw JSON) through the
+three-step import wizard at `/import`. A dry-run preview shows what will be created or
+updated — with hard errors blocking import — before the user confirms. Each successful
+import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
+161 unit tests pass.
 
 ---
 
@@ -131,6 +132,21 @@ for user management, a profile page for password changes, and an append-only aud
 - Home page: Profile link + Admin badge for ADMIN users.
 - 21 new tests (150 total).
 
+### Phase 8 — Bulk import UI
+
+- Three-step import wizard at `/import` (EDITOR+ only): upload JSON file or paste raw
+  JSON → dry-run preview (create/update counts, hard errors, warnings, first-10 sample)
+  → confirm import.
+- `dryRunImport` server action: parse + validate + DB check for existing source IDs,
+  no writes. Returns preview data.
+- `runImport` server action: full pipeline write; stores raw JSON in `ImportBatch` for audit.
+- `getImportHistory` server action: last 10 `ImportBatch` rows for the current user.
+- Pure helpers (`partitionCounts`, `buildSample`) extracted and tested (11 new tests,
+  161 total).
+- Proxy updated: `/import` requires EDITOR role.
+- Home page: Import cards button for EDITOR+ users.
+- Recent import history shown below the wizard.
+
 ### Phase 9 — PWA and mobile polish
 
 - Web App Manifest (`manifest.ts`): `standalone` display, portrait, theme colour
@@ -167,12 +183,10 @@ for user management, a profile page for password changes, and an append-only aud
 
 | Phase | Name                       | What it unlocks                                                    |
 |-------|----------------------------|--------------------------------------------------------------------|
-| 7     | Media support v1           | Media upload UI and object storage for new cards                   |
-| 8     | Bulk import UI             | JSON upload inside the app, with preview and validation            |
-| 9     | PWA and mobile polish      | Installable app, offline-ready, polished touch UX                  |
-| 10    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |
-| 11    | Export and backup tools    | JSON, CSV export so content stays portable                         |
-| 12    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
+| 10    | Media support v1           | Media upload UI and object storage for new cards                   |
+| 11    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |
+| 12    | Export and backup tools    | JSON, CSV export so content stays portable                         |
+| 13    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
 
 ---
 

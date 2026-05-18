@@ -37,6 +37,11 @@ export type ImportOptions = {
   deckName: string;
   /** ID of the user who owns the deck and will be recorded on the batch. */
   userId: string;
+  /**
+   * The original JSON string that was uploaded. Stored in the ImportBatch row
+   * for audit purposes so the exact input can be retrieved later.
+   */
+  rawInput?: string;
 };
 
 /**
@@ -83,7 +88,7 @@ export async function importCards(
   cards: ParsedCard[],
   options: ImportOptions,
 ): Promise<ImportResult> {
-  const { deckName, userId } = options;
+  const { deckName, userId, rawInput } = options;
 
   // -------------------------------------------------------------------------
   // Step 1 — resolve the target deck
@@ -113,6 +118,7 @@ export async function importCards(
       userId,
       sourceType: ImportSourceType.JSON,
       status: ImportStatus.DRAFT,
+      rawInput: rawInput ?? null,
     },
     select: { id: true },
   });

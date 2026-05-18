@@ -9,12 +9,13 @@ Last updated: 2026-05-17
 
 ## Current state
 
-**Phase 8 is complete.** Working on branch `phase-8-bulk-import`.
+**Phase 10 (cleanup and UI improvements) is in progress.** Working on branch
+`phase-10-cleanup-ui`.
 
-EDITOR and ADMIN users can now upload a JSON file (or paste raw JSON) through the
-three-step import wizard at `/import`. A dry-run preview shows what will be created or
-updated — with hard errors blocking import — before the user confirms. Each successful
-import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
+Phases 0–9 are complete and merged to `main`. The app is fully functional: multi-user
+with roles, spaced repetition, card management, bulk import, and installable PWA.
+Current work is cleaning up the repository (removing converted Markdown source files
+now superseded by `data/questions/*.json`) and updating documentation.
 161 unit tests pass.
 
 ---
@@ -181,12 +182,13 @@ import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
 
 ## Phases ahead (summary)
 
-| Phase | Name                       | What it unlocks                                                    |
-|-------|----------------------------|--------------------------------------------------------------------|
-| 10    | Media support v1           | Media upload UI and object storage for new cards                   |
-| 11    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |
-| 12    | Export and backup tools    | JSON, CSV export so content stays portable                         |
-| 13    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
+| Phase | Name                         | What it unlocks                                                    |
+|-------|------------------------------|--------------------------------------------------------------------|
+| 10    | Cleanup and UI improvements  | Tidy repo, polish navigation and empty states                      |
+| 11    | Media support v1             | Media upload UI and object storage for new cards                   |
+| 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
+| 13    | Export and backup tools      | JSON, CSV export so content stays portable                         |
+| 14    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
 
 ---
 

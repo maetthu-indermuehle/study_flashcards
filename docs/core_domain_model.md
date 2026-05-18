@@ -11,6 +11,8 @@ erDiagram
     USER ||--o{ CARD_PROGRESS : owns
     USER ||--o{ IMPORT_BATCH : runs
     USER ||--o{ MEDIA_ASSET : uploads
+    USER ||--o{ ADMIN_EVENT : acts_in
+    USER ||--o{ ADMIN_EVENT : targeted_by
 
     DECK ||--o{ CARD : contains
 
@@ -37,6 +39,8 @@ erDiagram
         string email
         string displayName
         string passwordHash
+        Role role "USER | EDITOR | ADMIN"
+        int passwordVersion
         datetime createdAt
         datetime updatedAt
     }
@@ -169,6 +173,23 @@ erDiagram
         string reason "nullable"
         json snapshot
     }
+
+    LOGIN_ATTEMPT {
+        string id PK
+        string email
+        boolean succeeded
+        string ipAddress "nullable"
+        datetime attemptedAt
+    }
+
+    ADMIN_EVENT {
+        string id PK
+        string actorUserId FK
+        string targetUserId FK "nullable"
+        string action
+        json detail
+        datetime createdAt
+    }
 ```
 
 ## Relationship Notes
@@ -184,4 +205,7 @@ erDiagram
 - `Card.importBatchId` links a card back to the import run that created it.
 - `CardTag.note` stores a free-text annotation when the tag is the special `flagged` marker — lets the user record what they think is wrong with a card for later review.
 - `CardRevision` is append-only edit history. One row is written before every card save, capturing the full card state as a JSON snapshot (question, answer, explanation, difficulty, status, choices, tags, flagNote). The UI for browsing and restoring revisions is deferred to a later phase; the table exists now so no edit history is lost.
-
+- `User.role` is a three-level enum: `USER` (study + flag + change own password), `EDITOR` (+ card create/edit/import), `ADMIN` (+ manage users). Role checks use a numeric rank comparison so `EDITOR` implicitly satisfies any `USER` check.
+- `User.passwordVersion` is incremented on every password change or role change. The value is embedded in the session cookie; `requireRole()` re-reads it from the DB to detect stale sessions without a server-side session store.
+- `LoginAttempt` is email-keyed (no `userId` FK) so lock-out behaviour is identical whether the account exists or not, preventing user enumeration via timing differences. Ten failures in 15 minutes locks the account; rows older than 24 h are pruned on each write.
+- `AdminEvent` is an append-only audit log written by every admin action (`CREATE_USER`, `CHANGE_ROLE`, `RESET_PASSWORD`, `DELETE_USER`). It records the actor, optional target user, and a JSON detail blob.

@@ -113,29 +113,37 @@ MariaDB is a reasonable option if the production platform already provides it mo
 
 ## Authentication
 
-The app should be multi-user capable from day one, but user management should stay minimal at first.
+The app uses local credentials login with stateless HMAC-SHA256 signed session cookies.
+No external auth library is used — only Node.js `crypto`.
 
-Initial approach:
+Implemented approach:
 
-- Implement a simple local authentication provider.
-- One admin/user can be created via seed script or environment-backed bootstrap flow.
-- Use secure password hashing.
-- Use database-backed sessions or a well-supported auth library.
+- Passwords hashed with `crypto.scrypt` (random salt, stored as `<hash>.<salt>`).
+- Session cookie contains `userId`, `email`, `role`, and `passwordVersion`. Signed with
+  `SESSION_SECRET` (min 32 chars). 7-day lifetime.
+- `passwordVersion` is incremented on every password or role change. `requireRole()`
+  re-reads the value from the DB to reject stale sessions without a server-side session store.
+- Brute-force protection: 10 failed attempts per email in 15 minutes locks the account.
+  Lock check runs before password comparison so timing is identical for existing and
+  non-existing accounts.
 
-Architecture requirements:
+Three roles:
 
-- The `User` model exists from the beginning.
-- Progress is always tied to a user.
-- Card ownership and import ownership are tied to a user where relevant.
-- Auth code is isolated behind a small interface so OAuth, magic links, or SSO can be added later.
+- `USER` — study, flag cards, change own password.
+- `EDITOR` — everything USER can do, plus create/edit/import cards.
+- `ADMIN` — everything EDITOR can do, plus manage users.
 
-Possible future providers:
+Role checks use a numeric rank comparison so `EDITOR` implicitly satisfies any `USER` check.
 
-- email/password
+The proxy (`src/proxy.ts`) does an optimistic role check from the cookie (no DB query).
+Server Components and Server Actions do an authoritative check that includes the DB
+`passwordVersion` read.
+
+Possible future auth additions:
+
 - magic link
-- GitHub
-- Google
-- OpenShift/OIDC provider if useful later
+- GitHub / Google OAuth
+- OpenShift / OIDC provider
 
 ## PWA and Offline Strategy
 
@@ -497,10 +505,12 @@ Key design decisions:
 The CLI import command (`app/scripts/import.ts`) parses and validates JSON, creates an
 `ImportBatch` record, and upserts cards by `sourceId` so re-runs are safe.
 
-### Future Bulk Import UI
+### Bulk Import UI
 
-A browser-based import flow (Phase 8) will let users paste or upload JSON, preview
-parsed cards with validation feedback, and confirm the import.
+A browser-based import wizard at `/import` (Phase 8, complete) lets EDITOR+ users
+paste or upload a `.json` file, preview parsed cards with validation feedback, and
+confirm the import. Each confirmed import creates an `ImportBatch` row with the raw
+JSON stored for audit purposes.
 
 Import validation checks:
 
@@ -585,53 +595,63 @@ OpenShift-specific requirements:
 app/
   src/
     app/                    Next.js App Router pages and layouts
-    components/
-    features/
-      study/
+      admin/                Admin UI (users CRUD) — ADMIN role required
+      cards/                Card browser and editor — EDITOR role required
+      import/               Bulk import wizard — EDITOR role required
+      profile/              Change-own-password — USER role required
+      study/                Study flow — USER role required
+    features/               Client components grouped by feature
+      admin/
       cards/
-      imports/
-      auth/
-      progress/
+      import/
+      profile/
+      study/
     lib/
+      auth/                 permissions.ts, brute-force.ts, password.ts
+      cards/                queries and server actions
       db/                   Prisma client singleton
       env/                  Environment variable validation (Zod)
-      importer/             JSON parser, validator, import service
-      scheduler/
-      auth/
-      media/
+      import/               Bulk import server actions and dry-run helpers
+      importer/             JSON parser, validator, import service (shared with CLI)
+      session/              Session codec, cookies, types
+      study/                SM-2 scheduler, due-card queries
+      users/                User queries and admin server actions
   prisma/
     schema.prisma
     migrations/
+    seed.ts
   scripts/
     import.ts               CLI: import a JSON question file into the database
   public/
+    assets/                 30 PNG images for question cards
   Dockerfile
   package.json
 
 charts/
-  ppl-flashcards/           Helm chart (Phase 10)
+  ppl-flashcards/           Helm chart (Phase 12)
     Chart.yaml
     values.yaml
     templates/
 
 data/
-  questions/                JSON question files (output of scripts/md_to_json.ts)
+  questions/                JSON question files (canonical source of truth)
     MET_126_175_*.json
     questions_airlaw.json
     ...
 
 scripts/
-  md_to_json.ts             One-off: convert Questions/*.md → data/questions/*.json
+  md_to_json.ts             One-off: converted Questions/*.md → data/questions/*.json
 
 docker-compose.yml
 docs/
-Questions/                  Original Markdown question files (archived after migration)
+Questions/
+  sample_questions.md       Reference sample for the canonical JSON question format
 references/
 ```
 
 ## Open Decisions
 
-- Whether media storage grows beyond static `public/assets/` to object storage (MinIO / S3) for Phase 7.
+- Whether media storage grows beyond static `public/assets/` to object storage (MinIO / S3) for Phase 11.
 
 ## Implementation Progress
 
@@ -644,8 +664,11 @@ references/
 7. ~~Build the mobile study UI for multiple-choice and open-answer cards.~~ ✓ Phase 4
 8. ~~Implement the first spaced repetition scheduler.~~ ✓ Phase 5
 9. ~~Serve question images; add card flagging and notes.~~ ✓ Phase 5 patches
-10. Add card browser, editor, create form, flagged review queue, and CardRevision history. ← Phase 6
-11. Add full media management (upload UI, object storage). ← Phase 7
-12. Add bulk import UI (JSON upload, preview, validation). ← Phase 8
-13. Add initial Helm chart for OpenShift deployment. ← Phase 10
-14. Add PWA manifest and mobile polish. ← Phase 9
+10. ~~Add card browser, editor, create form, flagged review queue, and CardRevision history.~~ ✓ Phase 6
+11. ~~Add user management: roles, brute-force protection, admin UI, profile page.~~ ✓ Phase 7
+12. ~~Add bulk import UI (JSON upload, dry-run preview, ImportBatch audit trail).~~ ✓ Phase 8
+13. ~~Add PWA manifest and mobile polish.~~ ✓ Phase 9
+14. Clean up repo and polish UI. ← Phase 10 (current)
+15. Add full media management (upload UI, object storage). ← Phase 11
+16. Add initial Helm chart for OpenShift deployment. ← Phase 12
+17. Add export tools (JSON, Markdown, CSV). ← Phase 13

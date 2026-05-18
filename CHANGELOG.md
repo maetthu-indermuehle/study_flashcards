@@ -9,6 +9,57 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.9.0] - 2026-05-18
+
+### Added
+
+- **Phase 7 — User management** (branch `phase-7-user-management`).
+- `Role` enum in Prisma schema: `USER | EDITOR | ADMIN` with clear permission
+  boundaries (study/flag → USER+; card create/edit/import → EDITOR+; manage users → ADMIN).
+- `User.role` and `User.passwordVersion` fields (migration
+  `20260518024256_add_roles_and_audit`). `passwordVersion` is incremented on every
+  password change or role change; the value is embedded in the session cookie so the
+  server can invalidate stale sessions without a session store.
+- `LoginAttempt` model — tracks every login attempt (succeeded/failed) per email.
+  After 10 failures in 15 minutes the account is locked. Rows older than 24 h are
+  pruned on every write.
+- `AdminEvent` model — append-only audit log: actor, target, action string
+  (`CREATE_USER`, `CHANGE_ROLE`, `RESET_PASSWORD`, `DELETE_USER`), JSON detail blob.
+- `src/lib/auth/permissions.ts` — `hasRole()` (pure rank comparison) and
+  `requireRole(minRole)` (session read + DB `passwordVersion` check). All card
+  management Server Actions upgraded from `requireUser()` to `requireRole("EDITOR")`.
+- `src/lib/auth/brute-force.ts` — `isAccountLocked()` / `recordLoginAttempt()` backed
+  by the `LoginAttempt` table. Checked before the password comparison in the login route
+  so lock-out is the same whether the account exists or not.
+- `hashPassword()` and `MIN_PASSWORD_LENGTH` (10 chars) exported from
+  `src/lib/auth/password.ts`; seed script delegates to this function instead of
+  duplicating scrypt logic.
+- `src/lib/session/types.ts` — `UserRole` type; `SessionPayload` gains `role` and
+  `passwordVersion` fields.
+- `createSessionCookie()` now accepts `role` and `passwordVersion`.
+- `src/proxy.ts` — role-based route guards: `/admin/*` → ADMIN, `/cards/*` → EDITOR,
+  everything else → USER. Optimistic (no DB query); Server Components and Actions are
+  the authoritative gate.
+- `/api/auth/login` — brute-force check before credential lookup; passes `role` and
+  `passwordVersion` into the session cookie.
+- Admin UI at `/admin/users`: paginated user table, create-user form, per-user edit
+  page (display name + role), reset-password form, delete-user button with two-step
+  confirmation. Server-side guards: cannot delete self, cannot demote/delete the last
+  admin.
+- `/profile` — change-own-password form (requires current password; increments
+  `passwordVersion` on success, invalidating other sessions).
+- Home page header: **Profile** link for all users; **Admin** badge-link for ADMIN role.
+- 21 new unit tests (150 total): `hashPassword` round-trip, `hasRole` matrix, password
+  policy, role validation, last-admin guard logic, codec round-trip with new fields.
+
+### Changed
+
+- Seed script: bootstrap user is now created/updated with `role: "ADMIN"`.
+- `src/lib/cards/actions.ts`: `requireUser()` replaced by `requireEditor()` (calls
+  `requireRole("EDITOR")`) in all card mutation actions.
+
+---
+
 ## [0.8.0] - 2026-05-17
 
 ### Added

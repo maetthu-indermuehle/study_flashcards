@@ -12,7 +12,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db/client";
-import { readSessionCookie } from "@/lib/session/cookies";
+import { requireRole } from "@/lib/auth/permissions";
 import { TagType } from "@/generated/prisma/enums";
 import type { CardFormData } from "./types";
 
@@ -22,11 +22,13 @@ import type { CardFormData } from "./types";
 
 type ActionResult = { success: true } | { success: false; error: string };
 
-/** Authenticates the current request. Throws if no valid session. */
-async function requireUser(): Promise<{ userId: string }> {
-  const session = await readSessionCookie();
-  if (!session) throw new Error("Unauthenticated");
-  return { userId: session.userId };
+/**
+ * Authenticates the current request and requires EDITOR role.
+ * Card create/edit/delete actions are EDITOR-only.
+ */
+async function requireEditor(): Promise<{ userId: string }> {
+  const { userId } = await requireRole("EDITOR");
+  return { userId };
 }
 
 /** Returns the user's deck ID or throws. */
@@ -169,7 +171,7 @@ async function applyTags(
  */
 export async function createCard(data: CardFormData): Promise<ActionResult> {
   try {
-    const { userId } = await requireUser();
+    const { userId } = await requireEditor();
     const deckId = await requireDeck(userId);
 
     const card = await prisma.card.create({
@@ -234,7 +236,7 @@ export async function updateCard(
   reason: string | null = null,
 ): Promise<ActionResult> {
   try {
-    const { userId } = await requireUser();
+    const { userId } = await requireEditor();
     await requireCardOwnership(cardId, userId);
 
     // Snapshot the current state before any changes.
@@ -315,7 +317,7 @@ export async function updateCard(
  */
 export async function archiveCard(cardId: string): Promise<ActionResult> {
   try {
-    const { userId } = await requireUser();
+    const { userId } = await requireEditor();
     await requireCardOwnership(cardId, userId);
 
     await writeRevision(cardId, userId, "archived");
@@ -337,7 +339,7 @@ export async function archiveCard(cardId: string): Promise<ActionResult> {
  */
 export async function deleteCard(cardId: string): Promise<ActionResult> {
   try {
-    const { userId } = await requireUser();
+    const { userId } = await requireEditor();
     await requireCardOwnership(cardId, userId);
 
     const card = await prisma.card.findUnique({
@@ -380,7 +382,7 @@ export async function saveFlaggedCard(
   if (!result.success) return result;
 
   try {
-    const { userId } = await requireUser();
+    const { userId } = await requireEditor();
     void userId; // auth already checked in updateCard
 
     // Remove the flagged tag.

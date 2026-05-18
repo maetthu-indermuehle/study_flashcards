@@ -13,25 +13,13 @@
 // client singleton (imported transitively via importCards) creates its pool.
 import "dotenv/config";
 
-import { randomBytes, scrypt } from "crypto";
-import { promisify } from "util";
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";
 import { prisma } from "../src/lib/db/client";
+import { hashPassword } from "../src/lib/auth/password";
 import { parseJsonCards } from "../src/lib/importer/json-parser";
 import { validate } from "../src/lib/importer/validator";
 import { importCards } from "../src/lib/importer/import-service";
-
-const scryptAsync = promisify(scrypt);
-
-// Hashes a password using Node's built-in scrypt. The format is
-// "<hash>.<salt>" so the verifier can reconstruct both parts.
-// Phase 3 auth will use this same function to verify passwords at login.
-async function hashPassword(password: string): Promise<string> {
-  const salt = randomBytes(16).toString("hex");
-  const buf = (await scryptAsync(password, salt, 64)) as Buffer;
-  return `${buf.toString("hex")}.${salt}`;
-}
 
 async function main() {
   // -------------------------------------------------------------------------
@@ -51,13 +39,16 @@ async function main() {
 
   // Upsert the seed user so re-runs are safe. The password hash is always
   // refreshed on re-seed, which is fine for a development seed user.
+  // The seed user is always ADMIN — ordinary users are created via the
+  // admin UI after first login.
   const user = await prisma.user.upsert({
     where: { email },
-    update: { passwordHash, displayName: "Admin" },
+    update: { passwordHash, displayName: "Admin", role: "ADMIN" },
     create: {
       email,
       displayName: "Admin",
       passwordHash,
+      role: "ADMIN",
     },
   });
 

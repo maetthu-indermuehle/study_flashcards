@@ -14,6 +14,8 @@ function makePayload(overrides: Partial<SessionPayload> = {}): SessionPayload {
   return {
     userId: "user-cuid-123",
     email: "test@example.com",
+    role: "USER",
+    passwordVersion: 1,
     iat: now,
     exp: now + 3600,
     ...overrides,

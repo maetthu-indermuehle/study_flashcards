@@ -1,24 +1,44 @@
 /**
  * Next.js Proxy (replaces "middleware" in Next.js 16+).
  *
- * Performs optimistic auth checks on every matched request:
- * - Unauthenticated requests to protected routes → redirect to /login
- * - Authenticated requests to /login → redirect to /
+ * Performs OPTIMISTIC auth and role checks on every matched request.
+ * "Optimistic" = decisions are based solely on the signed cookie; no
+ * database is queried. Server Components and Server Actions do the
+ * authoritative check (including passwordVersion verification) against
+ * actual DB data.
  *
- * "Optimistic" means the decision is based solely on the signed cookie;
- * no database is queried here. Server Components and Route Handlers do
- * the authoritative check against actual data.
+ * Route table:
+ *   /login         — public; authenticated users are redirected to /
+ *   /admin/*       — requires ADMIN role
+ *   /cards/*       — requires EDITOR role
+ *   /profile       — requires any authenticated user
+ *   everything else — requires any authenticated user
  *
- * The matcher excludes API routes, Next.js internals, and static assets
- * so those are never intercepted.
+ * The matcher excludes API routes, Next.js internals, and static assets.
  */
 
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { verifySession } from "@/lib/session/codec";
+import type { UserRole } from "@/lib/session/types";
 
 /** Routes that do not require authentication. */
 const PUBLIC_PATHS = new Set(["/login"]);
+
+/** Numeric rank used for optimistic role comparison (mirrors permissions.ts). */
+const ROLE_RANK: Record<UserRole, number> = { USER: 0, EDITOR: 1, ADMIN: 2 };
+
+function hasRole(actual: UserRole, required: UserRole): boolean {
+  return ROLE_RANK[actual] >= ROLE_RANK[required];
+}
+
+/** Returns the minimum role required for `pathname`, or null if public. */
+function requiredRole(pathname: string): UserRole | null {
+  if (PUBLIC_PATHS.has(pathname)) return null;
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) return "ADMIN";
+  if (pathname === "/cards" || pathname.startsWith("/cards/")) return "EDITOR";
+  return "USER"; // all other authenticated routes
+}
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -27,15 +47,23 @@ export function proxy(request: NextRequest) {
   const token = request.cookies.get("session")?.value;
   const session = verifySession(token);
 
-  const isPublic = PUBLIC_PATHS.has(pathname);
+  const minRole = requiredRole(pathname);
 
-  if (!isPublic && !session) {
-    // Preserve the intended destination so the login page could redirect back.
+  // Public route — redirect authenticated users away from /login.
+  if (minRole === null) {
+    if (session) return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.next();
+  }
+
+  // Protected route — must be authenticated.
+  if (!session) {
     const loginUrl = new URL("/login", request.url);
     return NextResponse.redirect(loginUrl);
   }
 
-  if (isPublic && session) {
+  // Role check (optimistic — DB is not queried here).
+  if (!hasRole(session.role, minRole)) {
+    // Authenticated but insufficient role → redirect to home.
     return NextResponse.redirect(new URL("/", request.url));
   }
 

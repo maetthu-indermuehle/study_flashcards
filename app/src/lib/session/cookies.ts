@@ -18,18 +18,25 @@ const COOKIE_NAME = "session";
  * Creates a signed session cookie for the given user and sets it on the
  * response. The cookie is HTTP-only, SameSite=Lax, and Secure in production.
  *
- * @param userId - The user's database ID.
- * @param email  - The user's email address (stored for display only).
+ * @param userId          - The user's database ID.
+ * @param email           - The user's email address (stored for display only).
+ * @param role            - The user's current role (cached for proxy checks).
+ * @param passwordVersion - Matched against DB on sensitive actions to detect
+ *                          invalidated sessions.
  */
 export async function createSessionCookie(
   userId: string,
   email: string,
+  role: SessionPayload["role"],
+  passwordVersion: number,
 ): Promise<void> {
   const maxAge = serverEnv.SESSION_MAX_AGE_SECONDS;
   const now = Math.floor(Date.now() / 1000);
   const payload: SessionPayload = {
     userId,
     email,
+    role,
+    passwordVersion,
     iat: now,
     exp: now + maxAge,
   };

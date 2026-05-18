@@ -3,17 +3,18 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ---
 
 ## Current state
 
-**Phase 9 is complete.** Working on branch `phase-6-card-management`.
+**Phase 7 is complete.** Working on branch `phase-7-user-management`.
 
-The app is now a full PWA: installable on iOS and Android home screens, theme-coloured
-browser chrome, safe-area padding for notched iPhones, and a service worker for static
-asset caching. 129 unit tests pass.
+The app now has full multi-user support with three roles (USER / EDITOR / ADMIN),
+brute-force login protection, session invalidation via `passwordVersion`, an admin UI
+for user management, a profile page for password changes, and an append-only audit log.
+150 unit tests pass.
 
 ---
 
@@ -107,6 +108,28 @@ asset caching. 129 unit tests pass.
 - **Question images** — 30 PNG assets copied to `app/public/assets/`. `QuestionText`
   component parses the Markdown image syntax embedded in question text
   (`![alt](assets/FILENAME.png) body`) and renders the image above the question.
+
+### Phase 7 — User management
+
+- Three roles: `USER` (study, flag, change own password), `EDITOR` (+ card create/edit/import),
+  `ADMIN` (+ manage users).
+- `Role` enum and `User.role` / `User.passwordVersion` fields (Prisma migration).
+- `LoginAttempt` model: 10 failures in 15 min locks the account. Email-based (not
+  userId) to prevent user enumeration via differential lock-out timing.
+- `AdminEvent` model: append-only audit log for all admin actions.
+- `src/lib/auth/permissions.ts` — `hasRole()` + `requireRole(minRole)` (verifies
+  `passwordVersion` against DB to reject stale sessions).
+- `src/lib/auth/brute-force.ts` — lock check and attempt recording.
+- `hashPassword()` centralised in `password.ts`; `MIN_PASSWORD_LENGTH = 10`.
+- Session cookie gains `role` and `passwordVersion`.
+- Proxy updated with role-based route guards (optimistic; no DB query).
+- Login route: brute-force gate before credential lookup.
+- Admin UI: `/admin/users` list → create → edit (role + display name) → reset
+  password → delete. Guards: can't delete self, can't remove last admin.
+- `/profile` — change-own-password (requires current password; increments
+  `passwordVersion` to invalidate other sessions).
+- Home page: Profile link + Admin badge for ADMIN users.
+- 21 new tests (150 total).
 
 ### Phase 9 — PWA and mobile polish
 

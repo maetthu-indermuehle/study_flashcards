@@ -97,5 +97,12 @@ export function verifySession(
     return null;
   }
 
+  // Reject sessions issued before role/passwordVersion were added (Phase 7).
+  // Old cookies will be silently dropped and the user will be redirected to login.
+  const validRoles = ["USER", "EDITOR", "ADMIN"];
+  if (!payload.role || !validRoles.includes(payload.role)) {
+    return null;
+  }
+
   return payload;
 }

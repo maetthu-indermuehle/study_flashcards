@@ -22,6 +22,14 @@ export default function ImportPreview({ result, onConfirm, onBack, loading }: Pr
 
   return (
     <div className="flex flex-col gap-6">
+      {/* Deck target */}
+      <div className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
+        Importing into deck: <span className="font-semibold text-slate-950">{result.deckName}</span>
+        {!result.subject && (
+          <span className="ml-2 text-xs text-slate-400">(no subject in file — using existing deck)</span>
+        )}
+      </div>
+
       {/* Summary counts */}
       <div className="grid grid-cols-3 gap-3">
         <div className="rounded-lg border border-slate-200 bg-white p-4 text-center">

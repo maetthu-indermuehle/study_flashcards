@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { parseJsonCards } from "./json-parser";
+import { parseJsonCards, parseJsonBatch } from "./json-parser";
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -251,6 +251,63 @@ describe("parseJsonCards", () => {
         },
       ];
       assert.throws(() => parseJsonCards(JSON.stringify(bad)));
+    });
+  });
+});
+
+describe("parseJsonBatch", () => {
+  describe("legacy bare-array format", () => {
+    it("returns subject:null for a bare array", () => {
+      const batch = parseJsonBatch(JSON.stringify([MC_SINGLE]));
+      assert.equal(batch.subject, null);
+      assert.equal(batch.cards.length, 1);
+      assert.equal(batch.cards[0].sourceId, "MET-126");
+    });
+
+    it("returns empty cards array for empty bare array", () => {
+      const batch = parseJsonBatch("[]");
+      assert.equal(batch.subject, null);
+      assert.deepEqual(batch.cards, []);
+    });
+  });
+
+  describe("wrapper format with subject", () => {
+    it("parses subject and cards from wrapper object", () => {
+      const input = JSON.stringify({ subject: "Canadian PPL", cards: [MC_SINGLE, OPEN_ANSWER] });
+      const batch = parseJsonBatch(input);
+      assert.equal(batch.subject, "Canadian PPL");
+      assert.equal(batch.cards.length, 2);
+      assert.equal(batch.cards[0].sourceId, "MET-126");
+      assert.equal(batch.cards[1].sourceId, "MET-128");
+    });
+
+    it("parses an empty cards array in the wrapper", () => {
+      const input = JSON.stringify({ subject: "IFR", cards: [] });
+      const batch = parseJsonBatch(input);
+      assert.equal(batch.subject, "IFR");
+      assert.deepEqual(batch.cards, []);
+    });
+  });
+
+  describe("error handling", () => {
+    it("throws on malformed JSON", () => {
+      assert.throws(
+        () => parseJsonBatch("{not valid json"),
+        (err: Error) => {
+          assert.ok(err.message.includes("Invalid JSON"));
+          return true;
+        },
+      );
+    });
+
+    it("throws when wrapper is missing subject", () => {
+      const input = JSON.stringify({ cards: [MC_SINGLE] });
+      assert.throws(() => parseJsonBatch(input));
+    });
+
+    it("throws when wrapper subject is empty string", () => {
+      const input = JSON.stringify({ subject: "", cards: [MC_SINGLE] });
+      assert.throws(() => parseJsonBatch(input));
     });
   });
 });

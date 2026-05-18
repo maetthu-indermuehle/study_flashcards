@@ -35,7 +35,7 @@ import "dotenv/config";
 
 import { readFileSync } from "fs";
 import { resolve } from "path";
-import { parseJsonCards } from "../src/lib/importer/json-parser";
+import { parseJsonBatch } from "../src/lib/importer/json-parser";
 import { validate } from "../src/lib/importer/validator";
 import { importCards } from "../src/lib/importer/import-service";
 import { prisma } from "../src/lib/db/client";
@@ -110,9 +110,9 @@ async function main(filePath: string, email: string) {
     process.exit(1);
   }
 
-  let cards;
+  let batch;
   try {
-    cards = parseJsonCards(jsonString);
+    batch = parseJsonBatch(jsonString);
   } catch (err) {
     console.error(
       `Parse error: ${err instanceof Error ? err.message : String(err)}`,
@@ -120,7 +120,14 @@ async function main(filePath: string, email: string) {
     process.exit(1);
   }
 
+  const cards = batch.cards;
+  // Subject from the JSON wrapper takes precedence over the --deck flag.
+  const resolvedDeckName = batch.subject ?? deckName;
+
   console.log(`  Parsed:   ${cards.length} card${cards.length !== 1 ? "s" : ""}`);
+  if (batch.subject) {
+    console.log(`  Subject:  ${batch.subject}`);
+  }
 
   if (verbose) {
     for (const card of cards) {
@@ -177,9 +184,9 @@ async function main(filePath: string, email: string) {
   // Step 4 — import
   // -------------------------------------------------------------------------
 
-  console.log(`\nImporting into deck "${deckName}"...`);
+  console.log(`\nImporting into deck "${resolvedDeckName}"...`);
 
-  const result = await importCards(cards, { deckName, userId: user.id });
+  const result = await importCards(cards, { deckName: resolvedDeckName, userId: user.id });
 
   console.log(
     `  Created:  ${result.created} card${result.created !== 1 ? "s" : ""}`,

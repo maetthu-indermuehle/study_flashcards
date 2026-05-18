@@ -61,6 +61,23 @@ export type ParsedMedia = {
 };
 
 /**
+ * A parsed JSON batch: the optional subject wrapper plus all cards.
+ *
+ * Produced by {@link parseJsonBatch}. The `subject` field is taken from the
+ * `{"subject": "...", "cards": [...]}` wrapper when present; it is `null`
+ * when the file uses the legacy bare-array format.
+ */
+export type ParsedBatch = {
+  /**
+   * Top-level subject label from the JSON wrapper (e.g. `"Canadian PPL"`).
+   * `null` when the file uses the legacy bare-array format.
+   */
+  subject: string | null;
+  /** All cards from the batch. */
+  cards: ParsedCard[];
+};
+
+/**
  * A single flashcard as parsed from a JSON question file, ready for
  * validation and database import.
  *

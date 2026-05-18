@@ -57,11 +57,13 @@ export async function getNextCard(
   tagIds?: string[],
   dueOnly?: boolean,
 ): Promise<StudyCard | null> {
-  const deck = await prisma.deck.findFirst({
+  // Find all decks owned by this user — cards may span multiple subjects.
+  const decks = await prisma.deck.findMany({
     where: { createdByUserId: userId },
     select: { id: true },
   });
-  if (!deck) return null;
+  if (decks.length === 0) return null;
+  const deckIds = decks.map((d) => d.id);
 
   // Tag filter clause — applied to every card lookup below.
   const tagFilter =
@@ -78,7 +80,7 @@ export async function getNextCard(
     where: {
       userId,
       dueAt: { lte: now },
-      card: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -101,7 +103,7 @@ export async function getNextCard(
   const seenSet = new Set(seenIds.map((p) => p.cardId));
 
   const allIds = await prisma.card.findMany({
-    where: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
+    where: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     select: { id: true },
   });
 
@@ -118,7 +120,7 @@ export async function getNextCard(
   const nextProgress = await prisma.cardProgress.findFirst({
     where: {
       userId,
-      card: { deckId: deck.id, status: "PUBLISHED", ...tagFilter },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -136,6 +138,12 @@ export async function getNextCard(
  * When `tagIds` is provided, only counts due cards matching those tags.
  */
 export async function getDueCount(userId: string, tagIds?: string[]): Promise<number> {
+  const decks = await prisma.deck.findMany({
+    where: { createdByUserId: userId },
+    select: { id: true },
+  });
+  const deckIds = decks.map((d) => d.id);
+
   const tagFilter =
     tagIds && tagIds.length > 0
       ? { tags: { some: { tagId: { in: tagIds } } } }
@@ -145,7 +153,7 @@ export async function getDueCount(userId: string, tagIds?: string[]): Promise<nu
     where: {
       userId,
       dueAt: { lte: new Date() },
-      card: { status: "PUBLISHED", ...tagFilter },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
   });
 }

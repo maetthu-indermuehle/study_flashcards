@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
-import { listTopicGroups, listPresets } from "@/lib/study/preset-queries";
+import { listSubjectGroups, listPresets } from "@/lib/study/preset-queries";
 import StudySetup from "@/features/study/StudySetup";
 import { hasRole } from "@/lib/auth/permissions";
 
@@ -14,8 +14,8 @@ export default async function StudySetupPage() {
   const session = await readSessionCookie();
   if (!session) redirect("/login");
 
-  const [groups, presets] = await Promise.all([
-    listTopicGroups(session.userId),
+  const [subjectGroups, presets] = await Promise.all([
+    listSubjectGroups(session.userId),
     listPresets(session.userId),
   ]);
 
@@ -34,7 +34,7 @@ export default async function StudySetupPage() {
           <h1 className="text-xl font-semibold text-slate-950">Study setup</h1>
         </header>
 
-        <StudySetup groups={groups} presets={presets} canShare={canShare} />
+        <StudySetup subjectGroups={subjectGroups} presets={presets} canShare={canShare} />
       </div>
     </main>
   );

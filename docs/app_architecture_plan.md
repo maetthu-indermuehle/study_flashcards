@@ -2,9 +2,16 @@
 
 ## Goal
 
-Build a mobile-first flashcard web app for studying Canadian PPL groundschool material. The app should be simple to use on a phone, visually polished, and structured so that one user can start studying quickly while the system remains multi-user capable from day one.
+Build a mobile-first flashcard web app with spaced repetition. Originally designed around
+Canadian PPL groundschool material; the architecture is intentionally multi-subject — each
+JSON import file carries a `subject` label that maps to a named deck, so users can study
+any topic (IFR, plants, languages, etc.) alongside PPL without any code changes.
 
-The current Markdown question files are seed material only. The application database will become the source of truth for questions, answers, references, assets, and user progress.
+The app should be simple to use on a phone, visually polished, and structured so that one
+user can start studying quickly while the system remains multi-user capable from day one.
+
+The current Markdown question files are seed material only. The application database is the
+source of truth for questions, answers, references, assets, and user progress.
 
 ## Product Principles
 
@@ -205,12 +212,14 @@ Important fields:
 
 ### Deck
 
-Represents a collection of cards, for example "Canadian PPL".
+Represents a collection of cards — the top-level "subject" grouping (e.g. "Canadian PPL",
+"IFR", "Botany"). One deck per subject per user. Created automatically by `importCards`
+when a JSON file with a new `subject` label is imported.
 
 Important fields:
 
 - `id`
-- `name`
+- `name` (= subject label)
 - `description`
 - `visibility`
 - `createdByUserId`
@@ -387,6 +396,19 @@ Important fields:
 - `summary`
 - `createdAt`
 
+### StudyPreset
+
+A saved topic/tag selection the user can reload on the study setup page.
+
+Important fields:
+
+- `id`
+- `userId`
+- `name` — display label (max 80 chars)
+- `tagIds` — JSON array of Tag IDs; empty means "study all cards"
+- `isShared` — when true, visible to all users (EDITOR+ can toggle)
+- `createdAt`
+
 ### CardRevision
 
 Append-only edit history for a card. One row is written before every save so the full card state at each point in time can be reconstructed.
@@ -492,15 +514,23 @@ and for LLM-generated content.
 
 Key design decisions:
 
-- **No Markdown import in the app.** The existing Markdown files in `Questions/` are
+- **No Markdown import in the app.** The existing Markdown files in `Questions/` were
   converted once by a standalone migration script (`scripts/md_to_json.ts`) and the
-  resulting JSON files are committed to `data/questions/`. After that conversion, the
-  Markdown files are archived and the database is the source of truth.
+  resulting JSON files are committed to `data/questions/`. The Markdown originals have
+  been removed; the database is the source of truth.
 - **All future questions are authored in JSON**, whether written by hand, generated with
   ChatGPT or Claude (using the prompt in the generation guide), or produced by other
   tooling.
+- **Two JSON formats are supported:**
+  - *New format* — `{ "subject": "Canadian PPL", "cards": [...] }`. The `subject` field
+    becomes the deck name and is created automatically on first import. This enables
+    multi-subject study without any code changes.
+  - *Legacy format* — bare array `[...]`. Cards go into the user's existing default deck.
+    The `--deck` CLI flag overrides the target deck name.
 - **Multiple correct choices are supported.** Choices carry an explicit `isCorrect`
   boolean to support "select all that apply" question types.
+- **`importCards` finds or creates the deck** by name, so importing a new subject for the
+  first time is fully automatic.
 
 The CLI import command (`app/scripts/import.ts`) parses and validates JSON, creates an
 `ImportBatch` record, and upserts cards by `sourceId` so re-runs are safe.
@@ -510,7 +540,8 @@ The CLI import command (`app/scripts/import.ts`) parses and validates JSON, crea
 A browser-based import wizard at `/import` (Phase 8, complete) lets EDITOR+ users
 paste or upload a `.json` file, preview parsed cards with validation feedback, and
 confirm the import. Each confirmed import creates an `ImportBatch` row with the raw
-JSON stored for audit purposes.
+JSON stored for audit purposes. The preview and done screens display the target deck
+name so the user can confirm which subject the cards will land in.
 
 Import validation checks:
 
@@ -668,7 +699,7 @@ references/
 11. ~~Add user management: roles, brute-force protection, admin UI, profile page.~~ ✓ Phase 7
 12. ~~Add bulk import UI (JSON upload, dry-run preview, ImportBatch audit trail).~~ ✓ Phase 8
 13. ~~Add PWA manifest and mobile polish.~~ ✓ Phase 9
-14. Clean up repo and polish UI. ← Phase 10 (current)
+14. ~~Clean up repo, topic/tag study setup with presets, multi-subject support.~~ ✓ Phase 10 (current)
 15. Add full media management (upload UI, object storage). ← Phase 11
 16. Add initial Helm chart for OpenShift deployment. ← Phase 12
 17. Add export tools (JSON, Markdown, CSV). ← Phase 13

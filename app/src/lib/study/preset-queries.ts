@@ -45,6 +45,23 @@ export type PresetItem = {
   isOwn: boolean;
 };
 
+/**
+ * A deck (= subject, e.g. "Canadian PPL") containing its topic groups.
+ * Used as the top-level item in the three-level study setup accordion.
+ */
+export type SubjectGroup = {
+  /** Database ID of the deck. */
+  deckId: string;
+  /** Deck name, used as the subject label in the UI (e.g. "Canadian PPL"). */
+  name: string;
+  /** Topic groups belonging to this deck. */
+  topicGroups: TopicGroup[];
+  /** All tag IDs across every topic group in this subject (for "select all"). */
+  allTagIds: string[];
+  /** Approximate total card count (sum across topic groups). */
+  totalCards: number;
+};
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -71,34 +88,30 @@ function subLabel(tagName: string): string | null {
 // Queries
 // ---------------------------------------------------------------------------
 
-/**
- * Returns all TOPIC tags grouped into a two-level hierarchy, ordered
- * alphabetically. Each group exposes `allTagIds` (for "select all") and a
- * list of sub-topics the user can pick individually.
- */
-export async function listTopicGroups(userId: string): Promise<TopicGroup[]> {
-  const deck = await prisma.deck.findFirst({
-    where: { createdByUserId: userId },
-    select: { id: true },
-  });
-  if (!deck) return [];
+// ---------------------------------------------------------------------------
+// Internal helpers
+// ---------------------------------------------------------------------------
 
+/**
+ * Returns the two-level topic group hierarchy for a single deck.
+ * Factored out so both `listTopicGroups` and `listSubjectGroups` can call it.
+ */
+async function topicGroupsForDeck(deckId: string): Promise<TopicGroup[]> {
   const tags = await prisma.tag.findMany({
     where: {
       type: TagType.TOPIC,
-      cards: { some: { card: { deckId: deck.id, status: "PUBLISHED" } } },
+      cards: { some: { card: { deckId, status: "PUBLISHED" } } },
     },
     select: {
       id: true,
       name: true,
       _count: {
-        select: { cards: { where: { card: { deckId: deck.id, status: "PUBLISHED" } } } },
+        select: { cards: { where: { card: { deckId, status: "PUBLISHED" } } } },
       },
     },
     orderBy: { name: "asc" },
   });
 
-  // Group by top-level name.
   const map = new Map<string, { tagIds: string[]; subTopics: SubTopic[]; cardCount: number }>();
 
   for (const tag of tags) {
@@ -128,6 +141,51 @@ export async function listTopicGroups(userId: string): Promise<TopicGroup[]> {
       totalCards: entry.cardCount,
       subTopics: entry.subTopics,
     }));
+}
+
+// ---------------------------------------------------------------------------
+// Queries
+// ---------------------------------------------------------------------------
+
+/**
+ * Returns the topic groups for the user's first deck.
+ *
+ * @deprecated Prefer {@link listSubjectGroups} which covers all decks and
+ *   exposes the subject (deck) label as the top-level item.
+ */
+export async function listTopicGroups(userId: string): Promise<TopicGroup[]> {
+  const deck = await prisma.deck.findFirst({
+    where: { createdByUserId: userId },
+    select: { id: true },
+  });
+  if (!deck) return [];
+  return topicGroupsForDeck(deck.id);
+}
+
+/**
+ * Returns all decks owned by `userId` as {@link SubjectGroup} items, each
+ * containing the two-level topic hierarchy for that deck.
+ *
+ * Decks are ordered alphabetically. The UI collapses the subject level when
+ * the user has only one deck so existing single-subject flows are unchanged.
+ */
+export async function listSubjectGroups(userId: string): Promise<SubjectGroup[]> {
+  const decks = await prisma.deck.findMany({
+    where: { createdByUserId: userId },
+    select: { id: true, name: true },
+    orderBy: { name: "asc" },
+  });
+
+  const result: SubjectGroup[] = [];
+
+  for (const deck of decks) {
+    const topicGroups = await topicGroupsForDeck(deck.id);
+    const allTagIds = topicGroups.flatMap((g) => g.allTagIds);
+    const totalCards = topicGroups.reduce((sum, g) => sum + g.totalCards, 0);
+    result.push({ deckId: deck.id, name: deck.name, topicGroups, allTagIds, totalCards });
+  }
+
+  return result;
 }
 
 /**

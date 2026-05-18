@@ -1,16 +1,21 @@
 # PPL Study Flashcards
 
-Mobile-first flashcard app for studying Canadian PPL groundschool material.
+Mobile-first flashcard web app with spaced repetition. Originally built for Canadian PPL
+groundschool material; the multi-subject architecture supports any topic (IFR, botany,
+languages, and so on) — import a JSON file with a `subject` field and a new deck appears
+automatically.
 
 ## Current Status
 
-**Phase 5 complete** — branch: `phase-5-spaced-repetition`
+**Phase 10 in progress** — branch: `phase-10-cleanup-ui`
 
-- Phases 0–4 are complete and merged to `main`.
-- Phase 5 adds SM-2 spaced repetition, review rating (Wrong/Hard/Good/Easy), due-card priority queue, question images, card flagging with notes, and source ID labels.
+- Phases 0–9 are complete and merged to `main`.
+- Phase 10 adds topic/tag study setup with saved presets, multi-subject deck support,
+  "review due only" mode, card ID tooltip, and repo cleanup.
 - Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
-See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed work and next steps.
+See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed
+work and next steps.
 
 ## Documentation
 
@@ -23,7 +28,6 @@ See [docs/project_status.md](docs/project_status.md) for a full breakdown of com
 | [docs/project_status.md](docs/project_status.md) | Living status doc — current phase, next steps |
 | [docs/project_guidelines.md](docs/project_guidelines.md) | Development conventions |
 | [docs/question_generation_guide.md](docs/question_generation_guide.md) | JSON question format spec + LLM prompt |
-| [docs/phase_2_plan.md](docs/phase_2_plan.md) | Detailed Phase 2 implementation plan |
 
 ## Local Development
 
@@ -59,6 +63,10 @@ docker compose down
 | URL | What it is |
 |-----|-----------|
 | http://localhost:3000 | App home page |
+| http://localhost:3000/study/setup | Topic/subject picker before studying |
+| http://localhost:3000/import | Bulk JSON import wizard (EDITOR+) |
+| http://localhost:3000/cards | Card browser and editor (EDITOR+) |
+| http://localhost:3000/admin/users | User management (ADMIN only) |
 | http://localhost:3000/api/health | Health endpoint |
 
 ## App Commands
@@ -74,7 +82,7 @@ npm run build
 
 ## Database
 
-The Phase 1 schema is live with 13 models and 11 enums. Migrations run automatically on container startup via `npx prisma migrate deploy`.
+Migrations run automatically on container startup via `npx prisma migrate deploy`.
 
 To create a new migration during development:
 
@@ -90,9 +98,32 @@ docker compose exec db psql -U ppl_flashcards ppl_flashcards
 
 ## Importing Questions
 
-The canonical question format is JSON — see [docs/question_generation_guide.md](docs/question_generation_guide.md) for the full spec and an LLM prompt for generating new questions.
+The canonical question format is JSON — see [docs/question_generation_guide.md](docs/question_generation_guide.md)
+for the full spec and an LLM prompt for generating new questions.
 
-Import a JSON question file (validate only):
+### New format (preferred)
+
+```json
+{
+  "subject": "Canadian PPL",
+  "cards": [ ...card objects... ]
+}
+```
+
+The `subject` value becomes the deck name and is created automatically if it does not exist.
+This lets you maintain separate decks for different subjects (PPL, IFR, Plants, etc.).
+
+### Legacy format (still supported)
+
+```json
+[ ...card objects... ]
+```
+
+Cards are imported into the user's existing default deck.
+
+### CLI import
+
+Validate a JSON question file without writing to the database:
 
 ```bash
 docker compose exec app npx tsx scripts/import.ts path/to/questions.json --dry-run
@@ -105,5 +136,10 @@ Remove `--dry-run` to write to the database. Additional flags:
 | `--dry-run` | Parse and validate only; no database writes |
 | `--force` | Import even when validation errors are present |
 | `--verbose` | Print each card's sourceId as it is processed |
-| `--deck <name>` | Target deck name (default: `Canadian PPL`) |
+| `--deck <name>` | Target deck name fallback when JSON has no `subject` (default: `Canadian PPL`) |
 | `--user <email>` | Deck owner email (default: `SEED_USER_EMAIL` env var) |
+
+### Browser import
+
+EDITOR+ users can also import via the wizard at `/import`: upload or paste JSON,
+review a dry-run preview, and confirm.

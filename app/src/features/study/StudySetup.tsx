@@ -1,30 +1,42 @@
 "use client";
 
 /**
- * StudySetup — two-level topic picker for the /study/setup page.
+ * StudySetup — topic picker for the /study/setup page.
  *
- * Groups show as collapsible rows. Clicking a group header selects/deselects
- * all tags in that group. Expanding a group lets you pick individual
- * sub-topics instead.
+ * Hierarchy:
+ *   Subject (deck)  ← only shown when the user has > 1 deck
+ *     Topic group   ← collapsible; header selects/deselects all tags in group
+ *       Sub-topic   ← individual tag checkbox
+ *
+ * When only one subject exists the subject row is hidden and the topic groups
+ * are shown directly, preserving the existing single-subject UX.
  */
 
 import { useState, useTransition, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createPreset, deletePreset, setPresetShared, getDueCountForSelection } from "@/lib/study/preset-actions";
-import type { TopicGroup, PresetItem } from "@/lib/study/preset-queries";
+import type { SubjectGroup, TopicGroup, PresetItem } from "@/lib/study/preset-queries";
 
 type Props = {
-  groups: TopicGroup[];
+  subjectGroups: SubjectGroup[];
   presets: PresetItem[];
   canShare: boolean;
 };
 
-export default function StudySetup({ groups, presets: initialPresets, canShare }: Props) {
+export default function StudySetup({ subjectGroups, presets: initialPresets, canShare }: Props) {
   const router = useRouter();
 
-  // Set of selected Tag IDs.
+  /** Set of selected Tag IDs. */
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  // Set of expanded group names.
+  /**
+   * Set of expanded subject names.
+   * When there is only one subject it starts expanded so topic groups are
+   * immediately visible without an extra click.
+   */
+  const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(
+    () => new Set(subjectGroups.length === 1 ? [subjectGroups[0].name] : []),
+  );
+  /** Set of expanded group names (within any subject). */
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   const [presets, setPresets] = useState<PresetItem[]>(initialPresets);
@@ -33,6 +45,9 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
   const [dueCount, setDueCount] = useState<number | null>(null);
+
+  // Always show the subject level so the deck name is visible in the UI.
+  const showSubjectLevel = subjectGroups.length >= 1;
 
   // Refresh due count whenever the selection changes.
   useEffect(() => {
@@ -45,7 +60,41 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
   }, [selected]);
 
   // ---------------------------------------------------------------------------
-  // Selection helpers
+  // Selection helpers — subjects
+  // ---------------------------------------------------------------------------
+
+  function isSubjectFullySelected(subject: SubjectGroup) {
+    return subject.allTagIds.length > 0 &&
+      subject.allTagIds.every((id) => selected.has(id));
+  }
+
+  function isSubjectPartiallySelected(subject: SubjectGroup) {
+    return !isSubjectFullySelected(subject) &&
+      subject.allTagIds.some((id) => selected.has(id));
+  }
+
+  function toggleSubject(subject: SubjectGroup) {
+    setSelected((prev) => {
+      const next = new Set(prev);
+      if (isSubjectFullySelected(subject)) {
+        subject.allTagIds.forEach((id) => next.delete(id));
+      } else {
+        subject.allTagIds.forEach((id) => next.add(id));
+      }
+      return next;
+    });
+  }
+
+  function toggleExpandedSubject(name: string) {
+    setExpandedSubjects((prev) => {
+      const next = new Set(prev);
+      next.has(name) ? next.delete(name) : next.add(name);
+      return next;
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Selection helpers — topic groups
   // ---------------------------------------------------------------------------
 
   function isGroupFullySelected(group: TopicGroup) {
@@ -84,6 +133,10 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
     });
   }
 
+  // ---------------------------------------------------------------------------
+  // Preset helpers
+  // ---------------------------------------------------------------------------
+
   function loadPreset(preset: PresetItem) {
     setSelected(new Set(preset.tagIds));
     setError(null);
@@ -98,9 +151,9 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
   // Summary label for the start button
   // ---------------------------------------------------------------------------
 
-  const selectedGroupCount = groups.filter((g) =>
-    g.allTagIds.some((id) => selected.has(id)),
-  ).length;
+  const selectedGroupCount = subjectGroups
+    .flatMap((s) => s.topicGroups)
+    .filter((g) => g.allTagIds.some((id) => selected.has(id))).length;
 
   const startLabel =
     selected.size === 0
@@ -198,82 +251,68 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
         </section>
       )}
 
-      {/* Topic groups */}
+      {/* Topic / subject chooser */}
       <section>
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
           Choose topics
         </h2>
 
-        {groups.length === 0 ? (
+        {subjectGroups.length === 0 ? (
           <p className="text-sm text-slate-400">No topics found in your deck.</p>
         ) : (
-          <div className="divide-y divide-slate-100 overflow-hidden rounded-lg border border-slate-200 bg-white">
-            {groups.map((group) => {
-              const fullyChecked = isGroupFullySelected(group);
-              const partial = isGroupPartiallySelected(group);
-              const isOpen = expanded.has(group.name);
+          /* ----------------------------------------------------------------
+           * Subject accordion: Subject → Topic group → Sub-topic
+           * Subject starts expanded when only one deck exists.
+           * -------------------------------------------------------------- */
+          <div className="flex flex-col gap-3">
+            {subjectGroups.map((subject) => {
+              const subjectOpen = expandedSubjects.has(subject.name);
+              const subjectFull = isSubjectFullySelected(subject);
+              const subjectPartial = isSubjectPartiallySelected(subject);
 
               return (
-                <div key={group.name}>
-                  {/* Group header row */}
-                  <div className="flex items-center gap-3 px-4 py-3">
-                    {/* Checkbox — select all in group */}
+                <div key={subject.deckId} className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+                  {/* Subject header */}
+                  <div className="flex items-center gap-3 px-4 py-3 bg-slate-50">
                     <input
                       type="checkbox"
-                      checked={fullyChecked}
-                      ref={(el) => { if (el) el.indeterminate = partial; }}
-                      onChange={() => toggleGroup(group)}
+                      checked={subjectFull}
+                      ref={(el) => { if (el) el.indeterminate = subjectPartial; }}
+                      onChange={() => toggleSubject(subject)}
                       className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950"
                     />
-
-                    {/* Group name + card count */}
                     <button
-                      onClick={() => toggleGroup(group)}
-                      className="min-w-0 flex-1 text-left text-sm font-medium text-slate-800"
+                      onClick={() => toggleSubject(subject)}
+                      className="min-w-0 flex-1 text-left text-sm font-semibold text-slate-900"
                     >
-                      {group.name}
+                      {subject.name}
                     </button>
-
                     <span className="shrink-0 text-xs text-slate-400">
-                      ~{group.totalCards} cards
+                      ~{subject.totalCards} cards
                     </span>
-
-                    {/* Expand toggle — only show if there are sub-topics */}
-                    {group.subTopics.length > 0 && (
-                      <button
-                        onClick={() => toggleExpanded(group.name)}
-                        className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 hover:bg-slate-100 hover:text-slate-600"
-                        aria-label={isOpen ? "Collapse" : "Expand sub-topics"}
-                      >
-                        {isOpen ? "▲" : "▼"}
-                      </button>
-                    )}
+                    <button
+                      onClick={() => toggleExpandedSubject(subject.name)}
+                      className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                      aria-label={subjectOpen ? "Collapse subject" : "Expand subject"}
+                    >
+                      {subjectOpen ? "▲" : "▼"}
+                    </button>
                   </div>
 
-                  {/* Sub-topics */}
-                  {isOpen && group.subTopics.length > 0 && (
-                    <div className="border-t border-slate-100 bg-slate-50 px-4 pb-2 pt-1">
-                      <div className="grid gap-1 sm:grid-cols-2">
-                        {group.subTopics.map((sub) => (
-                          <label
-                            key={sub.id}
-                            className="flex cursor-pointer items-center gap-2.5 rounded px-2 py-1.5 hover:bg-slate-100"
-                          >
-                            <input
-                              type="checkbox"
-                              checked={selected.has(sub.id)}
-                              onChange={() => toggleSubTopic(sub.id)}
-                              className="h-3.5 w-3.5 shrink-0 cursor-pointer rounded accent-slate-950"
-                            />
-                            <span className="min-w-0 flex-1 text-xs text-slate-700">
-                              {sub.label}
-                            </span>
-                            <span className="shrink-0 text-xs text-slate-400">
-                              {sub.cardCount}
-                            </span>
-                          </label>
-                        ))}
-                      </div>
+                  {/* Topic groups within this subject */}
+                  {subjectOpen && (
+                    <div className="divide-y divide-slate-100">
+                      <TopicGroupList
+                        groups={subject.topicGroups}
+                        selected={selected}
+                        expanded={expanded}
+                        isGroupFullySelected={isGroupFullySelected}
+                        isGroupPartiallySelected={isGroupPartiallySelected}
+                        toggleGroup={toggleGroup}
+                        toggleSubTopic={toggleSubTopic}
+                        toggleExpanded={toggleExpanded}
+                        indent
+                      />
                     </div>
                   )}
                 </div>
@@ -347,6 +386,111 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
         )}
       </div>
     </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// TopicGroupList — renders the topic group rows (shared by both layouts)
+// ---------------------------------------------------------------------------
+
+type TopicGroupListProps = {
+  groups: TopicGroup[];
+  selected: Set<string>;
+  expanded: Set<string>;
+  isGroupFullySelected: (g: TopicGroup) => boolean;
+  isGroupPartiallySelected: (g: TopicGroup) => boolean;
+  toggleGroup: (g: TopicGroup) => void;
+  toggleSubTopic: (id: string) => void;
+  toggleExpanded: (name: string) => void;
+  /** When true, indent the group rows slightly (used inside a subject accordion). */
+  indent?: boolean;
+};
+
+function TopicGroupList({
+  groups,
+  selected,
+  expanded,
+  isGroupFullySelected,
+  isGroupPartiallySelected,
+  toggleGroup,
+  toggleSubTopic,
+  toggleExpanded,
+  indent = false,
+}: TopicGroupListProps) {
+  return (
+    <>
+      {groups.map((group) => {
+        const fullyChecked = isGroupFullySelected(group);
+        const partial = isGroupPartiallySelected(group);
+        const isOpen = expanded.has(group.name);
+
+        return (
+          <div key={group.name}>
+            {/* Group header row */}
+            <div className={`flex items-center gap-3 py-3 ${indent ? "pl-8 pr-4" : "px-4"}`}>
+              {/* Checkbox — select all in group */}
+              <input
+                type="checkbox"
+                checked={fullyChecked}
+                ref={(el) => { if (el) el.indeterminate = partial; }}
+                onChange={() => toggleGroup(group)}
+                className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950"
+              />
+
+              {/* Group name + card count */}
+              <button
+                onClick={() => toggleGroup(group)}
+                className="min-w-0 flex-1 text-left text-sm font-medium text-slate-800"
+              >
+                {group.name}
+              </button>
+
+              <span className="shrink-0 text-xs text-slate-400">
+                ~{group.totalCards} cards
+              </span>
+
+              {/* Expand toggle — only show if there are sub-topics */}
+              {group.subTopics.length > 0 && (
+                <button
+                  onClick={() => toggleExpanded(group.name)}
+                  className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                  aria-label={isOpen ? "Collapse" : "Expand sub-topics"}
+                >
+                  {isOpen ? "▲" : "▼"}
+                </button>
+              )}
+            </div>
+
+            {/* Sub-topics */}
+            {isOpen && group.subTopics.length > 0 && (
+              <div className={`border-t border-slate-100 bg-slate-50 pb-2 pt-1 ${indent ? "pl-8 pr-4" : "px-4"}`}>
+                <div className="grid gap-1 sm:grid-cols-2">
+                  {group.subTopics.map((sub) => (
+                    <label
+                      key={sub.id}
+                      className="flex cursor-pointer items-center gap-2.5 rounded px-2 py-1.5 hover:bg-slate-100"
+                    >
+                      <input
+                        type="checkbox"
+                        checked={selected.has(sub.id)}
+                        onChange={() => toggleSubTopic(sub.id)}
+                        className="h-3.5 w-3.5 shrink-0 cursor-pointer rounded accent-slate-950"
+                      />
+                      <span className="min-w-0 flex-1 text-xs text-slate-700">
+                        {sub.label}
+                      </span>
+                      <span className="shrink-0 text-xs text-slate-400">
+                        {sub.cardCount}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </>
   );
 }
 

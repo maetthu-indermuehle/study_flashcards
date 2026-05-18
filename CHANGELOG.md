@@ -9,6 +9,34 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.10.1] - 2026-05-18
+
+### Added
+
+- **Multi-subject (deck) support** — the app is no longer single-topic:
+  - JSON files can now use a wrapper format `{"subject": "...", "cards": [...]}`.
+    The `subject` value becomes the deck name and is created automatically on first
+    import. The old bare-array format is still accepted for backward compatibility.
+  - `ParsedBatch` type and `parseJsonBatch()` parser in `json-parser.ts` handle both
+    formats. `parseJsonCards()` is kept as a thin alias for backward compat.
+  - `import-service.ts` now does `findOrCreate` on the deck instead of throwing when
+    the deck does not exist yet.
+  - `dryRunImport` and `runImport` server actions use `parseJsonBatch`; they resolve
+    the target deck name from the JSON subject (or fall back to the user's existing
+    deck). Both return `deckName` in the success result.
+  - Import preview shows the target deck name; done step names the deck.
+  - `listSubjectGroups()` query returns all user decks as top-level accordion items.
+  - `StudySetup` three-level accordion: **Subject → Topic group → Sub-topic**.
+    When the user has only one deck the subject row is hidden, preserving the existing UX.
+  - `getNextCard` and `getDueCount` now search across all of the user's decks instead
+    of only the first one found.
+  - CLI script uses `subject` from JSON when present; `--deck` is the fallback.
+  - `question_generation_guide.md` documents both JSON formats and updates the LLM
+    prompt to output the wrapper format.
+- 7 new unit tests for `parseJsonBatch` (legacy and wrapper formats, error cases).
+
+---
+
 ## [0.10.0] - 2026-05-17
 
 ### Added

@@ -31,8 +31,8 @@ import type { ParsedCard } from "./types";
  */
 export type ImportOptions = {
   /**
-   * Name of the target deck. Must already exist and be owned by `userId`.
-   * Matched case-sensitively.
+   * Name of the target deck (= subject label).
+   * The deck is created for `userId` if it does not already exist.
    */
   deckName: string;
   /** ID of the user who owns the deck and will be recorded on the batch. */
@@ -94,13 +94,17 @@ export async function importCards(
   // Step 1 — resolve the target deck
   // -------------------------------------------------------------------------
 
-  const deck = await prisma.deck.findFirst({
+  // Find the deck or create it when importing a new subject for the first time.
+  let deck = await prisma.deck.findFirst({
     where: { name: deckName, createdByUserId: userId },
     select: { id: true },
   });
 
   if (!deck) {
-    throw new Error(`Deck "${deckName}" not found for user "${userId}".`);
+    deck = await prisma.deck.create({
+      data: { name: deckName, createdByUserId: userId },
+      select: { id: true },
+    });
   }
 
   const deckId = deck.id;

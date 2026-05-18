@@ -3,7 +3,7 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ---
 
@@ -14,9 +14,15 @@ Last updated: 2026-05-17
 
 Phases 0–9 are complete and merged to `main`. The app is fully functional: multi-user
 with roles, spaced repetition, card management, bulk import, and installable PWA.
-Current work is cleaning up the repository (removing converted Markdown source files
-now superseded by `data/questions/*.json`) and updating documentation.
-161 unit tests pass.
+Phase 10 work completed so far:
+
+- Repository cleanup: removed all converted Markdown source files and PNG question images
+  now superseded by `data/questions/*.json`.
+- Study setup page (`/study/setup`): two-level topic/tag accordion, saved presets with
+  sharing, "review due only" mode, card ID tooltip showing topics and tags.
+- Multi-subject support: JSON files can carry a `subject` wrapper; each subject maps to
+  a named deck (auto-created on import). Study setup shows a subject header per deck.
+- 168 unit tests pass.
 
 ---
 
@@ -139,7 +145,7 @@ now superseded by `data/questions/*.json`) and updating documentation.
   JSON → dry-run preview (create/update counts, hard errors, warnings, first-10 sample)
   → confirm import.
 - `dryRunImport` server action: parse + validate + DB check for existing source IDs,
-  no writes. Returns preview data.
+  no writes. Returns preview data including target deck name.
 - `runImport` server action: full pipeline write; stores raw JSON in `ImportBatch` for audit.
 - `getImportHistory` server action: last 10 `ImportBatch` rows for the current user.
 - Pure helpers (`partitionCounts`, `buildSample`) extracted and tested (11 new tests,
@@ -178,13 +184,46 @@ now superseded by `data/questions/*.json`) and updating documentation.
 - "Browse cards" button on the home page; "Edit" link in the study card toolbar.
 - 36 new unit tests (129 total).
 
+### Phase 10 — Cleanup and UI improvements (in progress)
+
+- Removed 17 converted Markdown source files and 30 PNG question images from `Questions/`
+  — superseded by `data/questions/*.json`.
+- Updated `docs/app_architecture_plan.md`, `docs/core_domain_model.md`,
+  `docs/implementation_plan.md`, and `docs/project_status.md` to reflect current state.
+- **Study setup page** (`/study/setup`):
+  - Topic accordion: group header selects all tags in the group; expand to pick sub-topics.
+    Indeterminate checkbox state for partial group selection.
+  - Saved presets: save a named tag selection, reload in one click. EDITOR+ can mark
+    presets as shared (visible to all users).
+  - Due-count badge: "Review due (N) →" button appears when due cards exist for the
+    current selection; calls `getDueCountForSelection` server action reactively.
+  - Tag filter preserved across cards (`useSearchParams` in `StudyShell`).
+  - `dueOnly=1` URL mode: study only due cards; "All caught up!" screen when exhausted.
+  - Back link returns to setup when a tag filter is active.
+- **Card ID tooltip** (`CardIdBadge`): click the source ID to see a bubble listing topics
+  and tags for that card. No visual change to the ID itself.
+- **Multi-subject support**:
+  - JSON files support `{"subject": "...", "cards": [...]}` wrapper; `subject` becomes
+    the deck name (auto-created by `importCards` on first import). Legacy bare-array
+    format is still accepted.
+  - `parseJsonBatch()` handles both formats; `parseJsonCards()` is a backward-compat alias.
+  - `import-service.ts` does `findOrCreate` on the deck.
+  - `dryRunImport` / `runImport` return `deckName` in results; preview and done screens
+    display it.
+  - `StudySetup` three-level accordion: subject (deck) → topic group → sub-topic.
+    Subject row is always visible; auto-expanded when only one deck exists.
+  - `getNextCard` and `getDueCount` search across all user decks.
+  - CLI uses `subject` from JSON when present; `--deck` is the fallback.
+  - `question_generation_guide.md` updated with new format and LLM prompt.
+  - `StudyPreset` model added (migration `20260518175549_add_study_presets`).
+  - 7 new unit tests for `parseJsonBatch` — 168 tests total.
+
 ---
 
 ## Phases ahead (summary)
 
 | Phase | Name                         | What it unlocks                                                    |
 |-------|------------------------------|--------------------------------------------------------------------|
-| 10    | Cleanup and UI improvements  | Tidy repo, polish navigation and empty states                      |
 | 11    | Media support v1             | Media upload UI and object storage for new cards                   |
 | 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
 | 13    | Export and backup tools      | JSON, CSV export so content stays portable                         |
@@ -217,7 +256,10 @@ duplicates. A missing `data/questions/` directory is skipped silently so CI is u
 
 - **JSON-only app import** — the app importer only reads JSON (the format defined in
   `docs/question_generation_guide.md`). The one-off script `scripts/md_to_json.ts`
-  converts the existing Markdown files; after that, all new questions are authored in JSON.
+  converted the existing Markdown files; after that, all new questions are authored in JSON.
+- **Multi-subject JSON format** — new files use `{"subject": "...", "cards": [...]}`.
+  The importer creates the deck automatically. Legacy bare arrays are still accepted and
+  import into the user's first deck (or the `--deck` CLI flag).
 - **Stateless session cookie** — HMAC-SHA256 signed cookie, no DB session table. The
   `SESSION_SECRET` env var must be at least 32 characters. In production, generate with
   `openssl rand -base64 32`.

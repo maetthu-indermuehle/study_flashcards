@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-dvh bg-stone-50 text-slate-950">
-      <section className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 py-6 sm:px-8 lg:px-10">
+      <section className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-6 pb-6 sm:px-8 lg:px-10 safe-bottom">
         <header className="flex items-center justify-between border-b border-slate-200 pb-4">
           <div>
             <p className="text-sm font-medium uppercase tracking-wide text-sky-700">
@@ -29,7 +29,7 @@ export default async function Home() {
             </span>
             <LogoutButton />
             <span className="rounded-md bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
-              Phase 4
+              Phase 9
             </span>
           </div>
         </header>

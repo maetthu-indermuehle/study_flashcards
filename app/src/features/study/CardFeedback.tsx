@@ -102,7 +102,7 @@ export default function CardFeedback({ cardId, explanation, reference, onNext }:
               key={rating}
               onClick={() => handleRate(rating)}
               disabled={submitting}
-              className={`rounded-lg py-3 text-sm font-semibold transition disabled:opacity-50 ${className}`}
+              className={`rounded-lg py-3.5 text-sm font-semibold transition disabled:opacity-50 ${className}`}
             >
               {label}
             </button>

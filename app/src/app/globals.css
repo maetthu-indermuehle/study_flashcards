@@ -16,4 +16,38 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* Prevent pull-to-refresh interfering with card swipe gestures. */
+  overscroll-behavior-y: contain;
+}
+
+/* Remove the blue/grey flash on tap in iOS WebKit. */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Buttons and links: no 300ms delay, no text selection on long-press. */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Keep text inputs selectable. */
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Safe area padding for notched iPhones (iPhone X and later).
+   Applied to the main page wrappers via Tailwind utilities or directly here.
+   Components use pb-safe / px-safe via the env() values below. */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
 }

@@ -9,10 +9,11 @@ Last updated: 2026-05-17
 
 ## Current state
 
-**Phase 6 is complete.** Working on branch `phase-6-card-management`.
+**Phase 9 is complete.** Working on branch `phase-6-card-management`.
 
-Card browsing, search, filtering, create, edit, archive, and the flagged review queue
-are all live. Every card edit writes a `CardRevision` snapshot. 129 unit tests pass.
+The app is now a full PWA: installable on iOS and Android home screens, theme-coloured
+browser chrome, safe-area padding for notched iPhones, and a service worker for static
+asset caching. 129 unit tests pass.
 
 ---
 
@@ -107,6 +108,20 @@ are all live. Every card edit writes a `CardRevision` snapshot. 129 unit tests p
   component parses the Markdown image syntax embedded in question text
   (`![alt](assets/FILENAME.png) body`) and renders the image above the question.
 
+### Phase 9 — PWA and mobile polish
+
+- Web App Manifest (`manifest.ts`): `standalone` display, portrait, theme colour
+  `#0f172a`, 192×192 and 512×512 PNG icons.
+- Generated icons via Next.js `ImageResponse`: `icon.tsx` (32×32 favicon),
+  `apple-icon.tsx` (180×180 iOS touch icon).
+- Service worker (`public/sw.js`): cache-first for JS/CSS/images, network-first for
+  navigation. Enables install prompt on HTTPS/localhost.
+- `ServiceWorkerRegistration` client component in root layout.
+- `globals.css`: tap-highlight removal, `touch-action: manipulation`, safe-area
+  utilities, `overscroll-behavior-y: contain`.
+- Study page and home page padded for iPhone home-indicator safe area.
+- Rating buttons bumped to ≥44 px touch target (Apple HIG minimum).
+
 ### Phase 6 — Card management UI
 
 - Card browser at `/cards`: paginated list with search (full-text), filters (type,
@@ -129,7 +144,7 @@ are all live. Every card edit writes a `CardRevision` snapshot. 129 unit tests p
 
 | Phase | Name                       | What it unlocks                                                    |
 |-------|----------------------------|--------------------------------------------------------------------|
-| 7     | Media support v1           | Images, charts, and diagrams on question/answer sides              |
+| 7     | Media support v1           | Media upload UI and object storage for new cards                   |
 | 8     | Bulk import UI             | JSON upload inside the app, with preview and validation            |
 | 9     | PWA and mobile polish      | Installable app, offline-ready, polished touch UX                  |
 | 10    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |

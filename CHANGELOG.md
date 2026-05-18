@@ -9,6 +9,42 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.8.0] - 2026-05-17
+
+### Added
+
+- **Phase 9 — PWA and mobile polish** (branch `phase-6-card-management`).
+- `app/src/app/manifest.ts` — Web App Manifest: `standalone` display mode, portrait
+  orientation, `#0f172a` theme colour, references 192×192 and 512×512 PNG icons.
+- `app/public/icons/icon-192.png` and `icon-512.png` — generated with sharp from an
+  SVG source (dark-slate background, white "PPL" text).
+- `app/src/app/icon.tsx` — dynamically generated browser-tab favicon (32×32) via
+  Next.js `ImageResponse`.
+- `app/src/app/apple-icon.tsx` — dynamically generated iOS home-screen icon (180×180)
+  via Next.js `ImageResponse`.
+- `app/public/sw.js` — service worker: cache-first for static assets, network-first
+  for navigation. Enables the PWA install prompt on HTTPS/localhost.
+- `app/src/components/ServiceWorkerRegistration.tsx` — client component that registers
+  the service worker on mount; silent no-op if SW is unsupported or on HTTP.
+- `app/src/app/layout.tsx` updated: `Viewport` export for `theme-color`, `viewportFit:
+  cover`, `appleWebApp` capable/status-bar meta tags, `ServiceWorkerRegistration`
+  component added to the root layout.
+
+### Changed
+
+- `app/src/app/globals.css` — added `-webkit-tap-highlight-color: transparent` (removes
+  iOS blue/grey tap flash), `touch-action: manipulation` on buttons/links (eliminates
+  300 ms click delay), `overscroll-behavior-y: contain` (prevents pull-to-refresh
+  interfering with card interactions), and `.safe-bottom` / `.safe-top` utilities for
+  `env(safe-area-inset-*)` padding on notched iPhones.
+- Study page and home page outer containers use `.safe-bottom` so content clears the
+  iPhone home-indicator bar.
+- Rating buttons in `CardFeedback` bumped from `py-3` to `py-3.5` (≥44 px touch
+  target per Apple HIG).
+- Home page phase badge updated to "Phase 9".
+
+---
+
 ## [0.7.0] - 2026-05-17
 
 ### Added

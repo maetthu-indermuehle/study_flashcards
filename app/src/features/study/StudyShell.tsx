@@ -19,6 +19,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
+import CardIdBadge from "./CardIdBadge";
 import type { StudyCard } from "@/lib/study/types";
 
 type MCPhase =
@@ -105,7 +106,11 @@ export default function StudyShell({ card }: Props) {
       {/* Card toolbar: source ID + flag button */}
       <div className="mb-3 flex items-center justify-between">
         {card.originalId ? (
-          <span className="font-mono text-xs text-slate-400">{card.originalId}</span>
+          <CardIdBadge
+            originalId={card.originalId}
+            topics={card.topics}
+            tags={card.tags}
+          />
         ) : (
           <span />
         )}

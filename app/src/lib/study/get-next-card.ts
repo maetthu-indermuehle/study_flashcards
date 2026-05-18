@@ -30,7 +30,7 @@ type RawCard = {
   originalId: string | null;
   choices: RawChoice[];
   references: RawReference[];
-  tags: { note: string | null; tag: { name: string } }[];
+  tags: { note: string | null; tag: { name: string; type: string } }[];
 };
 
 // ---------------------------------------------------------------------------
@@ -158,9 +158,7 @@ async function fetchFullCard(cardId: string): Promise<StudyCard | null> {
       choices: { select: { id: true, text: true, isCorrect: true } },
       references: { select: { label: true, url: true }, take: 1 },
       tags: {
-        where: { tag: { name: "flagged", type: TagType.CUSTOM } },
-        select: { note: true, tag: { select: { name: true } } },
-        take: 1,
+        select: { note: true, tag: { select: { name: true, type: true } } },
       },
     },
   });
@@ -180,36 +178,31 @@ function mapRawCard(raw: RawCard): StudyCard {
   const reference = raw.references[0]
     ? { label: raw.references[0].label, url: raw.references[0].url }
     : null;
-  const flagged = raw.tags.length > 0;
-  const flagNote = raw.tags[0]?.note ?? null;
+
+  const flagTag = raw.tags.find(
+    (t) => t.tag.type === TagType.CUSTOM && t.tag.name === "flagged",
+  );
+  const flagged = flagTag !== undefined;
+  const flagNote = flagTag?.note ?? null;
+
+  const topics = raw.tags
+    .filter((t) => t.tag.type === TagType.TOPIC)
+    .map((t) => t.tag.name);
+
+  const tags = raw.tags
+    .filter((t) => t.tag.type === TagType.CUSTOM && t.tag.name !== "flagged")
+    .map((t) => t.tag.name);
+
+  const shared = { id: raw.id, question: raw.question, answer: raw.answer,
+    explanation: raw.explanation, reference, originalId: raw.originalId,
+    flagged, flagNote, topics, tags };
 
   if (raw.type === "MULTIPLE_CHOICE") {
     const choices: StudyCardChoice[] = shuffleArray(
       raw.choices.map((c) => ({ id: c.id, text: c.text, isCorrect: c.isCorrect })),
     );
-    return {
-      id: raw.id,
-      type: "MULTIPLE_CHOICE",
-      question: raw.question,
-      answer: raw.answer,
-      explanation: raw.explanation,
-      choices,
-      reference,
-      originalId: raw.originalId,
-      flagged,
-      flagNote,
-    };
+    return { ...shared, type: "MULTIPLE_CHOICE", choices };
   }
 
-  return {
-    id: raw.id,
-    type: "OPEN_ANSWER",
-    question: raw.question,
-    answer: raw.answer,
-    explanation: raw.explanation,
-    reference,
-    originalId: raw.originalId,
-    flagged,
-    flagNote,
-  };
+  return { ...shared, type: "OPEN_ANSWER" };
 }

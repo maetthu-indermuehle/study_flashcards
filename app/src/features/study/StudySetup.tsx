@@ -8,9 +8,9 @@
  * sub-topics instead.
  */
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { createPreset, deletePreset, setPresetShared } from "@/lib/study/preset-actions";
+import { createPreset, deletePreset, setPresetShared, getDueCountForSelection } from "@/lib/study/preset-actions";
 import type { TopicGroup, PresetItem } from "@/lib/study/preset-queries";
 
 type Props = {
@@ -32,6 +32,17 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
   const [showSaveForm, setShowSaveForm] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+  const [dueCount, setDueCount] = useState<number | null>(null);
+
+  // Refresh due count whenever the selection changes.
+  useEffect(() => {
+    let cancelled = false;
+    getDueCountForSelection([...selected]).then((n) => {
+      if (!cancelled) setDueCount(n);
+    });
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selected]);
 
   // ---------------------------------------------------------------------------
   // Selection helpers
@@ -314,14 +325,26 @@ export default function StudySetup({ groups, presets: initialPresets, canShare }
         </button>
       )}
 
-      {/* Start button */}
-      <div className="flex gap-3">
+      {/* Start buttons */}
+      <div className="flex flex-wrap gap-3">
         <button
           onClick={startSession}
           className="rounded-md bg-slate-950 px-6 py-2.5 text-sm font-medium text-white hover:bg-slate-800"
         >
           {startLabel}
         </button>
+        {dueCount !== null && dueCount > 0 && (
+          <button
+            onClick={() => {
+              const ids = [...selected];
+              const base = ids.length > 0 ? `tagIds=${ids.join(",")}&` : "";
+              router.push(`/study?${base}dueOnly=1`);
+            }}
+            className="rounded-md border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+          >
+            Review due ({dueCount}) →
+          </button>
+        )}
       </div>
     </div>
   );

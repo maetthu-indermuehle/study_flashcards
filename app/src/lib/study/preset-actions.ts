@@ -10,6 +10,7 @@
 
 import { prisma } from "@/lib/db/client";
 import { requireRole } from "@/lib/auth/permissions";
+import { getDueCount } from "@/lib/study/get-next-card";
 import { revalidatePath } from "next/cache";
 
 // ---------------------------------------------------------------------------
@@ -116,4 +117,17 @@ export async function deletePreset(presetId: string): Promise<DeletePresetResult
   } catch (e) {
     return { ok: false, error: e instanceof Error ? e.message : String(e) };
   }
+}
+
+// ---------------------------------------------------------------------------
+// Due count for the current selection
+// ---------------------------------------------------------------------------
+
+/**
+ * Returns the number of due cards for the current user matching `tagIds`.
+ * Called client-side when the tag selection changes on the setup page.
+ */
+export async function getDueCountForSelection(tagIds: string[]): Promise<number> {
+  const { userId } = await requireRole("USER");
+  return getDueCount(userId, tagIds.length > 0 ? tagIds : undefined);
 }

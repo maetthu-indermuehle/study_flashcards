@@ -15,7 +15,7 @@
  */
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
@@ -34,6 +34,7 @@ type Props = {
 
 export default function StudyShell({ card }: Props) {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [mcPhase, setMcPhase] = useState<MCPhase>({ name: "idle" });
   const [oaPhase, setOaPhase] = useState<OAPhase>({ name: "idle" });
@@ -51,9 +52,9 @@ export default function StudyShell({ card }: Props) {
   }, [noteOpen]);
 
   function handleNext() {
-    // router.push triggers a new RSC render; the Server Component fetches a
-    // fresh card. scroll:false prevents the page jumping to the top.
-    router.push("/study", { scroll: false });
+    // Preserve tagIds and dueOnly params so the filter stays active across cards.
+    const qs = searchParams.toString();
+    router.push(qs ? `/study?${qs}` : "/study", { scroll: false });
   }
 
   function handleFlagButtonClick() {

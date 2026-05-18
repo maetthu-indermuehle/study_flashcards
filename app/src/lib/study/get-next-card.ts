@@ -43,13 +43,19 @@ type RawCard = {
  * When `tagIds` is provided and non-empty, only cards that carry at least one
  * of those tags are considered. An empty or omitted `tagIds` means all cards.
  *
- * @param userId - The authenticated user's database ID.
- * @param tagIds - Optional list of Tag IDs to restrict the selection to.
- * @returns A shuffled {@link StudyCard}, or `null` if the deck is empty.
+ * When `dueOnly` is true the function only returns due cards (step 1) and
+ * returns `null` when none are due — it does not fall back to new or upcoming
+ * cards. This powers the "review due cards only" mode.
+ *
+ * @param userId  - The authenticated user's database ID.
+ * @param tagIds  - Optional list of Tag IDs to restrict the selection to.
+ * @param dueOnly - When true, only return cards that are currently due.
+ * @returns A shuffled {@link StudyCard}, or `null` when nothing matches.
  */
 export async function getNextCard(
   userId: string,
   tagIds?: string[],
+  dueOnly?: boolean,
 ): Promise<StudyCard | null> {
   const deck = await prisma.deck.findFirst({
     where: { createdByUserId: userId },
@@ -81,6 +87,9 @@ export async function getNextCard(
   if (dueProgress) {
     return fetchFullCard(dueProgress.cardId);
   }
+
+  // In dueOnly mode stop here — don't fall back to new or upcoming cards.
+  if (dueOnly) return null;
 
   // -------------------------------------------------------------------------
   // 2. Pick a card the user has never seen (no CardProgress row)

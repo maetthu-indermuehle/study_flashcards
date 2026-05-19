@@ -68,26 +68,26 @@ export default function UserForm({ user, isSelf = false }: Props) {
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       {/* Display name */}
       <label className="flex flex-col gap-1">
-        <span className="text-sm font-medium text-slate-700">Display name</span>
+        <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Display name</span>
         <input
           type="text"
           value={displayName}
           onChange={(e) => setDisplayName(e.target.value)}
           required
-          className="rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+          className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
         />
       </label>
 
       {/* Email (create only) */}
       {!isEdit && (
         <label className="flex flex-col gap-1">
-          <span className="text-sm font-medium text-slate-700">Email</span>
+          <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Email</span>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+            className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
           />
         </label>
       )}
@@ -95,9 +95,9 @@ export default function UserForm({ user, isSelf = false }: Props) {
       {/* Password (create only) */}
       {!isEdit && (
         <label className="flex flex-col gap-1">
-          <span className="text-sm font-medium text-slate-700">
+          <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
             Password{" "}
-            <span className="font-normal text-slate-400">
+            <span className="font-normal text-slate-400 dark:text-slate-500">
               (min {MIN_PASSWORD_LENGTH} chars)
             </span>
           </span>
@@ -107,17 +107,17 @@ export default function UserForm({ user, isSelf = false }: Props) {
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={MIN_PASSWORD_LENGTH}
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+            className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
           />
         </label>
       )}
 
       {/* Role */}
       <fieldset className="flex flex-col gap-1">
-        <legend className="mb-1 text-sm font-medium text-slate-700">
+        <legend className="mb-1 text-sm font-medium text-slate-700 dark:text-slate-300">
           Role
           {isSelf && (
-            <span className="ml-2 font-normal text-slate-400">
+            <span className="ml-2 font-normal text-slate-400 dark:text-slate-500">
               (cannot change own role)
             </span>
           )}
@@ -127,8 +127,8 @@ export default function UserForm({ user, isSelf = false }: Props) {
             key={r.value}
             className={`flex cursor-pointer items-center gap-3 rounded-md border px-3 py-2 text-sm transition ${
               role === r.value
-                ? "border-sky-400 bg-sky-50"
-                : "border-slate-200 hover:bg-slate-50"
+                ? "border-sky-400 dark:border-sky-600 bg-sky-50 dark:bg-sky-900/20"
+                : "border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700"
             } ${isSelf ? "cursor-not-allowed opacity-60" : ""}`}
           >
             <input
@@ -141,20 +141,20 @@ export default function UserForm({ user, isSelf = false }: Props) {
               className="accent-sky-600"
             />
             <span>
-              <strong>{r.label}</strong>
-              <span className="ml-2 text-slate-500">{r.description}</span>
+              <strong className="text-slate-800 dark:text-slate-200">{r.label}</strong>
+              <span className="ml-2 text-slate-500 dark:text-slate-400">{r.description}</span>
             </span>
           </label>
         ))}
       </fieldset>
 
       {error && (
-        <p className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
+        <p className="rounded-md bg-red-50 dark:bg-red-900/20 px-3 py-2 text-sm text-red-700 dark:text-red-400">
           {error}
         </p>
       )}
       {saved && (
-        <p className="rounded-md bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+        <p className="rounded-md bg-emerald-50 dark:bg-emerald-900/20 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-400">
           Saved successfully.
         </p>
       )}
@@ -162,7 +162,7 @@ export default function UserForm({ user, isSelf = false }: Props) {
       <button
         type="submit"
         disabled={saving}
-        className="rounded-md bg-slate-950 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 disabled:opacity-50"
+        className="rounded-md bg-slate-950 dark:bg-slate-100 px-4 py-2 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 disabled:opacity-50"
       >
         {saving ? "Saving…" : isEdit ? "Save changes" : "Create user"}
       </button>

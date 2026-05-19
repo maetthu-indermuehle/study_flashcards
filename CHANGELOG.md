@@ -9,6 +9,26 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.12.2] - 2026-05-19
+
+### Added
+
+- **Dark mode (site-wide)** — all pages and components now respond to the dark
+  mode toggle in the hamburger menu. Uses a ThemeProvider with localStorage
+  persistence and `prefers-color-scheme` fallback. The Tailwind v4 class-based
+  `dark:` variant activates when `<html class="dark">` is set.
+- **Overflow fix** — `overflow-x: hidden` on `html` and `body` prevents
+  horizontal scroll on narrow viewports.
+- **Landscape support on study page** — reduced padding via `landscape:` variant
+  so the card fits on-screen in landscape orientation on mobile.
+
+### Changed
+
+- Export page converted from hardcoded dark palette to adaptive light/dark styles.
+- ExportDeckCard converted from hardcoded dark palette to adaptive light/dark styles.
+
+---
+
 ## [0.12.1] - 2026-05-19
 
 ### Added

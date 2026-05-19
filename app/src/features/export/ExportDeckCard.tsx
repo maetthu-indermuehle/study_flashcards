@@ -79,26 +79,26 @@ export default function ExportDeckCard({ subject }: Props) {
   // ---------------------------------------------------------------------------
 
   return (
-    <div className="rounded-lg border border-slate-700 bg-slate-800">
+    <div className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
       {/* Deck header */}
-      <div className="flex items-center justify-between border-b border-slate-700 px-4 py-3">
+      <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 px-4 py-3">
         <div className="flex items-baseline gap-2">
-          <span className="font-medium text-slate-100">{name}</span>
-          <span className="text-xs text-slate-500">
+          <span className="font-medium text-slate-800 dark:text-slate-100">{name}</span>
+          <span className="text-xs text-slate-400 dark:text-slate-500">
             {subject.totalCards} card{subject.totalCards !== 1 ? "s" : ""}
           </span>
         </div>
         <div className="flex gap-2 text-xs">
           <button
             onClick={selectAll}
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200"
           >
             all
           </button>
-          <span className="text-slate-600">·</span>
+          <span className="text-slate-300 dark:text-slate-600">·</span>
           <button
             onClick={clearAll}
-            className="text-slate-400 hover:text-slate-200"
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200"
           >
             none
           </button>
@@ -106,7 +106,7 @@ export default function ExportDeckCard({ subject }: Props) {
       </div>
 
       {/* Topic accordion */}
-      <div className="divide-y divide-slate-700/50">
+      <div className="divide-y divide-slate-100 dark:divide-slate-700/50">
         {topicGroups.map((group) => {
           const isOpen = expanded.has(group.name);
           const full = isGroupFull(group);
@@ -122,7 +122,7 @@ export default function ExportDeckCard({ subject }: Props) {
                   checked={full}
                   ref={(el) => { if (el) el.indeterminate = partial; }}
                   onChange={() => toggleGroup(group)}
-                  className="h-4 w-4 rounded border-slate-500 accent-indigo-500"
+                  className="h-4 w-4 rounded border-slate-300 dark:border-slate-500 accent-indigo-600 dark:accent-indigo-400"
                 />
                 {/* Group name — clicking expands/collapses sub-topics */}
                 <button
@@ -133,11 +133,11 @@ export default function ExportDeckCard({ subject }: Props) {
                       return next;
                     })
                   }
-                  className="flex flex-1 items-center justify-between text-left text-sm font-medium text-slate-200"
+                  className="flex flex-1 items-center justify-between text-left text-sm font-medium text-slate-700 dark:text-slate-200"
                 >
                   <span>{group.name}</span>
                   <span className="ml-2 flex items-center gap-2">
-                    <span className="text-xs font-normal text-slate-500">
+                    <span className="text-xs font-normal text-slate-400 dark:text-slate-500">
                       {group.totalCards}
                     </span>
                     <ChevronIcon open={isOpen} />
@@ -147,20 +147,20 @@ export default function ExportDeckCard({ subject }: Props) {
 
               {/* Sub-topics */}
               {isOpen && group.subTopics.length > 0 && (
-                <div className="border-t border-slate-700/50 bg-slate-900/30 pb-1">
+                <div className="border-t border-slate-100 dark:border-slate-700/50 bg-slate-50 dark:bg-slate-900/30 pb-1">
                   {group.subTopics.map((sub) => (
                     <label
                       key={sub.id}
-                      className="flex cursor-pointer items-center gap-3 px-6 py-2 hover:bg-slate-700/30"
+                      className="flex cursor-pointer items-center gap-3 px-6 py-2 hover:bg-slate-100 dark:hover:bg-slate-700/30"
                     >
                       <input
                         type="checkbox"
                         checked={selected.has(sub.id)}
                         onChange={() => toggleTag(sub.id)}
-                        className="h-4 w-4 rounded border-slate-500 accent-indigo-500"
+                        className="h-4 w-4 rounded border-slate-300 dark:border-slate-500 accent-indigo-600 dark:accent-indigo-400"
                       />
-                      <span className="flex-1 text-sm text-slate-300">{sub.label}</span>
-                      <span className="text-xs text-slate-500">{sub.cardCount}</span>
+                      <span className="flex-1 text-sm text-slate-700 dark:text-slate-300">{sub.label}</span>
+                      <span className="text-xs text-slate-400 dark:text-slate-500">{sub.cardCount}</span>
                     </label>
                   ))}
                 </div>
@@ -171,8 +171,8 @@ export default function ExportDeckCard({ subject }: Props) {
       </div>
 
       {/* Export buttons */}
-      <div className="flex flex-wrap items-center gap-2 border-t border-slate-700 px-4 py-3">
-        <span className="mr-auto text-xs text-slate-400">{selectionLabel}</span>
+      <div className="flex flex-wrap items-center gap-2 border-t border-slate-200 dark:border-slate-700 px-4 py-3">
+        <span className="mr-auto text-xs text-slate-400 dark:text-slate-500">{selectionLabel}</span>
         <a
           href={exportUrl("json")}
           className="rounded bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-500"
@@ -181,13 +181,13 @@ export default function ExportDeckCard({ subject }: Props) {
         </a>
         <a
           href={exportUrl("csv")}
-          className="rounded bg-slate-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-500"
+          className="rounded bg-slate-600 dark:bg-slate-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-500"
         >
           CSV
         </a>
         <a
           href={exportUrl("diff")}
-          className="rounded border border-amber-500 px-3 py-1.5 text-sm font-medium text-amber-400 hover:bg-amber-500/10"
+          className="rounded border border-amber-500 dark:border-amber-600 px-3 py-1.5 text-sm font-medium text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-500/10"
         >
           Diff
         </a>
@@ -207,7 +207,7 @@ function ChevronIcon({ open }: { open: boolean }) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`text-slate-400 transition-transform duration-150 ${open ? "rotate-180" : ""}`}
+      className={`text-slate-400 dark:text-slate-500 transition-transform duration-150 ${open ? "rotate-180" : ""}`}
     >
       <polyline points="2,4 7,10 12,4" />
     </svg>

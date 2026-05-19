@@ -28,25 +28,25 @@ export default async function EditUserPage({ params }: Props) {
 
   return (
     <div>
-      <h1 className="mb-6 text-xl font-semibold text-slate-950">
+      <h1 className="mb-6 text-xl font-semibold text-slate-950 dark:text-slate-100">
         Edit user: {user.displayName}
       </h1>
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Profile & role */}
-        <div className="rounded-lg border border-slate-200 bg-white p-6">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
+        <div className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
             Profile &amp; role
           </h2>
           <UserForm user={user} isSelf={isSelf} />
         </div>
 
         {/* Reset password */}
-        <div className="rounded-lg border border-slate-200 bg-white p-6">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
+        <div className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
             Reset password
           </h2>
-          <p className="mb-4 text-sm text-slate-500">
+          <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
             Setting a new password will immediately sign this user out of all
             active sessions.
           </p>
@@ -56,11 +56,11 @@ export default async function EditUserPage({ params }: Props) {
 
       {/* Danger zone */}
       {!isSelf && (
-        <div className="mt-6 rounded-lg border border-red-200 bg-red-50 p-6">
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-red-600">
+        <div className="mt-6 rounded-lg border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 p-6">
+          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-red-600 dark:text-red-400">
             Danger zone
           </h2>
-          <p className="mb-4 text-sm text-slate-600">
+          <p className="mb-4 text-sm text-slate-600 dark:text-slate-400">
             Permanently deletes this user account. This cannot be undone.
           </p>
           <DeleteUserButton userId={user.id} displayName={user.displayName} />

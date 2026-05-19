@@ -56,20 +56,20 @@ export default async function CardsPage({
   ]);
 
   return (
-    <main className="min-h-dvh bg-stone-50 text-slate-950">
+    <main className="min-h-dvh bg-stone-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100">
       <div className="mx-auto w-full max-w-5xl px-5 py-6 sm:px-8 lg:px-10">
-        <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
-          <h1 className="text-xl font-semibold text-slate-950">Cards</h1>
+        <header className="mb-6 flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4">
+          <h1 className="text-xl font-semibold text-slate-950 dark:text-slate-100">Cards</h1>
           <div className="flex items-center gap-2">
             <Link
               href="/cards/flagged"
-              className="rounded-md border border-amber-300 bg-amber-50 px-3 py-1.5 text-sm font-medium text-amber-700 hover:bg-amber-100"
+              className="rounded-md border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-900/20 px-3 py-1.5 text-sm font-medium text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-900/35"
             >
               Review flagged
             </Link>
             <Link
               href="/cards/new"
-              className="rounded-md bg-slate-950 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-800"
+              className="rounded-md bg-slate-950 dark:bg-slate-100 px-3 py-1.5 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200"
             >
               + New card
             </Link>

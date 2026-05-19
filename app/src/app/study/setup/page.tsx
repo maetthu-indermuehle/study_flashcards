@@ -22,10 +22,10 @@ export default async function StudySetupPage() {
   const canShare = hasRole(session.role, "EDITOR");
 
   return (
-    <main className="min-h-dvh bg-stone-50 text-slate-950">
+    <main className="min-h-dvh bg-stone-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100">
       <div className="mx-auto w-full max-w-2xl px-5 py-6 sm:px-8">
-        <header className="mb-8 flex items-center justify-between border-b border-slate-200 pb-4">
-          <h1 className="text-xl font-semibold text-slate-950">Study setup</h1>
+        <header className="mb-8 flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4">
+          <h1 className="text-xl font-semibold text-slate-950 dark:text-slate-100">Study setup</h1>
           <HamburgerMenu role={session.role} email={session.email} />
         </header>
 

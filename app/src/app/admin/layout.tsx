@@ -27,13 +27,13 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-dvh bg-stone-50 text-slate-950">
+    <div className="min-h-dvh bg-stone-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100">
       <div className="mx-auto w-full max-w-5xl px-5 py-6 sm:px-8 lg:px-10">
-        <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
+        <header className="mb-6 flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4">
           <nav className="flex items-center gap-3">
             <Link
               href="/admin/users"
-              className="text-sm font-medium text-slate-700 hover:text-slate-950"
+              className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-slate-100"
             >
               Users
             </Link>

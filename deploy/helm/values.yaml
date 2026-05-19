@@ -42,6 +42,12 @@ app:
   sessionMaxAgeSeconds: 604800
 
 postgres:
+  # image can be overridden to use a mirror and avoid Docker Hub rate limits.
+  image: bitnami/postgresql:17
+  # imagePullSecretName: name of an existing pull secret for the postgres image registry.
+  # Create with: oc create secret docker-registry <name> --docker-server=docker.io \
+  #   --docker-username=<user> --docker-password=<token> -n <namespace>
+  imagePullSecretName: ""
   database: flashcards
   username: flashcards
   # password: set via --set postgres.password=... — never commit here.

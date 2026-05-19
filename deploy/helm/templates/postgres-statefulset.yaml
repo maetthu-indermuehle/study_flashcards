@@ -15,12 +15,17 @@ spec:
       labels:
         {{- include "flashcards.postgresSelectorLabels" . | nindent 8 }}
     spec:
+      {{- if .Values.postgres.imagePullSecretName }}
+      imagePullSecrets:
+        - name: {{ .Values.postgres.imagePullSecretName }}
+      {{- end }}
       containers:
         - name: postgres
           # Bitnami's PostgreSQL image is designed to run as an arbitrary (non-root)
           # user, which is required by OpenShift's default security context constraints.
           # It uses different env var names than the official postgres image.
-          image: bitnami/postgresql:17
+          # Override postgres.image in values to use a mirror and avoid Docker Hub rate limits.
+          image: {{ .Values.postgres.image }}
           imagePullPolicy: IfNotPresent
           ports:
             - name: postgres

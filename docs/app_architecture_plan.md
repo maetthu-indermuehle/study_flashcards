@@ -552,13 +552,19 @@ Import validation checks:
 
 ### Export
 
-Later, build exporters for:
+Phase 11 added a browser-based export UI at `/export` (EDITOR+ only):
 
-- Markdown
-- JSON
-- CSV
+- **JSON export** — full deck in the canonical import format, ready to re-import
+  into any instance.
+- **CSV export** — question/answer/explanation/choices in a spreadsheet-friendly
+  format.
+- **Diff export** — JSON containing only cards added or changed since a given
+  date; useful for syncing a remote instance with new questions.
 
-Markdown export should be able to recreate a study-friendly document similar to the current question files, but generated from the database.
+Exports are scoped per deck. The export page shows a topic-filter accordion so
+users can narrow the export to specific subjects.
+
+Markdown export (regenerating a study document from the database) is deferred.
 
 ## Media and References
 
@@ -682,7 +688,7 @@ references/
 
 ## Open Decisions
 
-- Whether media storage grows beyond static `public/assets/` to object storage (MinIO / S3) for Phase 11.
+- Whether media storage grows beyond static `public/assets/` to object storage (MinIO / S3) for Phase 14.
 
 ## Implementation Progress
 
@@ -699,7 +705,9 @@ references/
 11. ~~Add user management: roles, brute-force protection, admin UI, profile page.~~ ✓ Phase 7
 12. ~~Add bulk import UI (JSON upload, dry-run preview, ImportBatch audit trail).~~ ✓ Phase 8
 13. ~~Add PWA manifest and mobile polish.~~ ✓ Phase 9
-14. ~~Clean up repo, topic/tag study setup with presets, multi-subject support.~~ ✓ Phase 10 (current)
-15. Add full media management (upload UI, object storage). ← Phase 11
-16. Add initial Helm chart for OpenShift deployment. ← Phase 12
-17. Add export tools (JSON, Markdown, CSV). ← Phase 13
+14. ~~Clean up repo, topic/tag study setup with presets, multi-subject support.~~ ✓ Phase 10
+15. ~~Add export tools (JSON, CSV) and per-deck diff export.~~ ✓ Phase 11
+16. ~~Add Helm chart for OpenShift/APPUiO deployment with migration init container.~~ ✓ Phase 12
+17. ~~UI fixes and study-flow polish: dark mode, rating latency, previous card button.~~ ✓ Phase 13
+18. Add full media management (upload UI, object storage). ← Phase 14
+19. Improvements after daily use: stats, exam-readiness, FSRS, AI-assisted cards, offline sync. ← Phase 15

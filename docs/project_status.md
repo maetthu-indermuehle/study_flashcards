@@ -9,14 +9,35 @@ Last updated: 2026-05-19
 
 ## Current state
 
-**Phase 12 (OpenShift deployment) is complete.** The app is live at
-[flashcards.maetthu.com](https://flashcards.maetthu.com). Working on branch
-`phase-11-export` (OpenShift work was done ahead of the export phase at the user's
-request).
+**Phase 13 (UI fixes and study-flow polish) is complete.** The app is live at
+[flashcards.maetthu.com](https://flashcards.maetthu.com).
 
-Phases 0–12 are complete and merged to `main`.
+Phases 0–13 are complete and merged to `main`.
 
-Phase 12 completed work (in this branch, ahead of schedule):
+Phase 13 completed work (branch `phase-13-ui-fixes`):
+
+- **Dark mode (site-wide)** — `ThemeProvider` with localStorage persistence and
+  `prefers-color-scheme` fallback. Toggle in the `HamburgerMenu` on every
+  authenticated page. All pages and components updated with `dark:` Tailwind
+  variants (Tailwind v4 class-based, activates on `<html class="dark">`).
+  Export page converted from hardcoded dark-only palette to adaptive light/dark.
+- **Rating button latency fix** — review POST (`/api/study/review`) now fires
+  in the background so `router.refresh()` (next card fetch) starts immediately
+  on tap, removing the ~500 ms blocking delay.
+- **Previous card button** — new `StudySession` client wrapper owns a
+  `useRef<string[]>` history stack. "← Prev" appears in the study card toolbar
+  once the user has advanced past at least one card. `getNextCard` accepts an
+  optional `forceId` to bypass selection logic and re-fetch a specific card.
+- **Card ID in edit header** — `originalId` shown next to the "Edit card"
+  heading in the edit-card page, not buried in the footer.
+- **Mouse-wheel scroll fix** — `overflow-x: hidden` on `<html class="h-full">`
+  was creating a fixed-height scroll container that swallowed wheel events (but
+  not scrollbar events). Removed from `html`; the `body` rule still clips
+  horizontal overflow.
+
+---
+
+Phase 12 completed work (branch `phase-12-openshift`, merged ahead of schedule):
 
 - Helm chart (`deploy/helm/`) with Deployment + migration init container, Service,
   Kubernetes Ingress (cert-manager Let's Encrypt), optional PostgreSQL StatefulSet
@@ -213,7 +234,7 @@ Phase 10 completed work:
 - "Browse cards" button on the home page; "Edit" link in the study card toolbar.
 - 36 new unit tests (129 total).
 
-### Phase 10 — Cleanup and UI improvements (in progress)
+### Phase 10 — Cleanup and UI improvements
 
 - Removed 17 converted Markdown source files and 30 PNG question images from `Questions/`
   — superseded by `data/questions/*.json`.
@@ -265,12 +286,10 @@ Phase 10 completed work:
 
 ## Phases ahead (summary)
 
-| Phase | Name                         | What it unlocks                                                    |
-|-------|------------------------------|--------------------------------------------------------------------|
-| 11    | Export and backup tools      | JSON/CSV export so content is portable before production deploy    |
-| 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
-| 13    | Media support v1             | Media upload UI and object storage for new cards                   |
-| 14    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
+| Phase | Name                         | What it unlocks                                                         |
+|-------|------------------------------|-------------------------------------------------------------------------|
+| 14    | Media support v1             | Media upload UI and object storage for images/diagrams on new cards     |
+| 15    | Improvements after daily use | Stats, exam-readiness indicator, FSRS scheduler, AI-assisted card creation, offline sync |
 
 ---
 

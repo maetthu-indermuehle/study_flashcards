@@ -9,6 +9,35 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.13.0] - 2026-05-19
+
+Phase 13 — UI fixes and study-flow polish. Dark mode, reduced interaction
+latency, previous-card navigation, and a handful of smaller UX issues.
+
+### Added
+
+- **Dark mode (site-wide)** — `ThemeProvider` reads `localStorage` on mount,
+  falls back to `prefers-color-scheme`, and toggles `<html class="dark">`.
+  Toggle lives in the `HamburgerMenu` on every authenticated page. All pages
+  and components use Tailwind's `dark:` prefix (Tailwind v4 class-based variant).
+- **Previous card button** — "← Prev" appears in the study toolbar once the
+  user has navigated past at least one card. A new `StudySession` client wrapper
+  owns a `useRef` history stack; `getNextCard` accepts a `forceId` param to
+  re-fetch a specific card directly.
+
+### Fixed
+
+- **Rating button latency** — review POST fires in background; `router.refresh()`
+  (next card) starts immediately on tap instead of waiting for the DB write.
+- **Card ID in edit header** — `originalId` now shows next to the "Edit card"
+  heading rather than in the small footer below the form.
+- **Mouse-wheel scroll on tall pages** — `overflow-x: hidden` on `<html
+  class="h-full">` was creating a fixed-height scroll container that captured
+  wheel events but could not scroll them. Removed from `html`; `body` still
+  clips horizontal overflow.
+
+---
+
 ## [0.12.5] - 2026-05-19
 
 ### Fixed

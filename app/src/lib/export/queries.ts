@@ -42,10 +42,16 @@ export async function getDecksForUser(userId: string) {
 /**
  * Returns all cards in a deck with their choices, tags, and references.
  * Ordered by originalId (alphabetical) for deterministic output.
+ *
+ * @param tagIds - When non-empty, only cards that have at least one of these
+ *   tags are returned. Pass an empty array to return all cards.
  */
-export async function getCardsForDeck(deckId: string) {
+export async function getCardsForDeck(deckId: string, tagIds: string[] = []) {
   return prisma.card.findMany({
-    where: { deckId },
+    where: {
+      deckId,
+      ...(tagIds.length > 0 && { tags: { some: { tagId: { in: tagIds } } } }),
+    },
     include: cardInclude,
     orderBy: { originalId: "asc" },
   });
@@ -58,8 +64,10 @@ export async function getCardsForDeck(deckId: string) {
  * - Changed cards: have at least one `CardRevision` (edited after import).
  *
  * The result can be re-imported to update `data/questions/` for the next deploy.
+ *
+ * @param tagIds - When non-empty, further filters to cards matching those tags.
  */
-export async function getDiffCardsForDeck(deckId: string) {
+export async function getDiffCardsForDeck(deckId: string, tagIds: string[] = []) {
   return prisma.card.findMany({
     where: {
       deckId,
@@ -67,6 +75,7 @@ export async function getDiffCardsForDeck(deckId: string) {
         { originalId: null },
         { revisions: { some: {} } },
       ],
+      ...(tagIds.length > 0 && { tags: { some: { tagId: { in: tagIds } } } }),
     },
     include: cardInclude,
     orderBy: { originalId: "asc" },

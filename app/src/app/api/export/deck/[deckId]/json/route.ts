@@ -13,7 +13,7 @@ import { getCardsForDeck } from "@/lib/export/queries";
 import { formatCardsAsJson } from "@/lib/export/json-formatter";
 
 export async function GET(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ deckId: string }> },
 ) {
   const session = await readSessionCookie();
@@ -21,6 +21,8 @@ export async function GET(
   if (!hasRole(session.role, "EDITOR")) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
 
   const { deckId } = await params;
+  const tagIds = (req.nextUrl.searchParams.get("tagIds") ?? "")
+    .split(",").map((s) => s.trim()).filter(Boolean);
 
   const deck = await prisma.deck.findFirst({
     where: { id: deckId, createdByUserId: session.userId },
@@ -28,7 +30,7 @@ export async function GET(
   });
   if (!deck) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
-  const cards = await getCardsForDeck(deckId);
+  const cards = await getCardsForDeck(deckId, tagIds);
   const json = formatCardsAsJson(deck.name, cards);
   const filename = `${deck.name.replace(/[^a-z0-9]+/gi, "_").toLowerCase()}.json`;
 

@@ -2,7 +2,8 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { hasRole } from "@/lib/auth/permissions";
-import { getDecksForUser } from "@/lib/export/queries";
+import { listSubjectGroups } from "@/lib/study/preset-queries";
+import ExportDeckCard from "@/features/export/ExportDeckCard";
 import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default async function ExportPage() {
   if (!session) redirect("/login");
   if (!hasRole(session.role, "EDITOR")) redirect("/");
 
-  const decks = await getDecksForUser(session.userId);
+  const subjectGroups = await listSubjectGroups(session.userId);
   const isAdmin = hasRole(session.role, "ADMIN");
 
   return (
@@ -30,48 +31,19 @@ export default async function ExportPage() {
         <section>
           <h2 className="mb-1 text-base font-semibold text-slate-200">Decks</h2>
           <p className="mb-4 text-sm text-slate-400">
-            Download all cards in a deck, or only the cards that are new or
-            changed since the last import (diff). The JSON format is
-            round-trip compatible with the importer.
+            Select topics to export a subset, or leave everything unchecked to
+            export the whole deck. <strong className="text-slate-300">Diff</strong> exports
+            only new and changed cards — drop the file into{" "}
+            <code className="rounded bg-slate-700 px-1 text-xs">data/questions/</code>{" "}
+            to update the seed for the next deployment.
           </p>
 
-          {decks.length === 0 ? (
+          {subjectGroups.length === 0 ? (
             <p className="text-sm text-slate-500">No decks found.</p>
           ) : (
-            <div className="space-y-3">
-              {decks.map((deck) => (
-                <div
-                  key={deck.id}
-                  className="rounded-lg border border-slate-700 bg-slate-800 p-4"
-                >
-                  <div className="mb-3 flex items-baseline gap-2">
-                    <span className="font-medium text-slate-100">{deck.name}</span>
-                    <span className="text-xs text-slate-500">
-                      {deck._count.cards} card{deck._count.cards !== 1 ? "s" : ""}
-                    </span>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    <a
-                      href={`/api/export/deck/${deck.id}/json`}
-                      className="rounded bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-500"
-                    >
-                      JSON (all)
-                    </a>
-                    <a
-                      href={`/api/export/deck/${deck.id}/csv`}
-                      className="rounded bg-slate-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-500"
-                    >
-                      CSV (all)
-                    </a>
-                    <a
-                      href={`/api/export/deck/${deck.id}/diff`}
-                      className="rounded border border-amber-500 px-3 py-1.5 text-sm font-medium text-amber-400 hover:bg-amber-500/10"
-                    >
-                      JSON (diff only)
-                    </a>
-                  </div>
-                </div>
+            <div className="space-y-4">
+              {subjectGroups.map((subject) => (
+                <ExportDeckCard key={subject.deckId} subject={subject} />
               ))}
             </div>
           )}

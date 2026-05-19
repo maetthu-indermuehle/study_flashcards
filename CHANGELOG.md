@@ -9,6 +9,22 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.1] - 2026-05-19
+
+### Fixed
+
+- **Docker Hub rate limit on APPUiO** — PostgreSQL StatefulSet was hitting the
+  unauthenticated Docker Hub pull limit on the cluster. The Helm chart now supports a
+  `postgres.imagePullSecretName` value; on APPUiO a `dockerhub-pull-secret` is used.
+  The `postgres.image` value is also now configurable (defaults to `bitnami/postgresql:17`)
+  so it can be overridden to a registry mirror if needed.
+- **Renamed repo** — GitHub repository renamed from `ppl_study_flashcards` to
+  `study_flashcards`; Docker image renamed from `ppl-flashcards` to `study-flashcards`.
+  All internal references, docs, `docker-compose.yml` DB credentials, and `package.json`
+  updated accordingly.
+
+---
+
 ## [0.11.0] - 2026-05-18
 
 ### Added

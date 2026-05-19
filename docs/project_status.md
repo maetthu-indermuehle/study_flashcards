@@ -28,12 +28,9 @@ Phase 12 completed work (in this branch, ahead of schedule):
 - `deploy/README.md` setup guide.
 - PSTAR question bank: 192 questions (TP11919 7th edition) added to `data/questions/pstar.json`.
 
-**Next steps before first deploy:**
-1. Make ghcr.io package public (or create imagePullSecret in namespace).
-2. Add GitHub Actions secrets: `FLASHCARDS_DB_PASSWORD`, `FLASHCARDS_SESSION_SECRET`,
-   `FLASHCARDS_SEED_EMAIL`, `FLASHCARDS_SEED_PASSWORD`.
-3. Add DNS CNAME: `flashcards.maetthu.com → apps.cloudscale-lpg-2.appuio.cloud`.
-4. Merge to `main` → CI publishes images → deploy workflow runs automatically.
+**Deployment status:** first deploy in progress. DNS, GitHub secrets, and ghcr.io package
+visibility are configured. A `dockerhub-pull-secret` was created in the namespace to allow
+APPUiO to pull `bitnami/postgresql:17` without hitting Docker Hub rate limits.
 
 Phase 10 completed work:
 

@@ -658,8 +658,8 @@ app/
   Dockerfile
   package.json
 
-charts/
-  ppl-flashcards/           Helm chart (Phase 12)
+deploy/
+  helm/                     Helm chart (Phase 12)
     Chart.yaml
     values.yaml
     templates/

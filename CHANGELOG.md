@@ -20,7 +20,7 @@ completing a phase increments the minor version and resets the patch to 0.
     using `bitnami/postgresql:17` (arbitrary-UID compatible), Secrets, and a post-install
     seed Job that creates the initial admin user.
   - **CI publish job** (`ci.yml`) — builds and pushes two images to
-    `ghcr.io/maetthu-indermuehle/ppl-flashcards` on every merge to `main`:
+    `ghcr.io/maetthu-indermuehle/study-flashcards` on every merge to `main`:
     `:latest` (runner/production) and `:tools` (Prisma CLI + seed script).
   - **CD deploy workflow** (`deploy.yml`) — auto-triggers after CI passes on `main`;
     runs `helm upgrade --install` against the APPUiO cluster. Can also be triggered

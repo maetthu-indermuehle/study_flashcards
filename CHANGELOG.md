@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.8] - 2026-05-19
+
+### Changed
+
+- **Seed job runs on every deploy** — Helm hook changed from `post-install` to
+  `post-install,post-upgrade` so new question data baked into the `:tools` image
+  is imported automatically on every `helm upgrade`. The seed is idempotent
+  (upserts by `sourceId`), so re-running is safe.
+
+---
+
 ## [0.11.7] - 2026-05-19
 
 ### Fixed

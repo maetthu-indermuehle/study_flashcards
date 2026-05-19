@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.12.3] - 2026-05-19
+
+### Fixed
+
+- **Rating button latency** — the review POST (`/api/study/review`) now fires
+  in the background instead of blocking `router.refresh()`. The next card
+  starts loading immediately on tap, removing the ~500 ms delay between
+  pressing a rating button and seeing the new card.
+
+---
+
 ## [0.12.2] - 2026-05-19
 
 ### Added

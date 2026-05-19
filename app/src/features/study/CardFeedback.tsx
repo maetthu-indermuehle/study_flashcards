@@ -42,18 +42,18 @@ const RATING_BUTTONS: { rating: Rating; label: string; className: string }[] = [
 export default function CardFeedback({ cardId, explanation, reference, onNext }: Props) {
   const [submitting, setSubmitting] = useState(false);
 
-  async function handleRate(rating: Rating) {
+  function handleRate(rating: Rating) {
     if (submitting) return;
     setSubmitting(true);
-    try {
-      await fetch("/api/study/review", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cardId, rating }),
-      });
-    } finally {
-      onNext();
-    }
+    // Fire the review in the background so onNext() / router.refresh()
+    // can start fetching the next card immediately rather than waiting
+    // for the DB write to complete first.
+    fetch("/api/study/review", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ cardId, rating }),
+    }).catch(() => {});
+    onNext();
   }
 
   return (

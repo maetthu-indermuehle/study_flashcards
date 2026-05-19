@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.7] - 2026-05-19
+
+### Fixed
+
+- **Rating buttons did not advance to next card** — `router.push()` to the same
+  URL is a no-op in Next.js 16 App Router. Replaced with `router.refresh()`,
+  which clears the client cache and re-renders the Server Component so
+  `getNextCard()` fetches the next card.
+
+---
+
 ## [0.11.6] - 2026-05-19
 
 ### Fixed

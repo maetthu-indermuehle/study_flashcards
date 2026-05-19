@@ -6,8 +6,8 @@
  * It sits at the Server Component / Client Component boundary: the parent
  * Server Component (study/page.tsx) fetches a card and passes it here as a
  * prop. StudyShell manages the idle → answered/revealed transition locally,
- * then calls router.push('/study') for "Next", which triggers a full RSC
- * re-render so the Server Component fetches a fresh card via getNextCard.
+ * then calls router.refresh() for "Next", which clears the client cache and
+ * re-renders the Server Component so it fetches a fresh card via getNextCard.
  *
  * The parent renders <StudyShell key={card.id} card={card} />, ensuring
  * React unmounts and remounts this component (resetting all state) whenever
@@ -15,7 +15,7 @@
  */
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
@@ -34,7 +34,6 @@ type Props = {
 
 export default function StudyShell({ card }: Props) {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   const [mcPhase, setMcPhase] = useState<MCPhase>({ name: "idle" });
   const [oaPhase, setOaPhase] = useState<OAPhase>({ name: "idle" });
@@ -52,9 +51,10 @@ export default function StudyShell({ card }: Props) {
   }, [noteOpen]);
 
   function handleNext() {
-    // Preserve tagIds and dueOnly params so the filter stays active across cards.
-    const qs = searchParams.toString();
-    router.push(qs ? `/study?${qs}` : "/study", { scroll: false });
+    // router.refresh() re-fetches the Server Component at the current URL and
+    // clears the client cache. router.push() to the same URL is a no-op in
+    // Next.js 16 App Router, so refresh is the correct primitive here.
+    router.refresh();
   }
 
   function handleFlagButtonClick() {

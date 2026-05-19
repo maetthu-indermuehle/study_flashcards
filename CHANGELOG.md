@@ -9,6 +9,18 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.13.2] - 2026-05-19
+
+### Changed
+
+- **App icon and favicon** — replaced the generated "PPL" text placeholder icons
+  with the custom airplane/flashcard logo. All sizes updated: browser favicon
+  (32×32), iOS home-screen touch icon (180×180), and PWA manifest icons
+  (192×192 and 512×512). The `.tsx` ImageResponse generators have been removed
+  in favour of static PNGs.
+
+---
+
 ## [0.13.0] - 2026-05-19
 
 Phase 13 — UI fixes and study-flow polish. Dark mode, reduced interaction

@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import ChangePasswordForm from "@/features/profile/ChangePasswordForm";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "Profile — PPL Flashcards",
@@ -16,16 +16,8 @@ export default async function ProfilePage() {
     <main className="min-h-dvh bg-stone-50 text-slate-950">
       <div className="mx-auto w-full max-w-5xl px-5 py-6 sm:px-8 lg:px-10">
         <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
-          <div className="flex items-center gap-4">
-            <Link
-              href="/"
-              className="text-sm font-medium text-slate-500 hover:text-slate-700"
-            >
-              ← Home
-            </Link>
-            <h1 className="text-xl font-semibold text-slate-950">Profile</h1>
-          </div>
-          <span className="text-sm text-slate-500">{session.email}</span>
+          <h1 className="text-xl font-semibold text-slate-950">Profile</h1>
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
 
         <div className="max-w-md">

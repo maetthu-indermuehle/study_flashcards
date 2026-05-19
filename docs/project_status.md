@@ -22,6 +22,14 @@ Phase 10 work completed so far:
   sharing, "review due only" mode, card ID tooltip showing topics and tags.
 - Multi-subject support: JSON files can carry a `subject` wrapper; each subject maps to
   a named deck (auto-created on import). Study setup shows a subject header per deck.
+- Direct launch: home page (`/`) redirects straight back into the last study session via
+  a `lastStudy` cookie; first-time users see a `/welcome` placeholder.
+- `HamburgerMenu` right-side slide-in drawer on every authenticated page, replacing the
+  previous `← Home` back links. Role-aware sections (Study / Content / Admin / Account).
+- FlaggedQueue single-click save: "Save & clear flag" and "Save & keep flagged" save and
+  advance in one click via an imperative `CardForm` ref handle.
+- Fixed `node:crypto` webpack error on the Profile page by extracting `MIN_PASSWORD_LENGTH`
+  to `lib/auth/constants.ts` so the client bundle no longer pulls in Node crypto modules.
 - 168 unit tests pass.
 
 ---
@@ -217,6 +225,20 @@ Phase 10 work completed so far:
   - `question_generation_guide.md` updated with new format and LLM prompt.
   - `StudyPreset` model added (migration `20260518175549_add_study_presets`).
   - 7 new unit tests for `parseJsonBatch` — 168 tests total.
+- **Direct launch + hamburger nav** (v0.10.2):
+  - Home page is a pure redirect; `lastStudy` cookie (30-day, written by proxy) stores
+    the last tag selection for instant re-entry.
+  - `/welcome` placeholder page for first-time users.
+  - `HamburgerMenu` client component: right-side slide-in drawer with role-aware sections.
+    Replaces `← Home` links on all authenticated pages.
+  - `← Setup` back link always visible on the study page.
+- **UI consistency + bug fixes** (v0.10.3):
+  - Hamburger menu added to all remaining authenticated pages: `/cards`, `/cards/[id]`,
+    `/cards/flagged`, `/cards/new`, `/import`, `/admin/*` layout, `/profile`.
+  - FlaggedQueue: `CardForm` converted to `forwardRef` + `hideActions` prop; action
+    buttons now trigger save imperatively — no separate "Save changes" click required.
+  - `MIN_PASSWORD_LENGTH` extracted to `lib/auth/constants.ts`; fixes webpack
+    `node:crypto` error when navigating to `/profile`.
 
 ---
 

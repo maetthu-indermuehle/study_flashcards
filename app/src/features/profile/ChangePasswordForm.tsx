@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { changeOwnPassword } from "@/lib/users/actions";
-import { MIN_PASSWORD_LENGTH } from "@/lib/auth/password";
+import { MIN_PASSWORD_LENGTH } from "@/lib/auth/constants";
 
 export default function ChangePasswordForm() {
   const [current, setCurrent] = useState("");

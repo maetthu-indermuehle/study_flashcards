@@ -10,7 +10,7 @@
  * the FlaggedQueue step-through.
  */
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, forwardRef, useImperativeHandle } from "react";
 import { useRouter } from "next/navigation";
 import type {
   CardDetail,
@@ -28,6 +28,11 @@ import { createCard, updateCard } from "@/lib/cards/actions";
 import ChoiceEditor from "./ChoiceEditor";
 import TagSelector from "./TagSelector";
 
+/** Imperative handle exposed via forwardRef — lets FlaggedQueue trigger submit. */
+export type CardFormHandle = {
+  submit: () => void;
+};
+
 type Props = {
   /** Existing card data for edit mode. Omit for create mode. */
   card?: CardDetail;
@@ -38,6 +43,11 @@ type Props = {
    * Server Action. Used by FlaggedQueue to inject custom save behaviour.
    */
   onSave?: (data: CardFormData) => Promise<{ success: boolean; error?: string }>;
+  /**
+   * When true, the default "Save changes / Cancel" row is not rendered.
+   * Used by FlaggedQueue which provides its own action buttons.
+   */
+  hideActions?: boolean;
 };
 
 function refFromCard(card?: CardDetail): CardFormReference | null {
@@ -54,7 +64,10 @@ function refFromCard(card?: CardDetail): CardFormReference | null {
   };
 }
 
-export default function CardForm({ card, tags, onSave }: Props) {
+const CardForm = forwardRef<CardFormHandle, Props>(function CardForm(
+  { card, tags, onSave, hideActions },
+  ref,
+) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
@@ -79,6 +92,8 @@ export default function CardForm({ card, tags, onSave }: Props) {
   );
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
+
+  useImperativeHandle(ref, () => ({ submit: handleSubmit }));
 
   function buildFormData(): CardFormData {
     return {
@@ -368,27 +383,31 @@ export default function CardForm({ card, tags, onSave }: Props) {
         </p>
       )}
 
-      {/* Actions */}
-      <div className="flex items-center gap-3">
-        <button
-          type="button"
-          onClick={handleSubmit}
-          disabled={isPending}
-          className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white hover:bg-slate-800 disabled:opacity-50"
-        >
-          {isPending ? "Saving…" : card ? "Save changes" : "Create card"}
-        </button>
-        <button
-          type="button"
-          onClick={() => router.back()}
-          className="text-sm text-slate-500 hover:text-slate-700"
-        >
-          Cancel
-        </button>
-      </div>
+      {/* Actions — hidden when the parent provides its own action buttons */}
+      {!hideActions && (
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={handleSubmit}
+            disabled={isPending}
+            className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white hover:bg-slate-800 disabled:opacity-50"
+          >
+            {isPending ? "Saving…" : card ? "Save changes" : "Create card"}
+          </button>
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="text-sm text-slate-500 hover:text-slate-700"
+          >
+            Cancel
+          </button>
+        </div>
+      )}
     </div>
   );
-}
+});
+
+export default CardForm;
 
 // ---------------------------------------------------------------------------
 // Small helpers

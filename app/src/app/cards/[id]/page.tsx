@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { getCard, listTags } from "@/lib/cards/queries";
 import CardForm from "@/features/cards/CardForm";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "Edit Card — PPL Flashcards",
@@ -36,11 +37,7 @@ export default async function CardDetailPage({ params }: { params: Params }) {
             </Link>
             <h1 className="text-lg font-semibold text-slate-950">Edit card</h1>
           </div>
-          {card.originalId && (
-            <span className="font-mono text-xs text-slate-400">
-              {card.originalId}
-            </span>
-          )}
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
 
         {/* Flag note banner */}
@@ -61,6 +58,7 @@ export default async function CardDetailPage({ params }: { params: Params }) {
 
         {/* Metadata footer */}
         <p className="mt-4 text-xs text-slate-400">
+          {card.originalId && <span className="mr-3 font-mono">{card.originalId}</span>}
           Created {card.createdAt.toLocaleDateString()} · Last updated{" "}
           {card.updatedAt.toLocaleDateString()}
         </p>

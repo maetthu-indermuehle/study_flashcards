@@ -12,11 +12,11 @@
  * When all cards have been handled, a completion screen is shown.
  */
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import type { CardDetail, CardFormData, TagOption } from "@/lib/cards/types";
 import { saveFlaggedCard, updateCard } from "@/lib/cards/actions";
-import CardForm from "./CardForm";
+import CardForm, { type CardFormHandle } from "./CardForm";
 
 type Props = {
   cards: CardDetail[];
@@ -142,79 +142,55 @@ function FlaggedCardForm({
   onKeepFlagged,
   onSkip,
 }: FlaggedFormProps) {
-  // We intercept the form's save by using a shared data ref pattern:
-  // CardForm calls our onSave callback instead of the default Server Action.
-  // The action buttons below trigger that callback with different semantics.
+  // formRef lets us trigger CardForm's internal submit imperatively.
+  // modeRef (not state) avoids stale-closure issues when onSave reads it.
+  const formRef = useRef<CardFormHandle>(null);
+  const modeRef = useRef<"saveAndClear" | "keepFlagged" | null>(null);
 
-  const [mode, setMode] = useState<"saveAndClear" | "keepFlagged" | null>(null);
-
-  // CardForm's onSave is called when the user clicks its internal save button.
-  // But in FlaggedQueue, we replace the save button entirely. Instead, we use
-  // CardForm in a "data capture" mode — the form renders only fields (no
-  // internal submit button) and we provide our own action buttons.
-
-  // Since CardForm's save button is always rendered, we hide it via CSS and
-  // instead provide our own buttons below. Our onSave captures the data,
-  // sets mode, and CardForm proceeds normally.
+  function trigger(action: "saveAndClear" | "keepFlagged") {
+    modeRef.current = action;
+    formRef.current?.submit();
+  }
 
   return (
     <div>
+      {/* hideActions removes CardForm's own "Save changes" row */}
       <CardForm
+        ref={formRef}
         card={card}
         tags={tags}
+        hideActions
         onSave={async (data) => {
-          if (mode === "saveAndClear") return onSaveAndClear(data);
-          if (mode === "keepFlagged") return onKeepFlagged(data);
+          if (modeRef.current === "saveAndClear") return onSaveAndClear(data);
+          if (modeRef.current === "keepFlagged") return onKeepFlagged(data);
           return { success: false, error: "No action selected" };
         }}
       />
 
-      {/* Override the CardForm's action row with our own below. The form's
-          own "Save changes" button will still be visible — for the flagged
-          queue context we add our explicit buttons here and instruct users
-          via the labels. In a future refactor, CardForm could accept a
-          renderActions prop; for now this is pragmatic. */}
       <div className="mt-6 border-t border-slate-100 pt-4">
-        <p className="mb-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-          After editing above, choose an action:
-        </p>
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
-            onClick={() => setMode("saveAndClear")}
-            className={`rounded-md px-4 py-2 text-sm font-medium transition ${
-              mode === "saveAndClear"
-                ? "bg-emerald-600 text-white"
-                : "border border-emerald-300 bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
-            }`}
+            onClick={() => trigger("saveAndClear")}
+            className="rounded-md border border-emerald-300 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition hover:bg-emerald-100"
           >
             Save & clear flag
           </button>
           <button
             type="button"
-            onClick={() => setMode("keepFlagged")}
-            className={`rounded-md px-4 py-2 text-sm font-medium transition ${
-              mode === "keepFlagged"
-                ? "bg-amber-600 text-white"
-                : "border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100"
-            }`}
+            onClick={() => trigger("keepFlagged")}
+            className="rounded-md border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-700 transition hover:bg-amber-100"
           >
             Save & keep flagged
           </button>
           <button
             type="button"
             onClick={onSkip}
-            className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50"
+            className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50"
           >
             Skip (no save)
           </button>
         </div>
-        {mode && (
-          <p className="mt-2 text-xs text-slate-500">
-            Mode selected: <strong>{mode === "saveAndClear" ? "Save & clear flag" : "Save & keep flagged"}</strong>.
-            Now click <strong>Save changes</strong> in the form above to apply.
-          </p>
-        )}
       </div>
     </div>
   );

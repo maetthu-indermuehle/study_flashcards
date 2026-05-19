@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { hasRole } from "@/lib/auth/permissions";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "Admin — PPL Flashcards",
@@ -29,25 +30,15 @@ export default async function AdminLayout({
     <div className="min-h-dvh bg-stone-50 text-slate-950">
       <div className="mx-auto w-full max-w-5xl px-5 py-6 sm:px-8 lg:px-10">
         <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
-          <div className="flex items-center gap-4">
+          <nav className="flex items-center gap-3">
             <Link
-              href="/"
-              className="text-sm font-medium text-slate-500 hover:text-slate-700"
+              href="/admin/users"
+              className="text-sm font-medium text-slate-700 hover:text-slate-950"
             >
-              ← Home
+              Users
             </Link>
-            <nav className="flex items-center gap-3">
-              <Link
-                href="/admin/users"
-                className="text-sm font-medium text-slate-700 hover:text-slate-950"
-              >
-                Users
-              </Link>
-            </nav>
-          </div>
-          <span className="rounded-md bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-            Admin
-          </span>
+          </nav>
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
         {children}
       </div>

@@ -9,6 +9,52 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.10.3] - 2026-05-18
+
+### Added
+
+- **Hamburger menu on all authenticated pages** — every page with a session now shows the
+  right-side slide-in drawer (`HamburgerMenu`) in its header instead of a `← Home` back
+  link. Contextual back links (`← Cards`) are kept on detail pages. Affected pages:
+  `/cards`, `/cards/[id]`, `/cards/flagged`, `/cards/new`, `/import`, `/admin/*` (layout),
+  `/profile`.
+
+### Changed
+
+- **FlaggedQueue single-click save** — "Save & clear flag" and "Save & keep flagged" now
+  save the card and apply the flag action in one click. `CardForm` was converted to a
+  `forwardRef` component that exposes a `submit()` handle (`CardFormHandle`); a new
+  `hideActions` prop suppresses the internal "Save changes" row when a parent provides its
+  own action buttons. `FlaggedCardForm` drives the submit imperatively via a `useRef`.
+
+### Fixed
+
+- **`node:crypto` webpack error on Profile page** — `ChangePasswordForm` (a client
+  component) was importing `MIN_PASSWORD_LENGTH` directly from `lib/auth/password.ts`,
+  which pulls `node:crypto` into the browser bundle. Fixed by extracting the constant to a
+  new `lib/auth/constants.ts` file with no Node dependencies. `password.ts` re-exports it
+  for server-side callers; `ChangePasswordForm` now imports from `constants.ts`.
+
+---
+
+## [0.10.2] - 2026-05-18
+
+### Added
+
+- **Direct launch** — the home page (`/`) is now a pure redirect: no `lastStudy` cookie →
+  `/welcome`; cookie present → `/study` or `/study?tagIds=…`. No UI shown at `/`.
+- **`/welcome` page** — placeholder for first-time users with a "Choose topics →" CTA.
+  Will evolve into an onboarding/help page in a later phase.
+- **`lastStudy` cookie** written by the proxy on every `/study` visit; stores the active
+  `tagIds` (or `""` for "all cards"). 30-day expiry, `SameSite=lax`.
+- **`HamburgerMenu`** client component — right-side slide-in drawer replacing the previous
+  home-page navigation links. Role-aware sections: Study setup (all), Content (EDITOR+),
+  Administration (ADMIN), Account (all). Sign-out calls `/api/auth/logout` and redirects
+  to `/login`.
+- `← Setup` back link always visible on `/study`.
+
+---
+
 ## [0.10.1] - 2026-05-18
 
 ### Added

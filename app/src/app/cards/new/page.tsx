@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { listTags } from "@/lib/cards/queries";
 import CardForm from "@/features/cards/CardForm";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "New Card — PPL Flashcards",
@@ -18,14 +19,17 @@ export default async function NewCardPage() {
   return (
     <main className="min-h-dvh bg-stone-50">
       <div className="mx-auto w-full max-w-2xl px-5 py-6 sm:px-8">
-        <header className="mb-6 flex items-center gap-4 border-b border-slate-200 pb-4">
-          <Link
-            href="/cards"
-            className="text-sm font-medium text-slate-500 hover:text-slate-700"
-          >
-            ← Cards
-          </Link>
-          <h1 className="text-lg font-semibold text-slate-950">New card</h1>
+        <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
+          <div className="flex items-center gap-4">
+            <Link
+              href="/cards"
+              className="text-sm font-medium text-slate-500 hover:text-slate-700"
+            >
+              ← Cards
+            </Link>
+            <h1 className="text-lg font-semibold text-slate-950">New card</h1>
+          </div>
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
 
         <div className="rounded-lg border border-slate-200 bg-white p-6">

@@ -30,7 +30,7 @@ type RawCard = {
   originalId: string | null;
   choices: RawChoice[];
   references: RawReference[];
-  tags: { note: string | null; tag: { name: string } }[];
+  tags: { note: string | null; tag: { name: string; type: string } }[];
 };
 
 // ---------------------------------------------------------------------------
@@ -40,15 +40,36 @@ type RawCard = {
 /**
  * Returns the next card to study for `userId`, applying due-card-first logic.
  *
- * @param userId - The authenticated user's database ID.
- * @returns A shuffled {@link StudyCard}, or `null` if the deck is empty.
+ * When `tagIds` is provided and non-empty, only cards that carry at least one
+ * of those tags are considered. An empty or omitted `tagIds` means all cards.
+ *
+ * When `dueOnly` is true the function only returns due cards (step 1) and
+ * returns `null` when none are due — it does not fall back to new or upcoming
+ * cards. This powers the "review due cards only" mode.
+ *
+ * @param userId  - The authenticated user's database ID.
+ * @param tagIds  - Optional list of Tag IDs to restrict the selection to.
+ * @param dueOnly - When true, only return cards that are currently due.
+ * @returns A shuffled {@link StudyCard}, or `null` when nothing matches.
  */
-export async function getNextCard(userId: string): Promise<StudyCard | null> {
-  const deck = await prisma.deck.findFirst({
+export async function getNextCard(
+  userId: string,
+  tagIds?: string[],
+  dueOnly?: boolean,
+): Promise<StudyCard | null> {
+  // Find all decks owned by this user — cards may span multiple subjects.
+  const decks = await prisma.deck.findMany({
     where: { createdByUserId: userId },
     select: { id: true },
   });
-  if (!deck) return null;
+  if (decks.length === 0) return null;
+  const deckIds = decks.map((d) => d.id);
+
+  // Tag filter clause — applied to every card lookup below.
+  const tagFilter =
+    tagIds && tagIds.length > 0
+      ? { tags: { some: { tagId: { in: tagIds } } } }
+      : {};
 
   const now = new Date();
 
@@ -59,7 +80,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
     where: {
       userId,
       dueAt: { lte: now },
-      card: { deckId: deck.id, status: "PUBLISHED" },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -68,6 +89,9 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
   if (dueProgress) {
     return fetchFullCard(dueProgress.cardId);
   }
+
+  // In dueOnly mode stop here — don't fall back to new or upcoming cards.
+  if (dueOnly) return null;
 
   // -------------------------------------------------------------------------
   // 2. Pick a card the user has never seen (no CardProgress row)
@@ -79,7 +103,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
   const seenSet = new Set(seenIds.map((p) => p.cardId));
 
   const allIds = await prisma.card.findMany({
-    where: { deckId: deck.id, status: "PUBLISHED" },
+    where: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     select: { id: true },
   });
 
@@ -96,7 +120,7 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
   const nextProgress = await prisma.cardProgress.findFirst({
     where: {
       userId,
-      card: { deckId: deck.id, status: "PUBLISHED" },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
     orderBy: { dueAt: "asc" },
     select: { cardId: true },
@@ -111,17 +135,25 @@ export async function getNextCard(userId: string): Promise<StudyCard | null> {
 
 /**
  * Returns the number of cards currently due for `userId`.
- * Used on the home page to show a "X due" badge.
- *
- * @param userId - The authenticated user's database ID.
- * @returns Count of due cards.
+ * When `tagIds` is provided, only counts due cards matching those tags.
  */
-export async function getDueCount(userId: string): Promise<number> {
+export async function getDueCount(userId: string, tagIds?: string[]): Promise<number> {
+  const decks = await prisma.deck.findMany({
+    where: { createdByUserId: userId },
+    select: { id: true },
+  });
+  const deckIds = decks.map((d) => d.id);
+
+  const tagFilter =
+    tagIds && tagIds.length > 0
+      ? { tags: { some: { tagId: { in: tagIds } } } }
+      : {};
+
   return prisma.cardProgress.count({
     where: {
       userId,
       dueAt: { lte: new Date() },
-      card: { status: "PUBLISHED" },
+      card: { deckId: { in: deckIds }, status: "PUBLISHED", ...tagFilter },
     },
   });
 }
@@ -143,9 +175,7 @@ async function fetchFullCard(cardId: string): Promise<StudyCard | null> {
       choices: { select: { id: true, text: true, isCorrect: true } },
       references: { select: { label: true, url: true }, take: 1 },
       tags: {
-        where: { tag: { name: "flagged", type: TagType.CUSTOM } },
-        select: { note: true, tag: { select: { name: true } } },
-        take: 1,
+        select: { note: true, tag: { select: { name: true, type: true } } },
       },
     },
   });
@@ -165,36 +195,31 @@ function mapRawCard(raw: RawCard): StudyCard {
   const reference = raw.references[0]
     ? { label: raw.references[0].label, url: raw.references[0].url }
     : null;
-  const flagged = raw.tags.length > 0;
-  const flagNote = raw.tags[0]?.note ?? null;
+
+  const flagTag = raw.tags.find(
+    (t) => t.tag.type === TagType.CUSTOM && t.tag.name === "flagged",
+  );
+  const flagged = flagTag !== undefined;
+  const flagNote = flagTag?.note ?? null;
+
+  const topics = raw.tags
+    .filter((t) => t.tag.type === TagType.TOPIC)
+    .map((t) => t.tag.name);
+
+  const tags = raw.tags
+    .filter((t) => t.tag.type === TagType.CUSTOM && t.tag.name !== "flagged")
+    .map((t) => t.tag.name);
+
+  const shared = { id: raw.id, question: raw.question, answer: raw.answer,
+    explanation: raw.explanation, reference, originalId: raw.originalId,
+    flagged, flagNote, topics, tags };
 
   if (raw.type === "MULTIPLE_CHOICE") {
     const choices: StudyCardChoice[] = shuffleArray(
       raw.choices.map((c) => ({ id: c.id, text: c.text, isCorrect: c.isCorrect })),
     );
-    return {
-      id: raw.id,
-      type: "MULTIPLE_CHOICE",
-      question: raw.question,
-      answer: raw.answer,
-      explanation: raw.explanation,
-      choices,
-      reference,
-      originalId: raw.originalId,
-      flagged,
-      flagNote,
-    };
+    return { ...shared, type: "MULTIPLE_CHOICE", choices };
   }
 
-  return {
-    id: raw.id,
-    type: "OPEN_ANSWER",
-    question: raw.question,
-    answer: raw.answer,
-    explanation: raw.explanation,
-    reference,
-    originalId: raw.originalId,
-    flagged,
-    flagNote,
-  };
+  return { ...shared, type: "OPEN_ANSWER" };
 }

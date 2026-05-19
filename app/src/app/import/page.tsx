@@ -1,9 +1,10 @@
 import { redirect } from "next/navigation";
-import Link from "next/link";
 import type { Metadata } from "next";
-import { requireRole } from "@/lib/auth/permissions";
+import { readSessionCookie } from "@/lib/session/cookies";
+import { hasRole } from "@/lib/auth/permissions";
 import { getImportHistory } from "@/lib/import/actions";
 import ImportWizard from "@/features/import/ImportWizard";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "Import cards — PPL Flashcards",
@@ -36,22 +37,17 @@ function statusBadge(status: string) {
 }
 
 export default async function ImportPage() {
-  // Authoritative auth check — EDITOR role required.
-  await requireRole("EDITOR");
+  const session = await readSessionCookie();
+  if (!session || !hasRole(session.role, "EDITOR")) redirect("/login");
 
   const history = await getImportHistory();
 
   return (
     <main className="min-h-dvh bg-stone-50 text-slate-950">
       <div className="mx-auto w-full max-w-3xl px-5 py-6 sm:px-8 lg:px-10">
-        <header className="mb-8 flex items-center gap-4 border-b border-slate-200 pb-4">
-          <Link
-            href="/"
-            className="text-sm font-medium text-slate-500 hover:text-slate-700"
-          >
-            ← Home
-          </Link>
+        <header className="mb-8 flex items-center justify-between border-b border-slate-200 pb-4">
           <h1 className="text-xl font-semibold text-slate-950">Import cards</h1>
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
 
         <ImportWizard />

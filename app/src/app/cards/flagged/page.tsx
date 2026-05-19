@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { listCards, listTags, getCard } from "@/lib/cards/queries";
 import FlaggedQueue from "@/features/cards/FlaggedQueue";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 import type { CardDetail } from "@/lib/cards/types";
 
 export const metadata: Metadata = {
@@ -40,12 +41,13 @@ export default async function FlaggedPage() {
             <h1 className="text-lg font-semibold text-slate-950">
               Flagged cards
             </h1>
+            {cards.length > 0 && (
+              <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-700">
+                {cards.length} flagged
+              </span>
+            )}
           </div>
-          {cards.length > 0 && (
-            <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-700">
-              {cards.length} flagged
-            </span>
-          )}
+          <HamburgerMenu role={session.role} email={session.email} />
         </header>
 
         {cards.length === 0 ? (

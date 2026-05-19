@@ -15,10 +15,11 @@
  */
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
+import CardIdBadge from "./CardIdBadge";
 import type { StudyCard } from "@/lib/study/types";
 
 type MCPhase =
@@ -33,6 +34,7 @@ type Props = {
 
 export default function StudyShell({ card }: Props) {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [mcPhase, setMcPhase] = useState<MCPhase>({ name: "idle" });
   const [oaPhase, setOaPhase] = useState<OAPhase>({ name: "idle" });
@@ -50,9 +52,9 @@ export default function StudyShell({ card }: Props) {
   }, [noteOpen]);
 
   function handleNext() {
-    // router.push triggers a new RSC render; the Server Component fetches a
-    // fresh card. scroll:false prevents the page jumping to the top.
-    router.push("/study", { scroll: false });
+    // Preserve tagIds and dueOnly params so the filter stays active across cards.
+    const qs = searchParams.toString();
+    router.push(qs ? `/study?${qs}` : "/study", { scroll: false });
   }
 
   function handleFlagButtonClick() {
@@ -105,7 +107,11 @@ export default function StudyShell({ card }: Props) {
       {/* Card toolbar: source ID + flag button */}
       <div className="mb-3 flex items-center justify-between">
         {card.originalId ? (
-          <span className="font-mono text-xs text-slate-400">{card.originalId}</span>
+          <CardIdBadge
+            originalId={card.originalId}
+            topics={card.topics}
+            tags={card.tags}
+          />
         ) : (
           <span />
         )}

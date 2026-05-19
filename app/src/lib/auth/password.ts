@@ -12,11 +12,11 @@
 
 import { randomBytes, scrypt, timingSafeEqual } from "node:crypto";
 import { promisify } from "node:util";
+import { MIN_PASSWORD_LENGTH } from "./constants";
+
+export { MIN_PASSWORD_LENGTH };
 
 const scryptAsync = promisify(scrypt);
-
-/** Minimum password length enforced at the server boundary. */
-export const MIN_PASSWORD_LENGTH = 10;
 
 /**
  * Hashes a plaintext password using scrypt with a random 16-byte salt.

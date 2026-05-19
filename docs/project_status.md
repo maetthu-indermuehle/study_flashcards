@@ -3,19 +3,34 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-17
+Last updated: 2026-05-18
 
 ---
 
 ## Current state
 
-**Phase 8 is complete.** Working on branch `phase-8-bulk-import`.
+**Phase 10 (cleanup and UI improvements) is in progress.** Working on branch
+`phase-10-cleanup-ui`.
 
-EDITOR and ADMIN users can now upload a JSON file (or paste raw JSON) through the
-three-step import wizard at `/import`. A dry-run preview shows what will be created or
-updated — with hard errors blocking import — before the user confirms. Each successful
-import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
-161 unit tests pass.
+Phases 0–9 are complete and merged to `main`. The app is fully functional: multi-user
+with roles, spaced repetition, card management, bulk import, and installable PWA.
+Phase 10 work completed so far:
+
+- Repository cleanup: removed all converted Markdown source files and PNG question images
+  now superseded by `data/questions/*.json`.
+- Study setup page (`/study/setup`): two-level topic/tag accordion, saved presets with
+  sharing, "review due only" mode, card ID tooltip showing topics and tags.
+- Multi-subject support: JSON files can carry a `subject` wrapper; each subject maps to
+  a named deck (auto-created on import). Study setup shows a subject header per deck.
+- Direct launch: home page (`/`) redirects straight back into the last study session via
+  a `lastStudy` cookie; first-time users see a `/welcome` placeholder.
+- `HamburgerMenu` right-side slide-in drawer on every authenticated page, replacing the
+  previous `← Home` back links. Role-aware sections (Study / Content / Admin / Account).
+- FlaggedQueue single-click save: "Save & clear flag" and "Save & keep flagged" save and
+  advance in one click via an imperative `CardForm` ref handle.
+- Fixed `node:crypto` webpack error on the Profile page by extracting `MIN_PASSWORD_LENGTH`
+  to `lib/auth/constants.ts` so the client bundle no longer pulls in Node crypto modules.
+- 168 unit tests pass.
 
 ---
 
@@ -138,7 +153,7 @@ import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
   JSON → dry-run preview (create/update counts, hard errors, warnings, first-10 sample)
   → confirm import.
 - `dryRunImport` server action: parse + validate + DB check for existing source IDs,
-  no writes. Returns preview data.
+  no writes. Returns preview data including target deck name.
 - `runImport` server action: full pipeline write; stores raw JSON in `ImportBatch` for audit.
 - `getImportHistory` server action: last 10 `ImportBatch` rows for the current user.
 - Pure helpers (`partitionCounts`, `buildSample`) extracted and tested (11 new tests,
@@ -177,16 +192,64 @@ import is recorded in an `ImportBatch` row with the raw JSON for audit purposes.
 - "Browse cards" button on the home page; "Edit" link in the study card toolbar.
 - 36 new unit tests (129 total).
 
+### Phase 10 — Cleanup and UI improvements (in progress)
+
+- Removed 17 converted Markdown source files and 30 PNG question images from `Questions/`
+  — superseded by `data/questions/*.json`.
+- Updated `docs/app_architecture_plan.md`, `docs/core_domain_model.md`,
+  `docs/implementation_plan.md`, and `docs/project_status.md` to reflect current state.
+- **Study setup page** (`/study/setup`):
+  - Topic accordion: group header selects all tags in the group; expand to pick sub-topics.
+    Indeterminate checkbox state for partial group selection.
+  - Saved presets: save a named tag selection, reload in one click. EDITOR+ can mark
+    presets as shared (visible to all users).
+  - Due-count badge: "Review due (N) →" button appears when due cards exist for the
+    current selection; calls `getDueCountForSelection` server action reactively.
+  - Tag filter preserved across cards (`useSearchParams` in `StudyShell`).
+  - `dueOnly=1` URL mode: study only due cards; "All caught up!" screen when exhausted.
+  - Back link returns to setup when a tag filter is active.
+- **Card ID tooltip** (`CardIdBadge`): click the source ID to see a bubble listing topics
+  and tags for that card. No visual change to the ID itself.
+- **Multi-subject support**:
+  - JSON files support `{"subject": "...", "cards": [...]}` wrapper; `subject` becomes
+    the deck name (auto-created by `importCards` on first import). Legacy bare-array
+    format is still accepted.
+  - `parseJsonBatch()` handles both formats; `parseJsonCards()` is a backward-compat alias.
+  - `import-service.ts` does `findOrCreate` on the deck.
+  - `dryRunImport` / `runImport` return `deckName` in results; preview and done screens
+    display it.
+  - `StudySetup` three-level accordion: subject (deck) → topic group → sub-topic.
+    Subject row is always visible; auto-expanded when only one deck exists.
+  - `getNextCard` and `getDueCount` search across all user decks.
+  - CLI uses `subject` from JSON when present; `--deck` is the fallback.
+  - `question_generation_guide.md` updated with new format and LLM prompt.
+  - `StudyPreset` model added (migration `20260518175549_add_study_presets`).
+  - 7 new unit tests for `parseJsonBatch` — 168 tests total.
+- **Direct launch + hamburger nav** (v0.10.2):
+  - Home page is a pure redirect; `lastStudy` cookie (30-day, written by proxy) stores
+    the last tag selection for instant re-entry.
+  - `/welcome` placeholder page for first-time users.
+  - `HamburgerMenu` client component: right-side slide-in drawer with role-aware sections.
+    Replaces `← Home` links on all authenticated pages.
+  - `← Setup` back link always visible on the study page.
+- **UI consistency + bug fixes** (v0.10.3):
+  - Hamburger menu added to all remaining authenticated pages: `/cards`, `/cards/[id]`,
+    `/cards/flagged`, `/cards/new`, `/import`, `/admin/*` layout, `/profile`.
+  - FlaggedQueue: `CardForm` converted to `forwardRef` + `hideActions` prop; action
+    buttons now trigger save imperatively — no separate "Save changes" click required.
+  - `MIN_PASSWORD_LENGTH` extracted to `lib/auth/constants.ts`; fixes webpack
+    `node:crypto` error when navigating to `/profile`.
+
 ---
 
 ## Phases ahead (summary)
 
-| Phase | Name                       | What it unlocks                                                    |
-|-------|----------------------------|--------------------------------------------------------------------|
-| 10    | Media support v1           | Media upload UI and object storage for new cards                   |
-| 11    | OpenShift deployment       | Helm chart, migration Job, production environment docs             |
-| 12    | Export and backup tools    | JSON, CSV export so content stays portable                         |
-| 13    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
+| Phase | Name                         | What it unlocks                                                    |
+|-------|------------------------------|--------------------------------------------------------------------|
+| 11    | Media support v1             | Media upload UI and object storage for new cards                   |
+| 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
+| 13    | Export and backup tools      | JSON, CSV export so content stays portable                         |
+| 14    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
 
 ---
 
@@ -215,7 +278,10 @@ duplicates. A missing `data/questions/` directory is skipped silently so CI is u
 
 - **JSON-only app import** — the app importer only reads JSON (the format defined in
   `docs/question_generation_guide.md`). The one-off script `scripts/md_to_json.ts`
-  converts the existing Markdown files; after that, all new questions are authored in JSON.
+  converted the existing Markdown files; after that, all new questions are authored in JSON.
+- **Multi-subject JSON format** — new files use `{"subject": "...", "cards": [...]}`.
+  The importer creates the deck automatically. Legacy bare arrays are still accepted and
+  import into the user's first deck (or the `--deck` CLI flag).
 - **Stateless session cookie** — HMAC-SHA256 signed cookie, no DB session table. The
   `SESSION_SECRET` env var must be at least 32 characters. In production, generate with
   `openssl rand -base64 32`.

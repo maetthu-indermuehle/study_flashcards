@@ -132,6 +132,7 @@ model User {
   revisions           CardRevision[]
   adminEventsAsActor  AdminEvent[]   @relation("AdminEventActor")
   adminEventsAsTarget AdminEvent[]   @relation("AdminEventTarget")
+  studyPresets        StudyPreset[]
 }
 
 model Deck {
@@ -361,6 +362,25 @@ model ImportBatch {
 
   user  User   @relation(fields: [userId], references: [id])
   cards Card[]
+}
+
+// A named, saved study filter. Users save topic/tag selections they want to
+// reuse. EDITOR and ADMIN users can mark a preset as shared so all users see it.
+model StudyPreset {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String
+  // Array of Tag IDs (strings) stored as JSON. Empty array = no filter (all cards).
+  tagIds    Json     @default("[]")
+  // When true, all users can see and use this preset (read-only for non-owners).
+  isShared  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([isShared])
 }
 
 // Tracks every login attempt (successful or not) for brute-force protection.

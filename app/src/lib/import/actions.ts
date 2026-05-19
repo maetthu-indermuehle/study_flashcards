@@ -15,7 +15,7 @@
 
 import { prisma } from "@/lib/db/client";
 import { requireRole } from "@/lib/auth/permissions";
-import { parseJsonCards } from "@/lib/importer/json-parser";
+import { parseJsonBatch } from "@/lib/importer/json-parser";
 import { validate } from "@/lib/importer/validator";
 import { importCards } from "@/lib/importer/import-service";
 import { partitionCounts, buildSample } from "@/lib/import/dry-run-helpers";
@@ -28,6 +28,10 @@ import type { ValidationError } from "@/lib/importer/validator";
 export type DryRunResult =
   | {
       ok: true;
+      /** Subject from the JSON wrapper, or null for legacy bare-array files. */
+      subject: string | null;
+      /** Deck the cards will be written to (equals `subject`, or the user's existing deck). */
+      deckName: string;
       totalCards: number;
       /** Cards whose originalId already exists in the DB — will be updated. */
       toUpdate: number;
@@ -44,6 +48,8 @@ export type RunResult =
   | {
       ok: true;
       batchId: string;
+      /** Deck the cards were imported into. */
+      deckName: string;
       created: number;
       updated: number;
       warnings: ValidationError[];
@@ -63,15 +69,32 @@ export async function dryRunImport(json: string): Promise<DryRunResult> {
     const { userId } = await requireRole("EDITOR");
 
     // Step 1: structural parse (throws on bad JSON / schema mismatch)
-    let cards;
+    let batch;
     try {
-      cards = parseJsonCards(json);
+      batch = parseJsonBatch(json);
     } catch (e) {
       return { ok: false, error: e instanceof Error ? e.message : String(e) };
     }
 
+    const { subject, cards } = batch;
+
     if (cards.length === 0) {
       return { ok: false, error: "The JSON file contains no cards." };
+    }
+
+    // Resolve which deck name will be used for the actual import.
+    let deckName: string;
+    if (subject) {
+      deckName = subject;
+    } else {
+      const deck = await prisma.deck.findFirst({
+        where: { createdByUserId: userId },
+        select: { name: true },
+      });
+      if (!deck) {
+        return { ok: false, error: "No deck found. Add a \"subject\" field to your JSON file." };
+      }
+      deckName = deck.name;
     }
 
     // Step 2: semantic validation
@@ -79,11 +102,11 @@ export async function dryRunImport(json: string): Promise<DryRunResult> {
     const errors = issues.filter((i) => i.severity === "error");
     const warnings = issues.filter((i) => i.severity === "warning");
 
-    // Step 3: check which sourceIds already exist in this user's deck
+    // Step 3: check which sourceIds already exist in this deck
     const sourceIds = cards.map((c) => c.sourceId);
     const existing = await prisma.card.findMany({
       where: {
-        deck: { createdByUserId: userId },
+        deck: { createdByUserId: userId, name: deckName },
         originalId: { in: sourceIds },
       },
       select: { originalId: true },
@@ -96,7 +119,7 @@ export async function dryRunImport(json: string): Promise<DryRunResult> {
     // Step 4: build sample (first 10)
     const sample = buildSample(cards, existingSet);
 
-    return { ok: true, totalCards: cards.length, toCreate, toUpdate, errors, warnings, sample };
+    return { ok: true, subject, deckName, totalCards: cards.length, toCreate, toUpdate, errors, warnings, sample };
   } catch (e) {
     return { ok: false, error: e instanceof Error ? e.message : String(e) };
   }
@@ -111,12 +134,14 @@ export async function runImport(json: string): Promise<RunResult> {
   try {
     const { userId } = await requireRole("EDITOR");
 
-    let cards;
+    let batch;
     try {
-      cards = parseJsonCards(json);
+      batch = parseJsonBatch(json);
     } catch (e) {
       return { ok: false, error: e instanceof Error ? e.message : String(e) };
     }
+
+    const { subject, cards } = batch;
 
     const issues = validate(cards);
     const errors = issues.filter((i) => i.severity === "error");
@@ -129,17 +154,23 @@ export async function runImport(json: string): Promise<RunResult> {
 
     const warnings = issues.filter((i) => i.severity === "warning");
 
-    // Resolve the user's deck name — same logic as the seed/CLI.
-    const deck = await prisma.deck.findFirst({
-      where: { createdByUserId: userId },
-      select: { name: true },
-    });
-    if (!deck) {
-      return { ok: false, error: "No deck found for your account." };
+    // Resolve deck name: use subject from JSON, or fall back to the user's first deck.
+    let deckName: string;
+    if (subject) {
+      deckName = subject;
+    } else {
+      const deck = await prisma.deck.findFirst({
+        where: { createdByUserId: userId },
+        select: { name: true },
+      });
+      if (!deck) {
+        return { ok: false, error: "No deck found. Add a \"subject\" field to your JSON file." };
+      }
+      deckName = deck.name;
     }
 
     const result = await importCards(cards, {
-      deckName: deck.name,
+      deckName,
       userId,
       rawInput: json,
     });
@@ -147,6 +178,7 @@ export async function runImport(json: string): Promise<RunResult> {
     return {
       ok: true,
       batchId: result.batchId,
+      deckName,
       created: result.created,
       updated: result.updated,
       warnings,

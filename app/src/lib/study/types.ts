@@ -37,6 +37,10 @@ export type MultipleChoiceCard = {
   flagged: boolean;
   /** Note left when the card was flagged, if any. */
   flagNote: string | null;
+  /** TOPIC tag names for this card (used in the ID tooltip). */
+  topics: string[];
+  /** Non-system custom tag names (excludes "flagged"). */
+  tags: string[];
 };
 
 /** An open-answer card where the user self-assesses after revealing. */
@@ -53,6 +57,10 @@ export type OpenAnswerCard = {
   flagged: boolean;
   /** Note left when the card was flagged, if any. */
   flagNote: string | null;
+  /** TOPIC tag names for this card (used in the ID tooltip). */
+  topics: string[];
+  /** Non-system custom tag names (excludes "flagged"). */
+  tags: string[];
 };
 
 /**

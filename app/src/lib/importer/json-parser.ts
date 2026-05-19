@@ -12,7 +12,7 @@
  */
 
 import { z } from "zod";
-import type { ParsedCard } from "./types";
+import type { ParsedCard, ParsedBatch } from "./types";
 
 // ---------------------------------------------------------------------------
 // Zod schema — mirrors the canonical format from question_generation_guide.md
@@ -48,7 +48,17 @@ const cardSchema = z.object({
   media: z.array(mediaSchema).optional(),
 });
 
+/** Legacy format: bare array of cards. */
 const fileSchema = z.array(cardSchema);
+
+/**
+ * New wrapper format: `{ "subject": "...", "cards": [...] }`.
+ * The subject is used as the deck name during import.
+ */
+const batchWrapperSchema = z.object({
+  subject: z.string().min(1, "Subject must not be empty"),
+  cards: z.array(cardSchema),
+});
 
 // ---------------------------------------------------------------------------
 // Difficulty mapping — JSON lowercase → Prisma CardDifficulty enum
@@ -61,53 +71,14 @@ const difficultyMap = {
 } as const satisfies Record<string, "EASY" | "MEDIUM" | "HARD">;
 
 // ---------------------------------------------------------------------------
-// Public API
+// Internal helpers
 // ---------------------------------------------------------------------------
 
-/**
- * Parses a JSON string containing an array of card objects into
- * {@link ParsedCard} records.
- *
- * The input must conform to the format defined in
- * `docs/question_generation_guide.md`. Structural validation is performed
- * with Zod; semantic validation (missing answers, duplicate IDs, etc.) is
- * handled separately by the validator module.
- *
- * @param jsonString - Raw JSON string. Must be a top-level array; objects,
- *   primitives, and other non-array values are rejected.
- * @returns Array of {@link ParsedCard} objects. Empty if the input array is
- *   empty (`"[]"`).
- * @throws {Error} If `jsonString` is not valid JSON.
- * @throws {Error} If the parsed value does not conform to the card schema.
- *   The message includes the first five Zod issues with field paths to help
- *   locate problems in large files.
- *
- * @example
- * ```ts
- * const cards = parseJsonCards(await fs.readFile("questions.json", "utf8"));
- * // cards[0].cardType === "MULTIPLE_CHOICE"
- * // cards[0].difficulty === "EASY"
- * ```
- */
-export function parseJsonCards(jsonString: string): ParsedCard[] {
-  let raw: unknown;
-  try {
-    raw = JSON.parse(jsonString);
-  } catch (cause) {
-    throw new Error(`Invalid JSON: ${(cause as Error).message}`, { cause });
-  }
-
-  const result = fileSchema.safeParse(raw);
-  if (!result.success) {
-    // Report the first few issues so the caller can fix them without being overwhelmed.
-    const issues = result.error.issues
-      .slice(0, 5)
-      .map((i) => `  [${i.path.join(".")}] ${i.message}`)
-      .join("\n");
-    throw new Error(`JSON does not match the card format:\n${issues}`);
-  }
-
-  return result.data.map((card) => ({
+/** Maps a validated Zod card result to the typed {@link ParsedCard} shape. */
+function mapCards(
+  raw: z.infer<typeof fileSchema>,
+): ParsedCard[] {
+  return raw.map((card) => ({
     sourceId: card.id,
     topic: card.topic,
     cardType: card.type === "multiple_choice" ? "MULTIPLE_CHOICE" : "OPEN_ANSWER",
@@ -131,4 +102,85 @@ export function parseJsonCards(jsonString: string): ParsedCard[] {
       ...(m.origin !== undefined && { origin: m.origin }),
     })),
   }));
+}
+
+/** Formats up to five Zod issues into a human-readable string. */
+function formatZodIssues(error: z.ZodError): string {
+  return error.issues
+    .slice(0, 5)
+    .map((i) => `  [${i.path.join(".")}] ${i.message}`)
+    .join("\n");
+}
+
+// ---------------------------------------------------------------------------
+// Public API
+// ---------------------------------------------------------------------------
+
+/**
+ * Parses a JSON string in either the new wrapper format or the legacy bare-
+ * array format, returning a {@link ParsedBatch} with an optional subject.
+ *
+ * **New format** (preferred):
+ * ```json
+ * { "subject": "Canadian PPL", "cards": [ ...card objects... ] }
+ * ```
+ *
+ * **Legacy format** (still supported, subject will be `null`):
+ * ```json
+ * [ ...card objects... ]
+ * ```
+ *
+ * Structural validation is performed with Zod; semantic validation is
+ * handled separately by the validator module.
+ *
+ * @param jsonString - Raw JSON string.
+ * @returns {@link ParsedBatch} with `subject` and `cards`.
+ * @throws {Error} If `jsonString` is not valid JSON.
+ * @throws {Error} If the parsed value does not conform to either schema.
+ */
+export function parseJsonBatch(jsonString: string): ParsedBatch {
+  let raw: unknown;
+  try {
+    raw = JSON.parse(jsonString);
+  } catch (cause) {
+    throw new Error(`Invalid JSON: ${(cause as Error).message}`, { cause });
+  }
+
+  // Legacy format: bare array.
+  if (Array.isArray(raw)) {
+    const result = fileSchema.safeParse(raw);
+    if (!result.success) {
+      throw new Error(`JSON does not match the card format:\n${formatZodIssues(result.error)}`);
+    }
+    return { subject: null, cards: mapCards(result.data) };
+  }
+
+  // New format: wrapper object with subject and cards array.
+  const result = batchWrapperSchema.safeParse(raw);
+  if (!result.success) {
+    throw new Error(
+      `JSON does not match the expected format (array or {subject, cards} object):\n${formatZodIssues(result.error)}`,
+    );
+  }
+  return { subject: result.data.subject, cards: mapCards(result.data.cards) };
+}
+
+/**
+ * Parses a JSON string containing a bare array of card objects.
+ *
+ * This is the legacy entry point used by the CLI script and seed. For new
+ * code, prefer {@link parseJsonBatch} which handles both formats.
+ *
+ * @param jsonString - Raw JSON string. Must be a top-level array.
+ * @returns Array of {@link ParsedCard} objects.
+ * @throws {Error} If the input is not valid JSON or does not match the schema.
+ *
+ * @example
+ * ```ts
+ * const cards = parseJsonCards(await fs.readFile("questions.json", "utf8"));
+ * // cards[0].cardType === "MULTIPLE_CHOICE"
+ * ```
+ */
+export function parseJsonCards(jsonString: string): ParsedCard[] {
+  return parseJsonBatch(jsonString).cards;
 }

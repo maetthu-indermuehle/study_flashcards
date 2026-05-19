@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { listCards, listTags } from "@/lib/cards/queries";
 import CardBrowser from "@/features/cards/CardBrowser";
+import HamburgerMenu from "@/features/nav/HamburgerMenu";
 import type { CardFilters, CardType, CardDifficulty, CardStatus } from "@/lib/cards/types";
 import { DEFAULT_FILTERS } from "@/lib/cards/types";
 
@@ -58,15 +59,7 @@ export default async function CardsPage({
     <main className="min-h-dvh bg-stone-50 text-slate-950">
       <div className="mx-auto w-full max-w-5xl px-5 py-6 sm:px-8 lg:px-10">
         <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
-          <div className="flex items-center gap-4">
-            <Link
-              href="/"
-              className="text-sm font-medium text-slate-500 hover:text-slate-700"
-            >
-              ← Home
-            </Link>
-            <h1 className="text-xl font-semibold text-slate-950">Cards</h1>
-          </div>
+          <h1 className="text-xl font-semibold text-slate-950">Cards</h1>
           <div className="flex items-center gap-2">
             <Link
               href="/cards/flagged"
@@ -80,6 +73,7 @@ export default async function CardsPage({
             >
               + New card
             </Link>
+            <HamburgerMenu role={session.role} email={session.email} />
           </div>
         </header>
 

@@ -9,6 +9,80 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.10.3] - 2026-05-18
+
+### Added
+
+- **Hamburger menu on all authenticated pages** — every page with a session now shows the
+  right-side slide-in drawer (`HamburgerMenu`) in its header instead of a `← Home` back
+  link. Contextual back links (`← Cards`) are kept on detail pages. Affected pages:
+  `/cards`, `/cards/[id]`, `/cards/flagged`, `/cards/new`, `/import`, `/admin/*` (layout),
+  `/profile`.
+
+### Changed
+
+- **FlaggedQueue single-click save** — "Save & clear flag" and "Save & keep flagged" now
+  save the card and apply the flag action in one click. `CardForm` was converted to a
+  `forwardRef` component that exposes a `submit()` handle (`CardFormHandle`); a new
+  `hideActions` prop suppresses the internal "Save changes" row when a parent provides its
+  own action buttons. `FlaggedCardForm` drives the submit imperatively via a `useRef`.
+
+### Fixed
+
+- **`node:crypto` webpack error on Profile page** — `ChangePasswordForm` (a client
+  component) was importing `MIN_PASSWORD_LENGTH` directly from `lib/auth/password.ts`,
+  which pulls `node:crypto` into the browser bundle. Fixed by extracting the constant to a
+  new `lib/auth/constants.ts` file with no Node dependencies. `password.ts` re-exports it
+  for server-side callers; `ChangePasswordForm` now imports from `constants.ts`.
+
+---
+
+## [0.10.2] - 2026-05-18
+
+### Added
+
+- **Direct launch** — the home page (`/`) is now a pure redirect: no `lastStudy` cookie →
+  `/welcome`; cookie present → `/study` or `/study?tagIds=…`. No UI shown at `/`.
+- **`/welcome` page** — placeholder for first-time users with a "Choose topics →" CTA.
+  Will evolve into an onboarding/help page in a later phase.
+- **`lastStudy` cookie** written by the proxy on every `/study` visit; stores the active
+  `tagIds` (or `""` for "all cards"). 30-day expiry, `SameSite=lax`.
+- **`HamburgerMenu`** client component — right-side slide-in drawer replacing the previous
+  home-page navigation links. Role-aware sections: Study setup (all), Content (EDITOR+),
+  Administration (ADMIN), Account (all). Sign-out calls `/api/auth/logout` and redirects
+  to `/login`.
+- `← Setup` back link always visible on `/study`.
+
+---
+
+## [0.10.1] - 2026-05-18
+
+### Added
+
+- **Multi-subject (deck) support** — the app is no longer single-topic:
+  - JSON files can now use a wrapper format `{"subject": "...", "cards": [...]}`.
+    The `subject` value becomes the deck name and is created automatically on first
+    import. The old bare-array format is still accepted for backward compatibility.
+  - `ParsedBatch` type and `parseJsonBatch()` parser in `json-parser.ts` handle both
+    formats. `parseJsonCards()` is kept as a thin alias for backward compat.
+  - `import-service.ts` now does `findOrCreate` on the deck instead of throwing when
+    the deck does not exist yet.
+  - `dryRunImport` and `runImport` server actions use `parseJsonBatch`; they resolve
+    the target deck name from the JSON subject (or fall back to the user's existing
+    deck). Both return `deckName` in the success result.
+  - Import preview shows the target deck name; done step names the deck.
+  - `listSubjectGroups()` query returns all user decks as top-level accordion items.
+  - `StudySetup` three-level accordion: **Subject → Topic group → Sub-topic**.
+    When the user has only one deck the subject row is hidden, preserving the existing UX.
+  - `getNextCard` and `getDueCount` now search across all of the user's decks instead
+    of only the first one found.
+  - CLI script uses `subject` from JSON when present; `--deck` is the fallback.
+  - `question_generation_guide.md` documents both JSON formats and updates the LLM
+    prompt to output the wrapper format.
+- 7 new unit tests for `parseJsonBatch` (legacy and wrapper formats, error cases).
+
+---
+
 ## [0.10.0] - 2026-05-17
 
 ### Added

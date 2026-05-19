@@ -13,8 +13,25 @@ PPL study app. It serves two purposes:
 
 ### File structure
 
-A question file is a plain JSON array of card objects. No wrapper object, no metadata
-envelope — just an array.
+A question file can use one of two formats:
+
+**New format (preferred)** — wrapper object with a `subject` field:
+
+```json
+{
+  "subject": "Canadian PPL",
+  "cards": [
+    { ...card },
+    { ...card }
+  ]
+}
+```
+
+The `subject` value becomes the **deck name** in the app. Use it to group cards by
+study area (e.g. `"Canadian PPL"`, `"IFR"`, `"Botany"`). The importer creates the deck
+automatically if it does not already exist.
+
+**Legacy format (still supported)** — bare array of card objects:
 
 ```json
 [
@@ -22,6 +39,10 @@ envelope — just an array.
   { ...card }
 ]
 ```
+
+When the legacy format is used, the importer imports cards into the user's existing
+default deck. The `--deck` CLI flag can override this. For new content always use the
+wrapper format so the subject is explicit.
 
 ### Card object — all fields
 
@@ -344,12 +365,14 @@ Media object:
     role "question_context", src set to a descriptive placeholder like
     "assets/TODO-chart-description.png", and a thorough alt description of what the image
     should show.
-11. Output only the JSON array — no explanation text, no markdown fences, no preamble.
+11. Output the result as a wrapper object: {"subject": "[SUBJECT]", "cards": [...]}
+    No explanation text, no markdown fences, no preamble outside the JSON.
 
 --- END FORMAT ---
 
 Generate [NUMBER] questions on the topic: [YOUR TOPIC HERE].
 Use prefix [PREFIX] and start IDs at [PREFIX-NUMBER].
+Subject label: [SUBJECT — e.g. "Canadian PPL", "IFR", "Botany"]
 ```
 
 ---

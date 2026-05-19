@@ -1,6 +1,6 @@
 # PPL Flashcard App Implementation Plan
 
-This document describes the proposed implementation plan for the Canadian PPL flashcard app. It is intended as a practical build roadmap that can be updated as decisions change.
+This document describes the implementation plan for the Canadian PPL flashcard app. It is updated as phases are completed and plans change.
 
 ## Guiding Approach
 
@@ -17,7 +17,9 @@ The first meaningful milestone should prove the full app shape:
 
 Avoid spending too long on admin tools, polished analytics, or advanced spaced repetition before the core study loop exists.
 
-## Phase 0: Project Setup
+---
+
+## Phase 0: Project Setup ✓
 
 Create the actual application foundation.
 
@@ -42,263 +44,267 @@ Deliverable:
 
 - The app boots locally with Docker and directly with the Node package manager.
 
-## Phase 1: Database and Core Models
+---
+
+## Phase 1: Database and Core Models ✓
 
 Create the schema before UI complexity grows.
 
 Tasks:
 
-- Add Prisma models for:
-  - `User`
-  - `Deck`
-  - `Card`
-  - `Choice`
-  - `Tag`
-  - `CardTag`
-  - `SourceReference`
-  - `MediaAsset`
-  - `CardMedia`
-  - `Review`
-  - `CardProgress`
-  - `StudySession`
-  - `ImportBatch`
+- Add Prisma models for `User`, `Deck`, `Card`, `Choice`, `Tag`, `CardTag`,
+  `SourceReference`, `MediaAsset`, `CardMedia`, `Review`, `CardProgress`,
+  `StudySession`, `ImportBatch`.
 - Create the initial migration.
-- Add seed script for:
-  - one default user,
-  - one Canadian PPL deck.
+- Add seed script: one default user, one Canadian PPL deck.
 - Add a small database access layer.
 
 Deliverable:
 
 - Database schema exists, migrations run, and a seed user/deck are available.
 
-## Phase 2: JSON Importer
+---
 
-Define a canonical JSON question format and build the import pipeline.
-A one-off migration script converts the existing Markdown files to JSON;
-the app itself only ever reads JSON.
+## Phase 2: JSON Importer ✓
+
+Define a canonical JSON question format and build the import pipeline. A one-off
+migration script converts the existing Markdown files to JSON; the app itself only
+ever reads JSON.
 
 Tasks:
 
 - Define the canonical JSON question format (see `docs/question_generation_guide.md`).
-  This is the single source of truth for all future questions, including those
-  generated with ChatGPT or Claude.
-- Write a one-off migration script (`scripts/md_to_json.ts`, repo root) that converts
-  all existing Markdown files in `Questions/` to JSON and writes them to `data/questions/`.
-  This script handles the three Markdown format variants found in the existing files.
-  Run it once, commit the output, and it is no longer needed.
+- Write a one-off migration script (`scripts/md_to_json.ts`) that converts all Markdown
+  files in `Questions/` to JSON and writes them to `data/questions/`. Run once,
+  commit the output.
 - Build a JSON parser in the app (`app/src/lib/importer/json-parser.ts`).
-- Add import validation:
-  - missing answer,
-  - missing reference,
-  - no correct choice for multiple-choice cards,
-  - duplicate source IDs within a batch.
+- Add import validation: missing answer, missing reference, no correct choice for MC
+  cards, duplicate source IDs.
 - Create a CLI import command (`app/scripts/import.ts`, JSON only).
 - Store import metadata in `ImportBatch`.
 
 Deliverable:
 
 - Existing questions are available as JSON in `data/questions/` and can be imported
-  into PostgreSQL. All future questions follow the same JSON format.
+  into PostgreSQL.
 
-## Phase 3: Minimal Authentication
+---
+
+## Phase 3: Minimal Authentication ✓
 
 Keep authentication simple but multi-user ready.
 
 Tasks:
 
 - Add local credentials login.
-- Bootstrap the first user from a seed script or environment-backed setup.
-- Add session handling.
-- Add auth guards for app pages.
+- Bootstrap the first user from a seed script.
+- Add stateless HMAC-SHA256 signed session cookies.
+- Add auth guards for app pages (proxy).
 - Tie all study progress to `userId`.
-- Keep the auth boundary clean so OAuth, magic links, or OIDC can be added later.
 
 Deliverable:
 
 - A user can log in and access their own study data.
 
-## Phase 4: First Study Experience
+---
+
+## Phase 4: First Study Experience ✓
 
 Build the core mobile flashcard loop.
 
 Tasks:
 
 - Create a mobile-first study page.
-- Add study session modes:
-  - due cards,
-  - random cards,
-  - by topic/tag.
-- Add multiple-choice card flow:
-  - shuffle answer choices at study time,
-  - allow answer selection,
-  - reveal correctness,
-  - show explanation and reference.
-- Add open-answer card flow:
-  - show question,
-  - show answer on button press,
-  - show explanation and reference,
-  - show four self-rating buttons.
+- Add multiple-choice card flow: shuffle choices, reveal correctness, show explanation.
+- Add open-answer card flow: show question, reveal answer, four self-rating buttons.
 - Add basic progress indicator.
-- Ensure desktop works, but optimize layout for phone use.
+- Optimize layout for phone use.
 
 Deliverable:
 
 - The imported deck can be studied in a usable flashcard interface.
 
-## Phase 5: Spaced Repetition V1
+---
+
+## Phase 5: Spaced Repetition V1 ✓
 
 Add the first scheduler.
 
 Tasks:
 
-- Define four ratings:
-  - `wrong`
-  - `hard`
-  - `good`
-  - `easy`
+- Define four ratings: `wrong`, `hard`, `good`, `easy`.
 - Store immutable `Review` rows.
 - Update `CardProgress` after each review.
-- Implement a simple SM-2-inspired interval algorithm:
-  - wrong: repeat soon and reduce/reset interval,
-  - hard: short interval increase,
-  - good: normal interval increase,
-  - easy: larger interval increase.
-- Add due-card selection.
-- Add weak-card selection.
-- Add basic review statistics.
+- Implement a simple SM-2-inspired interval algorithm.
+- Add due-card selection; add `getDueCount` for the home page badge.
+- Add source ID label and flag button with notes to study cards.
+- Add question image support (`QuestionText` component parses inline Markdown images).
 
 Deliverable:
 
-- Study sessions can be driven by due cards instead of only random card selection.
+- Study sessions can be driven by due cards; cards can be flagged with notes.
 
-## Phase 6: Card Management UI
+---
+
+## Phase 6: Card Management UI ✓
 
 Make the database the practical source of truth.
 
 Tasks:
 
-- Browse cards.
-- Search cards.
-- Filter by:
-  - topic,
-  - tag,
-  - type,
-  - difficulty,
-  - source.
-- View full card detail.
-- Create cards.
-- Edit cards.
-- Archive cards.
-- Manage multiple-choice options.
-- Manage tags.
-- Manage references.
+- Card browser at `/cards`: paginated list, full-text search, filters (type, difficulty,
+  status, tag, flaggedOnly), sort. URL params drive all filters.
+- Card detail/edit page at `/cards/[id]`.
+- New card form at `/cards/new`.
+- Flagged review queue at `/cards/flagged`.
+- `CardRevision` model: one snapshot written before every save.
 
 Deliverable:
 
-- Questions can be maintained inside the app without editing Markdown.
+- Questions can be maintained inside the app without editing files.
 
-## Phase 7: Media Support V1
+---
 
-Support image, chart, table, and diagram questions.
+## Phase 7: User Management ✓
+
+Add multi-user support with role-based access control.
 
 Tasks:
 
-- Wire `MediaAsset` and `CardMedia` into the app.
-- Attach existing image assets from `Questions/assets`.
-- Display media on the question side or answer side.
-- Store media source information.
-- Add alt text support.
-- For local development, begin with local app-served files or a local storage volume.
-- Keep the design ready for object storage later.
+- Add `Role` enum (`USER | EDITOR | ADMIN`) and `User.passwordVersion` to the schema.
+- Add `LoginAttempt` model: 10 failures in 15 min locks the account (email-keyed to
+  prevent user enumeration).
+- Add `AdminEvent` model: append-only audit log for all admin actions.
+- `src/lib/auth/permissions.ts` — `hasRole()` (pure rank comparison) and
+  `requireRole(minRole)` (verifies `passwordVersion` against DB to reject stale sessions).
+- `src/lib/auth/brute-force.ts` — lock check and attempt recording.
+- Session cookie gains `role` and `passwordVersion`.
+- Proxy updated with role-based route guards (optimistic, no DB query).
+- Admin UI at `/admin/users`: create, edit (role + display name), reset password, delete.
+  Server-side guards: cannot delete self, cannot remove last admin.
+- `/profile` — change-own-password (increments `passwordVersion` to invalidate other sessions).
 
 Deliverable:
 
-- Image/chart-based questions work in the study interface.
+- The app supports three roles with a full admin UI and brute-force login protection.
 
-## Phase 8: Bulk Import UI
+---
+
+## Phase 8: Bulk Import UI ✓
 
 Move import from command line to an application workflow.
 
 Tasks:
 
-- Add Markdown upload or paste input.
-- Preview parsed cards.
-- Show validation errors and warnings.
-- Confirm import.
-- Track import status in `ImportBatch`.
-- Avoid duplicate imports where possible.
-- Allow imported cards to start as draft or published.
+- Three-step import wizard at `/import` (EDITOR+ only).
+- Step 1 — Upload: file picker (`.json`, max 5 MB) or paste raw JSON.
+- Step 2 — Preview: `dryRunImport` server action returns create/update counts, hard
+  errors (block import), warnings, and a sample of the first 10 cards.
+- Step 3 — Done: `runImport` server action writes cards and records `ImportBatch` row
+  with raw JSON for audit.
+- Recent import history shown below the wizard.
+- Proxy updated: `/import` requires EDITOR role.
+- Home page: Import cards button for EDITOR+ users.
 
 Deliverable:
 
-- The deck can be extended from inside the app.
+- The deck can be extended from inside the app without CLI access.
 
-## Phase 9: PWA and Mobile Polish
+---
+
+## Phase 9: PWA and Mobile Polish ✓
 
 Make the app feel good on a phone.
 
 Tasks:
 
-- Add PWA manifest.
-- Add app icons.
-- Add theme color.
-- Polish mobile viewport behavior.
+- Add PWA manifest and generated app icons (Next.js `ImageResponse`).
+- Add theme color and viewport polish.
 - Support home-screen installation.
-- Improve loading states.
-- Improve empty states.
-- Review touch target sizes.
-- Add basic static asset caching if straightforward.
+- Service worker: cache-first for static assets, network-first for navigation.
+- Rating buttons bumped to ≥44 px touch target (Apple HIG minimum).
+- Safe-area padding for iPhone home indicator.
 
 Deliverable:
 
 - The app behaves like a clean installable mobile study tool.
 
-## Phase 10: OpenShift Deployment
+---
+
+## Phase 10: Cleanup and UI Improvements ← current
+
+Reduce clutter and improve the user experience before adding new features.
+
+Tasks:
+
+- Remove converted Markdown question files from `Questions/` (JSON in `data/questions/`
+  is the source of truth).
+- Remove source assets and reference PDFs that are no longer needed.
+- Review and update all planning documentation.
+- UI polish: improve empty states, loading indicators, and navigation consistency.
+
+Deliverable:
+
+- Codebase and repo are tidy; UI rough edges are smoothed before the next phase.
+
+---
+
+## Phase 11: Media Support V1
+
+Support image, chart, table, and diagram questions in the app.
+
+Tasks:
+
+- Wire `MediaAsset` and `CardMedia` into the app.
+- Add upload UI for attaching images to cards.
+- Display media on the question or answer side.
+- Store source information and alt text.
+- For local development, serve from app container or local volume.
+- Design for S3-compatible object storage in production.
+
+Deliverable:
+
+- Image/chart-based questions work in the study interface.
+
+---
+
+## Phase 12: OpenShift Deployment
 
 Make production deployment repeatable.
 
 Tasks:
 
-- Add production Dockerfile.
+- Add production Dockerfile (already done; validate and harden).
 - Add Helm chart.
-- Add Kubernetes/OpenShift resources:
-  - Deployment,
-  - Service,
-  - Route,
-  - Secret templates,
-  - ConfigMap,
-  - migration Job,
-  - health/readiness probes.
+- Add Kubernetes/OpenShift resources: Deployment, Service, Route, Secret templates,
+  ConfigMap, migration Job, health/readiness probes.
 - Ensure non-root arbitrary UID compatibility.
-- Document production environment variables.
-- Document migration workflow.
+- Document production environment variables and migration workflow.
 
 Deliverable:
 
 - The app can be deployed to APPUiO/OpenShift.
 
-## Phase 11: Export and Backup Tools
+---
+
+## Phase 13: Export and Backup Tools
 
 Keep the content portable.
 
 Tasks:
 
-- Export cards to Markdown.
-- Export cards to JSON.
-- Optional CSV export.
-- Include:
-  - tags,
-  - references,
-  - media metadata,
-  - deck information.
+- Export cards to JSON (round-trip compatible with the importer).
+- Optional Markdown and CSV export.
+- Include tags, references, media metadata, and deck information.
 - Add simple backup and restore notes.
 
 Deliverable:
 
 - Database content can be exported and reviewed outside the app.
 
-## Phase 12: Improvements After Daily Use
+---
+
+## Phase 14: Improvements After Daily Use
 
 Improve based on real study friction.
 
@@ -306,13 +312,10 @@ Possible features:
 
 - Better stats dashboard.
 - Exam readiness estimate.
-- Smarter spaced repetition.
-- FSRS scheduler evaluation.
+- Smarter spaced repetition (FSRS evaluation).
 - Offline queue and sync.
 - AI-assisted card creation.
 - Duplicate detection.
-- Instructor-created decks.
-- Shared decks.
 - Deck versioning.
 - Better media library management.
 
@@ -320,26 +323,10 @@ Deliverable:
 
 - Product direction is informed by actual study use, not only up-front speculation.
 
-## Recommended Build Order
+---
 
-The preferred order is a vertical slice:
-
-1. Scaffold app and database.
-2. Define schema.
-3. Import Markdown via CLI.
-4. Build study UI.
-5. Add spaced repetition.
-6. Add editing and import UI.
-7. Add media support.
-8. Add PWA polish.
-9. Add OpenShift deployment.
-10. Add export and advanced study tools.
-
-## First Milestone
-
-The first milestone should be:
+## First Milestone (complete)
 
 > Run locally with Docker, import existing Markdown cards into PostgreSQL, log in as the seed user, and study random/due cards on a phone-friendly UI.
 
-This milestone proves the core technical and product assumptions while keeping the scope small enough to finish quickly.
-
+Phases 0–5 completed this milestone.

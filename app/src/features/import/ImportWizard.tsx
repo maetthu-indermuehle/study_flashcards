@@ -117,6 +117,7 @@ export default function ImportWizard() {
             </h2>
             <p className="text-slate-500">
               {result.created} created, {result.updated} updated
+              {" "}in <span className="font-medium text-slate-700">{result.deckName}</span>
             </p>
           </div>
           {result.warnings.length > 0 && (

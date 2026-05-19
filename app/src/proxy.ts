@@ -68,7 +68,21 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
-  return NextResponse.next();
+  // All checks passed — build the response.
+  const response = NextResponse.next();
+
+  // Record the last study session so the home page can jump straight back into it.
+  // Stored as the raw tagIds query param value (comma-separated, or "" for all cards).
+  // Written on every /study request (not /study/setup) so dueOnly-only visits also count.
+  if (pathname === "/study") {
+    response.cookies.set("lastStudy", request.nextUrl.searchParams.get("tagIds") ?? "", {
+      sameSite: "lax",
+      path: "/",
+      maxAge: 30 * 24 * 60 * 60, // 30 days
+    });
+  }
+
+  return response;
 }
 
 export const config = {

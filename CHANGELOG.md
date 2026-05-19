@@ -9,6 +9,38 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.12.1] - 2026-05-19
+
+### Added
+
+- **Topic filter on export page** — each deck now shows the same three-level
+  topic accordion as the study setup page. Select any combination of topics
+  to export a subset (e.g. only PSTAR questions). Leaving everything unchecked
+  exports all cards in the deck. The filter is passed as `?tagIds=` to the
+  download API routes.
+
+---
+
+## [0.12.0] - 2026-05-19
+
+### Added
+
+- **`/export` page** (EDITOR+) — dedicated export and backup page reachable from
+  the hamburger menu.
+- **Full JSON export** — download all cards in a deck as an import-compatible
+  `{ "subject", "cards" }` JSON file (one file per deck). Round-trip compatible
+  with the importer.
+- **CSV export** — download all cards in a deck as a flat CSV for spreadsheet
+  review. Correct choices are prefixed with `*` in the choices column.
+- **Diff JSON export** — download only new and changed cards: new cards have no
+  `originalId` (created in the app); changed cards have at least one
+  `CardRevision`. Drop the output into `data/questions/` to update the seed
+  question bank for the next deployment.
+- **User export** (ADMIN only) — download all user accounts as JSON (id, email,
+  display name, role, created date — no passwords or session data).
+
+---
+
 ## [0.11.8] - 2026-05-19
 
 ### Changed

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.principalair.ca)",
+      "Bash(curl -s \"https://www.principalair.ca/pstar%201.1.html\")",
+      "Bash(gh run *)"
+    ]
+  }
+}

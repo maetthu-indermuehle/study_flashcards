@@ -86,6 +86,7 @@ export default function HamburgerMenu({ role, email }: Props) {
               <SectionLabel>Content</SectionLabel>
               <NavLink href="/cards" onClick={close}>Browse cards</NavLink>
               <NavLink href="/import" onClick={close}>Import cards</NavLink>
+              <NavLink href="/export" onClick={close}>Export &amp; backup</NavLink>
             </>
           )}
 

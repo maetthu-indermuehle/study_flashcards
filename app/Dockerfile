@@ -34,6 +34,7 @@ RUN npm ci && \
       node_modules/@tailwindcss \
       node_modules/@types \
       node_modules/postcss
+COPY prisma.config.ts ./
 COPY prisma/ ./prisma/
 COPY src/ ./src/
 RUN npx prisma generate

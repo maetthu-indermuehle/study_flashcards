@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.4] - 2026-05-19
+
+### Fixed
+
+- **Missing `prisma.config.ts` in tools image** — Prisma 7 reads the datasource
+  URL from `prisma.config.ts` (not `schema.prisma`), which was omitted from the
+  slimmed tools stage. Migration and seed were failing with "datasource.url
+  property is required".
+
+---
+
 ## [0.11.3] - 2026-05-19
 
 ### Fixed

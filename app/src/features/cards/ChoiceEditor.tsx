@@ -42,10 +42,10 @@ export default function ChoiceEditor({ choices, onChange }: Props) {
   return (
     <div>
       <div className="mb-2 flex items-center justify-between">
-        <label className="text-sm font-medium text-slate-700">Choices</label>
+        <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Choices</label>
         {choices.length > 0 && (
           <span
-            className={`text-xs ${correctCount === 0 ? "text-red-500" : "text-slate-400"}`}
+            className={`text-xs ${correctCount === 0 ? "text-red-500 dark:text-red-400" : "text-slate-400 dark:text-slate-500"}`}
           >
             {correctCount === 0
               ? "Mark at least one correct"
@@ -65,7 +65,7 @@ export default function ChoiceEditor({ choices, onChange }: Props) {
               className={`mt-2 h-5 w-5 shrink-0 rounded-full border-2 transition ${
                 choice.isCorrect
                   ? "border-emerald-500 bg-emerald-500"
-                  : "border-slate-300 hover:border-slate-400"
+                  : "border-slate-300 dark:border-slate-500 hover:border-slate-400 dark:hover:border-slate-400"
               }`}
             >
               {choice.isCorrect && (
@@ -89,7 +89,7 @@ export default function ChoiceEditor({ choices, onChange }: Props) {
               value={choice.text}
               onChange={(e) => updateText(i, e.target.value)}
               placeholder={`Choice ${i + 1}`}
-              className="flex-1 rounded-md border border-slate-300 px-3 py-1.5 text-sm focus:border-sky-400 focus:outline-none"
+              className="flex-1 rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-3 py-1.5 text-sm placeholder-slate-400 dark:placeholder-slate-500 focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
             />
 
             {/* Remove */}
@@ -97,7 +97,7 @@ export default function ChoiceEditor({ choices, onChange }: Props) {
               type="button"
               onClick={() => removeChoice(i)}
               title="Remove choice"
-              className="mt-1.5 rounded p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+              className="mt-1.5 rounded p-1 text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-600 dark:hover:text-slate-300"
             >
               <svg
                 viewBox="0 0 16 16"
@@ -119,7 +119,7 @@ export default function ChoiceEditor({ choices, onChange }: Props) {
       <button
         type="button"
         onClick={addChoice}
-        className="mt-3 rounded-md border border-dashed border-slate-300 px-3 py-1.5 text-sm text-slate-500 hover:border-slate-400 hover:text-slate-700 transition"
+        className="mt-3 rounded-md border border-dashed border-slate-300 dark:border-slate-600 px-3 py-1.5 text-sm text-slate-500 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition"
       >
         + Add choice
       </button>

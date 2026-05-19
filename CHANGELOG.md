@@ -9,6 +9,96 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.13.0] - 2026-05-19
+
+Phase 13 — UI fixes and study-flow polish. Dark mode, reduced interaction
+latency, previous-card navigation, and a handful of smaller UX issues.
+
+### Added
+
+- **Dark mode (site-wide)** — `ThemeProvider` reads `localStorage` on mount,
+  falls back to `prefers-color-scheme`, and toggles `<html class="dark">`.
+  Toggle lives in the `HamburgerMenu` on every authenticated page. All pages
+  and components use Tailwind's `dark:` prefix (Tailwind v4 class-based variant).
+- **Previous card button** — "← Prev" appears in the study toolbar once the
+  user has navigated past at least one card. A new `StudySession` client wrapper
+  owns a `useRef` history stack; `getNextCard` accepts a `forceId` param to
+  re-fetch a specific card directly.
+
+### Fixed
+
+- **Rating button latency** — review POST fires in background; `router.refresh()`
+  (next card) starts immediately on tap instead of waiting for the DB write.
+- **Card ID in edit header** — `originalId` now shows next to the "Edit card"
+  heading rather than in the small footer below the form.
+- **Mouse-wheel scroll on tall pages** — `overflow-x: hidden` on `<html
+  class="h-full">` was creating a fixed-height scroll container that captured
+  wheel events but could not scroll them. Removed from `html`; `body` still
+  clips horizontal overflow.
+
+---
+
+## [0.12.5] - 2026-05-19
+
+### Fixed
+
+- **Mouse-wheel scroll on tall pages** — `overflow-x: hidden` on the `<html
+  class="h-full">` element was creating a fixed-height scroll container that
+  captured wheel events but couldn't scroll them (scrollbar still worked).
+  Removed the rule from `html`; the `body` rule already clips horizontal
+  overflow, so horizontal scroll prevention is unchanged.
+
+---
+
+## [0.12.4] - 2026-05-19
+
+### Added
+
+- **Previous card button** — a "← Prev" button appears in the card toolbar once
+  the user has navigated past at least one card. Clicking it re-shows the last
+  seen card. The history stack is kept in a `useRef` inside a new `StudySession`
+  client wrapper, which survives soft navigations (the same component instance
+  is reused across `router.refresh()` and `router.push()` on the `/study` route).
+
+### Fixed
+
+- **Card question ID in edit header** — `originalId` is now shown next to the
+  "Edit card" heading instead of in the small footer below the form, making it
+  immediately visible without scrolling.
+
+---
+
+## [0.12.3] - 2026-05-19
+
+### Fixed
+
+- **Rating button latency** — the review POST (`/api/study/review`) now fires
+  in the background instead of blocking `router.refresh()`. The next card
+  starts loading immediately on tap, removing the ~500 ms delay between
+  pressing a rating button and seeing the new card.
+
+---
+
+## [0.12.2] - 2026-05-19
+
+### Added
+
+- **Dark mode (site-wide)** — all pages and components now respond to the dark
+  mode toggle in the hamburger menu. Uses a ThemeProvider with localStorage
+  persistence and `prefers-color-scheme` fallback. The Tailwind v4 class-based
+  `dark:` variant activates when `<html class="dark">` is set.
+- **Overflow fix** — `overflow-x: hidden` on `html` and `body` prevents
+  horizontal scroll on narrow viewports.
+- **Landscape support on study page** — reduced padding via `landscape:` variant
+  so the card fits on-screen in landscape orientation on mobile.
+
+### Changed
+
+- Export page converted from hardcoded dark palette to adaptive light/dark styles.
+- ExportDeckCard converted from hardcoded dark palette to adaptive light/dark styles.
+
+---
+
 ## [0.12.1] - 2026-05-19
 
 ### Added

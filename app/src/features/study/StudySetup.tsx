@@ -206,7 +206,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
   return (
     <div className="flex flex-col gap-8">
       {error && (
-        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="rounded-lg border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 px-4 py-3 text-sm text-red-700 dark:text-red-400">
           {error}
         </div>
       )}
@@ -214,7 +214,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
       {/* Saved presets */}
       {presets.length > 0 && (
         <section>
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
             Saved presets
           </h2>
           <div className="flex flex-col gap-1.5">
@@ -231,7 +231,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
             ))}
             {sharedPresets.length > 0 && (
               <>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-400">
+                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
                   Shared by others
                 </p>
                 {sharedPresets.map((p) => (
@@ -253,12 +253,12 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
 
       {/* Topic / subject chooser */}
       <section>
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
           Choose topics
         </h2>
 
         {subjectGroups.length === 0 ? (
-          <p className="text-sm text-slate-400">No topics found in your deck.</p>
+          <p className="text-sm text-slate-400 dark:text-slate-500">No topics found in your deck.</p>
         ) : (
           /* ----------------------------------------------------------------
            * Subject accordion: Subject → Topic group → Sub-topic
@@ -271,28 +271,28 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
               const subjectPartial = isSubjectPartiallySelected(subject);
 
               return (
-                <div key={subject.deckId} className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+                <div key={subject.deckId} className="overflow-hidden rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
                   {/* Subject header */}
-                  <div className="flex items-center gap-3 px-4 py-3 bg-slate-50">
+                  <div className="flex items-center gap-3 px-4 py-3 bg-slate-50 dark:bg-slate-700/50">
                     <input
                       type="checkbox"
                       checked={subjectFull}
                       ref={(el) => { if (el) el.indeterminate = subjectPartial; }}
                       onChange={() => toggleSubject(subject)}
-                      className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950"
+                      className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950 dark:accent-slate-300"
                     />
                     <button
                       onClick={() => toggleSubject(subject)}
-                      className="min-w-0 flex-1 text-left text-sm font-semibold text-slate-900"
+                      className="min-w-0 flex-1 text-left text-sm font-semibold text-slate-900 dark:text-slate-100"
                     >
                       {subject.name}
                     </button>
-                    <span className="shrink-0 text-xs text-slate-400">
+                    <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">
                       ~{subject.totalCards} cards
                     </span>
                     <button
                       onClick={() => toggleExpandedSubject(subject.name)}
-                      className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                      className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 dark:text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-600 hover:text-slate-600 dark:hover:text-slate-300"
                       aria-label={subjectOpen ? "Collapse subject" : "Expand subject"}
                     >
                       {subjectOpen ? "▲" : "▼"}
@@ -301,7 +301,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
 
                   {/* Topic groups within this subject */}
                   {subjectOpen && (
-                    <div className="divide-y divide-slate-100">
+                    <div className="divide-y divide-slate-100 dark:divide-slate-700">
                       <TopicGroupList
                         groups={subject.topicGroups}
                         selected={selected}
@@ -321,7 +321,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
           </div>
         )}
 
-        <p className="mt-3 text-sm text-slate-500">
+        <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
           {selected.size === 0
             ? "Nothing selected — all cards will be used."
             : `${selected.size} topic/tag filter${selected.size === 1 ? "" : "s"} active.`}
@@ -338,19 +338,19 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
             onKeyDown={(e) => e.key === "Enter" && handleSave()}
             placeholder="Preset name…"
             maxLength={80}
-            className="min-w-0 flex-1 rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+            className="min-w-0 flex-1 rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-3 py-2 text-sm text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
             autoFocus
           />
           <button
             onClick={handleSave}
             disabled={!saveName.trim() || isPending}
-            className="rounded-md bg-slate-950 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 disabled:opacity-40"
+            className="rounded-md bg-slate-950 dark:bg-slate-100 px-4 py-2 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 disabled:opacity-40"
           >
             Save
           </button>
           <button
             onClick={() => { setShowSaveForm(false); setSaveName(""); }}
-            className="rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-600 hover:bg-slate-50"
+            className="rounded-md border border-slate-300 dark:border-slate-600 px-3 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
           >
             Cancel
           </button>
@@ -358,7 +358,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
       ) : (
         <button
           onClick={() => setShowSaveForm(true)}
-          className="self-start text-sm font-medium text-sky-600 hover:text-sky-800"
+          className="self-start text-sm font-medium text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-300"
         >
           + Save as preset
         </button>
@@ -368,7 +368,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
       <div className="flex flex-wrap gap-3">
         <button
           onClick={startSession}
-          className="rounded-md bg-slate-950 px-6 py-2.5 text-sm font-medium text-white hover:bg-slate-800"
+          className="rounded-md bg-slate-950 dark:bg-slate-100 px-6 py-2.5 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200"
         >
           {startLabel}
         </button>
@@ -379,7 +379,7 @@ export default function StudySetup({ subjectGroups, presets: initialPresets, can
               const base = ids.length > 0 ? `tagIds=${ids.join(",")}&` : "";
               router.push(`/study?${base}dueOnly=1`);
             }}
-            className="rounded-md border border-slate-300 bg-white px-6 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+            className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-6 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700"
           >
             Review due ({dueCount}) →
           </button>
@@ -434,18 +434,18 @@ function TopicGroupList({
                 checked={fullyChecked}
                 ref={(el) => { if (el) el.indeterminate = partial; }}
                 onChange={() => toggleGroup(group)}
-                className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950"
+                className="h-4 w-4 shrink-0 cursor-pointer rounded accent-slate-950 dark:accent-slate-300"
               />
 
               {/* Group name + card count */}
               <button
                 onClick={() => toggleGroup(group)}
-                className="min-w-0 flex-1 text-left text-sm font-medium text-slate-800"
+                className="min-w-0 flex-1 text-left text-sm font-medium text-slate-800 dark:text-slate-200"
               >
                 {group.name}
               </button>
 
-              <span className="shrink-0 text-xs text-slate-400">
+              <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">
                 ~{group.totalCards} cards
               </span>
 
@@ -453,7 +453,7 @@ function TopicGroupList({
               {group.subTopics.length > 0 && (
                 <button
                   onClick={() => toggleExpanded(group.name)}
-                  className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                  className="shrink-0 rounded px-1.5 py-0.5 text-xs text-slate-400 dark:text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-600 dark:hover:text-slate-300"
                   aria-label={isOpen ? "Collapse" : "Expand sub-topics"}
                 >
                   {isOpen ? "▲" : "▼"}
@@ -463,23 +463,23 @@ function TopicGroupList({
 
             {/* Sub-topics */}
             {isOpen && group.subTopics.length > 0 && (
-              <div className={`border-t border-slate-100 bg-slate-50 pb-2 pt-1 ${indent ? "pl-8 pr-4" : "px-4"}`}>
+              <div className={`border-t border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-700/30 pb-2 pt-1 ${indent ? "pl-8 pr-4" : "px-4"}`}>
                 <div className="grid gap-1 sm:grid-cols-2">
                   {group.subTopics.map((sub) => (
                     <label
                       key={sub.id}
-                      className="flex cursor-pointer items-center gap-2.5 rounded px-2 py-1.5 hover:bg-slate-100"
+                      className="flex cursor-pointer items-center gap-2.5 rounded px-2 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-700"
                     >
                       <input
                         type="checkbox"
                         checked={selected.has(sub.id)}
                         onChange={() => toggleSubTopic(sub.id)}
-                        className="h-3.5 w-3.5 shrink-0 cursor-pointer rounded accent-slate-950"
+                        className="h-3.5 w-3.5 shrink-0 cursor-pointer rounded accent-slate-950 dark:accent-slate-300"
                       />
-                      <span className="min-w-0 flex-1 text-xs text-slate-700">
+                      <span className="min-w-0 flex-1 text-xs text-slate-700 dark:text-slate-300">
                         {sub.label}
                       </span>
-                      <span className="shrink-0 text-xs text-slate-400">
+                      <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">
                         {sub.cardCount}
                       </span>
                     </label>
@@ -509,19 +509,19 @@ type PresetRowProps = {
 
 function PresetRow({ preset, canShare, isPending, onLoad, onDelete, onToggleShared }: PresetRowProps) {
   return (
-    <div className="flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2">
+    <div className="flex items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-2">
       <button
         onClick={() => onLoad(preset)}
-        className="min-w-0 flex-1 text-left text-sm font-medium text-slate-700 hover:text-slate-950"
+        className="min-w-0 flex-1 text-left text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-slate-950 dark:hover:text-slate-50"
       >
         {preset.name}
         {preset.isShared && (
-          <span className="ml-2 rounded-full bg-violet-100 px-2 py-0.5 text-xs font-medium text-violet-600">
+          <span className="ml-2 rounded-full bg-violet-100 dark:bg-violet-900/30 px-2 py-0.5 text-xs font-medium text-violet-600 dark:text-violet-400">
             shared
           </span>
         )}
       </button>
-      <span className="shrink-0 text-xs text-slate-400">
+      <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">
         {preset.tagIds.length === 0 ? "all cards" : `${preset.tagIds.length} filter${preset.tagIds.length === 1 ? "" : "s"}`}
       </span>
       {canShare && preset.isOwn && (
@@ -529,7 +529,7 @@ function PresetRow({ preset, canShare, isPending, onLoad, onDelete, onToggleShar
           onClick={() => onToggleShared(preset.id, preset.isShared)}
           disabled={isPending}
           title={preset.isShared ? "Stop sharing" : "Share with all users"}
-          className="shrink-0 rounded px-2 py-1 text-xs text-slate-400 hover:text-violet-600 disabled:opacity-40"
+          className="shrink-0 rounded px-2 py-1 text-xs text-slate-400 dark:text-slate-500 hover:text-violet-600 dark:hover:text-violet-400 disabled:opacity-40"
         >
           {preset.isShared ? "unshare" : "share"}
         </button>
@@ -539,7 +539,7 @@ function PresetRow({ preset, canShare, isPending, onLoad, onDelete, onToggleShar
           onClick={() => onDelete(preset.id)}
           disabled={isPending}
           title="Delete preset"
-          className="shrink-0 rounded px-2 py-1 text-xs text-slate-400 hover:text-red-600 disabled:opacity-40"
+          className="shrink-0 rounded px-2 py-1 text-xs text-slate-400 dark:text-slate-500 hover:text-red-600 dark:hover:text-red-400 disabled:opacity-40"
         >
           ✕
         </button>

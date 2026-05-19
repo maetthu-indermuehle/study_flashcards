@@ -71,14 +71,14 @@ export default function ImportWizard() {
       <div className="mb-8 flex items-center gap-2 text-sm">
         {(["upload", "preview", "done"] as Step[]).map((s, i) => (
           <div key={s} className="flex items-center gap-2">
-            {i > 0 && <div className="h-px w-6 bg-slate-200" />}
+            {i > 0 && <div className="h-px w-6 bg-slate-200 dark:bg-slate-700" />}
             <span
               className={`rounded-full px-3 py-1 font-medium ${
                 step === s
-                  ? "bg-slate-950 text-white"
+                  ? "bg-slate-950 dark:bg-slate-100 text-white dark:text-slate-900"
                   : i < ["upload", "preview", "done"].indexOf(step)
-                    ? "bg-emerald-100 text-emerald-700"
-                    : "bg-slate-100 text-slate-400"
+                    ? "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400"
+                    : "bg-slate-100 dark:bg-slate-700 text-slate-400 dark:text-slate-500"
               }`}
             >
               {i + 1}. {s.charAt(0).toUpperCase() + s.slice(1)}
@@ -89,7 +89,7 @@ export default function ImportWizard() {
 
       {/* Error banner */}
       {error && (
-        <div className="mb-6 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="mb-6 rounded-lg border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 px-4 py-3 text-sm text-red-700 dark:text-red-400">
           <strong>Error:</strong> {error}
         </div>
       )}
@@ -112,16 +112,16 @@ export default function ImportWizard() {
         <div className="flex flex-col items-center gap-6 py-8 text-center">
           <div className="text-5xl">✓</div>
           <div>
-            <h2 className="mb-1 text-2xl font-semibold text-slate-950">
+            <h2 className="mb-1 text-2xl font-semibold text-slate-950 dark:text-slate-100">
               Import complete
             </h2>
-            <p className="text-slate-500">
+            <p className="text-slate-500 dark:text-slate-400">
               {result.created} created, {result.updated} updated
-              {" "}in <span className="font-medium text-slate-700">{result.deckName}</span>
+              {" "}in <span className="font-medium text-slate-700 dark:text-slate-300">{result.deckName}</span>
             </p>
           </div>
           {result.warnings.length > 0 && (
-            <p className="text-sm text-amber-600">
+            <p className="text-sm text-amber-600 dark:text-amber-400">
               {result.warnings.length} warning{result.warnings.length > 1 ? "s" : ""} —
               some cards are missing source references.
             </p>
@@ -129,7 +129,7 @@ export default function ImportWizard() {
           <div className="flex gap-3">
             <Link
               href="/cards"
-              className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white hover:bg-slate-800"
+              className="rounded-md bg-slate-950 dark:bg-slate-100 px-5 py-2 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200"
             >
               Browse cards
             </Link>
@@ -141,7 +141,7 @@ export default function ImportWizard() {
                 setResult(null);
                 setError(null);
               }}
-              className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+              className="rounded-md border border-slate-300 dark:border-slate-600 px-5 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               Import another file
             </button>

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: dark: utilities activate when <html class="dark"> */
+@variant dark (&:is(.dark *));
+
 :root {
   --background: #fafaf9;
   --foreground: #0f172a;
@@ -12,12 +15,20 @@
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
+html {
+  /* overflow-x: hidden is intentionally NOT set here — doing so on an h-full
+     element creates a scroll container that swallows wheel events, breaking
+     mouse-wheel scrolling on longer pages. The body rule below clips it. */
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   /* Prevent pull-to-refresh interfering with card swipe gestures. */
   overscroll-behavior-y: contain;
+  /* Belt-and-braces: body also clips horizontal overflow. */
+  overflow-x: hidden;
 }
 
 /* Remove the blue/grey flash on tap in iOS WebKit. */

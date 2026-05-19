@@ -16,15 +16,15 @@ export default async function WelcomePage() {
   if (!session) redirect("/login");
 
   return (
-    <main className="min-h-dvh bg-stone-50">
+    <main className="min-h-dvh bg-stone-50 dark:bg-slate-900">
       <div className="mx-auto flex min-h-dvh max-w-sm flex-col items-center justify-center px-6 pb-12 text-center safe-bottom">
-        <p className="text-sm font-semibold uppercase tracking-widest text-sky-700">
+        <p className="text-sm font-semibold uppercase tracking-widest text-sky-700 dark:text-sky-400">
           Flashcards
         </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 dark:text-slate-100">
           Ready to study?
         </h1>
-        <p className="mt-4 text-base leading-7 text-slate-500">
+        <p className="mt-4 text-base leading-7 text-slate-500 dark:text-slate-400">
           Pick the topics you want to focus on, save them as a preset, and the app will jump straight
           back in next time you open it.
         </p>
@@ -32,13 +32,13 @@ export default async function WelcomePage() {
         <div className="mt-10">
           <Link
             href="/study/setup"
-            className="inline-flex h-11 items-center rounded-md bg-slate-950 px-7 text-sm font-medium text-white transition hover:bg-slate-800"
+            className="inline-flex h-11 items-center rounded-md bg-slate-950 dark:bg-slate-100 px-7 text-sm font-medium text-white dark:text-slate-900 transition hover:bg-slate-800 dark:hover:bg-slate-200"
           >
             Choose topics →
           </Link>
         </div>
 
-        <p className="mt-6 text-xs text-slate-400">
+        <p className="mt-6 text-xs text-slate-400 dark:text-slate-500">
           Logged in as {session.email}
         </p>
       </div>

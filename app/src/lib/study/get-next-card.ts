@@ -47,15 +47,21 @@ type RawCard = {
  * returns `null` when none are due — it does not fall back to new or upcoming
  * cards. This powers the "review due cards only" mode.
  *
+ * When `forceId` is provided the selection logic is skipped entirely and that
+ * specific card is returned directly. Used by the "← Prev" history navigation
+ * to re-show a card the user has already seen.
+ *
  * @param userId  - The authenticated user's database ID.
  * @param tagIds  - Optional list of Tag IDs to restrict the selection to.
  * @param dueOnly - When true, only return cards that are currently due.
+ * @param forceId - When set, bypass selection and return this card directly.
  * @returns A shuffled {@link StudyCard}, or `null` when nothing matches.
  */
 export async function getNextCard(
   userId: string,
   tagIds?: string[],
   dueOnly?: boolean,
+  forceId?: string,
 ): Promise<StudyCard | null> {
   // Find all decks owned by this user — cards may span multiple subjects.
   const decks = await prisma.deck.findMany({
@@ -64,6 +70,12 @@ export async function getNextCard(
   });
   if (decks.length === 0) return null;
   const deckIds = decks.map((d) => d.id);
+
+  // Bypass normal selection when navigating back through history.
+  // Scoping to the user's deckIds prevents fetching another user's card.
+  if (forceId) {
+    return fetchFullCard(forceId, deckIds);
+  }
 
   // Tag filter clause — applied to every card lookup below.
   const tagFilter =
@@ -162,9 +174,12 @@ export async function getDueCount(userId: string, tagIds?: string[]): Promise<nu
 // Internal helpers
 // ---------------------------------------------------------------------------
 
-async function fetchFullCard(cardId: string): Promise<StudyCard | null> {
-  const raw = await prisma.card.findUnique({
-    where: { id: cardId },
+async function fetchFullCard(cardId: string, deckIds?: string[]): Promise<StudyCard | null> {
+  const raw = await prisma.card.findFirst({
+    where: {
+      id: cardId,
+      ...(deckIds ? { deckId: { in: deckIds } } : {}),
+    },
     select: {
       id: true,
       type: true,

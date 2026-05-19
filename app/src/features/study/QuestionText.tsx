@@ -42,7 +42,7 @@ export default function QuestionText({ text }: Props) {
   return (
     <>
       {imageSrc && (
-        <div className="mb-4 overflow-hidden rounded-lg border border-slate-200">
+        <div className="mb-4 overflow-hidden rounded-lg border border-slate-200 dark:border-slate-700">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={imageSrc}
@@ -50,13 +50,13 @@ export default function QuestionText({ text }: Props) {
             className="h-auto w-full object-contain"
           />
           {imageAlt && (
-            <p className="border-t border-slate-100 bg-slate-50 px-3 py-1.5 text-xs text-slate-500">
+            <p className="border-t border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-700/50 px-3 py-1.5 text-xs text-slate-500 dark:text-slate-400">
               {imageAlt}
             </p>
           )}
         </div>
       )}
-      <p className="text-lg font-medium leading-snug text-slate-950">{body}</p>
+      <p className="text-lg font-medium leading-snug text-slate-950 dark:text-slate-100">{body}</p>
     </>
   );
 }

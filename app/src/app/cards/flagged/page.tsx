@@ -28,21 +28,21 @@ export default async function FlaggedPage() {
   const cards: CardDetail[] = details.filter((c): c is CardDetail => c !== null);
 
   return (
-    <main className="min-h-dvh bg-stone-50">
+    <main className="min-h-dvh bg-stone-50 dark:bg-slate-900">
       <div className="mx-auto w-full max-w-2xl px-5 py-6 sm:px-8">
-        <header className="mb-6 flex items-center justify-between border-b border-slate-200 pb-4">
+        <header className="mb-6 flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4">
           <div className="flex items-center gap-4">
             <Link
               href="/cards"
-              className="text-sm font-medium text-slate-500 hover:text-slate-700"
+              className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
             >
               ← Cards
             </Link>
-            <h1 className="text-lg font-semibold text-slate-950">
+            <h1 className="text-lg font-semibold text-slate-950 dark:text-slate-100">
               Flagged cards
             </h1>
             {cards.length > 0 && (
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-700">
+              <span className="rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-sm font-medium text-amber-700 dark:text-amber-400">
                 {cards.length} flagged
               </span>
             )}
@@ -54,15 +54,15 @@ export default async function FlaggedPage() {
           <div className="grid place-items-center py-20">
             <div className="text-center">
               <p className="mb-2 text-3xl">✓</p>
-              <h2 className="mb-1 text-xl font-semibold text-slate-950">
+              <h2 className="mb-1 text-xl font-semibold text-slate-950 dark:text-slate-100">
                 No flagged cards
               </h2>
-              <p className="mb-6 text-slate-500">
+              <p className="mb-6 text-slate-500 dark:text-slate-400">
                 Flag a card during study to review it here.
               </p>
               <Link
                 href="/study"
-                className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white hover:bg-slate-800"
+                className="rounded-md bg-slate-950 dark:bg-slate-100 px-5 py-2 text-sm font-medium text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200"
               >
                 Start studying
               </Link>

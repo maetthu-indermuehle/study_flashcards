@@ -77,7 +77,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
             defaultValue={filters.search}
             onChange={handleSearchChange}
             placeholder="Search question or answer…"
-            className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm placeholder-slate-400 focus:border-sky-400 focus:outline-none"
+            className="w-full rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-3 py-2 text-sm text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
           onChange={(e) =>
             pushFilters({ type: e.target.value as CardType | "ALL", page: 1 })
           }
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+          className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
         >
           <option value="ALL">All types</option>
           <option value="MULTIPLE_CHOICE">Multiple choice</option>
@@ -103,7 +103,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
               page: 1,
             })
           }
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+          className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
         >
           <option value="ALL">All difficulties</option>
           <option value="EASY">Easy</option>
@@ -120,7 +120,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
               page: 1,
             })
           }
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+          className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
         >
           <option value="ALL">All statuses</option>
           <option value="PUBLISHED">Published</option>
@@ -138,7 +138,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
             ];
             pushFilters({ sort, sortDir, page: 1 });
           }}
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-sky-400 focus:outline-none"
+          className="rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-3 py-2 text-sm focus:border-sky-400 dark:focus:border-sky-500 focus:outline-none"
         >
           <option value="createdAt-asc">Oldest first</option>
           <option value="createdAt-desc">Newest first</option>
@@ -147,7 +147,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
         </select>
 
         {/* Flagged only */}
-        <label className="flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
+        <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">
           <input
             type="checkbox"
             checked={filters.flaggedOnly}
@@ -161,7 +161,7 @@ export default function CardBrowser({ cards, total, filters }: Props) {
       </div>
 
       {/* Result count */}
-      <div className="mb-3 flex items-center justify-between text-sm text-slate-500">
+      <div className="mb-3 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>
           {total === 0
             ? "No cards"
@@ -174,9 +174,9 @@ export default function CardBrowser({ cards, total, filters }: Props) {
       </div>
 
       {/* Card list */}
-      <div className={`divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white ${isPending ? "opacity-60" : ""}`}>
+      <div className={`divide-y divide-slate-100 dark:divide-slate-700 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 ${isPending ? "opacity-60" : ""}`}>
         {cards.length === 0 ? (
-          <p className="px-4 py-8 text-center text-sm text-slate-500">
+          <p className="px-4 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
             No cards match your filters.
           </p>
         ) : (
@@ -190,17 +190,17 @@ export default function CardBrowser({ cards, total, filters }: Props) {
           <button
             disabled={filters.page <= 1 || isPending}
             onClick={() => pushFilters({ page: filters.page - 1 })}
-            className="rounded-md px-3 py-1.5 text-slate-600 hover:bg-slate-100 disabled:opacity-40"
+            className="rounded-md px-3 py-1.5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40"
           >
             ← Previous
           </button>
-          <span className="text-slate-500">
+          <span className="text-slate-500 dark:text-slate-400">
             Page {filters.page} of {totalPages}
           </span>
           <button
             disabled={filters.page >= totalPages || isPending}
             onClick={() => pushFilters({ page: filters.page + 1 })}
-            className="rounded-md px-3 py-1.5 text-slate-600 hover:bg-slate-100 disabled:opacity-40"
+            className="rounded-md px-3 py-1.5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40"
           >
             Next →
           </button>
@@ -223,14 +223,14 @@ function CardRow({ card }: { card: CardListItem }) {
   return (
     <Link
       href={`/cards/${card.id}`}
-      className="block px-4 py-3 hover:bg-slate-50 transition-colors"
+      className="block px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
     >
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           {/* Row 1: ID + badges */}
           <div className="mb-1 flex flex-wrap items-center gap-1.5">
             {card.originalId && (
-              <span className="font-mono text-xs text-slate-400">
+              <span className="font-mono text-xs text-slate-400 dark:text-slate-500">
                 {card.originalId}
               </span>
             )}
@@ -240,26 +240,26 @@ function CardRow({ card }: { card: CardListItem }) {
               <StatusBadge status={card.status} />
             )}
             {card.flagged && (
-              <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">
+              <span className="rounded-full bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 text-xs font-medium text-amber-700 dark:text-amber-400">
                 flagged
               </span>
             )}
           </div>
           {/* Row 2: Question */}
-          <p className="text-sm text-slate-800">{excerpt}</p>
+          <p className="text-sm text-slate-800 dark:text-slate-200">{excerpt}</p>
           {/* Row 3: Tags */}
           {card.tags.length > 0 && (
             <div className="mt-1 flex flex-wrap gap-1">
               {card.tags.slice(0, 4).map((t) => (
                 <span
                   key={t.id}
-                  className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600"
+                  className="rounded-full bg-slate-100 dark:bg-slate-700 px-2 py-0.5 text-xs text-slate-600 dark:text-slate-300"
                 >
                   {t.name}
                 </span>
               ))}
               {card.tags.length > 4 && (
-                <span className="text-xs text-slate-400">
+                <span className="text-xs text-slate-400 dark:text-slate-500">
                   +{card.tags.length - 4}
                 </span>
               )}
@@ -269,11 +269,11 @@ function CardRow({ card }: { card: CardListItem }) {
         {/* Due date */}
         <div className="shrink-0 text-right">
           {card.reviewCount > 0 ? (
-            <span className="text-xs text-slate-400">
+            <span className="text-xs text-slate-400 dark:text-slate-500">
               {card.dueAt ? formatDue(card.dueAt) : "—"}
             </span>
           ) : (
-            <span className="text-xs text-slate-400">new</span>
+            <span className="text-xs text-slate-400 dark:text-slate-500">new</span>
           )}
         </div>
       </div>
@@ -287,7 +287,7 @@ function CardRow({ card }: { card: CardListItem }) {
 
 function TypeBadge({ type }: { type: CardListItem["type"] }) {
   return (
-    <span className="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-medium text-sky-700">
+    <span className="rounded-full bg-sky-100 dark:bg-sky-900/30 px-2 py-0.5 text-xs font-medium text-sky-700 dark:text-sky-400">
       {type === "MULTIPLE_CHOICE" ? "MC" : "OA"}
     </span>
   );
@@ -295,9 +295,9 @@ function TypeBadge({ type }: { type: CardListItem["type"] }) {
 
 function DifficultyBadge({ difficulty }: { difficulty: CardListItem["difficulty"] }) {
   const colours: Record<string, string> = {
-    EASY: "bg-emerald-100 text-emerald-700",
-    MEDIUM: "bg-yellow-100 text-yellow-700",
-    HARD: "bg-red-100 text-red-700",
+    EASY: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400",
+    MEDIUM: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400",
+    HARD: "bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400",
   };
   return (
     <span
@@ -310,8 +310,8 @@ function DifficultyBadge({ difficulty }: { difficulty: CardListItem["difficulty"
 
 function StatusBadge({ status }: { status: CardListItem["status"] }) {
   const colours: Record<string, string> = {
-    DRAFT: "bg-slate-100 text-slate-600",
-    ARCHIVED: "bg-rose-100 text-rose-700",
+    DRAFT: "bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300",
+    ARCHIVED: "bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400",
   };
   return (
     <span

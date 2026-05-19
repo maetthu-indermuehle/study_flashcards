@@ -41,22 +41,22 @@ export default function CardIdBadge({ originalId, topics, tags }: Props) {
         tabIndex={hasInfo ? 0 : undefined}
         onClick={() => hasInfo && setOpen((v) => !v)}
         onKeyDown={(e) => e.key === "Enter" && hasInfo && setOpen((v) => !v)}
-        className={`font-mono text-xs text-slate-400 ${hasInfo ? "cursor-pointer select-none" : ""}`}
+        className={`font-mono text-xs text-slate-400 dark:text-slate-500 ${hasInfo ? "cursor-pointer select-none" : ""}`}
       >
         {originalId}
       </span>
 
       {open && hasInfo && (
-        <span className="absolute bottom-full left-0 z-10 mb-1.5 w-56 rounded-lg border border-slate-200 bg-white px-3 py-2.5 shadow-md">
+        <span className="absolute bottom-full left-0 z-10 mb-1.5 w-56 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-2.5 shadow-md dark:shadow-slate-900">
           {topics.length > 0 && (
             <span className="mb-1.5 block">
-              <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-400">
+              <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
                 Topics
               </span>
               {topics.map((t) => (
                 <span
                   key={t}
-                  className="mb-0.5 block text-xs text-slate-700"
+                  className="mb-0.5 block text-xs text-slate-700 dark:text-slate-300"
                 >
                   {t}
                 </span>
@@ -65,14 +65,14 @@ export default function CardIdBadge({ originalId, topics, tags }: Props) {
           )}
           {tags.length > 0 && (
             <span className="block">
-              <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-400">
+              <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
                 Tags
               </span>
               <span className="flex flex-wrap gap-1">
                 {tags.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600"
+                    className="rounded-full bg-slate-100 dark:bg-slate-700 px-2 py-0.5 text-xs text-slate-600 dark:text-slate-300"
                   >
                     {t}
                   </span>

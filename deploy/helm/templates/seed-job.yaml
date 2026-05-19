@@ -1,0 +1,51 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "flashcards.fullname" . }}-seed
+  labels:
+    {{- include "flashcards.labels" . | nindent 4 }}
+  annotations:
+    # Run once after the first `helm install`.  The seed is idempotent (upserts),
+    # but we only hook it on post-install so it doesn't run on every upgrade.
+    "helm.sh/hook": post-install
+    "helm.sh/hook-weight": "0"
+    # Clean up the completed Job pod; recreate fresh if the chart is ever
+    # uninstalled and reinstalled.
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+spec:
+  # Retry up to 5 times with exponential back-off.  The seed may fail on the
+  # first attempt if migration (init container in the Deployment) hasn't finished
+  # writing the schema yet.
+  backoffLimit: 5
+  template:
+    metadata:
+      labels:
+        {{- include "flashcards.labels" . | nindent 8 }}
+    spec:
+      restartPolicy: OnFailure
+      {{- if .Values.imagePullSecretName }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecretName }}
+      {{- end }}
+      containers:
+        - name: seed
+          image: "{{ .Values.image.tools.repository }}:{{ .Values.image.tools.tag }}"
+          imagePullPolicy: {{ .Values.image.tools.pullPolicy }}
+          # `npx prisma db seed` calls the script defined in package.json#prisma.seed
+          command: ["npx", "prisma", "db", "seed"]
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: DATABASE_URL
+            - name: SEED_USER_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: SEED_USER_EMAIL
+            - name: SEED_USER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: SEED_USER_PASSWORD

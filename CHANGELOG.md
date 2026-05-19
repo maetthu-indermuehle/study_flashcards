@@ -9,6 +9,33 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.0] - 2026-05-18
+
+### Added
+
+- **APPUiO / OpenShift deployment infrastructure** — everything needed to run the app on
+  [APPUiO](https://www.appuio.ch/) cloudscale-lpg-2 (`vshn-maetthu-metar-display` namespace):
+  - **Helm chart** (`deploy/helm/`) — Deployment with migration init container,
+    ClusterIP Service, OpenShift Route (edge TLS + Let's Encrypt), PostgreSQL 17 StatefulSet
+    using `bitnami/postgresql:17` (arbitrary-UID compatible), Secrets, and a post-install
+    seed Job that creates the initial admin user.
+  - **CI publish job** (`ci.yml`) — builds and pushes two images to
+    `ghcr.io/maetthu-indermuehle/ppl-flashcards` on every merge to `main`:
+    `:latest` (runner/production) and `:tools` (Prisma CLI + seed script).
+  - **CD deploy workflow** (`deploy.yml`) — auto-triggers after CI passes on `main`;
+    runs `helm upgrade --install` against the APPUiO cluster. Can also be triggered
+    manually to deploy a specific image tag.
+  - **`Dockerfile` `tools` stage** — full `node_modules` + source, used by both the
+    migration init container and the seed Job. No question data baked in — import via
+    the web UI after first login.
+  - **`deploy/README.md`** — step-by-step setup guide covering DNS, GitHub secrets,
+    ghcr.io visibility, and useful `kubectl`/`helm` commands.
+- **PSTAR question bank** (`data/questions/pstar.json`) — 192 questions from TP11919
+  (7th edition, Dec 2022) across 14 sections, in the standard app JSON import format.
+  Tags: `pstar` + per-section slug. Import via `/import` after login.
+
+---
+
 ## [0.10.3] - 2026-05-18
 
 ### Added

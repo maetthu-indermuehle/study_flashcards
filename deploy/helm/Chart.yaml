@@ -1,0 +1,9 @@
+apiVersion: v2
+name: flashcards
+description: >
+  PPL Study Flashcards — Next.js spaced-repetition app for Canadian PPL
+  ground school.  Deployed on APPUiO OpenShift (cloudscale-lpg-2).
+type: application
+version: 0.1.0
+# appVersion tracks the application release (app/package.json version).
+appVersion: "0.11.0"

@@ -9,6 +9,17 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.13.3] - 2026-05-19
+
+### Fixed
+
+- **Icon padding on iOS home screen** — first icon attempt had pre-baked rounded
+  corners and padding, making the logo appear smaller than surrounding apps.
+  Replaced with a full-bleed source image so iOS applies its own rounded mask
+  at full size. Re-add the shortcut to see the updated icon.
+
+---
+
 ## [0.13.2] - 2026-05-19
 
 ### Changed

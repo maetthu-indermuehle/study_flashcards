@@ -231,7 +231,7 @@ Deliverable:
 
 ---
 
-## Phase 10: Cleanup and UI Improvements ← current
+## Phase 10: Cleanup and UI Improvements ✓
 
 Reduce clutter and improve the user experience before adding new features.
 
@@ -249,22 +249,22 @@ Deliverable:
 
 ---
 
-## Phase 11: Media Support V1
+## Phase 11: Export and Backup Tools ← current
 
-Support image, chart, table, and diagram questions in the app.
+Keep the content portable before deploying to production.
 
 Tasks:
 
-- Wire `MediaAsset` and `CardMedia` into the app.
-- Add upload UI for attaching images to cards.
-- Display media on the question or answer side.
-- Store source information and alt text.
-- For local development, serve from app container or local volume.
-- Design for S3-compatible object storage in production.
+- Export all cards for a deck to JSON (round-trip compatible with the importer format).
+- Optional CSV export for spreadsheet review.
+- Include tags, references, difficulty, status, and deck information in the export.
+- Download via the browser (no server-side file storage needed).
+- Add export UI in the card browser (EDITOR+ only).
 
 Deliverable:
 
-- Image/chart-based questions work in the study interface.
+- Database content can be exported and re-imported, or reviewed outside the app.
+  Provides a safety net before the first production deployment.
 
 ---
 
@@ -287,20 +287,22 @@ Deliverable:
 
 ---
 
-## Phase 13: Export and Backup Tools
+## Phase 13: Media Support V1
 
-Keep the content portable.
+Support image, chart, table, and diagram questions in the app.
 
 Tasks:
 
-- Export cards to JSON (round-trip compatible with the importer).
-- Optional Markdown and CSV export.
-- Include tags, references, media metadata, and deck information.
-- Add simple backup and restore notes.
+- Wire `MediaAsset` and `CardMedia` into the app.
+- Add upload UI for attaching images to cards.
+- Display media on the question or answer side.
+- Store source information and alt text.
+- For local development, serve from app container or local volume.
+- Design for S3-compatible object storage in production.
 
 Deliverable:
 
-- Database content can be exported and reviewed outside the app.
+- Image/chart-based questions work in the study interface.
 
 ---
 

@@ -9,12 +9,14 @@ Last updated: 2026-05-18
 
 ## Current state
 
-**Phase 10 (cleanup and UI improvements) is in progress.** Working on branch
-`phase-10-cleanup-ui`.
+**Phase 11 (export and backup tools) is starting.** Working on branch
+`phase-11-export`.
 
-Phases 0–9 are complete and merged to `main`. The app is fully functional: multi-user
-with roles, spaced repetition, card management, bulk import, and installable PWA.
-Phase 10 work completed so far:
+Phases 0–10 are complete and merged to `main`. The app is fully functional: multi-user
+with roles, spaced repetition, card management, bulk import, installable PWA, and
+consistent hamburger-menu navigation on every authenticated page.
+
+Phase 10 completed work:
 
 - Repository cleanup: removed all converted Markdown source files and PNG question images
   now superseded by `data/questions/*.json`.
@@ -246,9 +248,9 @@ Phase 10 work completed so far:
 
 | Phase | Name                         | What it unlocks                                                    |
 |-------|------------------------------|--------------------------------------------------------------------|
-| 11    | Media support v1             | Media upload UI and object storage for new cards                   |
+| 11    | Export and backup tools      | JSON/CSV export so content is portable before production deploy    |
 | 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
-| 13    | Export and backup tools      | JSON, CSV export so content stays portable                         |
+| 13    | Media support v1             | Media upload UI and object storage for new cards                   |
 | 14    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
 
 ---

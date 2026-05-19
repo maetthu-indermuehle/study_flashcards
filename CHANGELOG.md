@@ -9,6 +9,19 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.3] - 2026-05-19
+
+### Fixed
+
+- **Tools Docker image size** — reduced from ~1 GB to ~300 MB by stripping
+  packages unused at tools runtime (`next`, `react`, `react-dom`, `typescript`,
+  `eslint`, `tailwindcss`, `@types`) in a single `RUN` layer. Prevents cluster
+  nodes from taking 10+ minutes to pull the image on first deploy.
+- **Missing `prisma generate` in tools stage** — the migration init container
+  and seed job now have a properly generated Prisma client.
+
+---
+
 ## [0.11.2] - 2026-05-19
 
 ### Changed

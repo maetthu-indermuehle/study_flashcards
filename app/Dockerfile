@@ -14,10 +14,29 @@ COPY . .
 EXPOSE 3000
 CMD ["npm", "run", "dev", "--", "--hostname", "0.0.0.0"]
 
-# tools — full source + all deps (prisma CLI, tsx); used for migration init
-# container and seed job.  No question data is baked in — import via web UI.
-FROM deps AS tools
-COPY . .
+# tools — minimal image for migration init container and post-install seed job.
+# Starts from scratch (not deps) and strips packages unused at tools runtime
+# (next, react, typescript, eslint, tailwindcss, @types) to keep the image
+# small so cluster nodes can pull it quickly on first deploy.
+FROM base AS tools
+COPY package.json package-lock.json ./
+RUN npm ci && \
+    rm -rf \
+      node_modules/next \
+      node_modules/react \
+      node_modules/react-dom \
+      node_modules/@next \
+      node_modules/typescript \
+      node_modules/eslint \
+      node_modules/eslint-config-next \
+      node_modules/@eslint \
+      node_modules/tailwindcss \
+      node_modules/@tailwindcss \
+      node_modules/@types \
+      node_modules/postcss
+COPY prisma/ ./prisma/
+COPY src/ ./src/
+RUN npx prisma generate
 
 FROM deps AS builder
 COPY . .

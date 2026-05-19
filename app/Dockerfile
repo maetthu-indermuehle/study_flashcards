@@ -14,30 +14,8 @@ COPY . .
 EXPOSE 3000
 CMD ["npm", "run", "dev", "--", "--hostname", "0.0.0.0"]
 
-# tools — minimal image for migration init container and post-install seed job.
-# Starts from scratch (not deps) and strips packages unused at tools runtime
-# (next, react, typescript, eslint, tailwindcss, @types) to keep the image
-# small so cluster nodes can pull it quickly on first deploy.
-FROM base AS tools
-COPY package.json package-lock.json ./
-RUN npm ci && \
-    rm -rf \
-      node_modules/next \
-      node_modules/react \
-      node_modules/react-dom \
-      node_modules/@next \
-      node_modules/typescript \
-      node_modules/eslint \
-      node_modules/eslint-config-next \
-      node_modules/@eslint \
-      node_modules/tailwindcss \
-      node_modules/@tailwindcss \
-      node_modules/@types \
-      node_modules/postcss
-COPY prisma.config.ts ./
-COPY prisma/ ./prisma/
-COPY src/ ./src/
-RUN npx prisma generate
+# tools stage is built from Dockerfile.tools at the repo root, which can also
+# access data/questions/ to bake the question bank into the image.
 
 FROM deps AS builder
 COPY . .

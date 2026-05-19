@@ -1,0 +1,43 @@
+# syntax=docker/dockerfile:1
+# Build context: repo root (so both app/ and data/ are accessible).
+# Used only by CI to build the :tools image; see app/Dockerfile for :latest.
+#
+# This image is used by:
+#   - the migration init container (npx prisma migrate deploy)
+#   - the post-install seed Job (npx prisma db seed)
+#
+# The question bank in data/questions/ is baked in so the seed Job can
+# import all cards on first deploy without needing a mounted volume.
+
+FROM node:24-alpine AS base
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+
+FROM base AS tools
+COPY app/package.json app/package-lock.json ./
+# Full install then strip packages not needed at tools runtime.
+# next, react, react-dom alone account for ~600 MB of the full deps image.
+# Combining npm ci + rm in a single RUN keeps these out of the layer.
+RUN npm ci && \
+    rm -rf \
+      node_modules/next \
+      node_modules/react \
+      node_modules/react-dom \
+      node_modules/@next \
+      node_modules/typescript \
+      node_modules/eslint \
+      node_modules/eslint-config-next \
+      node_modules/@eslint \
+      node_modules/tailwindcss \
+      node_modules/@tailwindcss \
+      node_modules/@types \
+      node_modules/postcss
+# prisma.config.ts is required by Prisma 7 — it is the file that wires up
+# the DATABASE_URL to the datasource (schema.prisma has no url field).
+COPY app/prisma.config.ts ./
+COPY app/prisma/ ./prisma/
+COPY app/src/ ./src/
+RUN npx prisma generate
+# Bake the question bank into the image so the seed Job can import all cards
+# on first deploy. The seed script reads from $QUESTIONS_DIR (default /data/questions).
+COPY data/questions/ /data/questions/

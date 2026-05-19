@@ -103,8 +103,10 @@ jobs:
       - name: Build and push tools image (:tools)
         uses: docker/build-push-action@v6
         with:
-          context: ./app
-          target: tools
+          # Context is repo root so Dockerfile.tools can access both app/ and
+          # data/questions/ (the question bank baked into the seed image).
+          context: .
+          file: ./Dockerfile.tools
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/study-flashcards:tools
           cache-from: type=gha

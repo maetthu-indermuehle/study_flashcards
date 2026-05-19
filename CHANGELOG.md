@@ -9,6 +9,18 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.6] - 2026-05-19
+
+### Fixed
+
+- **Seed job had no question data** — the tools image build context was `./app`,
+  so `data/questions/` (at repo root) was unreachable. Moved the tools image to a
+  dedicated `Dockerfile.tools` at repo root with build context `.`, and bake the
+  full question bank into `/data/questions/` so the seed Job imports all cards
+  on first deploy automatically.
+
+---
+
 ## [0.11.5] - 2026-05-19
 
 ### Changed

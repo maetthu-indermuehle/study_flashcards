@@ -16,8 +16,9 @@
 }
 
 html {
-  /* Prevent any element from causing horizontal scroll on mobile. */
-  overflow-x: hidden;
+  /* overflow-x: hidden is intentionally NOT set here — doing so on an h-full
+     element creates a scroll container that swallows wheel events, breaking
+     mouse-wheel scrolling on longer pages. The body rule below clips it. */
 }
 
 body {

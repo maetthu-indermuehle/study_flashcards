@@ -9,6 +9,18 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.12.5] - 2026-05-19
+
+### Fixed
+
+- **Mouse-wheel scroll on tall pages** — `overflow-x: hidden` on the `<html
+  class="h-full">` element was creating a fixed-height scroll container that
+  captured wheel events but couldn't scroll them (scrollbar still worked).
+  Removed the rule from `html`; the `body` rule already clips horizontal
+  overflow, so horizontal scroll prevention is unchanged.
+
+---
+
 ## [0.12.4] - 2026-05-19
 
 ### Added

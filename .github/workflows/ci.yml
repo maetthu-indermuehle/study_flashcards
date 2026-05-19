@@ -96,7 +96,7 @@ jobs:
           context: ./app
           target: runner
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/ppl-flashcards:latest
+          tags: ghcr.io/${{ github.repository_owner }}/study-flashcards:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -106,7 +106,7 @@ jobs:
           context: ./app
           target: tools
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/ppl-flashcards:tools
+          tags: ghcr.io/${{ github.repository_owner }}/study-flashcards:tools
           cache-from: type=gha
           cache-to: type=gha,mode=max
 

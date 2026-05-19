@@ -20,7 +20,7 @@ Secret (DATABASE_URL, SESSION_SECRET, seed credentials)
 Job (post-install hook — creates the initial admin user)
 ```
 
-**Two Docker images** are published to `ghcr.io/maetthu-indermuehle/ppl-flashcards`:
+**Two Docker images** are published to `ghcr.io/maetthu-indermuehle/study-flashcards`:
 
 | Tag | Purpose |
 |---|---|
@@ -43,9 +43,9 @@ Job (post-install hook — creates the initial admin user)
 ### 1. Download the chart
 
 ```bash
-curl -fsSL https://api.github.com/repos/maetthu-indermuehle/ppl-flashcards/tarball/main \
-  -o ppl-flashcards.tar.gz
-tar -xzf ppl-flashcards.tar.gz --wildcards '*/deploy/helm' --strip-components=1
+curl -fsSL https://api.github.com/repos/maetthu-indermuehle/study-flashcards/tarball/main \
+  -o study-flashcards.tar.gz
+tar -xzf study-flashcards.tar.gz --wildcards '*/deploy/helm' --strip-components=1
 ```
 
 ### 2. Create a values override file

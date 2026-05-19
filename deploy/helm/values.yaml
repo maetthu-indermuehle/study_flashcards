@@ -8,13 +8,13 @@ fullnameOverride: "flashcards"
 
 image:
   runner:
-    repository: ghcr.io/maetthu-indermuehle/ppl-flashcards
+    repository: ghcr.io/maetthu-indermuehle/study-flashcards
     tag: latest
     pullPolicy: Always
   tools:
     # The "tools" image includes the Prisma CLI and seed script.
     # Used by the migration init container and the seed Job.
-    repository: ghcr.io/maetthu-indermuehle/ppl-flashcards
+    repository: ghcr.io/maetthu-indermuehle/study-flashcards
     tag: tools
     pullPolicy: Always
 

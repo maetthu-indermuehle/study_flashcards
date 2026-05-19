@@ -27,14 +27,12 @@ image:
 # Leave empty if the ghcr.io package is public.
 imagePullSecretName: ""
 
-route:
-  # Hostname for the OpenShift Route (and the DNS CNAME you point at the router).
+ingress:
+  # Hostname — must match the DNS CNAME pointing at the cluster ingress.
   host: flashcards.maetthu.com
-  tls:
-    # Edge termination: TLS is handled by the OpenShift router; traffic inside
-    # the cluster is plain HTTP.
-    termination: edge
-    insecureEdgeTerminationPolicy: Redirect
+  # cert-manager ClusterIssuer to use for the Let's Encrypt certificate.
+  # letsencrypt-production is available on APPUiO cloudscale-lpg-2 by default.
+  clusterIssuer: letsencrypt-production
 
 app:
   port: 3000

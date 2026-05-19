@@ -9,6 +9,18 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.5] - 2026-05-19
+
+### Changed
+
+- **Replace OpenShift Route with Kubernetes Ingress** — APPUiO does not support
+  Let's Encrypt on Route objects. Switched to a standard `networking.k8s.io/v1`
+  Ingress with `cert-manager.io/cluster-issuer: letsencrypt-production` so
+  cert-manager automatically provisions and rotates the TLS certificate.
+  The `route:` values key is renamed to `ingress:` (`host` and `clusterIssuer`).
+
+---
+
 ## [0.11.4] - 2026-05-19
 
 ### Fixed

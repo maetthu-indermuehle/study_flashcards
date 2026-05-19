@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "flashcards.fullname" . }}
+  labels:
+    {{- include "flashcards.labels" . | nindent 4 }}
+  annotations:
+    # cert-manager will request a Let's Encrypt certificate for the host and
+    # store it in the TLS secret below. The cluster issuer must exist in the
+    # cluster (it does on APPUiO cloudscale-lpg-2 out of the box).
+    cert-manager.io/cluster-issuer: {{ .Values.ingress.clusterIssuer | quote }}
+spec:
+  rules:
+    - host: {{ .Values.ingress.host | quote }}
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: {{ include "flashcards.fullname" . }}
+                port:
+                  name: http
+  tls:
+    - hosts:
+        - {{ .Values.ingress.host | quote }}
+      # cert-manager creates and rotates this secret automatically.
+      secretName: {{ include "flashcards.fullname" . }}-tls

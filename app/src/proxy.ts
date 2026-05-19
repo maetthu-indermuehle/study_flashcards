@@ -11,6 +11,8 @@
  *   /login         — public; authenticated users are redirected to /
  *   /admin/*       — requires ADMIN role
  *   /cards/*       — requires EDITOR role
+ *   /import        — requires EDITOR role
+ *   /export        — requires EDITOR role
  *   /profile       — requires any authenticated user
  *   everything else — requires any authenticated user
  *
@@ -38,6 +40,7 @@ function requiredRole(pathname: string): UserRole | null {
   if (pathname === "/admin" || pathname.startsWith("/admin/")) return "ADMIN";
   if (pathname === "/cards" || pathname.startsWith("/cards/")) return "EDITOR";
   if (pathname === "/import") return "EDITOR";
+  if (pathname === "/export") return "EDITOR";
   return "USER"; // all other authenticated routes
 }
 

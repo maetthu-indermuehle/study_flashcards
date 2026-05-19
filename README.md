@@ -7,10 +7,10 @@ automatically.
 
 ## Current Status
 
-**Phase 12 in progress** — branch: `phase-12-openshift`
+**Phase 12 complete** — deployed and running at [flashcards.maetthu.com](https://flashcards.maetthu.com)
 
-- Phases 0–10 are complete and merged to `main`.
-- Phase 12 sets up the APPUiO / OpenShift deployment (Helm chart, CI/CD pipelines).
+- Phases 0–12 are complete and merged to `main`.
+- Phase 12 delivered the APPUiO / OpenShift deployment: Helm chart, CI/CD pipelines, VSHN AppCat PostgreSQL, Let's Encrypt via cert-manager.
 - Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed

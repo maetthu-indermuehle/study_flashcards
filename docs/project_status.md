@@ -3,34 +3,37 @@
 This document is a living snapshot of where the project stands and what comes next.
 Update it when a phase is completed or when plans change.
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 ---
 
 ## Current state
 
-**Phase 12 (OpenShift deployment) infrastructure is complete; deployment to APPUiO still
-needs to be triggered and verified.**  Working on branch `phase-11-export` (OpenShift work
-was done ahead of the export phase at the user's request).
+**Phase 12 (OpenShift deployment) is complete.** The app is live at
+[flashcards.maetthu.com](https://flashcards.maetthu.com). Working on branch
+`phase-11-export` (OpenShift work was done ahead of the export phase at the user's
+request).
 
-Phases 0–10 are complete and merged to `main`. The app is fully functional: multi-user
-with roles, spaced repetition, card management, bulk import, installable PWA, and
-consistent hamburger-menu navigation on every authenticated page.
+Phases 0–12 are complete and merged to `main`.
 
 Phase 12 completed work (in this branch, ahead of schedule):
 
-- Helm chart (`deploy/helm/`) with Deployment + migration init container, Service, OpenShift
-  Route (edge TLS), PostgreSQL StatefulSet (`bitnami/postgresql:17`), Secrets, seed Job.
+- Helm chart (`deploy/helm/`) with Deployment + migration init container, Service,
+  Kubernetes Ingress (cert-manager Let's Encrypt), optional PostgreSQL StatefulSet
+  (`postgres.enabled`, default true), Secrets, seed Job.
+- `postgres.enabled=false` path: external `DATABASE_URL` is supplied (e.g. from VSHN
+  AppCat PostgreSQL); all built-in postgres resources are skipped.
+- `Dockerfile.tools` at repo root: builds the tools image with full question bank access
+  (`data/questions/` is at repo root, outside `./app` build context).
 - CI `publish` job: builds and pushes `:latest` (runner) and `:tools` images to ghcr.io on
   every merge to `main`.
-- CD `deploy` workflow: auto-deploys via `helm upgrade --install` after CI passes on `main`.
-- `tools` Docker stage added to `app/Dockerfile` for migration + seed containers.
+- CD `deploy` workflow (in `metar_display-appuio` repo): provisions VSHN AppCat PostgreSQL,
+  waits for readiness, reads connection string, and deploys via `helm upgrade --install`.
 - `deploy/README.md` setup guide.
 - PSTAR question bank: 192 questions (TP11919 7th edition) added to `data/questions/pstar.json`.
 
-**Deployment status:** first deploy in progress. DNS, GitHub secrets, and ghcr.io package
-visibility are configured. A `dockerhub-pull-secret` was created in the namespace to allow
-APPUiO to pull `bitnami/postgresql:17` without hitting Docker Hub rate limits.
+**Deployment status:** live and running at flashcards.maetthu.com with Let's Encrypt TLS,
+VSHN AppCat PostgreSQL on APPUiO cloudscale-lpg-2, and full question bank seeded.
 
 Phase 10 completed work:
 

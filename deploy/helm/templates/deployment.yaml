@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "flashcards.fullname" . }}
+  labels:
+    {{- include "flashcards.labels" . | nindent 4 }}
+spec:
+  # Single replica is intentional: the spaced-repetition state lives in
+  # PostgreSQL, not in the app process, so horizontal scaling is possible
+  # later but not needed now.
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "flashcards.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "flashcards.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- if .Values.imagePullSecretName }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecretName }}
+      {{- end }}
+      initContainers:
+        # Run database migrations before the app starts.  The retry loop handles
+        # the case where the PostgreSQL pod is not yet accepting connections —
+        # Kubernetes will restart the init container until it succeeds.
+        - name: migrate
+          image: "{{ .Values.image.tools.repository }}:{{ .Values.image.tools.tag }}"
+          imagePullPolicy: {{ .Values.image.tools.pullPolicy }}
+          command:
+            - sh
+            - -c
+            - |
+              until npx prisma migrate deploy; do
+                echo "Migration failed — PostgreSQL may not be ready yet. Retrying in 5 s..."
+                sleep 5
+              done
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: DATABASE_URL
+      containers:
+        - name: flashcards
+          image: "{{ .Values.image.runner.repository }}:{{ .Values.image.runner.tag }}"
+          imagePullPolicy: {{ .Values.image.runner.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.app.port }}
+              protocol: TCP
+          env:
+            - name: PORT
+              value: {{ .Values.app.port | quote }}
+            - name: NODE_ENV
+              value: production
+            - name: HOSTNAME
+              value: "0.0.0.0"
+            - name: SESSION_MAX_AGE_SECONDS
+              value: {{ .Values.app.sessionMaxAgeSeconds | quote }}
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: DATABASE_URL
+            - name: SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-secret
+                  key: SESSION_SECRET
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 30

@@ -1,0 +1,6149 @@
+{
+  "subject": "PSTAR",
+  "cards": [
+    {
+      "id": "PSTAR-1.01",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "Which statement is true with regard to aircraft converging at approximately the same altitude?",
+      "choices": [
+        {
+          "text": "A jet airliner has the right of way over all other aircraft.",
+          "correct": false
+        },
+        {
+          "text": "An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.",
+          "correct": true
+        },
+        {
+          "text": "An aeroplane has the right of way over all other aircraft which are converging from the left.",
+          "correct": false
+        },
+        {
+          "text": "Aeroplanes towing gliders must give way to helicopters.",
+          "correct": false
+        }
+      ],
+      "answer": "An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.02",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two aircraft are converging at approximately the same altitude",
+      "choices": [
+        {
+          "text": "both aircraft shall alter heading to the left.",
+          "correct": false
+        },
+        {
+          "text": "the aircraft on the right shall avoid the other by descending.",
+          "correct": false
+        },
+        {
+          "text": "the aircraft that has the other on its right shall give way.",
+          "correct": true
+        },
+        {
+          "text": "the aircraft that has the other on its left shall give way.",
+          "correct": false
+        }
+      ],
+      "answer": "the aircraft that has the other on its right shall give way.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.03",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two aircraft are converging at approximately the same altitude, which statement applies?",
+      "choices": [
+        {
+          "text": "Gliders shall give way to helicopters.",
+          "correct": false
+        },
+        {
+          "text": "Aeroplanes shall give way to power driven heavier than air aircraft.",
+          "correct": false
+        },
+        {
+          "text": "Gliders shall give way to aeroplanes.",
+          "correct": false
+        },
+        {
+          "text": "Power driven heavier than air aircraft shall give way to gliders.",
+          "correct": true
+        }
+      ],
+      "answer": "Power driven heavier than air aircraft shall give way to gliders.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.04",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two aircraft are converging at approximately the same altitude, which statement applies?",
+      "choices": [
+        {
+          "text": "Gliders shall give way to helicopters.",
+          "correct": false
+        },
+        {
+          "text": "Aeroplanes shall give way to helicopters.",
+          "correct": false
+        },
+        {
+          "text": "Helicopters shall give way to aeroplanes.",
+          "correct": false
+        },
+        {
+          "text": "Helicopters shall give way to gliders.",
+          "correct": true
+        }
+      ],
+      "answer": "Helicopters shall give way to gliders.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.05",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two aircraft are converging at approximately the same altitude, which statement applies?",
+      "choices": [
+        {
+          "text": "Gliders shall give way to helicopters.",
+          "correct": false
+        },
+        {
+          "text": "Aeroplanes shall give way to helicopters.",
+          "correct": false
+        },
+        {
+          "text": "Helicopters shall give way to aeroplanes.",
+          "correct": false
+        },
+        {
+          "text": "Gliders shall give way to balloons.",
+          "correct": true
+        }
+      ],
+      "answer": "Gliders shall give way to balloons.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.06",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": ".html --> PSTAR Section 1 var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\"); document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\")); try{ var pageTracker = _gat._getTracker(\"UA-12434235-1\"); pageTracker._trackPageview(); } catch(err) {} .auto-style9 { text-align: left; } .style7 { font-size: xx-small; } .auto-style1 { color: #000000; font-family: \"Bookman Old Style\"; } .leftnav-color { color: #565353; font-family:\"Bookman Old Style\"; font-size:12pt; } #leftnav a:hover { color: #990000; font-weight:bold; font-size:12pt; } } .auto-style6 { font-size: medium; font-family: \"Bookman Old Style\"; } .auto-style7 { color: #000000; font-size: medium; font-family: \"Bookman Old Style\"; } HOME PAGE FLIGHT TRAINING STUDENT RESOURCES ONLINE SCHEDULE CHARTER SERVICE SCENIC FLIGHTS OUR AIRCRAFT PILOT SUPPLIES AERIAL PHOTOGRAPHY CFI INSIGHTS WHY CHOOSE PRINCIPAL AIR ABBOTSFORD AIRPORT INFORMATION PHOTO GALLERY AVIATION LINKS CONTACT US Phone : (604) 850-0290 Email: info@principalair.c a Unit D 30460 Liberator Ave. (Just past the Main Terminal) Abbotsford International Airport V2T 6H5 follow us on: Section 1 Collision Avoidance 1.06 When converging at approximately the same altitude",
+      "choices": [
+        {
+          "text": "balloons shall give way to hang gliders.",
+          "correct": false
+        },
+        {
+          "text": "aeroplanes towing gliders shall give way to balloons.",
+          "correct": true
+        },
+        {
+          "text": "balloons shall give way to gliders.",
+          "correct": false
+        },
+        {
+          "text": "balloons shall give way to airships.",
+          "correct": false
+        }
+      ],
+      "answer": "aeroplanes towing gliders shall give way to balloons.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.07",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two power driven heavier than air aircraft are converging at approximately the same altitude,",
+      "choices": [
+        {
+          "text": "the one on the left has the right of way.",
+          "correct": false
+        },
+        {
+          "text": "both shall alter heading to the left.",
+          "correct": false
+        },
+        {
+          "text": "the one on the right has the right of way.",
+          "correct": true
+        },
+        {
+          "text": "the one on the right shall give way by descending.",
+          "correct": false
+        }
+      ],
+      "answer": "the one on the right has the right of way.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.08",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When two aircraft are approaching head on or approximately so and there is danger of collision, each pilot shall",
+      "choices": [
+        {
+          "text": "decrease airspeed.",
+          "correct": false
+        },
+        {
+          "text": "increase airspeed.",
+          "correct": false
+        },
+        {
+          "text": "alter heading to the right.",
+          "correct": true
+        },
+        {
+          "text": "alter heading to the left.",
+          "correct": false
+        }
+      ],
+      "answer": "alter heading to the right.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.09",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "When overtaking an aircraft at your 12 o'clock position, at your altitude, you should",
+      "choices": [
+        {
+          "text": "climb.",
+          "correct": false
+        },
+        {
+          "text": "descend.",
+          "correct": false
+        },
+        {
+          "text": "alter heading to the right.",
+          "correct": true
+        },
+        {
+          "text": "alter heading to the left.",
+          "correct": false
+        }
+      ],
+      "answer": "alter heading to the right.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-1.10",
+      "topic": "PSTAR - Collision Avoidance",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "collision-avoidance"
+      ],
+      "question": "Two aircraft are on approach to land, the aircraft at the higher altitude shall",
+      "choices": [
+        {
+          "text": "have the right of way.",
+          "correct": false
+        },
+        {
+          "text": "overtake the lower aircraft on the left.",
+          "correct": false
+        },
+        {
+          "text": "give way.",
+          "correct": true
+        },
+        {
+          "text": "complete a 360° turn to the right.",
+          "correct": false
+        }
+      ],
+      "answer": "give way.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.10, CARs 602.19"
+    },
+    {
+      "id": "PSTAR-2.01",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "A series of green flashes directed at an aircraft means respectively",
+      "choices": [
+        {
+          "text": "in flight: cleared to land; on the ground: cleared to taxi.",
+          "correct": false
+        },
+        {
+          "text": "in flight: return for landing; on the ground: cleared for take off.",
+          "correct": false
+        },
+        {
+          "text": "in flight: return for landing; on the ground: cleared to taxi.",
+          "correct": true
+        },
+        {
+          "text": "in flight: cleared to land; on the ground: cleared for take off.",
+          "correct": false
+        }
+      ],
+      "answer": "in flight: return for landing; on the ground: cleared to taxi.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11, AIM - RAC 4.5.7 Visual signals"
+    },
+    {
+      "id": "PSTAR-2.02",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "A steady red light directed at an aircraft means",
+      "choices": [
+        {
+          "text": "in flight: give way to other aircraft and continue circling; on the ground: stop.",
+          "correct": true
+        },
+        {
+          "text": "in flight: give way to other aircraft and continue circling; on the ground: taxi clear of landing area in use.",
+          "correct": false
+        },
+        {
+          "text": "in flight: airport unsafe do not land; on the ground: taxi clear of landing area in use.",
+          "correct": false
+        },
+        {
+          "text": "in flight: airport unsafe do not land; on the ground: stop.",
+          "correct": false
+        }
+      ],
+      "answer": "in flight: give way to other aircraft and continue circling; on the ground: stop.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11, AIM - RAC 4.5.7 Visual signals"
+    },
+    {
+      "id": "PSTAR-2.03",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "A series of red flashes directed at an aircraft means respectively",
+      "choices": [
+        {
+          "text": "in flight: airport unsafe, do not land; on the ground: taxi clear of landing area in use.",
+          "correct": true
+        },
+        {
+          "text": "in flight: give way to other aircraft and continue circling; on the ground: stop.",
+          "correct": false
+        },
+        {
+          "text": "in flight: do not land for time being; on the ground: return to starting point on airport.",
+          "correct": false
+        },
+        {
+          "text": "in flight: you are in prohibited area, alter course; on the ground: stop.",
+          "correct": false
+        }
+      ],
+      "answer": "in flight: airport unsafe, do not land; on the ground: taxi clear of landing area in use.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11, AIM - RAC 4.5.7 Visual signals"
+    },
+    {
+      "id": "PSTAR-2.04",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "Reference: AIM - RAC 4. 3 .11, AIM - RAC 4. 5 .7 Visual signals > \" ONCLICK=\"document.location.href='pstar 2.5.html'\" style=\"height: 40px\">",
+      "choices": [
+        {
+          "text": "in flight: cleared to land; on the ground: cleared to taxi.",
+          "correct": false
+        },
+        {
+          "text": "in flight: return for landing; on the ground: cleared to taxi.",
+          "correct": false
+        },
+        {
+          "text": "in flight: return for landing; on the ground: cleared for take off.",
+          "correct": false
+        },
+        {
+          "text": "in flight: cleared to land; on the ground: cleared for take off.",
+          "correct": true
+        }
+      ],
+      "answer": "in flight: cleared to land; on the ground: cleared for take off.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11, AIM - RAC 4.5.7 Visual signals"
+    },
+    {
+      "id": "PSTAR-2.05",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "A flashing white light directed at an aircraft on the manoeuvring area of an airport means",
+      "choices": [
+        {
+          "text": "stop.",
+          "correct": false
+        },
+        {
+          "text": "return to starting point on the airport.",
+          "correct": true
+        },
+        {
+          "text": "cleared to taxi.",
+          "correct": false
+        },
+        {
+          "text": "taxi clear of landing area in use.",
+          "correct": false
+        }
+      ],
+      "answer": "return to starting point on the airport.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11 - Visual signals"
+    },
+    {
+      "id": "PSTAR-2.06",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "Blinking runway lights advises vehicles and pedestrians to",
+      "choices": [
+        {
+          "text": "return to the apron.",
+          "correct": false
+        },
+        {
+          "text": "vacate the runways immediately.",
+          "correct": true
+        },
+        {
+          "text": "be aware that an emergency is in progress; continue with caution.",
+          "correct": false
+        },
+        {
+          "text": "be aware that an emergency is in progress; hold your position.",
+          "correct": false
+        }
+      ],
+      "answer": "vacate the runways immediately.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.11 - Visual signals"
+    },
+    {
+      "id": "PSTAR-2.07",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "Chrome yellow and black strips painted on pylons or on the roof of a building identifies",
+      "choices": [
+        {
+          "text": "an area where explosives are in use.",
+          "correct": false
+        },
+        {
+          "text": "a fur farm.",
+          "correct": true
+        },
+        {
+          "text": "an artillery range.",
+          "correct": false
+        },
+        {
+          "text": "an open pit mine.",
+          "correct": false
+        }
+      ],
+      "answer": "a fur farm.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.14.1 - Fur and Poultry Farms"
+    },
+    {
+      "id": "PSTAR-2.08",
+      "topic": "PSTAR - Visual Signals",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "visual-signals"
+      ],
+      "question": "Pilots should not overfly reindeer or caribou at an altitude of less than",
+      "choices": [
+        {
+          "text": "2,500 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "2,000 feet AGL.",
+          "correct": true
+        },
+        {
+          "text": "1,500 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet AGL.",
+          "correct": false
+        }
+      ],
+      "answer": "2,000 feet AGL.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.14.3 - Reindeer, Caribou, Moose, & Muskoxen Conservation"
+    },
+    {
+      "id": "PSTAR-3.01",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "When making initial contact with a Canadian ATC unit, the pilot of aircraft C GFLU should transmit the registration as",
+      "choices": [
+        {
+          "text": "Lima Uniform over.",
+          "correct": false
+        },
+        {
+          "text": "Foxtrot Lima Uniform over.",
+          "correct": false
+        },
+        {
+          "text": "Golf Foxtrot Lima Uniform over.",
+          "correct": true
+        },
+        {
+          "text": "Charlie Golf Foxtrot Lima Uniform over.",
+          "correct": false
+        }
+      ],
+      "answer": "Golf Foxtrot Lima Uniform over.",
+      "explanation": null,
+      "reference": "AIM - COM 5.8.1 - Call Signs / Civil Aircraft"
+    },
+    {
+      "id": "PSTAR-3.02",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "When making initial contact with a Canadian ATC unit, the pilot of aircraft C-FBSQ should transmit the registration as",
+      "choices": [
+        {
+          "text": "FBSQ.",
+          "correct": false
+        },
+        {
+          "text": "Fox, Baker, Sugar, Queen.",
+          "correct": false
+        },
+        {
+          "text": "Foxtrot, Bravo, Sierra, Quebec.",
+          "correct": true
+        },
+        {
+          "text": "Bravo, Sierra, Quebec.",
+          "correct": false
+        }
+      ],
+      "answer": "Foxtrot, Bravo, Sierra, Quebec.",
+      "explanation": null,
+      "reference": "AIM - COM 5.4 - Use of Phonetics, AIM - COM 5.8.1 - Call Signs / Civil Aircraft"
+    },
+    {
+      "id": "PSTAR-3.03",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "After a Canadian privately registered aircraft has made initial contact with an ATS unit, which items may be omitted from subsequent transmissions? The aircraft type and",
+      "choices": [
+        {
+          "text": "any registration letters omitted by ATS in the last communication.",
+          "correct": false
+        },
+        {
+          "text": "the first two letters of the registration, if initiated by ATS.",
+          "correct": true
+        },
+        {
+          "text": "the first three letters of the registration.",
+          "correct": false
+        },
+        {
+          "text": "the phonetic equivalents.",
+          "correct": false
+        }
+      ],
+      "answer": "the first two letters of the registration, if initiated by ATS.",
+      "explanation": null,
+      "reference": "AIM - COM 5.8.1 - Call Signs / Civil Aircraft"
+    },
+    {
+      "id": "PSTAR-3.04",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "On initial radio contact with an ATS unit the pilot shall transmit the",
+      "choices": [
+        {
+          "text": "type of aircraft and last four letters of the registration in phonetics.",
+          "correct": true
+        },
+        {
+          "text": "last three letters of the registration in phonetics.",
+          "correct": false
+        },
+        {
+          "text": "whole registration in phonetics.",
+          "correct": false
+        },
+        {
+          "text": "type of aircraft and the last three letters of the registration in phonetics.",
+          "correct": false
+        }
+      ],
+      "answer": "type of aircraft and last four letters of the registration in phonetics.",
+      "explanation": null,
+      "reference": "AIM - COM 5.8.1 - Call Signs / Civil Aircraft"
+    },
+    {
+      "id": "PSTAR-3.05",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "ATIS is normally provided",
+      "choices": [
+        {
+          "text": "to replace the FSS.",
+          "correct": false
+        },
+        {
+          "text": "to relieve frequency congestion.",
+          "correct": true
+        },
+        {
+          "text": "for the rapid updating of weather forecasts.",
+          "correct": false
+        },
+        {
+          "text": "only when VFR conditions exist at airports.",
+          "correct": false
+        }
+      ],
+      "answer": "to relieve frequency congestion.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.3 - Automatic Terminal Information Service (ATIS)"
+    },
+    {
+      "id": "PSTAR-3.06",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Where ATIS is available the information which should be included on first contact with ATC is the",
+      "choices": [
+        {
+          "text": "phrase \"with the numbers\".",
+          "correct": false
+        },
+        {
+          "text": "phrase \"ATIS received\".",
+          "correct": false
+        },
+        {
+          "text": "phrase \"with the information\".",
+          "correct": false
+        },
+        {
+          "text": "ATIS phonetic identifier.",
+          "correct": true
+        }
+      ],
+      "answer": "ATIS phonetic identifier.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.3 - Automatic Terminal Information Service (ATIS)"
+    },
+    {
+      "id": "PSTAR-3.07",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Whenever practicable, pilots operating VFR en route in uncontrolled airspace should continuously monitor",
+      "choices": [
+        {
+          "text": "126.7 MHz.",
+          "correct": true
+        },
+        {
+          "text": "123.2 MHz.",
+          "correct": false
+        },
+        {
+          "text": "122.8 MHz.",
+          "correct": false
+        },
+        {
+          "text": "122.2 MHz.",
+          "correct": false
+        }
+      ],
+      "answer": "126.7 MHz.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.5.6 - Use of MF and ATF"
+    },
+    {
+      "id": "PSTAR-3.08",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "En route aircraft should, whenever possible, maintain a listening watch for aircraft in distress on",
+      "choices": [
+        {
+          "text": "the receiver mode of the ELT.",
+          "correct": false
+        },
+        {
+          "text": "121.5 on the aircraft receiver.",
+          "correct": true
+        },
+        {
+          "text": "121.5 during the first 5 minutes of each hour.",
+          "correct": false
+        },
+        {
+          "text": "the voice frequency of the navigation aid in use.",
+          "correct": false
+        }
+      ],
+      "answer": "121.5 on the aircraft receiver.",
+      "explanation": null,
+      "reference": "AIM - SAR 3.4 ELT Operating Instructions"
+    },
+    {
+      "id": "PSTAR-3.09",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "The specific frequency, distance and altitude within which MF procedures are to be followed are given in the",
+      "choices": [
+        {
+          "text": "CFS.",
+          "correct": true
+        },
+        {
+          "text": "Designated Airspace Handbook.",
+          "correct": false
+        },
+        {
+          "text": "TC AIM",
+          "correct": false
+        },
+        {
+          "text": "Flight Training Manual.",
+          "correct": false
+        }
+      ],
+      "answer": "CFS.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.5.4 Mandatory Frequency (MF)"
+    },
+    {
+      "id": "PSTAR-3.10",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Pilots broadcasting on a MF where no ground station is in operation should direct their transmission to the",
+      "choices": [
+        {
+          "text": "aerodrome UNICOM.",
+          "correct": false
+        },
+        {
+          "text": "closest ATC unit.",
+          "correct": false
+        },
+        {
+          "text": "aerodrome traffic.",
+          "correct": true
+        },
+        {
+          "text": "first aircraft heard on the frequency.",
+          "correct": false
+        }
+      ],
+      "answer": "aerodrome traffic.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.5.4 Mandatory Frequency (MF), AIM - RAC 4.5.6 Use of MF and ATF, CARs 602.98"
+    },
+    {
+      "id": "PSTAR-3.11",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Pilots operating in VMC and intending to land at aerodromes where no UNICOM exists, should broadcast their intentions on the ATF of",
+      "choices": [
+        {
+          "text": "121.5 MHz.",
+          "correct": false
+        },
+        {
+          "text": "122.2 MHz.",
+          "correct": false
+        },
+        {
+          "text": "123.2 MHz.",
+          "correct": true
+        },
+        {
+          "text": "126.7 MHz.",
+          "correct": false
+        }
+      ],
+      "answer": "123.2 MHz.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.5.5 - Aerodrome Traffic Frequency (ATF)"
+    },
+    {
+      "id": "PSTAR-3.12",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "If a MF is in use, pilots departing VFR shall monitor that frequency until",
+      "choices": [
+        {
+          "text": "beyond the specified distance or altitude.",
+          "correct": true
+        },
+        {
+          "text": "established en route.",
+          "correct": false
+        },
+        {
+          "text": "established at cruise altitude.",
+          "correct": false
+        },
+        {
+          "text": "clear of the aerodrome circuit pattern.",
+          "correct": false
+        }
+      ],
+      "answer": "beyond the specified distance or altitude.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.5.7 VFR Com Procedures at Aerodrome With MF and ATF, CARs 602.97"
+    },
+    {
+      "id": "PSTAR-3.13",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A pilot is cleared to taxi to the runway in use without a hold short clearance. To get there, the aircraft must cross two taxiways and one runway. This authorizes the pilot to taxi to",
+      "choices": [
+        {
+          "text": "the runway in use, but must hold short.",
+          "correct": false
+        },
+        {
+          "text": "the runway in use, but further clearance is required to cross each taxiway and runway en route.",
+          "correct": false
+        },
+        {
+          "text": "position on the runway without further clearance.",
+          "correct": false
+        },
+        {
+          "text": "the runway in use, but further clearance is required to cross the other runway.",
+          "correct": true
+        }
+      ],
+      "answer": "the runway in use, but further clearance is required to cross the other runway.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.5 - Taxi Information"
+    },
+    {
+      "id": "PSTAR-3.14",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Ground control authorizes \" GOLF ALPHA BRAVO CHARLIE TAXI RUNWAY 29 HOLD SHORT OF RUNWAY 04\". The pilot should acknowledge this by replying \"GOLF ALPHA BRAVO CHARLIE TO",
+      "choices": [
+        {
+          "text": "RUNWAY 04\".",
+          "correct": false
+        },
+        {
+          "text": "RUNWAY 29\".",
+          "correct": false
+        },
+        {
+          "text": "HOLD SHORT OF 29\".",
+          "correct": false
+        },
+        {
+          "text": "HOLD SHORT OF 04\".",
+          "correct": true
+        }
+      ],
+      "answer": "HOLD SHORT OF 04\".",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.5 - Taxi Information"
+    },
+    {
+      "id": "PSTAR-3.15",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "When a clearance for an \"immediate take off\" is accepted, the pilot shall",
+      "choices": [
+        {
+          "text": "back track on the runway to use the maximum available length for take off.",
+          "correct": false
+        },
+        {
+          "text": "taxi to a full stop in position on the runway and take off without further clearance.",
+          "correct": false
+        },
+        {
+          "text": "taxi onto the runway and take off in one continuous movement.",
+          "correct": true
+        },
+        {
+          "text": "complete the pre take off check before taxiing onto the runway and taking off.",
+          "correct": false
+        }
+      ],
+      "answer": "taxi onto the runway and take off in one continuous movement.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3.8 Take-off Clearance"
+    },
+    {
+      "id": "PSTAR-3.16",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A pilot flying a heading of 270°, receives the following message from ATC, \"Traffic 2 o'clock, 5 miles, eastbound\". This information indicates the traffic is",
+      "choices": [
+        {
+          "text": "60° to the left, altitude unknown.",
+          "correct": false
+        },
+        {
+          "text": "60° to the right, altitude unknown.",
+          "correct": true
+        },
+        {
+          "text": "90° to the right, at same altitude.",
+          "correct": false
+        },
+        {
+          "text": "90° to the left, at same altitude.",
+          "correct": false
+        }
+      ],
+      "answer": "60° to the right, altitude unknown.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.5.3 - Radar Traffic Information"
+    },
+    {
+      "id": "PSTAR-3.17",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A pilot receives the following ATC clearance \"CLEARED TO LAND, TURN RIGHT AT THE FIRST INTERSECTION\". The pilot should",
+      "choices": [
+        {
+          "text": "land and attempt to turn off even though the speed is considered too high to safely accomplish the turn.",
+          "correct": false
+        },
+        {
+          "text": "complete a touch-and-go if it is not possible to safely accomplish the turn.",
+          "correct": false
+        },
+        {
+          "text": "land and turn off at the nearest intersection possible commensurate with safety.",
+          "correct": true
+        },
+        {
+          "text": "land and do a 180° turn and taxi back to clear the runway at the required intersection.",
+          "correct": false
+        }
+      ],
+      "answer": "land and turn off at the nearest intersection possible commensurate with safety.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 ATC Clearances, Instructions and Information, CARs 602.31"
+    },
+    {
+      "id": "PSTAR-3.18",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "The radiotelephone distress signal to indicate grave and/or imminent danger requiring immediate assistance is",
+      "choices": [
+        {
+          "text": "MAYDAY, MAYDAY, MAYDAY.",
+          "correct": true
+        },
+        {
+          "text": "PAN PAN, PAN PAN, PAN PAN.",
+          "correct": false
+        },
+        {
+          "text": "SECURITY, SECURITY, SECURITY.",
+          "correct": false
+        },
+        {
+          "text": "EMERGENCY, EMERGENCY, EMERGENCY.",
+          "correct": false
+        }
+      ],
+      "answer": "MAYDAY, MAYDAY, MAYDAY.",
+      "explanation": null,
+      "reference": "AIM - COM 5.11 - Emergency Communications AIM - SAR 4.1 - Declaring an Emergency RTORC Pg.12 Distress Communications"
+    },
+    {
+      "id": "PSTAR-3.19",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "The radiotelephone urgency signal to indicate a condition concerning the safety of an aircraft, vehicle or of some person on board which does not require immediate assistance is",
+      "choices": [
+        {
+          "text": "MAYDAY, MAYDAY, MAYDAY.",
+          "correct": false
+        },
+        {
+          "text": "PAN PAN, PAN PAN, PAN PAN.",
+          "correct": true
+        },
+        {
+          "text": "EMERGENCY, EMERGENCY, EMERGENCY.",
+          "correct": false
+        },
+        {
+          "text": "URGENCY, URGENCY, URGENCY.",
+          "correct": false
+        }
+      ],
+      "answer": "PAN PAN, PAN PAN, PAN PAN.",
+      "explanation": null,
+      "reference": "RTORC Pg.18 - Urgency Comunications AIM - COM 5.11 - Emergency Communications AIM - SAR 4.1 - Declaring an Emergency"
+    },
+    {
+      "id": "PSTAR-3.20",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "What should be included along with the call sign of the aircraft and time, to indicate cancellation of a distress message?",
+      "choices": [
+        {
+          "text": "MAYDAY, MAYDAY, MAYDAY, ALL STATIONS, DISTRESS TRAFFIC ENDED, OUT.",
+          "correct": false
+        },
+        {
+          "text": "MAYDAY, ALL STATIONS, ALL STATIONS, ALL STATIONS, SILENCE FINISHED, OUT.",
+          "correct": true
+        },
+        {
+          "text": "MAYDAY CANCELLED, MAYDAY CANCELLED, MAYDAY CANCELLED.",
+          "correct": false
+        },
+        {
+          "text": "ALL STATIONS, ALL STATIONS, ALL STATIONS, EMERGENCY OVER.",
+          "correct": false
+        }
+      ],
+      "answer": "MAYDAY, ALL STATIONS, ALL STATIONS, ALL STATIONS, SILENCE FINISHED, OUT.",
+      "explanation": null,
+      "reference": "RTORC Pg.17 - Cancellation of Distress"
+    },
+    {
+      "id": "PSTAR-3.21",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A departing flight will normally remain on tower frequency until",
+      "choices": [
+        {
+          "text": "the flight is 2,000 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "25 NM from the airport.",
+          "correct": false
+        },
+        {
+          "text": "15 NM from the Control Zone.",
+          "correct": false
+        },
+        {
+          "text": "clear of the Control Zone.",
+          "correct": true
+        }
+      ],
+      "answer": "clear of the Control Zone.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.2.9 - Release From Tower Frequency"
+    },
+    {
+      "id": "PSTAR-3.22",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "You advise ATC that you are on the downwind leg. If there is other traffic in the circuit, ATC will then",
+      "choices": [
+        {
+          "text": "inform you of your number in the approach sequence or other appropriate instructions.",
+          "correct": true
+        },
+        {
+          "text": "inform you of the runway in use, wind and altimeter.",
+          "correct": false
+        },
+        {
+          "text": "advise you of all other circuit traffic.",
+          "correct": false
+        },
+        {
+          "text": "clear you to land.",
+          "correct": false
+        }
+      ],
+      "answer": "inform you of your number in the approach sequence or other appropriate instructions.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.2 - Initial Clearance"
+    },
+    {
+      "id": "PSTAR-3.23",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A radio equipped aircraft has been cleared to land at a controlled airport. The pilot should acknowledge the clearance by",
+      "choices": [
+        {
+          "text": "replying \"Roger\".",
+          "correct": false
+        },
+        {
+          "text": "replying \"Wilco\".",
+          "correct": false
+        },
+        {
+          "text": "clicking the microphone button.",
+          "correct": false
+        },
+        {
+          "text": "transmitting the aircraft call sign.",
+          "correct": true
+        }
+      ],
+      "answer": "transmitting the aircraft call sign.",
+      "explanation": null,
+      "reference": "AIM - COM 5.9 - Standard Radio Telephony"
+    },
+    {
+      "id": "PSTAR-3.24",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "An initial call to Timmins FSS should be \"Timmins",
+      "choices": [
+        {
+          "text": "radio . ..\"",
+          "correct": true
+        },
+        {
+          "text": "Flight Service Station this is...\"",
+          "correct": false
+        },
+        {
+          "text": "UNICOM this is...\"",
+          "correct": false
+        },
+        {
+          "text": "this is...\"",
+          "correct": false
+        }
+      ],
+      "answer": "radio . ..\"",
+      "explanation": null,
+      "reference": "AIM - COM 5.8.2 - Ground Stations"
+    },
+    {
+      "id": "PSTAR-3.25",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A responsibility of a flight service specialist is to provide",
+      "choices": [
+        {
+          "text": "air traffic control.",
+          "correct": false
+        },
+        {
+          "text": "flight planning service.",
+          "correct": true
+        },
+        {
+          "text": "air traffic service in uncontrolled airspace only.",
+          "correct": false
+        },
+        {
+          "text": "terminal radar service.",
+          "correct": false
+        }
+      ],
+      "answer": "flight planning service.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.1.3 - Flight Service Station (FSS)"
+    },
+    {
+      "id": "PSTAR-3.26",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "NOTAM are",
+      "choices": [
+        {
+          "text": "available at all FSS.",
+          "correct": true
+        },
+        {
+          "text": "mailed to all pilots.",
+          "correct": false
+        },
+        {
+          "text": "issued for airport facility closures only.",
+          "correct": false
+        },
+        {
+          "text": "valid for 24 hours.",
+          "correct": false
+        }
+      ],
+      "answer": "available at all FSS.",
+      "explanation": null,
+      "reference": "AIM - MAP 5.2 - NOTAM Distribution - Canadian"
+    },
+    {
+      "id": "PSTAR-3.27",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "A new or replacing NOTAM without the term \"APRX\" is valid",
+      "choices": [
+        {
+          "text": "for 48 hours only.",
+          "correct": false
+        },
+        {
+          "text": "for the day it was issued.",
+          "correct": false
+        },
+        {
+          "text": "until the time quoted in the NOTAM.",
+          "correct": true
+        },
+        {
+          "text": "until a cancelling NOTAM is issued.",
+          "correct": false
+        }
+      ],
+      "answer": "until the time quoted in the NOTAM.",
+      "explanation": null,
+      "reference": "AIM - MAP 5.6.2 - NOTAM Format / Replacing NOTAM AIM - MAP 5.6.1 - NOTAM Format / New NOTAM"
+    },
+    {
+      "id": "PSTAR-3.28",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "The term \"APRX\" when contained in a new or replacing NOTAM means the NOTAM is valid",
+      "choices": [
+        {
+          "text": "for approximately 24 hours.",
+          "correct": false
+        },
+        {
+          "text": "for approximately 48 hours.",
+          "correct": false
+        },
+        {
+          "text": "until the time quoted in the NOTAM.",
+          "correct": false
+        },
+        {
+          "text": "until a cancelling or replacing NOTAM is issued.",
+          "correct": true
+        }
+      ],
+      "answer": "until a cancelling or replacing NOTAM is issued.",
+      "explanation": null,
+      "reference": "AIM - MAP 5.6.2 - NOTAM Format / Replacing NOTAM AIM - MAP 5.6.1 - NOTAM Format / New NOTAM"
+    },
+    {
+      "id": "PSTAR-3.29",
+      "topic": "PSTAR - Communications",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "communications"
+      ],
+      "question": "Your radio transmissions are reported READABILITY THREE. This means that your transmissions are",
+      "choices": [
+        {
+          "text": "readable now and then.",
+          "correct": false
+        },
+        {
+          "text": "readable with difficulty.",
+          "correct": true
+        },
+        {
+          "text": "readable.",
+          "correct": false
+        },
+        {
+          "text": "perfectly readable.",
+          "correct": false
+        }
+      ],
+      "answer": "readable with difficulty.",
+      "explanation": null,
+      "reference": "AIM - COM 5.10 - Communications Checks"
+    },
+    {
+      "id": "PSTAR-4.01",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "An airport is",
+      "choices": [
+        {
+          "text": "an aerodrome with paved runways.",
+          "correct": false
+        },
+        {
+          "text": "an aerodrome with a control tower.",
+          "correct": false
+        },
+        {
+          "text": "a registered aerodrome.",
+          "correct": false
+        },
+        {
+          "text": "a certified aerodrome.",
+          "correct": true
+        }
+      ],
+      "answer": "a certified aerodrome.",
+      "explanation": null,
+      "reference": "AIM - AGA 2.1 - Aerodromes and Airports / General CARs 101.01, CARs 302.03"
+    },
+    {
+      "id": "PSTAR-4.02",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "A dry Transport Canada standard wind direction indicator when horizontal indicates a wind speed of at least",
+      "choices": [
+        {
+          "text": "25 KT.",
+          "correct": false
+        },
+        {
+          "text": "15 KT.",
+          "correct": true
+        },
+        {
+          "text": "10 KT.",
+          "correct": false
+        },
+        {
+          "text": "6 KT.",
+          "correct": false
+        }
+      ],
+      "answer": "15 KT.",
+      "explanation": null,
+      "reference": "AIM - AGA 5.9 - Wind Direction Indicators"
+    },
+    {
+      "id": "PSTAR-4.03",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "No person shall operate any vehicle on any part of an uncontrolled airport used for the movement of aircraft, except in accordance with permission from",
+      "choices": [
+        {
+          "text": "the operator of the airport.",
+          "correct": true
+        },
+        {
+          "text": "the airport security officer.",
+          "correct": false
+        },
+        {
+          "text": "a federal peace officer.",
+          "correct": false
+        },
+        {
+          "text": "a qualified flying instructor.",
+          "correct": false
+        }
+      ],
+      "answer": "the operator of the airport.",
+      "explanation": null,
+      "reference": "CARs 301.08"
+    },
+    {
+      "id": "PSTAR-4.04",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "Runways and taxiways or portions thereof that are closed to aircraft are marked by",
+      "choices": [
+        {
+          "text": "red flags.",
+          "correct": false
+        },
+        {
+          "text": "horizontal red squares with yellow diagonals.",
+          "correct": false
+        },
+        {
+          "text": "a white or yellow X.",
+          "correct": true
+        },
+        {
+          "text": "white dumb bells.",
+          "correct": false
+        }
+      ],
+      "answer": "a white or yellow X.",
+      "explanation": null,
+      "reference": "AIM - AGA 5.6 - Closed Markings"
+    },
+    {
+      "id": "PSTAR-4.05",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "The west end of a runway oriented east and west is numbered",
+      "choices": [
+        {
+          "text": "09.",
+          "correct": true
+        },
+        {
+          "text": "90.",
+          "correct": false
+        },
+        {
+          "text": "27.",
+          "correct": false
+        },
+        {
+          "text": "270.",
+          "correct": false
+        }
+      ],
+      "answer": "09.",
+      "explanation": null,
+      "reference": "AIM - AGA 5.4 - Runway Markings / Flight Training Manual Shapter 5"
+    },
+    {
+      "id": "PSTAR-4.06",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "Refer to image below HOLDING POSITION MARKINGS (Diagram #1) At controlled airports, the taxiway holding position markings in diagrams A and B indicate that aircraft shall stop",
+      "choices": [
+        {
+          "text": "on the solid line side at all times.",
+          "correct": false
+        },
+        {
+          "text": "on the solid line side unless otherwise cleared by ATC.",
+          "correct": true
+        },
+        {
+          "text": "before crossing the lines from either side at all times.",
+          "correct": false
+        },
+        {
+          "text": "before crossing the lines from either side unless otherwise cleared by ATC.",
+          "correct": false
+        }
+      ],
+      "answer": "on the solid line side unless otherwise cleared by ATC.",
+      "explanation": null,
+      "reference": "AIM - AGA 5.4.3 - Taxiway Exit and Holding Markings"
+    },
+    {
+      "id": "PSTAR-4.07",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "Where taxiway holding positions have not been established, aircraft waiting to enter an active runway should normally hold",
+      "choices": [
+        {
+          "text": "clear of the manoeuvring area.",
+          "correct": false
+        },
+        {
+          "text": "50 feet from the edge of the runway.",
+          "correct": false
+        },
+        {
+          "text": "150 feet from the edge of the runway.",
+          "correct": false
+        },
+        {
+          "text": "200 feet from the edge of the runway.",
+          "correct": true
+        }
+      ],
+      "answer": "200 feet from the edge of the runway.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.2.6 - Taxi Holding Positions"
+    },
+    {
+      "id": "PSTAR-4.08",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "The manoeuvring area of an airport is that area",
+      "choices": [
+        {
+          "text": "normally referred to as the ramp or apron.",
+          "correct": false
+        },
+        {
+          "text": "which includes the apron, taxiways and runways.",
+          "correct": false
+        },
+        {
+          "text": "used when taxiing to and from the parking area.",
+          "correct": false
+        },
+        {
+          "text": "used for taxiing, taking off and landing.",
+          "correct": true
+        }
+      ],
+      "answer": "used for taxiing, taking off and landing.",
+      "explanation": null,
+      "reference": "CARs 101.01 - Manoeuvring area"
+    },
+    {
+      "id": "PSTAR-4.09",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "Except for the purpose of taking off or landing, an aircraft shall not be flown over an aerodrome at a height of less than",
+      "choices": [
+        {
+          "text": "2,000 feet AGL.",
+          "correct": true
+        },
+        {
+          "text": "1,500 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "500 feet AGL.",
+          "correct": false
+        }
+      ],
+      "answer": "2,000 feet AGL.",
+      "explanation": null,
+      "reference": "CARs 602.96"
+    },
+    {
+      "id": "PSTAR-4.10",
+      "topic": "PSTAR - Aerodromes and Airports",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aerodromes-and-airports"
+      ],
+      "question": "Refer to image below HELIPORT MARKINGS (Diagram #1) Select the helicopter ground markings which identify respectively a hospital heliport, a heliport.",
+      "choices": [
+        {
+          "text": "D, C.",
+          "correct": false
+        },
+        {
+          "text": "D, A.",
+          "correct": false
+        },
+        {
+          "text": "B, C.",
+          "correct": false
+        },
+        {
+          "text": "A, B.",
+          "correct": true
+        }
+      ],
+      "answer": "A, B.",
+      "explanation": null,
+      "reference": "AIM - AGA 5.5.5 - Apron Touchdown Pad Marking AIM - AGA 5.5.4 - Arrival and Departure Hover Area Marking AIM - AGA 5.5.3 - Heliport Identification Markings"
+    },
+    {
+      "id": "PSTAR-5.01",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "Except for ultra-light aeroplanes and balloons, which documents shall be carried on board when flying a radio equipped Canadian privately registered aircraft? Items A, B and Certificate of Airworthiness or Flight Permit. Certificate of Registration. Technical log. Crew licences. Radiotelephone Operator's Restricted Certificate. Type certificate. Aircraft journey log book, unless otherwise authorized by the Minister. Proof of liability insurance.",
+      "choices": [
+        {
+          "text": "C, D, E, G.",
+          "correct": false
+        },
+        {
+          "text": "C, D, F, H.",
+          "correct": false
+        },
+        {
+          "text": "D, E, F, G.",
+          "correct": false
+        },
+        {
+          "text": "D, E, G, H.",
+          "correct": true
+        }
+      ],
+      "answer": "D, E, G, H.",
+      "explanation": null,
+      "reference": "AIM - LRA 1.1 CARs 606.02 Miscellaneous / Liability insurance CARs 605.95 Journey log CARs 401.03 Aviation documents CARs 202.26 C of A AIM - COM 5.1 General / Aviation Notice July 15, 1999"
+    },
+    {
+      "id": "PSTAR-5.02",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "Taking into account seasonal climatic variations and geographical area, private aeroplanes and helicopters flying VFR 25 NM or more from an aerodrome or operating base may require",
+      "choices": [
+        {
+          "text": "specified emergency supplies be carried.",
+          "correct": true
+        },
+        {
+          "text": "a functioning radio capable of two way radio communication.",
+          "correct": false
+        },
+        {
+          "text": "the aircraft be multi engined when passengers are carried.",
+          "correct": false
+        },
+        {
+          "text": "all of the above",
+          "correct": false
+        }
+      ],
+      "answer": "specified emergency supplies be carried.",
+      "explanation": null,
+      "reference": "CARs 602.61"
+    },
+    {
+      "id": "PSTAR-5.03",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "A serviceable landing light is required equipment on aircraft",
+      "choices": [
+        {
+          "text": "carrying passengers at night.",
+          "correct": true
+        },
+        {
+          "text": "carrying passengers at night except private aircraft under 5,700 kg.",
+          "correct": false
+        },
+        {
+          "text": "using an unlighted aerodrome.",
+          "correct": false
+        },
+        {
+          "text": "taking off or landing at night.",
+          "correct": false
+        }
+      ],
+      "answer": "carrying passengers at night.",
+      "explanation": null,
+      "reference": "CARs 605.16"
+    },
+    {
+      "id": "PSTAR-5.04",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "Unless oxygen and oxygen masks as specified in CARs are readily available, no person shall fly unpressurized aircraft above",
+      "choices": [
+        {
+          "text": "9,500 feet ASL.",
+          "correct": false
+        },
+        {
+          "text": "10,000 feet ASL.",
+          "correct": false
+        },
+        {
+          "text": "12,500 feet ASL.",
+          "correct": false
+        },
+        {
+          "text": "13,000 feet ASL.",
+          "correct": true
+        }
+      ],
+      "answer": "13,000 feet ASL.",
+      "explanation": null,
+      "reference": "CARs 605.31"
+    },
+    {
+      "id": "PSTAR-5.05",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "No person shall fly an aircraft for more than ..... at an altitude between 10,000 and 13,000 feet ASL unless there is readily available to each flight crew member, an oxygen mask and a supply of oxygen.",
+      "choices": [
+        {
+          "text": "15 minutes.",
+          "correct": false
+        },
+        {
+          "text": "30 minutes.",
+          "correct": true
+        },
+        {
+          "text": "1 hour.",
+          "correct": false
+        },
+        {
+          "text": "2 hours.",
+          "correct": false
+        }
+      ],
+      "answer": "30 minutes.",
+      "explanation": null,
+      "reference": "CARs 605.31"
+    },
+    {
+      "id": "PSTAR-5.06",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "What safety equipment must be available to each person on board a single-engine aircraft which is taking off from or landing on water?",
+      "choices": [
+        {
+          "text": "An approved life raft.",
+          "correct": false
+        },
+        {
+          "text": "An approved life preserver.",
+          "correct": true
+        },
+        {
+          "text": "A signal flare.",
+          "correct": false
+        },
+        {
+          "text": "A signal mirror.",
+          "correct": false
+        }
+      ],
+      "answer": "An approved life preserver.",
+      "explanation": null,
+      "reference": "CARs 602.62, CARs 602.63"
+    },
+    {
+      "id": "PSTAR-5.07",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "The International VHF Emergency Frequency is",
+      "choices": [
+        {
+          "text": "121.5 MHz.",
+          "correct": true
+        },
+        {
+          "text": "121.9 MHz.",
+          "correct": false
+        },
+        {
+          "text": "122.2 MHz.",
+          "correct": false
+        },
+        {
+          "text": "126.7 MHz.",
+          "correct": false
+        }
+      ],
+      "answer": "121.5 MHz.",
+      "explanation": null,
+      "reference": "CFS, AIM - COM 5.11, CARs 602.143"
+    },
+    {
+      "id": "PSTAR-5.08",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "No pilot shall take off from or land at an aerodrome at night unless the",
+      "choices": [
+        {
+          "text": "aircraft is equipped with a functioning two way radio.",
+          "correct": false
+        },
+        {
+          "text": "aircraft is equipped with a functioning landing light or landing lights.",
+          "correct": false
+        },
+        {
+          "text": "aerodrome is lighted as prescribed by the Minister.",
+          "correct": true
+        },
+        {
+          "text": "pilot has completed 3 night landings in the previous 90 days.",
+          "correct": false
+        }
+      ],
+      "answer": "aerodrome is lighted as prescribed by the Minister.",
+      "explanation": null,
+      "reference": "CARs 301.07"
+    },
+    {
+      "id": "PSTAR-5.09",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "The CARs define an infant passenger as a person",
+      "choices": [
+        {
+          "text": "weighing less than 30 LB.",
+          "correct": false
+        },
+        {
+          "text": "under 3 years of age.",
+          "correct": false
+        },
+        {
+          "text": "weighing less than 50 LB and under 5 years of age.",
+          "correct": false
+        },
+        {
+          "text": "under 2 years of age.",
+          "correct": true
+        }
+      ],
+      "answer": "under 2 years of age.",
+      "explanation": null,
+      "reference": "CARs 101.01"
+    },
+    {
+      "id": "PSTAR-5.10",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "When the PIC directs that safety belts be fastened, an infant passenger for which no child restraint system is provided shall be",
+      "choices": [
+        {
+          "text": "fastened securely in a seat by means of a safety belt.",
+          "correct": false
+        },
+        {
+          "text": "held securely in the arms of an adult person whose safety belt shall be fastened.",
+          "correct": true
+        },
+        {
+          "text": "held securely in the arms of an adult person and a safety belt shall be fastened about both.",
+          "correct": false
+        },
+        {
+          "text": "secured by any one of the above methods.",
+          "correct": false
+        }
+      ],
+      "answer": "held securely in the arms of an adult person whose safety belt shall be fastened.",
+      "explanation": null,
+      "reference": "CARs 605.25, CARs 605.26"
+    },
+    {
+      "id": "PSTAR-5.11",
+      "topic": "PSTAR - Equipment",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "equipment"
+      ],
+      "question": "Which flight instrument systems and equipment are required on power driven aircraft for day VFR flight in controlled airspace? A magnetic direction indicating system or magnetic compass and an airspeed indicator. an attitude indicator. a sensitive altimeter. a vertical speed indicator. a turn and bank indicator. a time piece. a heading indicator.",
+      "choices": [
+        {
+          "text": "A, C, F.",
+          "correct": true
+        },
+        {
+          "text": "A, B, G.",
+          "correct": false
+        },
+        {
+          "text": "A, C, D, E, F.",
+          "correct": false
+        },
+        {
+          "text": "B, D, E, G.",
+          "correct": false
+        }
+      ],
+      "answer": "A, C, F.",
+      "explanation": null,
+      "reference": "CARs 602.59, CARs 605.14"
+    },
+    {
+      "id": "PSTAR-6.01",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "If cleared for take-off immediately following the very low approach and overshoot of a large aircraft, the pilot should",
+      "choices": [
+        {
+          "text": "take off immediately otherwise the trailing vortices will descend into the flight path.",
+          "correct": false
+        },
+        {
+          "text": "taxi to position on the runway and wait until it is considered safe to take off.",
+          "correct": false
+        },
+        {
+          "text": "decline take off clearance and inform ATC of the reason for non acceptance.",
+          "correct": true
+        },
+        {
+          "text": "wait for 2 minutes after the large aircraft has passed then take off.",
+          "correct": false
+        }
+      ],
+      "answer": "decline take off clearance and inform ATC of the reason for non acceptance.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.2.8 - Take-off Clearance AIM - RAC 1.7 - ATC Clearances, Instructions and Information"
+    },
+    {
+      "id": "PSTAR-6.02",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "The controller suggests a take off from a runway intersection. The pilot must be aware that",
+      "choices": [
+        {
+          "text": "the remaining runway length will not be stated by the controller.",
+          "correct": false
+        },
+        {
+          "text": "it is the pilot's responsibility to ensure that the remaining runway length is sufficient for take off.",
+          "correct": true
+        },
+        {
+          "text": "the controller will ensure that the remaining runway length is sufficient for take off.",
+          "correct": false
+        },
+        {
+          "text": "noise abatement procedures have been cancelled.",
+          "correct": false
+        }
+      ],
+      "answer": "it is the pilot's responsibility to ensure that the remaining runway length is sufficient for take off.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.2.8 - Take-off Clearance, CARs 602.96"
+    },
+    {
+      "id": "PSTAR-6.03",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot requests an intersection take off from ATC. If authorized,",
+      "choices": [
+        {
+          "text": "the controller will always give the remaining runway length.",
+          "correct": false
+        },
+        {
+          "text": "the controller will ensure that the remaining runway length is sufficient for take off.",
+          "correct": false
+        },
+        {
+          "text": "it is the pilot's responsibility to ensure that the remaining runway length is sufficient for take off.",
+          "correct": true
+        },
+        {
+          "text": "any noise abatement procedures for the runway are automatically cancelled.",
+          "correct": false
+        }
+      ],
+      "answer": "it is the pilot's responsibility to ensure that the remaining runway length is sufficient for take off.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.2.8 - Take-off Clearance, CARs 602.96"
+    },
+    {
+      "id": "PSTAR-6.04",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "When an arriving aircraft is cleared \"to the circuit\", the pilot should interpret this to mean join the circuit",
+      "choices": [
+        {
+          "text": "on the downwind leg.",
+          "correct": true
+        },
+        {
+          "text": "from the upwind side of the runway in all cases.",
+          "correct": false
+        },
+        {
+          "text": "on base leg if convenient.",
+          "correct": false
+        },
+        {
+          "text": "on final for a straight in approach.",
+          "correct": false
+        }
+      ],
+      "answer": "on the downwind leg.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.2 - Initial Clearance"
+    },
+    {
+      "id": "PSTAR-6.05",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "When a NORDO aircraft crosses an airport for the purpose of obtaining landing information it should maintain",
+      "choices": [
+        {
+          "text": "circuit height.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet above circuit height.",
+          "correct": false
+        },
+        {
+          "text": "at least 2,000 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "at least 500 feet above circuit height.",
+          "correct": true
+        }
+      ],
+      "answer": "at least 500 feet above circuit height.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.5 - Arrival Procedures - NORDO Aircraft"
+    },
+    {
+      "id": "PSTAR-6.06",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "An aircraft is \"cleared to the circuit\" where a left hand circuit is in effect. Without further approval from ATC a right turn may be made to",
+      "choices": [
+        {
+          "text": "join the final leg.",
+          "correct": false
+        },
+        {
+          "text": "join the base leg.",
+          "correct": false
+        },
+        {
+          "text": "join cross wind or a partial right turn to join the downwind leg.",
+          "correct": true
+        },
+        {
+          "text": "descend on the downwind leg.",
+          "correct": false
+        }
+      ],
+      "answer": "join cross wind or a partial right turn to join the downwind leg.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.2 - Initial Clearance"
+    },
+    {
+      "id": "PSTAR-6.07",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "When instructed to continue an approach to a runway which is clear of traffic, what action should the pilot take if no landing clearance is received?",
+      "choices": [
+        {
+          "text": "Circle 360° to the left.",
+          "correct": false
+        },
+        {
+          "text": "Circle 360° in the direction of the circuit.",
+          "correct": false
+        },
+        {
+          "text": "Complete the landing.",
+          "correct": false
+        },
+        {
+          "text": "Request landing clearance.",
+          "correct": true
+        }
+      ],
+      "answer": "Request landing clearance.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.3 - Landing Clearance"
+    },
+    {
+      "id": "PSTAR-6.08",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A Special Procedure NOTAM has been published for an airport, which is 400 feet ASL, stating the circuit height is 1,500 feet ASL. When the ceiling is 1,000 overcast and the visibility is 3 miles, the circuit height in controlled airspace should be",
+      "choices": [
+        {
+          "text": "500 feet below the cloud base.",
+          "correct": true
+        },
+        {
+          "text": "1,500 feet ASL.",
+          "correct": false
+        },
+        {
+          "text": "1,100 feet above the airport elevation.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet above the airport elevation.",
+          "correct": false
+        }
+      ],
+      "answer": "500 feet below the cloud base.",
+      "explanation": null,
+      "reference": "CARs 602.114"
+    },
+    {
+      "id": "PSTAR-6.09",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "When the reported ceiling is 1,000 feet overcast and visibility is 3 miles, to remain VFR, an aircraft cleared to the circuit must join",
+      "choices": [
+        {
+          "text": "as high as possible without entering cloud.",
+          "correct": false
+        },
+        {
+          "text": "at 500 feet below cloud base.",
+          "correct": true
+        },
+        {
+          "text": "at 700 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "in accordance with Special VFR.",
+          "correct": false
+        }
+      ],
+      "answer": "at 500 feet below cloud base.",
+      "explanation": null,
+      "reference": "CARs 602.114"
+    },
+    {
+      "id": "PSTAR-6.10",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "Aircraft flying VFR normally join the circuit at 1,000 feet AAE. This may not always be possible because of",
+      "choices": [
+        {
+          "text": "the possibility of a \"straight in\" clearance to the airport in which case the final leg would normally be entered at less than 1,000 feet.",
+          "correct": false
+        },
+        {
+          "text": "the existence of a special procedures NOTAM which provides for a different circuit altitude.",
+          "correct": false
+        },
+        {
+          "text": "weather conditions which may necessitate a circuit height lower than 1,000 feet.",
+          "correct": false
+        },
+        {
+          "text": "the existence of any of the above circumstances.",
+          "correct": true
+        }
+      ],
+      "answer": "the existence of any of the above circumstances.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.3 - Traffic Circuits - Controlled Airports"
+    },
+    {
+      "id": "PSTAR-6.11",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot on final approach is requested by ATC to reduce airspeed. The pilot should",
+      "choices": [
+        {
+          "text": "comply, giving due consideration to safe minimum manoeuvring speed of the aircraft.",
+          "correct": true
+        },
+        {
+          "text": "acknowledge transmission and execute a 360° turn.",
+          "correct": false
+        },
+        {
+          "text": "overshoot and rejoin the circuit.",
+          "correct": false
+        },
+        {
+          "text": "reduce airspeed well below normal approach speed range.",
+          "correct": false
+        }
+      ],
+      "answer": "comply, giving due consideration to safe minimum manoeuvring speed of the aircraft.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information AIM - RAC 9.7.3 - Speed Adjustment - Radar Controlled Aircraft CARs 602.31"
+    },
+    {
+      "id": "PSTAR-6.12",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot is cleared to land but is concerned about the high cross wind component. The pilot should",
+      "choices": [
+        {
+          "text": "use full flaps and approach at a reduced speed.",
+          "correct": false
+        },
+        {
+          "text": "alter heading and land on another runway which is more into wind.",
+          "correct": false
+        },
+        {
+          "text": "overshoot and request an into wind runway.",
+          "correct": true
+        },
+        {
+          "text": "continue the approach and land as the clearance must be obeyed.",
+          "correct": false
+        }
+      ],
+      "answer": "overshoot and request an into wind runway.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information CARs 602.31"
+    },
+    {
+      "id": "PSTAR-6.13",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot on a VFR flight is being vectored by ATC towards an extensive unbroken layer of cloud. The responsibility for remaining VFR rests with",
+      "choices": [
+        {
+          "text": "the radar operator.",
+          "correct": false
+        },
+        {
+          "text": "ATC since the flight is designated VFR.",
+          "correct": false
+        },
+        {
+          "text": "ATC since the cloud is visible on radar.",
+          "correct": false
+        },
+        {
+          "text": "the pilot.",
+          "correct": true
+        }
+      ],
+      "answer": "the pilot.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.5.4 - Radar Navigation Assistance To VFR Flights"
+    },
+    {
+      "id": "PSTAR-6.14",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A student pilot on a VFR flight has been given a radar vector by ATC. Ahead, at a lower altitude, is a solid overcast cloud condition. The pilot should",
+      "choices": [
+        {
+          "text": "climb above the cloud and fly \"VFR over the top\".",
+          "correct": false
+        },
+        {
+          "text": "alter heading as necessary to remain VFR and advise ATC.",
+          "correct": true
+        },
+        {
+          "text": "maintain heading and altitude as it is an ATC clearance.",
+          "correct": false
+        },
+        {
+          "text": "maintain heading and altitude because ATC knows of the cloud and will issue further instructions.",
+          "correct": false
+        }
+      ],
+      "answer": "alter heading as necessary to remain VFR and advise ATC.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.5.4 - Radar Navigation Assistance To VFR Flights AIM - RAC 1.7 - ATC Clearances, Instructions and Information CARs 602.31"
+    },
+    {
+      "id": "PSTAR-6.15",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "An aircraft on a Special VFR flight has been cleared for a \"straight in\" approach. Because of low ceiling and poor visibility, the pilot is concerned about the exact location of a radio mast in the vicinity. Avoiding this obstruction is the responsibility",
+      "choices": [
+        {
+          "text": "of the pilot.",
+          "correct": true
+        },
+        {
+          "text": "of the tower controller as the controller is aware of the obstruction.",
+          "correct": false
+        },
+        {
+          "text": "of ATC as the pilot has been given Special VFR clearance.",
+          "correct": false
+        },
+        {
+          "text": "shared equally by the pilot and the controller.",
+          "correct": false
+        }
+      ],
+      "answer": "of the pilot.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information"
+    },
+    {
+      "id": "PSTAR-6.16",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot on a Special VFR flight has been cleared to the circuit. Ahead, at a lower altitude, is a solid layer of stratus cloud. Remaining clear of cloud is the responsibility of",
+      "choices": [
+        {
+          "text": "the tower controller as it is within a Control Zone.",
+          "correct": false
+        },
+        {
+          "text": "ATC because the weather is below VFR.",
+          "correct": false
+        },
+        {
+          "text": "the pilot and ATC.",
+          "correct": false
+        },
+        {
+          "text": "the pilot.",
+          "correct": true
+        }
+      ],
+      "answer": "the pilot.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information AIM - RAC 2.7.4 - Control Zones"
+    },
+    {
+      "id": "PSTAR-6.17",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "A pilot on a VFR flight in Class C airspace is advised by ATC to maintain a specific heading. In the pilot's opinion, this heading will cause conflict with another aircraft. The pilot should",
+      "choices": [
+        {
+          "text": "always change altitude as required to avoid the other aircraft.",
+          "correct": false
+        },
+        {
+          "text": "maintain the specified heading to comply with the regulations.",
+          "correct": false
+        },
+        {
+          "text": "alter heading to avoid the other aircraft and advise ATC.",
+          "correct": true
+        },
+        {
+          "text": "maintain the specified heading as separation will be provided by the controller.",
+          "correct": false
+        }
+      ],
+      "answer": "alter heading to avoid the other aircraft and advise ATC.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information CARs 602.31"
+    },
+    {
+      "id": "PSTAR-6.18",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "Unless ATC instructs otherwise, pilots operating VFR shall select transponder code 1200 when flying at or below ..... feet ASL and code ..... when flying above that altitude.",
+      "choices": [
+        {
+          "text": "12,500, 1400.",
+          "correct": true
+        },
+        {
+          "text": "12,500, 1300.",
+          "correct": false
+        },
+        {
+          "text": "10,000, 1400.",
+          "correct": false
+        },
+        {
+          "text": "10,000, 1300.",
+          "correct": false
+        }
+      ],
+      "answer": "12,500, 1400.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.9.4 - VFR Operations"
+    },
+    {
+      "id": "PSTAR-6.19",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "Pilots shall activate the transponder \"ident\" feature",
+      "choices": [
+        {
+          "text": "before entering control zones.",
+          "correct": false
+        },
+        {
+          "text": "only when so instructed by ATC.",
+          "correct": true
+        },
+        {
+          "text": "before every change of altitude.",
+          "correct": false
+        },
+        {
+          "text": "after every change of an assigned code.",
+          "correct": false
+        }
+      ],
+      "answer": "only when so instructed by ATC.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.9.5 - Phraseology"
+    },
+    {
+      "id": "PSTAR-6.20",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "The holder of a student pilot permit may for the sole purpose of the holder's own flight training act as PIC of an aircraft",
+      "choices": [
+        {
+          "text": "only when accompanied by a flight instructor.",
+          "correct": false
+        },
+        {
+          "text": "by day and night.",
+          "correct": false
+        },
+        {
+          "text": "by day only.",
+          "correct": true
+        },
+        {
+          "text": "while carrying passengers.",
+          "correct": false
+        }
+      ],
+      "answer": "by day only.",
+      "explanation": null,
+      "reference": "CARs 401.19"
+    },
+    {
+      "id": "PSTAR-6.21",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "The PIC of an aircraft shall comply with any light signals or ground marking prescribed in the CARs",
+      "choices": [
+        {
+          "text": "only while in class C airspace if they are part of an ATC clearance.",
+          "correct": false
+        },
+        {
+          "text": "only while in a Control Zone if they are part of an ATC instruction.",
+          "correct": false
+        },
+        {
+          "text": "at all times.",
+          "correct": false
+        },
+        {
+          "text": "at all times provided safety is not jeopardized.",
+          "correct": true
+        }
+      ],
+      "answer": "at all times provided safety is not jeopardized.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.7 - ATC Clearances, Instructions and Information CARs 602.31"
+    },
+    {
+      "id": "PSTAR-6.22",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "Before setting out on any VFR flight, a pilot is required to",
+      "choices": [
+        {
+          "text": "read all weather reports received from stations within 100 miles of destination.",
+          "correct": false
+        },
+        {
+          "text": "file a flight itinerary.",
+          "correct": false
+        },
+        {
+          "text": "be familiar with all available information appropriate to the flight.",
+          "correct": true
+        },
+        {
+          "text": "obtain an ATC clearance.",
+          "correct": false
+        }
+      ],
+      "answer": "be familiar with all available information appropriate to the flight.",
+      "explanation": null,
+      "reference": "CARs 602.71"
+    },
+    {
+      "id": "PSTAR-6.23",
+      "topic": "PSTAR - Pilot Responsibilities",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "pilot-responsibilities"
+      ],
+      "question": "Terminal airspace dimensions and VHF sector frequencies for certain high density traffic airports in Canada are shown",
+      "choices": [
+        {
+          "text": "in the Designated Airspace Handbook and the A.I.M. Canada.",
+          "correct": false
+        },
+        {
+          "text": "on the VTA chart and in the CFS.",
+          "correct": true
+        },
+        {
+          "text": "on the VTA and VNC charts.",
+          "correct": false
+        },
+        {
+          "text": "in the CFS and on the VNC chart.",
+          "correct": false
+        }
+      ],
+      "answer": "on the VTA chart and in the CFS.",
+      "explanation": null,
+      "reference": "AIM - MAP 2.1"
+    },
+    {
+      "id": "PSTAR-7.01",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Avoiding wake turbulence is",
+      "choices": [
+        {
+          "text": "the sole responsibility of ATC.",
+          "correct": false
+        },
+        {
+          "text": "the responsibility of the pilot, only when advised by ATC of the possibility of wake turbulence.",
+          "correct": false
+        },
+        {
+          "text": "a responsibility shared by both the pilot and ATC.",
+          "correct": false
+        },
+        {
+          "text": "the sole responsibility of the pilot.",
+          "correct": true
+        }
+      ],
+      "answer": "the sole responsibility of the pilot.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.2 - Wake Turbulence / Considerations"
+    },
+    {
+      "id": "PSTAR-7.02",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Hazardous wake turbulence caused by aircraft in still air",
+      "choices": [
+        {
+          "text": "dissipates immediately.",
+          "correct": false
+        },
+        {
+          "text": "dissipates rapidly.",
+          "correct": false
+        },
+        {
+          "text": "may persist for two minutes or more.",
+          "correct": true
+        },
+        {
+          "text": "persists indefinitely.",
+          "correct": false
+        }
+      ],
+      "answer": "may persist for two minutes or more.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9. - Vortex Strength"
+    },
+    {
+      "id": "PSTAR-7.03",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Which response is most correct with respect to wake turbulence?",
+      "choices": [
+        {
+          "text": "Wing tip vortices are carried by the ambient wind.",
+          "correct": false
+        },
+        {
+          "text": "Wing tip vortices have a circular and downward motion.",
+          "correct": false
+        },
+        {
+          "text": "Wake turbulence exists behind all aeroplanes and helicopters in flight.",
+          "correct": false
+        },
+        {
+          "text": "Response (1), (2) and (3) are correct.",
+          "correct": true
+        }
+      ],
+      "answer": "Response (1), (2) and (3) are correct.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.1 - Wake Turbulence / Vortex Characteristics / General AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.04",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "The wing tip vortices generated by a heavy aeroplane can cause a lighter aircraft encountering them to",
+      "choices": [
+        {
+          "text": "go out of control.",
+          "correct": false
+        },
+        {
+          "text": "continue descent even when maximum power is applied.",
+          "correct": false
+        },
+        {
+          "text": "sustain structural damage.",
+          "correct": false
+        },
+        {
+          "text": "experience any of the above situations.",
+          "correct": true
+        }
+      ],
+      "answer": "experience any of the above situations.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence AIM - AIR 2.9.1 - Wake Turbulence / Vortex Characteristics / General"
+    },
+    {
+      "id": "PSTAR-7.05",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "During the two minutes after the passage of a heavy aeroplane in cruising flight, hazardous wing tip vortices will",
+      "choices": [
+        {
+          "text": "dissipate completely.",
+          "correct": false
+        },
+        {
+          "text": "dissipate rapidly.",
+          "correct": false
+        },
+        {
+          "text": "dissipate very slowly.",
+          "correct": true
+        },
+        {
+          "text": "remain at cruising altitude.",
+          "correct": false
+        }
+      ],
+      "answer": "dissipate very slowly.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence / Vortex Strength"
+    },
+    {
+      "id": "PSTAR-7.06",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "The pilot of a light aircraft on final approach close behind a heavier aircraft should plan the approach to land",
+      "choices": [
+        {
+          "text": "beyond the touchdown point of the other aircraft.",
+          "correct": true
+        },
+        {
+          "text": "prior to the touchdown point of the other aircraft.",
+          "correct": false
+        },
+        {
+          "text": "at the touchdown point of the other aircraft.",
+          "correct": false
+        },
+        {
+          "text": "to the right or left of the touchdown point of the other aircraft.",
+          "correct": false
+        }
+      ],
+      "answer": "beyond the touchdown point of the other aircraft.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.2 - Wake Turbulence / Considerations"
+    },
+    {
+      "id": "PSTAR-7.07",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "To avoid wake turbulence when taking off behind a large aircraft, the pilot should",
+      "choices": [
+        {
+          "text": "remain in ground effect until past the rotation point of the large aircraft.",
+          "correct": false
+        },
+        {
+          "text": "become airborne in the calm airspace between the vortices.",
+          "correct": false
+        },
+        {
+          "text": "taxi until past the rotation point of the large aircraft, then take off and remain below its climb path.",
+          "correct": false
+        },
+        {
+          "text": "become airborne before the rotation point of the large aircraft and stay above its departure path or request a turn to avoid the departure path.",
+          "correct": true
+        }
+      ],
+      "answer": "become airborne before the rotation point of the large aircraft and stay above its departure path or request a turn to avoid the departure path.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.2 - Wake Turbulence / Considerations"
+    },
+    {
+      "id": "PSTAR-7.08",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Wake turbulence is produced by",
+      "choices": [
+        {
+          "text": "heavy aeroplanes only, regardless of their speed.",
+          "correct": false
+        },
+        {
+          "text": "turbo jet powered aircraft only.",
+          "correct": false
+        },
+        {
+          "text": "fast moving aeroplanes only, regardless of their weight.",
+          "correct": false
+        },
+        {
+          "text": "all fixed and rotary wing aircraft.",
+          "correct": true
+        }
+      ],
+      "answer": "all fixed and rotary wing aircraft.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.09",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Wake turbulence caused by a departing large aeroplane begins",
+      "choices": [
+        {
+          "text": "before rotation.",
+          "correct": false
+        },
+        {
+          "text": "with rotation.",
+          "correct": true
+        },
+        {
+          "text": "after becoming airborne.",
+          "correct": false
+        },
+        {
+          "text": "with full power application.",
+          "correct": false
+        }
+      ],
+      "answer": "with rotation.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.1 - Wake Turbulence / Vortex Characteristics / General"
+    },
+    {
+      "id": "PSTAR-7.10",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Wake turbulence caused by a departing aeroplane is most severe immediately",
+      "choices": [
+        {
+          "text": "before rotation.",
+          "correct": false
+        },
+        {
+          "text": "following take off.",
+          "correct": true
+        },
+        {
+          "text": "above its flight path.",
+          "correct": false
+        },
+        {
+          "text": "following full power application.",
+          "correct": false
+        }
+      ],
+      "answer": "following take off.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.11",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Which statement concerning wing tip vortices is false?",
+      "choices": [
+        {
+          "text": "Vortices normally settle below and behind the aircraft.",
+          "correct": false
+        },
+        {
+          "text": "With a light cross wind, one vortex can remain stationary over the ground for some time.",
+          "correct": false
+        },
+        {
+          "text": "Lateral movement of vortices, even in a no wind condition, may place a vortex core over a parallel runway.",
+          "correct": false
+        },
+        {
+          "text": "Vortices are caused directly by \"jet wash\".",
+          "correct": true
+        }
+      ],
+      "answer": "Vortices are caused directly by \"jet wash\".",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.1 - Wake Turbulence / Vortex Characteristics / General"
+    },
+    {
+      "id": "PSTAR-7.12",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Wake turbulence will be greatest when generated by an aeroplane which is",
+      "choices": [
+        {
+          "text": "heavy, landing configuration and slow speed.",
+          "correct": false
+        },
+        {
+          "text": "heavy, clean configuration and slow speed.",
+          "correct": true
+        },
+        {
+          "text": "light, clean configuration and high speed.",
+          "correct": false
+        },
+        {
+          "text": "heavy, take off configuration and slow speed.",
+          "correct": false
+        }
+      ],
+      "answer": "heavy, clean configuration and slow speed.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.13",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "A helicopter in forward flight produces hazardous vortices",
+      "choices": [
+        {
+          "text": "which rise above the helicopter.",
+          "correct": false
+        },
+        {
+          "text": "similar to wing tip vortices.",
+          "correct": true
+        },
+        {
+          "text": "which remains at the same level as the helicopter.",
+          "correct": false
+        },
+        {
+          "text": "ahead of the helicopter.",
+          "correct": false
+        }
+      ],
+      "answer": "similar to wing tip vortices.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.14",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "Which statement concerning vortices caused by helicopters is correct?",
+      "choices": [
+        {
+          "text": "Helicopter vortices are generally weak and dissipate rapidly when formed near the ground.",
+          "correct": false
+        },
+        {
+          "text": "The size and weight of the helicopter has a direct influence on the intensity of the vortices.",
+          "correct": true
+        },
+        {
+          "text": "Helicopter vortices are less intense than the vortices of an aeroplane of the same weight.",
+          "correct": false
+        },
+        {
+          "text": "Wind does not influence the movement of vortices generated by a helicopter in hovering flight.",
+          "correct": false
+        }
+      ],
+      "answer": "The size and weight of the helicopter has a direct influence on the intensity of the vortices.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9 - Wake Turbulence"
+    },
+    {
+      "id": "PSTAR-7.15",
+      "topic": "PSTAR - Wake Turbulence",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "wake-turbulence"
+      ],
+      "question": "What effect would a light cross wind have on the wing tip vortices generated by a large aeroplane that had just taken off? A light cross wind",
+      "choices": [
+        {
+          "text": "could cause one vortex to remain over the runway for some time.",
+          "correct": true
+        },
+        {
+          "text": "would rapidly dissipate the strength of both vortices.",
+          "correct": false
+        },
+        {
+          "text": "would rapidly clear the runway of all vortices.",
+          "correct": false
+        },
+        {
+          "text": "would not affect the lateral movement of the vortices.",
+          "correct": false
+        }
+      ],
+      "answer": "could cause one vortex to remain over the runway for some time.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.9.1 - Wake Turbulence / Vortex Characteristics / General"
+    },
+    {
+      "id": "PSTAR-8.01",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "A flight crew member aware of being under a physical disability that might invalidate licence issue or renewal shall",
+      "choices": [
+        {
+          "text": "so advise the Minister.",
+          "correct": false
+        },
+        {
+          "text": "not commence a flight as a crew member.",
+          "correct": true
+        },
+        {
+          "text": "forward the licence to the Regional Aviation Medical Officer.",
+          "correct": false
+        },
+        {
+          "text": "fly as crew member only if a back up member is available.",
+          "correct": false
+        }
+      ],
+      "answer": "not commence a flight as a crew member.",
+      "explanation": null,
+      "reference": "CARs 404.06"
+    },
+    {
+      "id": "PSTAR-8.02",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "What is the recommended treatment for hyperventilation below 8,000 feet?",
+      "choices": [
+        {
+          "text": "Increase the depth of breathing.",
+          "correct": false
+        },
+        {
+          "text": "Hold the breath and perform a Valsalva manoeuvre.",
+          "correct": false
+        },
+        {
+          "text": "Slow the breathing rate to below 12 times per minute.",
+          "correct": true
+        },
+        {
+          "text": "Increase oxygen flow rates.",
+          "correct": false
+        }
+      ],
+      "answer": "Slow the breathing rate to below 12 times per minute.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.2.2 - Hyperventilation"
+    },
+    {
+      "id": "PSTAR-8.03",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Damage to the ear drum in flight is most likely to occur",
+      "choices": [
+        {
+          "text": "during a climb.",
+          "correct": false
+        },
+        {
+          "text": "during a descent.",
+          "correct": true
+        },
+        {
+          "text": "when using supplementary oxygen.",
+          "correct": false
+        },
+        {
+          "text": "after SCUBA diving.",
+          "correct": false
+        }
+      ],
+      "answer": "during a descent.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.8 - Middle Ear and Sinus Discomfort or Pain"
+    },
+    {
+      "id": "PSTAR-8.04",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Clearing the ears on a rapid descent may be assisted by",
+      "choices": [
+        {
+          "text": "swallowing.",
+          "correct": false
+        },
+        {
+          "text": "opening the mouth widely or yawning.",
+          "correct": false
+        },
+        {
+          "text": "a Valsalva manoeuvre.",
+          "correct": false
+        },
+        {
+          "text": "all of the above.",
+          "correct": true
+        }
+      ],
+      "answer": "all of the above.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.8 - Middle Ear and Sinus Discomfort or Pain"
+    },
+    {
+      "id": "PSTAR-8.05",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Flight crew members who require decompression stops on the way to the surface when SCUBA diving should not fly for",
+      "choices": [
+        {
+          "text": "4 hours.",
+          "correct": false
+        },
+        {
+          "text": "8 hours.",
+          "correct": false
+        },
+        {
+          "text": "12 hours.",
+          "correct": false
+        },
+        {
+          "text": "24 hours.",
+          "correct": true
+        }
+      ],
+      "answer": "24 hours.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.6 - SCUBA Diving"
+    },
+    {
+      "id": "PSTAR-8.06",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "With regard to fatigue, which statement is correct according to the information given under the \"Medical Information\" section of the TC AIM. Canada?",
+      "choices": [
+        {
+          "text": "Financial or family problems do not influence tolerance to fatigue.",
+          "correct": false
+        },
+        {
+          "text": "Fatigue slows reaction time and causes foolish inattentive errors.",
+          "correct": true
+        },
+        {
+          "text": "A fatigued person recuperates more quickly as altitude is gained.",
+          "correct": false
+        },
+        {
+          "text": "A fatigued person must have food immediately before and during flight.",
+          "correct": false
+        }
+      ],
+      "answer": "Fatigue slows reaction time and causes foolish inattentive errors.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.10 - Fatigue"
+    },
+    {
+      "id": "PSTAR-8.07",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "A pilot who has donated blood should not act as a flight crew member for at least the next",
+      "choices": [
+        {
+          "text": "12 hours.",
+          "correct": false
+        },
+        {
+          "text": "24 hours.",
+          "correct": false
+        },
+        {
+          "text": "36 hours.",
+          "correct": false
+        },
+        {
+          "text": "48 hours.",
+          "correct": true
+        }
+      ],
+      "answer": "48 hours.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.14 - Blood Donation"
+    },
+    {
+      "id": "PSTAR-8.08",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Any pilot who has had a general anaesthetic should not act as a flight crew member",
+      "choices": [
+        {
+          "text": "during the next 12 hrs.",
+          "correct": false
+        },
+        {
+          "text": "during the next 36 hrs.",
+          "correct": false
+        },
+        {
+          "text": "during the next 48 hrs.",
+          "correct": false
+        },
+        {
+          "text": "unless advised it is safe to do so by a doctor.",
+          "correct": true
+        }
+      ],
+      "answer": "unless advised it is safe to do so by a doctor.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.13 - Anesthetics"
+    },
+    {
+      "id": "PSTAR-8.09",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Any pilot who has had a local anaesthetic for extensive dental procedures should not act as a flight crew member during the next",
+      "choices": [
+        {
+          "text": "12 hrs.",
+          "correct": false
+        },
+        {
+          "text": "24 hrs.",
+          "correct": true
+        },
+        {
+          "text": "36 hrs.",
+          "correct": false
+        },
+        {
+          "text": "48 hrs.",
+          "correct": false
+        }
+      ],
+      "answer": "24 hrs.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.13 - Anesthetics"
+    },
+    {
+      "id": "PSTAR-8.10",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Relatively small amounts of alcohol affect tolerance to hypoxia (lack of sufficient oxygen). This tolerance",
+      "choices": [
+        {
+          "text": "deteriorates with increase of altitude.",
+          "correct": true
+        },
+        {
+          "text": "improves with increase of altitude.",
+          "correct": false
+        },
+        {
+          "text": "is not affected by altitude change.",
+          "correct": false
+        },
+        {
+          "text": "remains constant to 6,000 feet ASL.",
+          "correct": false
+        }
+      ],
+      "answer": "deteriorates with increase of altitude.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.11 - Alcohol"
+    },
+    {
+      "id": "PSTAR-8.11",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "Many common drugs such as cold tablets, cough mixtures, antihistamines and other over the counter remedies may seriously impair the judgment and co ordination needed while flying. The safest rule is to",
+      "choices": [
+        {
+          "text": "read the manufacturer's warning to ensure that you are aware of possible reactions to such drugs.",
+          "correct": false
+        },
+        {
+          "text": "take no medicine when you plan to fly, except on the advice of an Aviation Medical Examiner.",
+          "correct": true
+        },
+        {
+          "text": "allow at least 12 hours between taking any medicine or drugs and flying.",
+          "correct": false
+        },
+        {
+          "text": "allow at least 8 hours between taking any medicine or drugs and flying.",
+          "correct": false
+        }
+      ],
+      "answer": "take no medicine when you plan to fly, except on the advice of an Aviation Medical Examiner.",
+      "explanation": null,
+      "reference": "AIM - AIR 3.12 - Drugs"
+    },
+    {
+      "id": "PSTAR-8.12",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "The Canadian Medical Certificate of a private pilot 40 years old and over is valid, in Canada, for a period of",
+      "choices": [
+        {
+          "text": "12 months.",
+          "correct": false
+        },
+        {
+          "text": "24 months.",
+          "correct": true
+        },
+        {
+          "text": "36 months.",
+          "correct": false
+        },
+        {
+          "text": "48 months.",
+          "correct": false
+        }
+      ],
+      "answer": "24 months.",
+      "explanation": null,
+      "reference": "CARs 424.04, AIM - LRA / AIC 10/00"
+    },
+    {
+      "id": "PSTAR-8.13",
+      "topic": "PSTAR - Aero Medical",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aero-medical"
+      ],
+      "question": "The Canadian Medical Certificate of a private pilot under 40 years of age is valid, in Canada, for a period of",
+      "choices": [
+        {
+          "text": "72 months.",
+          "correct": false
+        },
+        {
+          "text": "60 months.",
+          "correct": true
+        },
+        {
+          "text": "48 months.",
+          "correct": false
+        },
+        {
+          "text": "24 months.",
+          "correct": false
+        }
+      ],
+      "answer": "60 months.",
+      "explanation": null,
+      "reference": "CARs 424.04, AIM - LRA / AIC 10/00"
+    },
+    {
+      "id": "PSTAR-9.01",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "The amount of fuel and oil carried on board any helicopter at the commencement of a day VFR flight must be sufficient, to provide for foreseeable delays having been considered, to fly to the destination aerodrome,",
+      "choices": [
+        {
+          "text": "and thereafter for 45 minutes at normal cruising speed.",
+          "correct": false
+        },
+        {
+          "text": "then to a specified alternate and thereafter for 45 minutes at normal cruising speed.",
+          "correct": false
+        },
+        {
+          "text": "and thereafter for 20 minutes at normal cruising speed.",
+          "correct": true
+        },
+        {
+          "text": "then to a specified alternate and thereafter for 20 minutes at normal cruising speed.",
+          "correct": false
+        }
+      ],
+      "answer": "and thereafter for 20 minutes at normal cruising speed.",
+      "explanation": null,
+      "reference": "CARs 602.88"
+    },
+    {
+      "id": "PSTAR-9.02",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "The amount of fuel carried on board any propeller driven aeroplane at the commencement of a day VFR flight must be sufficient, having regard to the meteorological conditions and foreseeable delays that are expected in flight, to fly to the destination aerodrome",
+      "choices": [
+        {
+          "text": "and then fly for a period of 45 minutes at normal cruising speed.",
+          "correct": false
+        },
+        {
+          "text": "and then fly for a period of 30 minutes at normal cruising speed.",
+          "correct": true
+        },
+        {
+          "text": "then to a specified alternate and then for a period of 45 minutes at normal cruising speed.",
+          "correct": false
+        },
+        {
+          "text": "then to a specified alternate and then fly for a period of 30 minutes at normal cruising speed.",
+          "correct": false
+        }
+      ],
+      "answer": "and then fly for a period of 30 minutes at normal cruising speed.",
+      "explanation": null,
+      "reference": "CARs 602.88"
+    },
+    {
+      "id": "PSTAR-9.03",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "If a flight plan is not filed, a flight itinerary must be filed",
+      "choices": [
+        {
+          "text": "for flights proceeding 25 NM or more from the point of origin.",
+          "correct": true
+        },
+        {
+          "text": "only for flights in sparsely settled areas.",
+          "correct": false
+        },
+        {
+          "text": "for flights destined to land at aerodromes or places other than the point of origin.",
+          "correct": false
+        },
+        {
+          "text": "for all flights.",
+          "correct": false
+        }
+      ],
+      "answer": "for flights proceeding 25 NM or more from the point of origin.",
+      "explanation": null,
+      "reference": "CARs 602.73"
+    },
+    {
+      "id": "PSTAR-9.04",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "After landing from a VFR flight for which a flight plan has been filed, the pilot shall report the arrival to the appropriate ATS unit within",
+      "choices": [
+        {
+          "text": "15 minutes.",
+          "correct": false
+        },
+        {
+          "text": "30 minutes.",
+          "correct": false
+        },
+        {
+          "text": "45 minutes.",
+          "correct": false
+        },
+        {
+          "text": "60 minutes.",
+          "correct": true
+        }
+      ],
+      "answer": "60 minutes.",
+      "explanation": null,
+      "reference": "CARs 602.77"
+    },
+    {
+      "id": "PSTAR-9.05",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "When there is a deviation from a VFR flight plan, ATC shall be notified of such deviation",
+      "choices": [
+        {
+          "text": "as soon as possible.",
+          "correct": true
+        },
+        {
+          "text": "within 10 minutes.",
+          "correct": false
+        },
+        {
+          "text": "within 30 minutes.",
+          "correct": false
+        },
+        {
+          "text": "within 60 minutes after landing.",
+          "correct": false
+        }
+      ],
+      "answer": "as soon as possible.",
+      "explanation": null,
+      "reference": "CARs 602.76"
+    },
+    {
+      "id": "PSTAR-9.06",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "Where no search and rescue initiation time is specified in a flight itinerary, when shall the pilot report to the \"responsible person\"?",
+      "choices": [
+        {
+          "text": "Within one hour after the expiration of the estimated duration of the flight specified in the flight itinerary.",
+          "correct": false
+        },
+        {
+          "text": "Within one hour after landing.",
+          "correct": false
+        },
+        {
+          "text": "Within 24 hours after the expiration of the estimated duration of the flight specified in the flight itinerary.",
+          "correct": false
+        },
+        {
+          "text": "As soon as practicable after landing but no later than 24 hours after the last reported ETA.",
+          "correct": true
+        }
+      ],
+      "answer": "As soon as practicable after landing but no later than 24 hours after the last reported ETA.",
+      "explanation": null,
+      "reference": "CARs 602.77"
+    },
+    {
+      "id": "PSTAR-9.07",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "With regard to a flight itinerary, the \"responsible person\" means someone who",
+      "choices": [
+        {
+          "text": "has agreed to report the aircraft overdue.",
+          "correct": true
+        },
+        {
+          "text": "is 18 years of age or over.",
+          "correct": false
+        },
+        {
+          "text": "holds an aeronautical licence.",
+          "correct": false
+        },
+        {
+          "text": "has agreed to report the arrival of the aircraft.",
+          "correct": false
+        }
+      ],
+      "answer": "has agreed to report the aircraft overdue.",
+      "explanation": null,
+      "reference": "CARs 602.70"
+    },
+    {
+      "id": "PSTAR-9.08",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "Where a VFR flight plan has been filed, an arrival report must be filed by the pilot",
+      "choices": [
+        {
+          "text": "by advising an ATS unit.",
+          "correct": true
+        },
+        {
+          "text": "at each intermediate stop and then reopened on take off.",
+          "correct": false
+        },
+        {
+          "text": "by parking the aircraft in close proximity to the tower.",
+          "correct": false
+        },
+        {
+          "text": "except at airports served by a control tower in which case the tower will automatically close the flight plan.",
+          "correct": false
+        }
+      ],
+      "answer": "by advising an ATS unit.",
+      "explanation": null,
+      "reference": "CARs 602.77"
+    },
+    {
+      "id": "PSTAR-9.09",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "Estimated elapsed time A to B 1 hour 15 minutes. Estimated stopover time at 30 minutes. Estimated elapsed time B to C 1 hour 20 minutes. Using the above information, what time should be entered in the \"Elapsed Time\" box of a VFR flight plan?",
+      "choices": [
+        {
+          "text": "3 hours 50 minutes.",
+          "correct": false
+        },
+        {
+          "text": "3 hours 20 minutes.",
+          "correct": false
+        },
+        {
+          "text": "3 hours 05 minutes.",
+          "correct": true
+        },
+        {
+          "text": "2 hours 35 minutes.",
+          "correct": false
+        }
+      ],
+      "answer": "3 hours 05 minutes.",
+      "explanation": null,
+      "reference": "AIM - RAC 3.10 - Intermediate stops"
+    },
+    {
+      "id": "PSTAR-9.10",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "When filing a VFR flight plan with an intermediate stop, the total elapsed time to be entered is the total",
+      "choices": [
+        {
+          "text": "elapsed time for all legs including the duration of the intermediate stop.",
+          "correct": true
+        },
+        {
+          "text": "elapsed time for all legs, plus the intermediate stop, plus 45 minutes.",
+          "correct": false
+        },
+        {
+          "text": "flight time for all legs.",
+          "correct": false
+        },
+        {
+          "text": "elapsed time to the first landing plus intermediate stops.",
+          "correct": false
+        }
+      ],
+      "answer": "elapsed time for all legs including the duration of the intermediate stop.",
+      "explanation": null,
+      "reference": "AIM - RAC 3.10 - Intermediate stops"
+    },
+    {
+      "id": "PSTAR-9.11",
+      "topic": "PSTAR - Flight Plans and Flight Itineraries",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "flight-plans-and-flight-itineraries"
+      ],
+      "question": "How is an intermediate stop indicated on the flight plan form for a VFR flight?",
+      "choices": [
+        {
+          "text": "By including duration of the intermediate stop in \"Elapsed Time\" box as ATC automatically checks time between points.",
+          "correct": false
+        },
+        {
+          "text": "Same as any VFR flight plan if the intermediate time does not exceed 30 minutes at each point.",
+          "correct": false
+        },
+        {
+          "text": "By repeating the name of intermediate stop and its duration in the \"Route\" column.",
+          "correct": true
+        },
+        {
+          "text": "By simply indicating \"Intermediate Stop\" in \"Other Information\" column.",
+          "correct": false
+        }
+      ],
+      "answer": "By repeating the name of intermediate stop and its duration in the \"Route\" column.",
+      "explanation": null,
+      "reference": "AIM - RAC 3.10 - Intermediate stops"
+    },
+    {
+      "id": "PSTAR-10.01",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "An ATC instruction",
+      "choices": [
+        {
+          "text": "must be complied with when received by the pilot providing the safety of the aircraft is not jeopardized.",
+          "correct": true
+        },
+        {
+          "text": "must be \"read back\" in full to the controller and confirmed before becoming effective.",
+          "correct": false
+        },
+        {
+          "text": "is in effect advice provided by ATC and does not require acceptance or formal acknowledgement by the pilot concerned.",
+          "correct": false
+        },
+        {
+          "text": "is the same as an ATC clearance.",
+          "correct": false
+        }
+      ],
+      "answer": "must be complied with when received by the pilot providing the safety of the aircraft is not jeopardized.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-10.02",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "An ATC clearance",
+      "choices": [
+        {
+          "text": "is the same as an ATC instruction.",
+          "correct": false
+        },
+        {
+          "text": "is in effect advice provided by ATC and does not require acceptance or acknowledgement by the PIC.",
+          "correct": false
+        },
+        {
+          "text": "requires compliance when accepted by the PIC.",
+          "correct": true
+        },
+        {
+          "text": "must be complied with when received by the PIC.",
+          "correct": false
+        }
+      ],
+      "answer": "requires compliance when accepted by the PIC.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-10.03",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "A pilot, after accepting a clearance and subsequently finding that all or part of the clearance cannot be complied with, should",
+      "choices": [
+        {
+          "text": "disregard the clearance.",
+          "correct": false
+        },
+        {
+          "text": "comply with only the part that is suitable.",
+          "correct": false
+        },
+        {
+          "text": "comply as best as possible under the circumstances to carry out the clearance and need not say anything to ATC.",
+          "correct": false
+        },
+        {
+          "text": "comply as best as possible under the circumstances and advise ATC as soon as possible.",
+          "correct": true
+        }
+      ],
+      "answer": "comply as best as possible under the circumstances and advise ATC as soon as possible.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-10.04",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "After accepting a clearance and subsequently finding that it cannot be complied with, a pilot should",
+      "choices": [
+        {
+          "text": "take any immediate action required and advise ATC as soon as possible.",
+          "correct": true
+        },
+        {
+          "text": "comply as best as possible under the circumstances and say nothing to ATC.",
+          "correct": false
+        },
+        {
+          "text": "disregard the clearance.",
+          "correct": false
+        },
+        {
+          "text": "comply with the suitable parts.",
+          "correct": false
+        }
+      ],
+      "answer": "take any immediate action required and advise ATC as soon as possible.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-10.05",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "An ATC clearance or instruction is predicated on known traffic only. Therefore, when a pilot is proceeding in accordance with a clearance or instruction",
+      "choices": [
+        {
+          "text": "ATC is relieved of the responsibility for traffic separation.",
+          "correct": false
+        },
+        {
+          "text": "the responsibility for traffic separation is divided between ATC and the pilot.",
+          "correct": false
+        },
+        {
+          "text": "the pilot is not relieved of the responsibility for traffic avoidance.",
+          "correct": true
+        },
+        {
+          "text": "the pilot is relieved of the responsibility for traffic avoidance.",
+          "correct": false
+        }
+      ],
+      "answer": "the pilot is not relieved of the responsibility for traffic avoidance.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-10.06",
+      "topic": "PSTAR - Clearances and Instructions",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "clearances-and-instructions"
+      ],
+      "question": "If all or part of an ATC clearance is unacceptable, a pilot should",
+      "choices": [
+        {
+          "text": "comply as best as possible under the circumstances.",
+          "correct": false
+        },
+        {
+          "text": "refuse the clearance without giving a reason for refusal.",
+          "correct": false
+        },
+        {
+          "text": "acknowledge the clearance and read back only the acceptable parts.",
+          "correct": false
+        },
+        {
+          "text": "refuse the clearance and inform ATC of the pilots intentions.",
+          "correct": true
+        }
+      ],
+      "answer": "refuse the clearance and inform ATC of the pilots intentions.",
+      "explanation": null,
+      "reference": "CARs 602.31, AIM - RAC 1.7"
+    },
+    {
+      "id": "PSTAR-11.01",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "In an emergency requiring the use of an ELT, it should be turned on",
+      "choices": [
+        {
+          "text": "immediately and left on.",
+          "correct": true
+        },
+        {
+          "text": "at the ETA in the flight plan.",
+          "correct": false
+        },
+        {
+          "text": "for the first five minutes of each hour UTC.",
+          "correct": false
+        },
+        {
+          "text": "during daylight hours only to conserve the battery.",
+          "correct": false
+        }
+      ],
+      "answer": "immediately and left on.",
+      "explanation": null,
+      "reference": "AIM - SAR 3.5 - ELT Operating Instructions (Emergency Use)"
+    },
+    {
+      "id": "PSTAR-11.02",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "An aircraft's ELT may be switched to transmit for test purposes anytime",
+      "choices": [
+        {
+          "text": "following a hard landing.",
+          "correct": false
+        },
+        {
+          "text": "during the first 5 minutes of any hour UTC.",
+          "correct": true
+        },
+        {
+          "text": "following a component or battery change.",
+          "correct": false
+        },
+        {
+          "text": "prior to flight and listening on 121.5 MHz.",
+          "correct": false
+        }
+      ],
+      "answer": "during the first 5 minutes of any hour UTC.",
+      "explanation": null,
+      "reference": "AIM - SAR 3.8 - ELT Testing Procedures CARs 605.40"
+    },
+    {
+      "id": "PSTAR-11.03",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "Before shutting down you can verify that the aircraft's ELT is not transmitting by",
+      "choices": [
+        {
+          "text": "checking that the ELT switch is in the off position.",
+          "correct": false
+        },
+        {
+          "text": "listening on 121.5 MHz for a signal.",
+          "correct": true
+        },
+        {
+          "text": "ensuring that the master switch is off.",
+          "correct": false
+        },
+        {
+          "text": "checking the ELT visual warning light.",
+          "correct": false
+        }
+      ],
+      "answer": "listening on 121.5 MHz for a signal.",
+      "explanation": null,
+      "reference": "AIM - SAR 3.4 - ELT Operating Instructions (Normal Use)"
+    },
+    {
+      "id": "PSTAR-11.04",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "All accidental ELT activations should be reported to the",
+      "choices": [
+        {
+          "text": "airport manager.",
+          "correct": false
+        },
+        {
+          "text": "R.C.M.P.",
+          "correct": false
+        },
+        {
+          "text": "Minister.",
+          "correct": false
+        },
+        {
+          "text": "nearest ATS unit.",
+          "correct": true
+        }
+      ],
+      "answer": "nearest ATS unit.",
+      "explanation": null,
+      "reference": "AIM - SAR 3.7 - Accidental ELT Transmissions, CARs 605.40"
+    },
+    {
+      "id": "PSTAR-11.05",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "When an aircraft engine is left running on the ground and no person remains onboard, the aircraft's movement must be restricted and",
+      "choices": [
+        {
+          "text": "it must remain in sight of the pilot at all times.",
+          "correct": false
+        },
+        {
+          "text": "it must not be left unattended.",
+          "correct": true
+        },
+        {
+          "text": "its gross weight must be below 4,409 LB (2,000 kg).",
+          "correct": false
+        },
+        {
+          "text": "its control locks must be installed.",
+          "correct": false
+        }
+      ],
+      "answer": "it must not be left unattended.",
+      "explanation": null,
+      "reference": "CARs 602.10"
+    },
+    {
+      "id": "PSTAR-11.06",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "When confronted with an approaching thunderstorm, a take-off or landing",
+      "choices": [
+        {
+          "text": "should be avoided as a sudden wind shift or low level turbulence could cause a loss of control.",
+          "correct": true
+        },
+        {
+          "text": "is safe if you can see under the thunderstorm through to the other side.",
+          "correct": false
+        },
+        {
+          "text": "should be avoided unless the take-off can be made away from the thunderstorm.",
+          "correct": false
+        },
+        {
+          "text": "is safe of the thunderstorm is regarded as \"light\".",
+          "correct": false
+        }
+      ],
+      "answer": "should be avoided as a sudden wind shift or low level turbulence could cause a loss of control.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.7.2 - Flight Ops Near Thunderstorms / Considerations"
+    },
+    {
+      "id": "PSTAR-11.07",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "An isolated thunderstorm is in close proximity to your aerodrome of intended landing. You should",
+      "choices": [
+        {
+          "text": "land giving due consideration to wind shear on final approach.",
+          "correct": false
+        },
+        {
+          "text": "hold over a known point clear of the thunderstorm until it is well past the aerodrome.",
+          "correct": true
+        },
+        {
+          "text": "land as quickly as possible.",
+          "correct": false
+        },
+        {
+          "text": "add one half the wind gust factor to the recommended landing speed and land.",
+          "correct": false
+        }
+      ],
+      "answer": "hold over a known point clear of the thunderstorm until it is well past the aerodrome.",
+      "explanation": null,
+      "reference": "AIM - AIR 2.7.2 - Flight Ops Near Thunderstorms / Considerations"
+    },
+    {
+      "id": "PSTAR-11.08",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "The take off thrust blast danger area includes at least that area extending back from the tail of a medium size jet transport aeroplane for",
+      "choices": [
+        {
+          "text": "1,200 feet.",
+          "correct": true
+        },
+        {
+          "text": "900 feet.",
+          "correct": false
+        },
+        {
+          "text": "500 feet.",
+          "correct": false
+        },
+        {
+          "text": "450 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "1,200 feet.",
+      "explanation": null,
+      "reference": "AIM - AIR 1.7 - Jet and Propeller Blast Danger"
+    },
+    {
+      "id": "PSTAR-11.09",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "The ground idle blast danger area extends back from the tail of a jumbo jet aeroplane for at least",
+      "choices": [
+        {
+          "text": "200 feet.",
+          "correct": false
+        },
+        {
+          "text": "450 feet.",
+          "correct": false
+        },
+        {
+          "text": "600 feet.",
+          "correct": true
+        },
+        {
+          "text": "750 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "600 feet.",
+      "explanation": null,
+      "reference": "AIM - AIR 1.7 - Jet and Propeller Blast Danger"
+    },
+    {
+      "id": "PSTAR-11.10",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "The ground idle blast danger area extends back from the tail of a medium size jet aeroplane for at least",
+      "choices": [
+        {
+          "text": "200 feet.",
+          "correct": false
+        },
+        {
+          "text": "450 feet.",
+          "correct": true
+        },
+        {
+          "text": "600 feet.",
+          "correct": false
+        },
+        {
+          "text": "750 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "450 feet.",
+      "explanation": null,
+      "reference": "AIM - AIR 1.7 - Jet and Propeller Blast Danger"
+    },
+    {
+      "id": "PSTAR-11.11",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "The ground idle blast danger area extends back from the tail of an executive jet aeroplane for",
+      "choices": [
+        {
+          "text": "200 feet.",
+          "correct": true
+        },
+        {
+          "text": "450 feet.",
+          "correct": false
+        },
+        {
+          "text": "600 feet.",
+          "correct": false
+        },
+        {
+          "text": "750 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "200 feet.",
+      "explanation": null,
+      "reference": "AIM - AIR 1.7 - Jet and Propeller Blast Danger"
+    },
+    {
+      "id": "PSTAR-11.12",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "A 45 KT blast area can be expected ..... behind the propellers of a large turbo prop aeroplane during taxi.",
+      "choices": [
+        {
+          "text": "60 feet.",
+          "correct": true
+        },
+        {
+          "text": "80 feet.",
+          "correct": false
+        },
+        {
+          "text": "100 feet.",
+          "correct": false
+        },
+        {
+          "text": "120 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "60 feet.",
+      "explanation": null,
+      "reference": "AIM - AIR 1.7 - Jet and Propeller Blast Danger"
+    },
+    {
+      "id": "PSTAR-11.13",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "At the request of the pilot, VHF direction finding stations normally provide a homing service",
+      "choices": [
+        {
+          "text": "only in Class B airspace.",
+          "correct": false
+        },
+        {
+          "text": "only after declaration of an emergency on 121.5 MHz.",
+          "correct": false
+        },
+        {
+          "text": "on the approach control frequency.",
+          "correct": false
+        },
+        {
+          "text": "on a pre selected tower or FSS frequency.",
+          "correct": true
+        }
+      ],
+      "answer": "on a pre selected tower or FSS frequency.",
+      "explanation": null,
+      "reference": "AIM - COM 3.10 - VHF Direction Finding System"
+    },
+    {
+      "id": "PSTAR-11.14",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "VDF steers are intended to provide directional assistance to VFR flights",
+      "choices": [
+        {
+          "text": "in times of difficulties.",
+          "correct": true
+        },
+        {
+          "text": "on routine navigational trips.",
+          "correct": false
+        },
+        {
+          "text": "cleared for Special VFR.",
+          "correct": false
+        },
+        {
+          "text": "in uncontrolled airspace.",
+          "correct": false
+        }
+      ],
+      "answer": "in times of difficulties.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.6.1 - VHF-DF Service / Purpose"
+    },
+    {
+      "id": "PSTAR-11.15",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "You are uncertain of your position and have requested a VDF steer to an airport. You should be aware that",
+      "choices": [
+        {
+          "text": "avoiding other traffic is your responsibility but terrain clearance will be provided.",
+          "correct": false
+        },
+        {
+          "text": "avoiding other traffic and terrain clearance is your responsibility.",
+          "correct": true
+        },
+        {
+          "text": "traffic avoidance and terrain clearance will be provided.",
+          "correct": false
+        },
+        {
+          "text": "traffic avoidance will be provided but terrain clearance is your responsibility.",
+          "correct": false
+        }
+      ],
+      "answer": "avoiding other traffic and terrain clearance is your responsibility.",
+      "explanation": null,
+      "reference": "AIM - RAC 1.6.4 - VHF-DF Service / Procedures"
+    },
+    {
+      "id": "PSTAR-11.16",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "ATC advises that simultaneous operations are in progress at an airport. Pilots could expect a clearance to",
+      "choices": [
+        {
+          "text": "take off over top of an aircraft on an intersecting runway.",
+          "correct": false
+        },
+        {
+          "text": "take off on a specified parallel runway.",
+          "correct": false
+        },
+        {
+          "text": "land and hold short of an intersecting runway.",
+          "correct": true
+        },
+        {
+          "text": "land on a specified parallel runway.",
+          "correct": false
+        }
+      ],
+      "answer": "land and hold short of an intersecting runway.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.9 - Simultaneous Operations"
+    },
+    {
+      "id": "PSTAR-11.17",
+      "topic": "PSTAR - Aircraft Operations",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aircraft-operations"
+      ],
+      "question": "When issued a clearance to land and hold short of an intersecting runway, pilots",
+      "choices": [
+        {
+          "text": "shall comply regardless of the circumstances.",
+          "correct": false
+        },
+        {
+          "text": "may taxi across the intersection after the departing or arriving aircraft has cleared their path.",
+          "correct": false
+        },
+        {
+          "text": "who inadvertently go through the intersection should immediately do a 180° turn and backtrack to the hold position.",
+          "correct": false
+        },
+        {
+          "text": "should immediately inform ATC if they are unable to comply.",
+          "correct": true
+        }
+      ],
+      "answer": "should immediately inform ATC if they are unable to comply.",
+      "explanation": null,
+      "reference": "AIM - RAC 4.4.9 - SIRO - General Provisions"
+    },
+    {
+      "id": "PSTAR-12.01",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "ADIZ rules normally apply",
+      "choices": [
+        {
+          "text": "only to aircraft flying above 12,500 feet.",
+          "correct": false
+        },
+        {
+          "text": "only to aircraft flying at true airspeeds of 180 KT or more.",
+          "correct": false
+        },
+        {
+          "text": "only to all southbound aircraft.",
+          "correct": false
+        },
+        {
+          "text": "to all aircraft.",
+          "correct": true
+        }
+      ],
+      "answer": "to all aircraft.",
+      "explanation": null,
+      "reference": "CARs 602.145 AIM - RAC 3.9"
+    },
+    {
+      "id": "PSTAR-12.02",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "When operating in accordance with VFR, aircraft shall be flown",
+      "choices": [
+        {
+          "text": "clear of aerodrome traffic zones.",
+          "correct": false
+        },
+        {
+          "text": "clear of control zones.",
+          "correct": false
+        },
+        {
+          "text": "with visual reference to the surface.",
+          "correct": true
+        },
+        {
+          "text": "in compliance with all of the above.",
+          "correct": false
+        }
+      ],
+      "answer": "with visual reference to the surface.",
+      "explanation": null,
+      "reference": "CARs 602.114, CARs 602.115"
+    },
+    {
+      "id": "PSTAR-12.03",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Normally, a helicopter in uncontrolled airspace at less than 1,000 feet AGL may operate during the day in flight visibility which is not less than",
+      "choices": [
+        {
+          "text": "1/2 mile.",
+          "correct": false
+        },
+        {
+          "text": "1 mile.",
+          "correct": true
+        },
+        {
+          "text": "2 miles.",
+          "correct": false
+        },
+        {
+          "text": "3 miles.",
+          "correct": false
+        }
+      ],
+      "answer": "1 mile.",
+      "explanation": null,
+      "reference": "CARs 602.115"
+    },
+    {
+      "id": "PSTAR-12.04",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "What distance from cloud shall an aircraft maintain when flying below 1,000 feet AGL within uncontrolled airspace?",
+      "choices": [
+        {
+          "text": "At least 2,000 feet horizontally and 500 feet vertically.",
+          "correct": false
+        },
+        {
+          "text": "At least 1 mile horizontally and 500 feet vertically.",
+          "correct": false
+        },
+        {
+          "text": "At least 2 miles horizontally and 500 feet vertically.",
+          "correct": false
+        },
+        {
+          "text": "Clear of cloud.",
+          "correct": true
+        }
+      ],
+      "answer": "Clear of cloud.",
+      "explanation": null,
+      "reference": "CARs 602.115"
+    },
+    {
+      "id": "PSTAR-12.05",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "No person shall drop anything from an aircraft in flight",
+      "choices": [
+        {
+          "text": "which will create a hazard to persons or property.",
+          "correct": true
+        },
+        {
+          "text": "unless approval has been granted by the Minister.",
+          "correct": false
+        },
+        {
+          "text": "unless over an authorized jettison area.",
+          "correct": false
+        },
+        {
+          "text": "unless it is attached to a parachute.",
+          "correct": false
+        }
+      ],
+      "answer": "which will create a hazard to persons or property.",
+      "explanation": null,
+      "reference": "CARs 602.23"
+    },
+    {
+      "id": "PSTAR-12.06",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "A person may conduct aerobatic manoeuvres in an aircraft",
+      "choices": [
+        {
+          "text": "over an airport provided the appropriate frequency is monitored.",
+          "correct": false
+        },
+        {
+          "text": "over the suburban area of a city above 2,000 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "within Class F advisory airspace when visibility is 3 miles or greater.",
+          "correct": true
+        },
+        {
+          "text": "within Class C airspace when the visibility is 1 mile or greater.",
+          "correct": false
+        }
+      ],
+      "answer": "within Class F advisory airspace when visibility is 3 miles or greater.",
+      "explanation": null,
+      "reference": "CARs 602.27"
+    },
+    {
+      "id": "PSTAR-12.07",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "CARs state that after the consumption of any alcoholic beverage, no person shall act as a crew member of an aircraft within",
+      "choices": [
+        {
+          "text": "8 hours.",
+          "correct": false
+        },
+        {
+          "text": "12 hours.",
+          "correct": true
+        },
+        {
+          "text": "24 hours.",
+          "correct": false
+        },
+        {
+          "text": "36 hours.",
+          "correct": false
+        }
+      ],
+      "answer": "12 hours.",
+      "explanation": null,
+      "reference": "CARs 602.03"
+    },
+    {
+      "id": "PSTAR-12.08",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "'Day' in Canada is that period of time between",
+      "choices": [
+        {
+          "text": "sunrise and sunset",
+          "correct": false
+        },
+        {
+          "text": "one hour before sunrise to one hour after sunset.",
+          "correct": false
+        },
+        {
+          "text": "the beginning of morning civil twilight and the end of evening civil twilight.",
+          "correct": true
+        },
+        {
+          "text": "the end of morning civil twilight and the beginning of evening civil twilight.",
+          "correct": false
+        }
+      ],
+      "answer": "the beginning of morning civil twilight and the end of evening civil twilight.",
+      "explanation": null,
+      "reference": "CARs 101.01"
+    },
+    {
+      "id": "PSTAR-12.09",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "'Night' in Canada is that period of time between",
+      "choices": [
+        {
+          "text": "sunset and sunrise.",
+          "correct": false
+        },
+        {
+          "text": "the beginning of evening civil twilight and the end of morning civil twilight.",
+          "correct": false
+        },
+        {
+          "text": "one hour after sunset and one hour before sunrise.",
+          "correct": false
+        },
+        {
+          "text": "at the end of evening civil twilight and the beginning of morning civil twilight.",
+          "correct": true
+        }
+      ],
+      "answer": "at the end of evening civil twilight and the beginning of morning civil twilight.",
+      "explanation": null,
+      "reference": "CARs 101.01"
+    },
+    {
+      "id": "PSTAR-12.10",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Formation flying is permitted only if such flights",
+      "choices": [
+        {
+          "text": "have been pre arranged by the pilots in command.",
+          "correct": true
+        },
+        {
+          "text": "are conducted above 3,000 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "are conducted by commercial pilots.",
+          "correct": false
+        },
+        {
+          "text": "are led by a pilot whose licence is endorsed for formation flight.",
+          "correct": false
+        }
+      ],
+      "answer": "have been pre arranged by the pilots in command.",
+      "explanation": null,
+      "reference": "CARs 602.24"
+    },
+    {
+      "id": "PSTAR-12.11",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Flight through active Class F airspace with the designator CYR",
+      "choices": [
+        {
+          "text": "may be undertaken only by aircraft equipped with two way radio communication and a transponder.",
+          "correct": false
+        },
+        {
+          "text": "is restricted to military aircraft operating under the authority of the Minister of National Defence.",
+          "correct": false
+        },
+        {
+          "text": "will be approved only for aircraft on IFR flight plans under positive radar control.",
+          "correct": false
+        },
+        {
+          "text": "is permitted only in accordance with permission issued by the user agency.",
+          "correct": true
+        }
+      ],
+      "answer": "is permitted only in accordance with permission issued by the user agency.",
+      "explanation": null,
+      "reference": "CARs 601.04 AIM - RAC 2.8.6 - Class F Airspace"
+    },
+    {
+      "id": "PSTAR-12.12",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Which statement is correct with regard to \"advisory airspace\"?",
+      "choices": [
+        {
+          "text": "A transient aircraft entering active advisory airspace shall be equipped with a serviceable transponder.",
+          "correct": false
+        },
+        {
+          "text": "Non-participating VFR aircraft are encouraged to avoid flight in advisory airspace during active periods specified on aeronautical charts and NOTAM.",
+          "correct": true
+        },
+        {
+          "text": "Aircraft need to be equipped with a two way radio to enter active advisory airspace.",
+          "correct": false
+        },
+        {
+          "text": "Only military aircraft may enter advisory airspace depicted on aeronautical charts.",
+          "correct": false
+        }
+      ],
+      "answer": "Non-participating VFR aircraft are encouraged to avoid flight in advisory airspace during active periods specified on aeronautical charts and NOTAM.",
+      "explanation": null,
+      "reference": "CARs 601.04 AIM - RAC 2.8.6 - Class F Airspace"
+    },
+    {
+      "id": "PSTAR-12.13",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Except as provided by CARs, unless taking off, landing or attempting to land, no person shall fly a helicopter over a built up area or open air assembly of persons except at an altitude that will permit, in the event of an emergency, the landing of the aircraft without creating a hazard to persons or property on the surface, and such altitude shall not be less than ______ above the highest obstacle within a horizontal radius of ______ from the aircraft.",
+      "choices": [
+        {
+          "text": "3,000 feet, 1 mile.",
+          "correct": false
+        },
+        {
+          "text": "2,000 feet, 1,000 feet.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet, 500 feet.",
+          "correct": true
+        },
+        {
+          "text": "500 feet, 500 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "1,000 feet, 500 feet.",
+      "explanation": null,
+      "reference": "CARs 602.14"
+    },
+    {
+      "id": "PSTAR-12.14",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Over non-populous areas or over open water, a pilot may not fly an aircraft at a distance less than ..... feet from any person, vessel, vehicle or structure.",
+      "choices": [
+        {
+          "text": "200.",
+          "correct": false
+        },
+        {
+          "text": "500.",
+          "correct": true
+        },
+        {
+          "text": "1,000.",
+          "correct": false
+        },
+        {
+          "text": "2,000.",
+          "correct": false
+        }
+      ],
+      "answer": "500.",
+      "explanation": null,
+      "reference": "CARs 602.14"
+    },
+    {
+      "id": "PSTAR-12.15",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Except for balloons and as provided by CARs, no person shall cause any aircraft to take off or attempt to take off from, land on or attempt to land on, any surface within the built up area of any city or town unless",
+      "choices": [
+        {
+          "text": "the aircraft is multi engined.",
+          "correct": false
+        },
+        {
+          "text": "all obstacles on approach and departure can be cleared by a minimum of 500 feet.",
+          "correct": false
+        },
+        {
+          "text": "that surface is an airport or military aerodrome.",
+          "correct": true
+        },
+        {
+          "text": "noise abatement procedures are followed.",
+          "correct": false
+        }
+      ],
+      "answer": "that surface is an airport or military aerodrome.",
+      "explanation": null,
+      "reference": "CARs 602.13"
+    },
+    {
+      "id": "PSTAR-12.16",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "What is the height AGL above which an aircraft in VFR flight shall be operated to conform with the Cruising Altitudes Order?",
+      "choices": [
+        {
+          "text": "700 feet.",
+          "correct": false
+        },
+        {
+          "text": "2,200 feet.",
+          "correct": false
+        },
+        {
+          "text": "3,000 feet.",
+          "correct": true
+        },
+        {
+          "text": "3,500 feet.",
+          "correct": false
+        }
+      ],
+      "answer": "3,000 feet.",
+      "explanation": null,
+      "reference": "CARs 602.34"
+    },
+    {
+      "id": "PSTAR-12.17",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "An aircraft cruising VFR in level flight above 3,000 feet AGL on a track of 290° M shall be flown at an",
+      "choices": [
+        {
+          "text": "even thousand foot altitude.",
+          "correct": false
+        },
+        {
+          "text": "even thousand plus 500 foot altitude.",
+          "correct": true
+        },
+        {
+          "text": "odd thousand foot altitude.",
+          "correct": false
+        },
+        {
+          "text": "odd thousand plus 500 foot altitude.",
+          "correct": false
+        }
+      ],
+      "answer": "even thousand plus 500 foot altitude.",
+      "explanation": null,
+      "reference": "CARs 602.34"
+    },
+    {
+      "id": "PSTAR-12.18",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "The selection of a cruising altitude in the Southern Domestic Airspace should be based on the",
+      "choices": [
+        {
+          "text": "true track.",
+          "correct": false
+        },
+        {
+          "text": "magnetic track.",
+          "correct": true
+        },
+        {
+          "text": "true heading.",
+          "correct": false
+        },
+        {
+          "text": "magnetic heading.",
+          "correct": false
+        }
+      ],
+      "answer": "magnetic track.",
+      "explanation": null,
+      "reference": "CARs 602.34"
+    },
+    {
+      "id": "PSTAR-12.19",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Every person who is the holder of any pilot licence or permit shall, on demand, produce such licence or permit for inspection by persons authorized by the Minister, by peace officers and",
+      "choices": [
+        {
+          "text": "FSS operators.",
+          "correct": false
+        },
+        {
+          "text": "Transport Canada airport managers.",
+          "correct": false
+        },
+        {
+          "text": "immigration officers.",
+          "correct": true
+        },
+        {
+          "text": "all of the above.",
+          "correct": false
+        }
+      ],
+      "answer": "immigration officers.",
+      "explanation": null,
+      "reference": "CARs 103.02"
+    },
+    {
+      "id": "PSTAR-12.20",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "Low Level Airspace is defined as, all airspace",
+      "choices": [
+        {
+          "text": "extending upwards from 2,200 feet AGL within designated airways.",
+          "correct": false
+        },
+        {
+          "text": "extending upwards from 700 feet AGL within designated airways.",
+          "correct": false
+        },
+        {
+          "text": "extending upwards from the surface of the earth within designated airways.",
+          "correct": false
+        },
+        {
+          "text": "within the Canadian Domestic Airspace below 18,000 feet ASL.",
+          "correct": true
+        }
+      ],
+      "answer": "within the Canadian Domestic Airspace below 18,000 feet ASL.",
+      "explanation": null,
+      "reference": "AIM - RAC 2.3 - High and Low Level Airspace"
+    },
+    {
+      "id": "PSTAR-12.21",
+      "topic": "PSTAR - General Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "general-airspace"
+      ],
+      "question": "A Control Zone normally is controlled airspace extending upwards from",
+      "choices": [
+        {
+          "text": "2,200 feet above the surface of the earth.",
+          "correct": false
+        },
+        {
+          "text": "700 feet above the surface of the earth.",
+          "correct": false
+        },
+        {
+          "text": "the surface of the earth to 3,000 feet.",
+          "correct": true
+        },
+        {
+          "text": "a specified height above the surface of the earth.",
+          "correct": false
+        }
+      ],
+      "answer": "the surface of the earth to 3,000 feet.",
+      "explanation": null,
+      "reference": "CARs Part 101.01, AIM - RAC 2.7.3"
+    },
+    {
+      "id": "PSTAR-13.01",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "\"Controlled Airspace\" means all airspace of defined dimensions within which",
+      "choices": [
+        {
+          "text": "Control Zone regulations are in force.",
+          "correct": false
+        },
+        {
+          "text": "security regulations are in force.",
+          "correct": false
+        },
+        {
+          "text": "Special VFR flight only is permitted.",
+          "correct": false
+        },
+        {
+          "text": "an ATC service is provided.",
+          "correct": true
+        }
+      ],
+      "answer": "an ATC service is provided.",
+      "explanation": null,
+      "reference": "CARs 101.01"
+    },
+    {
+      "id": "PSTAR-13.02",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "When in VFR flight within controlled airspace, a pilot must remain clear of cloud by at least",
+      "choices": [
+        {
+          "text": "500 feet vertically and 1 mile horizontally.",
+          "correct": true
+        },
+        {
+          "text": "500 feet vertically and 2,000 feet horizontally.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet vertically and 1 mile horizontally.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet vertically and 3 miles horizontally.",
+          "correct": false
+        }
+      ],
+      "answer": "500 feet vertically and 1 mile horizontally.",
+      "explanation": null,
+      "reference": "CARs 602.114"
+    },
+    {
+      "id": "PSTAR-13.03",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "The minimum flight visibility for VFR flight within a low level airway is",
+      "choices": [
+        {
+          "text": "1 mile.",
+          "correct": false
+        },
+        {
+          "text": "1½ miles.",
+          "correct": false
+        },
+        {
+          "text": "2 miles.",
+          "correct": false
+        },
+        {
+          "text": "3 miles.",
+          "correct": true
+        }
+      ],
+      "answer": "3 miles.",
+      "explanation": null,
+      "reference": "CARs 602.114"
+    },
+    {
+      "id": "PSTAR-13.04",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "When in VFR flight within a Control Zone, a pilot must remain clear of cloud by at least",
+      "choices": [
+        {
+          "text": "500 feet vertically and 2,000 feet horizontally.",
+          "correct": false
+        },
+        {
+          "text": "500 feet vertically and 1 mile horizontally.",
+          "correct": true
+        },
+        {
+          "text": "1,000 feet vertically and 1 mile horizontally.",
+          "correct": false
+        },
+        {
+          "text": "1,000 feet vertically and 3 miles horizontally.",
+          "correct": false
+        }
+      ],
+      "answer": "500 feet vertically and 1 mile horizontally.",
+      "explanation": null,
+      "reference": "CARs 602.114"
+    },
+    {
+      "id": "PSTAR-13.05",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "VFR cross country pilots wishing to cross through any part of a Class C Control Zone should",
+      "choices": [
+        {
+          "text": "advise the associated FSS.",
+          "correct": false
+        },
+        {
+          "text": "monitor the Approach Control frequency.",
+          "correct": false
+        },
+        {
+          "text": "advise ATC of their intentions and obtain a clearance.",
+          "correct": true
+        },
+        {
+          "text": "conform with circuit direction at that airport.",
+          "correct": false
+        }
+      ],
+      "answer": "advise ATC of their intentions and obtain a clearance.",
+      "explanation": null,
+      "reference": "CARs 601.08 AIM - RAC 5.8"
+    },
+    {
+      "id": "PSTAR-13.06",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "ATC may authorize an aeroplane equipped with a functioning two way radio to transit a Control Zone under day Special VFR provided the flight visibility and, when reported, ground visibility, are each not less than ....",
+      "choices": [
+        {
+          "text": "1/2 mile.",
+          "correct": false
+        },
+        {
+          "text": "1 mile.",
+          "correct": true
+        },
+        {
+          "text": "2 miles.",
+          "correct": false
+        },
+        {
+          "text": "3 miles.",
+          "correct": false
+        }
+      ],
+      "answer": "1 mile.",
+      "explanation": null,
+      "reference": "CARs 602.117"
+    },
+    {
+      "id": "PSTAR-13.07",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "ATC may authorize a helicopter equipped with a functioning two way radio to transit a Control Zone under day Special VFR where the flight visibility and, when reported, ground visibility are each not less than ....",
+      "choices": [
+        {
+          "text": "1 mile and operated at not less than 500 feet AGL.",
+          "correct": false
+        },
+        {
+          "text": "1/2 mile.",
+          "correct": true
+        },
+        {
+          "text": "1 mile.",
+          "correct": false
+        },
+        {
+          "text": "1/2 mile and operated at not less than 500 feet AGL.",
+          "correct": false
+        }
+      ],
+      "answer": "1/2 mile.",
+      "explanation": null,
+      "reference": "CARs 602.117"
+    },
+    {
+      "id": "PSTAR-13.08",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "An aircraft flying in accordance with Special VFR would be flying within",
+      "choices": [
+        {
+          "text": "a Control Zone.",
+          "correct": true
+        },
+        {
+          "text": "an Aerodrome Traffic Zone.",
+          "correct": false
+        },
+        {
+          "text": "a Terminal Control Area.",
+          "correct": false
+        },
+        {
+          "text": "an airway.",
+          "correct": false
+        }
+      ],
+      "answer": "a Control Zone.",
+      "explanation": null,
+      "reference": "CARs 602.117"
+    },
+    {
+      "id": "PSTAR-13.09",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "An arriving VFR flight shall make initial radio contact with the control tower",
+      "choices": [
+        {
+          "text": "upon entering an Aerodrome Traffic Zone.",
+          "correct": false
+        },
+        {
+          "text": "prior to entering a Control Zone.",
+          "correct": true
+        },
+        {
+          "text": "immediately prior to joining the circuit.",
+          "correct": false
+        },
+        {
+          "text": "immediately after entering a Control Zone.",
+          "correct": false
+        }
+      ],
+      "answer": "prior to entering a Control Zone.",
+      "explanation": null,
+      "reference": "CARs 601.08"
+    },
+    {
+      "id": "PSTAR-13.10",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "VFR flight within Class B airspace is permitted",
+      "choices": [
+        {
+          "text": "only when the flight visibility is 5 miles or better.",
+          "correct": false
+        },
+        {
+          "text": "for all aircraft except gliders and balloons.",
+          "correct": false
+        },
+        {
+          "text": "if the pilot holds a Class B Airspace Endorsement.",
+          "correct": false
+        },
+        {
+          "text": "in accordance with an ATC clearance.",
+          "correct": true
+        }
+      ],
+      "answer": "in accordance with an ATC clearance.",
+      "explanation": null,
+      "reference": "CARs 601.07"
+    },
+    {
+      "id": "PSTAR-13.11",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "The pilot of an arriving VFR flight shall make initial radio contact with a control tower in Class C airspace",
+      "choices": [
+        {
+          "text": "immediately after entering the Control Zone.",
+          "correct": false
+        },
+        {
+          "text": "10 NM outside the Control Zone.",
+          "correct": false
+        },
+        {
+          "text": "prior to entering the Control Zone.",
+          "correct": true
+        },
+        {
+          "text": "immediately prior to joining the circuit.",
+          "correct": false
+        }
+      ],
+      "answer": "prior to entering the Control Zone.",
+      "explanation": null,
+      "reference": "CARs 601.08"
+    },
+    {
+      "id": "PSTAR-13.12",
+      "topic": "PSTAR - Controlled Airspace",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "controlled-airspace"
+      ],
+      "question": "Unless otherwise authorized, a pilot on a VFR flight operating within a Class C Terminal Control Area must",
+      "choices": [
+        {
+          "text": "exit the airspace whenever the weather deteriorates below VFR limits.",
+          "correct": false
+        },
+        {
+          "text": "establish radio contact with the appropriate ATC unit only when transiting the associated Control Zone.",
+          "correct": false
+        },
+        {
+          "text": "establish and maintain radio communication with the appropriate ATC Unit.",
+          "correct": true
+        },
+        {
+          "text": "contact Radar Service only when taking off or landing at the major airport concerned.",
+          "correct": false
+        }
+      ],
+      "answer": "establish and maintain radio communication with the appropriate ATC Unit.",
+      "explanation": null,
+      "reference": "CARs 601.08"
+    },
+    {
+      "id": "PSTAR-14.01",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "The primary objective of an aviation safety investigation into an aircraft accident or aircraft incident is to",
+      "choices": [
+        {
+          "text": "apportion blame and liability.",
+          "correct": false
+        },
+        {
+          "text": "determine the adequacy of insurance regulations.",
+          "correct": false
+        },
+        {
+          "text": "enforce regulations.",
+          "correct": false
+        },
+        {
+          "text": "prevent recurrences.",
+          "correct": true
+        }
+      ],
+      "answer": "prevent recurrences.",
+      "explanation": null,
+      "reference": "AIM - GEN 3.1 - Aviation Safety Investigation"
+    },
+    {
+      "id": "PSTAR-14.02",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "Details on civil aviation accident reporting procedures can be found in the",
+      "choices": [
+        {
+          "text": "TC AIM",
+          "correct": true
+        },
+        {
+          "text": "Canadian Aviation Regulations.",
+          "correct": false
+        },
+        {
+          "text": "Canada Flight Supplement.",
+          "correct": false
+        },
+        {
+          "text": "Aviation Safety Manual.",
+          "correct": false
+        }
+      ],
+      "answer": "TC AIM",
+      "explanation": null,
+      "reference": "AIM - GEN 3.3 - Reporting an Aviation Occurrence"
+    },
+    {
+      "id": "PSTAR-14.03",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "When an aircraft accident occurs, the pilot or operator of the aircraft involved shall ensure that the particulars of the accident are reported to the TSB",
+      "choices": [
+        {
+          "text": "within 7 days by registered mail.",
+          "correct": false
+        },
+        {
+          "text": "within 24 hours by telephone.",
+          "correct": false
+        },
+        {
+          "text": "within 48 hours by facsimile.",
+          "correct": false
+        },
+        {
+          "text": "as soon as possible and by the quickest means available.",
+          "correct": true
+        }
+      ],
+      "answer": "as soon as possible and by the quickest means available.",
+      "explanation": null,
+      "reference": "AIM - GEN 3.3.1 - Reporting an Aircraft Accident"
+    },
+    {
+      "id": "PSTAR-14.04",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "TSB shall be notified of a reportable aviation accident when",
+      "choices": [
+        {
+          "text": "a person sustains serious or fatal injury as a result of being in or coming into direct contact with any part of an aircraft.",
+          "correct": false
+        },
+        {
+          "text": "an aircraft sustains damage or structural failure adversely affecting performance or flight characteristics and requiring major repair or replacement.",
+          "correct": false
+        },
+        {
+          "text": "an aircraft is missing or completely inaccessible.",
+          "correct": false
+        },
+        {
+          "text": "any of the above conditions exist.",
+          "correct": true
+        }
+      ],
+      "answer": "any of the above conditions exist.",
+      "explanation": null,
+      "reference": "AIM - GEN 3.2 - TSB / Definitions / \"accident\" AIM - GEN 3.3.1 - Reporting an Aircraft Accident AIM - GEN 3.3.2 - Reporting a Missing Aircraft"
+    },
+    {
+      "id": "PSTAR-14.05",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "What circumstance(s) permit an aircraft to be moved without approval of the Minister after it has been involved in an accident which caused serious injury or death? When it becomes necessary to",
+      "choices": [
+        {
+          "text": "rescue survivors.",
+          "correct": false
+        },
+        {
+          "text": "avoid danger to persons or property.",
+          "correct": false
+        },
+        {
+          "text": "prevent destruction by fire.",
+          "correct": false
+        },
+        {
+          "text": "implement (1), (2) or (3) above.",
+          "correct": true
+        }
+      ],
+      "answer": "implement (1), (2) or (3) above.",
+      "explanation": null,
+      "reference": "AIM - GEN 3.4.1(1) - Protection of Occurrence Sites"
+    },
+    {
+      "id": "PSTAR-14.06",
+      "topic": "PSTAR - Aviation Occurrences",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "tags": [
+        "pstar",
+        "aviation-occurrences"
+      ],
+      "question": "The TSB considers missing aircraft to be",
+      "choices": [
+        {
+          "text": "a reportable aviation incident.",
+          "correct": false
+        },
+        {
+          "text": "an occurrence which need not be reported.",
+          "correct": false
+        },
+        {
+          "text": "an aviation incident which need not be reported.",
+          "correct": false
+        },
+        {
+          "text": "a reportable aviation accident.",
+          "correct": true
+        }
+      ],
+      "answer": "a reportable aviation accident.",
+      "explanation": null,
+      "reference": "AIM - GEN 3.2 - TSB / Definitions / \"accident\""
+    }
+  ]
+}

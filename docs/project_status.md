@@ -9,12 +9,33 @@ Last updated: 2026-05-18
 
 ## Current state
 
-**Phase 10 (cleanup and UI improvements) is in progress.** Working on branch
-`phase-10-cleanup-ui`.
+**Phase 12 (OpenShift deployment) infrastructure is complete; deployment to APPUiO still
+needs to be triggered and verified.**  Working on branch `phase-11-export` (OpenShift work
+was done ahead of the export phase at the user's request).
 
-Phases 0–9 are complete and merged to `main`. The app is fully functional: multi-user
-with roles, spaced repetition, card management, bulk import, and installable PWA.
-Phase 10 work completed so far:
+Phases 0–10 are complete and merged to `main`. The app is fully functional: multi-user
+with roles, spaced repetition, card management, bulk import, installable PWA, and
+consistent hamburger-menu navigation on every authenticated page.
+
+Phase 12 completed work (in this branch, ahead of schedule):
+
+- Helm chart (`deploy/helm/`) with Deployment + migration init container, Service, OpenShift
+  Route (edge TLS), PostgreSQL StatefulSet (`bitnami/postgresql:17`), Secrets, seed Job.
+- CI `publish` job: builds and pushes `:latest` (runner) and `:tools` images to ghcr.io on
+  every merge to `main`.
+- CD `deploy` workflow: auto-deploys via `helm upgrade --install` after CI passes on `main`.
+- `tools` Docker stage added to `app/Dockerfile` for migration + seed containers.
+- `deploy/README.md` setup guide.
+- PSTAR question bank: 192 questions (TP11919 7th edition) added to `data/questions/pstar.json`.
+
+**Next steps before first deploy:**
+1. Make ghcr.io package public (or create imagePullSecret in namespace).
+2. Add GitHub Actions secrets: `FLASHCARDS_DB_PASSWORD`, `FLASHCARDS_SESSION_SECRET`,
+   `FLASHCARDS_SEED_EMAIL`, `FLASHCARDS_SEED_PASSWORD`.
+3. Add DNS CNAME: `flashcards.maetthu.com → apps.cloudscale-lpg-2.appuio.cloud`.
+4. Merge to `main` → CI publishes images → deploy workflow runs automatically.
+
+Phase 10 completed work:
 
 - Repository cleanup: removed all converted Markdown source files and PNG question images
   now superseded by `data/questions/*.json`.
@@ -246,9 +267,9 @@ Phase 10 work completed so far:
 
 | Phase | Name                         | What it unlocks                                                    |
 |-------|------------------------------|--------------------------------------------------------------------|
-| 11    | Media support v1             | Media upload UI and object storage for new cards                   |
+| 11    | Export and backup tools      | JSON/CSV export so content is portable before production deploy    |
 | 12    | OpenShift deployment         | Helm chart, migration Job, production environment docs             |
-| 13    | Export and backup tools      | JSON, CSV export so content stays portable                         |
+| 13    | Media support v1             | Media upload UI and object storage for new cards                   |
 | 14    | Improvements after daily use | Stats, exam-readiness, FSRS, AI-assisted card creation, offline sync |
 
 ---

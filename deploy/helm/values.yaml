@@ -1,0 +1,60 @@
+# Default values for the flashcards Helm chart.
+# Override sensitive values via --set flags in CI (never commit secrets here).
+
+nameOverride: ""
+# fullnameOverride pins the Kubernetes resource names; keeps them short and
+# predictable so the README instructions work as written.
+fullnameOverride: "flashcards"
+
+image:
+  runner:
+    repository: ghcr.io/maetthu-indermuehle/study-flashcards
+    tag: latest
+    pullPolicy: Always
+  tools:
+    # The "tools" image includes the Prisma CLI and seed script.
+    # Used by the migration init container and the seed Job.
+    repository: ghcr.io/maetthu-indermuehle/study-flashcards
+    tag: tools
+    pullPolicy: Always
+
+# Name of an existing imagePullSecret for ghcr.io in the target namespace.
+# Create with:
+#   kubectl create secret docker-registry ghcr-pull-secret \
+#     --docker-server=ghcr.io \
+#     --docker-username=<github-user> \
+#     --docker-password=<PAT>
+# Leave empty if the ghcr.io package is public.
+imagePullSecretName: ""
+
+route:
+  # Hostname for the OpenShift Route (and the DNS CNAME you point at the router).
+  host: flashcards.maetthu.com
+  tls:
+    # Edge termination: TLS is handled by the OpenShift router; traffic inside
+    # the cluster is plain HTTP.
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+
+app:
+  port: 3000
+  # Session cookie lifetime in seconds (default: 7 days).
+  sessionMaxAgeSeconds: 604800
+
+postgres:
+  database: flashcards
+  username: flashcards
+  # password: set via --set postgres.password=... — never commit here.
+  password: ""
+  storageSize: 2Gi
+  # storageClass: leave empty to use the cluster default.
+  storageClass: ""
+
+# Sensitive values — all REQUIRED at install time via --set or CI secrets.
+secrets:
+  # SESSION_SECRET must be at least 32 characters.
+  # Generate: openssl rand -base64 32
+  sessionSecret: ""
+  # Initial admin account created by the seed Job on first install.
+  seedAdminEmail: ""
+  seedAdminPassword: ""

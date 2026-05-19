@@ -1,4 +1,4 @@
-# PPL Study Flashcards
+# Study Flashcards
 
 Mobile-first flashcard web app with spaced repetition. Originally built for Canadian PPL
 groundschool material; the multi-subject architecture supports any topic (IFR, botany,
@@ -7,11 +7,10 @@ automatically.
 
 ## Current Status
 
-**Phase 10 in progress** — branch: `phase-10-cleanup-ui`
+**Phase 12 in progress** — branch: `phase-12-openshift`
 
-- Phases 0–9 are complete and merged to `main`.
-- Phase 10 adds topic/tag study setup with saved presets, multi-subject deck support,
-  "review due only" mode, card ID tooltip, and repo cleanup.
+- Phases 0–10 are complete and merged to `main`.
+- Phase 12 sets up the APPUiO / OpenShift deployment (Helm chart, CI/CD pipelines).
 - Visit http://localhost:3000 and log in with `admin@local.dev` / `localdev`.
 
 See [docs/project_status.md](docs/project_status.md) for a full breakdown of completed
@@ -93,7 +92,7 @@ docker compose exec app npx prisma migrate dev --name <migration-name>
 To inspect the database:
 
 ```bash
-docker compose exec db psql -U ppl_flashcards ppl_flashcards
+docker compose exec db psql -U flashcards flashcards
 ```
 
 ## Importing Questions

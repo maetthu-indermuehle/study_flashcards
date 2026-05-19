@@ -13,7 +13,7 @@ services:
              npx prisma db seed &&
              npm run dev -- --hostname 0.0.0.0 --webpack"
     environment:
-      DATABASE_URL: postgresql://ppl_flashcards:ppl_flashcards@db:5432/ppl_flashcards?schema=public
+      DATABASE_URL: postgresql://flashcards:flashcards@db:5432/flashcards?schema=public
       PORT: 3000
       SEED_USER_EMAIL: admin@local.dev
       SEED_USER_PASSWORD: localdev
@@ -32,15 +32,15 @@ services:
   db:
     image: postgres:17-alpine
     environment:
-      POSTGRES_DB: ppl_flashcards
-      POSTGRES_USER: ppl_flashcards
-      POSTGRES_PASSWORD: ppl_flashcards
+      POSTGRES_DB: flashcards
+      POSTGRES_USER: flashcards
+      POSTGRES_PASSWORD: flashcards
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ppl_flashcards -d ppl_flashcards"]
+      test: ["CMD-SHELL", "pg_isready -U flashcards -d flashcards"]
       interval: 5s
       timeout: 5s
       retries: 10

@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "flashcards.fullname" . }}-postgres
+  labels:
+    {{- include "flashcards.labels" . | nindent 4 }}
+spec:
+  serviceName: {{ include "flashcards.fullname" . }}-postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "flashcards.postgresSelectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "flashcards.postgresSelectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: postgres
+          # Bitnami's PostgreSQL image is designed to run as an arbitrary (non-root)
+          # user, which is required by OpenShift's default security context constraints.
+          # It uses different env var names than the official postgres image.
+          image: bitnami/postgresql:17
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: postgres
+              containerPort: 5432
+              protocol: TCP
+          env:
+            - name: POSTGRESQL_DATABASE
+              value: {{ .Values.postgres.database | quote }}
+            - name: POSTGRESQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-postgres-secret
+                  key: username
+            - name: POSTGRESQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "flashcards.fullname" . }}-postgres-secret
+                  key: password
+          volumeMounts:
+            - name: data
+              mountPath: /bitnami/postgresql
+          readinessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - pg_isready -U "$POSTGRESQL_USERNAME" -d "$POSTGRESQL_DATABASE"
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 6
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: [ReadWriteOnce]
+        {{- if .Values.postgres.storageClass }}
+        storageClassName: {{ .Values.postgres.storageClass | quote }}
+        {{- end }}
+        resources:
+          requests:
+            storage: {{ .Values.postgres.storageSize }}

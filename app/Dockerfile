@@ -14,6 +14,11 @@ COPY . .
 EXPOSE 3000
 CMD ["npm", "run", "dev", "--", "--hostname", "0.0.0.0"]
 
+# tools — full source + all deps (prisma CLI, tsx); used for migration init
+# container and seed job.  No question data is baked in — import via web UI.
+FROM deps AS tools
+COPY . .
+
 FROM deps AS builder
 COPY . .
 RUN npm run prisma:generate && npm run build

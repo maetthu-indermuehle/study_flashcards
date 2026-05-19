@@ -3,14 +3,17 @@
 /**
  * ThemeProvider — manages light/dark mode preference.
  *
- * On mount, reads the stored preference from localStorage (falling back to
- * the OS preference via prefers-color-scheme) and applies the `dark` class
- * to <html>. Exposes { dark, toggle } via context so any client component
- * (e.g. HamburgerMenu) can read and change the theme without prop drilling.
+ * layout.tsx injects a tiny inline <script> into <head> that reads localStorage
+ * and sets <html class="dark"> before React renders — this prevents any flash
+ * of the wrong theme. ThemeProvider then reads the already-applied class via a
+ * lazy useState initializer (no effect needed, so no setState-in-effect lint
+ * violation). A single useEffect syncs the DOM and localStorage whenever the
+ * toggle state changes — the canonical React pattern for "update an external
+ * system when state changes". Exposes { dark, toggle } via context so any
+ * client component (e.g. HamburgerMenu) can read and change the theme.
  *
- * suppressHydrationWarning must be set on <html> in layout.tsx to suppress
- * the React class mismatch warning that would otherwise appear on the first
- * render before the client can read localStorage.
+ * suppressHydrationWarning on <html> in layout.tsx suppresses the React class
+ * mismatch warning that would appear because the server renders without "dark".
  */
 
 import {
@@ -33,23 +36,24 @@ const ThemeContext = createContext<ThemeContextValue>({
 });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [dark, setDark] = useState(false);
+  // Lazy initializer: read the class already set by the inline <head> script.
+  // Returns false on the server (no window) — suppressed by suppressHydrationWarning.
+  const [dark, setDark] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return document.documentElement.classList.contains("dark");
+  });
 
+  // Sync DOM class and localStorage whenever `dark` changes (toggle).
+  // This is the correct React pattern: update external systems from state,
+  // not the other way around. Does NOT run for initialization — state is
+  // already in sync thanks to the lazy initializer above.
   useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = stored ? stored === "dark" : prefersDark;
-    setDark(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+    document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }, [dark]);
 
   const toggle = useCallback(() => {
-    setDark((prev) => {
-      const next = !prev;
-      localStorage.setItem("theme", next ? "dark" : "light");
-      document.documentElement.classList.toggle("dark", next);
-      return next;
-    });
+    setDark((prev) => !prev);
   }, []);
 
   return (

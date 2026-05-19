@@ -39,6 +39,11 @@ export default function RootLayout({
     // suppressHydrationWarning prevents a React mismatch warning when
     // ThemeProvider adds the "dark" class client-side after hydration.
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      {/* Runs before React renders — reads localStorage and applies 'dark' to <html>
+          so there is no flash of wrong theme on load. Must stay inline/sync. */}
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var s=localStorage.getItem('theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s?s==='dark':p)document.documentElement.classList.add('dark');}catch(e){}})()` }} />
+      </head>
       <body className="min-h-full flex flex-col bg-stone-50 dark:bg-slate-900 transition-colors duration-200">
         <ThemeProvider>
           {children}

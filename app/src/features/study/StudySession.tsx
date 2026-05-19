@@ -13,7 +13,7 @@
  * shrinks on every "← Prev" (pop the previous id, push to ?card=<id>).
  */
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import StudyShell from "./StudyShell";
 import type { StudyCard } from "@/lib/study/types";
@@ -31,9 +31,14 @@ export default function StudySession({ card, tagIds, dueOnly }: Props) {
   // Array of card IDs the user has navigated *away from*, oldest first.
   // useRef so mutations never trigger unnecessary re-renders.
   const historyRef = useRef<string[]>([]);
+  // Separate boolean state drives the Prev button visibility.
+  // We never read historyRef.current during render (React Compiler disallows
+  // refs during render); instead we update hasPrev imperatively in handlers.
+  const [hasPrev, setHasPrev] = useState(false);
 
   function handleNext() {
     historyRef.current.push(card.id);
+    setHasPrev(true);
     // router.refresh() re-fetches the Server Component at the same URL,
     // updating the card prop without adding a browser history entry.
     router.refresh();
@@ -42,6 +47,7 @@ export default function StudySession({ card, tagIds, dueOnly }: Props) {
   function handlePrev() {
     const prevId = historyRef.current.pop();
     if (!prevId) return;
+    setHasPrev(historyRef.current.length > 0);
     const params = new URLSearchParams();
     if (tagIds.length > 0) params.set("tagIds", tagIds.join(","));
     if (dueOnly) params.set("dueOnly", "1");
@@ -51,8 +57,6 @@ export default function StudySession({ card, tagIds, dueOnly }: Props) {
     // next render.
     router.push("/study?" + params.toString());
   }
-
-  const hasPrev = historyRef.current.length > 0;
 
   return (
     <StudyShell

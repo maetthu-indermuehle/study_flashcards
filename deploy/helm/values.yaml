@@ -42,6 +42,10 @@ app:
   sessionMaxAgeSeconds: 604800
 
 postgres:
+  # enabled: set to false to use an external database (e.g. a managed service).
+  # When false, all postgres resources (StatefulSet, Service, Secret) are skipped
+  # and secrets.databaseUrl must be provided instead.
+  enabled: true
   # image can be overridden to use a mirror and avoid Docker Hub rate limits.
   image: bitnami/postgresql:17
   # imagePullSecretName: name of an existing pull secret for the postgres image registry.
@@ -64,3 +68,7 @@ secrets:
   # Initial admin account created by the seed Job on first install.
   seedAdminEmail: ""
   seedAdminPassword: ""
+  # databaseUrl: required when postgres.enabled is false.
+  # Full Prisma connection string, e.g. postgresql://user:pass@host:5432/db
+  # Pass via --set secrets.databaseUrl=... — never commit here.
+  databaseUrl: ""

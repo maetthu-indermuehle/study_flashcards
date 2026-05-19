@@ -47,7 +47,8 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
-Construct the DATABASE_URL from the postgres values.
+Construct the DATABASE_URL from the built-in postgres values.
+Only called when postgres.enabled=true; when disabled, secrets.databaseUrl is used directly.
 Format: postgresql://<user>:<password>@<service>:5432/<db>
 */}}
 {{- define "flashcards.databaseUrl" -}}

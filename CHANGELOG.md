@@ -9,6 +9,19 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.11.2] - 2026-05-19
+
+### Changed
+
+- **Helm chart: built-in PostgreSQL is now optional** — a new `postgres.enabled`
+  value (default `true`) controls whether the chart deploys its own PostgreSQL
+  StatefulSet, Service, and Secret. When set to `false`, all postgres resources are
+  skipped and `secrets.databaseUrl` must be supplied instead (e.g. from a managed
+  database service). No AppCat-specific code lives in the chart itself; that
+  configuration stays in the deploy repository.
+
+---
+
 ## [0.11.1] - 2026-05-19
 
 ### Fixed

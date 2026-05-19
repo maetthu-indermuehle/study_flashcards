@@ -9,6 +9,24 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.12.4] - 2026-05-19
+
+### Added
+
+- **Previous card button** — a "← Prev" button appears in the card toolbar once
+  the user has navigated past at least one card. Clicking it re-shows the last
+  seen card. The history stack is kept in a `useRef` inside a new `StudySession`
+  client wrapper, which survives soft navigations (the same component instance
+  is reused across `router.refresh()` and `router.push()` on the `/study` route).
+
+### Fixed
+
+- **Card question ID in edit header** — `originalId` is now shown next to the
+  "Edit card" heading instead of in the small footer below the form, making it
+  immediately visible without scrolling.
+
+---
+
 ## [0.12.3] - 2026-05-19
 
 ### Fixed

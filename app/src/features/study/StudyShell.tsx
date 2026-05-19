@@ -3,19 +3,16 @@
 /**
  * StudyShell owns the interaction state machine for one card.
  *
- * It sits at the Server Component / Client Component boundary: the parent
- * Server Component (study/page.tsx) fetches a card and passes it here as a
- * prop. StudyShell manages the idle → answered/revealed transition locally,
- * then calls router.refresh() for "Next", which clears the client cache and
- * re-renders the Server Component so it fetches a fresh card via getNextCard.
+ * It sits at the Server/Client Component boundary and receives an `onNext`
+ * callback (called when the user rates a card) and an optional `onPrev`
+ * callback (called when the user navigates back). Both are provided by the
+ * parent StudySession, which owns the history stack.
  *
- * The parent renders <StudyShell key={card.id} card={card} />, ensuring
- * React unmounts and remounts this component (resetting all state) whenever
- * a new card arrives.
+ * StudySession renders <StudyShell key={card.id} … />, so this component is
+ * unmounted and remounted on every new card, resetting all local state.
  */
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import MultipleChoiceCard from "./MultipleChoiceCard";
 import OpenAnswerCard from "./OpenAnswerCard";
@@ -30,11 +27,13 @@ type OAPhase = { name: "idle" } | { name: "revealed" };
 
 type Props = {
   card: StudyCard;
+  /** Called when the user rates a card and wants to advance to the next one. */
+  onNext: () => void;
+  /** Called when the user wants to go back to the previous card. Omit to hide the button. */
+  onPrev?: () => void;
 };
 
-export default function StudyShell({ card }: Props) {
-  const router = useRouter();
-
+export default function StudyShell({ card, onNext, onPrev }: Props) {
   const [mcPhase, setMcPhase] = useState<MCPhase>({ name: "idle" });
   const [oaPhase, setOaPhase] = useState<OAPhase>({ name: "idle" });
 
@@ -47,13 +46,6 @@ export default function StudyShell({ card }: Props) {
   useEffect(() => {
     if (noteOpen) textareaRef.current?.focus();
   }, [noteOpen]);
-
-  function handleNext() {
-    // router.refresh() re-fetches the Server Component at the current URL and
-    // clears the client cache. router.push() to the same URL is a no-op in
-    // Next.js 16 App Router, so refresh is the correct primitive here.
-    router.refresh();
-  }
 
   function handleFlagButtonClick() {
     setNoteOpen((open) => !open);
@@ -102,11 +94,19 @@ export default function StudyShell({ card }: Props) {
     <div className="flex flex-1 flex-col">
       {/* Card toolbar */}
       <div className="mb-3 flex items-center justify-between">
-        {card.originalId ? (
-          <CardIdBadge originalId={card.originalId} topics={card.topics} tags={card.tags} />
-        ) : (
-          <span />
-        )}
+        <div className="flex items-center gap-2">
+          {onPrev && (
+            <button
+              onClick={onPrev}
+              className="text-sm font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+            >
+              ← Prev
+            </button>
+          )}
+          {card.originalId && (
+            <CardIdBadge originalId={card.originalId} topics={card.topics} tags={card.tags} />
+          )}
+        </div>
         <div className="flex items-center gap-1">
           <button
             onClick={handleFlagButtonClick}
@@ -179,7 +179,7 @@ export default function StudyShell({ card }: Props) {
           onAnswer={(selectedId, isCorrect) =>
             setMcPhase({ name: "answered", selectedId, isCorrect })
           }
-          onNext={handleNext}
+          onNext={onNext}
         />
       ) : (
         <OpenAnswerCard
@@ -187,7 +187,7 @@ export default function StudyShell({ card }: Props) {
           cardId={card.id}
           phase={oaPhase}
           onReveal={() => setOaPhase({ name: "revealed" })}
-          onNext={handleNext}
+          onNext={onNext}
         />
       )}
     </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { readSessionCookie } from "@/lib/session/cookies";
 import { getNextCard } from "@/lib/study/get-next-card";
-import StudyShell from "@/features/study/StudyShell";
+import StudySession from "@/features/study/StudySession";
 import HamburgerMenu from "@/features/nav/HamburgerMenu";
 
 export const metadata: Metadata = {
@@ -23,11 +23,14 @@ export default async function StudyPage({ searchParams }: { searchParams: Search
       ? params.tagIds.split(",").filter(Boolean)
       : [];
   const dueOnly = params.dueOnly === "1";
+  // ?card=<uuid> forces a specific card — used by the "← Prev" history button.
+  const forceId = typeof params.card === "string" ? params.card : undefined;
 
   const card = await getNextCard(
     session.userId,
     tagIds.length > 0 ? tagIds : undefined,
     dueOnly,
+    forceId,
   );
 
   return (
@@ -47,7 +50,7 @@ export default async function StudyPage({ searchParams }: { searchParams: Search
         </header>
 
         {card ? (
-          <StudyShell key={card.id} card={card} />
+          <StudySession card={card} tagIds={tagIds} dueOnly={dueOnly} />
         ) : dueOnly ? (
           <div className="grid flex-1 place-items-center text-center">
             <div>

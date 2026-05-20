@@ -9,6 +9,42 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.14.0] - 2026-05-19
+
+Phase 14 — Flight Instruments question bank (300 questions).
+
+### Added
+
+- **Flight Instruments question bank** — 300 multiple-choice questions (FI-001
+  to FI-300) across six topic-based JSON files, aligned with the Canadian PPL
+  written exam standard (TP 12880) and sourced from:
+  - Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2
+    (Instruments) and Chapter 24 (Instrument Flying)
+  - FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023),
+    Chapter 8 (Flight Instruments)
+  - Files:
+    - `FI_001_050_pitot_static_altimeter.json` — pitot-static system, altimeter,
+      5 types of altitude, altimeter errors, density altitude, alternate static
+    - `FI_051_100_vsi_asi_blockages.json` — VSI (operating principle, lag, IVSI),
+      ASI (IAS/CAS/TAS/GS, colour arcs, special speeds), pitot-static blockages
+    - `FI_101_150_gyroscopic_instruments.json` — gyroscopic principles (rigidity,
+      precession), vacuum system, turn indicators, attitude indicator, heading
+      indicator, HSI, AHRS, magnetic compass errors (variation, deviation, dip)
+    - `FI_151_200_instrument_scan_fundamentals.json` — FTM instrument groups
+      (control/performance/navigation), three fundamental skills, selective radial
+      scan, attitude-plus-power-equals-performance, sensory illusions, S&L/climb/
+      descent scan patterns, level-off rule
+    - `FI_201_250_instrument_flight_manoeuvres.json` — partial panel technique,
+      timed turns, straight-and-level, climbs, descents, level/steep/climbing
+      turns, roll-out lead, VOR navigation, vacuum failure procedure
+    - `FI_251_300_unusual_attitudes_compass_efd.json` — unusual attitude
+      recognition and recovery (nose-high and nose-low), spiral vs spin
+      differentiation, spin recovery on instruments, compass turning errors
+      (UNOS), compass acceleration errors (ANDS), TVMDC conversion, EFD/glass
+      cockpit features (PFD, MFD, ADC, AHRS, ADAHRS, trend vectors, SVS)
+
+---
+
 ## [0.13.3] - 2026-05-19
 
 ### Fixed

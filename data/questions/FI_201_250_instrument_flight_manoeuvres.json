@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-201",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "ai-failure"],
+    "question": "The vacuum pump fails in IMC. The AI and HI become unreliable. Which instrument is the primary bank reference on partial panel?",
+    "choices": [
+      {"text": "The magnetic compass", "correct": false},
+      {"text": "The turn coordinator", "correct": true},
+      {"text": "The altimeter", "correct": false},
+      {"text": "The VSI", "correct": false}
+    ],
+    "answer": "The turn coordinator",
+    "explanation": "With the AI failed, the **turn coordinator (TC)** becomes the primary bank reference. Because the TC is electrically powered, it remains operational after a vacuum pump failure. The TC's miniature aircraft shows roll direction and rate; at the standard rate (3°/sec) mark it confirms a controlled turn. It does not show exact bank angle in degrees, but it reliably indicates the rate of turn, which is sufficient for partial panel flight and timed turns.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-202",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "pitch"],
+    "question": "On partial panel (AI failed), which instruments provide pitch attitude information?",
+    "choices": [
+      {"text": "The HI and magnetic compass", "correct": false},
+      {"text": "The ASI and VSI — indirectly, through their response to pitch changes", "correct": true},
+      {"text": "The turn coordinator needle deflection", "correct": false},
+      {"text": "The altimeter rate of change only", "correct": false}
+    ],
+    "answer": "The ASI and VSI — indirectly, through their response to pitch changes",
+    "explanation": "Without the AI, pitch information must be inferred from the **ASI** and **VSI**. A nose-up pitch causes airspeed to decrease and the VSI to show a climb; a nose-down pitch causes airspeed to increase and the VSI to show a descent. Together, these two instruments allow the partial panel pilot to detect and correct pitch deviations: if the ASI is decreasing and the VSI shows a climb, the nose is too high. The altimeter also supports altitude monitoring but is slightly slower to respond than the VSI.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-203",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "heading", "compass"],
+    "question": "On partial panel with the HI failed, how does the pilot maintain heading?",
+    "choices": [
+      {"text": "Using the turn coordinator needle — keep the needle centred for a heading hold", "correct": false},
+      {"text": "Using the magnetic compass, but only during straight, unaccelerated flight", "correct": true},
+      {"text": "Using GPS track — always more reliable than the compass in IMC", "correct": false},
+      {"text": "Estimating heading from elapsed time since the last known heading", "correct": false}
+    ],
+    "answer": "Using the magnetic compass, but only during straight, unaccelerated flight",
+    "explanation": "With the HI failed, the pilot must use the **magnetic compass** as the heading reference. However, the compass is only reliable during straight, wings-level, unaccelerated flight — free of the turning errors (UNOS) and acceleration errors (ANDS) that make it unreliable during manoeuvres. For heading changes, the pilot uses timed turns with the TC (at standard rate, 3°/sec), then reads the compass after the turn is complete and the aircraft has been stabilised in straight, unaccelerated flight for a few seconds.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-204",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "timed-turns"],
+    "question": "Using partial panel timed turns, how long should a standard rate turn last to change heading by 135°?",
+    "choices": [
+      {"text": "30 seconds", "correct": false},
+      {"text": "45 seconds", "correct": true},
+      {"text": "60 seconds", "correct": false},
+      {"text": "90 seconds", "correct": false}
+    ],
+    "answer": "45 seconds",
+    "explanation": "At standard rate (3°/sec): time = heading change ÷ rate = 135° ÷ 3°/sec = 45 seconds. The pilot times the turn using the aircraft clock or stopwatch, maintaining the TC at the standard rate mark throughout. The roll-out is initiated just before the 45-second point to account for the roll-out time. After stopping the turn and stabilising, the compass is checked to confirm the approximate heading, remembering to allow for UNOS if passing through north or south.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-205",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "vacuum-failure-indicators"],
+    "question": "Which of the following is the most reliable indication that the vacuum pump has failed?",
+    "choices": [
+      {"text": "The AI immediately topples to an inverted position", "correct": false},
+      {"text": "The suction gauge drops below the normal range (below 4.5 \"Hg)", "correct": true},
+      {"text": "The altimeter begins to climb regardless of actual altitude", "correct": false},
+      {"text": "The turn coordinator fails simultaneously with the AI", "correct": false}
+    ],
+    "answer": "The suction gauge drops below the normal range (below 4.5 \"Hg)",
+    "explanation": "The **suction gauge** is the diagnostic instrument for vacuum pump health. A reading below 4.5 \"Hg (or zero) in flight is the primary indicator of a vacuum pump failure. The AI and HI do not fail instantaneously — their gyros spin down gradually, so initially their indications may appear near-normal before slowly becoming erratic. A pilot who monitors the suction gauge will detect the failure immediately, while one who only watches the AI may not notice the problem for several minutes until the AI precesses far enough to be obviously wrong.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-206",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "reliable-instruments"],
+    "question": "After a vacuum pump failure, which THREE instruments remain reliable and form the core of partial panel flying?",
+    "choices": [
+      {"text": "AI, HI, and ASI", "correct": false},
+      {"text": "TC, altimeter, and ASI (plus VSI)", "correct": true},
+      {"text": "HI, altimeter, and TC", "correct": false},
+      {"text": "Magnetic compass, AI, and VSI", "correct": false}
+    ],
+    "answer": "TC, altimeter, and ASI (plus VSI)",
+    "explanation": "After vacuum failure: the **TC** (electrically powered) remains the bank/rate reference; the **altimeter** (static pressure) remains the altitude reference; the **ASI** (pitot-static) remains the airspeed and pitch reference; the **VSI** (static pressure) remains the vertical speed and pitch trend reference. The AI and HI (both vacuum-powered) become unreliable and must be ignored. The magnetic compass provides heading during unaccelerated straight flight. This 'partial panel' instrument set is sufficient for controlled flight to a safe landing, provided the pilot is proficient.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-207",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "recognition"],
+    "question": "On instruments, what combination of indications suggests a nose-HIGH unusual attitude?",
+    "choices": [
+      {"text": "Decreasing airspeed, positive VSI, AI showing nose-up pitch", "correct": true},
+      {"text": "Increasing airspeed, positive VSI, AI showing nose-up pitch", "correct": false},
+      {"text": "Decreasing airspeed, negative VSI, AI showing nose-up pitch", "correct": false},
+      {"text": "Increasing airspeed, negative VSI, AI showing nose-down pitch", "correct": false}
+    ],
+    "answer": "Decreasing airspeed, positive VSI, AI showing nose-up pitch",
+    "explanation": "A nose-high unusual attitude shows: **AI** — nose well above the horizon; **ASI** — low and decreasing (approaching stall speed as the aircraft decelerates); **VSI** — positive (climbing) or high positive rate that may be slowing as airspeed bleeds off; **Altimeter** — initially increasing. The danger is that the aircraft will decelerate to stall speed if the attitude is not corrected promptly. High pitch + low airspeed = approaching stall = act immediately.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171",
+    "media": []
+  },
+  {
+    "id": "FI-208",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "nose-high-recovery"],
+    "question": "The correct order of actions to recover from a nose-HIGH unusual attitude on instruments is:",
+    "choices": [
+      {"text": "1. Level wings, 2. Increase power, 3. Lower nose", "correct": false},
+      {"text": "1. Increase power, 2. Lower nose (forward pressure), 3. Level wings", "correct": true},
+      {"text": "1. Lower nose, 2. Level wings, 3. Increase power", "correct": false},
+      {"text": "1. Reduce power, 2. Level wings, 3. Lower nose", "correct": false}
+    ],
+    "answer": "1. Increase power, 2. Lower nose (forward pressure), 3. Level wings",
+    "explanation": "Nose-HIGH recovery sequence (FTM): (1) **Increase power** — maximum available power prevents further deceleration and possible stall, adding energy to the system; (2) **Lower nose** — apply forward pressure to lower pitch attitude to the horizon on the AI, stopping the deceleration; (3) **Level wings** — roll wings level using the AI and TC. Power is added first to prevent the stall; the nose is then lowered to arrest the pitch-up. Levelling wings with a high nose and low airspeed could worsen the stall condition, so wings are levelled after pitch is corrected.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171",
+    "media": []
+  },
+  {
+    "id": "FI-209",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "nose-low-recognition"],
+    "question": "On instruments, what combination of indications suggests a nose-LOW unusual attitude?",
+    "choices": [
+      {"text": "Increasing airspeed, negative VSI (descending), AI showing nose-down pitch", "correct": true},
+      {"text": "Decreasing airspeed, positive VSI, AI showing nose-down pitch", "correct": false},
+      {"text": "Steady airspeed, negative VSI, wings-level AI", "correct": false},
+      {"text": "Increasing airspeed, positive VSI, AI showing nose-up pitch", "correct": false}
+    ],
+    "answer": "Increasing airspeed, negative VSI (descending), AI showing nose-down pitch",
+    "explanation": "A nose-low unusual attitude shows: **AI** — nose well below the horizon, often with significant bank; **ASI** — high and increasing rapidly (overspeed risk); **VSI** — high negative rate (descending fast); **Altimeter** — decreasing rapidly. The danger is structural overstress from high airspeed or exceeding VNE, and altitude loss. The aircraft may also be in a spiral dive where pull-up without levelling wings simply tightens the turn.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171–172",
+    "media": []
+  },
+  {
+    "id": "FI-210",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "nose-low-recovery"],
+    "question": "The correct order of actions to recover from a nose-LOW unusual attitude on instruments is:",
+    "choices": [
+      {"text": "1. Increase power, 2. Pull back, 3. Level wings", "correct": false},
+      {"text": "1. Reduce power, 2. Level wings, 3. Pull back (to recover from dive)", "correct": true},
+      {"text": "1. Level wings, 2. Pull back, 3. Reduce power", "correct": false},
+      {"text": "1. Pull back, 2. Level wings, 3. Reduce power", "correct": false}
+    ],
+    "answer": "1. Reduce power, 2. Level wings, 3. Pull back (to recover from dive)",
+    "explanation": "Nose-LOW recovery sequence (FTM): (1) **Reduce power** — prevents further airspeed increase and reduces the structural loads that will occur during pull-out; (2) **Level wings** — roll to wings-level on the AI/TC first, before pulling back; (3) **Pull back** — smoothly pull out of the dive once wings are level. The critical mistake to avoid is pulling back while still banked — in a banked attitude, back pressure tightens the turn and dive (spiral), dramatically increasing G-loads and altitude loss. Wings must be level before pulling.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-211",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "spiral-dive"],
+    "question": "In IMC, why is it dangerous to apply back pressure when the aircraft is in a steep banked, nose-low attitude (spiral dive)?",
+    "choices": [
+      {"text": "Because back pressure will stall the aircraft at high airspeed", "correct": false},
+      {"text": "Because back pressure in a banked attitude tightens the spiral, increases G-load, and increases altitude loss rate", "correct": true},
+      {"text": "Because back pressure will cause the gyros to tumble", "correct": false},
+      {"text": "Because back pressure reduces engine power in a dive", "correct": false}
+    ],
+    "answer": "Because back pressure in a banked attitude tightens the spiral, increases G-load, and increases altitude loss rate",
+    "explanation": "In a steep banked attitude, pulling back on the controls does not raise the nose toward the horizon — it tightens the radius of the turn in a descending spiral. The load factor increases (G-force), and the rate of altitude loss actually increases. If the airspeed is already high (as in a nose-low spiral), the combined G-load from the tight turn and dive pull-out may exceed the aircraft's structural limit (VNE / structural design limit), causing airframe failure. The correct recovery is to first roll wings-level (reducing the centripetal component), then pull out of the dive — this produces a wings-level pull-out with manageable G-forces.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-212",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["unusual-attitudes", "instrument-flying", "spin-vs-spiral"],
+    "question": "On instruments, how do you distinguish between a spin and a spiral dive?",
+    "choices": [
+      {"text": "A spin shows high airspeed; a spiral shows low airspeed", "correct": false},
+      {"text": "A spin shows low and stable airspeed (near stall); a spiral shows high and increasing airspeed", "correct": true},
+      {"text": "Both look identical on instruments — you cannot distinguish them", "correct": false},
+      {"text": "A spin shows a positive VSI; a spiral shows a negative VSI", "correct": false}
+    ],
+    "answer": "A spin shows low and stable airspeed (near stall); a spiral shows high and increasing airspeed",
+    "explanation": "On instruments, the critical distinguishing characteristic is airspeed: **Spin** — the aircraft is in an aggravated stall; airspeed is low (at or near stall speed) and relatively stable (the stall limits speed increase); the VSI shows a high rate of descent; the turn indicator shows rotation. **Spiral dive** — the aircraft is not stalled; airspeed is high and increasing rapidly; the VSI shows a very high descent rate; G-forces are increasing. Attempting anti-spin recovery (opposite rudder) during a spiral will not help and may worsen the situation. The turn coordinator (TC) is the most reliable instrument to determine the direction of rotation in a spin.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172–173",
+    "media": []
+  },
+  {
+    "id": "FI-213",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["unusual-attitudes", "instrument-flying", "spin", "recovery"],
+    "question": "During an inadvertent spin in IMC, which instrument is the most reliable indicator of the direction of spin rotation?",
+    "choices": [
+      {"text": "The attitude indicator — the bank angle shows the direction", "correct": false},
+      {"text": "The turn coordinator (or turn needle) — the only gyro instrument that remains reliable in a spin", "correct": true},
+      {"text": "The heading indicator — it shows the heading changing in the direction of spin", "correct": false},
+      {"text": "The magnetic compass — the fastest-responding heading reference", "correct": false}
+    ],
+    "answer": "The turn coordinator (or turn needle) — the only gyro instrument that remains reliable in a spin",
+    "explanation": "In a spin, the AI almost certainly tumbles (the bank and pitch limits are exceeded during the spin entry), making it unreliable for direction. The HI also tumbles or precesses rapidly. The **turn coordinator** (or turn needle on a T&S indicator) is the only gyro instrument specifically designed to sense yaw/rotation rates; it remains reliable in a spin and shows the direction of rotation. Anti-spin rudder is applied opposite to the TC needle deflection direction, then controls are neutralised and the aircraft recovers using the standard spin recovery procedure (PARE: Power off, Ailerons neutral, Rudder opposite, Elevator forward).",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 173",
+    "media": []
+  },
+  {
+    "id": "FI-214",
+    "topic": "Flight Instruments — Steep Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "steep-turns", "load-factor"],
+    "question": "In a 60° banked level turn on instruments, the load factor on the aircraft is approximately:",
+    "choices": [
+      {"text": "1.0 G — same as level flight", "correct": false},
+      {"text": "1.4 G", "correct": false},
+      {"text": "2.0 G", "correct": true},
+      {"text": "3.0 G", "correct": false}
+    ],
+    "answer": "2.0 G",
+    "explanation": "Load factor in a level turn = 1 ÷ cos(bank angle). At 60° bank: 1 ÷ cos(60°) = 1 ÷ 0.5 = 2.0 G. This means the aircraft structure and occupants experience twice the normal gravitational load. For this reason, steep turns (>30°) on instruments require the pilot to apply back pressure and possibly power to maintain altitude. The increased stall speed in a steep turn (VS increases with the square root of load factor) also demands a higher minimum airspeed: VS×√2 at 60° bank.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-215",
+    "topic": "Flight Instruments — Steep Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "steep-turns", "scan"],
+    "question": "During a steep instrument turn (e.g., 45° bank), which performance instruments require the most attention?",
+    "choices": [
+      {"text": "VSI and heading indicator only", "correct": false},
+      {"text": "Altimeter and ASI — altitude and airspeed are the most critical variables to control in steep turns", "correct": true},
+      {"text": "Turn coordinator only — bank angle control is everything in steep turns", "correct": false},
+      {"text": "Only the attitude indicator needs attention — it handles all the information", "correct": false}
+    ],
+    "answer": "Altimeter and ASI — altitude and airspeed are the most critical variables to control in steep turns",
+    "explanation": "In a steep turn, altitude tends to drop (reduced vertical lift component) and airspeed may decrease (increased induced drag at higher angles of attack). The **altimeter** must be closely monitored to detect and correct altitude deviations before they become large, and the **ASI** must be watched to ensure airspeed remains above the stall speed (which increases in steep turns). The AI remains the control instrument for setting the bank angle; the TC confirms the rate; but the altimeter and ASI are the performance instruments needing the most frequent attention.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-216",
+    "topic": "Flight Instruments — Climbing Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climbing-turns"],
+    "question": "When performing a climbing turn on instruments, what is the recommended bank angle to avoid excessive altitude loss and airspeed decrease?",
+    "choices": [
+      {"text": "Up to 45°", "correct": false},
+      {"text": "30° or less — standard rate turns use the minimum bank needed", "correct": true},
+      {"text": "60° — a steep bank maintains directional control", "correct": false},
+      {"text": "Any bank angle is acceptable if power is set correctly", "correct": false}
+    ],
+    "answer": "30° or less — standard rate turns use the minimum bank needed",
+    "explanation": "In a climbing turn, power is already at climb setting and airspeed is relatively low (climb speed). Adding bank angle further reduces the climb rate (less vertical lift component) and increases the stall speed (higher load factor). The FTM recommends limiting bank to the standard rate bank (typically 15–20° at climb speeds) or no more than 30° to avoid excessive performance degradation during the climb. Keeping bank shallow maintains climb performance while still changing heading.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-217",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "power-off-descent"],
+    "question": "During a power-off (glide) descent on instruments, which instrument confirms that the glide airspeed is correct?",
+    "choices": [
+      {"text": "The VSI", "correct": false},
+      {"text": "The altimeter", "correct": false},
+      {"text": "The ASI", "correct": true},
+      {"text": "The attitude indicator — glide attitude is always constant", "correct": false}
+    ],
+    "answer": "The ASI",
+    "explanation": "In a power-off glide (or minimum-power descent), the **ASI** is the primary pitch reference because airspeed is the critical variable. The desired glide airspeed (e.g., best glide = 65 kt) is maintained by adjusting pitch on the AI. If the ASI is below target, lower the nose; if above, raise the nose. The VSI shows the resulting rate of descent (a secondary check), and the altimeter shows the altitude trend. This is the same primary-instrument logic as for a power-on constant-airspeed descent.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-218",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "transition-cruise-to-descent"],
+    "question": "When transitioning from cruise to a descent on instruments, after reducing power and setting descent pitch attitude on the AI, the pilot must also:",
+    "choices": [
+      {"text": "Retract flaps to reduce drag", "correct": false},
+      {"text": "Re-trim to relieve control pressure at the new attitude and airspeed", "correct": true},
+      {"text": "Reduce power to idle immediately", "correct": false},
+      {"text": "Set the HI to the descent heading", "correct": false}
+    ],
+    "answer": "Re-trim to relieve control pressure at the new attitude and airspeed",
+    "explanation": "Whenever a significant pitch or power change is made, trim must be re-adjusted. After establishing a descent (reduced power, nose lowered), the aircraft's required elevator pressure changes — the pilot will need to hold forward pressure to maintain the nose-down attitude if the trim is not adjusted. Re-trimming to a 'hands off' condition reduces pilot workload, allowing more attention to the instrument scan. The standard sequence is: attitude → power → trim → check performance instruments.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 155–156",
+    "media": []
+  },
+  {
+    "id": "FI-219",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "straight-level", "heading-deviation"],
+    "question": "In straight-and-level instrument flight, the HI shows a 5° heading deviation. The correct response is:",
+    "choices": [
+      {"text": "Apply a 20° bank correction turn to rapidly return to the correct heading", "correct": false},
+      {"text": "Make a small heading correction using a shallow bank (half-standard rate or standard rate) and track progress on the HI", "correct": true},
+      {"text": "Maintain current heading and wait for the wind to correct the deviation", "correct": false},
+      {"text": "Apply full rudder in the direction of the deviation to yaw back on course", "correct": false}
+    ],
+    "answer": "Make a small heading correction using a shallow bank (half-standard rate or standard rate) and track progress on the HI",
+    "explanation": "For small heading deviations, a shallow bank turn of no more than standard rate is appropriate. Overshooting the correction with a large bank introduces altitude deviations and requires further corrections. The pilot sets a small bank on the AI, monitors the HI for the heading to return, then rolls out using the half-bank-angle lead. For a 5° deviation, a half-standard rate turn for about 3 seconds would suffice. Smooth, small corrections are the hallmark of proficient instrument flying.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 153",
+    "media": []
+  },
+  {
+    "id": "FI-220",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "roll-out-lead"],
+    "question": "At standard rate bank in a level turn, you begin rolling out approximately __________ before the target heading.",
+    "choices": [
+      {"text": "The full bank angle in degrees before the target heading (e.g., 17° = start roll-out 17° early)", "correct": false},
+      {"text": "Half the bank angle in degrees before the target heading (e.g., 17° bank = start roll-out 8–9° early)", "correct": true},
+      {"text": "10° before the target heading, regardless of bank angle", "correct": false},
+      {"text": "5 seconds before the calculated turn completion time", "correct": false}
+    ],
+    "answer": "Half the bank angle in degrees before the target heading (e.g., 17° bank = start roll-out 8–9° early)",
+    "explanation": "During a standard rate turn, the roll-out lead distance equals approximately half the bank angle in degrees. If flying at 90 kt with a 17° bank for standard rate, the roll-out begins 8–9° before the target heading on the HI. As the aircraft rolls level, it continues to turn through those remaining degrees, arriving at wings-level exactly on the target heading. This lead ensures a precise, smooth roll-out without undershooting or overshooting the desired heading.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-221",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "cruise-climb-transition"],
+    "question": "When transitioning from straight-and-level cruise to a climb on instruments, the pilot first increases power, then sets climb pitch attitude. What does the pilot do with the trim?",
+    "choices": [
+      {"text": "Re-trim immediately before setting the climb attitude", "correct": false},
+      {"text": "Re-trim after the attitude is set and the aircraft is stabilised in the climb", "correct": true},
+      {"text": "Do not use trim during climbs — hold the attitude manually", "correct": false},
+      {"text": "Trim is only adjusted during level flight", "correct": false}
+    ],
+    "answer": "Re-trim after the attitude is set and the aircraft is stabilised in the climb",
+    "explanation": "The sequence is: power → attitude → (stabilise) → trim. Trim is adjusted after the new attitude is established and the aircraft is flying stably in the climb, because the trim setting depends on the actual control pressure needed at the new speed and attitude. Trimming too early (before the attitude is stable) will require re-trimming again once the speed stabilises. After trimming 'hands off,' the pilot resumes the full instrument scan to monitor the climb's performance.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154",
+    "media": []
+  },
+  {
+    "id": "FI-222",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "compass-turns"],
+    "question": "When making a partial panel timed turn to the north (using the TC and stopwatch), the pilot plans for a 90° turn from east. The TC is at the standard rate mark for 30 seconds. After rolling out, the magnetic compass is checked during straight, level flight. Due to UNOS, the compass reading is expected to:",
+    "choices": [
+      {"text": "Read south, because the compass always reads opposite near north", "correct": false},
+      {"text": "Read north or slightly past north — because the compass leads through north during a turn, the aircraft may have passed the exact heading", "correct": true},
+      {"text": "Read east — the compass returns to the starting heading after a 90° turn", "correct": false},
+      {"text": "Be unreliable for 30 seconds after the turn — no useful information", "correct": false}
+    ],
+    "answer": "Read north or slightly past north — because the compass leads through north during a turn, the aircraft may have passed the exact heading",
+    "explanation": "When turning toward north in the northern hemisphere, the compass leads (UNOS — Undershoot North). If the pilot timed a perfect 90° turn and rolled out, the compass should read approximately north. However, because the compass leads through north, the card may have already rotated past north before the aircraft actually reached due north. The pilot confirms the heading once stable in straight, unaccelerated flight. Small corrections (a few degrees) can be made with the TC using timed turns. Understanding UNOS helps interpret the compass correctly post-turn.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 170; Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-223",
+    "topic": "Flight Instruments — VOR Navigation on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "vor", "navigation", "instruments"],
+    "question": "During instrument flight, the VOR indicator (OBS with CDI) is classified as which type of instrument in the FTM system?",
+    "choices": [
+      {"text": "Control instrument — used to set the desired track", "correct": false},
+      {"text": "Performance instrument — confirms airspeed is correct for the approach", "correct": false},
+      {"text": "Navigation instrument — provides lateral guidance relative to a VOR radial", "correct": true},
+      {"text": "Safety instrument — triggers a warning when off course", "correct": false}
+    ],
+    "answer": "Navigation instrument — provides lateral guidance relative to a VOR radial",
+    "explanation": "The VOR indicator is a **navigation instrument** in the FTM's three-group system. It shows the aircraft's lateral position relative to a selected VOR radial (the CDI deflects left/right indicating which direction the selected radial is). It is used after attitude and altitude are established (control and performance instruments stable) to check and correct the track. The pilot does not 'control' the aircraft with the VOR — the AI and tachometer do that — but uses the VOR to navigate to a destination.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-224",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descent", "level-off-cruise"],
+    "question": "When levelling off from a descent to cruise airspeed on instruments, the pilot should:",
+    "choices": [
+      {"text": "Increase power to cruise setting and simultaneously raise the nose to level pitch, then trim", "correct": true},
+      {"text": "Raise the nose first to stop the descent, then increase power, then trim", "correct": false},
+      {"text": "Increase power to full then trim the nose up automatically", "correct": false},
+      {"text": "Allow the aircraft to level off on its own when the target altitude is reached", "correct": false}
+    ],
+    "answer": "Increase power to cruise setting and simultaneously raise the nose to level pitch, then trim",
+    "explanation": "The level-off from descent procedure: (1) **Simultaneously** increase power toward cruise setting and raise the nose to level pitch attitude on the AI (both actions at the same time); (2) **Trim** for the new airspeed as it accelerates to cruise. Performing both simultaneously allows the aircraft to transition smoothly. Raising the nose without adding power could cause the airspeed to drop further; adding power without raising the nose could cause the aircraft to continue descending or to accelerate excessively while still descending.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-225",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "setup"],
+    "question": "When established in straight-and-level instrument flight, how does the pilot know the aircraft is in the correct attitude?",
+    "choices": [
+      {"text": "The AI shows the horizon bar at the miniature wings symbol — consistent with zero pitch and bank", "correct": false},
+      {"text": "The AI shows level pitch and wings-level AND the performance instruments (altimeter, ASI, VSI, HI) all show the desired values", "correct": true},
+      {"text": "The turn coordinator needle is centred", "correct": false},
+      {"text": "The altimeter needle is not moving", "correct": false}
+    ],
+    "answer": "The AI shows level pitch and wings-level AND the performance instruments (altimeter, ASI, VSI, HI) all show the desired values",
+    "explanation": "The AI alone is not sufficient confirmation — a slightly erring AI (gyro precession, imperfect erection) could show level while the aircraft is gently turning or climbing. Confirmation of the correct attitude requires both the AI showing the expected attitude AND the performance instruments confirming the expected outcome: altimeter steady (correct altitude), ASI steady (correct airspeed), VSI at zero, HI showing the desired heading. This cross-check principle underlies the reliability of instrument flying.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-226",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "prevention"],
+    "question": "The most effective way to prevent an unusual attitude from developing in IMC is:",
+    "choices": [
+      {"text": "Flying only in smooth air conditions to avoid turbulence-induced attitude excursions", "correct": false},
+      {"text": "Maintaining a continuous, disciplined instrument scan that detects small deviations before they grow large", "correct": true},
+      {"text": "Engaging the autopilot at all times in IMC", "correct": false},
+      {"text": "Maintaining a high airspeed to ensure the aircraft is responsive to control inputs", "correct": false}
+    ],
+    "answer": "Maintaining a continuous, disciplined instrument scan that detects small deviations before they grow large",
+    "explanation": "Unusual attitudes are almost always the result of allowing small deviations to go uncorrected until they accumulate into a large, dangerous situation. A pilot who scans continuously and detects a 5° bank develops immediately will correct it with a small input before it becomes a 30° bank — the precursor to a spiral dive. The FTM's selective radial scan, discipline of returning to the AI frequently, and early detection of even small deviations are the most effective prevention tools. The autopilot is a backup, not a substitute for scan proficiency.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 150–151, 171",
+    "media": []
+  },
+  {
+    "id": "FI-227",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "constant-rate-climb", "performance"],
+    "question": "In a constant-rate climb, the pilot maintains 500 fpm on the VSI. If a headwind develops, what happens to the airspeed and what should the pilot do?",
+    "choices": [
+      {"text": "Airspeed decreases — the pilot should increase pitch to maintain 500 fpm", "correct": false},
+      {"text": "Airspeed is unaffected by headwind during a climb — TAS and IAS are the same", "correct": false},
+      {"text": "Groundspeed decreases but IAS/TAS are unaffected — the pilot maintains the same attitude and power", "correct": true},
+      {"text": "Airspeed increases — the pilot should reduce pitch to prevent overspeed", "correct": false}
+    ],
+    "answer": "Groundspeed decreases but IAS/TAS are unaffected — the pilot maintains the same attitude and power",
+    "explanation": "Wind affects groundspeed (speed over the ground) but not IAS or TAS, which are measured relative to the surrounding air mass. A headwind of 20 kt reduces groundspeed by 20 kt but does not change what the ASI reads or what the VSI reads. The climb rate and airspeed are determined by the aircraft's attitude and power, not by wind. Therefore, the pilot maintains the same attitude and power. Wind does affect the time to destination and the horizontal distance covered during the climb, which matters for fuel planning.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154",
+    "media": []
+  },
+  {
+    "id": "FI-228",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "turns", "coordination"],
+    "question": "During a level instrument turn, the inclinometer ball rolls out to the left (inside the left turn). What correction does the pilot make?",
+    "choices": [
+      {"text": "Apply left rudder ('step on the ball')", "correct": true},
+      {"text": "Apply right rudder (opposite to the ball)", "correct": false},
+      {"text": "Increase bank to stop the ball displacement", "correct": false},
+      {"text": "Apply forward pressure to prevent the nose from dropping", "correct": false}
+    ],
+    "answer": "Apply left rudder ('step on the ball')",
+    "explanation": "When the inclinometer ball is displaced to the LEFT (inside a left turn), the aircraft is slipping — the bank is too steep relative to the turn rate, and the aircraft is sliding toward the inside of the turn. The correction is to 'step on the ball' — apply rudder on the same side as the ball's displacement: **left rudder**. This increases the yaw rate to match the bank angle, correcting the slip and centring the ball. Alternatively, reducing bank (rolling slightly right) would also centre the ball. 'Step on the ball' always means: apply the rudder pedal on the same side as the ball's displacement.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-13; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-229",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "straight-flight-compass"],
+    "question": "On partial panel in IMC, after completing a timed turn, the pilot must wait before reading the magnetic compass to determine the new heading. Why?",
+    "choices": [
+      {"text": "The compass fluid takes 30 seconds to settle after a turn", "correct": false},
+      {"text": "The aircraft must be stabilised in straight, wings-level, unaccelerated flight for the compass to give a reliable reading", "correct": true},
+      {"text": "The compass must be heated before it reads accurately after a cold turn", "correct": false},
+      {"text": "The TC must show zero before the compass is accurate", "correct": false}
+    ],
+    "answer": "The aircraft must be stabilised in straight, wings-level, unaccelerated flight for the compass to give a reliable reading",
+    "explanation": "The magnetic compass is only reliable during straight, wings-level, unaccelerated flight. During and immediately after a turn, the compass suffers from turning errors (UNOS) and any residual bank or deceleration causes additional errors (ANDS). After rolling out with the TC, the pilot must maintain straight, level, constant-speed flight for a few seconds before reading the compass to confirm the approximate heading. This is the only way to get an accurate compass reading without an HI, and it is fundamental to partial panel technique.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 170",
+    "media": []
+  },
+  {
+    "id": "FI-230",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turbulence", "control"],
+    "question": "When flying in turbulence on instruments, the pilot should:",
+    "choices": [
+      {"text": "Increase control inputs to maintain exact altitude and airspeed despite the turbulence", "correct": false},
+      {"text": "Accept small attitude and airspeed deviations and make smooth, moderate corrections rather than fighting each gust", "correct": true},
+      {"text": "Reduce all control inputs and let the aircraft fly itself through the turbulence", "correct": false},
+      {"text": "Extend flaps to reduce airspeed and improve stability", "correct": false}
+    ],
+    "answer": "Accept small attitude and airspeed deviations and make smooth, moderate corrections rather than fighting each gust",
+    "explanation": "In turbulence, individual gusts create rapid, momentary attitude and airspeed changes. Attempting to correct each one with large control inputs ('chasing the gusts') leads to excessive control activity, increased workload, and possibly larger deviations from over-correcting. The recommended technique is to set a cruise attitude and power on the AI, accept small transient deviations, and make moderate corrections only when the deviation becomes sustained or significant. Flying at the turbulence penetration speed (VB or VA) reduces structural loads.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 153",
+    "media": []
+  },
+  {
+    "id": "FI-231",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "climb", "altimeter"],
+    "question": "During a climb on instruments, which instrument confirms that the aircraft is actually gaining altitude?",
+    "choices": [
+      {"text": "The VSI confirms altitude is being gained", "correct": false},
+      {"text": "The altimeter confirms altitude is being gained", "correct": true},
+      {"text": "The ASI confirms altitude gain if airspeed is decreasing", "correct": false},
+      {"text": "The AI confirms altitude gain if it shows nose-up pitch", "correct": false}
+    ],
+    "answer": "The altimeter confirms altitude is being gained",
+    "explanation": "The **altimeter** is the definitive instrument for confirming that altitude is actually changing. The VSI shows the *rate* of altitude change (and can be used to crosscheck the altimeter), but the altimeter is the primary altitude reference. In a climb, the altimeter needle should be rising. If the altimeter is not changing despite the AI showing a nose-up pitch and the VSI showing a climb, suspect an altimeter or static system fault. The altimeter reading is also the reference for knowing when to level off.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 155",
+    "media": []
+  },
+  {
+    "id": "FI-232",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "turns", "ball-centred"],
+    "question": "In a banked turn on instruments, the inclinometer ball is perfectly centred. This indicates:",
+    "choices": [
+      {"text": "The aircraft is in straight-and-level flight", "correct": false},
+      {"text": "The turn is coordinated — no slip or skid", "correct": true},
+      {"text": "The aircraft's heading is not changing", "correct": false},
+      {"text": "The turn rate is exactly 3°/second", "correct": false}
+    ],
+    "answer": "The turn is coordinated — no slip or skid",
+    "explanation": "A centred inclinometer ball indicates a **coordinated turn** — the resultant of gravity and centrifugal force is acting straight down through the floor of the aircraft (the pilot feels pushed straight into the seat). There is no side-slip component. A coordinated turn does not imply wings level — the aircraft is banked and turning, but doing so efficiently without any sideways sliding. The ball is centred when the rudder, aileron, and bank angle are all properly balanced for the airspeed and rate of turn.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-13",
+    "media": []
+  },
+  {
+    "id": "FI-233",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "immediate-action"],
+    "question": "When recognising an unusual attitude on instruments, what is the pilot's FIRST action?",
+    "choices": [
+      {"text": "Identify the type of unusual attitude (nose-high or nose-low) from the AI and supporting instruments", "correct": true},
+      {"text": "Immediately apply full power regardless of the attitude", "correct": false},
+      {"text": "Call ATC to declare an emergency", "correct": false},
+      {"text": "Pull back to stop any descent", "correct": false}
+    ],
+    "answer": "Identify the type of unusual attitude (nose-high or nose-low) from the AI and supporting instruments",
+    "explanation": "The first action is to **identify** the unusual attitude — specifically, whether the nose is high (low airspeed, positive VSI) or low (high airspeed, negative VSI, possibly high bank). This identification determines the correct recovery procedure. Applying the wrong recovery (e.g., pulling back during a nose-low spiral) can worsen the situation catastrophically. The AI provides the primary reference; the ASI and VSI confirm. Once identified, the appropriate recovery procedure (nose-high or nose-low) is applied immediately and smoothly.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171",
+    "media": []
+  },
+  {
+    "id": "FI-234",
+    "topic": "Flight Instruments — Steep Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "steep-turns", "rollout"],
+    "question": "When rolling out of a steep (45°) instrument turn, the roll-out lead distance should be approximately:",
+    "choices": [
+      {"text": "5° before the desired heading", "correct": false},
+      {"text": "Half the bank angle = approximately 22–23° before the desired heading", "correct": true},
+      {"text": "The full bank angle (45°) before the desired heading", "correct": false},
+      {"text": "10° before the desired heading regardless of bank angle", "correct": false}
+    ],
+    "answer": "Half the bank angle = approximately 22–23° before the desired heading",
+    "explanation": "The half-bank-angle lead rule applies equally to steep turns: for a 45° bank, begin the roll-out 22–23° before the target heading. A steep turn has a higher turn rate (more degrees per second because greater bank angle = higher turn rate), so the aircraft covers more heading change during the roll-out, requiring earlier initiation. If the roll-out is started too late from a 45° bank, the aircraft will overshoot the target heading significantly.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-235",
+    "topic": "Flight Instruments — Climbing Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climbing-turns", "performance"],
+    "question": "During a climbing turn on instruments, the combination of climbing and banking causes which performance degradation?",
+    "choices": [
+      {"text": "Decreased structural strength only", "correct": false},
+      {"text": "Reduced climb rate (reduced vertical lift) and increased stall speed (increased load factor)", "correct": true},
+      {"text": "Increased airspeed because the turn adds energy", "correct": false},
+      {"text": "No performance change — climbing turns are identical to straight climbs", "correct": false}
+    ],
+    "answer": "Reduced climb rate (reduced vertical lift) and increased load factor (increased stall speed)",
+    "explanation": "Combining a climb with a bank creates two performance penalties: (1) **Reduced climb rate** — the banked wing produces lift tilted away from vertical, so the vertical component (which counters gravity) is reduced. The aircraft must fly at a higher angle of attack to maintain altitude or climbs more slowly; (2) **Increased load factor** — the bank adds centripetal force requirements, increasing load factor and stall speed. At standard rate bank (~17°) at climb speed, these effects are minor but measurable. This is why climbing turns are typically limited to standard rate bank.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-236",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "power-attitude"],
+    "question": "During a standard cruise in straight-and-level instrument flight, the altimeter begins to show a slow decrease. The VSI shows –200 fpm. What is the FIRST corrective action?",
+    "choices": [
+      {"text": "Increase power to stop the descent", "correct": false},
+      {"text": "Apply a small nose-up pitch correction on the AI", "correct": true},
+      {"text": "Set the altimeter Kollsman window to correct for pressure change", "correct": false},
+      {"text": "Extend partial flaps to increase lift", "correct": false}
+    ],
+    "answer": "Apply a small nose-up pitch correction on the AI",
+    "explanation": "In straight-and-level flight at constant power, a gradual descent means the pitch attitude is slightly low — the aircraft is flying slightly nose-down. The first correction is to raise the nose slightly on the AI (a small pitch-up input) to return to the level attitude. Power is constant and can stay constant since the cause is attitude, not insufficient power. After the pitch correction, monitor the altimeter and VSI to confirm the descent stops and altitude returns. Only if the altitude cannot be recovered with attitude alone should power be considered.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152–153",
+    "media": []
+  },
+  {
+    "id": "FI-237",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "turns", "entry"],
+    "question": "When entering a turn on instruments, the pilot rolls the aircraft to the bank angle on the AI and simultaneously:",
+    "choices": [
+      {"text": "Reduces power to maintain airspeed in the turn", "correct": false},
+      {"text": "Applies coordinating rudder in the direction of the bank to maintain coordination", "correct": true},
+      {"text": "Applies opposite rudder to slow the roll rate", "correct": false},
+      {"text": "Pushes forward on the controls to prevent altitude gain", "correct": false}
+    ],
+    "answer": "Applies coordinating rudder in the direction of the bank to maintain coordination",
+    "explanation": "During the roll-in to a turn, adverse yaw tends to yaw the nose opposite to the direction of roll (due to aileron drag). The pilot applies coordinating rudder in the direction of the turn to prevent adverse yaw, keeping the inclinometer ball centred throughout the roll-in. The coordinating rudder pressure is modulated with the aileron input — as the bank angle stabilises, rudder pressure returns to neutral (or just enough to maintain coordination). Monitoring the ball confirms coordination throughout.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156–157",
+    "media": []
+  },
+  {
+    "id": "FI-238",
+    "topic": "Flight Instruments — Descending Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descending-turns"],
+    "question": "When performing a descending turn on instruments, the primary challenge compared to a straight descent is:",
+    "choices": [
+      {"text": "The VSI becomes inaccurate during turning descents", "correct": false},
+      {"text": "Managing both the rate of descent and the turn rate simultaneously with a more demanding scan", "correct": true},
+      {"text": "The altimeter reads incorrectly during banked descents", "correct": false},
+      {"text": "The bank angle must be reduced to zero before the descent can be established", "correct": false}
+    ],
+    "answer": "Managing both the rate of descent and the turn rate simultaneously with a more demanding scan",
+    "explanation": "A descending turn requires the pilot to simultaneously manage: pitch (to control descent rate and airspeed), bank (to control turn rate and direction), power (to maintain desired airspeed/rate), and coordination (ball centred). The instrument scan must cover all relevant instruments: AI (attitude), TC (turn rate), altimeter (altitude), ASI (airspeed), VSI (descent rate), HI (heading progress). This is more demanding than either a straight descent or a level turn. The FTM recommends becoming proficient at each manoeuvre individually before combining them.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 159",
+    "media": []
+  },
+  {
+    "id": "FI-239",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "attitude-cues"],
+    "question": "On partial panel (no AI), the ASI shows 100 kt (cruise airspeed) and the VSI shows 0. The altimeter is steady. The TC shows wings level and ball centred. What is the most likely aircraft attitude?",
+    "choices": [
+      {"text": "The aircraft is in a banked turn — the TC cannot sense slow banks", "correct": false},
+      {"text": "The aircraft is in straight-and-level flight", "correct": true},
+      {"text": "The aircraft is in a shallow dive — the ASI would be increasing", "correct": false},
+      {"text": "The aircraft is in a shallow climb — VSI lag hides the actual climb", "correct": false}
+    ],
+    "answer": "The aircraft is in straight-and-level flight",
+    "explanation": "The instrument cross-check confirms straight-and-level: **TC** wings level and ball centred = no turn, coordinated; **ASI** at cruise = correct speed for level flight at this power; **VSI** = 0 = no altitude change; **Altimeter** steady = altitude maintained. All four instruments give a consistent picture of straight-and-level flight. This is the partial panel cross-check in action: multiple instruments agree, so the picture is reliable. If any single instrument disagreed (e.g., VSI showed a climb while altimeter was steady), a fault would be suspected.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-240",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "ai-tumbled"],
+    "question": "After recovering from an unusual attitude that may have caused the AI to tumble, the pilot should:",
+    "choices": [
+      {"text": "Trust the AI immediately — it self-corrects within 30 seconds", "correct": false},
+      {"text": "Ignore the AI until it re-erects, and continue on partial panel using TC, ASI, altimeter, VSI", "correct": true},
+      {"text": "Reset the AI by pushing the caging knob", "correct": false},
+      {"text": "Immediately land at the nearest airport because the AI cannot be trusted again in this flight", "correct": false}
+    ],
+    "answer": "Ignore the AI until it re-erects, and continue on partial panel using TC, ASI, altimeter, VSI",
+    "explanation": "If the AI has tumbled (gimbal limits exceeded during the unusual attitude), it will show a false, erratic attitude until the erection mechanism re-erects the gyro — a process that can take 5 minutes or more. Trusting a tumbled AI before it re-erects could lead to a second, worse unusual attitude. The pilot should fly on partial panel (TC, ASI, altimeter, VSI, magnetic compass) until the AI is confirmed reliable by checking that its indications match the partial panel picture over time. Some aircraft have a caging knob that can re-cage and re-erect the AI faster.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169, 172",
+    "media": []
+  },
+  {
+    "id": "FI-241",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "climb", "power-before-attitude"],
+    "question": "Why is power increased BEFORE the nose-up attitude is set when establishing a climb on instruments?",
+    "choices": [
+      {"text": "Because raising the nose first would cause the aircraft to stall", "correct": false},
+      {"text": "Because increasing power first prevents the airspeed from decreasing while the attitude is being adjusted", "correct": true},
+      {"text": "Because FAA regulations require this specific sequence", "correct": false},
+      {"text": "Because the AI cannot be read accurately at low airspeed", "correct": false}
+    ],
+    "answer": "Because increasing power first prevents the airspeed from decreasing while the attitude is being adjusted",
+    "explanation": "If the nose is raised without first adding power, the aircraft immediately begins to decelerate — airspeed drops from the increased drag and reduced thrust. By adding power first, the engine provides the energy needed before the pitch change demands it. The subsequent nose-up attitude can then be set without a significant airspeed drop. This sequence (power → attitude → trim) is consistent with the FTM principle of attitude plus power equals performance, and it produces a smoother, more controlled climb entry.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154",
+    "media": []
+  },
+  {
+    "id": "FI-242",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "straight-level", "rudder"],
+    "question": "During straight-and-level instrument flight, a single-engine propeller aircraft tends to turn slightly left due to torque and P-factor. How is this corrected?",
+    "choices": [
+      {"text": "Apply constant right aileron to bank into the torque", "correct": false},
+      {"text": "Apply right rudder trim or right rudder pressure to counteract the left-turning tendency", "correct": true},
+      {"text": "Fly with slightly left bank to counter the torque", "correct": false},
+      {"text": "Increase power to overcome the left-turning tendency", "correct": false}
+    ],
+    "answer": "Apply right rudder trim or right rudder pressure to counteract the left-turning tendency",
+    "explanation": "Single-engine propeller aircraft have left-turning tendencies due to torque (engine/propeller rotation creating an opposite reaction on the fuselage), P-factor (the descending blade at high angles of attack has greater thrust), gyroscopic precession, and slipstream effect. In straight-and-level cruise on instruments, these forces must be countered with right rudder pressure or right rudder trim adjustment so the ball remains centred and the HI shows a steady heading without constant rudder input. Proper trim greatly reduces the pilot's workload for this correction.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 5 — Aerodynamics of Flight, p. 5-28 to 5-31",
+    "media": []
+  },
+  {
+    "id": "FI-243",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns", "altitude-maintenance"],
+    "question": "The primary performance instrument for maintaining altitude during a level instrument turn is:",
+    "choices": [
+      {"text": "The VSI", "correct": false},
+      {"text": "The attitude indicator", "correct": false},
+      {"text": "The altimeter", "correct": true},
+      {"text": "The heading indicator", "correct": false}
+    ],
+    "answer": "The altimeter",
+    "explanation": "During a level turn, the **altimeter** is the primary performance instrument for altitude. If the altimeter is decreasing, back pressure and/or power must be increased; if increasing, forward pressure may be needed. The VSI supports the altimeter by confirming the rate of any altitude change. The AI is the control instrument (bank and pitch are set on it) but the altimeter is what confirms altitude is actually being maintained. This reflects the 'control instrument → confirm on performance instrument' sequence of the FTM's method.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-244",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "wings-level"],
+    "question": "On partial panel, the pilot wants to confirm the aircraft is flying wings-level without the AI. Which instrument provides this confirmation?",
+    "choices": [
+      {"text": "The altimeter — a steady altitude means wings are level", "correct": false},
+      {"text": "The turn coordinator — wings-level miniature aircraft and centred ball confirm no turn and coordination", "correct": true},
+      {"text": "The VSI — zero rate confirms wings level", "correct": false},
+      {"text": "The magnetic compass — a steady compass heading means wings are level", "correct": false}
+    ],
+    "answer": "The turn coordinator — wings-level miniature aircraft and centred ball confirm no turn and coordination",
+    "explanation": "The **TC's** miniature aircraft wings-level indication and centred ball is the best available confirmation of wings-level flight on partial panel. The TC detects bank (via its canted gimbal) and yaw, so a wings-level, ball-centred indication means no roll and no yaw — the aircraft is flying straight. The altimeter and compass also support this (steady altitude, steady heading) but the TC gives the most direct and immediate bank reference available when the AI is inoperative.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-245",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descent", "ias-priority"],
+    "question": "The pilot is in a descent on instruments and the ASI shows the airspeed is increasing above the target descent airspeed. What adjustment does the pilot make to the AI?",
+    "choices": [
+      {"text": "Lower the nose further to increase the descent rate", "correct": false},
+      {"text": "Raise the nose slightly to reduce airspeed back to the target", "correct": true},
+      {"text": "Increase power to overcome the extra airspeed", "correct": false},
+      {"text": "Extend flaps to create drag and reduce airspeed", "correct": false}
+    ],
+    "answer": "Raise the nose slightly to reduce airspeed back to the target",
+    "explanation": "In a constant-airspeed descent, if the ASI shows airspeed increasing above target, the nose is too low — the aircraft is descending at too steep an angle. The correction is to raise the nose slightly on the AI (back pressure) to reduce the pitch angle and allow the airspeed to decelerate back to target. This simultaneously reduces the rate of descent. After correcting, the pilot monitors ASI and VSI to confirm the correction. Reducing power can also help reduce airspeed but it is a secondary control — attitude is the primary.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-246",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns", "heading-rate"],
+    "question": "A pilot needs to turn from heading 090° to heading 270° (a 180° change) at standard rate. How long should the turn take, and which direction (shortest turn) is the pilot likely to choose?",
+    "choices": [
+      {"text": "30 seconds; direction does not matter for a 180° turn", "correct": false},
+      {"text": "60 seconds; either left or right — both are 180°", "correct": true},
+      {"text": "90 seconds; always turn right (clockwise) in North America", "correct": false},
+      {"text": "120 seconds; a 180° turn must be in two 90° segments", "correct": false}
+    ],
+    "answer": "60 seconds; either left or right — both are 180°",
+    "explanation": "At standard rate (3°/sec): 180° ÷ 3°/sec = 60 seconds. For a 180° turn, both left and right require the same turn angle and therefore the same time (60 seconds). The pilot may choose the direction based on ATC instructions, terrain, or traffic considerations, but there is no 'shorter' direction for exactly 180°. The timing is precise: the stopwatch starts when the roll-in begins, and the roll-out starts at 60 seconds minus the lead distance (approximately half the bank angle ÷ 3°/sec before 60 sec).",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157, 169",
+    "media": []
+  },
+  {
+    "id": "FI-247",
+    "topic": "Flight Instruments — VOR Navigation on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "vor", "navigation", "scan-priority"],
+    "question": "During a VOR instrument approach, what is the correct scan priority order?",
+    "choices": [
+      {"text": "CDI → altimeter → ASI → AI", "correct": false},
+      {"text": "AI (attitude and power control) → altimeter and ASI (performance) → CDI (navigation)", "correct": true},
+      {"text": "CDI → AI → altimeter → TC", "correct": false},
+      {"text": "Altimeter → CDI → AI → ASI", "correct": false}
+    ],
+    "answer": "AI (attitude and power control) → altimeter and ASI (performance) → CDI (navigation)",
+    "explanation": "During an instrument approach, the scan hierarchy is: first **control instruments** (AI for attitude, tachometer for power) — to maintain the aircraft in a controlled state; then **performance instruments** (altimeter for altitude, ASI for airspeed) — to verify the aircraft is on the correct glidepath speed; then **navigation instruments** (CDI) — to verify course tracking. Many approach accidents occur because pilots become fixated on the CDI (navigation) while neglecting attitude, altitude, or airspeed (control and performance). The FTM's three-group classification reinforces this priority.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148–151",
+    "media": []
+  },
+  {
+    "id": "FI-248",
+    "topic": "Flight Instruments — Partial Panel Flying",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["partial-panel", "instrument-flying", "ftm", "vacuum-failure-procedure"],
+    "question": "After identifying a vacuum failure in IMC, what is the MOST IMPORTANT first action?",
+    "choices": [
+      {"text": "Declare an emergency with ATC and request immediate vectors", "correct": false},
+      {"text": "Cover the AI and HI to avoid being misled by their slowly deteriorating indications", "correct": true},
+      {"text": "Turn on the pitot heat as a precaution", "correct": false},
+      {"text": "Select an alternate static source", "correct": false}
+    ],
+    "answer": "Cover the AI and HI to avoid being misled by their slowly deteriorating indications",
+    "explanation": "After a vacuum failure, the AI and HI do not fail instantly — they spin down slowly and their indications become progressively more erratic. The danger is that the pilot may continue referencing these instruments as they slowly drift to false readings, leading to spatial disorientation. The critical first action is to **cover** (or mentally disregard) the AI and HI to prevent unconscious cross-checking of failing instruments. Some POHs recommend physical covers; others recommend the pilot mark them as unreliable with a Post-it or simply ignore them. Transitioning immediately to the partial panel instruments (TC, ASI, altimeter, VSI, compass) is the operational response.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-249",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "summary"],
+    "question": "Which set of instrument indications confirms that an aircraft is in straight-and-level flight on instruments?",
+    "choices": [
+      {"text": "AI level, altimeter steady, ASI steady, VSI = 0, HI steady, TC wings-level and ball centred", "correct": true},
+      {"text": "AI level and altimeter steady (other instruments are not required for confirmation)", "correct": false},
+      {"text": "VSI = 0 and HI steady (these two instruments alone confirm level flight)", "correct": false},
+      {"text": "TC wings-level and ball centred (the TC is sufficient alone)", "correct": false}
+    ],
+    "answer": "AI level, altimeter steady, ASI steady, VSI = 0, HI steady, TC wings-level and ball centred",
+    "explanation": "The complete confirmation of straight-and-level flight on instruments requires all instruments to show a consistent picture: **AI** — wings-level, horizon at the miniature aircraft symbol (level pitch); **Altimeter** — steady at target altitude; **ASI** — steady at cruise airspeed (neither climbing nor descending); **VSI** — zero (no vertical movement); **HI** — steady at target heading; **TC** — miniature aircraft wings-level, ball centred (no turn, coordinated). Any deviation from this pattern indicates the aircraft is not in straight-and-level flight and requires correction.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151–153",
+    "media": []
+  },
+  {
+    "id": "FI-250",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "altitude-constraint", "level-off"],
+    "question": "An ATC clearance says 'climb to and maintain 5,000 ft.' In instrument conditions, when does the pilot level off?",
+    "choices": [
+      {"text": "When the VSI returns to zero", "correct": false},
+      {"text": "When the altimeter shows 5,000 ft and the pilot has completed the level-off procedure (power back, nose down, trim)", "correct": true},
+      {"text": "When the AI shows a level pitch attitude", "correct": false},
+      {"text": "When ATC confirms the aircraft is at 5,000 ft on radar", "correct": false}
+    ],
+    "answer": "When the altimeter shows 5,000 ft and the pilot has completed the level-off procedure (power back, nose down, trim)",
+    "explanation": "The **altimeter** is the definitive reference for the target altitude. Using the 10% rule, the pilot begins the level-off 10% of the VSI reading before 5,000 ft. For example, at 500 fpm, begin at 4,950 ft: (1) simultaneously reduce power to cruise setting and lower nose to level attitude on AI; (2) trim; (3) confirm 5,000 ft on altimeter with VSI at zero. ATC clearance to 'maintain 5,000 ft' means the pilot is responsible for maintaining that altitude; ATC radar confirmation is not required and not the trigger to level off.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154–156",
+    "media": []
+  }
+]

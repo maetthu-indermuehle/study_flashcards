@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-151",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "control-instruments"],
+    "question": "According to the Transport Canada Flight Training Manual (FTM), flight instruments are divided into three groups. What are they?",
+    "choices": [
+      {"text": "Primary, secondary, and backup instruments", "correct": false},
+      {"text": "Control instruments, performance instruments, and navigation instruments", "correct": true},
+      {"text": "Pitot-static, gyroscopic, and magnetic instruments", "correct": false},
+      {"text": "Attitude, power, and navigation instruments", "correct": false}
+    ],
+    "answer": "Control instruments, performance instruments, and navigation instruments",
+    "explanation": "The FTM organises flight instruments into three functional groups to support the attitude-instrument flying method: **Control instruments** — directly set the attitude and power (AI and tachometer/MP gauge). **Performance instruments** — show the outcome of the attitude and power set (ASI, altimeter, VSI, HI, TC/T&B, magnetic compass). **Navigation instruments** — provide course guidance (VOR indicator, ADF). Understanding these groups helps the pilot know which instruments to reference for any given task.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-152",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "control-instruments"],
+    "question": "Which instruments are classified as **control** instruments in the FTM's instrument flying system?",
+    "choices": [
+      {"text": "Altimeter and VSI", "correct": false},
+      {"text": "Attitude indicator and tachometer (or manifold pressure gauge)", "correct": true},
+      {"text": "Magnetic compass and turn coordinator", "correct": false},
+      {"text": "ASI and heading indicator", "correct": false}
+    ],
+    "answer": "Attitude indicator and tachometer (or manifold pressure gauge)",
+    "explanation": "Control instruments allow the pilot to set the desired attitude and power directly: the **AI** displays pitch and bank so the pilot can precisely set the required attitude, and the **tachometer** (or manifold pressure gauge on a variable-pitch propeller aircraft) allows the pilot to set the required power. Attitude plus power equals performance — the pilot uses control instruments to establish the values, then reads performance instruments to confirm the expected outcome.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-153",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "performance-instruments"],
+    "question": "Which of the following are **performance** instruments as defined by the FTM?",
+    "choices": [
+      {"text": "AI, tachometer, VOR indicator", "correct": false},
+      {"text": "ASI, altimeter, VSI, HI, TC/T&B, and magnetic compass", "correct": true},
+      {"text": "Altimeter, ASI, and AI", "correct": false},
+      {"text": "VSI, VOR, and ADF", "correct": false}
+    ],
+    "answer": "ASI, altimeter, VSI, HI, TC/T&B, and magnetic compass",
+    "explanation": "Performance instruments display the *result* of the attitude and power the pilot has set: **ASI** — indicates airspeed achieved; **Altimeter** — confirms altitude being maintained or changed; **VSI** — shows rate of climb/descent; **HI** — confirms the heading being maintained; **Turn coordinator/Turn-and-bank** — shows turn rate and coordination; **Magnetic compass** — confirms magnetic heading. After setting attitude and power on the control instruments, the pilot reads these performance instruments to verify the aircraft is doing what was intended.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148–149",
+    "media": []
+  },
+  {
+    "id": "FI-154",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "fundamental-skills"],
+    "question": "What are the three fundamental skills of attitude-instrument flying as described in the FTM?",
+    "choices": [
+      {"text": "Attitude setting, power control, and navigation", "correct": false},
+      {"text": "Instrument scan, instrument interpretation, and aircraft control", "correct": true},
+      {"text": "Pitch control, bank control, and power management", "correct": false},
+      {"text": "Trim, scan, and communication", "correct": false}
+    ],
+    "answer": "Instrument scan, instrument interpretation, and aircraft control",
+    "explanation": "The FTM identifies three fundamental skills that instrument pilots must develop: (1) **Instrument scan** — the continuous and systematic observation of all flight instruments to gather information about the aircraft's state; (2) **Instrument interpretation** — understanding what each instrument reading means in terms of aircraft performance and attitude; (3) **Aircraft control** — applying the correct control inputs (attitude and power adjustments) based on the instrument scan and interpretation. All three skills must work together seamlessly.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149",
+    "media": []
+  },
+  {
+    "id": "FI-155",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "selective-radial"],
+    "question": "The FTM's recommended instrument scan technique is the **selective radial scan**. Which instrument is the hub of this scan?",
+    "choices": [
+      {"text": "The altimeter — as altitude control is paramount", "correct": false},
+      {"text": "The attitude indicator — as it is the control instrument for attitude", "correct": true},
+      {"text": "The heading indicator — as maintaining course is the primary goal", "correct": false},
+      {"text": "The VSI — as vertical speed indicates if the aircraft is deviating", "correct": false}
+    ],
+    "answer": "The attitude indicator — as it is the control instrument for attitude",
+    "explanation": "In the selective radial scan, the AI is the central (hub) instrument because it provides the most complete and immediate picture of the aircraft's attitude. The pilot's gaze returns to the AI after each check of a performance instrument. The 'radial' part of the scan means the eye moves outward from the AI to whichever performance instrument is most relevant for the current phase of flight (e.g., altimeter and VSI when maintaining altitude, HI when on a heading). This AI-centred scan is more efficient than a clockwise or random pattern.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 150–151",
+    "media": []
+  },
+  {
+    "id": "FI-156",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "scan-errors"],
+    "question": "Which of the following is NOT a recognised instrument scan error described in the FTM?",
+    "choices": [
+      {"text": "Fixation — staring at one instrument for too long", "correct": false},
+      {"text": "Omission — not including all relevant instruments in the scan", "correct": false},
+      {"text": "Emphasis — giving too much attention to one instrument at the expense of others", "correct": false},
+      {"text": "Oscillation — scanning too rapidly so no instrument is read clearly", "correct": true}
+    ],
+    "answer": "Oscillation — scanning too rapidly so no instrument is read clearly",
+    "explanation": "The FTM identifies the three major scan errors as: **Fixation** — dwelling on one instrument too long while the others are neglected (common: staring at the altimeter when altitude changes); **Omission** — failing to include an important instrument in the scan; **Emphasis** — unconsciously spending more time on one instrument than its importance warrants. 'Oscillation' is not a standard scan error term in the FTM; rather, the correct scan rate should be measured and purposeful rather than either too slow (fixation) or randomly rapid.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151",
+    "media": []
+  },
+  {
+    "id": "FI-157",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "fixation"],
+    "question": "Instrument scan fixation occurs when a pilot:",
+    "choices": [
+      {"text": "Scans all instruments equally without prioritising the most important", "correct": false},
+      {"text": "Stares at one instrument for too long, allowing other instruments to drift unnoticed", "correct": true},
+      {"text": "Moves the eyes too quickly between instruments and cannot read any accurately", "correct": false},
+      {"text": "Scans only the control instruments and ignores the performance instruments", "correct": false}
+    ],
+    "answer": "Stares at one instrument for too long, allowing other instruments to drift unnoticed",
+    "explanation": "Fixation is the most common scan error: the pilot's attention locks onto a single instrument — often the altimeter during a descent or the VOR during an approach — while other instruments are not monitored. During this time, heading, airspeed, or attitude may drift undetected. A systematic scan technique (such as the selective radial scan with the AI as the hub) prevents fixation by forcing the eye to move regularly to all relevant instruments. Fixation is also common during emergencies when the pilot's attention is captured by the emergency instrument.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151",
+    "media": []
+  },
+  {
+    "id": "FI-158",
+    "topic": "Flight Instruments — Attitude Instrument Flying Principle",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["attitude-instrument-flying", "ftm", "principle"],
+    "question": "The central principle of attitude-instrument flying in the FTM can be expressed as:",
+    "choices": [
+      {"text": "Power plus trim equals performance", "correct": false},
+      {"text": "Attitude plus power equals performance", "correct": true},
+      {"text": "Airspeed plus altitude equals navigation", "correct": false},
+      {"text": "Scan plus control equals safety", "correct": false}
+    ],
+    "answer": "Attitude plus power equals performance",
+    "explanation": "'Attitude plus power equals performance' is the foundational principle of instrument flying: for any given aircraft weight and configuration, a specific combination of attitude (pitch and bank, set on the AI) and power (set on the tachometer/MP gauge) produces a predictable, repeatable performance (airspeed, altitude, rate of climb, etc.). The pilot learns the attitude and power settings for level flight, climbs, descents, and turns, then sets them on the control instruments and confirms the result on the performance instruments.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-159",
+    "topic": "Flight Instruments — Attitude Instrument Flying Principle",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-instrument-flying", "ftm", "three-questions"],
+    "question": "The FTM describes three questions a pilot should answer continuously when scanning instruments. Which set is correct?",
+    "choices": [
+      {"text": "Where am I? Where am I going? What should I do?", "correct": false},
+      {"text": "What information do I need? Which instruments give that information? Is the information reliable?", "correct": true},
+      {"text": "Am I on course? Am I at altitude? Is airspeed correct?", "correct": false},
+      {"text": "What attitude am I at? What power am I using? What is my performance?", "correct": false}
+    ],
+    "answer": "What information do I need? Which instruments give that information? Is the information reliable?",
+    "explanation": "The FTM's three scanning questions keep the pilot disciplined and systematic: (1) **What information do I need?** — determines the flying task (maintain altitude, turn to heading, climb to altitude, etc.); (2) **Which instruments give me that information?** — selects the correct instruments to scan for that task; (3) **Is the information reliable?** — cross-checks for instrument failures or errors. These questions prevent fixation and ensure the pilot always knows which instruments are most important for the current phase of flight.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149",
+    "media": []
+  },
+  {
+    "id": "FI-160",
+    "topic": "Flight Instruments — Sensory Illusions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["sensory-illusions", "instruments", "spatial-disorientation"],
+    "question": "Why must pilots flying in IMC (instrument meteorological conditions) rely on flight instruments rather than physical sensations?",
+    "choices": [
+      {"text": "Because regulations require it and personal preference is irrelevant", "correct": false},
+      {"text": "Because the vestibular system and body sensations are unreliable in IMC and can create dangerous spatial disorientation illusions", "correct": true},
+      {"text": "Because the instruments are always more comfortable to look at than the outside", "correct": false},
+      {"text": "Because instruments provide more information than visual cues in good visibility", "correct": false}
+    ],
+    "answer": "Because the vestibular system and body sensations are unreliable in IMC and can create dangerous spatial disorientation illusions",
+    "explanation": "The human vestibular system (inner ear) and proprioception (body 'seat of the pants' sensations) are designed to detect rapid changes in motion, not sustained ones. In IMC, without a visible horizon, the body can be fooled: a sustained banked turn begins to feel level (the 'leans'), a recovery from a bank can feel like a turn in the opposite direction (graveyard spiral), and various other illusions can occur. Trusting these sensations in IMC leads to spatial disorientation — a major cause of fatal accidents. Pilots must learn to **trust the instruments** regardless of what their body tells them.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 147",
+    "media": []
+  },
+  {
+    "id": "FI-161",
+    "topic": "Flight Instruments — Sensory Illusions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["sensory-illusions", "instruments", "the-leans"],
+    "question": "A pilot who has been in a gradual, unnoticed banked turn straightens the wings. The pilot will probably feel:",
+    "choices": [
+      {"text": "Level, because straightening the wings corrects all sensations", "correct": false},
+      {"text": "As though the aircraft is now banked in the opposite direction — the 'leans'", "correct": true},
+      {"text": "Accelerating forward, as if the aircraft has increased speed", "correct": false},
+      {"text": "Nothing unusual — the body always senses attitude correctly", "correct": false}
+    ],
+    "answer": "As though the aircraft is now banked in the opposite direction — the 'leans'",
+    "explanation": "The 'leans' is a common form of spatial disorientation in IMC. If the aircraft enters a slow bank below the vestibular system's detection threshold, the brain does not register the bank. When the pilot then corrects to wings-level (perhaps after noticing the bank on instruments), the sudden change in rotation rate is interpreted as a bank in the opposite direction. The pilot now feels banked even though the instruments show wings-level. The correct response is to trust the instruments and maintain the wings-level attitude despite the feeling of being banked.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 147",
+    "media": []
+  },
+  {
+    "id": "FI-162",
+    "topic": "Flight Instruments — Sensory Illusions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["sensory-illusions", "instruments", "graveyard-spiral"],
+    "question": "A pilot in IMC feels no sensation of banking after several minutes in a constant-rate banked turn. The pilot then applies back pressure thinking they are level. What is the likely result?",
+    "choices": [
+      {"text": "The aircraft climbs to a higher altitude safely", "correct": false},
+      {"text": "The aircraft's bank tightens and airspeed increases in a graveyard spiral", "correct": true},
+      {"text": "The aircraft levels off because back pressure cancels the bank", "correct": false},
+      {"text": "The aircraft decelerates to stall speed", "correct": false}
+    ],
+    "answer": "The aircraft's bank tightens and airspeed increases in a graveyard spiral",
+    "explanation": "After a prolonged constant-rate turn in IMC, the vestibular system adapts and the brain perceives the turn as level. If the altimeter shows a descent, the pilot's instinct is to pull back on the controls — but this only tightens the bank (in a banked turn, back pressure increases load factor and tightens the turn, it does not raise the nose relative to the horizon). The increasing bank and back pressure create a descending, tightening spiral — the 'graveyard spiral' — with rapidly increasing airspeed and G-force. Recovery requires first levelling the wings (using AI/TC), then gently pulling out of the dive.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 147; FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 17 — Aeromedical Factors",
+    "media": []
+  },
+  {
+    "id": "FI-163",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level"],
+    "question": "During straight-and-level instrument flight, which instrument is the primary reference for maintaining altitude?",
+    "choices": [
+      {"text": "The VSI", "correct": false},
+      {"text": "The altimeter", "correct": true},
+      {"text": "The attitude indicator", "correct": false},
+      {"text": "The turn coordinator", "correct": false}
+    ],
+    "answer": "The altimeter",
+    "explanation": "In straight-and-level flight, the **altimeter** is the primary performance instrument for altitude control because it directly reads altitude. The VSI provides supporting trend information (showing whether altitude is changing and at what rate) but lags 6–9 seconds. The AI is used to set and maintain the pitch attitude that produces level flight, but the altimeter confirms that the attitude is correct by showing a stable altitude. The pilot uses the altimeter reading to make small pitch corrections on the AI.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-164",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "heading"],
+    "question": "During straight-and-level instrument flight, which instrument is the primary reference for maintaining heading?",
+    "choices": [
+      {"text": "The magnetic compass", "correct": false},
+      {"text": "The turn coordinator", "correct": false},
+      {"text": "The heading indicator", "correct": true},
+      {"text": "The attitude indicator", "correct": false}
+    ],
+    "answer": "The heading indicator",
+    "explanation": "During straight-and-level flight, the **heading indicator (HI)** is the primary heading reference because it gives a steady, immediate heading reading without the turning and acceleration errors of the magnetic compass. The AI confirms that the wings are level (zero bank), which is a prerequisite for maintaining a constant heading. The magnetic compass is used periodically to reset the HI (approximately every 10–15 minutes) when the aircraft is in straight, unaccelerated flight.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-165",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "straight-level", "scan"],
+    "question": "In the FTM, what is the recommended scan sequence for straight-and-level instrument flight?",
+    "choices": [
+      {"text": "Clockwise starting from the ASI: ASI → altimeter → VSI → HI → AI → TC", "correct": false},
+      {"text": "AI-centred radial scan: AI → altimeter → AI → HI → AI → ASI → AI → VSI → AI → TC", "correct": true},
+      {"text": "Performance instruments only: altimeter → ASI → VSI → HI → repeat", "correct": false},
+      {"text": "Power first: tachometer → AI → altimeter → ASI → repeat", "correct": false}
+    ],
+    "answer": "AI-centred radial scan: AI → altimeter → AI → HI → AI → ASI → AI → VSI → AI → TC",
+    "explanation": "The FTM's selective radial scan for straight-and-level flight always returns to the AI between each performance instrument check. A typical sequence: check AI (set pitch/bank) → altimeter (altitude correct?) → back to AI → HI (heading correct?) → back to AI → ASI (airspeed correct?) → back to AI → VSI (vertical speed zero?) → back to AI → TC (wings level, coordinated?). This AI-centred pattern ensures that pitch and bank deviations are detected quickly and corrected before they produce significant altitude or heading errors.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151–153",
+    "media": []
+  },
+  {
+    "id": "FI-166",
+    "topic": "Flight Instruments — Climbing on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climb"],
+    "question": "When establishing a climb on instruments, the FTM procedure is:",
+    "choices": [
+      {"text": "Increase power, then set climb attitude on AI, then trim", "correct": true},
+      {"text": "Set climb attitude on AI, then increase power, then trim", "correct": false},
+      {"text": "Trim nose-up, then increase power, then check performance instruments", "correct": false},
+      {"text": "Increase power and simultaneously rotate on AI to target altitude on altimeter", "correct": false}
+    ],
+    "answer": "Increase power, then set climb attitude on AI, then trim",
+    "explanation": "The FTM's sequence for establishing a climb from level flight is: (1) **Increase power** to climb power setting (this initiates the climb); (2) **Set attitude** on the AI to the target climb pitch attitude (known from training, e.g., 5–7° nose-up for a Cessna 172); (3) **Trim** to relieve control pressure. After stabilising, cross-check performance instruments: ASI should show climb airspeed, altimeter should show climbing altitude, and VSI should confirm a positive rate. This sequence — power, attitude, trim — is the standard instrument procedure.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154",
+    "media": []
+  },
+  {
+    "id": "FI-167",
+    "topic": "Flight Instruments — Climbing on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climb", "primary-instruments"],
+    "question": "During a constant-speed climb on instruments, which instrument is the primary pitch reference?",
+    "choices": [
+      {"text": "The altimeter", "correct": false},
+      {"text": "The ASI", "correct": true},
+      {"text": "The VSI", "correct": false},
+      {"text": "The attitude indicator", "correct": false}
+    ],
+    "answer": "The ASI",
+    "explanation": "During a constant-speed (VY or VX) climb, the **ASI** is the primary pitch reference instrument. The pitch attitude is adjusted to maintain the target climb airspeed — if ASI reads low, lower the nose; if high, raise it. The AI is still used to set and monitor pitch attitude (it remains the control instrument), but the ASI is the primary *performance* instrument confirming that the pitch is correct. This is because in a climb, airspeed is the critical variable that determines climb performance.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 155",
+    "media": []
+  },
+  {
+    "id": "FI-168",
+    "topic": "Flight Instruments — Descending on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descent"],
+    "question": "When establishing a descent on instruments from straight-and-level flight, the FTM procedure is:",
+    "choices": [
+      {"text": "Lower the nose using the AI, then reduce power, then trim", "correct": false},
+      {"text": "Reduce power, then set descent pitch attitude on AI, then trim", "correct": true},
+      {"text": "Trim nose-down, then reduce power, then monitor performance instruments", "correct": false},
+      {"text": "Extend flaps, then reduce power, then lower the nose", "correct": false}
+    ],
+    "answer": "Reduce power, then set descent pitch attitude on AI, then trim",
+    "explanation": "To establish a descent from level flight: (1) **Reduce power** to a descent power setting; (2) **Set attitude** — lower the nose on the AI to the appropriate descent pitch attitude; (3) **Trim**. After stabilising, cross-check: ASI shows desired descent airspeed, altimeter shows decreasing altitude, VSI confirms descent rate. The same power-attitude-trim sequence used for climbs applies here in reverse. The altimeter is the primary altitude reference to confirm descent is occurring and to time the level-off.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 155–156",
+    "media": []
+  },
+  {
+    "id": "FI-169",
+    "topic": "Flight Instruments — Descending on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descent", "primary-instruments"],
+    "question": "During a constant-airspeed descent on instruments, which instrument is the primary pitch reference?",
+    "choices": [
+      {"text": "The VSI", "correct": false},
+      {"text": "The altimeter", "correct": false},
+      {"text": "The ASI", "correct": true},
+      {"text": "The attitude indicator", "correct": false}
+    ],
+    "answer": "The ASI",
+    "explanation": "In a constant-airspeed descent, as in a constant-airspeed climb, the **ASI** is the primary pitch performance instrument. The pilot adjusts pitch on the AI to maintain the target descent airspeed. The VSI confirms the resulting rate of descent, and the altimeter shows the altitude approaching the target. If the ASI is above target, the nose is raised slightly on the AI; if below, it is lowered. The AI is still the control instrument (pitch is set on the AI), but the ASI is what the pilot confirms the pitch is correct.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-170",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns"],
+    "question": "When rolling into a standard rate turn on instruments, what initial bank angle should the pilot set on the AI?",
+    "choices": [
+      {"text": "Exactly 30° regardless of airspeed", "correct": false},
+      {"text": "The bank angle calculated by (IAS ÷ 10) + 7, confirmed on the turn coordinator", "correct": true},
+      {"text": "Half the bank angle used in VFR turns, about 15°", "correct": false},
+      {"text": "The bank angle shown on the inclinometer for coordinated flight", "correct": false}
+    ],
+    "answer": "The bank angle calculated by (IAS ÷ 10) + 7, confirmed on the turn coordinator",
+    "explanation": "The pilot uses the rule of thumb (IAS ÷ 10) + 7 to estimate the initial bank angle for a standard rate turn, then sets that angle on the AI. The turn coordinator is then used to confirm that the miniature aircraft wing tip is at the standard rate mark (3°/sec). Fine adjustments to bank angle are made based on the TC reading. For example, at 100 kt: (100 ÷ 10) + 7 = 17°. This combined use of AI (for setting the bank) and TC (for confirming the rate) is the standard instrument turn technique.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156–157",
+    "media": []
+  },
+  {
+    "id": "FI-171",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns", "altitude"],
+    "question": "During a level turn on instruments, what must the pilot do to maintain altitude?",
+    "choices": [
+      {"text": "Reduce power because the banked turn increases airspeed", "correct": false},
+      {"text": "Apply slight back pressure and/or increase power to compensate for the reduced vertical component of lift", "correct": true},
+      {"text": "Apply forward pressure to prevent the nose from rising in the turn", "correct": false},
+      {"text": "Nothing — altitude is maintained automatically in a coordinated turn", "correct": false}
+    ],
+    "answer": "Apply slight back pressure and/or increase power to compensate for the reduced vertical component of lift",
+    "explanation": "In a banked turn, the total lift vector is tilted — its vertical component (which supports the aircraft's weight) is less than the total lift. To maintain altitude, the vertical component must equal weight, which requires either (1) increasing total lift by increasing angle of attack (back pressure), or (2) increasing power (or both). In a shallow standard rate turn the correction is small, but in steeper turns it becomes significant. The altimeter and VSI are monitored to confirm altitude is being maintained, and small pitch adjustments on the AI are made as needed.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-172",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "roll-out"],
+    "question": "When rolling out of a turn to a specific heading on instruments, the pilot should begin the roll-out:",
+    "choices": [
+      {"text": "When the HI shows the desired heading exactly", "correct": false},
+      {"text": "Half the bank angle before the desired heading (i.e., lead the heading by half the bank angle in degrees)", "correct": true},
+      {"text": "Five seconds before the calculated time for the turn to complete", "correct": false},
+      {"text": "At the same rate as the roll-in, without any heading lead", "correct": false}
+    ],
+    "answer": "Half the bank angle before the desired heading (i.e., lead the heading by half the bank angle in degrees)",
+    "explanation": "Because the aircraft continues to turn during the roll-out process, the pilot must begin levelling the wings before reaching the desired heading. The amount of lead required is approximately half the bank angle. For a 20° bank turn, begin roll-out when 10° before the target heading. For a standard rate turn at 17° bank, begin roll-out approximately 8–9° before the target heading on the HI. This lead ensures that the wings are level exactly when the HI shows the target heading.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-173",
+    "topic": "Flight Instruments — Steep Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "steep-turns"],
+    "question": "A steep turn on instruments is defined in the FTM as a turn with a bank angle of:",
+    "choices": [
+      {"text": "Greater than 15°", "correct": false},
+      {"text": "Greater than 30°", "correct": true},
+      {"text": "Greater than 45°", "correct": false},
+      {"text": "Greater than 60°", "correct": false}
+    ],
+    "answer": "Greater than 30°",
+    "explanation": "The FTM defines a steep turn (on instruments) as any turn exceeding 30° of bank. Beyond 30° of bank, the reduction in the vertical lift component becomes significant enough to require increased back pressure and/or power to maintain altitude. Steep turns on instruments require closer monitoring of the altimeter and AI than standard rate turns. In IFR procedures, ATC may assign turns at a specified rate; the pilot uses the AI and TC to maintain the correct bank throughout.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-174",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "trim"],
+    "question": "Why is trimming correctly important during instrument flying?",
+    "choices": [
+      {"text": "Trim directly corrects airspeed without requiring pilot input", "correct": false},
+      {"text": "Proper trim reduces the pilot's workload, freeing attention for the instrument scan", "correct": true},
+      {"text": "Trim is only important in turbulence and can be ignored in smooth air on instruments", "correct": false},
+      {"text": "Trim adjusts the attitude indicator to display the correct horizon", "correct": false}
+    ],
+    "answer": "Proper trim reduces the pilot's workload, freeing attention for the instrument scan",
+    "explanation": "Trim adjustment is critical in instrument flying because it removes the need for constant control pressure to maintain attitude. An untrimmed aircraft requires the pilot to hold control inputs continuously, which is physically tiring and mentally distracting — taking attention away from the instrument scan. Proper trim allows the pilot to release the controls and have the aircraft maintain the desired attitude on its own (within limits), enabling a more comprehensive and accurate instrument scan. Trim is adjusted after each power and attitude change.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-175",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "navigation-instruments"],
+    "question": "In the FTM's instrument grouping, which instruments are classified as **navigation** instruments?",
+    "choices": [
+      {"text": "Altimeter and VSI — used to navigate vertically", "correct": false},
+      {"text": "VOR indicator and ADF — used to navigate horizontally along airways and routes", "correct": true},
+      {"text": "Heading indicator and magnetic compass", "correct": false},
+      {"text": "Turn coordinator and attitude indicator", "correct": false}
+    ],
+    "answer": "VOR indicator and ADF — used to navigate horizontally along airways and routes",
+    "explanation": "In the FTM's three-group classification, navigation instruments are those that provide course guidance relative to a ground-based or published navigation reference: the **VOR indicator** (showing deviation from a VOR radial) and the **ADF** (automatic direction finder, showing bearing to an NDB). These instruments are referenced once the aircraft is stable in attitude and altitude, to verify or correct the track over the ground. GPS (when installed) also functions as a navigation instrument.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-176",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "cross-check"],
+    "question": "The instrument cross-check involves comparing the indications of multiple instruments. Why is cross-checking important?",
+    "choices": [
+      {"text": "To reduce the number of instruments the pilot needs to monitor", "correct": false},
+      {"text": "To detect instrument failures and confirm accurate information before making control inputs", "correct": true},
+      {"text": "To comply with IFR regulations requiring all instruments to be read simultaneously", "correct": false},
+      {"text": "To set the autopilot to the correct attitude", "correct": false}
+    ],
+    "answer": "To detect instrument failures and confirm accurate information before making control inputs",
+    "explanation": "Cross-checking means comparing the readings of related instruments to ensure they tell a consistent story. For example, if the altimeter shows a descent but the AI shows a level attitude and the VSI shows zero, one instrument is likely faulty. Cross-checking allows the pilot to detect the failed instrument and rely on the others. It also prevents acting on a momentary erroneous reading from a single instrument. The instrument scan is inherently a cross-check process — the AI, altimeter, VSI, and ASI must all agree for a valid picture of the aircraft's state.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149–151",
+    "media": []
+  },
+  {
+    "id": "FI-177",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "altitude-correction"],
+    "question": "When the altimeter shows a small altitude deviation (e.g., 100 ft) during instrument flight, the FTM recommends correcting with:",
+    "choices": [
+      {"text": "A large pitch correction immediately to recover the lost altitude quickly", "correct": false},
+      {"text": "A small pitch correction (half bar width on the AI) and monitoring until the altitude is restored", "correct": true},
+      {"text": "A power change only — attitude should not be adjusted for small deviations", "correct": false},
+      {"text": "Trim only, without touching the elevator controls", "correct": false}
+    ],
+    "answer": "A small pitch correction (half bar width on the AI) and monitoring until the altitude is restored",
+    "explanation": "For small altitude deviations on instruments, the FTM recommends a small, measured pitch correction — sometimes described as 'half a bar width' of AI horizon bar movement — rather than large, aggressive corrections. Large corrections create new errors (nose too high → airspeed decreases; nose too low → altitude lost further) that then need correcting, causing 'chasing the instruments.' Small corrections allow the aircraft to smoothly return to altitude while maintaining airspeed and other parameters. The pilot monitors the recovery on the altimeter and VSI, then returns to the level pitch attitude when altitude is regained.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 153",
+    "media": []
+  },
+  {
+    "id": "FI-178",
+    "topic": "Flight Instruments — Climbing on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "climb", "level-off"],
+    "question": "When levelling off from a climb on instruments, the pilot should begin the level-off when:",
+    "choices": [
+      {"text": "The altimeter shows the exact target altitude", "correct": false},
+      {"text": "Approximately 10% of the VSI reading in feet before the target altitude", "correct": true},
+      {"text": "The VSI returns to zero on its own", "correct": false},
+      {"text": "ATC instructs the pilot to level off", "correct": false}
+    ],
+    "answer": "Approximately 10% of the VSI reading in feet before the target altitude",
+    "explanation": "The level-off lead distance is approximately 10% of the current VSI value. At 500 fpm climb, start levelling off 50 ft before the target. At 1,000 fpm, start 100 ft before. This compensates for the time it takes to lower the nose, reduce power, allow the aircraft to decelerate from climb to cruise speed, and the VSI lag time. Starting the level-off late — at the target altitude — causes the aircraft to overshoot above the target before settling. Starting too early results in levelling below the target.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-179",
+    "topic": "Flight Instruments — Descending on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "descent", "level-off"],
+    "question": "The same 10% lead rule applies when levelling off from a descent on instruments. At a descent rate of 800 fpm, the pilot should begin the level-off approximately how many feet before the target altitude?",
+    "choices": [
+      {"text": "20 feet", "correct": false},
+      {"text": "50 feet", "correct": false},
+      {"text": "80 feet", "correct": true},
+      {"text": "160 feet", "correct": false}
+    ],
+    "answer": "80 feet",
+    "explanation": "Using the 10% rule: 10% × 800 fpm = 80 feet. The pilot should begin the level-off transition 80 ft before the target altitude. The level-off procedure from a descent: (1) Simultaneously increase power toward cruise setting and raise the nose on the AI toward a level attitude; (2) Trim; (3) Confirm altitude on altimeter and zero rate on VSI. Beginning the level-off 80 ft early ensures the aircraft does not descend below the target before the rate stabilises at zero.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-180",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "instrument-emphasis"],
+    "question": "During an IFR approach, a pilot tends to fixate on the ILS course deviation indicator (CDI) while altitude deviates. This is an example of which scan error?",
+    "choices": [
+      {"text": "Omission — forgetting to include the altimeter in the scan", "correct": false},
+      {"text": "Emphasis — spending disproportionately more time on the CDI at the expense of the altimeter", "correct": true},
+      {"text": "Fixation — staring at the CDI permanently without returning to other instruments", "correct": false},
+      {"text": "Interpretation error — misreading the CDI as the altimeter", "correct": false}
+    ],
+    "answer": "Emphasis — spending disproportionately more time on the CDI at the expense of the altimeter",
+    "explanation": "Emphasis is the scan error where the pilot gives too much attention to one instrument relative to its importance. During an approach, the CDI commands attention because lateral deviation affects course tracking. However, if the pilot spends so much time on the CDI that altitude is not adequately monitored, altitude deviations develop unnoticed — which on an approach to minimums can be fatal. Proper scan technique ensures all critical instruments (including altimeter) receive adequate attention even when one instrument appears to be the 'most important' at a given moment.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151",
+    "media": []
+  },
+  {
+    "id": "FI-181",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "omission"],
+    "question": "Instrument scan **omission** occurs when a pilot:",
+    "choices": [
+      {"text": "Stares at one instrument too long", "correct": false},
+      {"text": "Excludes one or more relevant instruments from the scan pattern", "correct": true},
+      {"text": "Misinterprets an instrument reading", "correct": false},
+      {"text": "Relies on body sensations instead of instruments", "correct": false}
+    ],
+    "answer": "Excludes one or more relevant instruments from the scan pattern",
+    "explanation": "Omission means failing to include a necessary instrument in the scan. For example, a pilot flying a turning descent while monitoring only the AI, altimeter, and HI may omit the ASI — and airspeed could drift dangerously before it is noticed. Omission often occurs when a pilot is under high workload (radio calls, ATC instructions) and unconsciously shortcuts the scan. A disciplined, habitual scan pattern helps prevent omission by making the order of instrument checks automatic.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151",
+    "media": []
+  },
+  {
+    "id": "FI-182",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "straight-level", "airspeed"],
+    "question": "During straight-and-level instrument flight at a constant power setting, if the ASI shows a gradual decrease in airspeed, what should the pilot do first?",
+    "choices": [
+      {"text": "Immediately increase power", "correct": false},
+      {"text": "Check the AI for a nose-high pitch attitude and adjust if needed, then check performance instruments", "correct": true},
+      {"text": "Extend flaps to increase lift", "correct": false},
+      {"text": "Check the altimeter for any altitude change", "correct": false}
+    ],
+    "answer": "Check the AI for a nose-high pitch attitude and adjust if needed, then check performance instruments",
+    "explanation": "A decreasing ASI at constant power in level flight suggests the pitch attitude has increased — the nose has risen slightly. The first action is to check the AI (the control instrument) and correct any pitch attitude deviation. After returning to the correct level-pitch attitude on the AI, the ASI should recover. If the AI shows no deviation and airspeed is still decreasing, consider other causes (icing, configuration change) or a power adjustment. Always go to the control instruments first before adjusting power, as power changes are a secondary correction.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152–153",
+    "media": []
+  },
+  {
+    "id": "FI-183",
+    "topic": "Flight Instruments — Climbs and Descents",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climb", "constant-rate"],
+    "question": "During a constant-rate climb on instruments (as opposed to constant-speed), which instrument is the primary pitch reference?",
+    "choices": [
+      {"text": "The ASI", "correct": false},
+      {"text": "The VSI", "correct": true},
+      {"text": "The AI", "correct": false},
+      {"text": "The altimeter", "correct": false}
+    ],
+    "answer": "The VSI",
+    "explanation": "During a *constant-rate* climb (where the pilot maintains a specified rate such as 500 fpm rather than a specified airspeed), the **VSI** is the primary pitch performance instrument. The pilot adjusts pitch on the AI to hold the VSI at the target rate. Airspeed will vary with the pitch adjustments and is monitored as a secondary instrument. By contrast, in a constant-speed (constant-airspeed) climb, the ASI is primary. The type of climb required by ATC or procedure determines which performance instrument is primary.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 155",
+    "media": []
+  },
+  {
+    "id": "FI-184",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "reliable"],
+    "question": "During the FTM's three scanning questions, 'Is the information reliable?' requires the pilot to:",
+    "choices": [
+      {"text": "Trust all instruments equally and never question their readings", "correct": false},
+      {"text": "Cross-check instruments against each other to detect possible failures or inconsistencies", "correct": true},
+      {"text": "Check in with ATC to confirm the aircraft's position", "correct": false},
+      {"text": "Verify that the autopilot agrees with the manual control inputs", "correct": false}
+    ],
+    "answer": "Cross-check instruments against each other to detect possible failures or inconsistencies",
+    "explanation": "The third scanning question — 'Is the information reliable?' — reminds the pilot to validate instrument readings by cross-checking. If the altimeter shows level but the VSI shows 500 fpm up and the AI shows a slight nose-high attitude, the altimeter may be lagging or faulty. A consistent picture across multiple instruments gives confidence; an inconsistency signals a potential instrument failure or unusual condition. The skill of detecting instrument unreliability prevents acting on false information, which is a key safety factor in IMC.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149",
+    "media": []
+  },
+  {
+    "id": "FI-185",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "tachometer"],
+    "question": "Why is the tachometer classified as a **control** instrument rather than a performance instrument?",
+    "choices": [
+      {"text": "Because the tachometer displays engine RPM, which directly controls power output", "correct": true},
+      {"text": "Because the tachometer also shows attitude information", "correct": false},
+      {"text": "Because tachometer readings are always more accurate than power gauges", "correct": false},
+      {"text": "Because the pilot uses the tachometer to control altitude directly", "correct": false}
+    ],
+    "answer": "Because the tachometer displays engine RPM, which directly controls power output",
+    "explanation": "The tachometer (RPM gauge) — or manifold pressure gauge on constant-speed propeller aircraft — is a control instrument because the pilot uses it to set the desired power. Power, like attitude, is set by the pilot and is an input to the system: attitude × power = performance. The tachometer tells the pilot what power they have set, just as the AI tells them what attitude they have set. The performance results (airspeed, altitude, rate of climb) are then confirmed on the performance instruments.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-186",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns", "altitude"],
+    "question": "During a level instrument turn, the altimeter shows a loss of 50 ft. What is the correct corrective procedure?",
+    "choices": [
+      {"text": "Roll out of the turn, climb 50 ft, then re-enter the turn", "correct": false},
+      {"text": "Apply back pressure to increase pitch slightly on the AI while maintaining the turn, monitor altimeter", "correct": true},
+      {"text": "Reduce bank angle to zero to allow altitude recovery, then resume the turn", "correct": false},
+      {"text": "Increase power immediately to stop the altitude loss", "correct": false}
+    ],
+    "answer": "Apply back pressure to increase pitch slightly on the AI while maintaining the turn, monitor altimeter",
+    "explanation": "A 50 ft altitude loss in a level turn is a small deviation. The correct response is a small back pressure input to raise the pitch attitude slightly on the AI (increasing the vertical lift component), while maintaining the bank angle and continuing the turn. As the altimeter climbs back to the target, the pilot relaxes the back pressure to return to the level-turn pitch. Stopping the turn entirely for a small altitude error would be an overreaction that disrupts heading progress. Power may be increased as a secondary step if the pitch correction alone is insufficient.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-187",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "interpretation"],
+    "question": "Instrument interpretation, the second of the FTM's three fundamental skills, involves:",
+    "choices": [
+      {"text": "Reading each instrument dial accurately without misidentifying the scale", "correct": false},
+      {"text": "Understanding what each instrument reading means for the aircraft's performance and what control input is needed", "correct": true},
+      {"text": "Setting the correct instrument on the PFD display", "correct": false},
+      {"text": "Identifying which instruments are in the pilot's normal line of sight", "correct": false}
+    ],
+    "answer": "Understanding what each instrument reading means for the aircraft's performance and what control input is needed",
+    "explanation": "Instrument interpretation goes beyond merely reading a number from an instrument. It means understanding the *significance* of that reading: if the VSI shows 500 fpm up while the target is level flight, the pilot must interpret that this indicates a pitch-up deviation and know that a small nose-down correction on the AI is needed. Good interpretation links instrument readings to control inputs automatically, reducing reaction time. It develops through training until it becomes instinctive, allowing the pilot's mental attention to focus on the overall flight situation rather than decoding each instrument.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149",
+    "media": []
+  },
+  {
+    "id": "FI-188",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "aircraft-control"],
+    "question": "Aircraft control, the third fundamental skill of instrument flying, refers to:",
+    "choices": [
+      {"text": "The pilot's ability to fly the aircraft without any reference to instruments", "correct": false},
+      {"text": "Making smooth, accurate control inputs based on instrument scan and interpretation", "correct": true},
+      {"text": "Engaging the autopilot whenever a deviation is detected", "correct": false},
+      {"text": "Adjusting radio frequencies and transponder codes without disturbing the aircraft's attitude", "correct": false}
+    ],
+    "answer": "Making smooth, accurate control inputs based on instrument scan and interpretation",
+    "explanation": "Aircraft control in the instrument flying context means applying the right control inputs (elevator, aileron, rudder, power, trim) smoothly and accurately based on what the scan has shown and the interpretation has determined. Overcorrecting, jerky inputs, or ignoring trim all degrade control quality and increase workload. Effective aircraft control in IMC requires proficiency developed through practice: the pilot applies just enough input to correct a deviation, stabilises, then resumes the normal scan rather than continually chasing the instruments with large inputs.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149",
+    "media": []
+  },
+  {
+    "id": "FI-189",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "power"],
+    "question": "In straight-and-level instrument flight, if the altimeter is steady at the correct altitude and the ASI is showing a slightly low airspeed, which control instrument should the pilot adjust first?",
+    "choices": [
+      {"text": "Increase power on the tachometer", "correct": true},
+      {"text": "Raise the nose slightly on the AI", "correct": false},
+      {"text": "Lower the nose slightly on the AI", "correct": false},
+      {"text": "Adjust trim to hold the current attitude", "correct": false}
+    ],
+    "answer": "Increase power on the tachometer",
+    "explanation": "If altitude is correct (altimeter steady) but airspeed is low, the aircraft's pitch attitude is already maintaining level flight but power is insufficient for the desired cruise airspeed. The fix is to increase power (tachometer). Raising the nose would cause the aircraft to climb (altitude would increase) while slowing the aircraft further. Lowering the nose would descend. Since the altitude is correct, the pitch attitude is not the problem — power is. The FTM principle 'attitude plus power equals performance' guides this: altitude-correct means attitude is correct; low speed means power needs adjustment.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152–153",
+    "media": []
+  },
+  {
+    "id": "FI-190",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "realistic-scan-rate"],
+    "question": "The instrument scan should be continuous and systematic. In practice, how much time should a pilot typically spend on each instrument during straight-and-level flight?",
+    "choices": [
+      {"text": "One to three seconds per instrument, with more time on the AI as the hub", "correct": true},
+      {"text": "Exactly 30 seconds per instrument in a fixed sequence", "correct": false},
+      {"text": "As little as possible on each instrument — rapid flickering between all instruments is best", "correct": false},
+      {"text": "Ten seconds on each instrument to ensure accurate reading", "correct": false}
+    ],
+    "answer": "One to three seconds per instrument, with more time on the AI as the hub",
+    "explanation": "A practical instrument scan typically spends about 1–3 seconds on each performance instrument — long enough to read and interpret the value, but short enough to keep the scan moving. The AI, as the hub, receives slightly more frequent visits. Spending too long on any one instrument risks fixation; moving too rapidly between instruments prevents clear readings. The exact timing varies with the phase of flight: approach (high workload) demands a faster scan; cruise (steady conditions) allows a slightly more relaxed pace.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 150–151",
+    "media": []
+  },
+  {
+    "id": "FI-191",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "bank"],
+    "question": "During straight-and-level instrument flight, the AI shows a slight right bank. Before correcting, the pilot notices the HI shows a steady heading. What should the pilot do?",
+    "choices": [
+      {"text": "Trust the HI — if the heading is steady, the bank cannot be real", "correct": false},
+      {"text": "Cross-check with the TC and correct the bank on the AI regardless, as the AI is the primary attitude reference", "correct": true},
+      {"text": "Ignore the apparent bank because it is within normal limits", "correct": false},
+      {"text": "Recalibrate the AI using the HI as the reference", "correct": false}
+    ],
+    "answer": "Cross-check with the TC and correct the bank on the AI regardless, as the AI is the primary attitude reference",
+    "explanation": "Even a small bank will eventually produce a heading change as the ball of earth curves beneath the aircraft. A steady HI for a moment does not mean there is no bank — the heading has simply not yet had time to change. The correct response is to cross-check the TC (does it also show a turn?), and if confirmed, correct the bank on the AI to wings-level. The AI is the authoritative attitude source; a transient heading steadiness is not evidence that the AI is wrong. It is also possible the AI is slightly slow — still another reason to keep the bank correction while monitoring the HI and TC.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-192",
+    "topic": "Flight Instruments — Climbing on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "climb", "sequence"],
+    "question": "After establishing a climb on instruments, the pilot should check that the climb is established by verifying which set of instrument indications?",
+    "choices": [
+      {"text": "HI shows original heading; AI shows wings level", "correct": false},
+      {"text": "Positive VSI, altitude increasing on altimeter, airspeed at target climb speed on ASI, AI showing climb pitch attitude", "correct": true},
+      {"text": "Turn coordinator centred and suction gauge normal", "correct": false},
+      {"text": "VSI at zero and altimeter climbing", "correct": false}
+    ],
+    "answer": "Positive VSI, altitude increasing on altimeter, airspeed at target climb speed on ASI, AI showing climb pitch attitude",
+    "explanation": "After establishing a climb (power set, attitude set on AI, trim applied), the pilot confirms the climb is established by cross-checking: **VSI** — should show a positive (upward) reading; **Altimeter** — altitude should be increasing; **ASI** — should show the target climb airspeed (VY or VX); **AI** — should show the correct nose-up pitch attitude. All four instruments confirming a climb gives confidence that the aircraft is performing as intended and no control adjustments are needed.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 154",
+    "media": []
+  },
+  {
+    "id": "FI-193",
+    "topic": "Flight Instruments — Attitude Instrument Flying Principle",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["attitude-instrument-flying", "ftm", "control-performance"],
+    "question": "In the FTM's control and performance concept, the pilot first adjusts the __________ instruments, then reads the __________ instruments to confirm the result.",
+    "choices": [
+      {"text": "Performance; control", "correct": false},
+      {"text": "Navigation; performance", "correct": false},
+      {"text": "Control; performance", "correct": true},
+      {"text": "Performance; navigation", "correct": false}
+    ],
+    "answer": "Control; performance",
+    "explanation": "The control-and-performance sequence: (1) Set the desired attitude on the **AI** and power on the **tachometer** (control instruments); (2) Allow a few seconds for the aircraft to respond; (3) Read the **performance instruments** (ASI, altimeter, VSI, HI, TC) to confirm the expected performance is being achieved. If the performance instruments show the desired outcome, maintain the attitude and power. If not, make a small adjustment on the control instruments and re-check performance. This sequence prevents 'chasing' performance instruments with constant inputs.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148–149",
+    "media": []
+  },
+  {
+    "id": "FI-194",
+    "topic": "Flight Instruments — Turns on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "turns", "primary-bank"],
+    "question": "During a level instrument turn, which instrument is the primary bank reference?",
+    "choices": [
+      {"text": "The turn coordinator", "correct": false},
+      {"text": "The magnetic compass", "correct": false},
+      {"text": "The attitude indicator", "correct": true},
+      {"text": "The heading indicator", "correct": false}
+    ],
+    "answer": "The attitude indicator",
+    "explanation": "During a turn on instruments, the **AI** is the primary bank reference — it is the control instrument for bank, just as it is for pitch. The pilot sets and holds the desired bank angle on the AI. The **turn coordinator** is the primary performance instrument for confirming the *rate* of turn (that it is at standard rate). The **HI** is the primary instrument for tracking the progress of the turn toward the target heading. This distinction — AI for bank angle, TC for rate, HI for heading — keeps the scan organised.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156–157",
+    "media": []
+  },
+  {
+    "id": "FI-195",
+    "topic": "Flight Instruments — Descending on Instruments",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-flying", "ftm", "descent", "constant-rate"],
+    "question": "During a constant-rate descent on instruments (descending at a specified fpm), which instrument is the primary pitch reference?",
+    "choices": [
+      {"text": "The altimeter", "correct": false},
+      {"text": "The ASI", "correct": false},
+      {"text": "The VSI", "correct": true},
+      {"text": "The attitude indicator", "correct": false}
+    ],
+    "answer": "The VSI",
+    "explanation": "In a constant-rate descent (e.g., maintaining 500 fpm as specified by an approach procedure), the **VSI** is the primary pitch performance instrument. The pilot adjusts pitch on the AI to hold the target VSI reading. The ASI is monitored as a secondary instrument — in a constant-rate descent at a fixed power setting, the ASI reflects the trade-off between pitch and speed. The altimeter tracks the progress of the descent toward the target altitude.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-196",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["instrument-scan", "ftm", "failed-instruments"],
+    "question": "During an instrument flight, the AI and HI both show abnormal indications after a suspected vacuum failure. Which instruments should the pilot use for continued flight?",
+    "choices": [
+      {"text": "Trust the AI — it is more reliable than the TC for attitude", "correct": false},
+      {"text": "TC (for bank/rate of turn), ASI and VSI (for pitch), magnetic compass (for heading — in straight, unaccelerated flight)", "correct": true},
+      {"text": "Altimeter only — all other instruments are unreliable after vacuum failure", "correct": false},
+      {"text": "The HI only — it retains its heading information by inertia for 30 minutes", "correct": false}
+    ],
+    "answer": "TC (for bank/rate of turn), ASI and VSI (for pitch), magnetic compass (for heading — in straight, unaccelerated flight)",
+    "explanation": "On partial panel (AI and HI inoperative due to vacuum failure), the reliable instrument set is: **Turn Coordinator** (electrically powered) — for bank and rate of turn; **ASI** and **VSI** (static pressure instruments) — for pitch attitude (nose-high = slow speed/climbing VSI; nose-low = increasing speed/descending VSI); **Magnetic compass** — for heading only during straight, unaccelerated flight (remembering UNOS and ANDS errors). Timed turns using the TC allow precise heading changes. This partial panel technique is a critical emergency flying skill.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-197",
+    "topic": "Flight Instruments — Straight-and-Level Flight",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-flying", "ftm", "straight-level", "vsi"],
+    "question": "During straight-and-level instrument flight, what should the VSI read?",
+    "choices": [
+      {"text": "A slight positive value, because the aircraft is always gaining potential energy", "correct": false},
+      {"text": "Zero", "correct": true},
+      {"text": "A slight negative value, because drag requires constant power to overcome", "correct": false},
+      {"text": "Any value — the VSI is not used in level flight", "correct": false}
+    ],
+    "answer": "Zero",
+    "explanation": "In straight-and-level flight, altitude is not changing, so the rate of change of altitude is zero. The VSI should read zero. If the VSI is deflected up or down, altitude is changing and a pitch correction is needed. However, because of the VSI's 6–9 second lag, a slight deflection early in a correction may persist briefly even after the pitch has been corrected. The altimeter is cross-checked to confirm altitude is actually steady. The VSI and altimeter working together provide a redundant check: altimeter confirms altitude and VSI confirms rate = zero.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 152",
+    "media": []
+  },
+  {
+    "id": "FI-198",
+    "topic": "Flight Instruments — Attitude Instrument Flying Principle",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-instrument-flying", "ftm", "mental-model"],
+    "question": "Why is it important for a pilot to learn and memorise the 'attitude plus power equals performance' settings for their specific aircraft before flying on instruments?",
+    "choices": [
+      {"text": "Because memorised settings are required by Transport Canada regulations for IFR flight", "correct": false},
+      {"text": "Because known settings allow the pilot to set the control instruments promptly, reducing the time the aircraft spends in an undesired condition", "correct": true},
+      {"text": "Because the POH does not provide performance data for instrument conditions", "correct": false},
+      {"text": "Because memorised settings are more accurate than those derived from the POH", "correct": false}
+    ],
+    "answer": "Because known settings allow the pilot to set the control instruments promptly, reducing the time the aircraft spends in an undesired condition",
+    "explanation": "Knowing from memory (or from a precomputed reference card) that, for example, 'level cruise = 2,300 RPM + 2° nose-up on AI' allows the pilot to quickly establish the correct attitude and power when transitioning flight phases, rather than having to search for the correct settings on the fly. The faster the control instruments are set correctly, the sooner the aircraft is in the desired performance state and the sooner the pilot can relax and resume a normal scan. This mental model of known attitude-power pairs for each phase of flight is built through training.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-199",
+    "topic": "Flight Instruments — Instrument Scan",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["instrument-scan", "ftm", "summary"],
+    "question": "Which statement best summarises the purpose of the instrument scan in attitude-instrument flying?",
+    "choices": [
+      {"text": "The scan allows the pilot to replace all verbal communication with ATC", "correct": false},
+      {"text": "The scan provides a continuous, systematic picture of the aircraft's state to allow prompt detection and correction of any deviation", "correct": true},
+      {"text": "The scan is only needed in turbulence — in smooth air the autopilot handles deviations", "correct": false},
+      {"text": "The scan is used only to confirm instrument readings recorded at the beginning of flight", "correct": false}
+    ],
+    "answer": "The scan provides a continuous, systematic picture of the aircraft's state to allow prompt detection and correction of any deviation",
+    "explanation": "The instrument scan is the foundation of instrument flying. By continuously and systematically checking all relevant instruments in a disciplined pattern, the pilot maintains an accurate and current mental picture of the aircraft's state — attitude, airspeed, altitude, rate of change, heading, and turn rate. Any deviation from the desired condition shows on at least one instrument, and the scan ensures it is detected quickly, before it grows into a larger problem. Small, early corrections are always easier and safer than large, late ones.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 149–151",
+    "media": []
+  },
+  {
+    "id": "FI-200",
+    "topic": "Flight Instruments — Instrument Groups",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instrument-scan", "ftm", "summary", "instrument-groups"],
+    "question": "A pilot is flying straight-and-level on instruments and wants to confirm they are maintaining 3,500 ft at 90 kt on a heading of 180°. Which instrument GROUP provides this confirmation?",
+    "choices": [
+      {"text": "Control instruments — AI and tachometer", "correct": false},
+      {"text": "Performance instruments — altimeter, ASI, HI (and VSI for zero rate)", "correct": true},
+      {"text": "Navigation instruments — VOR and ADF", "correct": false},
+      {"text": "Both control and navigation instruments", "correct": false}
+    ],
+    "answer": "Performance instruments — altimeter, ASI, HI (and VSI for zero rate)",
+    "explanation": "To confirm 3,500 ft at 90 kt on heading 180°: **Altimeter** confirms 3,500 ft; **ASI** confirms 90 kt; **HI** confirms heading 180°; **VSI** confirms zero rate (level). These are all performance instruments — they show the *outcome* of the attitude and power set on the control instruments. The AI and tachometer (control instruments) were used to *establish* the desired condition; the performance instruments are used to *verify* it is being achieved and maintained.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148–153",
+    "media": []
+  }
+]

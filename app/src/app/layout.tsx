@@ -44,7 +44,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var s=localStorage.getItem('theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s?s==='dark':p)document.documentElement.classList.add('dark');}catch(e){}})()` }} />
       </head>
-      <body className="min-h-full flex flex-col bg-stone-50 dark:bg-slate-900 transition-colors duration-200">
+      <body className="min-h-full flex flex-col bg-stone-50 dark:bg-slate-900 transition-colors duration-200 safe-top">
         <ThemeProvider>
           {children}
           <ServiceWorkerRegistration />

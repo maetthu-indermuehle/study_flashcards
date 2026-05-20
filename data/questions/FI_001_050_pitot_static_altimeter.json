@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-001",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "instruments", "system-overview"],
+    "question": "Which three flight instruments are operated by the pitot-static system?",
+    "choices": [
+      {"text": "Airspeed indicator, altimeter, and vertical speed indicator", "correct": true},
+      {"text": "Altimeter, attitude indicator, and magnetic compass", "correct": false},
+      {"text": "Heading indicator, VSI, and altimeter", "correct": false},
+      {"text": "ASI, compass, and VSI", "correct": false}
+    ],
+    "answer": "Airspeed indicator, altimeter, and vertical speed indicator",
+    "explanation": "The pitot-static system provides pressure references for exactly three flight instruments: the **airspeed indicator (ASI)**, which uses both pitot and static pressure; the **altimeter**, which uses static pressure only; and the **vertical speed indicator (VSI)**, which also uses static pressure only. All other instruments — the attitude indicator, heading indicator, turn coordinator, and magnetic compass — use different power sources (gyroscopic or magnetic).",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1",
+    "media": []
+  },
+  {
+    "id": "FI-002",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "ASI", "pitot-tube"],
+    "question": "Which flight instrument uses BOTH pitot (impact) pressure AND static pressure?",
+    "choices": [
+      {"text": "Airspeed indicator (ASI)", "correct": true},
+      {"text": "Altimeter", "correct": false},
+      {"text": "Vertical speed indicator (VSI)", "correct": false},
+      {"text": "Heading indicator", "correct": false}
+    ],
+    "answer": "Airspeed indicator (ASI)",
+    "explanation": "The **ASI** is the only instrument that uses both sources. The pitot tube supplies total pressure (dynamic + static) to one side of the ASI's diaphragm, while the static port supplies ambient static pressure to the other side. The difference — dynamic pressure — drives the airspeed needle. The altimeter and VSI use **static pressure only**; the heading indicator is gyroscopic.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2 and 8-8",
+    "media": []
+  },
+  {
+    "id": "FI-003",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "altimeter", "VSI", "static-port"],
+    "question": "Which two flight instruments use ONLY static pressure (and do NOT use pitot pressure)?",
+    "choices": [
+      {"text": "Altimeter and vertical speed indicator (VSI)", "correct": true},
+      {"text": "ASI and VSI", "correct": false},
+      {"text": "Altimeter and ASI", "correct": false},
+      {"text": "Heading indicator and ASI", "correct": false}
+    ],
+    "answer": "Altimeter and vertical speed indicator (VSI)",
+    "explanation": "The **altimeter** and **VSI** receive only static (ambient) pressure from the static port. The altimeter compares this pressure against sealed aneroid wafers to measure altitude; the VSI measures the rate of change of static pressure. Neither instrument has any connection to the pitot tube. Only the ASI uses both pitot and static pressure.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1 to 8-2",
+    "media": []
+  },
+  {
+    "id": "FI-004",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-tube", "drain-hole", "moisture"],
+    "question": "What is the purpose of the small hole in the back of the pitot tube pressure chamber (the drain hole)?",
+    "choices": [
+      {"text": "To allow moisture to drain from the system if the aircraft enters precipitation", "correct": true},
+      {"text": "To vent static pressure to the atmosphere", "correct": false},
+      {"text": "To equalize pressure between pitot and static chambers during level flight", "correct": false},
+      {"text": "To heat the pitot tube", "correct": false}
+    ],
+    "answer": "To allow moisture to drain from the system if the aircraft enters precipitation",
+    "explanation": "In addition to the forward-facing opening, the pitot tube has a small **drain hole** at the back of the pressure chamber. This allows moisture that enters the system when flying through precipitation to drain out, preventing water from blocking the pitot system. Both openings must be checked during preflight to ensure neither is blocked.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2",
+    "media": []
+  },
+  {
+    "id": "FI-005",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-tube", "total-pressure", "dynamic-pressure"],
+    "question": "The pitot tube captures what type of pressure?",
+    "choices": [
+      {"text": "Total pressure — both dynamic (ram air) pressure and static pressure", "correct": true},
+      {"text": "Dynamic pressure only", "correct": false},
+      {"text": "Static pressure only", "correct": false},
+      {"text": "Manifold pressure", "correct": false}
+    ],
+    "answer": "Total pressure — both dynamic (ram air) pressure and static pressure",
+    "explanation": "The **pitot tube** captures **total pressure**, which is the combination of dynamic pressure (produced by the aircraft's motion through the air) and static pressure (ambient atmospheric pressure that is always present). This total pressure is transmitted to the ASI. The static pressure component is then subtracted by the static port reference, leaving only the dynamic pressure to drive the airspeed indication.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2",
+    "media": []
+  },
+  {
+    "id": "FI-006",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["static-pressure", "ambient-pressure"],
+    "question": "What is static pressure in the context of the pitot-static system?",
+    "choices": [
+      {"text": "Ambient barometric pressure, present whether the aircraft is moving or stationary", "correct": true},
+      {"text": "Pressure created by forward motion of the aircraft through the air", "correct": false},
+      {"text": "The pressure difference between the pitot and static ports", "correct": false},
+      {"text": "Cabin pressure in a pressurized aircraft", "correct": false}
+    ],
+    "answer": "Ambient barometric pressure, present whether the aircraft is moving or stationary",
+    "explanation": "**Static pressure** (also called ambient pressure) is simply the atmospheric pressure at the aircraft's current location. It is always present whether the aircraft is moving or at rest, and it is the barometric pressure in the local area. The static port taps this pressure from the sides of the fuselage where airflow is relatively undisturbed. It is used by the altimeter, VSI, and the static reference side of the ASI.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2",
+    "media": []
+  },
+  {
+    "id": "FI-007",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["dynamic-pressure", "pitot-tube"],
+    "question": "What is dynamic pressure in the context of the pitot-static system?",
+    "choices": [
+      {"text": "Pressure present only when the aircraft is in motion — pressure due to forward motion through the air", "correct": true},
+      {"text": "Atmospheric pressure at sea level under standard conditions", "correct": false},
+      {"text": "The pressure inside the altimeter's aneroid wafers", "correct": false},
+      {"text": "Pressure generated by the aircraft's vacuum pump", "correct": false}
+    ],
+    "answer": "Pressure present only when the aircraft is in motion — pressure due to forward motion through the air",
+    "explanation": "**Dynamic pressure** is created by the aircraft's motion through the air and is present only when the aircraft is moving. When the aircraft is stationary in calm air, dynamic pressure is zero. Wind also generates dynamic pressure — it does not matter whether the aircraft is moving through still air at 70 knots or facing a 70-knot headwind; the same dynamic pressure is generated. The ASI measures this dynamic pressure to indicate airspeed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2",
+    "media": []
+  },
+  {
+    "id": "FI-008",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "aneroid-wafers", "construction"],
+    "question": "What is the main sensing component inside a pressure altimeter?",
+    "choices": [
+      {"text": "A stack of sealed aneroid wafers evacuated to an internal pressure of 29.92 inches of mercury", "correct": true},
+      {"text": "A spinning gyroscope", "correct": false},
+      {"text": "A diaphragm connected to the pitot tube through a calibrated leak", "correct": false},
+      {"text": "A magnetic compass card linked to gears", "correct": false}
+    ],
+    "answer": "A stack of sealed aneroid wafers evacuated to an internal pressure of 29.92 inches of mercury",
+    "explanation": "The altimeter's main component is a stack of **sealed aneroid wafers** — thin, evacuated metal capsules whose internal pressure is fixed at 29.92 \"Hg. These wafers are free to expand and contract in response to changes in the surrounding static pressure. A mechanical linkage connects the wafer movement to the indicating needles: higher static pressure (lower altitude) compresses the wafers; lower static pressure (higher altitude) allows them to expand.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-009",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "aneroid-wafers", "altitude-indication"],
+    "question": "When an aircraft climbs and static pressure decreases, what happens to the aneroid wafers in the altimeter?",
+    "choices": [
+      {"text": "The wafers expand, and the mechanical linkage drives the altimeter needles to indicate a higher altitude", "correct": true},
+      {"text": "The wafers compress, indicating less altitude", "correct": false},
+      {"text": "The wafers spin faster, increasing indication rate", "correct": false},
+      {"text": "The wafers produce a vacuum that moves the needles", "correct": false}
+    ],
+    "answer": "The wafers expand, and the mechanical linkage drives the altimeter needles to indicate a higher altitude",
+    "explanation": "As the aircraft climbs, the surrounding static pressure decreases. Because the static pressure surrounding the aneroid wafers is now **less than the pressure inside the wafers** (fixed at 29.92 \"Hg), the wafers are able to expand outward. This expansion is transmitted through gears and mechanical linkage to rotate the altimeter pointers, indicating increased altitude.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-010",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "kollsman-window", "barometric-setting"],
+    "question": "The barometric pressure setting window on the altimeter — used to adjust for local atmospheric pressure — is called the:",
+    "choices": [
+      {"text": "Kollsman window", "correct": true},
+      {"text": "Altimeter index dial", "correct": false},
+      {"text": "QNH window", "correct": false},
+      {"text": "Barometric index", "correct": false}
+    ],
+    "answer": "Kollsman window",
+    "explanation": "The **Kollsman window** (also called the barometric scale adjustment window) displays the barometric pressure setting that has been dialled into the altimeter. It is calibrated in inches of mercury (\"Hg) and/or millibars. Only after the Kollsman window is set to the current altimeter setting does the instrument indicate the correct altitude above sea level. The knob to adjust it is located at the bottom of the instrument.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3 and 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-011",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "altimeter-setting", "QNH"],
+    "question": "\"Altimeter setting\" is formally defined as:",
+    "choices": [
+      {"text": "Station pressure reduced to mean sea level", "correct": true},
+      {"text": "Actual sea level pressure at the reporting station", "correct": false},
+      {"text": "Pressure altitude at the reporting station", "correct": false},
+      {"text": "The pressure at the aircraft's current flight altitude", "correct": false}
+    ],
+    "answer": "Station pressure reduced to mean sea level",
+    "explanation": "**Altimeter setting** is the station (field) pressure mathematically reduced to mean sea level. It is not the actual sea-level pressure, because the calculation uses standard atmosphere assumptions. An altimeter setting is accurate only in the vicinity of the reporting station; as the flight progresses to other locations, the altimeter must be updated with new settings. ATC provides updated settings en route.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-012",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "pressure-error", "safety"],
+    "question": "If a pilot flies from a high-pressure area into a low-pressure area WITHOUT adjusting the altimeter, what is the result?",
+    "choices": [
+      {"text": "The aircraft's actual altitude is LOWER than the altimeter indicates — a potentially dangerous situation near terrain", "correct": true},
+      {"text": "The aircraft's actual altitude is HIGHER than the altimeter indicates", "correct": false},
+      {"text": "The altimeter reads exactly correctly regardless of pressure changes", "correct": false},
+      {"text": "The altimeter freezes at the last correct reading", "correct": false}
+    ],
+    "answer": "The aircraft's actual altitude is LOWER than the altimeter indicates — a potentially dangerous situation near terrain",
+    "explanation": "When flying into **lower pressure** without adjusting the altimeter, the lower outside pressure allows the aneroid wafers to expand more than they should, causing the altimeter to read **higher** than the true altitude. The aircraft is therefore **lower than indicated**. Near terrain or obstacles, this is dangerous. The aviation axiom is: **\"Going from a HIGH to a LOW, look out BELOW.\"**",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4 to 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-013",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "pressure-error", "axiom"],
+    "question": "Which aviation axiom applies to flying from high barometric pressure into low barometric pressure without adjusting the altimeter?",
+    "choices": [
+      {"text": "\"Going from a HIGH to a LOW, look out BELOW\"", "correct": true},
+      {"text": "\"From HOT to COLD, look out BELOW\"", "correct": false},
+      {"text": "\"High pressure equals high altitude — always safe\"", "correct": false},
+      {"text": "\"Always set the altimeter to 29.92 en route\"", "correct": false}
+    ],
+    "answer": "\"Going from a HIGH to a LOW, look out BELOW\"",
+    "explanation": "**\"Going from a HIGH to a LOW, look out BELOW\"** warns that when an aircraft flies from a high-pressure area to a low-pressure area without updating the altimeter, the indicated altitude is higher than the true altitude — the aircraft is actually lower than it thinks. This is the pressure-related altimeter error mnemonic. A separate mnemonic — \"From HOT to COLD, look out BELOW\" — applies to temperature error.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4",
+    "media": []
+  },
+  {
+    "id": "FI-014",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "temperature-error", "axiom"],
+    "question": "Which aviation axiom applies when flying in air that is colder than standard temperature?",
+    "choices": [
+      {"text": "\"From HOT to COLD, look out BELOW\"", "correct": true},
+      {"text": "\"Going from a HIGH to a LOW, look out BELOW\"", "correct": false},
+      {"text": "\"Cold air means dense air — the altimeter over-reads\"", "correct": false},
+      {"text": "\"Temperature errors are insignificant below 5,000 feet\"", "correct": false}
+    ],
+    "answer": "\"From HOT to COLD, look out BELOW\"",
+    "explanation": "**\"From HOT to COLD, look out BELOW\"** reminds pilots that when the air is colder than standard, it is denser than standard, which means the altimeter over-reads — the true altitude is **lower** than indicated. While adjusting the barometric scale compensates for nonstandard pressure, it does **not** compensate for nonstandard temperature. This effect is especially critical in mountainous terrain and at very low temperatures.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4 to 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-015",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "temperature-error", "true-altitude"],
+    "question": "When the air temperature is colder than standard, the aircraft's true altitude compared to the indicated altitude is:",
+    "choices": [
+      {"text": "Lower than the altimeter indicates", "correct": true},
+      {"text": "Higher than the altimeter indicates", "correct": false},
+      {"text": "Equal to the altimeter indication when the Kollsman window is correctly set", "correct": false},
+      {"text": "Unaffected by temperature", "correct": false}
+    ],
+    "answer": "Lower than the altimeter indicates",
+    "explanation": "Cold air is **denser** than standard air. The altimeter measures pressure, not temperature. In cold air, the pressure levels are compressed closer to the ground compared to the standard atmosphere model the altimeter assumes. As a result, the aircraft is at a **lower true altitude** than the altimeter indicates. Flying into mountain terrain during cold weather requires extra altitude margin to ensure adequate terrain clearance.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4",
+    "media": []
+  },
+  {
+    "id": "FI-016",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "preflight-check", "instrument-check"],
+    "question": "What is the altimeter preflight serviceability check requirement?",
+    "choices": [
+      {"text": "The altimeter should indicate within 75 feet of the surveyed field elevation when the current altimeter setting is set in the Kollsman window", "correct": true},
+      {"text": "The altimeter should indicate exactly the surveyed field elevation", "correct": false},
+      {"text": "The altimeter should read zero on the ground at sea level airports", "correct": false},
+      {"text": "The altimeter should read pressure altitude (set to 29.92 \"Hg) before flight", "correct": false}
+    ],
+    "answer": "The altimeter should indicate within 75 feet of the surveyed field elevation when the current altimeter setting is set in the Kollsman window",
+    "explanation": "Before each flight, set the barometric scale to the current altimeter setting from the local tower, ATIS, AWOS, or ASOS. The altimeter pointers should then indicate **within 75 feet** of the known field elevation. If the error exceeds 75 feet, the instrument should be referred to a certificated instrument repair station for recalibration, as errors in the altimeter can compromise terrain clearance.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-017",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "types-of-altitude", "indicated-altitude"],
+    "question": "What is \"indicated altitude\"?",
+    "choices": [
+      {"text": "The altitude read directly from the altimeter when it is set to the current altimeter setting (uncorrected)", "correct": true},
+      {"text": "The actual vertical distance of the aircraft above MSL", "correct": false},
+      {"text": "The height of the aircraft above the terrain directly below", "correct": false},
+      {"text": "The altitude when the Kollsman window is set to 29.92 \"Hg", "correct": false}
+    ],
+    "answer": "The altitude read directly from the altimeter when it is set to the current altimeter setting (uncorrected)",
+    "explanation": "**Indicated altitude** is simply what the altimeter reads when set to the current altimeter setting — it is not corrected for nonstandard pressure above the reporting station, nonstandard temperature, or instrument error. The word \"indicated\" signals that the reading is taken directly from the instrument. True altitude (the actual MSL height) will differ from indicated altitude whenever pressure or temperature deviate from standard.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-018",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "types-of-altitude", "true-altitude"],
+    "question": "What is \"true altitude\"?",
+    "choices": [
+      {"text": "The actual vertical distance of the aircraft above mean sea level (MSL)", "correct": true},
+      {"text": "The altitude read from the altimeter when set to the current altimeter setting", "correct": false},
+      {"text": "The vertical distance above the terrain below the aircraft (AGL)", "correct": false},
+      {"text": "The altitude indicated when the Kollsman window is set to 29.92 \"Hg", "correct": false}
+    ],
+    "answer": "The actual vertical distance of the aircraft above mean sea level (MSL)",
+    "explanation": "**True altitude** is the actual vertical distance of the aircraft above mean sea level. Airport, terrain, and obstacle elevations on aeronautical charts are expressed as true altitudes. True altitude differs from indicated altitude whenever atmospheric pressure or temperature deviate from standard. In nonstandard conditions, a pilot must be aware that indicated altitude and true altitude are not the same.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-019",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "types-of-altitude", "absolute-altitude"],
+    "question": "What is \"absolute altitude\"?",
+    "choices": [
+      {"text": "The vertical distance of the aircraft above the terrain below — height above ground level (AGL)", "correct": true},
+      {"text": "The actual vertical distance above mean sea level (MSL)", "correct": false},
+      {"text": "The altitude indicated when the altimeter Kollsman window is set to 29.92 \"Hg", "correct": false},
+      {"text": "Pressure altitude corrected for nonstandard temperature", "correct": false}
+    ],
+    "answer": "The vertical distance of the aircraft above the terrain below — height above ground level (AGL)",
+    "explanation": "**Absolute altitude** is the vertical distance of the aircraft above the terrain directly below it. This is what is commonly called height above ground level (AGL). It differs from true altitude (MSL) by the terrain elevation beneath the aircraft. Absolute altitude is important for terrain avoidance, circuit altitudes, and visual approach planning.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6 to 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-020",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "types-of-altitude", "pressure-altitude"],
+    "question": "What is \"pressure altitude\"?",
+    "choices": [
+      {"text": "The altitude indicated when the altimeter Kollsman window is set to 29.92 \"Hg", "correct": true},
+      {"text": "The actual vertical distance above mean sea level", "correct": false},
+      {"text": "The height above terrain (AGL)", "correct": false},
+      {"text": "Pressure altitude corrected for nonstandard temperature", "correct": false}
+    ],
+    "answer": "The altitude indicated when the altimeter Kollsman window is set to 29.92 \"Hg",
+    "explanation": "**Pressure altitude** is what the altimeter reads when the Kollsman window is set to **29.92 \"Hg** — the standard sea-level pressure. This places the altimeter reference at the standard datum plane, where air pressure equals 29.92 \"Hg at 15°C. Pressure altitude is used to compute density altitude, true altitude, true airspeed (TAS), and various performance data on aircraft charts.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-021",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "types-of-altitude", "density-altitude", "performance"],
+    "question": "What is \"density altitude\"?",
+    "choices": [
+      {"text": "Pressure altitude corrected for variations from standard temperature", "correct": true},
+      {"text": "Actual altitude above mean sea level", "correct": false},
+      {"text": "The vertical distance above the terrain (AGL)", "correct": false},
+      {"text": "The altitude read when the Kollsman window is set to 29.92 \"Hg", "correct": false}
+    ],
+    "answer": "Pressure altitude corrected for variations from standard temperature",
+    "explanation": "**Density altitude** is pressure altitude corrected for nonstandard temperature. It directly determines the aircraft's actual aerodynamic performance because air density affects how much lift the wings generate and how much power the engine produces. High temperature raises density altitude above pressure altitude, reducing performance. Density altitude is used for performance calculations on takeoff, climb, and landing.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-022",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "aneroid-barometer", "type"],
+    "question": "The pressure altimeter is primarily described as what type of measuring device?",
+    "choices": [
+      {"text": "An aneroid barometer", "correct": true},
+      {"text": "A gyroscopic instrument", "correct": false},
+      {"text": "A differential pressure gauge", "correct": false},
+      {"text": "A magnetic sensor", "correct": false}
+    ],
+    "answer": "An aneroid barometer",
+    "explanation": "The pressure altimeter is an **aneroid barometer** — it measures the pressure of the atmosphere at the aircraft's location using sealed metal capsules (aneroid wafers) and presents this measurement as an altitude in feet. The term \"aneroid\" means without liquid, distinguishing it from traditional liquid barometers. The instrument assumes a standard atmosphere and translates pressure into altitude via the standard lapse rate.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-023",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "multipointer", "reading"],
+    "question": "On a typical three-pointer altimeter, which needle indicates hundreds of feet?",
+    "choices": [
+      {"text": "The long, thin needle on top", "correct": true},
+      {"text": "The short, wide needle", "correct": false},
+      {"text": "The long, thin needle with an inverted triangle at the end", "correct": false},
+      {"text": "The needle positioned closest to the centre of the dial", "correct": false}
+    ],
+    "answer": "The long, thin needle on top",
+    "explanation": "On a typical **multipointer altimeter**: the **long needle on top** indicates hundreds of feet; the **short, wide needle** indicates thousands of feet; and the **long, thin needle with an inverted triangle** at its tip indicates tens of thousands of feet. Reading the altimeter correctly requires recognizing which needle indicates which scale — a common source of error, especially when reading altitudes above 10,000 feet.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-024",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "multipointer", "reading"],
+    "question": "On a typical three-pointer altimeter, which needle indicates thousands of feet?",
+    "choices": [
+      {"text": "The short, wide needle", "correct": true},
+      {"text": "The long needle on top", "correct": false},
+      {"text": "The long, thin needle with an inverted triangle at the tip", "correct": false},
+      {"text": "The rotating drum or counter window", "correct": false}
+    ],
+    "answer": "The short, wide needle",
+    "explanation": "On a typical altimeter: the **short, wide needle** indicates **thousands of feet**; the long needle on top indicates hundreds of feet; and the long, thin needle with the inverted triangle indicates tens of thousands of feet. Some modern altimeters replace the tens-of-thousands pointer with a drum counter display for easier readability at high altitudes.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-025",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "multipointer", "reading", "high-altitude"],
+    "question": "On a typical three-pointer altimeter, which pointer indicates tens of thousands of feet?",
+    "choices": [
+      {"text": "The long, thin needle with the inverted triangle at its tip", "correct": true},
+      {"text": "The long needle on top", "correct": false},
+      {"text": "The short, wide needle", "correct": false},
+      {"text": "A rotating drum counter", "correct": false}
+    ],
+    "answer": "The long, thin needle with the inverted triangle at its tip",
+    "explanation": "The **long, thin needle with the inverted triangle** at its tip indicates **tens of thousands of feet**. In the PHAK diagram, this is described as the needle that indicates altitudes such as 10,000 ft, 20,000 ft, etc. Some altimeters use a crosshatch flag to remind pilots that they are below 10,000 feet, where this pointer would normally rest near the bottom of the dial.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-026",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["altimeter", "barometric-pressure", "high-pressure", "limitation"],
+    "question": "Many altimeters do not have an accurate means of being adjusted for barometric pressures in excess of:",
+    "choices": [
+      {"text": "31.00 \"Hg", "correct": true},
+      {"text": "29.92 \"Hg", "correct": false},
+      {"text": "30.50 \"Hg", "correct": false},
+      {"text": "32.00 \"Hg", "correct": false}
+    ],
+    "answer": "31.00 \"Hg",
+    "explanation": "The PHAK states that **many altimeters cannot accurately be adjusted for pressures exceeding 31.00 \"Hg**. When the actual barometric pressure exceeds the altimeter's maximum setting, the aircraft's actual altitude is higher than the altimeter indicates (because the instrument cannot be set to the higher-than-maximum pressure). Pilots should consult the AFM/POH for the specific altimeter used in their aircraft.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-027",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["altimeter", "low-pressure", "flight-restriction"],
+    "question": "When very low barometric pressure conditions occur (below 28.00 \"Hg), what operational consideration applies?",
+    "choices": [
+      {"text": "Flight operations by aircraft that cannot set the actual altimeter setting are not recommended", "correct": true},
+      {"text": "Pilots must use pressure altitude (29.92 \"Hg) for all altimetry", "correct": false},
+      {"text": "The Kollsman window must be manually overridden to 28.00 \"Hg", "correct": false},
+      {"text": "Descent below 1,000 feet AGL is prohibited", "correct": false}
+    ],
+    "answer": "Flight operations by aircraft that cannot set the actual altimeter setting are not recommended",
+    "explanation": "The PHAK states: \"When low barometric pressure conditions occur (below 28.00 \"Hg), flight operations by aircraft unable to set the actual altimeter setting are not recommended.\" This is because the altimeter would read significantly higher than the true altitude, potentially placing the aircraft in dangerous proximity to terrain, especially at low altitudes.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-028",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "overnight-pressure-change", "behaviour"],
+    "question": "An aircraft is parked overnight. Atmospheric pressure drops while it sits. The next morning, without resetting the altimeter, the instrument will indicate:",
+    "choices": [
+      {"text": "An altitude ABOVE the field elevation — the altimeter interpreted the pressure fall as a climb", "correct": true},
+      {"text": "An altitude BELOW the field elevation", "correct": false},
+      {"text": "Exactly the field elevation, as it was set before shutdown", "correct": false},
+      {"text": "Pressure altitude (29.92 \"Hg)", "correct": false}
+    ],
+    "answer": "An altitude ABOVE the field elevation — the altimeter interpreted the pressure fall as a climb",
+    "explanation": "When barometric pressure decreases overnight, the lower external pressure allows the aneroid wafers to expand more — the altimeter interprets this as a climb and **shows an altitude higher than field elevation**. The PHAK notes: \"If the aircraft is left parked over night... As the pressure falls, the altimeter interprets this as a climb.\" This is most noticeable when parked overnight. Resetting the Kollsman window to the current setting restores the correct field elevation reading.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-029",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "pressure-altitude-calculation", "rule-of-thumb"],
+    "question": "Approximately how much altitude change corresponds to a 1-inch Hg difference in barometric pressure on the altimeter?",
+    "choices": [
+      {"text": "1,000 feet", "correct": true},
+      {"text": "100 feet", "correct": false},
+      {"text": "500 feet", "correct": false},
+      {"text": "2,000 feet", "correct": false}
+    ],
+    "answer": "1,000 feet",
+    "explanation": "A useful rule of thumb: **1 inch of mercury = approximately 1,000 feet of altitude**. For example, if the altimeter is set to 29.94 \"Hg but the correct setting is 29.69 \"Hg (a difference of 0.25 \"Hg), the altimeter reads approximately 250 feet too high. This rule is used to quickly calculate altimeter errors when transitioning between areas of different barometric pressure.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-030",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "true-altitude", "charts"],
+    "question": "Airport, terrain, and obstacle elevations shown on aeronautical charts are expressed as:",
+    "choices": [
+      {"text": "True altitudes (above mean sea level, MSL)", "correct": true},
+      {"text": "Absolute altitudes (above ground level, AGL)", "correct": false},
+      {"text": "Pressure altitudes", "correct": false},
+      {"text": "Density altitudes", "correct": false}
+    ],
+    "answer": "True altitudes (above mean sea level, MSL)",
+    "explanation": "All elevations on aeronautical charts — airports, terrain features, obstacles, minimum safe altitudes — are expressed as **true altitudes above mean sea level (MSL)**. This is consistent with how the altimeter is used (set to the local altimeter setting) so that chart elevations and altimeter readings can be directly compared. AGL values are sometimes shown as well (e.g., obstacle heights), but the primary reference on charts is MSL.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-031",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["density-altitude", "performance", "importance"],
+    "question": "Density altitude is important to pilots primarily because it is directly related to:",
+    "choices": [
+      {"text": "The aircraft's actual aerodynamic and engine performance", "correct": true},
+      {"text": "The altitude used for legal separation of air traffic", "correct": false},
+      {"text": "The accuracy of the altimeter indication", "correct": false},
+      {"text": "Compass deviation errors in the magnetic compass", "correct": false}
+    ],
+    "answer": "The aircraft's actual aerodynamic and engine performance",
+    "explanation": "**Density altitude** determines how the aircraft actually performs, because engine power output and wing lift depend on **air density**. High density altitude (hot, humid, or high-elevation conditions) means less dense air — the engine produces less power and the wings must work harder to generate lift. Aircraft performance data in the AFM/POH is based on density altitude, making it critical for takeoff and climb performance planning.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-032",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["density-altitude", "temperature", "hot-day"],
+    "question": "An airport at sea level has a field elevation of 0 feet and standard temperature of 15°C. If the temperature rises to 30°C, what happens to density altitude?",
+    "choices": [
+      {"text": "Density altitude increases above the pressure altitude (aircraft performance degrades)", "correct": true},
+      {"text": "Density altitude decreases (aircraft performs better than at standard conditions)", "correct": false},
+      {"text": "Density altitude remains equal to pressure altitude regardless of temperature", "correct": false},
+      {"text": "Density altitude equals the indicated altitude", "correct": false}
+    ],
+    "answer": "Density altitude increases above the pressure altitude (aircraft performance degrades)",
+    "explanation": "Above-standard temperature **increases density altitude** above pressure altitude. At a sea-level airport with 29.92 \"Hg pressure but 30°C temperature (15°C above standard), the density altitude is significantly higher than sea level — the aircraft performs as if it were at a much higher elevation. This reduces available engine power and lift, resulting in longer takeoff runs and reduced climb rates.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-033",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["density-altitude", "pressure-altitude", "standard-conditions"],
+    "question": "Under what conditions are pressure altitude and density altitude the same?",
+    "choices": [
+      {"text": "When conditions are standard — temperature and pressure match the standard atmosphere at that altitude", "correct": true},
+      {"text": "Density altitude is always higher than pressure altitude", "correct": false},
+      {"text": "Pressure altitude and density altitude are always different by definition", "correct": false},
+      {"text": "Only at sea level and never at altitude", "correct": false}
+    ],
+    "answer": "When conditions are standard — temperature and pressure match the standard atmosphere at that altitude",
+    "explanation": "**Pressure altitude equals density altitude** only when the temperature is standard for the altitude being flown. For example, at an airport with a field elevation of 5,048 feet MSL where the standard temperature is 5°C, if the actual temperature is 5°C and pressure altitude equals field elevation, then density altitude also equals 5,048 feet. Any departure from standard temperature changes density altitude relative to pressure altitude.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-034",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "only-altitude-instrument"],
+    "question": "Which is the only flight instrument capable of directly indicating the aircraft's altitude?",
+    "choices": [
+      {"text": "The altimeter", "correct": true},
+      {"text": "The vertical speed indicator", "correct": false},
+      {"text": "The attitude indicator", "correct": false},
+      {"text": "The heading indicator", "correct": false}
+    ],
+    "answer": "The altimeter",
+    "explanation": "The **altimeter** is the only instrument that directly indicates altitude (in feet above a reference pressure level). The VSI indicates rate of altitude change, not altitude itself. The attitude indicator shows pitch and bank. The heading indicator shows directional heading. Because the altimeter is the sole direct altitude indicator, it is one of the most critical instruments on the panel.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-035",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "crosshatch-flag", "below-10000"],
+    "question": "On some altimeters, a crosshatched area appears on the face when the aircraft is below a certain altitude. Below what altitude does this crosshatch flag appear?",
+    "choices": [
+      {"text": "10,000 feet MSL", "correct": true},
+      {"text": "18,000 feet MSL", "correct": false},
+      {"text": "5,000 feet AGL", "correct": false},
+      {"text": "1,000 feet AGL", "correct": false}
+    ],
+    "answer": "10,000 feet MSL",
+    "explanation": "On some altimeters, a **crosshatch flag** appears in a window on the face of the instrument when the indicated altitude is **below 10,000 feet MSL**. This flag is a visual warning to pilots that the aircraft is at a low altitude — most collisions with terrain and obstacles occur below 10,000 feet. When the aircraft climbs above 10,000 feet, the crosshatch disappears.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-036",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "operating-principle", "pressure-lapse"],
+    "question": "The altimeter can measure altitude because atmospheric pressure:",
+    "choices": [
+      {"text": "Decreases in a predictable way as altitude increases", "correct": true},
+      {"text": "Increases with altitude, allowing the aneroid wafers to compress", "correct": false},
+      {"text": "Remains constant up to 10,000 feet, then decreases abruptly", "correct": false},
+      {"text": "Changes only with temperature, not with altitude", "correct": false}
+    ],
+    "answer": "Decreases in a predictable way as altitude increases",
+    "explanation": "The altimeter works because **atmospheric pressure decreases with increasing altitude** in a predictable (though not perfectly linear) way defined by the standard atmosphere model. Air is denser at sea level than at altitude — as altitude increases, fewer air molecules are above the aircraft, producing less pressure. The altimeter's aneroid wafers expand in response to lower pressure, and the scale is calibrated to convert this pressure to an altitude reading.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-037",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "static-pressure", "altitude-change"],
+    "question": "As an aircraft descends, the static pressure entering the altimeter increases. What happens to the aneroid wafers and the altimeter reading?",
+    "choices": [
+      {"text": "The higher static pressure compresses the wafers, and the altimeter indicates a decrease in altitude", "correct": true},
+      {"text": "The higher static pressure expands the wafers, and the altimeter indicates an increase in altitude", "correct": false},
+      {"text": "The altimeter reading is unaffected during descent", "correct": false},
+      {"text": "The static pressure reversal causes the altimeter to freeze temporarily", "correct": false}
+    ],
+    "answer": "The higher static pressure compresses the wafers, and the altimeter indicates a decrease in altitude",
+    "explanation": "During **descent**, atmospheric pressure increases as the aircraft moves into denser air. This higher static pressure exceeds the internal pressure of the aneroid wafers (fixed at 29.92 \"Hg), causing the wafers to **compress**. The mechanical linkage translates this compression into a **lower altitude** indication on the altimeter. The reverse happens during climb — lower static pressure allows the wafers to expand.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-038",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "altimeter-setting", "ATC"],
+    "question": "When a pilot is using ATC assistance en route, how will the pilot receive updated altimeter settings?",
+    "choices": [
+      {"text": "ATC will advise when updated altimeter settings are available", "correct": true},
+      {"text": "ATC provides altimeter settings only at departure and destination airports", "correct": false},
+      {"text": "The altimeter automatically adjusts using GPS altitude data", "correct": false},
+      {"text": "The pilot must request each altimeter setting individually from ATC", "correct": false}
+    ],
+    "answer": "ATC will advise when updated altimeter settings are available",
+    "explanation": "When using **ATC assistance**, controllers will **advise pilots when updated altimeter settings become available** as the aircraft progresses from one area to another. This ensures that pilots are using the most current setting for the area they are flying through, maintaining accurate altitude information for terrain clearance and traffic separation. Without ATC, pilots can obtain local settings from AWOS, ASOS, or ATIS broadcasts.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-039",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "alternate-static-source", "indication-error"],
+    "question": "When a pilot opens the alternate static source (located inside the cockpit), how does the altimeter indication change?",
+    "choices": [
+      {"text": "The altimeter indicates a slightly HIGHER altitude than actual", "correct": true},
+      {"text": "The altimeter indicates a slightly LOWER altitude than actual", "correct": false},
+      {"text": "The altimeter freezes at the last reading", "correct": false},
+      {"text": "The altimeter is unaffected by switching to alternate static", "correct": false}
+    ],
+    "answer": "The altimeter indicates a slightly HIGHER altitude than actual",
+    "explanation": "When the **alternate static source** (inside the cockpit) is used, the static pressure provided is **slightly lower** than the external ambient pressure. This is because the air inside the cockpit is at a slightly lower pressure than outside air, due to the venturi effect of air flowing around the fuselage. Lower static pressure causes the altimeter to indicate a **slightly higher** altitude than actual. Check the AFM/POH for specific correction values.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2 to 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-040",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["alternate-static-source", "venturi-effect", "cabin-pressure"],
+    "question": "Why does using the alternate static source (inside the cockpit) cause the altimeter to read slightly higher than actual?",
+    "choices": [
+      {"text": "Cockpit air pressure is slightly lower than outside pressure due to the venturi effect of airflow around the fuselage", "correct": true},
+      {"text": "The Kollsman window automatically resets when the alternate source is opened", "correct": false},
+      {"text": "Dynamic pressure enters the static system through the alternate source", "correct": false},
+      {"text": "The aneroid wafers recalibrate when cabin air is introduced", "correct": false}
+    ],
+    "answer": "Cockpit air pressure is slightly lower than outside pressure due to the venturi effect of airflow around the fuselage",
+    "explanation": "Air flowing around the fuselage creates a **venturi effect** that reduces the air pressure inside the flight deck below ambient (outside) pressure. When the alternate static source is opened to the cockpit, this slightly sub-ambient pressure is fed to the static instruments. Lower static pressure causes the altimeter to show a **higher altitude** than actual, the ASI to show a **higher airspeed**, and the VSI to momentarily show a climb.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-2 to 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-041",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["alternate-static-source", "VSI", "blocked-static"],
+    "question": "If no alternate static source is installed and the primary static system becomes blocked, which instrument is recommended to break to introduce cabin static pressure?",
+    "choices": [
+      {"text": "The vertical speed indicator (VSI) — it is the least important of the three static instruments for flight", "correct": true},
+      {"text": "The altimeter — it is the easiest instrument to replace", "correct": false},
+      {"text": "The airspeed indicator — it has the smallest face", "correct": false},
+      {"text": "The attitude indicator — it is gyroscopically powered and does not use static pressure", "correct": false}
+    ],
+    "answer": "The vertical speed indicator (VSI) — it is the least important of the three static instruments for flight",
+    "explanation": "If no alternate static source exists and the primary static port is blocked, breaking the **VSI face** allows cabin air (a makeshift alternate static source) into the static system. The VSI is chosen because it is the **least important** of the three static-system instruments for maintaining safe flight. The altimeter (for altitude) and ASI (for airspeed) are more critical for safety. Breaking the VSI renders it inoperative but frees the altimeter and ASI.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-042",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "high-pressure-area", "error"],
+    "question": "A pilot flies from a lower-pressure area into a higher-pressure area WITHOUT adjusting the altimeter. How does the altimeter read compared to true altitude?",
+    "choices": [
+      {"text": "The altimeter reads LOWER than actual altitude — the aircraft is higher than indicated", "correct": true},
+      {"text": "The altimeter reads HIGHER than actual altitude — the aircraft is lower than indicated", "correct": false},
+      {"text": "The altimeter reads exactly correctly regardless of pressure", "correct": false},
+      {"text": "The altimeter freezes at the departure setting", "correct": false}
+    ],
+    "answer": "The altimeter reads LOWER than actual altitude — the aircraft is higher than indicated",
+    "explanation": "When flying into **higher pressure** without updating the altimeter, the higher outside pressure **compresses** the aneroid wafers more than expected, causing the altimeter to indicate a **lower** altitude than actual. The aircraft is actually **higher** than indicated. While this is a safer error than the reverse (which would put the aircraft dangerously low), it still affects flight planning and traffic separation.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-043",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "overnight-pressure-rise", "morning-reading"],
+    "question": "An aircraft is parked overnight. Barometric pressure RISES while it sits parked. The next morning, without resetting the altimeter, what will the instrument show?",
+    "choices": [
+      {"text": "A reading LOWER than the field elevation — the altimeter interpreted the rising pressure as a descent", "correct": true},
+      {"text": "A reading HIGHER than the field elevation", "correct": false},
+      {"text": "Exactly the field elevation, since the instrument cannot read below ground level", "correct": false},
+      {"text": "Pressure altitude (29.92 \"Hg setting)", "correct": false}
+    ],
+    "answer": "A reading LOWER than the field elevation — the altimeter interpreted the rising pressure as a descent",
+    "explanation": "When barometric pressure **rises** overnight, the higher external pressure **compresses** the aneroid wafers more than they were compressed at the original setting. The altimeter interprets this compression as a **descent** and shows an altitude **lower** than the field elevation. The pilot must set the current altimeter setting in the Kollsman window to restore the correct field elevation reading before flight.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-044",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "aneroid-barometer", "atmospheric-pressure"],
+    "question": "The altimeter is an aneroid barometer. This means it measures:",
+    "choices": [
+      {"text": "Atmospheric pressure at the aircraft's current location to derive an altitude reading", "correct": true},
+      {"text": "The difference between pitot tube and static port pressure to derive speed", "correct": false},
+      {"text": "Gyroscopic rigidity to derive attitude", "correct": false},
+      {"text": "Magnetic field strength to derive heading", "correct": false}
+    ],
+    "answer": "Atmospheric pressure at the aircraft's current location to derive an altitude reading",
+    "explanation": "An **aneroid barometer** measures **atmospheric pressure** using sealed, elastic metal capsules (aneroid wafers) that expand or contract with pressure changes, without the use of liquid (\"aneroid\" means without liquid). The altimeter uses this pressure measurement and converts it to an altitude display using the known relationship between pressure and altitude in the standard atmosphere.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3",
+    "media": []
+  },
+  {
+    "id": "FI-045",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["altimeter", "kollsman-window", "calibration-units"],
+    "question": "In what unit is the barometric pressure scale in the altimeter's Kollsman window calibrated?",
+    "choices": [
+      {"text": "Inches of mercury (\"Hg) and/or millibars (mb)", "correct": true},
+      {"text": "Pascals (Pa)", "correct": false},
+      {"text": "Pounds per square inch (psi)", "correct": false},
+      {"text": "Kilopascals (kPa)", "correct": false}
+    ],
+    "answer": "Inches of mercury (\"Hg) and/or millibars (mb)",
+    "explanation": "The Kollsman window pressure scale is calibrated in **inches of mercury (\"Hg)** and/or **millibars (mb)**. In Canada, barometric pressure is often reported in kilopascals in weather reports but the altimeter setting is typically provided in \"Hg for aviation use. Standard sea-level pressure is 29.92 \"Hg (1013.25 mb/hPa). The pilot adjusts the knob to match the current altimeter setting in the appropriate units.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-046",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["altimeter", "standard-atmosphere", "accuracy-condition"],
+    "question": "Under what conditions does the altimeter indicate the correct altitude?",
+    "choices": [
+      {"text": "Only when sea-level pressure equals 29.92 \"Hg, sea-level temperature equals 15°C (59°F), and these values decrease at the standard rate with altitude", "correct": true},
+      {"text": "Whenever the Kollsman window is set to the current reported altimeter setting, regardless of temperature", "correct": false},
+      {"text": "Only at sea level when the field elevation is zero feet", "correct": false},
+      {"text": "Only when density altitude equals pressure altitude", "correct": false}
+    ],
+    "answer": "Only when sea-level pressure equals 29.92 \"Hg, sea-level temperature equals 15°C (59°F), and these values decrease at the standard rate with altitude",
+    "explanation": "The altimeter is designed around the **International Standard Atmosphere (ISA)** model. The indicated altitude is correct only when: (1) sea-level barometric pressure is **29.92 \"Hg**, (2) sea-level temperature is **15°C (59°F)**, and (3) both decrease at the standard rate with altitude. In practice, these conditions are rarely met simultaneously, which is why both pressure (Kollsman window) and temperature errors must be understood.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-3 to 8-4",
+    "media": []
+  },
+  {
+    "id": "FI-047",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "preflight-check", "ATIS"],
+    "question": "A pilot receives an altimeter setting of 29.85 \"Hg from ATIS and sets it in the Kollsman window. The airport's surveyed field elevation is 487 feet. What should the altimeter approximately read?",
+    "choices": [
+      {"text": "487 feet (the surveyed field elevation)", "correct": true},
+      {"text": "29.85 feet (the pressure setting itself)", "correct": false},
+      {"text": "Zero, since the aircraft is on the ground", "correct": false},
+      {"text": "487 + 107 = 594 feet, adjusted for the pressure difference from 29.92", "correct": false}
+    ],
+    "answer": "487 feet (the surveyed field elevation)",
+    "explanation": "After setting the current altimeter setting (29.85 \"Hg from ATIS), the altimeter should indicate **approximately the surveyed field elevation (487 feet)**. This is the preflight instrument check — comparing the altimeter reading to the known field elevation. If the altimeter is more than 75 feet off the field elevation after setting, the instrument should be recalibrated. The deviation should be noted and accounted for during flight.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-048",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "nonstandard-temperature", "pressure-compensation"],
+    "question": "Adjustments to the altimeter's Kollsman window to compensate for nonstandard barometric pressure do NOT compensate for:",
+    "choices": [
+      {"text": "Nonstandard temperature", "correct": true},
+      {"text": "Nonstandard sea-level pressure above the reporting station", "correct": false},
+      {"text": "Changes in the Kollsman window setting itself", "correct": false},
+      {"text": "Magnetic variation", "correct": false}
+    ],
+    "answer": "Nonstandard temperature",
+    "explanation": "Setting the Kollsman window corrects for **nonstandard barometric pressure** at the reporting station level, but it does **not** correct for **nonstandard temperature**. Cold air is denser than standard, causing pressure levels to be lower (closer to the ground) than the standard model predicts. The altimeter still over-reads in cold conditions even when the Kollsman window is correctly set. Temperature correction tables can be used to compute the error.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4",
+    "media": []
+  },
+  {
+    "id": "FI-049",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter", "cold-weather", "mountainous-terrain"],
+    "question": "When flying over mountainous terrain in very cold weather, why must a pilot add an extra margin of altitude above the indicated altitude?",
+    "choices": [
+      {"text": "Cold air is denser than standard — the true altitude is LOWER than indicated, reducing terrain clearance below what the altimeter shows", "correct": true},
+      {"text": "Cold weather causes the altimeter to read lower than actual altitude", "correct": false},
+      {"text": "Mountain waves only occur in cold weather and may push the aircraft unexpectedly higher", "correct": false},
+      {"text": "The altimeter operates normally in cold weather but GPS becomes unreliable", "correct": false}
+    ],
+    "answer": "Cold air is denser than standard — the true altitude is LOWER than indicated, reducing terrain clearance below what the altimeter shows",
+    "explanation": "In cold weather, dense air compresses pressure levels closer to the ground. The altimeter (calibrated on the standard atmosphere) therefore **over-reads** — the indicated altitude is **higher** than the true altitude. A pilot flying at indicated 10,000 feet in −30°C conditions may actually be several hundred feet lower. In mountainous terrain, this reduced true terrain clearance is extremely dangerous, and higher indicated altitudes must be flown.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-4 to 8-5",
+    "media": []
+  },
+  {
+    "id": "FI-050",
+    "topic": "Flight Instruments — Altimeter",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["altimeter-setting", "pressure-levels", "high-altitude-limitation"],
+    "question": "The altimeter setting broadcast by ground stations is defined as station pressure corrected to sea level. It does NOT account for:",
+    "choices": [
+      {"text": "Pressure irregularities at higher flight levels above the reporting station", "correct": true},
+      {"text": "Standard pressure at sea level", "correct": false},
+      {"text": "The density altitude at the station", "correct": false},
+      {"text": "The wind speed at the station", "correct": false}
+    ],
+    "answer": "Pressure irregularities at higher flight levels above the reporting station",
+    "explanation": "The PHAK notes: \"the altimeter setting broadcast by ground stations is the station pressure corrected to mean sea level. It does not account for the irregularities at higher levels, particularly the effect of nonstandard temperature.\" In other words, the reported altimeter setting is accurate near the ground level of the reporting station, but may not accurately reflect pressure conditions at higher altitudes — a reason pilots update their altimeter settings frequently en route.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-5",
+    "media": []
+  }
+]

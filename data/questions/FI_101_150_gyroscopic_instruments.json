@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-101",
+    "topic": "Flight Instruments — Gyroscopic Principles",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["gyroscope", "instruments", "rigidity"],
+    "question": "What are the two fundamental properties of a gyroscope that make it useful in flight instruments?",
+    "choices": [
+      {"text": "Rigidity in space and precession", "correct": true},
+      {"text": "Centrifugal force and gravity", "correct": false},
+      {"text": "Magnetic north seeking and precession", "correct": false},
+      {"text": "Rigidity in space and static pressure sensing", "correct": false}
+    ],
+    "answer": "Rigidity in space and precession",
+    "explanation": "A gyroscope spun at high speed exhibits two useful properties. **Rigidity in space** (also called gyroscopic inertia): the spinning rotor resists any force that tries to change its orientation — it tends to remain fixed in space relative to the stars regardless of how the frame supporting it is moved. **Precession**: when a force is applied to a spinning gyro perpendicular to the spin axis, the gyro reacts as if that force were applied 90° later in the direction of rotation. These two properties are exploited to build attitude indicators, heading indicators, and turn indicators.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-10; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 17",
+    "media": []
+  },
+  {
+    "id": "FI-102",
+    "topic": "Flight Instruments — Gyroscopic Principles",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "rigidity"],
+    "question": "Rigidity in space means that a spinning gyroscope:",
+    "choices": [
+      {"text": "Always points toward magnetic north", "correct": false},
+      {"text": "Resists any force that tries to change the orientation of its spin axis", "correct": true},
+      {"text": "Precesses 90° when a force is applied to its axis", "correct": false},
+      {"text": "Aligns its spin axis with gravity", "correct": false}
+    ],
+    "answer": "Resists any force that tries to change the orientation of its spin axis",
+    "explanation": "Rigidity in space — the property described by Newton's first law applied to rotating bodies — means the gyroscope's spinning rotor maintains a fixed orientation relative to inertial (stellar) space regardless of the motion of the aircraft or instrument case surrounding it. The faster the rotor spins and the greater its mass, the stronger this rigidity. This property allows the attitude indicator to maintain a stable horizontal reference even as the aircraft pitches and rolls around it.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-10",
+    "media": []
+  },
+  {
+    "id": "FI-103",
+    "topic": "Flight Instruments — Gyroscopic Principles",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "precession"],
+    "question": "Gyroscopic precession means that when a force is applied to the rim of a spinning gyroscope, the resulting reaction occurs:",
+    "choices": [
+      {"text": "Immediately at the point of force application", "correct": false},
+      {"text": "Opposite to the applied force", "correct": false},
+      {"text": "90° ahead in the direction of rotation from the point of force application", "correct": true},
+      {"text": "180° from the point of force application", "correct": false}
+    ],
+    "answer": "90° ahead in the direction of rotation from the point of force application",
+    "explanation": "Precession is the phenomenon in which a force applied to a spinning gyroscope produces a reaction 90° ahead of the applied force, measured in the direction of rotation. For example, if you push down on the top of a gyro spinning clockwise (when viewed from above), the gyro will tilt not toward you but 90° to the right (in the direction of rotation from where you applied the force). This property is exploited in the turn-and-bank indicator to sense yaw, and is also the source of torque effects in propeller-driven aircraft.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-10; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 17",
+    "media": []
+  },
+  {
+    "id": "FI-104",
+    "topic": "Flight Instruments — Gyroscopic Instruments Power",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "vacuum", "power"],
+    "question": "Which two gyroscopic instruments are typically driven by the vacuum (or pressure) system in a light aircraft?",
+    "choices": [
+      {"text": "Turn coordinator and attitude indicator", "correct": false},
+      {"text": "Attitude indicator and heading indicator", "correct": true},
+      {"text": "Heading indicator and turn coordinator", "correct": false},
+      {"text": "Attitude indicator, heading indicator, and turn coordinator", "correct": false}
+    ],
+    "answer": "Attitude indicator and heading indicator",
+    "explanation": "In most light aircraft, the attitude indicator (AI) and heading indicator (HI) are powered by the engine-driven vacuum pump (or a pressure pump on some aircraft) through the vacuum system. The turn coordinator (or turn-and-bank indicator) is typically electrically powered. This dual power source arrangement is intentional: if the vacuum system fails, the pilot loses the AI and HI but retains the electrically powered turn coordinator for attitude information on partial panel. If the electrical system fails, the AI and HI remain operational.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-105",
+    "topic": "Flight Instruments — Gyroscopic Instruments Power",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "vacuum", "suction"],
+    "question": "The normal operating vacuum (suction) range for gyroscopic instruments on most light aircraft is:",
+    "choices": [
+      {"text": "1.5 to 2.5 inches of mercury", "correct": false},
+      {"text": "4.5 to 5.5 inches of mercury", "correct": true},
+      {"text": "8.0 to 10.0 inches of mercury", "correct": false},
+      {"text": "15 to 20 inches of mercury", "correct": false}
+    ],
+    "answer": "4.5 to 5.5 inches of mercury",
+    "explanation": "The vacuum (suction) gauge indicates the pressure differential across the gyro instruments driven by the vacuum pump. Most light aircraft gyroscopes require a suction of 4.5 to 5.5 inches of mercury (\"Hg) to spin at the correct RPM for accurate operation. Below 4.5 \"Hg, the gyros may underspeed, leading to sluggish or erroneous indications — particularly in the AI where an underspeeding gyro may not maintain rigidity. The suction gauge should be checked during preflight run-up and monitored in flight.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-106",
+    "topic": "Flight Instruments — Gyroscopic Instruments Power",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["gyroscope", "instruments", "turn-coordinator", "electrical"],
+    "question": "Why is the turn coordinator typically powered by the aircraft's electrical system rather than the vacuum system?",
+    "choices": [
+      {"text": "Because the turn coordinator requires more power than the vacuum pump can supply", "correct": false},
+      {"text": "To provide a source of gyroscopic information independent of the vacuum system in case of vacuum failure", "correct": true},
+      {"text": "Because electrical power makes the turn coordinator more accurate than vacuum", "correct": false},
+      {"text": "Because the turn coordinator must be off during engine start", "correct": false}
+    ],
+    "answer": "To provide a source of gyroscopic information independent of the vacuum system in case of vacuum failure",
+    "explanation": "The turn coordinator is deliberately powered from the electrical bus while the AI and HI are vacuum-powered. This creates redundancy: if the vacuum pump fails in flight (a common failure mode), the AI and HI become unreliable, but the turn coordinator remains fully functional. Using the turn coordinator for bank information and the airspeed/altimeter for pitch information, the pilot can fly partial panel safely. This design philosophy of separating power sources for redundancy is a key safety feature of the instrument suite.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-107",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-indicator", "turn-coordinator", "instruments", "standard-rate"],
+    "question": "A standard rate turn is defined as:",
+    "choices": [
+      {"text": "A bank angle of exactly 30°", "correct": false},
+      {"text": "A rate of turn of 3° per second, completing 360° in 2 minutes", "correct": true},
+      {"text": "A rate of turn of 1° per second, completing 360° in 6 minutes", "correct": false},
+      {"text": "A bank angle of half the aircraft's airspeed in knots", "correct": false}
+    ],
+    "answer": "A rate of turn of 3° per second, completing 360° in 2 minutes",
+    "explanation": "A standard rate turn (Rate 1 turn) is defined as a rate of 3° per second. At this rate, the aircraft completes a 360° turn in exactly 2 minutes. The turn-and-slip indicator and turn coordinator are calibrated to show standard rate — the needle deflects to the mark when the aircraft is turning at 3°/sec. Standard rate turns are used in instrument procedures because, combined with timed turns, they allow precise heading changes: for example, a 90° turn takes 30 seconds at standard rate.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-12; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-108",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-indicator", "instruments", "bank-angle", "standard-rate"],
+    "question": "A practical rule for estimating the bank angle required for a standard rate turn is:",
+    "choices": [
+      {"text": "Bank angle = airspeed (kt) ÷ 5", "correct": false},
+      {"text": "Bank angle = (airspeed (kt) ÷ 10) + 7", "correct": true},
+      {"text": "Bank angle = airspeed (kt) × 0.15", "correct": false},
+      {"text": "Always use exactly 15° of bank for standard rate", "correct": false}
+    ],
+    "answer": "Bank angle = (airspeed (kt) ÷ 10) + 7",
+    "explanation": "The rule of thumb for standard rate turn bank angle is: divide the IAS in knots by 10, then add 7. For example: at 90 kt, bank = (90 ÷ 10) + 7 = 16°; at 120 kt, bank = (120 ÷ 10) + 7 = 19°. This formula is an approximation, but it gives a good initial bank angle to aim for when establishing a standard rate turn. The actual rate is confirmed by the turn coordinator needle reaching the standard rate mark. Higher airspeeds require greater bank angles for the same rate of turn.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 157",
+    "media": []
+  },
+  {
+    "id": "FI-109",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-and-slip", "turn-coordinator", "instruments", "difference"],
+    "question": "What is the key difference between a turn-and-slip indicator and a turn coordinator?",
+    "choices": [
+      {"text": "The turn coordinator measures rate of turn; the turn-and-slip measures bank angle", "correct": false},
+      {"text": "The turn-and-slip has a single gimbal sensing yaw only; the turn coordinator has a canted gimbal sensing both roll rate and yaw", "correct": true},
+      {"text": "The turn coordinator is vacuum-powered; the turn-and-slip is electrically powered", "correct": false},
+      {"text": "The turn-and-slip is more accurate; the turn coordinator is only approximate", "correct": false}
+    ],
+    "answer": "The turn-and-slip has a single gimbal sensing yaw only; the turn coordinator has a canted gimbal sensing both roll rate and yaw",
+    "explanation": "The **turn-and-slip indicator** (T&S, also called needle-and-ball) has a single-axis gimbal with its gyro sensing yaw (rotation about the vertical axis) only. It cannot detect the initiation of a roll (bank). The **turn coordinator** (TC) has a gimbal canted approximately 30° from the horizontal, allowing it to sense both roll rate and yaw. This means the TC needle deflects immediately as the aircraft begins to roll, giving the pilot faster indication of the start of a turn. Both instruments use an inclinometer (ball) to detect slip or skid.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-12; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-110",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-coordinator", "instruments", "inclinometer", "ball"],
+    "question": "The inclinometer ball in a turn coordinator is displaced to the RIGHT of centre. This indicates:",
+    "choices": [
+      {"text": "The aircraft is slipping — too much bank for the rate of turn", "correct": false},
+      {"text": "The aircraft is skidding — too much rudder (or insufficient bank) for the rate of turn", "correct": true},
+      {"text": "The aircraft is in a coordinated left turn", "correct": false},
+      {"text": "The aircraft is in a coordinated right turn", "correct": false}
+    ],
+    "answer": "The aircraft is skidding — too much rudder (or insufficient bank) for the rate of turn",
+    "explanation": "The inclinometer (ball) indicates whether the turn is coordinated. The ball moves under the influence of gravity and centrifugal force. In a coordinated turn, the ball is centred. If the ball is displaced to the **right** (outside of a left turn, or inside of a right turn) — the aircraft is **skidding**: the tail is being pushed outward by excess rudder or insufficient bank, so centrifugal force pushes the ball outward (to the right if turning right). The correction is 'step on the ball' — apply rudder in the direction the ball is displaced.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-13; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 19",
+    "media": []
+  },
+  {
+    "id": "FI-111",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-coordinator", "instruments", "inclinometer", "ball", "slip-skid"],
+    "question": "In a coordinated turn to the left, the ball is displaced to the left (inside the turn). This indicates:",
+    "choices": [
+      {"text": "A coordinated turn — no correction needed", "correct": false},
+      {"text": "A slip — too much bank for the rate of turn; reduce bank or apply right rudder", "correct": true},
+      {"text": "A skid — too much rudder; reduce left rudder", "correct": false},
+      {"text": "An unusual attitude — level the wings immediately", "correct": false}
+    ],
+    "answer": "A slip — too much bank for the rate of turn; reduce bank or apply right rudder",
+    "explanation": "When the ball is inside the turn (toward the low wing), the aircraft is **slipping**. In a slip, the bank angle is too steep for the rate of turn — the aircraft is sliding sideways toward the inside of the turn. Gravity pulls the ball toward the low side. The correction is to 'step on the ball' — apply right rudder (toward the ball) to yaw the nose into the turn, or reduce bank. A slip can also occur in a cross-wind correction during approach, where the slip is intentional to track the runway centreline.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-13; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 19",
+    "media": []
+  },
+  {
+    "id": "FI-112",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["turn-coordinator", "inclinometer", "coordination"],
+    "question": "The pilot's memory aid for correcting a displaced inclinometer ball is:",
+    "choices": [
+      {"text": "'Bank into the ball'", "correct": false},
+      {"text": "'Step on the ball'", "correct": true},
+      {"text": "'Top rudder toward the ball'", "correct": false},
+      {"text": "'Opposite rudder to the ball'", "correct": false}
+    ],
+    "answer": "'Step on the ball'",
+    "explanation": "'Step on the ball' means apply rudder pedal pressure on the same side as the direction the ball is displaced. If the ball is left of centre, press the left rudder pedal; if right of centre, press the right rudder pedal. This intuitive rule always corrects the slip or skid. In a slip (ball inside the turn), stepping on the ball adds rudder in the direction of turn. In a skid (ball outside the turn), stepping on the ball reduces the excess rudder. The aircraft is coordinated when the ball is centred.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-13",
+    "media": []
+  },
+  {
+    "id": "FI-113",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-coordinator", "instruments", "partial-panel"],
+    "question": "During partial panel flight (AI and HI failed), the turn coordinator is used primarily to:",
+    "choices": [
+      {"text": "Determine exact bank angle in degrees", "correct": false},
+      {"text": "Control the rate of bank and confirm a standard rate turn", "correct": true},
+      {"text": "Provide pitch information as a substitute for the AI", "correct": false},
+      {"text": "Replace the altimeter for altitude control", "correct": false}
+    ],
+    "answer": "Control the rate of bank and confirm a standard rate turn",
+    "explanation": "On partial panel (without the AI), the turn coordinator is the primary bank reference. By keeping the miniature aircraft's wing tip at the standard rate mark, the pilot confirms a 3°/second turn rate. This allows timed turns using the clock: to change heading 90°, time 30 seconds at standard rate; for 180°, time 60 seconds; for 360°, time 120 seconds. The TC does not indicate precise bank angle in degrees, but its miniature aircraft wings show the direction and approximate rate of bank, which is sufficient for controlling turns on partial panel.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-114",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["attitude-indicator", "instruments", "gyroscope"],
+    "question": "The attitude indicator's gyro operates with its spin axis in which plane?",
+    "choices": [
+      {"text": "Vertical plane — the gyro spins with its axis pointing straight up", "correct": false},
+      {"text": "Horizontal plane — the gyro spins with its axis horizontal", "correct": true},
+      {"text": "Longitudinal plane — the gyro spins aligned with the aircraft's nose-tail axis", "correct": false},
+      {"text": "Any plane, as the gyro is free to orient itself randomly", "correct": false}
+    ],
+    "answer": "Horizontal plane — the gyro spins with its axis horizontal",
+    "explanation": "The attitude indicator (AI) uses a gyroscope with its spin axis in the **horizontal** plane — oriented to maintain a level position relative to the Earth's surface regardless of aircraft attitude. Because of gyroscopic rigidity, as the aircraft pitches and rolls, the instrument case moves around the gyro while the gyro (and the display it is attached to) remains fixed in space. This allows the AI to display pitch and bank angles relative to a stable horizontal reference.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-14",
+    "media": []
+  },
+  {
+    "id": "FI-115",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["attitude-indicator", "instruments", "information"],
+    "question": "The attitude indicator directly displays:",
+    "choices": [
+      {"text": "Airspeed and vertical speed simultaneously", "correct": false},
+      {"text": "Pitch attitude and bank angle simultaneously", "correct": true},
+      {"text": "Heading and bank angle simultaneously", "correct": false},
+      {"text": "Rate of turn and pitch attitude simultaneously", "correct": false}
+    ],
+    "answer": "Pitch attitude and bank angle simultaneously",
+    "explanation": "The AI displays both pitch attitude (nose above or below the horizon line) and bank angle (left or right wing down) simultaneously on a single instrument face. A miniature aircraft symbol is fixed to the case representing the aircraft, and the artificial horizon bar (attached to the gyro) moves to show the actual horizon. This gives an immediate, intuitive picture of the aircraft's attitude in all phases of flight. The AI is the most important instrument in the attitude-instrument flying concept.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-14; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-116",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-indicator", "instruments", "limits", "tumble"],
+    "question": "What happens to most conventional AI gyroscopes if bank angle limits are exceeded?",
+    "choices": [
+      {"text": "The gyro resets automatically to the correct attitude", "correct": false},
+      {"text": "The gyro tumbles and gives false attitude indications until it re-erects", "correct": true},
+      {"text": "The gyro locks up and cannot be rotated further", "correct": false},
+      {"text": "The instrument becomes inoperative permanently", "correct": false}
+    ],
+    "answer": "The gyro tumbles and gives false attitude indications until it re-erects",
+    "explanation": "Conventional vacuum-driven AI gyros have gimbal limits — typically around 100°–110° of bank and 60°–70° of pitch. If these limits are exceeded (e.g., in aerobatics or an unusual attitude), the gimbal system hits its stops, the gyro precesses violently, and **tumbles** — losing its fixed reference. After recovering to level flight, the gyro will re-erect itself (using the erection mechanism) but this can take several minutes. During re-erection, the AI shows a false attitude. This is a critical consideration during unusual attitude recovery on instruments.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-14; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-117",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-indicator", "instruments", "erection"],
+    "question": "The erection mechanism in a vacuum-powered AI serves to:",
+    "choices": [
+      {"text": "Spin the gyro up to operating speed after engine start", "correct": false},
+      {"text": "Continuously correct the gyro spin axis back to vertical (horizontal reference) for slow drifts", "correct": true},
+      {"text": "Display the correct pitch angle on the face of the instrument", "correct": false},
+      {"text": "Convert vacuum pressure to gyro speed", "correct": false}
+    ],
+    "answer": "Continuously correct the gyro spin axis back to vertical (horizontal reference) for slow drifts",
+    "explanation": "Even though a gyro maintains rigidity in space, the Earth is rotating, causing the spin axis to appear to drift relative to the Earth's surface. Additionally, friction and bearing imperfections introduce small errors over time. The **erection mechanism** (typically using gravity or differential air jets) continuously and slowly corrects the gyro spin axis so it remains perpendicular to gravity — Earth-vertical — compensating for these slow drifts. Without erection, the AI would drift away from the true horizon over time. The erection system is also why the AI takes 3–5 minutes after engine start to fully stabilise.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-14",
+    "media": []
+  },
+  {
+    "id": "FI-118",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-indicator", "instruments", "preflight"],
+    "question": "During preflight, the AI should be checked to confirm it is erect and showing a level pitch and bank indication. How long after engine start should you wait before relying on the AI?",
+    "choices": [
+      {"text": "Immediately — the AI is ready as soon as the engine starts", "correct": false},
+      {"text": "Approximately 3–5 minutes, to allow the gyro to spin up and the erection system to stabilise it", "correct": true},
+      {"text": "10 minutes minimum, as the AI requires a long warm-up period", "correct": false},
+      {"text": "No wait is required if the suction gauge reads within the normal range", "correct": false}
+    ],
+    "answer": "Approximately 3–5 minutes, to allow the gyro to spin up and the erection system to stabilise it",
+    "explanation": "After engine start, the vacuum pump begins drawing air through the AI gyro, spinning it up from rest to operating RPM. The gyro must reach full speed for rigidity in space to function effectively. Additionally, the erection mechanism needs time to correct any tilt that occurred during shutdown or handling. Most manufacturers specify 3–5 minutes before the AI can be considered reliable. Pilots should verify the AI shows level pitch and wings-level bank before taxi, as part of the instrument check during run-up.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-119",
+    "topic": "Flight Instruments — Heading Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["heading-indicator", "instruments", "gyroscope"],
+    "question": "The heading indicator (HI) displays direction using which principle?",
+    "choices": [
+      {"text": "Magnetic attraction — it seeks magnetic north like a compass", "correct": false},
+      {"text": "Gyroscopic rigidity in space — it maintains a fixed directional reference", "correct": true},
+      {"text": "GPS satellite positioning", "correct": false},
+      {"text": "Radio navigation beacon alignment", "correct": false}
+    ],
+    "answer": "Gyroscopic rigidity in space — it maintains a fixed directional reference",
+    "explanation": "The HI (also called the directional gyro or DI) uses gyroscopic rigidity in space. Its gyro rotor spins in the vertical plane — its spin axis is horizontal, pointing in a fixed direction in space. Because it is not magnetic, it is immune to the turning and acceleration errors that affect the magnetic compass. However, it also means the HI has no inherent directional reference to north; it must be manually aligned with the magnetic compass periodically. The compass card rotates with the instrument case as the aircraft turns around the fixed gyro.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-15; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 19",
+    "media": []
+  },
+  {
+    "id": "FI-120",
+    "topic": "Flight Instruments — Heading Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["heading-indicator", "instruments", "drift", "precession"],
+    "question": "How often should the heading indicator be aligned with the magnetic compass in flight, and why?",
+    "choices": [
+      {"text": "Never — once set before takeoff it is accurate for the entire flight", "correct": false},
+      {"text": "Approximately every 10–15 minutes, because gyroscopic precession causes the HI to drift up to 15° per hour", "correct": true},
+      {"text": "Every 30 seconds, because the HI drifts very rapidly", "correct": false},
+      {"text": "Only when entering controlled airspace", "correct": false}
+    ],
+    "answer": "Approximately every 10–15 minutes, because gyroscopic precession causes the HI to drift up to 15° per hour",
+    "explanation": "The HI accumulates drift error due to (1) Earth's rotation (the gyro's inertial frame rotates relative to Earth's rotating surface at up to 15°/hr at the equator), and (2) friction and imperfections in the gyro gimbal system. The typical drift rate is up to 15° per hour. Pilots should check and re-synchronise the HI with the magnetic compass approximately every 10–15 minutes during straight, unaccelerated flight (when the compass is reliable). The HI adjustment knob is used to rotate the compass card to match the compass reading.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-15; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 19",
+    "media": []
+  },
+  {
+    "id": "FI-121",
+    "topic": "Flight Instruments — Heading Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["heading-indicator", "instruments", "alignment"],
+    "question": "When setting the HI to agree with the magnetic compass, the aircraft should be:",
+    "choices": [
+      {"text": "In a turn to the left at standard rate", "correct": false},
+      {"text": "In straight, unaccelerated, wings-level flight", "correct": true},
+      {"text": "On the ground with the engine at idle", "correct": false},
+      {"text": "Climbing or descending — level flight is not required", "correct": false}
+    ],
+    "answer": "In straight, unaccelerated, wings-level flight",
+    "explanation": "The magnetic compass is only accurate during straight, unaccelerated, wings-level flight. During turns, the compass suffers from turning errors (UNOS); during acceleration or deceleration, it shows acceleration errors (ANDS). To get a reliable compass reading for synchronising the HI, the pilot must stabilise in straight, level, unaccelerated flight for several seconds before reading the compass heading and then adjusting the HI to match. Setting the HI while manoeuvring will introduce errors.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-15; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 19",
+    "media": []
+  },
+  {
+    "id": "FI-122",
+    "topic": "Flight Instruments — Heading Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["hsi", "heading-indicator", "instruments"],
+    "question": "A Horizontal Situation Indicator (HSI) with a remote-reading magnetometer differs from a conventional HI in that it:",
+    "choices": [
+      {"text": "Operates on vacuum pressure instead of electricity", "correct": false},
+      {"text": "Does not require manual alignment with the compass because the magnetometer provides a continuous magnetic heading reference", "correct": true},
+      {"text": "Uses GPS rather than a gyro to determine heading", "correct": false},
+      {"text": "Is less accurate than the conventional HI in turbulence", "correct": false}
+    ],
+    "answer": "Does not require manual alignment with the compass because the magnetometer provides a continuous magnetic heading reference",
+    "explanation": "An HSI integrated with a remote magnetometer (flux gate compass) automatically compensates for gyro drift because the magnetometer continuously measures the Earth's magnetic field and feeds a correction signal to the gyro. The heading displayed is always slaved to magnetic north. This eliminates the need for the pilot to periodically reset the HI manually. The HSI also typically displays VOR/ILS navigation information on the same instrument, making it more useful than a conventional HI for instrument approaches.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-15 to 8-16",
+    "media": []
+  },
+  {
+    "id": "FI-123",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "instruments", "variation"],
+    "question": "Magnetic variation is the angular difference between:",
+    "choices": [
+      {"text": "The compass reading and the actual magnetic heading due to deviation", "correct": false},
+      {"text": "True north and magnetic north at a specific location", "correct": true},
+      {"text": "The heading indicator and the magnetic compass reading", "correct": false},
+      {"text": "Compass north and grid north on a chart", "correct": false}
+    ],
+    "answer": "True north and magnetic north at a specific location",
+    "explanation": "Magnetic variation (also called declination) is the angular difference between true north (the geographic North Pole) and magnetic north (where the Earth's magnetic field lines point) at any given location on Earth. Variation is shown on aeronautical charts as isogonic lines (lines of equal variation). Variation is east or west: east variation means magnetic north is east of true north, and you subtract east variation when converting true to magnetic heading (the TVMDC rule: True Variation Magnetic Deviation Compass).",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-124",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "instruments", "deviation"],
+    "question": "Compass deviation is caused by:",
+    "choices": [
+      {"text": "The difference between true and magnetic north", "correct": false},
+      {"text": "The magnetic fields of the aircraft's electrical equipment and metal components", "correct": true},
+      {"text": "The dip of the compass needle toward the magnetic pole", "correct": false},
+      {"text": "The aircraft's airspeed affecting the compass fluid viscosity", "correct": false}
+    ],
+    "answer": "The magnetic fields of the aircraft's electrical equipment and metal components",
+    "explanation": "Deviation is the error caused by the aircraft's own magnetic environment — motors, radios, electrical wiring, metal structures, and even a heated windscreen can create local magnetic fields that deflect the compass needle away from magnetic north. Deviation varies with heading because the aircraft's components are in different orientations relative to the Earth's field as the aircraft turns. A **compass correction card** (posted near the compass) shows the deviation on various headings after a compass swing has been performed. The heated windscreen of some aircraft can introduce up to 40° of deviation error.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-125",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "instruments", "dip"],
+    "question": "Magnetic dip is caused by:",
+    "choices": [
+      {"text": "The compass fluid absorbing moisture, making the float heavier on one side", "correct": false},
+      {"text": "The Earth's magnetic field lines converging toward the magnetic poles, causing the compass needle to tilt downward", "correct": true},
+      {"text": "Centrifugal force during turns displacing the compass float", "correct": false},
+      {"text": "The aircraft's pitching motion in turbulence", "correct": false}
+    ],
+    "answer": "The Earth's magnetic field lines converging toward the magnetic poles, causing the compass needle to tilt downward",
+    "explanation": "The Earth's magnetic field lines are not horizontal — they dip downward toward the magnetic poles. Near the equator the field is nearly horizontal and dip is minimal, but near the poles the field lines converge steeply downward. Because the compass card floats on a pivot, this vertical component of the magnetic field pulls the north end of the needle downward in the northern hemisphere. Compass designers offset the pivot point and weight the south end to compensate, but dip still causes turning and acceleration errors that increase at higher latitudes.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-126",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["magnetic-compass", "instruments", "turning-errors", "unos"],
+    "question": "The memory aid UNOS for compass turning errors stands for:",
+    "choices": [
+      {"text": "Undershoot North, Overshoot South", "correct": true},
+      {"text": "Undershoot North, Overshoot Southeast", "correct": false},
+      {"text": "Up North, Over South", "correct": false},
+      {"text": "Unstable North, Offset South", "correct": false}
+    ],
+    "answer": "Undershoot North, Overshoot South",
+    "explanation": "UNOS is the mnemonic for compass turning errors in the northern hemisphere: **U**ndershoot **N**orth — when rolling out of a turn toward north, the compass leads (moves ahead of) the actual heading; stop the turn before reaching north (undershoot) to roll out on the correct heading. **O**vershoot **S**outh — when rolling out of a turn toward south, the compass lags; continue the turn past south (overshoot) to roll out on the correct heading. These errors result from compass dip and are most pronounced in the northern hemisphere at high latitudes.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-127",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["magnetic-compass", "instruments", "turning-errors", "north"],
+    "question": "In the northern hemisphere, when rolling out of a turn to the north, you should stop your turn when the compass reads approximately:",
+    "choices": [
+      {"text": "North (360°) — the compass is accurate at this point", "correct": false},
+      {"text": "South (180°) — because the compass reads opposite near north", "correct": false},
+      {"text": "Before reaching north — because the compass leads and will continue to swing toward north after you level off", "correct": true},
+      {"text": "After passing north — because the compass lags and must be allowed extra rotation", "correct": false}
+    ],
+    "answer": "Before reaching north — because the compass leads and will continue to swing toward north after you level off",
+    "explanation": "When turning toward north in the northern hemisphere, magnetic dip causes the compass to lead — the compass card appears to reach north before the aircraft actually does. If you roll out when the compass reads 360° (north), the aircraft will overshoot and end up north-east or north-west. The correction is to stop the turn early — 'undershoot' north. The amount of lead equals approximately the latitude plus a small bank correction. At 50° north latitude, start rolling out roughly 50° before reaching north on the compass.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21; FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20",
+    "media": []
+  },
+  {
+    "id": "FI-128",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["magnetic-compass", "instruments", "acceleration-errors", "ands"],
+    "question": "The memory aid ANDS for compass acceleration errors stands for:",
+    "choices": [
+      {"text": "Accelerate North, Decelerate South", "correct": true},
+      {"text": "Accelerate Northeast, Decelerate Southwest", "correct": false},
+      {"text": "Always Navigate Direct South", "correct": false},
+      {"text": "Acceleration Normal, Deceleration Standard", "correct": false}
+    ],
+    "answer": "Accelerate North, Decelerate South",
+    "explanation": "ANDS is the mnemonic for compass acceleration errors in the northern hemisphere, which occur on easterly and westerly headings: **A**ccelerate = apparent turn toward **N**orth. **D**ecelerate = apparent turn toward **S**outh. When accelerating on an easterly or westerly heading, the dip error causes the compass float to tilt and the card to rotate, giving the illusion of a turn toward north. Decelerating causes the apparent turn toward south. These errors are most pronounced on headings of 090° and 270°, and zero on headings of north or south.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-129",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "instruments", "reliable-headings"],
+    "question": "On which headings are compass turning errors (UNOS) most pronounced?",
+    "choices": [
+      {"text": "East and west — where the dip component is greatest relative to the horizontal", "correct": false},
+      {"text": "North and south — where the dip component has the greatest effect on the pivoted card", "correct": true},
+      {"text": "Northeast and southwest — where variation is greatest", "correct": false},
+      {"text": "Turning errors are equal on all headings", "correct": false}
+    ],
+    "answer": "North and south — where the dip component has the greatest effect on the pivoted card",
+    "explanation": "Compass turning errors are greatest when turning through north or south, because these are the headings where the dip error has the maximum rotational effect on the compass card. When the aircraft banks, the compass float tilts with dip, and the card rotates — most dramatically when the heading is near north or south. Turning errors are minimal passing through east or west (090°/270°), which is why instrument approaches preferring stable compass readings sometimes use east/west headings for compass checks.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20",
+    "media": []
+  },
+  {
+    "id": "FI-130",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "instruments", "windscreen-heat"],
+    "question": "Why can operating the electric windscreen heater significantly affect the magnetic compass reading?",
+    "choices": [
+      {"text": "The heater creates a static electric charge that repels the compass needle", "correct": false},
+      {"text": "The heater element carries electric current, creating a local magnetic field that can deviate the compass by up to 40°", "correct": true},
+      {"text": "Heat from the heater reduces air density near the compass, affecting its fluid level", "correct": false},
+      {"text": "The heater vibrates the airframe, disturbing the compass float", "correct": false}
+    ],
+    "answer": "The heater element carries electric current, creating a local magnetic field that can deviate the compass by up to 40°",
+    "explanation": "The electric windscreen heater contains a resistance element embedded in or near the windscreen that draws substantial current. Current flowing through a conductor creates a magnetic field, and when this field is close to the magnetic compass, it can significantly deflect the compass needle — sometimes by as much as 40°. Pilots using a heated windscreen should be aware that the compass may be unreliable while the heater is on. This is a form of deviation error that is not corrected on the deviation card (which is made with the heater off).",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-131",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["ahrs", "efd", "instruments", "solid-state"],
+    "question": "What is the primary advantage of an Attitude and Heading Reference System (AHRS) over conventional vacuum-driven gyroscopic instruments?",
+    "choices": [
+      {"text": "AHRS is cheaper to install than a vacuum pump system", "correct": false},
+      {"text": "AHRS uses solid-state sensors with no moving parts, so it cannot tumble, stall, or wear out like mechanical gyros", "correct": true},
+      {"text": "AHRS does not require any electrical power to operate", "correct": false},
+      {"text": "AHRS is more accurate at the magnetic poles than gyroscopes", "correct": false}
+    ],
+    "answer": "AHRS uses solid-state sensors with no moving parts, so it cannot tumble, stall, or wear out like mechanical gyros",
+    "explanation": "AHRS replaces the mechanical gyroscopes of the AI and HI with solid-state sensors — typically ring-laser gyros (RLGs) or microelectromechanical systems (MEMS) sensors. Because these sensors have no spinning rotor, they cannot tumble or wear out from friction. They have no gimbal limits, so they continue to operate correctly through any attitude. AHRS also typically integrates a magnetometer for heading reference, eliminating the need for manual HI alignment. AHRS outputs feed directly into the Primary Flight Display (PFD) in glass cockpit aircraft.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22 to 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-132",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "pfd", "instruments", "glass-cockpit"],
+    "question": "In an Electronic Flight Display (EFD) glass cockpit, what does the Primary Flight Display (PFD) show?",
+    "choices": [
+      {"text": "Navigation, traffic, and weather only", "correct": false},
+      {"text": "Attitude, airspeed, altitude, vertical speed, heading, and navigation in an integrated display", "correct": true},
+      {"text": "Engine instruments only", "correct": false},
+      {"text": "A moving map with airport diagrams", "correct": false}
+    ],
+    "answer": "Attitude, airspeed, altitude, vertical speed, heading, and navigation in an integrated display",
+    "explanation": "The PFD presents all primary flight information in a single integrated display: an artificial horizon (attitude) in the centre, airspeed tape on the left, altitude tape on the right, vertical speed indicator, and a heading display at the bottom — plus navigation needles. By consolidating the six basic flight instruments into one screen, the PFD reduces the scan distance the pilot's eye must travel, making it easier to maintain situational awareness. A redundant standby instrument system (steam gauges or dedicated backup display) is also required.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-133",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "adc", "instruments"],
+    "question": "In a glass cockpit aircraft, the Air Data Computer (ADC) replaces which traditional instruments?",
+    "choices": [
+      {"text": "The attitude indicator and heading indicator", "correct": false},
+      {"text": "The pitot-static instruments — ASI, altimeter, and VSI — by processing pitot and static pressure digitally", "correct": true},
+      {"text": "The magnetic compass and turn coordinator", "correct": false},
+      {"text": "All engine instruments", "correct": false}
+    ],
+    "answer": "The pitot-static instruments — ASI, altimeter, and VSI — by processing pitot and static pressure digitally",
+    "explanation": "The ADC is a digital computer that receives pitot and static pressure inputs, along with outside air temperature (OAT), and computes airspeed (IAS, TAS, and Mach), pressure altitude, density altitude, and vertical speed. These computed values are displayed on the PFD as digital tapes rather than traditional round-dial instruments. The ADC's digital processing allows it to apply corrections and compute derived values (such as TAS from IAS and OAT) automatically, functions that previously required a pilot with an E6B.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22 to 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-134",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "trend-vectors", "instruments"],
+    "question": "In a glass cockpit, 'trend vectors' on the airspeed and altitude tapes indicate:",
+    "choices": [
+      {"text": "The previous 30 seconds of flight history", "correct": false},
+      {"text": "The projected airspeed and altitude 6 seconds into the future if the current rate of change continues", "correct": true},
+      {"text": "The target airspeed and altitude entered in the flight management system", "correct": false},
+      {"text": "The wind component affecting airspeed and altitude", "correct": false}
+    ],
+    "answer": "The projected airspeed and altitude 6 seconds into the future if the current rate of change continues",
+    "explanation": "Trend vectors (typically displayed in magenta on the airspeed and altitude tapes) show where the aircraft's airspeed and altitude will be in 6 seconds if the current rate of change is maintained. A longer vector indicates a faster rate of change. This gives the pilot predictive information — not just where the aircraft is, but where it is going — allowing early corrections before significant deviations develop. The 6-second projection allows time to react while the deviation is still small.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-135",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["turn-coordinator", "instruments", "markings"],
+    "question": "On a turn coordinator, what does the miniature aircraft symbol indicate when its wings are level?",
+    "choices": [
+      {"text": "The aircraft is in a standard rate turn to the right", "correct": false},
+      {"text": "The aircraft is in wings-level flight — no turn", "correct": true},
+      {"text": "The aircraft has no pitch attitude information", "correct": false},
+      {"text": "The aircraft is in a half-standard rate turn", "correct": false}
+    ],
+    "answer": "The aircraft is in wings-level flight — no turn",
+    "explanation": "The turn coordinator displays a miniature aircraft viewed from behind. When the miniature aircraft's wings are level (aligned with the horizon line on the instrument face), the aircraft is not turning. When the miniature aircraft's wing aligns with the 'L' or 'R' mark on the instrument face, the aircraft is turning at the standard rate (3°/sec) in that direction. Half-standard rate is midway between wings-level and the standard rate mark.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-12",
+    "media": []
+  },
+  {
+    "id": "FI-136",
+    "topic": "Flight Instruments — Vacuum System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["vacuum-system", "instruments", "failure"],
+    "question": "Which instruments should the pilot suspect if the vacuum gauge shows zero in flight?",
+    "choices": [
+      {"text": "ASI and altimeter", "correct": false},
+      {"text": "Turn coordinator and magnetic compass", "correct": false},
+      {"text": "Attitude indicator and heading indicator", "correct": true},
+      {"text": "All gyroscopic instruments equally", "correct": false}
+    ],
+    "answer": "Attitude indicator and heading indicator",
+    "explanation": "If the vacuum gauge drops to zero (or below the normal 4.5–5.5 \"Hg range), the engine-driven vacuum pump has failed or the vacuum line is broken. The AI and HI are vacuum-powered; without vacuum they will slowly spin down, and their indications will become increasingly erratic and unreliable. The turn coordinator is electrically powered and is unaffected by vacuum failure. The pilot should immediately transition to partial panel and use the turn coordinator, altimeter, ASI, and VSI for aircraft control.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169",
+    "media": []
+  },
+  {
+    "id": "FI-137",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-indicator", "instruments", "bank-pitch-limits"],
+    "question": "What are the typical pitch and bank limits of a conventional AI before the gyro tumbles?",
+    "choices": [
+      {"text": "Pitch ±30°, bank ±60°", "correct": false},
+      {"text": "Pitch ±60°–70°, bank ±100°–110°", "correct": true},
+      {"text": "Pitch ±45°, bank ±90°", "correct": false},
+      {"text": "Pitch ±90°, bank ±180°", "correct": false}
+    ],
+    "answer": "Pitch ±60°–70°, bank ±100°–110°",
+    "explanation": "Most conventional (non-AHRS) vacuum-powered AIs have mechanical gimbal limits of approximately 60°–70° of pitch and 100°–110° of bank. If the aircraft exceeds these limits (as may happen in unusual attitudes or aerobatics), the gimbal contacts its stops, the gyro tumbles (loses its fixed reference), and the AI gives false indications until the gyro re-erects. This is one reason aerobatics are prohibited in aircraft equipped with conventional gyro instruments unless they are aerobatic-certified instruments.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-14; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-138",
+    "topic": "Flight Instruments — Gyroscopic Principles",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "rigidity-factors"],
+    "question": "Which two factors increase the rigidity in space (gyroscopic inertia) of a gyroscope?",
+    "choices": [
+      {"text": "Higher rotor speed and greater rotor mass", "correct": true},
+      {"text": "Lower rotor speed and smaller rotor diameter", "correct": false},
+      {"text": "Higher vacuum suction and lower rotor mass", "correct": false},
+      {"text": "Greater gimbal friction and lower rotor speed", "correct": false}
+    ],
+    "answer": "Higher rotor speed and greater rotor mass",
+    "explanation": "Gyroscopic rigidity depends on angular momentum, which is the product of moment of inertia and angular velocity. Moment of inertia increases with rotor mass and the square of rotor radius; angular velocity increases with RPM. Therefore, a gyro with a heavier rotor (or one concentrated at a larger radius) spinning faster has greater rigidity and better resists external forces trying to change its orientation. This is why gyro instruments require the vacuum (or pressure) system to reach adequate suction before they are reliable — insufficient suction means slower RPM and weaker rigidity.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-10",
+    "media": []
+  },
+  {
+    "id": "FI-139",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "instruments", "reliable"],
+    "question": "The magnetic compass gives reliable readings only during:",
+    "choices": [
+      {"text": "Any phase of flight, as long as no turns are being made", "correct": false},
+      {"text": "Straight, wings-level, unaccelerated flight", "correct": true},
+      {"text": "Climbs and descents, but not during turns", "correct": false},
+      {"text": "Any time the aircraft is above 3,000 ft AGL", "correct": false}
+    ],
+    "answer": "Straight, wings-level, unaccelerated flight",
+    "explanation": "The magnetic compass gives its most reliable reading only when the aircraft is flying straight, with wings level, at a constant airspeed (unaccelerated). Any bank causes turning errors (dip-induced card rotation), and any acceleration or deceleration causes acceleration errors (ANDS). Because of these limitations, pilots use the HI (aligned with the compass) for in-flight heading reference and only refer to the compass during the brief periods of stable, unaccelerated flight needed to re-synchronise the HI.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21; FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-140",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "instruments", "compass-card"],
+    "question": "The deviation correction card posted near the magnetic compass is produced after a **compass swing**. What does a compass swing involve?",
+    "choices": [
+      {"text": "Flying a figure-eight pattern to average out turning errors", "correct": false},
+      {"text": "Taxiing or positioning the aircraft on multiple headings and comparing the compass to a known reference to determine and minimise deviation", "correct": true},
+      {"text": "Replacing the compass fluid and recalibrating the pivot", "correct": false},
+      {"text": "Activating all electrical equipment and recording the compass deflection", "correct": false}
+    ],
+    "answer": "Taxiing or positioning the aircraft on multiple headings and comparing the compass to a known reference to determine and minimise deviation",
+    "explanation": "A compass swing is a maintenance procedure performed on known magnetic headings (verified by a precision compass rose on an airport ramp or by a calibrated compass). The technician positions the aircraft on multiple headings (typically every 30°) and compares the aircraft's compass reading to the known heading. Small compensating magnets inside the compass housing are adjusted to minimise deviation on cardinal and intercardinal headings. Residual deviation on each heading is recorded on the deviation correction card, which the pilot uses during flight.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-141",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["turn-coordinator", "instruments", "timed-turns"],
+    "question": "A pilot needs to turn from 270° to 090° (a 180° turn) at standard rate. How long should the turn take?",
+    "choices": [
+      {"text": "30 seconds", "correct": false},
+      {"text": "60 seconds", "correct": true},
+      {"text": "90 seconds", "correct": false},
+      {"text": "120 seconds", "correct": false}
+    ],
+    "answer": "60 seconds",
+    "explanation": "At standard rate (3°/second), 1° of heading change takes 1/3 second. Therefore: 180° ÷ 3°/sec = 60 seconds. Timed turns using this relationship are a key skill for partial panel instrument flying. With the stopwatch running and the turn coordinator at the standard rate mark, the pilot times the turn precisely: 30 sec for 90°, 60 sec for 180°, 90 sec for 270°, and 120 sec for 360°. The clock is started when the turn begins and the roll-out starts just before the elapsed time to account for roll-out.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–170",
+    "media": []
+  },
+  {
+    "id": "FI-142",
+    "topic": "Flight Instruments — Gyroscopic Principles",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["gyroscope", "instruments", "precession-aircraft"],
+    "question": "Gyroscopic precession of the propeller causes a nose-left yaw tendency during the takeoff roll in a clockwise-rotating (viewed from behind) propeller aircraft. Where does this yaw force actually originate?",
+    "choices": [
+      {"text": "The propeller's gyroscopic precession reacting to the pitch-up force of the tailwheel lifting off", "correct": true},
+      {"text": "Torque from the engine rotating the propeller clockwise", "correct": false},
+      {"text": "P-factor — the descending blade has a greater angle of attack", "correct": false},
+      {"text": "Spiralling slipstream striking the vertical tail", "correct": false}
+    ],
+    "answer": "The propeller's gyroscopic precession reacting to the pitch-up force of the tailwheel lifting off",
+    "explanation": "The spinning propeller acts as a large gyroscope. When the tailwheel of a conventional-gear aircraft lifts during the takeoff roll, the aircraft pitches nose-down (the tail rises). This is a force applied to the front of the gyro (propeller) in the pitch axis. Due to precession, the reaction occurs 90° ahead in the direction of rotation. For a clockwise-rotating propeller (viewed from behind), the precession reaction appears on the left side of the disc, creating a yawing force to the left. The pilot counters with right rudder during the tail-lift phase.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 5 — Aerodynamics of Flight, p. 5-30 to 5-31",
+    "media": []
+  },
+  {
+    "id": "FI-143",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["ahrs", "efd", "instruments", "magnetometer"],
+    "question": "In an AHRS-based glass cockpit, how is magnetic heading obtained without a traditional compass gyro?",
+    "choices": [
+      {"text": "From the GPS ground track, corrected for wind drift", "correct": false},
+      {"text": "From a remote magnetometer (flux gate sensor) that feeds continuous magnetic heading data to the AHRS computer", "correct": true},
+      {"text": "From the AHRS's internal ring-laser gyros, which sense Earth's rotation", "correct": false},
+      {"text": "From a dedicated compass servo motor connected to the standby compass", "correct": false}
+    ],
+    "answer": "From a remote magnetometer (flux gate sensor) that feeds continuous magnetic heading data to the AHRS computer",
+    "explanation": "AHRS systems use a remote magnetometer (flux gate) — a sensor installed away from major sources of interference (often in a wingtip or tailcone) — to measure the direction of the Earth's magnetic field continuously. This data is fed to the AHRS computer, which uses it to determine magnetic heading and to correct for any gyro drift in the heading reference. The combination of solid-state gyros for attitude (fast, precise) and magnetometer for heading reference (slow, absolute) gives the AHRS both accuracy and stability.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-144",
+    "topic": "Flight Instruments — Vacuum System",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vacuum-system", "instruments", "suction-gauge"],
+    "question": "The suction gauge reads below the normal range of 4.5–5.5 \"Hg in flight. What is the most likely immediate effect on the AI?",
+    "choices": [
+      {"text": "The AI reads a nose-up attitude regardless of actual pitch", "correct": false},
+      {"text": "The AI gyro may be underspeeding, making it sluggish and less rigid — indications may be slow or drift", "correct": true},
+      {"text": "The AI freezes at the last known attitude", "correct": false},
+      {"text": "No effect, because the AI gyro maintains speed on inertia alone", "correct": false}
+    ],
+    "answer": "The AI gyro may be underspeeding, making it sluggish and less rigid — indications may be slow or drift",
+    "explanation": "If suction drops below 4.5 \"Hg, the airflow through the gyro rotor slows, reducing its RPM. With lower RPM the gyro has less angular momentum and therefore less rigidity in space — it cannot resist precession forces as effectively. The AI may appear to work normally at first (gyroscopic inertia keeps the rotor spinning for a while), but gradually the indications will become sluggish, erratic, or drift from the correct attitude. A below-normal suction reading is a warning to suspect the AI and HI and transition to partial panel if needed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11",
+    "media": []
+  },
+  {
+    "id": "FI-145",
+    "topic": "Flight Instruments — Turn Indicators",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["turn-and-slip", "instruments", "needle"],
+    "question": "On a turn-and-slip indicator (needle-and-ball), what does the needle indicate?",
+    "choices": [
+      {"text": "The rate of roll", "correct": false},
+      {"text": "The rate of turn (yaw rate)", "correct": true},
+      {"text": "The aircraft's bank angle in degrees", "correct": false},
+      {"text": "The pitch attitude", "correct": false}
+    ],
+    "answer": "The rate of turn (yaw rate)",
+    "explanation": "The needle (turn needle) of the turn-and-slip indicator shows the rate at which the aircraft is turning — specifically its yaw rate. The needle deflects left for a left turn and right for a right turn, and the deflection is proportional to the rate. The standard rate marks (L and R) indicate 3°/second. Unlike the turn coordinator (which has a canted gimbal and senses both roll and yaw), the turn-and-slip gyro has a single-axis gimbal that senses only yaw. The ball (inclinometer) is a separate instrument that indicates coordination.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-12",
+    "media": []
+  },
+  {
+    "id": "FI-146",
+    "topic": "Flight Instruments — Attitude Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["attitude-indicator", "instruments", "scan"],
+    "question": "In the instrument scan concept, the AI is called the 'control instrument'. Why?",
+    "choices": [
+      {"text": "Because it is used only during climb and descent, not level flight", "correct": false},
+      {"text": "Because it gives direct, immediate attitude information and is used to make control inputs", "correct": true},
+      {"text": "Because it controls the vacuum pump speed", "correct": false},
+      {"text": "Because ATC use it to control the aircraft remotely", "correct": false}
+    ],
+    "answer": "Because it gives direct, immediate attitude information and is used to make control inputs",
+    "explanation": "In the attitude-instrument flying philosophy described in the FTM, the AI is a **control instrument** because it directly reflects the aircraft's attitude and allows the pilot to set pitch and bank to achieve the desired performance. Changes in attitude appear on the AI instantly (no lag). The pilot sets the attitude on the AI and then scans the performance instruments (altimeter, ASI, VSI, HI) to verify the desired outcome. The tachometer (or manifold pressure gauge) is the other control instrument, used to set power.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 148",
+    "media": []
+  },
+  {
+    "id": "FI-147",
+    "topic": "Flight Instruments — Magnetic Compass",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "instruments", "construction"],
+    "question": "The magnetic compass is filled with white kerosene or compass fluid. What is the purpose of this fluid?",
+    "choices": [
+      {"text": "To keep the compass needle magnetised", "correct": false},
+      {"text": "To dampen oscillations and partially buoy the float card, reducing pivot friction", "correct": true},
+      {"text": "To prevent ice formation inside the compass bowl", "correct": false},
+      {"text": "To amplify the Earth's magnetic field for greater sensitivity", "correct": false}
+    ],
+    "answer": "To dampen oscillations and partially buoy the float card, reducing pivot friction",
+    "explanation": "The liquid in the compass housing serves two functions: (1) **Damping** — the viscosity of the fluid slows the oscillation of the compass card, preventing it from swinging wildly in turbulence and making the reading steadier; (2) **Buoyancy** — the fluid partially supports the weight of the compass card float, reducing the load on the pivot bearing and therefore reducing friction. Reduced friction allows the compass to respond to weak magnetic field forces more easily. Bubbles in the compass fluid indicate a leak and can cause erratic readings.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-148",
+    "topic": "Flight Instruments — AHRS and EFD",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "mfd", "instruments"],
+    "question": "In a glass cockpit, the Multi-Function Display (MFD) typically shows:",
+    "choices": [
+      {"text": "Attitude, airspeed, and altitude only", "correct": false},
+      {"text": "Engine instruments, moving map navigation, weather, and traffic information", "correct": true},
+      {"text": "Radio frequencies and ATC communication history", "correct": false},
+      {"text": "A duplicate of the PFD as a backup", "correct": false}
+    ],
+    "answer": "Engine instruments, moving map navigation, weather, and traffic information",
+    "explanation": "The MFD is a secondary display in glass cockpit avionics that supplements the PFD by presenting situational awareness data. Typical MFD displays include: a moving map (with terrain, airspace, and navaids); weather information (data-linked NEXRAD radar, lightning, METARs); traffic alerts (ADS-B traffic); and engine/systems instrument pages. The exact content is pilot-selectable. Unlike the PFD (which must always show primary flight data), the MFD is a flexible information display.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-149",
+    "topic": "Flight Instruments — Gyroscopic Instruments Power",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vacuum-system", "instruments", "preflight"],
+    "question": "During the engine run-up, at what point should the pilot check the vacuum (suction) gauge?",
+    "choices": [
+      {"text": "Only after reaching cruise altitude, where vacuum output stabilises", "correct": false},
+      {"text": "After bringing the engine to run-up RPM, to confirm the gauge reads within the normal 4.5–5.5 \"Hg range", "correct": true},
+      {"text": "The vacuum gauge does not need to be checked during run-up", "correct": false},
+      {"text": "Before starting the engine, to confirm zero reading", "correct": false}
+    ],
+    "answer": "After bringing the engine to run-up RPM, to confirm the gauge reads within the normal 4.5–5.5 \"Hg range",
+    "explanation": "The vacuum pump is engine-driven, so its output varies with engine RPM. During run-up at the manufacturer's specified RPM (typically 1,800–2,000 RPM), the pilot checks that the suction gauge reads within the normal range of 4.5–5.5 \"Hg. This confirms the vacuum pump is functioning and the AI and HI will have adequate suction to spin their gyros correctly in flight. A reading below the normal range at run-up RPM indicates a pump or system problem that should be investigated before flight.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  },
+  {
+    "id": "FI-150",
+    "topic": "Flight Instruments — Gyroscopic Instruments Power",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["gyroscope", "instruments", "summary", "power-sources"],
+    "question": "Which statement correctly summarises the power sources for the three gyroscopic flight instruments in a typical light aircraft?",
+    "choices": [
+      {"text": "AI: electrical; HI: electrical; TC: vacuum", "correct": false},
+      {"text": "AI: vacuum; HI: vacuum; TC: electrical", "correct": true},
+      {"text": "AI: vacuum; HI: electrical; TC: vacuum", "correct": false},
+      {"text": "All three are vacuum-powered for consistency", "correct": false}
+    ],
+    "answer": "AI: vacuum; HI: vacuum; TC: electrical",
+    "explanation": "The standard arrangement in most light aircraft is: **AI (Attitude Indicator)** — vacuum powered (spun by the engine-driven vacuum pump drawing air through the rotor). **HI (Heading Indicator)** — vacuum powered. **TC (Turn Coordinator)** — electrically powered (from the aircraft's electrical bus). This deliberate separation ensures that a vacuum pump failure does not disable all gyroscopic instruments simultaneously: the TC remains operational for partial panel flying while the AI and HI are inoperative.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 18",
+    "media": []
+  }
+]

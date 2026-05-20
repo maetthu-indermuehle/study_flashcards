@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-051",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["vsi", "pitot-static", "instruments"],
+    "question": "What source of pressure does the vertical speed indicator (VSI) use to operate?",
+    "choices": [
+      {"text": "Static pressure only", "correct": true},
+      {"text": "Pitot pressure only", "correct": false},
+      {"text": "Both pitot and static pressure", "correct": false},
+      {"text": "Venturi pressure from the engine intake", "correct": false}
+    ],
+    "answer": "Static pressure only",
+    "explanation": "The VSI is connected solely to the static port. It measures the *rate of change* of static pressure as the aircraft climbs or descends. Inside the instrument, static pressure enters both the diaphragm and the instrument case; however, the case is connected to the static line through a calibrated (restricted) leak, which causes a pressure differential whenever altitude is changing. No pitot pressure is involved.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 17",
+    "media": []
+  },
+  {
+    "id": "FI-052",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vsi", "instruments", "operating-principle"],
+    "question": "Inside the VSI, what component is connected *directly* to the static line, while the case pressure changes more slowly?",
+    "choices": [
+      {"text": "An aneroid capsule (wafer)", "correct": false},
+      {"text": "A diaphragm", "correct": true},
+      {"text": "A bellows connected to the pitot line", "correct": false},
+      {"text": "A sealed capsule vented to the atmosphere", "correct": false}
+    ],
+    "answer": "A diaphragm",
+    "explanation": "Inside the VSI, a diaphragm is connected directly (unrestricted) to the static line, so the pressure inside the diaphragm tracks ambient static pressure immediately. The outer case is also connected to static pressure, but through a calibrated leak — a precisely sized restricted orifice. When altitude changes, the diaphragm pressure changes instantly while the case pressure lags, creating a differential that deflects the needle. In level flight both pressures equalise and the needle reads zero.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-053",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vsi", "instruments", "lag"],
+    "question": "The VSI typically has a lag of approximately how long before it shows a steady rate of climb or descent?",
+    "choices": [
+      {"text": "1–2 seconds", "correct": false},
+      {"text": "6–9 seconds", "correct": true},
+      {"text": "15–20 seconds", "correct": false},
+      {"text": "30 seconds", "correct": false}
+    ],
+    "answer": "6–9 seconds",
+    "explanation": "The calibrated leak in the VSI case introduces an inherent lag of approximately 6–9 seconds. This means that after the pilot initiates a climb or descent, the VSI needle continues to move for several seconds before settling on the actual rate. Because of this lag, pilots should use the VSI primarily as a *trend* instrument (showing the direction and approximate rate of vertical motion) rather than relying on it for precise immediate readings during abrupt manoeuvres.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 17",
+    "media": []
+  },
+  {
+    "id": "FI-054",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["vsi", "instruments", "trend"],
+    "question": "In instrument flight, the VSI is best described as providing which type of information?",
+    "choices": [
+      {"text": "Precise altitude information", "correct": false},
+      {"text": "Trend and rate-of-change information", "correct": true},
+      {"text": "Instantaneous vertical acceleration", "correct": false},
+      {"text": "Density altitude data", "correct": false}
+    ],
+    "answer": "Trend and rate-of-change information",
+    "explanation": "Because of its 6–9 second lag, the VSI is primarily a trend instrument. It tells the pilot whether the aircraft is climbing, descending, or in level flight, and gives an approximate rate. For precise altitude control, the altimeter is the primary performance instrument. Pilots cross-check the VSI against the altimeter to confirm vertical movement and its rate, making the VSI especially useful during instrument flying to detect and arrest unintended altitude changes early.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 151",
+    "media": []
+  },
+  {
+    "id": "FI-055",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vsi", "instruments", "ivsi"],
+    "question": "How does the Instantaneous VSI (IVSI) differ from a conventional VSI?",
+    "choices": [
+      {"text": "It uses pitot pressure instead of static pressure", "correct": false},
+      {"text": "It incorporates accelerometers to reduce instrument lag", "correct": true},
+      {"text": "It is electrically powered rather than pitot-static", "correct": false},
+      {"text": "It displays altitude instead of rate of climb", "correct": false}
+    ],
+    "answer": "It incorporates accelerometers to reduce instrument lag",
+    "explanation": "The IVSI uses small accelerometers (dashpot accelerometers) to detect the initial acceleration of a climb or descent before the static pressure change fully propagates through the calibrated leak. These accelerometers inject a transient pressure signal that deflects the needle almost immediately when vertical velocity changes begin. This reduces the characteristic 6–9 second lag of the conventional VSI to near-zero, giving the pilot faster, more accurate trend information.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-056",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["vsi", "instruments", "preflight"],
+    "question": "What should the VSI indicate when the aircraft is on the ground in level flight conditions?",
+    "choices": [
+      {"text": "A slight climb due to engine vibration", "correct": false},
+      {"text": "Zero — no vertical movement", "correct": true},
+      {"text": "A slight descent when the engine is running", "correct": false},
+      {"text": "Any value, as the VSI cannot be zeroed on the ground", "correct": false}
+    ],
+    "answer": "Zero — no vertical movement",
+    "explanation": "On the ground with the aircraft stationary, altitude is not changing, so static pressure is constant. Both the diaphragm and the instrument case will be at the same static pressure, and the differential is zero, causing the needle to indicate zero. If the VSI does not read zero on the ground, it may be adjustable via a calibration screw (on some instruments) or it indicates a fault. The VSI is checked during preflight to confirm it reads zero.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 17",
+    "media": []
+  },
+  {
+    "id": "FI-057",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "instruments", "pitot-static"],
+    "question": "The airspeed indicator (ASI) measures the difference between which two pressures?",
+    "choices": [
+      {"text": "Total pressure and static pressure", "correct": true},
+      {"text": "Static pressure and atmospheric pressure", "correct": false},
+      {"text": "Pitot pressure and venturi pressure", "correct": false},
+      {"text": "Dynamic pressure and density pressure", "correct": false}
+    ],
+    "answer": "Total pressure and static pressure",
+    "explanation": "The ASI is a sensitive differential pressure gauge. Pitot pressure (also called ram air or total pressure) is the sum of static pressure and dynamic pressure (q = ½ρV²). The ASI receives pitot pressure in a diaphragm (or capsule) and has static pressure in the instrument case. The difference — the dynamic pressure alone — is proportional to the square of the airspeed. The instrument converts this pressure differential into an airspeed reading in knots or MPH.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 14",
+    "media": []
+  },
+  {
+    "id": "FI-058",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "ias"],
+    "question": "What is Indicated Airspeed (IAS)?",
+    "choices": [
+      {"text": "Airspeed corrected for altitude and temperature", "correct": false},
+      {"text": "The direct reading shown on the ASI, uncorrected for instrument or installation error", "correct": true},
+      {"text": "Airspeed corrected for position and instrument error", "correct": false},
+      {"text": "Groundspeed plus or minus wind component", "correct": false}
+    ],
+    "answer": "The direct reading shown on the ASI, uncorrected for instrument or installation error",
+    "explanation": "IAS is simply what the needle shows on the face of the ASI. It has not been corrected for any errors. Because flight limitations (stall speed, maximum flap speed, manoeuvring speed) are defined in IAS by the manufacturer — the aircraft always 'feels' the same aerodynamic load at a given IAS regardless of altitude — pilots use IAS for most in-flight operations. Any correction for instrument error and position (installation) error converts IAS to Calibrated Airspeed (CAS).",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 14",
+    "media": []
+  },
+  {
+    "id": "FI-059",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "cas"],
+    "question": "Calibrated Airspeed (CAS) is obtained by correcting IAS for which errors?",
+    "choices": [
+      {"text": "Altitude and temperature errors", "correct": false},
+      {"text": "Instrument error and position (installation) error", "correct": true},
+      {"text": "Wind and magnetic variation", "correct": false},
+      {"text": "Compressibility and density errors", "correct": false}
+    ],
+    "answer": "Instrument error and position (installation) error",
+    "explanation": "CAS = IAS corrected for (1) instrument error — mechanical imperfections in the ASI itself — and (2) position error (also called installation error) — distortions in the pressure sensed at the pitot tube and static port due to their location on the aircraft and the local airflow around them. Position error is most significant at high angles of attack (slow speed) and during flap extension. Correction values are found in the Pilot's Operating Handbook (POH) airspeed calibration table. At cruise speeds CAS ≈ IAS for most light aircraft.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8",
+    "media": []
+  },
+  {
+    "id": "FI-060",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "tas"],
+    "question": "True Airspeed (TAS) is the speed of the aircraft relative to the undisturbed air mass. As altitude increases, TAS will __________ compared to IAS at the same indicated airspeed.",
+    "choices": [
+      {"text": "Decrease, because air density decreases", "correct": false},
+      {"text": "Stay the same, because indicated speed is always true speed", "correct": false},
+      {"text": "Increase, because air density decreases and fewer air molecules impact the pitot tube", "correct": true},
+      {"text": "Increase, because static pressure increases with altitude", "correct": false}
+    ],
+    "answer": "Increase, because air density decreases and fewer air molecules impact the pitot tube",
+    "explanation": "The ASI responds to dynamic pressure, which depends on both air density (ρ) and velocity (V): q = ½ρV². At higher altitudes air density is lower, so to maintain the same dynamic pressure (and thus the same IAS), the aircraft must fly faster through the less dense air. TAS is therefore higher than IAS at altitude. As a practical rule, TAS increases by approximately 2% per 1,000 ft of altitude above sea level. This is why fuel consumption, range, and navigation calculations use TAS, not IAS.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 15",
+    "media": []
+  },
+  {
+    "id": "FI-061",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "instruments", "tas-rule"],
+    "question": "A practical rule of thumb for estimating True Airspeed (TAS) from IAS is to add approximately how much per 1,000 ft of altitude?",
+    "choices": [
+      {"text": "1% per 1,000 ft", "correct": false},
+      {"text": "2% per 1,000 ft", "correct": true},
+      {"text": "5% per 1,000 ft", "correct": false},
+      {"text": "10% per 1,000 ft", "correct": false}
+    ],
+    "answer": "2% per 1,000 ft",
+    "explanation": "The commonly used rule of thumb is that TAS is approximately 2% higher than IAS (or CAS) for every 1,000 ft of pressure altitude. For example, at 8,000 ft an IAS of 100 kt gives a TAS of roughly 100 + (8 × 2) = 116 kt. A more precise value can be computed using the flight computer (E6B) or electronic flight bag by entering pressure altitude and OAT. TAS matters for navigation, flight planning, and fuel calculations.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 15",
+    "media": []
+  },
+  {
+    "id": "FI-062",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "instruments", "groundspeed"],
+    "question": "Groundspeed (GS) is best described as:",
+    "choices": [
+      {"text": "IAS corrected for wind", "correct": false},
+      {"text": "TAS corrected for wind", "correct": true},
+      {"text": "CAS corrected for altitude and temperature", "correct": false},
+      {"text": "The speed registered by the ASI at sea level in standard conditions", "correct": false}
+    ],
+    "answer": "TAS corrected for wind",
+    "explanation": "Groundspeed is the actual speed of the aircraft over the ground. It equals TAS (speed through the air mass) adjusted for the wind. A headwind subtracts from TAS to give GS; a tailwind adds to TAS. GS = TAS ± wind component. GS cannot be read from the ASI — it must be calculated using a flight computer or navigation system (GPS). GS is used for ETA calculations and fuel planning, while TAS is used for navigation calculations (track and drift).",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 15",
+    "media": []
+  },
+  {
+    "id": "FI-063",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "colour-coding", "arcs"],
+    "question": "On the ASI, what speed range does the WHITE arc represent?",
+    "choices": [
+      {"text": "Normal operating range in smooth air (VS1 to VNO)", "correct": false},
+      {"text": "Flap operating range (VS0 to VFE)", "correct": true},
+      {"text": "Caution range — structural damage possible in turbulence (VNO to VNE)", "correct": false},
+      {"text": "Best glide to manoeuvring speed", "correct": false}
+    ],
+    "answer": "Flap operating range (VS0 to VFE)",
+    "explanation": "The white arc on the ASI runs from VS0 (power-off stall speed in landing configuration, full flaps) at its lower end to VFE (maximum flap extension speed) at its upper end. This arc indicates the range of airspeeds at which flaps may be safely extended. Operating with flaps extended above VFE risks structural damage. The white arc is a quick visual reference during approach and landing.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 14",
+    "media": []
+  },
+  {
+    "id": "FI-064",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "colour-coding", "arcs"],
+    "question": "The GREEN arc on the ASI represents:",
+    "choices": [
+      {"text": "The flap operating range from VS0 to VFE", "correct": false},
+      {"text": "The caution range where flight is permitted only in smooth air", "correct": false},
+      {"text": "The normal operating range from VS1 to VNO", "correct": true},
+      {"text": "The manoeuvring speed range from VA to VNO", "correct": false}
+    ],
+    "answer": "The normal operating range from VS1 to VNO",
+    "explanation": "The green arc runs from VS1 (power-off stall speed in clean configuration — flaps and gear up) to VNO (maximum structural cruising speed). This is the normal operating range in which the aircraft can be safely operated in all flight conditions, including turbulence. VS1 is at the lower end (onset of stall in clean config), and VNO is the upper end beyond which the aircraft should only be flown in smooth air.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-065",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "colour-coding", "arcs"],
+    "question": "What does the YELLOW arc on the ASI indicate?",
+    "choices": [
+      {"text": "Normal operating range in all conditions", "correct": false},
+      {"text": "Caution range — operate only in smooth air (VNO to VNE)", "correct": true},
+      {"text": "Flap operating range", "correct": false},
+      {"text": "Best rate of climb speed", "correct": false}
+    ],
+    "answer": "Caution range — operate only in smooth air (VNO to VNE)",
+    "explanation": "The yellow (caution) arc extends from VNO (maximum structural cruising speed) to VNE (never-exceed speed). In this speed range, the aircraft is safe in smooth air but must not be flown in turbulent conditions because the structural loads imposed by gusts could exceed the aircraft's design limits. Entering the yellow arc in turbulence risks structural damage. Pilots should exit the yellow arc by reducing power and airspeed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-066",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "colour-coding", "vne"],
+    "question": "The RED LINE on the ASI marks which speed?",
+    "choices": [
+      {"text": "VNO — maximum structural cruising speed", "correct": false},
+      {"text": "VA — manoeuvring speed", "correct": false},
+      {"text": "VNE — never-exceed speed", "correct": true},
+      {"text": "VFE — maximum flap extension speed", "correct": false}
+    ],
+    "answer": "VNE — never-exceed speed",
+    "explanation": "The red line at the top of the ASI's speed range marks VNE — the Never-Exceed Speed. This is the absolute maximum speed at which the aircraft may be operated; exceeding it may cause structural failure or loss of control. It is determined by the manufacturer's structural and flutter testing and is marked permanently on the airspeed indicator for immediate pilot reference.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-067",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "speeds", "va"],
+    "question": "Manoeuvring speed (VA) is significant because below this speed:",
+    "choices": [
+      {"text": "Flaps may be safely extended", "correct": false},
+      {"text": "The aircraft will stall before structural damage occurs from a single full control input", "correct": true},
+      {"text": "The aircraft can sustain turbulence without entering the caution arc", "correct": false},
+      {"text": "The autopilot can be engaged safely", "correct": false}
+    ],
+    "answer": "The aircraft will stall before structural damage occurs from a single full control input",
+    "explanation": "VA is the maximum speed at which full (or abrupt) application of a single flight control will not overstress the aircraft's structure. Below VA, if a pilot applies full deflection to one control, the wing will stall before the aerodynamic load exceeds the structural limit. Above VA, a full control input could impose loads exceeding the design limit and cause structural damage. Importantly, VA *decreases* as aircraft weight decreases — a lightly loaded aircraft has a lower VA because the wing stalls at lower G-loads.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 14",
+    "media": []
+  },
+  {
+    "id": "FI-068",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "speeds", "va-weight"],
+    "question": "How does manoeuvring speed (VA) change when an aircraft is loaded below its maximum gross weight?",
+    "choices": [
+      {"text": "VA increases because there is less inertia to overcome", "correct": false},
+      {"text": "VA remains the same regardless of weight", "correct": false},
+      {"text": "VA decreases because the wing stalls at a lower aerodynamic load", "correct": true},
+      {"text": "VA increases to compensate for the lower weight", "correct": false}
+    ],
+    "answer": "VA decreases because the wing stalls at a lower aerodynamic load",
+    "explanation": "VA is weight-dependent. A heavier aircraft requires more lift (greater aerodynamic load) to fly, so it takes a larger gust or control input to reach the stall. A lighter aircraft stalls at a lower load, meaning the protective stall-before-structural-damage mechanism triggers at a lower speed. Therefore, pilots flying below maximum gross weight must use a *lower* VA to maintain the same structural protection. The correct VA for the actual aircraft weight is found in the POH performance charts.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-069",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "speeds", "vyse"],
+    "question": "On a multi-engine aircraft's ASI, the BLUE radial line marks which speed?",
+    "choices": [
+      {"text": "VX — best angle of climb speed", "correct": false},
+      {"text": "VYSE — best single-engine rate of climb speed", "correct": true},
+      {"text": "VSSE — safe single-engine speed", "correct": false},
+      {"text": "VMC — minimum control speed with critical engine inoperative", "correct": false}
+    ],
+    "answer": "VYSE — best single-engine rate of climb speed",
+    "explanation": "On twin-engine aircraft, a blue radial line on the ASI marks VYSE — the best single-engine rate of climb speed (often called 'blue line'). At this speed, an aircraft with one engine failed achieves the maximum rate of altitude gain (or the minimum rate of descent). The blue line colour is standardised so pilots can immediately identify this critical speed in an engine-failure emergency without referring to the POH.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-070",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "speeds", "vs0-vs1"],
+    "question": "What is the difference between VS0 and VS1?",
+    "choices": [
+      {"text": "VS0 is stall speed in clean configuration; VS1 is stall speed with flaps full down", "correct": false},
+      {"text": "VS0 is stall speed in landing configuration (full flaps); VS1 is stall speed in clean configuration", "correct": true},
+      {"text": "VS0 is stall speed at gross weight; VS1 is stall speed at minimum weight", "correct": false},
+      {"text": "VS0 and VS1 are the same speed on most light aircraft", "correct": false}
+    ],
+    "answer": "VS0 is stall speed in landing configuration (full flaps); VS1 is stall speed in clean configuration",
+    "explanation": "VS0 is the power-off stall speed in the *landing* configuration — typically full flaps down and gear down. It marks the bottom of the white arc on the ASI. VS1 is the power-off stall speed in the *clean* configuration — flaps retracted (and gear up on retractable gear aircraft). It marks the bottom of the green arc. VS0 is always lower than VS1 because extending flaps increases the wing's lift coefficient, allowing flight at a lower airspeed before the stall.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-071",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "speeds", "vx-vy"],
+    "question": "Which speed gives the greatest altitude gain for the shortest horizontal distance?",
+    "choices": [
+      {"text": "VY — best rate of climb", "correct": false},
+      {"text": "VX — best angle of climb", "correct": true},
+      {"text": "VA — manoeuvring speed", "correct": false},
+      {"text": "VNO — maximum structural cruising speed", "correct": false}
+    ],
+    "answer": "VX — best angle of climb",
+    "explanation": "VX (best angle of climb speed) produces the steepest angle of climb — the maximum altitude gain per unit of horizontal distance. It is used to clear obstacles shortly after takeoff. VY (best rate of climb speed) produces the maximum altitude gain per unit of *time*, but at a shallower angle. VX is slower than VY. After clearing obstacles, it is usually beneficial to accelerate to VY to climb to cruise altitude more quickly.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 3 — Climbing, p. 23",
+    "media": []
+  },
+  {
+    "id": "FI-072",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "blockage", "pitot-tube"],
+    "question": "The pitot tube becomes blocked (but the pitot drain hole remains open). What effect does this have on the ASI?",
+    "choices": [
+      {"text": "ASI reads zero and is unresponsive", "correct": true},
+      {"text": "ASI reads like an altimeter — increasing with altitude, decreasing with descent", "correct": false},
+      {"text": "ASI reads higher than actual airspeed in a climb", "correct": false},
+      {"text": "ASI is unaffected because it still has access to static pressure", "correct": false}
+    ],
+    "answer": "ASI reads zero and is unresponsive",
+    "explanation": "If the pitot tube inlet is blocked (e.g., by ice or a wasp nest) but the small drain hole at the bottom of the pitot tube remains open, the pressure inside the pitot line slowly equalises to static pressure through the drain. The result is that the ASI's diaphragm sees no differential between pitot and static pressure, and the needle falls to zero (or near zero). The altimeter and VSI are unaffected because they only use the static port.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 16",
+    "media": []
+  },
+  {
+    "id": "FI-073",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["pitot-static", "blockage", "pitot-tube"],
+    "question": "Both the pitot tube inlet AND the pitot drain hole become blocked. How does the ASI behave during a climb?",
+    "choices": [
+      {"text": "ASI reads zero, unaffected by altitude changes", "correct": false},
+      {"text": "ASI reads lower than actual airspeed in the climb", "correct": false},
+      {"text": "ASI acts like an altimeter — indicating an increase in airspeed as altitude increases", "correct": true},
+      {"text": "ASI is unaffected and reads normally", "correct": false}
+    ],
+    "answer": "ASI acts like an altimeter — indicating an increase in airspeed as altitude increases",
+    "explanation": "If both the pitot inlet and the drain hole are completely blocked, the pitot pressure is trapped and remains constant (frozen at the pressure it had when the blockage occurred). As the aircraft climbs, static pressure decreases. Since the ASI measures pitot minus static pressure, and pitot is now fixed while static decreases, the differential *increases* — just as if the airspeed were rising. The ASI therefore mimics an altimeter: it shows increasing 'airspeed' in a climb and decreasing 'airspeed' in a descent, regardless of actual airspeed. This is a dangerous, deceptive failure.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-074",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "blockage", "static-port"],
+    "question": "The static port becomes blocked in flight. Which instruments are affected?",
+    "choices": [
+      {"text": "ASI only — pitot instruments are unaffected", "correct": false},
+      {"text": "Altimeter only — the ASI and VSI use pitot pressure", "correct": false},
+      {"text": "ASI, altimeter, and VSI — all three pitot-static instruments are affected", "correct": true},
+      {"text": "Altimeter and VSI only — the ASI still operates on pitot alone", "correct": false}
+    ],
+    "answer": "ASI, altimeter, and VSI — all three pitot-static instruments are affected",
+    "explanation": "All three pitot-static instruments depend on a current static pressure reference. If the static port is blocked, static pressure is frozen at the value present when the blockage occurred. The **altimeter** will freeze and not reflect altitude changes. The **VSI** will read zero (no rate of change in the trapped static pressure). The **ASI** will be inaccurate — if the aircraft climbs above the blockage altitude, actual static pressure decreases but the ASI still references the higher trapped static, causing it to read *higher* than actual airspeed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 16",
+    "media": []
+  },
+  {
+    "id": "FI-075",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "blockage", "static-port", "altimeter"],
+    "question": "With a blocked static port, what does the altimeter indicate as the aircraft climbs above the altitude at which the blockage occurred?",
+    "choices": [
+      {"text": "It continues to rise normally", "correct": false},
+      {"text": "It freezes and shows the altitude at the time of blockage", "correct": true},
+      {"text": "It shows a descent", "correct": false},
+      {"text": "It reads zero", "correct": false}
+    ],
+    "answer": "It freezes and shows the altitude at the time of blockage",
+    "explanation": "The altimeter is an aneroid barometer that measures static pressure. If the static port is blocked, the trapped static pressure in the line does not change, so the altimeter needle does not move regardless of actual altitude changes. The altimeter effectively 'freezes' at the altitude it was indicating when the blockage occurred. This can be particularly hazardous in IMC where the pilot is relying on the altimeter for terrain separation.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-076",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "blockage", "static-port", "asi"],
+    "question": "With a blocked static port, what happens to the ASI as the aircraft climbs to an altitude higher than where the blockage occurred?",
+    "choices": [
+      {"text": "ASI reads lower than actual airspeed", "correct": true},
+      {"text": "ASI reads higher than actual airspeed", "correct": false},
+      {"text": "ASI reads zero", "correct": false},
+      {"text": "ASI is unaffected because it uses pitot pressure, not static", "correct": false}
+    ],
+    "answer": "ASI reads lower than actual airspeed",
+    "explanation": "The ASI measures pitot pressure minus static pressure. With the static port blocked, the reference static pressure is frozen at a higher value (from the lower altitude where the blockage occurred). As the aircraft climbs, real ambient static pressure decreases but the trapped static reference remains higher. The ASI differential = (real pitot) − (trapped static). Because trapped static > real static at the higher altitude, the differential is smaller than it should be, so the ASI reads *lower* than actual airspeed. Conversely, if the aircraft descends below the blockage altitude, the ASI reads *higher* than actual airspeed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-077",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "alternate-static", "blockage"],
+    "question": "When the alternate static source is selected in an unpressurised cockpit, the altimeter will read:",
+    "choices": [
+      {"text": "Lower than the primary static reading because cockpit pressure is lower than outside", "correct": false},
+      {"text": "Higher than the primary static reading because cockpit pressure is lower than outside", "correct": true},
+      {"text": "The same as the primary static reading", "correct": false},
+      {"text": "Zero, because the cockpit is not connected to the outside atmosphere", "correct": false}
+    ],
+    "answer": "Higher than the primary static reading because cockpit pressure is lower than outside",
+    "explanation": "In an unpressurised aircraft, the cockpit pressure is slightly *lower* than ambient outside air pressure due to the venturi effect of airflow over the fuselage. When the pilot selects the alternate static source (which draws static pressure from inside the cockpit), the instrument receives a lower-than-actual static pressure reading. A lower static pressure input is equivalent to being at a higher altitude, so the altimeter indicates slightly *higher* than the actual altitude. The ASI and VSI are similarly affected. Published corrections (in the POH) account for this difference.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 16",
+    "media": []
+  },
+  {
+    "id": "FI-078",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "alternate-static", "asi"],
+    "question": "When alternate static source is selected in flight, what happens to the ASI?",
+    "choices": [
+      {"text": "ASI reads slightly lower than normal", "correct": false},
+      {"text": "ASI reads slightly higher than normal", "correct": true},
+      {"text": "ASI is unaffected", "correct": false},
+      {"text": "ASI reads zero until the alternate source stabilises", "correct": false}
+    ],
+    "answer": "ASI reads slightly higher than normal",
+    "explanation": "When the alternate static source is selected from inside an unpressurised cockpit, the lower cockpit static pressure causes all three pitot-static instruments to be affected. For the ASI, the lower static reference makes the differential (pitot minus static) larger than normal, so the ASI reads slightly *higher* than the true airspeed. The pilot should consult the POH for the specific correction factor. The VSI will momentarily show a climb indication as static pressure drops when the alternate source is opened.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-079",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "alternate-static", "vsi"],
+    "question": "Immediately after the alternate static source is opened in flight, the VSI will temporarily indicate:",
+    "choices": [
+      {"text": "A descent, then stabilise", "correct": false},
+      {"text": "A climb, then stabilise at the actual vertical speed", "correct": true},
+      {"text": "Zero throughout the transition", "correct": false},
+      {"text": "A rapid oscillation before stabilising", "correct": false}
+    ],
+    "answer": "A climb, then stabilise at the actual vertical speed",
+    "explanation": "When the alternate static source valve is opened, the VSI case is suddenly exposed to the slightly lower cockpit air pressure. This sudden decrease in static pressure is interpreted by the VSI as a momentary climb (lower pressure = higher altitude = climbing). After a few seconds the pressures stabilise and the VSI settles to approximately the true vertical speed, though it may be slightly inaccurate because of the lower cockpit static pressure. Pilots should be aware of this transient indication and not react to it.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-080",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "pitot-heat", "ice"],
+    "question": "Pitot heat is used primarily to prevent which problem?",
+    "choices": [
+      {"text": "Moisture condensing on the inside of the ASI", "correct": false},
+      {"text": "Ice forming in or on the pitot tube and blocking it", "correct": true},
+      {"text": "Electrical interference with the ASI reading", "correct": false},
+      {"text": "Overheating of the pitot tube during high-speed cruise", "correct": false}
+    ],
+    "answer": "Ice forming in or on the pitot tube and blocking it",
+    "explanation": "The pitot tube faces directly into the relative airflow and can accumulate ice in conditions of visible moisture (cloud, rain, freezing rain) combined with temperatures at or below 0 °C. Ice can block the pitot inlet, causing ASI failure. Pitot heat is an electrically heated element inside the pitot tube that keeps the tube warm enough to prevent ice accumulation. On many aircraft it should be turned on before entering any icing conditions or as part of the before-takeoff checklist when icing is possible. On the ground, pitot heat reaches very high temperatures; do not touch it.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 13",
+    "media": []
+  },
+  {
+    "id": "FI-081",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "static-port", "ice"],
+    "question": "Where is the alternate static source typically located, and why is this location chosen?",
+    "choices": [
+      {"text": "On the nose of the aircraft, near the pitot tube, for consistent readings", "correct": false},
+      {"text": "Inside the cockpit or in a protected area, so it is unlikely to become blocked by ice simultaneously with the primary static port", "correct": true},
+      {"text": "On the tail of the aircraft, where airflow is least disturbed", "correct": false},
+      {"text": "On the engine cowling, where warm air prevents icing", "correct": false}
+    ],
+    "answer": "Inside the cockpit or in a protected area, so it is unlikely to become blocked by ice simultaneously with the primary static port",
+    "explanation": "The alternate static source is deliberately placed in a location different from the primary static port so that if icing or debris blocks the primary static port, the alternate is still available. On many light aircraft, the alternate source is inside the cockpit or in a protected space within the fuselage. Since it opens to a different air environment, it will not be blocked by the same ice event. However, the slight pressure difference between cockpit and outside air must be accounted for when using it.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-082",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "pitot-static", "dynamic-pressure"],
+    "question": "Dynamic pressure, which drives the ASI, is defined as:",
+    "choices": [
+      {"text": "Total pressure minus pitot pressure", "correct": false},
+      {"text": "Total pressure minus static pressure (½ρV²)", "correct": true},
+      {"text": "Static pressure alone", "correct": false},
+      {"text": "Atmospheric pressure at sea level", "correct": false}
+    ],
+    "answer": "Total pressure minus static pressure (½ρV²)",
+    "explanation": "Bernoulli's principle states that total pressure = static pressure + dynamic pressure. Dynamic pressure (q) = ½ρV², where ρ is air density and V is velocity. The pitot tube captures total pressure; the static port measures static pressure. The ASI's diaphragm deflects in proportion to their difference — the dynamic pressure — and this is displayed as airspeed. Because air density (ρ) decreases with altitude, the same dynamic pressure corresponds to a higher TAS at altitude, which is why TAS exceeds IAS.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1 to 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-083",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "colour-coding", "arcs", "vfe"],
+    "question": "VFE is the maximum speed at which the flaps may be operated. On the ASI, VFE is marked by:",
+    "choices": [
+      {"text": "The bottom of the white arc", "correct": false},
+      {"text": "The top of the white arc", "correct": true},
+      {"text": "The top of the green arc", "correct": false},
+      {"text": "A blue radial line", "correct": false}
+    ],
+    "answer": "The top of the white arc",
+    "explanation": "The white arc on the ASI represents the flap operating speed range. Its upper limit — where the white arc ends — is VFE (maximum flap extension speed). The lower limit of the white arc is VS0 (stall speed in landing configuration). Operating the aircraft with flaps extended above VFE subjects the flap structure and hinges to aerodynamic loads that may cause structural damage.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-084",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["vsi", "instruments", "level-off"],
+    "question": "During instrument flight, it is recommended to begin levelling off from a climb or descent when the aircraft is how far from the target altitude?",
+    "choices": [
+      {"text": "Equal to the current VSI reading in feet", "correct": false},
+      {"text": "Approximately 10% of the vertical speed in feet before the target altitude", "correct": true},
+      {"text": "50 feet before the target altitude, regardless of vertical speed", "correct": false},
+      {"text": "100 feet before the target altitude, regardless of vertical speed", "correct": false}
+    ],
+    "answer": "Approximately 10% of the vertical speed in feet before the target altitude",
+    "explanation": "The 10% rule for levelling off states: begin the level-off transition when the altitude remaining equals 10% of the VSI reading. For example, if climbing at 500 fpm, begin levelling off 50 feet before the target altitude. If descending at 1,000 fpm, begin at 100 feet before. This accounts for the aircraft's inertia and the VSI lag, ensuring a smooth level-off at the correct altitude rather than overshooting. The lead point compensates for instrument lag and aircraft response time.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 156",
+    "media": []
+  },
+  {
+    "id": "FI-085",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "instruments", "preflight"],
+    "question": "During preflight, what ASI indication confirms the pitot-static system is free of blockages?",
+    "choices": [
+      {"text": "The needle reads zero with the engine off", "correct": false},
+      {"text": "The needle rises as you face into the wind and walk toward the aircraft", "correct": false},
+      {"text": "The needle deflects when you blow gently into the pitot tube", "correct": false},
+      {"text": "The needle rises as airspeed increases during the takeoff roll", "correct": true}
+    ],
+    "answer": "The needle rises as airspeed increases during the takeoff roll",
+    "explanation": "While a static check can involve blowing gently into the pitot tube to confirm needle movement (though this is discouraged on precise instruments), the most reliable check that confirms an unobstructed system is that the ASI needle rises with increasing airspeed during the takeoff roll. Many checklists specify confirming a positive airspeed indication at a specific point in the takeoff roll. The preflight walkaround should also include a visual inspection of both the pitot tube and static ports to confirm they are unobstructed.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 13",
+    "media": []
+  },
+  {
+    "id": "FI-086",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["asi", "instruments", "compressibility"],
+    "question": "At high true airspeeds (above approximately 200 kt), a correction for **compressibility** must be applied to CAS to obtain:",
+    "choices": [
+      {"text": "IAS", "correct": false},
+      {"text": "Equivalent Airspeed (EAS)", "correct": true},
+      {"text": "TAS", "correct": false},
+      {"text": "Groundspeed", "correct": false}
+    ],
+    "answer": "Equivalent Airspeed (EAS)",
+    "explanation": "At high speeds, the air in front of the pitot tube is slightly compressed before it enters the tube, adding energy beyond the simple ½ρV² dynamic pressure. CAS already corrects for instrument and position error, but not for this compressibility effect. Subtracting the compressibility correction from CAS gives Equivalent Airspeed (EAS), which represents what the airspeed would be if the air were incompressible. At typical light aircraft speeds below 200 kt, the compressibility correction is negligible and CAS ≈ EAS. TAS is then obtained from EAS by correcting for air density.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8",
+    "media": []
+  },
+  {
+    "id": "FI-087",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "blockage", "static-drain"],
+    "question": "Some aircraft have a small drain or sump at the bottom of the static line. What is its purpose?",
+    "choices": [
+      {"text": "To reduce static pressure for more accurate readings", "correct": false},
+      {"text": "To drain accumulated moisture that could block the static line", "correct": true},
+      {"text": "To equalise pitot and static pressure on the ground", "correct": false},
+      {"text": "To provide an alternate source of dynamic pressure", "correct": false}
+    ],
+    "answer": "To drain accumulated moisture that could block the static line",
+    "explanation": "The static lines in an aircraft can accumulate condensed moisture over time. If water collects in the line it can partially or completely block the static port connection, affecting altimeter, VSI, and ASI accuracy. A static drain (sump) at the lowest point in the system allows this trapped moisture to be drained during preflight or maintenance inspections. Some aircraft have drain valves that can be opened briefly to expel any accumulated moisture.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-088",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "position-error"],
+    "question": "Position error (installation error) in the pitot-static system is greatest at:",
+    "choices": [
+      {"text": "High cruise airspeeds in smooth air", "correct": false},
+      {"text": "Low airspeeds and high angles of attack, especially with flaps extended", "correct": true},
+      {"text": "High altitudes where air density is low", "correct": false},
+      {"text": "High temperatures which cause pressure gradient changes", "correct": false}
+    ],
+    "answer": "Low airspeeds and high angles of attack, especially with flaps extended",
+    "explanation": "Position error arises because the pitot tube and static port cannot be located in a position of perfectly undisturbed airflow in all flight conditions. At high angles of attack (slow speed, especially with flaps), the local airflow around the fuselage and near the static port changes significantly from free-stream conditions, causing the static port to sense a pressure that differs from true ambient. This is most pronounced during approach with flaps, which is exactly when accurate airspeed information is critical. The POH calibration table corrects for this.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8",
+    "media": []
+  },
+  {
+    "id": "FI-089",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "colour-coding", "arcs", "summary"],
+    "question": "Which statement correctly summarises ALL four ASI colour markings?",
+    "choices": [
+      {"text": "White = flap range; Green = normal range; Yellow = caution; Red line = VNE", "correct": true},
+      {"text": "White = normal range; Green = flap range; Yellow = caution; Red line = VNE", "correct": false},
+      {"text": "White = flap range; Green = normal range; Yellow = VNE; Red line = VNO", "correct": false},
+      {"text": "White = caution range; Green = normal range; Yellow = flap range; Red line = VNE", "correct": false}
+    ],
+    "answer": "White = flap range; Green = normal range; Yellow = caution; Red line = VNE",
+    "explanation": "The four standard ASI colour markings are: **White arc** — flap operating range (VS0 to VFE); **Green arc** — normal operating range (VS1 to VNO); **Yellow arc** — caution range, smooth air only (VNO to VNE); **Red radial line** — never-exceed speed (VNE). This colour coding is standardised so pilots can quickly assess their airspeed situation at a glance without consulting the POH.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-090",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["vsi", "instruments", "calibrated-leak"],
+    "question": "What component inside the VSI is responsible for creating the pressure differential that moves the needle?",
+    "choices": [
+      {"text": "A vacuum pump", "correct": false},
+      {"text": "A calibrated (restricted) orifice or leak in the instrument case", "correct": true},
+      {"text": "A pitot tube inside the instrument case", "correct": false},
+      {"text": "A sealed aneroid capsule", "correct": false}
+    ],
+    "answer": "A calibrated (restricted) orifice or leak in the instrument case",
+    "explanation": "The key to the VSI's operation is the calibrated (restricted) leak — a precisely sized orifice connecting the instrument case to the static line. The diaphragm (connected directly to static) changes pressure immediately when altitude changes, but the case pressure changes slowly because it must pass through the restricted orifice. This lag between the diaphragm and case pressure creates the differential that deflects the needle in proportion to the rate of altitude change. In level flight both pressures equalise through the orifice and the needle returns to zero.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-7",
+    "media": []
+  },
+  {
+    "id": "FI-091",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "temperature-effect"],
+    "question": "On a hot day (high OAT) at a given pressure altitude, TAS will be __________ compared to a standard day.",
+    "choices": [
+      {"text": "Lower, because hot air is denser", "correct": false},
+      {"text": "Higher, because hot air is less dense and the aircraft must fly faster to create the same dynamic pressure", "correct": true},
+      {"text": "The same, because temperature does not affect TAS", "correct": false},
+      {"text": "Lower, because the ASI reads higher in hot air", "correct": false}
+    ],
+    "answer": "Higher, because hot air is less dense and the aircraft must fly faster to create the same dynamic pressure",
+    "explanation": "Air density decreases as temperature increases (at the same pressure). Since dynamic pressure = ½ρV², lower density (ρ) means the aircraft needs a higher velocity (V) to maintain the same IAS. Therefore, for a given IAS, TAS is higher on a hot day than on a cold day at the same altitude. This also increases density altitude and degrades aircraft performance. The E6B flight computer accounts for OAT when computing TAS from IAS.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 15",
+    "media": []
+  },
+  {
+    "id": "FI-092",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "stall-speed-ias"],
+    "question": "Why are aircraft stall speeds (VS0 and VS1) published as IAS values rather than TAS?",
+    "choices": [
+      {"text": "Because IAS is easier to measure than TAS", "correct": false},
+      {"text": "Because the aircraft always stalls at the same dynamic pressure (IAS) regardless of altitude", "correct": true},
+      {"text": "Because TAS would cause pilots to fly too fast at altitude", "correct": false},
+      {"text": "Because TAS instruments are not required on light aircraft", "correct": false}
+    ],
+    "answer": "Because the aircraft always stalls at the same dynamic pressure (IAS) regardless of altitude",
+    "explanation": "A wing stalls when it exceeds the critical angle of attack, which corresponds to a specific coefficient of lift. The lift equation (L = ½ρV²SCL) shows that stall occurs at the same dynamic pressure (½ρV²) regardless of altitude. Since IAS is proportional to dynamic pressure, the stall IAS is the same at sea level and at 10,000 ft. However, TAS at stall increases with altitude (because ρ is lower). Publishing stall speeds as IAS makes it universally applicable — the pilot reads the same IAS regardless of altitude.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-8",
+    "media": []
+  },
+  {
+    "id": "FI-093",
+    "topic": "Flight Instruments — Pitot-Static Blockages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "blockage", "preflight"],
+    "question": "During the preflight walkaround, the pilot should inspect the pitot tube for:",
+    "choices": [
+      {"text": "Correct angle of installation only", "correct": false},
+      {"text": "Obstructions such as insect nests, dirt, ice, or a pitot cover left in place", "correct": true},
+      {"text": "Proper electrical connection to the pitot heat system", "correct": false},
+      {"text": "Correct static pressure by covering the tube and checking the ASI", "correct": false}
+    ],
+    "answer": "Obstructions such as insect nests, dirt, ice, or a pitot cover left in place",
+    "explanation": "The pitot tube is a small-diameter tube that can easily be blocked by insects building nests inside it (wasps are a common cause of pitot tube blockages), mud, standing water that freezes, or a pitot cover that was not removed before flight. During the preflight inspection, the pilot should visually check the pitot tube inlet is clear and confirm any pitot cover has been removed and stowed. Departing with a blocked pitot tube will cause ASI failure, which can be life-threatening.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 13",
+    "media": []
+  },
+  {
+    "id": "FI-094",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["asi", "instruments", "rain-effect"],
+    "question": "In heavy rain, the ASI will most likely read:",
+    "choices": [
+      {"text": "Higher than actual airspeed because raindrops add pressure to the pitot tube", "correct": false},
+      {"text": "Lower than actual airspeed because rain partially blocks the pitot tube and reduces sensed dynamic pressure", "correct": true},
+      {"text": "The same as actual airspeed because rain has no effect on pitot pressure", "correct": false},
+      {"text": "Zero, because rain completely blocks the pitot tube", "correct": false}
+    ],
+    "answer": "Lower than actual airspeed because rain partially blocks the pitot tube and reduces sensed dynamic pressure",
+    "explanation": "In very heavy rain, large droplets can partially fill or disrupt the smooth ram-air entry into the pitot tube, reducing the total pressure sensed. Additionally, the impact of raindrops on the airspeed system can introduce small pressure perturbations. The overall effect is usually a slightly low ASI reading. This is generally not significant in normal rain, but in extremely heavy precipitation it may be noticeable. Pitot heat helps prevent ice but does not eliminate rain effects.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-095",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "speeds", "multi-engine"],
+    "question": "On a multi-engine aircraft, VMC is marked on the ASI as:",
+    "choices": [
+      {"text": "A red radial line", "correct": true},
+      {"text": "A blue radial line", "correct": false},
+      {"text": "The bottom of the green arc", "correct": false},
+      {"text": "The bottom of the white arc", "correct": false}
+    ],
+    "answer": "A red radial line",
+    "explanation": "VMC (minimum control speed with the critical engine inoperative) is marked with a **red radial line** on the ASI of multi-engine aircraft. It is the minimum airspeed at which directional control can be maintained when the critical engine suddenly fails and the remaining engine is at full power. Below VMC, the pilot cannot maintain directional control with rudder alone. VYSE (best single-engine rate of climb speed) is the *blue* radial line. The red VMC line is typically in the lower portion of the airspeed range, often below VS1.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-096",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["pitot-static", "instruments", "static-port"],
+    "question": "The static port is designed to measure:",
+    "choices": [
+      {"text": "Total (ram) air pressure including dynamic pressure", "correct": false},
+      {"text": "Only the ambient (atmospheric) static pressure", "correct": true},
+      {"text": "Dynamic pressure minus total pressure", "correct": false},
+      {"text": "The pressure differential between pitot and venturi", "correct": false}
+    ],
+    "answer": "Only the ambient (atmospheric) static pressure",
+    "explanation": "The static port is a small flush opening in the fuselage skin, carefully located in a region of minimal airflow disturbance. It is designed to sense only the ambient static pressure of the surrounding atmosphere — the pressure that would exist if the air were at rest. It must not be influenced by the ram effect (dynamic pressure) or engine wake. The static pressure from this port is used by the altimeter and VSI directly, and by the ASI as a reference to subtract from total (pitot) pressure.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1",
+    "media": []
+  },
+  {
+    "id": "FI-097",
+    "topic": "Flight Instruments — Vertical Speed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["vsi", "instruments", "icing"],
+    "question": "If the static port ices over in flight, what does the VSI indicate?",
+    "choices": [
+      {"text": "A continuous climb", "correct": false},
+      {"text": "A continuous descent", "correct": false},
+      {"text": "Zero — no rate of change", "correct": true},
+      {"text": "An erratic, fluctuating reading", "correct": false}
+    ],
+    "answer": "Zero — no rate of change",
+    "explanation": "The VSI reads zero when there is no pressure differential between the diaphragm and the instrument case — either because the aircraft is truly in level flight or because static pressure is frozen (blocked static port). If the static port ices over, neither the diaphragm nor the case receives any new static pressure signals. Both sides of the instrument stabilise at the pressure present when the port was blocked, creating zero differential regardless of actual vertical movement. The VSI reads zero while the aircraft may be climbing or descending.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6",
+    "media": []
+  },
+  {
+    "id": "FI-098",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["asi", "instruments", "flap-speeds"],
+    "question": "During a normal approach with full flaps extended, the pilot should ensure the airspeed is:",
+    "choices": [
+      {"text": "At or above VFE to maintain control authority", "correct": false},
+      {"text": "Within the white arc (at or above VS0 and at or below VFE)", "correct": true},
+      {"text": "Within the green arc for maximum structural safety", "correct": false},
+      {"text": "At or below VS1 to reduce aerodynamic loads", "correct": false}
+    ],
+    "answer": "Within the white arc (at or above VS0 and at or below VFE)",
+    "explanation": "With flaps extended, the appropriate speed range is the white arc: from VS0 (minimum stall speed in landing config) to VFE (maximum flap speed). The approach speed is typically 1.3 × VS0 or a speed published in the POH, which will be above VS0 and within the white arc. Flying below VS0 risks a stall; flying above VFE with flaps extended risks structural damage to the flap mechanism. Retracting flaps while above VFE is also prohibited.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 14",
+    "media": []
+  },
+  {
+    "id": "FI-099",
+    "topic": "Flight Instruments — Airspeed Indicator",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["asi", "instruments", "power-off"],
+    "question": "VS0 and VS1 stall speeds are published as **power-off** values. Why is this significant?",
+    "choices": [
+      {"text": "Because the engine is always off during a stall", "correct": false},
+      {"text": "Because power-on stall speeds are higher than power-off", "correct": false},
+      {"text": "Because power-on stalls occur at a lower IAS than the published VS0/VS1, so the power-off value is the conservative safety margin", "correct": true},
+      {"text": "Because the ASI is unreliable when the engine is running", "correct": false}
+    ],
+    "answer": "Because power-on stalls occur at a lower IAS than the published VS0/VS1, so the power-off value is the conservative safety margin",
+    "explanation": "The slipstream from a propeller at high power settings adds energy to the airflow over the wings, delaying the stall to a lower airspeed than in the power-off condition. Therefore, the power-off stall speeds VS0 and VS1 represent the *worst case* (most conservative) stall speeds. With power applied, the actual stall may not occur until a lower IAS. Publishing conservative power-off values ensures that flying above VS0/VS1 always provides some stall margin, regardless of power setting.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-9",
+    "media": []
+  },
+  {
+    "id": "FI-100",
+    "topic": "Flight Instruments — Pitot-Static System",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["pitot-static", "instruments", "summary", "system"],
+    "question": "Which of the following correctly matches each pitot-static instrument with its pressure inputs?",
+    "choices": [
+      {"text": "ASI: pitot and static; Altimeter: pitot only; VSI: static only", "correct": false},
+      {"text": "ASI: pitot and static; Altimeter: static only; VSI: static only", "correct": true},
+      {"text": "ASI: static only; Altimeter: pitot only; VSI: pitot and static", "correct": false},
+      {"text": "ASI: pitot only; Altimeter: static only; VSI: pitot and static", "correct": false}
+    ],
+    "answer": "ASI: pitot and static; Altimeter: static only; VSI: static only",
+    "explanation": "Each pitot-static instrument uses a specific combination of pressures: **ASI** — uses both pitot (total) pressure and static pressure; it is a differential pressure gauge that reads the difference (dynamic pressure). **Altimeter** — uses static pressure only; it measures the absolute static pressure and converts it to altitude. **VSI** — uses static pressure only; it measures the *rate of change* of static pressure through a calibrated leak mechanism. Only the ASI requires pitot pressure; the altimeter and VSI are purely static-pressure instruments.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1 to 8-7; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 13–17",
+    "media": []
+  }
+]

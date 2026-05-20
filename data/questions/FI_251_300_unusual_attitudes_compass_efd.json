@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FI-251",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "causes"],
+    "question": "Which of the following is NOT a common cause of unusual attitudes in IMC?",
+    "choices": [
+      {"text": "Spatial disorientation from sensory illusions", "correct": false},
+      {"text": "Fixation on a single instrument while neglecting others", "correct": false},
+      {"text": "Turbulence that deflects the aircraft beyond normal attitudes", "correct": false},
+      {"text": "Flying too fast in the green arc", "correct": true}
+    ],
+    "answer": "Flying too fast in the green arc",
+    "explanation": "Unusual attitudes in IMC typically develop from: (1) **Spatial disorientation** — the pilot's vestibular system gives false attitude cues (the 'leans', graveyard spiral illusion) leading to incorrect control inputs; (2) **Fixation** — attention locked on one instrument causes other attitude deviations to go undetected until they grow large; (3) **Turbulence** — severe or sudden turbulence can displace the aircraft into an extreme attitude. Flying within the green arc at cruise airspeed is normal and safe — it does not cause unusual attitudes. It is a distractor here.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 147, 171",
+    "media": []
+  },
+  {
+    "id": "FI-252",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "attitude-confirmation"],
+    "question": "During unusual attitude recovery, after rolling wings-level and stopping a nose-low dive, what confirms the aircraft has returned to straight-and-level flight?",
+    "choices": [
+      {"text": "The AI shows a level horizon and the pilot feels no G-force", "correct": false},
+      {"text": "All performance instruments (altimeter steady, VSI zero, ASI at cruise, HI steady) and AI showing level pitch and wings-level", "correct": true},
+      {"text": "The altimeter stops descending — when it stops moving the aircraft is level", "correct": false},
+      {"text": "The engine sound returns to normal cruise RPM", "correct": false}
+    ],
+    "answer": "All performance instruments (altimeter steady, VSI zero, ASI at cruise, HI steady) and AI showing level pitch and wings-level",
+    "explanation": "After recovering from an unusual attitude, confirmation of straight-and-level flight requires the same complete instrument cross-check as normal: AI (level attitude), altimeter (steady altitude), VSI (zero rate), ASI (cruise speed, stabilising), HI (steady heading), TC (wings-level, ball centred). Using only one or two instruments risks missing a residual deviation. If the AI may have tumbled during the unusual attitude, the partial panel instruments (TC, ASI, altimeter, VSI) provide the cross-check.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-253",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "nose-low-g"],
+    "question": "During recovery from a nose-low unusual attitude, why must the pull-out from the dive be gradual rather than abrupt?",
+    "choices": [
+      {"text": "An abrupt pull-out makes the altimeter difficult to read", "correct": false},
+      {"text": "An abrupt pull-out at high airspeed imposes high G-loads that may exceed the aircraft's structural limits", "correct": true},
+      {"text": "An abrupt pull-out causes the VSI to lag and show incorrect information", "correct": false},
+      {"text": "An abrupt pull-out will stall the aircraft because airspeed is too high", "correct": false}
+    ],
+    "answer": "An abrupt pull-out at high airspeed imposes high G-loads that may exceed the aircraft's structural limits",
+    "explanation": "In a nose-low unusual attitude with high airspeed (possibly in or near the yellow arc), an abrupt pull-out creates a very high load factor. The load factor in a pull-out depends on airspeed squared and the rate of pitch change. At speeds near VNO or VNE, an abrupt pull-out can impose G-loads far exceeding the aircraft's design limit (typically +3.8 G for normal category), causing structural failure. The correct technique is a smooth, progressive pull-out — enough to stop the dive without an aggressive G-spike. Power should be reduced first to bring speed below VNO before pulling.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-254",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "turning-errors", "unos", "south"],
+    "question": "In the northern hemisphere, when rolling out of a turn to the SOUTH, the pilot should stop the turn when the compass reads:",
+    "choices": [
+      {"text": "South (180°) exactly — the compass is accurate passing through south", "correct": false},
+      {"text": "Past south — overshoot south, because the compass lags through south", "correct": true},
+      {"text": "North of south — undershoot, because the compass leads through south", "correct": false},
+      {"text": "At any value, because turning errors only affect north headings", "correct": false}
+    ],
+    "answer": "Past south — overshoot south, because the compass lags through south",
+    "explanation": "UNOS mnemonic — **O**vershoot **S**outh: when turning to south in the northern hemisphere, the compass lags behind the actual heading. The compass card does not reach south (180°) until the aircraft has already turned past south. To end up on a south heading, the pilot must continue the turn until the magnetic compass shows south, because the compass is lagging behind reality — the roll-out is initiated when the compass shows south and the aircraft will be on or very near the south heading. Contrast with turning to NORTH (Undershoot), where the compass leads ahead of the actual heading.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-255",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "acceleration-errors", "ands", "east-west"],
+    "question": "A pilot flying on a heading of 090° (east) applies full power for a go-around. The magnetic compass temporarily indicates:",
+    "choices": [
+      {"text": "A turn to the south", "correct": false},
+      {"text": "A turn to the north", "correct": true},
+      {"text": "No heading change", "correct": false},
+      {"text": "A turn to the west (180° reversal)", "correct": false}
+    ],
+    "answer": "A turn to the north",
+    "explanation": "ANDS mnemonic — **A**ccelerate = apparent turn toward **N**orth. On an easterly (or westerly) heading, acceleration causes the compass float to tilt (due to dip), rotating the compass card to give the illusion of turning toward north. On heading 090° (east), applying power causes the apparent northward turn. The actual heading has not changed — this is purely a compass error due to magnetic dip and inertia. The error is most pronounced on headings of east (090°) and west (270°), and is zero on headings of north or south.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-256",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "acceleration-errors", "ands", "deceleration"],
+    "question": "A pilot flying on a heading of 270° (west) reduces power to descend. The magnetic compass temporarily indicates:",
+    "choices": [
+      {"text": "A turn to the north", "correct": false},
+      {"text": "A turn to the south", "correct": true},
+      {"text": "No change in heading", "correct": false},
+      {"text": "A reversal to 090°", "correct": false}
+    ],
+    "answer": "A turn to the south",
+    "explanation": "ANDS — **D**ecelerate = apparent turn toward **S**outh. On a westerly heading (270°), reducing power (decelerating) causes the compass to indicate an apparent southward turn. The dip-affected compass float tilts in the opposite direction during deceleration compared to acceleration, rotating the card toward south. As with all ANDS errors, the actual heading is unchanged. The pilot should note the deceleration and discount the compass indication during the power reduction, reverting to the HI for heading reference.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-257",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "variation", "tvmdc"],
+    "question": "The memory aid TVMDC is used for converting between true and compass headings. What does it stand for?",
+    "choices": [
+      {"text": "True, Variation, Magnetic, Deviation, Compass", "correct": true},
+      {"text": "Track, Velocity, Magnetic, Deviation, Course", "correct": false},
+      {"text": "True, Variation, Magnetic, Dip, Correction", "correct": false},
+      {"text": "Track, Variation, Magnetic, Declination, Course", "correct": false}
+    ],
+    "answer": "True, Variation, Magnetic, Deviation, Compass",
+    "explanation": "TVMDC represents the conversion sequence from true heading to compass heading: **T**rue heading ± **V**ariation (magnetic declination) = **M**agnetic heading ± **D**eviation (aircraft's own field) = **C**ompass heading. A memory aid for the corrections: 'East is least (subtract), West is best (add)' for variation. The same rule applies to deviation. Going from compass to true, the sequence reverses (CDMVT: 'Can Dead Men Vote Twice'). This is the fundamental navigation conversion used in manual flight planning.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-258",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "variation", "east-variation"],
+    "question": "The chart shows 15° east magnetic variation. A pilot wishes to fly a true course of 090°. The magnetic course is:",
+    "choices": [
+      {"text": "075° — subtract east variation", "correct": true},
+      {"text": "105° — add east variation", "correct": false},
+      {"text": "090° — variation is already included in the true course", "correct": false},
+      {"text": "105° — east variation is added to true to get magnetic", "correct": false}
+    ],
+    "answer": "075° — subtract east variation",
+    "explanation": "TVMDC: True ± Variation = Magnetic. With east variation, the rule is 'East is least' — subtract: 090° − 15° = 075° magnetic. East variation means magnetic north is east of true north, so the magnetic heading to fly the same ground track is less than the true heading. This is because when pointing toward magnetic north (which is east of true north), you are actually pointing somewhat east of true north — so to fly east (090° true), you fly 075° magnetic. The HI would be set to 075° to fly a true east track with 15° east variation.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-259",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "deviation", "compass-card"],
+    "question": "The compass correction card shows: For heading 180°, steer 176°. What does this mean?",
+    "choices": [
+      {"text": "When the compass reads 176°, the actual magnetic heading is 180°", "correct": false},
+      {"text": "To achieve a magnetic heading of 180°, steer so the compass reads 176°", "correct": true},
+      {"text": "The deviation on this aircraft is +4° on all headings", "correct": false},
+      {"text": "The variation at this airport is 4° east", "correct": false}
+    ],
+    "answer": "To achieve a magnetic heading of 180°, steer so the compass reads 176°",
+    "explanation": "The compass correction card (deviation card) shows: 'For desired magnetic heading [X], fly so the compass reads [Y].' For heading 180°, steer 176° means the deviation on this heading is +4° (the compass reads 4° less than the actual magnetic heading). To fly a true magnetic heading of south (180°), the pilot must set the compass to read 176° — at that compass reading, the actual heading is 180° magnetic. The deviation correction card accounts for the error introduced by the aircraft's own magnetic field.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-260",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "dip", "latitude"],
+    "question": "Compass turning and acceleration errors are GREATEST in areas of:",
+    "choices": [
+      {"text": "Low magnetic variation (near the prime meridian)", "correct": false},
+      {"text": "High magnetic dip (near the magnetic poles — high latitudes)", "correct": true},
+      {"text": "High altitude where the magnetic field is weaker", "correct": false},
+      {"text": "Low temperature where compass fluid becomes viscous", "correct": false}
+    ],
+    "answer": "High magnetic dip (near the magnetic poles — high latitudes)",
+    "explanation": "Compass turning and acceleration errors are caused by magnetic dip — the tendency of the Earth's magnetic field to angle downward toward the poles. The closer the aircraft is to the magnetic poles, the steeper the dip angle, and the more pronounced these errors become. At the equator, dip is near zero and the compass is relatively free of turning/acceleration errors. At high Canadian latitudes (where many PPL students train), dip is significant — typically 70°+ — making UNOS and ANDS errors quite large and requiring greater lead/overshoot corrections.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-19 to 8-20; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-261",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "isogonic-lines"],
+    "question": "Isogonic lines on an aeronautical chart connect points of:",
+    "choices": [
+      {"text": "Equal magnetic deviation", "correct": false},
+      {"text": "Equal magnetic variation (declination)", "correct": true},
+      {"text": "Equal magnetic dip angle", "correct": false},
+      {"text": "Equal compass deviation", "correct": false}
+    ],
+    "answer": "Equal magnetic variation (declination)",
+    "explanation": "Isogonic lines (also called lines of equal declination) connect geographic locations that have the same magnetic variation (the angle between true north and magnetic north). Aeronautical charts show isogonic lines as dashed lines labelled with the variation value (e.g., '15°W'). The agonic line is the specific isogonic line where variation is zero — where true north and magnetic north coincide. Pilots use these lines when converting between true and magnetic headings for flight planning.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-262",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "pfd", "standby"],
+    "question": "Even in a glass cockpit (EFD) aircraft, regulations require the aircraft to also have:",
+    "choices": [
+      {"text": "A mechanical turn-and-slip indicator as the primary backup", "correct": false},
+      {"text": "A standby (backup) instrument system in case of EFD failure", "correct": true},
+      {"text": "A second full PFD as a backup", "correct": false},
+      {"text": "A GPS receiver as a backup navigation source", "correct": false}
+    ],
+    "answer": "A standby (backup) instrument system in case of EFD failure",
+    "explanation": "Glass cockpit aircraft are required to have a standby (backup) instrument system that functions independently of the primary EFD displays. This is typically a small combined standby instrument showing attitude, airspeed, and altitude — or individual 'steam gauge' instruments. The standby system is powered by a separate power source (often battery-backed) so that if the primary EFD loses power, the pilot retains essential flight information. Some installations have a standby EFIS; others have traditional analogue instruments.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-263",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "pfd", "airspeed-tape"],
+    "question": "On a glass cockpit PFD, the airspeed is displayed as:",
+    "choices": [
+      {"text": "A round dial with a needle, identical to a traditional ASI", "correct": false},
+      {"text": "A vertical tape that scrolls as airspeed changes, with the current value in the centre", "correct": true},
+      {"text": "A digital number only, with no graphical indication of speed trend", "correct": false},
+      {"text": "A horizontal bar from left to right across the screen", "correct": false}
+    ],
+    "answer": "A vertical tape that scrolls as airspeed changes, with the current value in the centre",
+    "explanation": "On the PFD, airspeed is displayed as a **vertical tape** on the left side of the screen. The tape scrolls up as airspeed increases and down as airspeed decreases. The current airspeed value appears in a digital readout at the centre of the tape. Colour coding corresponding to the ASI arcs (white, green, yellow) is shown on the tape scale. The trend vector (a magenta arrow extending from the current value) shows the projected airspeed 6 seconds ahead at the current rate of change. This format provides more precise reading than a round dial needle.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-264",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "pfd", "altitude-tape"],
+    "question": "On a glass cockpit PFD, altitude is displayed as:",
+    "choices": [
+      {"text": "A round altimeter with three needles (100, 1,000, 10,000 ft)", "correct": false},
+      {"text": "A vertical tape on the right side, with current altitude in a digital readout at centre", "correct": true},
+      {"text": "A horizontal tape along the bottom of the screen", "correct": false},
+      {"text": "A digital number above the artificial horizon", "correct": false}
+    ],
+    "answer": "A vertical tape on the right side, with current altitude in a digital readout at centre",
+    "explanation": "On the PFD, altitude appears as a **vertical tape** on the right side of the screen, mirroring the airspeed tape on the left. The tape scrolls up when climbing and down when descending. The current altitude is shown digitally at the centre window of the tape. The altimeter setting (Kollsman window equivalent) is shown digitally nearby and is adjusted by the baro knob. The trend vector shows projected altitude in 6 seconds. Selected altitude (from the MCP or autopilot) is typically shown with a cyan/blue bug on the tape.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-265",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "pfd", "attitude"],
+    "question": "On a glass cockpit PFD, the attitude display differs from a traditional AI in that:",
+    "choices": [
+      {"text": "The glass cockpit AI has no horizon line — it uses colour only to show pitch and bank", "correct": false},
+      {"text": "The glass cockpit AI occupies the central portion of the PFD and is much larger, making attitude easier to read, especially in unusual attitudes", "correct": true},
+      {"text": "The glass cockpit AI cannot show bank angles greater than 30°", "correct": false},
+      {"text": "The glass cockpit AI requires the pilot to press a button to display pitch information", "correct": false}
+    ],
+    "answer": "The glass cockpit AI occupies the central portion of the PFD and is much larger, making attitude easier to read, especially in unusual attitudes",
+    "explanation": "The EFD's artificial horizon (attitude indicator) fills most of the PFD display area, making it significantly larger and easier to read than the small round AI of a traditional instrument panel. The pitch scale, horizon line, and bank indicator are all larger and more visible. Colour coding (blue for sky, brown/tan for earth) reinforces the attitude picture intuitively. AHRS-based EFDs also have no gimbal limits, so the attitude display remains accurate through any attitude — no tumbling. Pitch and bank limits are effectively unlimited.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22 to 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-266",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "adc", "tas"],
+    "question": "In a glass cockpit, TAS is computed by the ADC (Air Data Computer) using which inputs?",
+    "choices": [
+      {"text": "Pitot pressure and static pressure only", "correct": false},
+      {"text": "Pitot pressure, static pressure, and outside air temperature (OAT)", "correct": true},
+      {"text": "GPS groundspeed and magnetic variation", "correct": false},
+      {"text": "Heading and magnetic variation", "correct": false}
+    ],
+    "answer": "Pitot pressure, static pressure, and outside air temperature (OAT)",
+    "explanation": "TAS cannot be computed from pitot and static pressures alone — those give IAS (which is proportional to dynamic pressure, not adjusted for density). The ADC computes TAS by combining: (1) pressure altitude (from static pressure); (2) outside air temperature (from the OAT probe); and (3) the computed IAS/CAS. These inputs allow the ADC to determine air density and then convert IAS to TAS. The formula is essentially TAS = CAS × √(ρ₀/ρ), where ρ is the actual air density computed from altitude and temperature.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-267",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "failure", "scan"],
+    "question": "In a glass cockpit aircraft, the PFD display fails completely. The pilot should immediately:",
+    "choices": [
+      {"text": "Activate the autopilot and wait for the display to reboot", "correct": false},
+      {"text": "Transition to the standby instruments and MFD for continued flight information", "correct": true},
+      {"text": "Descend immediately to VFR conditions", "correct": false},
+      {"text": "Declare an emergency — PFD failure is always a life-threatening emergency", "correct": false}
+    ],
+    "answer": "Transition to the standby instruments and MFD for continued flight information",
+    "explanation": "If the PFD fails, the pilot transitions to the **standby instruments** (which operate independently of the EFD system) and any remaining usable displays (the MFD may be able to display a backup PFD page on some systems). The standby instrument typically shows attitude, airspeed, and altitude on a small independent display. The pilot can maintain controlled flight using these instruments while troubleshooting the PFD failure. This is analogous to partial panel in conventional aircraft — the pilot uses the remaining reliable instruments.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-268",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "ahrs", "magnetic"],
+    "question": "In an AHRS-based EFD, what happens to heading accuracy if the magnetometer (flux gate) fails?",
+    "choices": [
+      {"text": "The heading indicator continues to function using the ring-laser gyros alone, with no drift", "correct": false},
+      {"text": "The heading reference becomes unreliable and will drift, just like a conventional HI without a compass", "correct": true},
+      {"text": "The heading display freezes at the last known heading permanently", "correct": false},
+      {"text": "The system automatically switches to GPS ground track for heading", "correct": false}
+    ],
+    "answer": "The heading reference becomes unreliable and will drift, just like a conventional HI without a compass",
+    "explanation": "The magnetometer provides the absolute magnetic reference that prevents heading drift in an AHRS system. The gyros in the AHRS provide fast, accurate attitude information, but gyros drift over time (just like conventional gyros) — they don't know which direction is north. The magnetometer continuously corrects this drift. Without the magnetometer, the AHRS heading will drift in the same way a conventional HI drifts without being aligned to the compass — potentially at 15° per hour or more. The pilot would need to use other means (GPS track, ADF bearings) for heading reference.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-269",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "pitot-heat"],
+    "question": "In a glass cockpit aircraft, if the pitot tube becomes blocked by ice, which display is primarily affected?",
+    "choices": [
+      {"text": "The attitude display on the PFD", "correct": false},
+      {"text": "The airspeed tape on the PFD (which receives data from the ADC, which receives pitot pressure)", "correct": true},
+      {"text": "The heading display on the PFD", "correct": false},
+      {"text": "The MFD map display", "correct": false}
+    ],
+    "answer": "The airspeed tape on the PFD (which receives data from the ADC, which receives pitot pressure)",
+    "explanation": "In a glass cockpit, pitot pressure is fed to the ADC, which computes airspeed (IAS, TAS, Mach) from the pitot–static differential. If the pitot tube is blocked, the ADC receives no valid pitot pressure and the airspeed computation fails. The airspeed tape on the PFD will show erroneous values, possibly zero (if the drain is open) or an increasing value as altitude changes (if both tube and drain are blocked). Attitude, heading, altitude, and navigation displays are unaffected — they receive data from AHRS and static pressure, not pitot.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-6, 8-22 to 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-270",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "scan-differences"],
+    "question": "One challenge of transitioning from a glass cockpit to a conventional 'steam gauge' instrument panel is that:",
+    "choices": [
+      {"text": "Steam gauges are more accurate than glass cockpit instruments", "correct": false},
+      {"text": "The scan pattern must change — steam gauges are distributed around the panel, increasing the eye travel distance compared to the integrated PFD", "correct": true},
+      {"text": "Steam gauges do not have a VSI or heading indicator", "correct": false},
+      {"text": "The AI on a steam gauge panel shows bank and pitch in reverse from the glass cockpit", "correct": false}
+    ],
+    "answer": "The scan pattern must change — steam gauges are distributed around the panel, increasing the eye travel distance compared to the integrated PFD",
+    "explanation": "On a glass cockpit PFD, all primary flight information is consolidated in one large display, minimising eye travel during the instrument scan. On a conventional 'six-pack' steam gauge panel, the instruments are individual round dials spread across the panel. The pilot must move their eyes significantly farther to cover the same six instruments. Pilots transitioning from glass to steam must adapt their scan technique to account for this increased eye movement. The risk is increased fixation (spending too long at one gauge to read it before moving on).",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 150–151",
+    "media": []
+  },
+  {
+    "id": "FI-271",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "vs-spin"],
+    "question": "A pilot in IMC observes: ASI reading 185 kt (increasing), altimeter dropping rapidly, turn needle deflected left. The most likely condition is:",
+    "choices": [
+      {"text": "A left spin — the low airspeed would confirm a stall-spin entry", "correct": false},
+      {"text": "A left spiral dive — high and increasing airspeed confirms the aircraft is not stalled", "correct": true},
+      {"text": "A sudden updraft causing an inadvertent climb", "correct": false},
+      {"text": "A stall at high airspeed — possible due to high angle of attack", "correct": false}
+    ],
+    "answer": "A left spiral dive — high and increasing airspeed confirms the aircraft is not stalled",
+    "explanation": "The key indicator is the **increasing airspeed at 185 kt** — in a spin, airspeed is low (at or near stall) because the wing is stalled. High and rapidly increasing airspeed means the aircraft is in an aerodynamic descent under gravity, not a stall/spin. The turn needle left confirms a left turn. Altimeter dropping confirms descent. This is a **left spiral dive**: the aircraft is banked left, nose-low, descending, and accelerating. Recovery: reduce power, level wings (right aileron), then smoothly pull out of the dive. Anti-spin inputs would be incorrect here.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172–173",
+    "media": []
+  },
+  {
+    "id": "FI-272",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "turning-errors", "unos", "east-west"],
+    "question": "Are UNOS compass turning errors (lead/lag) present when turning through east or west headings?",
+    "choices": [
+      {"text": "Yes, the same lead/lag occurs on all headings equally", "correct": false},
+      {"text": "No, UNOS errors are minimal when turning through east or west — they peak when turning through north and south", "correct": true},
+      {"text": "Yes, but the errors are reversed on east/west compared to north/south", "correct": false},
+      {"text": "No, UNOS errors only affect headings north of 45° latitude", "correct": false}
+    ],
+    "answer": "No, UNOS errors are minimal when turning through east or west — they peak when turning through north and south",
+    "explanation": "UNOS (Undershoot North, Overshoot South) errors are at their maximum when the turn passes through north (360°/000°) or south (180°) headings. This is because the dip error effect on the compass card's rotation is greatest at these points. When turning through east (090°) or west (270°), the compass error is approximately zero — the compass reads close to the actual heading being passed. This is why the magnetic compass is sometimes considered reliable enough to read when the aircraft is on an east or west heading after levelling off.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20",
+    "media": []
+  },
+  {
+    "id": "FI-273",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["magnetic-compass", "turning-errors", "unos", "latitude-correction"],
+    "question": "At a latitude of 60° north, approximately how much should a pilot undershoot (begin roll-out early) when turning to a north heading?",
+    "choices": [
+      {"text": "10° early", "correct": false},
+      {"text": "30° early", "correct": false},
+      {"text": "60° early (approximately equal to the latitude)", "correct": true},
+      {"text": "5° early — the effect is small even at high latitudes", "correct": false}
+    ],
+    "answer": "60° early (approximately equal to the latitude)",
+    "explanation": "The rule of thumb for compass turning error lead/lag: **the amount to undershoot north ≈ the aircraft's latitude**. At 60° N, the pilot should begin rolling out approximately 60° before reaching north on the compass — i.e., start the roll-out when the compass shows approximately 360° − 60° = 300° (or when approaching from the east, when the compass reaches 060°). This is a practical approximation; precise corrections also account for the bank angle. The same rule applies for overshooting south: continue the turn until the compass reads past south by approximately the latitude.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 21",
+    "media": []
+  },
+  {
+    "id": "FI-274",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "density-altitude"],
+    "question": "In addition to TAS, the ADC in a glass cockpit can also display:",
+    "choices": [
+      {"text": "Groundspeed and wind direction only", "correct": false},
+      {"text": "Density altitude, Mach number, and winds aloft (when combined with GPS data)", "correct": true},
+      {"text": "Magnetic variation for the current location", "correct": false},
+      {"text": "Aircraft weight and balance calculations", "correct": false}
+    ],
+    "answer": "Density altitude, Mach number, and winds aloft (when combined with GPS data)",
+    "explanation": "The ADC computes multiple air data parameters from pitot pressure, static pressure, and OAT: **pressure altitude** (from static); **IAS** (from pitot–static differential); **TAS** (from IAS, altitude, and OAT); **Mach number** (TAS ÷ speed of sound at the current conditions); **density altitude** (from pressure altitude and OAT). When the air data is combined with GPS velocity (groundspeed and track), the system can also compute winds aloft (wind speed and direction = vector difference between TAS and groundspeed). This data is displayed on the PFD and MFD for pilot awareness.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-275",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "nose-high-stall"],
+    "question": "During an attempted nose-HIGH unusual attitude recovery, the pilot applies full power and pushes forward. The AI shows the nose approaching the horizon but the ASI continues to decrease. What additional action is needed?",
+    "choices": [
+      {"text": "Apply back pressure immediately to stop the nose from going below the horizon", "correct": false},
+      {"text": "Level the wings if banked — a banked attitude prevents the nose from reaching the horizon efficiently", "correct": true},
+      {"text": "Retract flaps to reduce drag", "correct": false},
+      {"text": "Reduce power — too much power may prevent the nose from lowering", "correct": false}
+    ],
+    "answer": "Level the wings if banked — a banked attitude prevents the nose from reaching the horizon efficiently",
+    "explanation": "If the nose is not recovering as expected despite forward pressure and full power, a significant bank angle may be present. In a banked attitude with high nose pitch, the elevator and the combined control effects are less effective at lowering the nose toward the horizon. Levelling the wings first (or simultaneously levelling wings while lowering the nose) allows the elevator to work more efficiently to lower pitch. This is why the nose-high recovery sequence includes levelling the wings as a component — power, lower nose, level wings — and why recognising any bank on the AI is critical before and during the recovery.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171",
+    "media": []
+  },
+  {
+    "id": "FI-276",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "deviation", "compass-swing"],
+    "question": "After a compass swing, the deviation correction card shows a residual deviation of +3° on a heading of 360°. This means the compass reads:",
+    "choices": [
+      {"text": "363° when the aircraft is actually pointing at 360° magnetic", "correct": false},
+      {"text": "357° when the aircraft is actually pointing at 360° magnetic", "correct": true},
+      {"text": "360° — the deviation card corrects the error automatically", "correct": false},
+      {"text": "Any value — deviation is unpredictable even after a compass swing", "correct": false}
+    ],
+    "answer": "357° when the aircraft is actually pointing at 360° magnetic",
+    "explanation": "A deviation of +3° on heading 360° means the compass reads 3° less than the actual magnetic heading. When the aircraft points at 360° (north) magnetic, the compass shows 360° − 3° = 357°. The correction card tells the pilot: 'To fly 360° magnetic, steer so the compass reads 357°.' The positive sign (+3°) indicates the compass under-reads. After a compass swing, perfect calibration is rarely achieved — residual deviations are minimised but not eliminated, which is why the deviation card is needed.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-277",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "graveyard-spiral-instruments"],
+    "question": "In a developing graveyard spiral in IMC, which combination of instrument indications would the pilot see?",
+    "choices": [
+      {"text": "Increasing bank, increasing descent rate (VSI), increasing airspeed, decreasing altitude", "correct": true},
+      {"text": "Increasing bank, decreasing descent rate, decreasing airspeed, decreasing altitude", "correct": false},
+      {"text": "Increasing bank, zero VSI, constant airspeed", "correct": false},
+      {"text": "Decreasing bank, increasing airspeed, altitude increasing", "correct": false}
+    ],
+    "answer": "Increasing bank, increasing descent rate (VSI), increasing airspeed, decreasing altitude",
+    "explanation": "The graveyard spiral is a nose-low, steeply banked turn where all the danger signs escalate together: **Increasing bank** (AI/TC show growing bank); **Increasing descent rate** (VSI increasingly negative); **Increasing airspeed** (ASI rising as the aircraft dives); **Decreasing altitude** (altimeter falling rapidly). These simultaneous changes are the signature of a developing spiral — distinguishing it from a spin (where airspeed is low and stable). The naive response of pulling back merely tightens the spiral; the correct response is power reduction, wings-level, then pull-out.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-278",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "six-pack"],
+    "question": "The traditional 'basic six' instrument layout (the T-arrangement) on a conventional instrument panel places which instrument at the top-left of the T?",
+    "choices": [
+      {"text": "The altimeter", "correct": false},
+      {"text": "The airspeed indicator", "correct": true},
+      {"text": "The attitude indicator", "correct": false},
+      {"text": "The heading indicator", "correct": false}
+    ],
+    "answer": "The airspeed indicator",
+    "explanation": "The standard 'basic T' (or 'T-bar') layout standardises the position of the six primary flight instruments so pilots can transition between aircraft easily. The arrangement: **Top of T (row 1)**: Airspeed Indicator (left), Attitude Indicator (centre), Altimeter (right). **Stem of T (row 2)**: Turn-and-slip Indicator (left), Heading Indicator (centre), VSI (right). The AI is at the centre of the T because it is the primary control instrument. This layout is reproduced on the PFD of glass cockpit aircraft, where the same information is displayed in the same spatial arrangement.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-11",
+    "media": []
+  },
+  {
+    "id": "FI-279",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "ands", "acceleration-on-north"],
+    "question": "On which headings are compass acceleration errors (ANDS) ZERO?",
+    "choices": [
+      {"text": "East (090°) and west (270°)", "correct": false},
+      {"text": "North (360°/000°) and south (180°)", "correct": true},
+      {"text": "Northeast and southwest", "correct": false},
+      {"text": "All cardinal headings equally", "correct": false}
+    ],
+    "answer": "North (360°/000°) and south (180°)",
+    "explanation": "ANDS acceleration errors are caused by the compass float tilting forward or backward due to acceleration/deceleration, combined with magnetic dip. On north and south headings, the dip component is directed along the aircraft's axis of motion — when the aircraft accelerates, the compass float tilts, but the tilt does not rotate the compass card (the dip force is in line with the axis, not cross-axis). Therefore, on exactly north or south headings, acceleration causes no compass card rotation — no error. The error is maximum on east (090°) and west (270°) where the dip force is fully perpendicular to the float's tipping axis.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-20",
+    "media": []
+  },
+  {
+    "id": "FI-280",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "trend-vector", "colour"],
+    "question": "On a glass cockpit PFD, the trend vectors on the airspeed and altitude tapes are typically displayed in what colour?",
+    "choices": [
+      {"text": "Red — to warn that speed or altitude is changing", "correct": false},
+      {"text": "White — to differentiate from other display elements", "correct": false},
+      {"text": "Magenta — the standard EFD colour for computed/managed values and trends", "correct": true},
+      {"text": "Green — the standard safe-operation colour", "correct": false}
+    ],
+    "answer": "Magenta — the standard EFD colour for computed/managed values and trends",
+    "explanation": "In modern EFD colour conventions, **magenta** is used for commanded, computed, or 'where you should be going' information — including trend vectors (projected future state), FMS-generated guidance, autopilot targets, and GPS navigation needles. White or cyan typically indicates selected values (altitude bug, speed reference). Green indicates managed mode or safe ranges. Red indicates warnings and limitations. Magenta trend arrows on the airspeed and altitude tapes indicate the projected value 6 seconds ahead at the current rate of change.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-281",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "recovery-priority"],
+    "question": "When recovering from a nose-low unusual attitude, WHY is reducing power the first action rather than levelling wings?",
+    "choices": [
+      {"text": "Because reducing power keeps the engine in the correct RPM range", "correct": false},
+      {"text": "Because reducing power immediately reduces airspeed, preventing structural damage or VNE exceedance during the pull-out", "correct": true},
+      {"text": "Because reducing power makes the aircraft easier to control at high bank angles", "correct": false},
+      {"text": "Because wings must not be levelled until power is set — this is an ATC procedure requirement", "correct": false}
+    ],
+    "answer": "Because reducing power immediately reduces airspeed, preventing structural damage or VNE exceedance during the pull-out",
+    "explanation": "In a nose-low unusual attitude, the aircraft may be at or approaching VNO or VNE with power still at cruise setting, adding to the airspeed. Reducing power first immediately removes the thrust component that is accelerating the aircraft, allowing drag to begin decelerating it. This is critical because the subsequent pull-out (even a gentle one) imposes G-loads proportional to airspeed squared — at high speeds, even a moderate pull can be structurally dangerous. Getting the speed down before or during the pull-out is the primary structural protection.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 172",
+    "media": []
+  },
+  {
+    "id": "FI-282",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "variation", "agonic-line"],
+    "question": "The agonic line is significant because:",
+    "choices": [
+      {"text": "It marks the boundary between east and west variation, where true north equals magnetic north (zero variation)", "correct": true},
+      {"text": "It marks the location of the magnetic north pole", "correct": false},
+      {"text": "It connects all points of zero compass deviation", "correct": false},
+      {"text": "It connects all points of equal magnetic dip", "correct": false}
+    ],
+    "answer": "It marks the boundary between east and west variation, where true north equals magnetic north (zero variation)",
+    "explanation": "The agonic line (from the Greek 'without angle') is a specific isogonic line where magnetic variation is zero — meaning true north and magnetic north are aligned at that location. On the agonic line, no variation correction is needed when converting true to magnetic heading or vice versa. In North America, the agonic line runs roughly from the Great Lakes south through the eastern US. East of the agonic line, variation is west (magnetic north is west of true north); west of it, variation is east. The agonic line changes position slowly over time as the magnetic pole drifts.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-283",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "gps-navigation"],
+    "question": "On a glass cockpit MFD, the moving map display helps the pilot by:",
+    "choices": [
+      {"text": "Replacing the altimeter for terrain awareness in mountainous areas", "correct": false},
+      {"text": "Showing the aircraft's position relative to terrain, airspace, navaids, and other aircraft (with ADS-B)", "correct": true},
+      {"text": "Providing real-time weather radar data from the aircraft's own radar system", "correct": false},
+      {"text": "Automatically correcting heading for magnetic variation", "correct": false}
+    ],
+    "answer": "Showing the aircraft's position relative to terrain, airspace, navaids, and other aircraft (with ADS-B)",
+    "explanation": "The MFD moving map shows the aircraft as a symbol on an electronic chart, moving in real time. The pilot can see: current position relative to airways, controlled airspace, restricted areas, and airports; terrain depicted in colour (green/yellow/red for proximity); navaids (VORs, NDBs) and their frequency labels; and ADS-B traffic symbols (when installed). This significantly increases situational awareness compared to traditional navigation with paper charts and position plotting. The map can be oriented track-up or north-up, and range can be adjusted.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-284",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["unusual-attitudes", "instrument-flying", "prevention", "scan"],
+    "question": "The FTM states that the best defence against inadvertent entry into an unusual attitude in IMC is:",
+    "choices": [
+      {"text": "Flying only in clear-air turbulence (CAT) free airspace", "correct": false},
+      {"text": "A continuous, disciplined instrument scan that prevents deviations from growing undetected", "correct": true},
+      {"text": "Engaging the autopilot at all times in IMC", "correct": false},
+      {"text": "Maintaining a high cruise altitude above cloud layers", "correct": false}
+    ],
+    "answer": "A continuous, disciplined instrument scan that prevents deviations from growing undetected",
+    "explanation": "Unusual attitudes develop from small, uncorrected deviations — a gentle bank that was not noticed, a slight pitch change during a frequency change. The only protection is a rigorous, continuous instrument scan that catches these small deviations early. Every deviation caught and corrected at 5° of bank never becomes a 90° bank. The FTM's selective radial scan with the AI as the hub is specifically designed to detect attitude deviations as quickly as possible. No other technique — autopilot use, altitude choice, or weather avoidance — fully substitutes for proficient instrument scanning.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 150–151",
+    "media": []
+  },
+  {
+    "id": "FI-285",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["efd", "glass-cockpit", "adahrs"],
+    "question": "What does ADAHRS stand for, and what does it combine?",
+    "choices": [
+      {"text": "Automatic Digital Air Heading Reference System — combines GPS and radar", "correct": false},
+      {"text": "Air Data Attitude and Heading Reference System — combines ADC functions (pitot-static) with AHRS functions (attitude and heading)", "correct": true},
+      {"text": "Advanced Display and Heading Reference System — the display computer only", "correct": false},
+      {"text": "Airspeed Data and Heading Reference System — measures airspeed and heading only", "correct": false}
+    ],
+    "answer": "Air Data Attitude and Heading Reference System — combines ADC functions (pitot-static) with AHRS functions (attitude and heading)",
+    "explanation": "ADAHRS (Air Data Attitude and Heading Reference System) is an integrated unit that combines the functions of both the ADC and the AHRS into a single line-replaceable unit (LRU). It processes pitot and static pressure inputs (air data) for IAS, altitude, VSI, and TAS — just like a standalone ADC — and also uses solid-state gyros and a magnetometer for attitude and heading — just like a standalone AHRS. Integrating both in one unit reduces weight, cost, and installation complexity in modern light aircraft glass cockpit systems.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-286",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "overbanking"],
+    "question": "During a steep level instrument turn of 60° bank, the aircraft tends to 'overbank' — the bank angle increases on its own. Why?",
+    "choices": [
+      {"text": "Because the gyroscopic precession of the gyro instruments affects the ailerons", "correct": false},
+      {"text": "Because in a steep turn, the outer wing travels faster and generates more lift, causing the bank to increase spontaneously", "correct": true},
+      {"text": "Because the vacuum pump spins faster in a steep turn, affecting the AI", "correct": false},
+      {"text": "Because the pilot instinctively applies back pressure which adds bank", "correct": false}
+    ],
+    "answer": "Because in a steep turn, the outer wing travels faster and generates more lift, causing the bank to increase spontaneously",
+    "explanation": "In a banked turn, the outer wing travels a larger arc (greater radius) than the inner wing for the same turn. Therefore, the outer wing moves faster through the air, generating more lift than the inner wing. This lift differential tends to increase the bank angle spontaneously — the aircraft 'overbanks.' In turns beyond approximately 30° of bank, the pilot must apply a small amount of aileron toward the outside of the turn (away from the bank) to prevent the bank from deepening. On instruments, the AI bank indicator and TC rate-mark are used to detect and stop this tendency.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 158",
+    "media": []
+  },
+  {
+    "id": "FI-287",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "deviation", "electrical"],
+    "question": "During preflight, a pilot notices the magnetic compass correction card was made with the avionics master switch OFF. When all radios and electronic equipment are turned ON, the compass may:",
+    "choices": [
+      {"text": "Not be affected — electrical systems are shielded from the compass", "correct": false},
+      {"text": "Show additional deviation because electrical currents create magnetic fields", "correct": true},
+      {"text": "Show less deviation because the electrical system helps orient the compass", "correct": false},
+      {"text": "Only be affected if the GPS is turned on", "correct": false}
+    ],
+    "answer": "Show additional deviation because electrical currents create magnetic fields",
+    "explanation": "Any electrical current flowing through a conductor creates a surrounding magnetic field. When the aircraft's avionics, radios, lights, and other electrical equipment are energised, the currents flowing through the aircraft's wiring create magnetic fields that can influence the compass. If the deviation card was made with avionics OFF, it may not accurately reflect the deviation experienced with all equipment operating normally. The compass swing should ideally be performed with all normal-use electrical equipment ON, and the resulting correction card applies to normal operating conditions.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18",
+    "media": []
+  },
+  {
+    "id": "FI-288",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "unusual-attitude-recovery"],
+    "question": "During unusual attitude recovery in a glass cockpit (AHRS-based), why is the attitude display more reliable than in a conventional vacuum AI?",
+    "choices": [
+      {"text": "The glass cockpit AI is colour-coded, making it faster to read", "correct": false},
+      {"text": "The AHRS has no gimbal limits — it cannot tumble and remains accurate through any attitude", "correct": true},
+      {"text": "The glass cockpit AI uses GPS to correct for attitude errors", "correct": false},
+      {"text": "The glass cockpit AI is immune to all electrical failures", "correct": false}
+    ],
+    "answer": "The AHRS has no gimbal limits — it cannot tumble and remains accurate through any attitude",
+    "explanation": "A conventional vacuum-powered AI has mechanical gimbal limits (~60–70° pitch, ~100–110° bank) beyond which the gyro tumbles and gives false indications. An AHRS-based glass cockpit AI uses solid-state sensors (ring laser gyros or MEMS) with no moving gimbals — there are no mechanical limits. The AHRS accurately computes attitude at any pitch or bank angle, from inverted flight to a spin. This makes the glass cockpit attitude indicator far more reliable for unusual attitude recognition and recovery than conventional gyros.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22 to 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-289",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["magnetic-compass", "variation", "west-variation"],
+    "question": "At a location with 20° west magnetic variation, a pilot wants to fly a true heading of 270°. What magnetic heading should be flown?",
+    "choices": [
+      {"text": "250° — subtract west variation", "correct": false},
+      {"text": "270° — variation is zero in Canada", "correct": false},
+      {"text": "290° — add west variation", "correct": true},
+      {"text": "310° — double the variation and add it", "correct": false}
+    ],
+    "answer": "290° — add west variation",
+    "explanation": "TVMDC: True ± Variation = Magnetic. With west variation, the rule is 'West is best (add)': 270° + 20° = 290° magnetic. West variation means magnetic north is west of true north. When magnetic north is to your west (left) while facing true north, you must fly a heading further to the right (clockwise) to track the same true direction. A memory device: 'East is least (subtract), West is best (add).' For navigation in most of Canada, variation is typically west, so the magnetic heading will be *greater* than the true course.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-18; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-290",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "ring-laser-gyro"],
+    "question": "A ring laser gyro (RLG) determines rotation rate by:",
+    "choices": [
+      {"text": "Sensing the deflection of a mechanical rotor spinning at high speed", "correct": false},
+      {"text": "Measuring the difference in travel time between two laser beams fired in opposite directions around a ring", "correct": true},
+      {"text": "Detecting changes in the aircraft's magnetic field relative to the Earth", "correct": false},
+      {"text": "Using GPS velocity changes to infer angular rotation rate", "correct": false}
+    ],
+    "answer": "Measuring the difference in travel time between two laser beams fired in opposite directions around a ring",
+    "explanation": "A ring laser gyro uses the Sagnac effect: two laser beams are sent in opposite directions around a closed ring (triangular or square). When the ring is stationary, both beams take the same time to complete the loop. When the ring is rotating, the beam travelling in the direction of rotation must cover a slightly longer path, while the beam going opposite covers a shorter path. The resulting phase difference (interference pattern) is precisely proportional to the rotation rate. RLGs have no moving parts (unlike mechanical gyros), making them extremely reliable and free of the friction and drift errors of mechanical gyros.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-291",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["magnetic-compass", "preflight", "check"],
+    "question": "During the preflight inspection, how should the pilot check the magnetic compass?",
+    "choices": [
+      {"text": "Verify the compass fluid is clear and free of bubbles, and that the compass reads approximately the correct heading for the runway in use", "correct": true},
+      {"text": "Adjust the deviation compensating magnets to read zero deviation", "correct": false},
+      {"text": "Verify that the compass reads exactly true north when aligned with magnetic north", "correct": false},
+      {"text": "Tap the compass glass to check that the card moves freely, then ignore it", "correct": false}
+    ],
+    "answer": "Verify the compass fluid is clear and free of bubbles, and that the compass reads approximately the correct heading for the runway in use",
+    "explanation": "During preflight, the compass check includes: (1) **Fluid level and clarity** — the compass should be full of clear, colourless fluid. Bubbles indicate a leak and cause erratic, unreliable readings; discoloured fluid can impair visibility; (2) **Approximate heading** — while sitting in the aircraft on the ramp or runway, the compass should read approximately the known magnetic heading of the runway or ramp. A reading that is wildly different (more than ~10–15°) may indicate a compass problem or nearby magnetic interference. The compass deviation card should also be in place.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20",
+    "media": []
+  },
+  {
+    "id": "FI-292",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "partial-panel-ua"],
+    "question": "On partial panel (AI failed), the pilot detects an unusual attitude. Which instruments are used to recognise and recover from the unusual attitude?",
+    "choices": [
+      {"text": "The TC for bank, the ASI for airspeed trend, the altimeter for altitude — no AI needed for unusual attitude recovery", "correct": true},
+      {"text": "The AI alone — it is required for unusual attitude recovery", "correct": false},
+      {"text": "Only the altimeter — altitude is the only reliable indicator on partial panel", "correct": false},
+      {"text": "The HI and compass only — heading determines the aircraft's attitude", "correct": false}
+    ],
+    "answer": "The TC for bank, the ASI for airspeed trend, the altimeter for altitude — no AI needed for unusual attitude recovery",
+    "explanation": "Partial panel unusual attitude recovery uses the available instruments: **TC** — shows if and how fast the aircraft is turning (confirms bank direction and rate); **ASI** — trending up = nose low/speed increasing; trending down = nose high/decelerating; **Altimeter** — falling rapidly = descending (nose low); rising = climbing (nose high); **VSI** — confirms climb or descent rate. Recovery procedure is the same (nose-high: power up, lower nose, level wings; nose-low: power off, level wings, pull out) but relies on TC and ASI/altimeter for the attitude picture instead of the AI.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 169–172",
+    "media": []
+  },
+  {
+    "id": "FI-293",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "data-link-weather"],
+    "question": "Data-linked weather on the MFD (e.g., NEXRAD radar via SiriusXM or ADS-B weather) has what important limitation compared to an onboard weather radar?",
+    "choices": [
+      {"text": "Data-linked weather cannot display precipitation — it only shows METARs", "correct": false},
+      {"text": "Data-linked weather is delayed by several minutes, so it shows historical weather, not the aircraft's current position relative to active cells", "correct": true},
+      {"text": "Data-linked weather is not approved for IFR flight by Transport Canada", "correct": false},
+      {"text": "Data-linked weather automatically steers the aircraft around thunderstorms", "correct": false}
+    ],
+    "answer": "Data-linked weather is delayed by several minutes, so it shows historical weather, not the aircraft's current position relative to active cells",
+    "explanation": "Data-linked weather products (NEXRAD, FIS-B via ADS-B) are composites from ground-based radar stations, typically with a data age of 5–20 minutes by the time they are received and displayed on the MFD. Convective activity can change rapidly — a storm that appears on the display as being at a certain location may have moved significantly in the time since the radar image was captured. Pilots must not use data-linked weather to penetrate convective activity by weaving between displayed cells, as the cells may have moved to fill gaps shown as clear on the display.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-294",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "vertigo"],
+    "question": "Spatial disorientation (vertigo) in IMC is dangerous primarily because:",
+    "choices": [
+      {"text": "It causes the flight instruments to give false readings", "correct": false},
+      {"text": "The pilot's vestibular sensations are compelling and feel more reliable than the instruments, leading the pilot to override correct instrument indications with false ones", "correct": true},
+      {"text": "It impairs the pilot's ability to read instrument faces in low light", "correct": false},
+      {"text": "It causes nausea that prevents the pilot from operating the controls", "correct": false}
+    ],
+    "answer": "The pilot's vestibular sensations are compelling and feel more reliable than the instruments, leading the pilot to override correct instrument indications with false ones",
+    "explanation": "The treachery of spatial disorientation is not that it makes the pilot confused about what the instruments show — the instruments still show correct readings. The danger is that the pilot's vestibular system generates powerful, deeply convincing sensations that directly contradict the instruments. In this conflict, many pilots trust their physical sensation over the instruments ('it can't be right — I feel level'). The overriding sensation leads them to move the controls in the direction their body demands, exactly opposite to what the instruments prescribe. Breaking this impulse requires strong discipline and proficiency in trusting instruments absolutely.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 147",
+    "media": []
+  },
+  {
+    "id": "FI-295",
+    "topic": "Flight Instruments — Magnetic Compass Errors",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "tags": ["magnetic-compass", "southern-hemisphere"],
+    "question": "In the SOUTHERN hemisphere, UNOS compass turning errors are:",
+    "choices": [
+      {"text": "The same as in the northern hemisphere — UNOS applies globally", "correct": false},
+      {"text": "Reversed — the compass overshoots north and undershoots south (OSAN)", "correct": true},
+      {"text": "Absent — the southern hemisphere has no magnetic dip", "correct": false},
+      {"text": "Double the magnitude compared to the northern hemisphere", "correct": false}
+    ],
+    "answer": "Reversed — the compass overshoots north and undershoots south (OSAN)",
+    "explanation": "Compass turning errors are caused by magnetic dip. In the northern hemisphere, the north-seeking end of the compass needle dips downward (toward the north magnetic pole below). In the southern hemisphere, the magnetic field dips the other way (south-seeking end dips down), reversing all compass turning errors. Where the northern hemisphere pilot undershoots north (UNOS), the southern hemisphere pilot must overshoot north. The mnemonic for the southern hemisphere is sometimes remembered as **OSAN** (Overshoot North, Undershoot South) — the exact opposite of UNOS. Canadian PPL candidates are primarily tested on northern hemisphere corrections.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-19 to 8-20",
+    "media": []
+  },
+  {
+    "id": "FI-296",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["efd", "glass-cockpit", "terrain-awareness"],
+    "question": "Synthetic vision on a glass cockpit PFD shows terrain in different colours. What does RED terrain on the synthetic vision display indicate?",
+    "choices": [
+      {"text": "Terrain that is more than 2,000 ft below the aircraft — safe separation", "correct": false},
+      {"text": "Terrain that is at or above the aircraft's current altitude — immediate conflict", "correct": true},
+      {"text": "Terrain that is within the aircraft's minimum safe altitude zone for the route", "correct": false},
+      {"text": "Terrain covered with snow or ice", "correct": false}
+    ],
+    "answer": "Terrain that is at or above the aircraft's current altitude — immediate conflict",
+    "explanation": "In synthetic vision systems (SVS), terrain is colour-coded based on proximity to the aircraft's altitude: **Red** — terrain at or above the aircraft's altitude (or very close above); this is an immediate threat requiring immediate action. **Yellow/amber** — terrain within a few hundred feet below the aircraft; caution. **Green** or **dark green** — terrain well below the aircraft; comfortable clearance. SVS allows the pilot to see terrain that would be invisible in cloud or at night, significantly improving situational awareness and CFIT (controlled flight into terrain) prevention.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-22",
+    "media": []
+  },
+  {
+    "id": "FI-297",
+    "topic": "Flight Instruments — Unusual Attitudes",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "tags": ["unusual-attitudes", "instrument-flying", "ftm", "recognition-summary"],
+    "question": "A quick recognition summary of unusual attitudes on instruments: nose-HIGH = low and decreasing ________; nose-LOW = high and increasing ________.",
+    "choices": [
+      {"text": "Altitude; heading", "correct": false},
+      {"text": "Airspeed; airspeed", "correct": true},
+      {"text": "VSI; altimeter", "correct": false},
+      {"text": "Heading; altitude", "correct": false}
+    ],
+    "answer": "Airspeed; airspeed",
+    "explanation": "The fastest recognition cue for unusual attitude type is the ASI: **Nose-HIGH** unusual attitude — airspeed is low and decreasing (the aircraft is climbing or decelerating toward a stall). **Nose-LOW** unusual attitude — airspeed is high and increasing (the aircraft is diving, gaining speed). The ASI gives this information with very little lag, faster than the altimeter changes significantly. Combined with the AI (if reliable) or the VSI sign, the ASI immediately tells the pilot what kind of unusual attitude they are in and which recovery procedure to apply.",
+    "reference": "Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 24 — Instrument Flying, p. 171–172",
+    "media": []
+  },
+  {
+    "id": "FI-298",
+    "topic": "Flight Instruments — EFD Glass Cockpit",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["efd", "glass-cockpit", "ahrs", "initialisation"],
+    "question": "An AHRS-based glass cockpit aircraft is started and the pilot notices the heading is displayed but the attitude indication is erratic. This is most likely because:",
+    "choices": [
+      {"text": "The magnetometer has failed", "correct": false},
+      {"text": "The AHRS is still initialising — it requires a brief alignment period before attitude data is valid", "correct": true},
+      {"text": "The pitot heat has not been turned on", "correct": false},
+      {"text": "The MFD is displaying on the PFD by mistake", "correct": false}
+    ],
+    "answer": "The AHRS is still initialising — it requires a brief alignment period before attitude data is valid",
+    "explanation": "Unlike mechanical gyros (which require 3–5 minutes to spin up), AHRS systems use solid-state sensors that need a brief **alignment** period after power-up. During alignment (typically 30–60 seconds on modern units), the system performs sensor checks, averages the Earth's gravity and magnetic field readings, and establishes its initial attitude and heading solution. The display may show flags or erratic attitudes during this period. The aircraft should be stationary (or nearly so) during alignment for best accuracy. Most systems indicate when initialisation is complete (alignment flags clear and attitude stabilises).",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-24",
+    "media": []
+  },
+  {
+    "id": "FI-299",
+    "topic": "Flight Instruments — Review",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instruments", "ftm", "summary", "tp12880"],
+    "question": "According to the Canadian PPL written exam study guide (TP 12880), which statement about the magnetic compass is CORRECT?",
+    "choices": [
+      {"text": "The magnetic compass reads true north when aligned with geographic north", "correct": false},
+      {"text": "Compass turning errors are greatest when turning through north and south headings in the northern hemisphere", "correct": true},
+      {"text": "Deviation is caused by magnetic variation, which varies with geographic location", "correct": false},
+      {"text": "The compass is equally reliable in all phases of flight", "correct": false}
+    ],
+    "answer": "Compass turning errors are greatest when turning through north and south headings in the northern hemisphere",
+    "explanation": "This question tests knowledge aligned with the TP 12880 Canadian PPL exam guide content on magnetic compass errors. The correct statement: **Compass turning errors (UNOS) are greatest when turning through north (000°) and south (180°)**. The other choices are incorrect: the magnetic compass reads magnetic north, not true north (A); deviation is caused by the aircraft's own magnetic fields, not by variation (C); the compass is unreliable during turns and accelerations (D). Understanding compass errors is essential for the Canadian PPL written exam under the 'Flight Instruments' subject area.",
+    "reference": "Transport Canada *Study and Reference Guide for Written Examinations — Private Pilot Licence Aeroplane* (TP 12880); Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 20–21",
+    "media": []
+  },
+  {
+    "id": "FI-300",
+    "topic": "Flight Instruments — Review",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "tags": ["instruments", "ftm", "summary", "tp12880", "all-topics"],
+    "question": "A PPL candidate should be able to explain all of the following flight instrument topics. Which grouping correctly lists the instruments driven by each power source?",
+    "choices": [
+      {"text": "Vacuum-powered: AI, HI; Electrically powered: TC; Pitot-static: ASI, altimeter, VSI; Magnetic: compass", "correct": true},
+      {"text": "Vacuum-powered: AI, HI, TC; Electrically powered: none; Pitot-static: ASI, altimeter, VSI; Magnetic: compass", "correct": false},
+      {"text": "Vacuum-powered: AI, TC; Electrically powered: HI; Pitot-static: ASI, altimeter, VSI; Magnetic: compass", "correct": false},
+      {"text": "Vacuum-powered: AI, HI; Electrically powered: TC, compass; Pitot-static: ASI, altimeter", "correct": false}
+    ],
+    "answer": "Vacuum-powered: AI, HI; Electrically powered: TC; Pitot-static: ASI, altimeter, VSI; Magnetic: compass",
+    "explanation": "This summary question consolidates all instrument power source knowledge for the PPL written exam: **Vacuum-powered** (engine-driven pump): Attitude Indicator (AI) and Heading Indicator (HI). **Electrically powered**: Turn Coordinator (TC) — this dual-power-source design ensures one gyro instrument survives either a vacuum pump or electrical failure. **Pitot-static** (no external power needed): Airspeed Indicator (ASI — both pitot and static), Altimeter (static only), VSI (static only). **Magnetic**: the compass needs no electrical or pneumatic power — it operates on the Earth's magnetic field and is the emergency backup heading reference. Understanding this grouping is foundational for both exam preparation and in-flight emergency procedures.",
+    "reference": "FAA *Pilot's Handbook of Aeronautical Knowledge* (FAA-H-8083-25C, 2023), Chapter 8 — Flight Instruments, p. 8-1 to 8-24; Transport Canada *Flight Training Manual* (TP1102E, 4th ed.), Chapter 2 — Instruments, p. 13–21; Transport Canada *Study and Reference Guide* (TP 12880)",
+    "media": []
+  }
+]

@@ -9,6 +9,19 @@ completing a phase increments the minor version and resets the patch to 0.
 
 ---
 
+## [0.14.1] - 2026-05-20
+
+### Fixed
+
+- **iOS PWA status bar overlap** — navigation header and hamburger menu were
+  hidden behind the iOS status bar when the app is launched from the home screen
+  in standalone (PWA) mode. Applied `safe-top` utility to `<body>` in
+  `layout.tsx`, which adds `padding-top: env(safe-area-inset-top)` (~47 px on
+  notched iPhones, ~59 px on Dynamic Island). On a regular browser the inset is
+  0 px so there is no visible change.
+
+---
+
 ## [0.14.0] - 2026-05-19
 
 Phase 14 — Flight Instruments question bank (300 questions).
